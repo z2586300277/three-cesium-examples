@@ -1,5 +1,9 @@
 # 说明
 
+### - 人人奉献一点爱 - 让爱传递给更多的程序员 
+
+#### 上传案例:将案例js放入到public目录下的cesiumExamples/threeExamples,然后在public/config目录对应的js录入的案例信息即可（不打包） 
+
 - 注: 先点星！先点星！先点星！重要的事情说三遍。
 
 - 预览 https://z2586300277.github.io/three-cesium-examples/public
