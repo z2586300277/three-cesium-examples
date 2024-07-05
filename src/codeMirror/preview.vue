@@ -9,7 +9,14 @@ const iframeParent = ref(null)
 
 const getScript = (v, t) => (t === 'Cesium.js案例' ?
 
-    '<link rel="stylesheet" href="/three-editor/dist/cesium/style.css">' 
+    `<link rel="stylesheet" href="/three-cesium-examples/public/cesium/style.css">
+     <script type="importmap">
+        {
+            "imports": {
+                "cesium": "/three-cesium-examples/public/cesium/Cesium.js"
+            }
+        }
+     <\/script>`
     : 
     `<script type="importmap">
         {
@@ -35,7 +42,7 @@ const getScript = (v, t) => (t === 'Cesium.js案例' ?
     </style>
     <div id="box"></div>
     <script type="module">
-        ${t === 'Cesium.js案例' ? 'window.CESIUM_BASE_URL = "/three-editor/dist/cesium"' : ''}
+        ${t === 'Cesium.js案例' ? 'window.CESIUM_BASE_URL = "/three-cesium-examples/public/cesium"' : ''}
         ${v}
     <\/script>`
 

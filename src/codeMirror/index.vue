@@ -21,12 +21,10 @@ import Preview from './preview.vue'
 import { Codemirror } from 'vue-codemirror'
 import { javascript } from '@codemirror/lang-javascript'
 import { oneDark } from '@codemirror/theme-one-dark'
-import { useRoute, useRouter } from 'vue-router'
+import { useRoute } from 'vue-router'
 import { setMetaContent } from '../router'
 
 const { query } = useRoute()
-
-const router = useRouter()
 
 const example_expand = localStorage.getItem('example_expand')
 
