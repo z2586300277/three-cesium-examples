@@ -52,7 +52,10 @@ const list = [
 
 const currentExample = list.find(item => item.name === query.navigation)?.examples.find(item => item.pid === query.classify)?.children.find(i => i.id === query.id)
 
-if (!currentExample) router.push({ path: '/example' })
+if (!currentExample) {
+
+   console.error('未找到当前案例')
+}
 
 if (currentExample?.meta) setMetaContent(currentExample.meta)
 
