@@ -78,6 +78,8 @@ const goNavigation = async (item) => {
 
         currentClassify = item.examples[0].pid
 
+        data.examples_list = item.examples[0].children
+
         localStorage.setItem('classify', item.examples[0].pid)
 
     }

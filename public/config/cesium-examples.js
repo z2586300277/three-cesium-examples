@@ -4,14 +4,14 @@ var cesiumExamples = [
         name: '图层',
         children: [
             {
-                id: 'defaultLayer',
-                name: '默认图层',
-                codeUrl: '/three-cesium-examples/public/cesiumExamples/defaultLayer.js',
-                image: '',
+                id: 'baiduLayer',
+                name: '百度图层',
+                codeUrl: '/three-cesium-examples/public/cesiumExamples/baiduLayer.js',
+                image: '/three-cesium-examples/public/cesiumExamples/baiduLayer.jpg',
                 meta: {
-                    title: '默认图层',
-                    keywords: 'cesium.js,默认图层',
-                    description: 'cesium.js默认图层'
+                    title: '百度图层',
+                    keywords: 'cesium.js,百度图层',
+                    description: 'cesium百度图层'
                 }
             }
         ]

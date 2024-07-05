@@ -1,26 +1,19 @@
 var threeExamples = [
     {
-        pid: 'start',
-        name: '开始',
-        children: [
-            {
-                id: 'createScene',
-                name: '创建场景',
-                codeUrl: '/three-cesium-examples/public/threeExamples/createScene.js',
-                image: '',
-                meta: {
-                    title: '开始',
-                    keywords: 'three.js,开始',
-                    description: '使用three.js创建的开始'
-                }
-            }
-        ]
-    },
-    {
         pid: '着色器',
         name: 'shader',
         children: [
-         
+            {
+                id: 'fenceShader',
+                name: '围栏着色器',
+                codeUrl: '/three-cesium-examples/public/threeExamples/fenceShader.js',
+                image: '/three-cesium-examples/public/threeExamples/fenceShader.jpg',
+                meta: {
+                    title: '围栏着色器',
+                    keywords: 'three.js,围栏着色器',
+                    description: '使用three.js围栏着色器'
+                }
+            }
         ]
     }
 ]
