@@ -3,28 +3,29 @@
         <div class="top">
             <div class="top-title" @click="openUrl('github')">
                 <img class="logo" src="/site.png" alt="logo" width="36px" height="36px">
-                <div class="top-title-text">3D案例社区</div>
+                <div class="top-title-text">3D</div>
             </div>
-            <el-menu class="menu" style="border: none;" :default-active="initPath" mode="horizontal" :ellipsis="false"
-                active-text-color="#fff" text-color="#fff" :default-openeds="['0']">
-                <el-menu-item v-for="(item, index) in list" :key="index" :index="String(item.path)"
-                    @click="goRouter(item.path)">
+            <el-menu class="menu" style="border: none;" :default-active="currentNavigationName" mode="horizontal"
+                :ellipsis="false" active-text-color="#fff" text-color="#fff" :default-openeds="[currentNavigationName]">
+                <el-menu-item v-for="item in navigation_list" :key="item.name" :index="String(item.name)"
+                    @click="goNavigation(item)">
                     {{ item.name }}
                 </el-menu-item>
             </el-menu>
         </div>
         <div class="center">
             <div class="nav">
-                <el-menu class="menu" style="border: none;" default-active="0" :ellipsis="false" text-color="#fff"
-                    active-text-color="#71a5ee">
-                    <el-menu-item :class="{ 'menuItem': index == active }" v-for="(item, index) in data.exampleList"
-                        :key="index" :index="String(index)" @click="changeActive(index, item)">
+                <el-menu class="menu" style="border: none;" :default-active="currentClassify" :ellipsis="false"
+                    text-color="#fff" active-text-color="#71a5ee">
+                    <el-menu-item :class="{ 'menuItem': item.pid == currentClassify }"
+                        v-for="item in data.classify_list" :key="item.pid" :index="String(item.pid)"
+                        @click="changeClassify(item)">
                         {{ item.name }}
                     </el-menu-item>
                 </el-menu>
             </div>
             <div class="examples">
-                <div class="examples-item" v-for="i, k in data.activeList">
+                <div class="examples-item" v-for="i, k in data.examples_list">
                     <div class="box" @click="showCode(i)">
                         <img :src="i.image" />
                         <div>{{ i.name }}</div>
@@ -36,46 +37,62 @@
 </template>
 
 <script setup>
-import { ref, reactive } from 'vue';
 import { useRouter } from 'vue-router';
+import threeExamples from './three-examples.js'
+import cesiumExamples from './cesium-examples.js'
+import { reactive } from 'vue';
 
 const router = useRouter();
 
 const openUrl = (k) => window.open(__SITE_URLS__[k])
 
-const data = reactive({ exampleList: [], activeList: [] })
+const data = reactive({
 
-const list = [
+    classify_list: [],
 
-    // { name: 'Three-Editor案例', path: 'threeEditor', list: ThreeEditorExamples },
+    examples_list: []
 
-    // { name: 'Three.js案例', path: 'threejs', list: ThreeJsExamples },
+})
 
-    // { name: 'Cesium.js案例', path: 'cesiumjs', list: CesiumJsExamples },
+const navigation_list = [
+
+    { name: 'Three.js案例', examples: threeExamples },
+
+    { name: 'Cesium.js案例', examples: cesiumExamples },
 
 ]
 
-const goRouter = (path) => {
+let currentNavigationName = localStorage.getItem('navigation') || navigation_list[0].name
 
-    data.exampleList = list.find(item => item.path === path)?.list
+const classify_list = (navigation_list.find(item => item.name === currentNavigationName) || navigation_list[0]).examples
 
-    localStorage.setItem('example_path', path)
+data.classify_list = classify_list
 
-    changeActive(0)
+const currentClassify = localStorage.getItem('classify') || classify_list[0].pid
+
+const goNavigation = async (item) => {
+
+    data.classify_list = item.examples
+
+    const findClassify = item.examples.find(item => item.pid === currentClassify)
+
+    findClassify ? data.examples_list = findClassify.children : data.examples_list = item.examples[0].children
+
+    localStorage.setItem('navigation', item.name)
+
+}
+
+const changeClassify = item => {
+
+    data.examples_list = item.children
+
+    localStorage.setItem('classify', item.pid)
 
 }
 
-const active = ref(0)
+const examples_list = (classify_list.find(item => item.pid === currentClassify) || classify_list[0]).children
 
-const changeActive = (index) => {
-
-    data.activeList = data.exampleList?.[index]?.children
-
-    active.value = index
-
-    localStorage.setItem('example_active', index)
-
-}
+data.examples_list = examples_list
 
 const showCode = (item) => {
 
@@ -83,27 +100,14 @@ const showCode = (item) => {
 
         name: 'codeMirror',
 
-        query: { example_path: localStorage.getItem('example_path'), example_active: localStorage.getItem('example_active'), key: item.key }
+        query: { navigation: localStorage.getItem('navigation'), classify: localStorage.getItem('classify'), id: item.id }
 
     }).href
 
     window.open(path)
 
-}
+};
 
-const initPath = localStorage.getItem('example_path') || 'threeEditor'
-
-const initActive = localStorage.getItem('example_active') || 0
-
-goRouter(initPath)
-
-changeActive(initActive);
-
-window.addEventListener('resize', () => {
-
-    console.log('resize')
-
-})
 </script>
 
 <style lang="less" scoped>

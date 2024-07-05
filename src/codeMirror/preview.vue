@@ -7,7 +7,18 @@ import { ref } from 'vue'
 
 const iframeParent = ref(null)
 
-const getScript = (v, t) => (t === 'cesiumjs' ? '<link rel="stylesheet" href="/three-editor/dist/cesium/style.css">' : '') +
+const getScript = (v, t) => (t === 'Cesium.js案例' ?
+
+    '<link rel="stylesheet" href="/three-editor/dist/cesium/style.css">' 
+    : 
+    `<script type="importmap">
+        {
+            "imports": {
+                "three": "/three-cesium-examples/public/three/three.module.min.js",
+                "three/addons/": "/three-cesium-examples/public/three/addons/"
+            }
+        }
+    <\/script>`) +
 
     `<style>
         body {
@@ -24,7 +35,7 @@ const getScript = (v, t) => (t === 'cesiumjs' ? '<link rel="stylesheet" href="/t
     </style>
     <div id="box"></div>
     <script type="module">
-        ${t === 'cesiumjs' ? 'window.CESIUM_BASE_URL = "/three-editor/dist/cesium"' : ''}
+        ${t === 'Cesium.js案例' ? 'window.CESIUM_BASE_URL = "/three-editor/dist/cesium"' : ''}
         ${v}
     <\/script>`
 

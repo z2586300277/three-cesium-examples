@@ -17,44 +17,18 @@
 
 <script setup>
 import { onMounted, ref, shallowRef } from 'vue'
+import threeExamples from '../example/three-examples'
+import cesiumExamples from '../example/cesium-examples'
 import Preview from './preview.vue'
 import { Codemirror } from 'vue-codemirror'
 import { javascript } from '@codemirror/lang-javascript'
 import { oneDark } from '@codemirror/theme-one-dark'
-import { useRoute } from 'vue-router'
+import { useRoute, useRouter } from 'vue-router'
 import { setMetaContent } from '../router'
 
 const { query } = useRoute()
 
-const list = [
-
-   // { name: 'Three-Editor案例', path: 'threeEditor', list: ThreeEditorExamples },
-
-   // { name: 'Three.js案例', path: 'threejs', list: ThreeJsExamples },
-
-   // { name: 'Cesium.js案例', path: 'cesiumjs', list: CesiumJsExamples }
-
-]
-
-let currentExample = list.find(item => item.path === query.example_path)?.list[query.example_active]?.children?.find(item => item.key === query.key)
-
-if (!currentExample) {
-
-   const lengthRandom = v => Math.floor(Math.random() * v)
-
-   const random = lengthRandom(list.length - 1)
-
-   const random2 = lengthRandom(list[random].list.length)
-
-   const random3 = lengthRandom(list[random].list[random2].children.length)
-
-   currentExample = list[random].list[random2].children[random3]
-
-}
-
-if (currentExample.meta) setMetaContent(currentExample.meta)
-
-let str = currentExample?.code || ``
+const router = useRouter()
 
 const example_expand = localStorage.getItem('example_expand')
 
@@ -68,7 +42,29 @@ const changeExpand = v => {
 
 }
 
-const jsCode = ref(str)
+const list = [
+
+   { name: 'Three.js案例', examples: threeExamples },
+
+   { name: 'Cesium.js案例', examples: cesiumExamples },
+
+]
+
+const currentExample = list.find(item => item.name === query.navigation)?.examples.find(item => item.pid === query.classify)?.children.find(i => i.id === query.id)
+
+if (!currentExample) router.push({ path: '/example' })
+
+if (currentExample?.meta) setMetaContent(currentExample.meta)
+
+async function getExampleCode(url) {
+
+   const code_text = await fetch(url).then(res => res.text())
+
+   jsCode.value = code_text
+
+}
+
+const jsCode = ref()
 
 const extensions = [javascript(), oneDark]
 
@@ -78,9 +74,15 @@ const view = shallowRef()
 
 const handleReady = (payload) => view.value = payload.view // 获取view
 
-onMounted(() => str && preview.value.usePreview(str, query.example_path)) // 初始执行
+onMounted(async() => {
 
-const useCode = () => preview.value.usePreview(jsCode.value, query.example_path) // 执行
+   await getExampleCode(currentExample.codeUrl)
+
+    preview.value.usePreview(jsCode.value, query.navigation)
+   
+}) // 初始执行
+
+const useCode = () => preview.value.usePreview(jsCode.value, query.navigation) // 执行
 
 </script>
 
