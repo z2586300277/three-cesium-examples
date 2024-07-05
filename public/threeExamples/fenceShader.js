@@ -1,5 +1,5 @@
-import * as THREE from 'three';
-import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+import * as THREE from 'three'
+import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js'
 
 const box = document.getElementById('box')
 
@@ -13,7 +13,17 @@ const renderer = new THREE.WebGLRenderer()
 
 renderer.setSize(box.clientWidth, box.clientHeight)
 
-const controls = new OrbitControls(camera, renderer.domElement)
+new OrbitControls(camera, renderer.domElement)
+
+window.onresize = () => {
+
+  renderer.setSize(box.clientWidth, box.clientHeight)
+
+  camera.aspect = box.clientWidth / box.clientHeight
+
+  camera.updateProjectionMatrix()
+  
+}
 
 box.appendChild(renderer.domElement)
 
@@ -51,7 +61,7 @@ void main() {
 }`
 
 // 自定义材质
-const custMaterial1 = new THREE.ShaderMaterial({
+const material = new THREE.ShaderMaterial({
     uniforms: {
       time: {
         type: "pv2",
@@ -116,8 +126,7 @@ geometry.attributes.uv = new THREE.BufferAttribute(new Float32Array(uvrr), 2);
 
 geometry.computeVertexNormals()
 
-const mesh = new THREE.Mesh(geometry, custMaterial1); //网格模型对象Mesh
-
+const mesh = new THREE.Mesh(geometry, material) //网格模型对象Mesh
 
 scene.add(mesh)
 
@@ -129,7 +138,7 @@ function animate() {
 
     mesh.rotation.y += 0.01
 
-    if (custMaterial1) custMaterial1.uniforms.time.value += 0.03;
+    material.uniforms.time.value += 0.03
 
     renderer.render(scene, camera)
 

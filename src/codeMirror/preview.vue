@@ -22,7 +22,7 @@ const getScript = (v, t) => (t === 'Cesium.js案例' ?
         {
             "imports": {
                 "three": "/three-cesium-examples/public/three/three.module.min.js",
-                "three/addons/": "/three-cesium-examples/public/three/addons/"
+                "three/examples/jsm/": "/three-cesium-examples/public/three/addons/"
             }
         }
     <\/script>`) +
