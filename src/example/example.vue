@@ -68,7 +68,7 @@ const classify_list = (navigation_list.find(item => item.name === currentNavigat
 
 data.classify_list = classify_list
 
-const currentClassify = localStorage.getItem('classify') || classify_list[0].pid
+let currentClassify = localStorage.getItem('classify') || classify_list[0].pid
 
 const goNavigation = async (item) => {
 
@@ -76,7 +76,15 @@ const goNavigation = async (item) => {
 
     const findClassify = item.examples.find(item => item.pid === currentClassify)
 
-    findClassify ? data.examples_list = findClassify.children : data.examples_list = item.examples[0].children
+    if (!findClassify) {
+
+        currentClassify = item.examples[0].pid
+
+        localStorage.setItem('classify', item.examples[0].pid)
+
+    }
+
+    currentNavigationName = item.name
 
     localStorage.setItem('navigation', item.name)
 
@@ -85,6 +93,8 @@ const goNavigation = async (item) => {
 const changeClassify = item => {
 
     data.examples_list = item.children
+
+    currentClassify = item.pid
 
     localStorage.setItem('classify', item.pid)
 
@@ -100,7 +110,7 @@ const showCode = (item) => {
 
         name: 'codeMirror',
 
-        query: { navigation: localStorage.getItem('navigation'), classify: localStorage.getItem('classify'), id: item.id }
+        query: { navigation: currentNavigationName, classify: currentClassify, id: item.id }
 
     }).href
 
