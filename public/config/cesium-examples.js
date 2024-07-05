@@ -1,4 +1,4 @@
-export default [
+var cesiumExamples = [
     {
         pid: 'layer',
         name: '图层',

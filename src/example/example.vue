@@ -38,8 +38,6 @@
 
 <script setup>
 import { useRouter } from 'vue-router';
-import threeExamples from './three-examples.js'
-import cesiumExamples from './cesium-examples.js'
 import { reactive } from 'vue';
 
 const router = useRouter();

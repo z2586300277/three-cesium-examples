@@ -17,8 +17,6 @@
 
 <script setup>
 import { onMounted, ref, shallowRef } from 'vue'
-import threeExamples from '../example/three-examples'
-import cesiumExamples from '../example/cesium-examples'
 import Preview from './preview.vue'
 import { Codemirror } from 'vue-codemirror'
 import { javascript } from '@codemirror/lang-javascript'
@@ -50,11 +48,14 @@ const list = [
 
 ]
 
-const currentExample = list.find(item => item.name === query.navigation)?.examples.find(item => item.pid === query.classify)?.children.find(i => i.id === query.id)
+let currentExample = list.find(item => item.name === query.navigation)?.examples.find(item => item.pid === query.classify)?.children.find(i => i.id === query.id)
 
 if (!currentExample) {
 
-   console.error('未找到当前案例')
+   const randomExample1 = list[0].examples[Math.round(Math.random() * (list[0].examples.length - 1))]
+
+   currentExample = randomExample1.children[Math.round(Math.random() * (randomExample1.children.length - 1))]
+
 }
 
 if (currentExample?.meta) setMetaContent(currentExample.meta)
@@ -77,12 +78,12 @@ const view = shallowRef()
 
 const handleReady = (payload) => view.value = payload.view // 获取view
 
-onMounted(async() => {
+onMounted(async () => {
 
    await getExampleCode(currentExample.codeUrl)
 
-    preview.value.usePreview(jsCode.value, query.navigation)
-   
+   preview.value.usePreview(jsCode.value, query.navigation)
+
 }) // 初始执行
 
 const useCode = () => preview.value.usePreview(jsCode.value, query.navigation) // 执行

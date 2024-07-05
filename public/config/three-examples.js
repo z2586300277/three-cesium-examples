@@ -1,4 +1,4 @@
-export default [
+var threeExamples = [
     {
         pid: 'start',
         name: '开始',
