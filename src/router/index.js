@@ -10,7 +10,6 @@ const routes = [
     component: layout,
     redirect: '/example',
     children: [
-
       {
         name: 'example',
         path: '/example',
@@ -21,13 +20,11 @@ const routes = [
           description: '三维低代码编辑器相关功能案例,threejs功能案例'
         }
       },
-
       {
         name: 'codeMirror',
         path: '/codeMirror',
         component: codeMirror
       }
-
     ]
   }
 ]

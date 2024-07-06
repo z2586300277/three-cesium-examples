@@ -19,6 +19,9 @@ const isShow = ref(!localStorage.getItem('hide_author_info'))
 
 const openUrl = (k) => window.open(__SITE_URLS__[k])
 
+/* rem 配置 */
+window.addEventListener('resize', () => document.documentElement.style.fontSize = document.documentElement.clientWidth / 1920 * 16 + 'px')
+
 </script>
 
 <style lang="less" scoped>

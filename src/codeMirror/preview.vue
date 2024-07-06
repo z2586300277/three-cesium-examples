@@ -13,7 +13,8 @@ const getScript = (v, t) => (t === 'Cesium.js案例' ?
      <script type="importmap">
         {
             "imports": {
-                "cesium": "/three-cesium-examples/public/cesium/Cesium.js"
+                "cesium": "/three-cesium-examples/public/cesium/Cesium.js",
+                "dat.gui": "/three-cesium-examples/public/js/dat.gui.module.js"
             }
         }
      <\/script>`
@@ -22,7 +23,8 @@ const getScript = (v, t) => (t === 'Cesium.js案例' ?
         {
             "imports": {
                 "three": "/three-cesium-examples/public/three/three.module.min.js",
-                "three/examples/jsm/": "/three-cesium-examples/public/three/addons/"
+                "three/examples/jsm/": "/three-cesium-examples/public/three/addons/",
+                "dat.gui": "/three-cesium-examples/public/js/dat.gui.module.js"
             }
         }
     <\/script>`) +

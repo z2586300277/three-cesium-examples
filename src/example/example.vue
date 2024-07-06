@@ -27,8 +27,9 @@
             <div class="examples">
                 <div class="examples-item" v-for="i, k in data.examples_list">
                     <div class="box" @click="showCode(i)">
-                        <img :src="i.image" />
-                        <div>{{ i.name }}</div>
+                        <div class="image"><img :src="i.image" /></div>
+                        <div class="author">作者</div>
+                        <div class="text">{{ i.name }}</div>
                     </div>
                 </div>
             </div>
@@ -125,6 +126,7 @@ const showCode = (item) => {
     width: 100vw;
     height: 100vh;
     background-color: #fff;
+    overflow: hidden;
 }
 
 .top {
@@ -149,7 +151,7 @@ const showCode = (item) => {
         cursor: pointer;
 
         &-text {
-            margin-left: 10px;
+            margin-left: 0.625rem;
         }
     }
 }
@@ -164,10 +166,14 @@ const showCode = (item) => {
     .nav {
         background: linear-gradient(180deg, #101b2e, #071228);
         height: 100%;
-        width: 240px;
         padding-top: 10px;
         box-sizing: border-box;
         font-weight: 550;
+
+        .menu {
+            min-width: 90px;
+            width: 15rem;
+        }
     }
 }
 
@@ -176,25 +182,29 @@ const showCode = (item) => {
 }
 
 .examples {
-    margin: 20px;
+    padding:20px;
     box-sizing: border-box;
-    width: calc(100% - 240px);
+    width: 100%;
     display: grid;
-    grid-template-columns: repeat(auto-fill, 280px);
-    grid-template-rows: repeat(auto-fill, 280px);
+    grid-template-columns: repeat(auto-fill, 250px);
+    grid-template-rows: repeat(auto-fill, 290px);
     overflow: scroll;
-    grid-gap: 5px;
+    grid-row-gap: 5px;
+    grid-column-gap: 10px;
 
     &-item {
-        width: 280px;
-        height: 280px;
+        width: 250px;
+        height: 290px;
         display: flex;
         justify-content: center;
         align-items: center;
 
         .box {
-            width: 250px;
-            height: 260px;
+            padding:20px 8px 8px 8px;
+            box-sizing: border-box;
+            width: 230px;
+            height: 270px;
+            overflow: hidden;
             box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
             border-radius: 3px;
             color: rgb(17, 17, 17);
@@ -202,21 +212,42 @@ const showCode = (item) => {
             flex-direction: column;
             align-items: center;
             cursor: pointer;
-            justify-content: space-evenly;
+            justify-content: space-between;
+
+            .image {
+                width: 190px;
+                height: 190px;
+                display: flex;
+                overflow: hidden;
+                justify-content: center;
+                align-items: center;
+                border-radius: 3px;
+            }
 
             img {
-                margin-top: 10px;
                 border-radius: 3px;
-                width: 200px;
-                height: 180px;
+                width: 190px;
+                height: 190px;
 
                 &:hover {
-                    transform: scale(1.1);
+                    transform: scale(1.8);
                     transition: all 0.5s;
                 }
             }
         }
     }
+}
+
+.author {
+    font-size: 13px;
+    transition: all 0.5s;
+    &:hover {
+        color: #71a5ee;
+    }
+}
+
+.text {
+    font-size: 16px;
 }
 
 ::-webkit-scrollbar {
