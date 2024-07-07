@@ -168,7 +168,7 @@ const showCode = (item) => {
         cursor: pointer;
 
         &-text {
-            margin-left: 0.625rem;
+            margin-left: 10px;
         }
     }
 }
@@ -186,11 +186,7 @@ const showCode = (item) => {
         padding-top: 10px;
         box-sizing: border-box;
         font-weight: 550;
-
-        .menu {
-            min-width: 90px;
-            width: 15rem;
-        }
+        width: 240px;
     }
 }
 

@@ -6,7 +6,9 @@
 
 - 注: 先点星！先点星！先点星！重要的事情说三遍。
 
-- 预览  https://www.threelab.cn/three-cesium-examples/public/index.html
+- github预览 http://z2586300277.github.io/three-cesium-examples/public/index.html
+
+- 官网预览  https://www.threelab.cn/three-cesium-examples/public/index.html
 
 - 加入开发者社区 - 获取知识的同时不忘分享 - fork 此模板提交你自己的案例
  

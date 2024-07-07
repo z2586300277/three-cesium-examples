@@ -3,7 +3,18 @@ import vue from '@vitejs/plugin-vue'
 
 export default defineConfig({
 
-  plugins: [vue()],
+  plugins: [
+
+    {
+      transformIndexHtml: html => html.replace(
+        /<head>/,
+        `<head><script type="module" src="/three-cesium-examples/public/config/config.js"></script>`
+      )
+    },
+    
+    vue()
+
+  ],
 
   define: {
 
