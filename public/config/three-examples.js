@@ -1,5 +1,23 @@
 export default [
     {
+        pid: '基础案例',
+        name: '基础案例',
+        children: [
+            {
+                id: 'gradientTriangle',
+                name: '渐变三角形',
+                author: 'giser2017',
+                codeUrl: '/three-cesium-examples/public/threeExamples/gradientTriangle.js',
+                image: '/three-cesium-examples/public/threeExamples/gradientTriangle.png',
+                meta: {
+                    title: '渐变三角形',
+                    keywords: 'three.js,渐变三角形',
+                    description: '使用three.js渐变三角形'
+                }
+            }
+        ]
+    },
+    {
         pid: '着色器',
         name: 'shader',
         children: [

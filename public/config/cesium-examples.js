@@ -6,7 +6,7 @@ export default [
             {
                 id: 'baiduLayer',
                 name: '百度图层',
-                author: 'AivoGenX',
+                author: 'giser2017',
                 codeUrl: '/three-cesium-examples/public/cesiumExamples/baiduLayer.js',
                 image: '/three-cesium-examples/public/cesiumExamples/baiduLayer.jpg',
                 meta: {
