@@ -1,9 +1,9 @@
 <template>
     <div class="main">
         <div class="top">
-            <div class="top-title" @click="openUrl('github')">
-                <img class="logo" src="/site.png" alt="logo" width="36px" height="36px">
-                <div class="top-title-text">3D</div>
+            <div class="top-title" @click="openUrl('web')">
+                <img class="logo" src="/files/site/logo.png" alt="logo" width="36px" height="36px">
+                <div class="top-title-text">三界® THREELAB</div>
             </div>
             <el-menu class="menu" style="border: none;" :default-active="currentNavigationName" mode="horizontal"
                 :ellipsis="false" active-text-color="#fff" text-color="#fff" :default-openeds="[currentNavigationName]">
@@ -11,7 +11,13 @@
                     @click="goNavigation(item)">
                     {{ item.name }}
                 </el-menu-item>
+                <div class="gitLink">
+                    源码
+                    <img @click="openUrl('gitee')" src="/files/site/gitee.png" alt="logo" width="36px" height="36px">
+                    <img @click="openUrl('github')" src="/files/site/github.png" alt="logo" width="36px" height="36px">
+                </div>
             </el-menu>
+
         </div>
         <div class="center">
             <div class="nav">
@@ -26,9 +32,12 @@
             </div>
             <div class="examples">
                 <div class="examples-item" v-for="i, k in data.examples_list">
-                    <div class="box" @click="showCode(i)">
-                        <div class="image"><img :src="i.image" /></div>
-                        <div class="author">作者</div>
+                    <div class="box">
+                        <div class="image" @click="showCode(i)"><img :src="i.image" /></div>
+                        <div class="author" @click="openAuthor(i)">
+                            <img :src="getAuthors(i.author).icon" width="16px" height="16px">
+                            <span> - {{ getAuthors(i.author).name }}</span>
+                        </div>
                         <div class="text">{{ i.name }}</div>
                     </div>
                 </div>
@@ -40,6 +49,20 @@
 <script setup>
 import { useRouter } from 'vue-router';
 import { reactive } from 'vue';
+
+function getAuthors(id) {
+
+    return window.THREE_CESIUM_AUTHORS.find(i => i.id === id) || {}
+
+}
+
+function openAuthor(item) {
+
+    const author = getAuthors(item.author)
+
+    window.open(author.github)
+
+}
 
 const router = useRouter();
 
@@ -53,13 +76,7 @@ const data = reactive({
 
 })
 
-const navigation_list = [
-
-    { name: 'Three.js案例', examples: threeExamples },
-
-    { name: 'Cesium.js案例', examples: cesiumExamples },
-
-]
+const navigation_list = window.THREE_CESIUM_NAVIGATION
 
 let currentNavigationName = localStorage.getItem('navigation') || navigation_list[0].name
 
@@ -133,8 +150,8 @@ const showCode = (item) => {
     width: 100vw;
     height: 70px;
     box-sizing: border-box;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 40px;
+    padding-right: 40px;
     background-color: #071228;
     display: flex;
     justify-content: space-between;
@@ -182,7 +199,7 @@ const showCode = (item) => {
 }
 
 .examples {
-    padding:20px;
+    padding: 20px;
     box-sizing: border-box;
     width: 100%;
     display: grid;
@@ -200,7 +217,7 @@ const showCode = (item) => {
         align-items: center;
 
         .box {
-            padding:20px 8px 8px 8px;
+            padding: 20px 8px 8px 8px;
             box-sizing: border-box;
             width: 230px;
             height: 270px;
@@ -222,25 +239,45 @@ const showCode = (item) => {
                 justify-content: center;
                 align-items: center;
                 border-radius: 3px;
-            }
 
-            img {
-                border-radius: 3px;
-                width: 190px;
-                height: 190px;
+                img {
+                    border-radius: 3px;
+                    width: 190px;
+                    height: 190px;
 
-                &:hover {
-                    transform: scale(1.8);
-                    transition: all 0.5s;
+                    &:hover {
+                        transform: scale(1.8);
+                        transition: all 0.5s;
+                    }
                 }
             }
         }
     }
 }
 
+.gitLink {
+    height: 100%;
+    width: 120px;
+    margin-left: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    img {
+        cursor: pointer;
+    }
+}
+
 .author {
     font-size: 13px;
-    transition: all 0.5s;
+    transition: all 0.3s;
+    display: flex;
+    align-items: center;
+
+    span {
+        margin-left: 8px;
+    }
+
     &:hover {
         color: #71a5ee;
     }

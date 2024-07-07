@@ -1,4 +1,4 @@
-var threeExamples = [
+export default [
     {
         pid: '着色器',
         name: 'shader',
@@ -6,6 +6,7 @@ var threeExamples = [
             {
                 id: 'fenceShader',
                 name: '围栏着色器',
+                author: 'z2586300277',
                 codeUrl: '/three-cesium-examples/public/threeExamples/fenceShader.js',
                 image: '/three-cesium-examples/public/threeExamples/fenceShader.jpg',
                 meta: {

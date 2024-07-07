@@ -1,4 +1,4 @@
-var cesiumExamples = [
+export default [
     {
         pid: 'layer',
         name: '图层',
@@ -6,6 +6,7 @@ var cesiumExamples = [
             {
                 id: 'baiduLayer',
                 name: '百度图层',
+                author: 'AivoGenX',
                 codeUrl: '/three-cesium-examples/public/cesiumExamples/baiduLayer.js',
                 image: '/three-cesium-examples/public/cesiumExamples/baiduLayer.jpg',
                 meta: {
@@ -21,7 +22,7 @@ var cesiumExamples = [
         pid: 'function',
         name: '功能',
         children: [
- 
+
         ]
     }
 ]
