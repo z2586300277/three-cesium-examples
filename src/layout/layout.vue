@@ -2,25 +2,40 @@
     <router-view />
     <div v-show="isShow">
         <div class="info">
-            <div class="text"> - 加入社区 </div>
-            <div class="text"> - QQ 2586300277</div>
+            <div class="text author" v-if="authorInfo.value" @click="openAuthor(authorInfo.value.github)">
+                作者 - <img :src="authorInfo.value.icon" width="16px" height="16px">{{ authorInfo.value.name }}
+            </div>
             <div class="flexAuthor">
-                <img src="/site.png" alt="logo" width="20px" height="20px"> &nbsp;
-                <el-link class="text" @click="openUrl('author')">@优雅永不过时</el-link>
+                <img src="/files/site/logo.png" alt="logo" width="20px" height="20px"> &nbsp;
+                <el-link class="text" @click="openUrl('web')">加入社区-THREELAB</el-link>
             </div>
         </div>
     </div>
 </template>
 
 <script setup>
-import { ref } from 'vue'
+import { ref, onMounted, reactive } from 'vue'
+import { useRoute } from 'vue-router'
+
+const route = useRoute()
+
+const authorInfo = reactive({ value: null })
+
+const openAuthor = (url) => window.open(url)
+
+onMounted(() => {
+
+    if (route.name === 'codeMirror') {
+
+        authorInfo.value = window.NOW_AUTHOR_INFO
+
+    }
+
+})
 
 const isShow = ref(!localStorage.getItem('hide_author_info'))
 
 const openUrl = (k) => window.open(__SITE_URLS__[k])
-
-/* rem 配置 */
-window.addEventListener('resize', () => document.documentElement.style.fontSize = document.documentElement.clientWidth / 1920 * 16 + 'px')
 
 </script>
 
@@ -36,10 +51,21 @@ window.addEventListener('resize', () => document.documentElement.style.fontSize 
     display: flex;
     flex-direction: column;
 
+    .author {
+        display: flex;
+        align-items: center;
+    }
+
     .text {
         color: #cfd3dc;
         font-weight: bold;
         font-size: 12px;
+        transition: all 0.3s;
+        cursor: pointer;
+
+        &:hover {
+            color: #4ec4e4;
+        }
     }
 
     .flexAuthor {

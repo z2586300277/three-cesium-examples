@@ -7,7 +7,7 @@ import { ref } from 'vue'
 
 const iframeParent = ref(null)
 
-const getScript = (v, t) => (t === 'Cesium.js案例' ?
+const getScript = (v, t) => (t === 'Cesium.js案例[1.119]' ?
 
     `<link rel="stylesheet" href="/three-cesium-examples/public/cesium/style.css">
      <script type="importmap">
@@ -18,7 +18,7 @@ const getScript = (v, t) => (t === 'Cesium.js案例' ?
             }
         }
      <\/script>`
-    : 
+    :
     `<script type="importmap">
         {
             "imports": {

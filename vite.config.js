@@ -3,15 +3,28 @@ import vue from '@vitejs/plugin-vue'
 
 export default defineConfig({
 
-  plugins: [vue()],
+  plugins: [
+
+    {
+      transformIndexHtml: html => html.replace(
+        /<head>/,
+        `<head><script type="module" src="/three-cesium-examples/public/config/config.js"></script>`
+      )
+    },
+    
+    vue()
+
+  ],
 
   define: {
 
     __SITE_URLS__: {
 
-      github: 'https://z2586300277/three-cesium-examples',
+      gitee: 'https://gitee.com/giser2017/three-cesium-examples',
 
-      author: 'https://github.com/z2586300277',
+      github: 'https://github.com/z2586300277/three-cesium-examples',
+
+      web: "http://threelab.cn/"
 
     },
 

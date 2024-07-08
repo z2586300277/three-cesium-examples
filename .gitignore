@@ -23,3 +23,7 @@ cache
 *.sln
 *.sw?
 *.yaml
+
+package-lock.json
+yarn.lock
+pnpm-lock.yaml

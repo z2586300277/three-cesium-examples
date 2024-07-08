@@ -38,13 +38,7 @@ const changeExpand = v => {
 
 }
 
-const list = [
-
-   { name: 'Three.js案例', examples: threeExamples },
-
-   { name: 'Cesium.js案例', examples: cesiumExamples },
-
-]
+const list = window.THREE_CESIUM_NAVIGATION
 
 let currentExample = list.find(item => item.name === query.navigation)?.examples.find(item => item.pid === query.classify)?.children.find(i => i.id === query.id)
 
@@ -55,6 +49,14 @@ if (!currentExample) {
    currentExample = randomExample1.children[Math.round(Math.random() * (randomExample1.children.length - 1))]
 
 }
+
+function getAuthors(id) {
+
+   return window.THREE_CESIUM_AUTHORS.find(i => i.id === id) || {}
+
+}
+
+window.NOW_AUTHOR_INFO = getAuthors(currentExample.author)
 
 if (currentExample?.meta) setMetaContent(currentExample.meta)
 
