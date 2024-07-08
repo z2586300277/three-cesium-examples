@@ -36,7 +36,7 @@ export default [
             {
                 id: 'cityMoveLight',
                 name: '智慧城市扫光',
-                author: 'KallkaGo',
+                author: 'z2586300277',
                 codeUrl: '/three-cesium-examples/public/threeExamples/shader/cityMoveLight.js',
                 image: '/three-cesium-examples/public/threeExamples/shader/cityMoveLight.jpg',
                 meta: {
@@ -46,5 +46,23 @@ export default [
                 }
             }
         ]
-    }
+    },
+    {
+        pid: 'openSource',
+        name: '开源作品',
+        children: [
+            {
+                id: 'kallkago_su7',
+                name: 'su7 demo',
+                author: 'KallkaGo',
+                githubUrl: 'https://github.com/KallkaGo/su7-demo',
+                image: '/three-cesium-examples/public/threeExamples/openSource/kallkago_su7.jpg',
+                meta: {
+                    title: 'kallkago su7',
+                    keywords: 'three.js,kallkago su7',
+                    description: 'kallkago 使用three.js开发的su7'
+                }
+            }
+        ]
+    },
 ]
