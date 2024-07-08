@@ -16,6 +16,19 @@ export default [
                 }
             },
             {
+                id: 'coordLayer',
+                name: '坐标参考',
+                author: 'giser2017',
+                codeUrl: '/three-cesium-examples/public/cesiumExamples/layer/coordLayer.js',
+                image: '/three-cesium-examples/public/cesiumExamples/layer/coord.png',
+                meta: {
+                    title: '坐标参考',
+                    keywords: 'cesium.js,坐标参考',
+                    description: '坐标参考'
+                }
+            },
+
+            {
                 id: 'baiduLayer',
                 name: '百度图层',
                 author: 'giser2017',
