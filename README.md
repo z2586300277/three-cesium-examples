@@ -1,16 +1,41 @@
-# 说明
+## Three.js 和 Cesium.js 案例
 
-### - 人人奉献一点爱 - 让爱传递给更多的程序员 
+### 注: 先点星！先点星！先点星！重要的事情说三遍。
 
-#### 上传案例:将案例js放入到public目录下的cesiumExamples/threeExamples,然后在public/config目录对应的js录入的案例信息即可（不打包） 
+### 如果这些里面有案例帮助了您 - 我们不求回报 - 有意的话您可以提交您的作品 - 让爱传递给更多开发者
 
-- 注: 先点星！先点星！先点星！重要的事情说三遍。
+### fork仓库后 - 增加用户信息 - 上传您最自豪的作品 - 提交合并到主分支 - 爱心人士赞助后，将爱回馈作者
+
+1. 创作者可以在 public/config/author.js 录入你的开发者信息,然后你提交的案例关联上id 就会展示作者信息。
+
+2. 将案例js放入到public目录下的cesiumExamples/threeExamples 中的文件夹中 如threeExamples/basic中放入 test.js, test.jpg。
+
+3. 在config目录下 找到threeExamples 录入案例信息。
+
+4. 注: 为保证轻量化 图片资源使用 - https://yasuo.xunjiepdf.com/img/  自定义压缩至4k以内
+
+5. 涉及其他js 使用 可将js 放到 public/ js 目录  如 dat.gui
+
+```js
+{
+    id: '父级列表唯一id',
+    name: '名称',
+    author: '作者id',
+    codeUrl: '/three-cesium-examples/public/threeExamples/basic/test.js',
+    image: '/three-cesium-examples/public/threeExamples/basic/test.jpg',
+    meta: {
+        title: '此案例网站标题',
+        keywords: '搜索引擎关键字',
+        description: '此案例页面描述'
+    }
+}
+```
 
 - github预览 http://z2586300277.github.io/three-cesium-examples/public/index.html
 
 - 官网预览  https://www.threelab.cn/three-cesium-examples/public/index.html
 
-- 加入开发者社区 - 获取知识的同时不忘分享 - fork 此模板提交你自己的案例
+- 加入开发者社区 - 获取知识的同时不忘分享 - fork此模板提交你自己的案例
  
 - 开发者交流 QQ 2945853209- 交流群 131995948
 

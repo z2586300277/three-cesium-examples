@@ -1,14 +1,14 @@
 export default [
     {
-        pid: '基础案例',
+        pid: 'basic',
         name: '基础案例',
         children: [
             {
                 id: 'gradientTriangle',
                 name: '渐变三角形',
                 author: 'giser2017',
-                codeUrl: '/three-cesium-examples/public/threeExamples/gradientTriangle.js',
-                image: '/three-cesium-examples/public/threeExamples/gradientTriangle.png',
+                codeUrl: '/three-cesium-examples/public/threeExamples/basic/gradientTriangle.js',
+                image: '/three-cesium-examples/public/threeExamples/basic/gradientTriangle.jpg',
                 meta: {
                     title: '渐变三角形',
                     keywords: 'three.js,渐变三角形',
@@ -18,15 +18,15 @@ export default [
         ]
     },
     {
-        pid: '着色器',
-        name: 'shader',
+        pid: 'shader',
+        name: '着色器',
         children: [
             {
                 id: 'fenceShader',
                 name: '围栏着色器',
                 author: 'z2586300277',
-                codeUrl: '/three-cesium-examples/public/threeExamples/fenceShader.js',
-                image: '/three-cesium-examples/public/threeExamples/fenceShader.jpg',
+                codeUrl: '/three-cesium-examples/public/threeExamples/shader/fenceShader.js',
+                image: '/three-cesium-examples/public/threeExamples/shader/fenceShader.jpg',
                 meta: {
                     title: '围栏着色器',
                     keywords: 'three.js,围栏着色器',
