@@ -1,10 +1,14 @@
 ## Three.js 和 Cesium.js 案例
 
-### 注: 先点星！先点星！先点星！重要的事情说三遍。
+- github预览 http://z2586300277.github.io/three-cesium-examples/public/index.html
 
-### 如果这些里面有案例帮助了您 - 我们不求回报 - 有意的话您可以提交您的作品 - 让爱传递给更多开发者
+- 官网预览  https://www.threelab.cn/three-cesium-examples/public/index.html
 
-### fork仓库后 - 增加用户信息 - 上传您最自豪的作品 - 提交合并到主分支 - 爱心人士赞助后，将爱回馈作者
+#### 注: 先点星！先点星！先点星！重要的事情说三遍。
+
+#### 如果这些里面有案例帮助了您 - 我们不求回报 - 有意的话您可以提交您的作品 - 让爱传递给更多开发者
+
+#### fork仓库后 - 增加用户信息 - 上传您最自豪的作品 - 提交合并到主分支 - 爱心人士赞助后，将爱回馈作者
 
 #### 开发 如果只修改了 public 里面得内容，没修改src 内容则不需要打包, 如果需要打包手动删除 public/assets 目录
 
@@ -34,10 +38,6 @@
     }
 }
 ```
-
-- github预览 http://z2586300277.github.io/three-cesium-examples/public/index.html
-
-- 官网预览  https://www.threelab.cn/three-cesium-examples/public/index.html
 
 - 加入开发者社区 - 获取知识的同时不忘分享 - fork此模板提交你自己的案例
  
