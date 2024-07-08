@@ -12,6 +12,21 @@ export default [
         name: 'giser2017',
         github: 'https://gitee.com/giser2017',
         icon: '/three-cesium-examples/public/files/author/AivoGenX.png'
+    },
+
+    {
+        id: 'flowers-10',
+        name: 'flowers-10',
+        github: 'https://github.com/flowers-10',
+        icon: '/three-cesium-examples/public/files/author/flowers-10.jpg'
+    },
+
+    
+    {
+        id: 'KallkaGo',
+        name: 'KallkaGo',
+        github: 'https://github.com/KallkaGo',
+        icon: '/three-cesium-examples/public/files/author/KallkaGo.jpg'
     }
 
 ]

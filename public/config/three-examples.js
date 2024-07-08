@@ -24,7 +24,7 @@ export default [
             {
                 id: 'fenceShader',
                 name: '围栏着色器',
-                author: 'z2586300277',
+                author: 'flowers-10',
                 codeUrl: '/three-cesium-examples/public/threeExamples/shader/fenceShader.js',
                 image: '/three-cesium-examples/public/threeExamples/shader/fenceShader.jpg',
                 meta: {
@@ -36,7 +36,7 @@ export default [
             {
                 id: 'cityMoveLight',
                 name: '智慧城市扫光',
-                author: 'z2586300277',
+                author: 'KallkaGo',
                 codeUrl: '/three-cesium-examples/public/threeExamples/shader/cityMoveLight.js',
                 image: '/three-cesium-examples/public/threeExamples/shader/cityMoveLight.jpg',
                 meta: {
