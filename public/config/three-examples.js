@@ -44,6 +44,18 @@ export default [
                     keywords: 'three.js,智慧城市扫光',
                     description: '使用three.智慧城市扫光'
                 }
+            },
+            {
+                id: 'videoShader',
+                name: '视频着色器',
+                author: 'z2586300277',
+                codeUrl: '/three-cesium-examples/public/threeExamples/shader/videoShader.js',
+                image: '/three-cesium-examples/public/threeExamples/shader/videoShader.jpg',
+                meta: {
+                    title: '视频着色器',
+                    keywords: 'three.js,视频着色器',
+                    description: '使用three.js视频着色器'
+                }
             }
         ]
     },
