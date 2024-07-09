@@ -30,6 +30,6 @@ export default [
         id: 'xzw199509',
         name: 'xzw199509',
         github: 'https://github.com/xzw199509',
-        icon: '/three-cesium-examples/public/files/author/xzw199509.jpg'
+        icon: '/three-cesium-examples/public/files/author/xzw199509.png'
     }
 ]
