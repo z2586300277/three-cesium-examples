@@ -80,6 +80,18 @@ export default [
                     keywords: 'three.js,蒸汽波太阳',
                     description: '使用three.js蒸汽波太阳'
                 }
+            },
+            {
+                id: 'cobwebBox',
+                name: '蛛网箱子',
+                author: 'xzw199509',
+                codeUrl: '/three-cesium-examples/public/threeExamples/shader/cobwebBox.js',
+                image: '/three-cesium-examples/public/threeExamples/shader/cobwebBox.jpg',
+                meta: {
+                    title: '蛛网箱子',
+                    keywords: 'three.js,蛛网箱子',
+                    description: '使用three.js蛛网箱子'
+                }
             }
         ]
     },
