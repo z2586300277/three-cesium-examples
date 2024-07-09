@@ -14,6 +14,18 @@ export default [
                     keywords: 'three.js,渐变三角形',
                     description: '使用three.js渐变三角形'
                 }
+            },
+            {
+                id: 'skyAndEnv',
+                name: '天空盒',
+                author: 'z2586300277',
+                codeUrl: '/three-cesium-examples/public/threeExamples/basic/skyAndEnv.js',
+                image: '/three-cesium-examples/public/threeExamples/basic/skyAndEnv.jpg',
+                meta: {
+                    title: '天空盒',
+                    keywords: 'three.js,天空盒',
+                    description: '使用three.js天空盒'
+                }
             }
         ]
     },
