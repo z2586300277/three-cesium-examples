@@ -68,6 +68,18 @@ export default [
                     keywords: 'three.js,视频着色器',
                     description: '使用three.js视频着色器'
                 }
+            },
+            {
+                id: 'steamWaveSun',
+                name: '蒸汽波太阳',
+                author: 'xzw199509',
+                codeUrl: '/three-cesium-examples/public/threeExamples/shader/steamWaveSun.js',
+                image: '/three-cesium-examples/public/threeExamples/shader/steamWaveSun.jpg',
+                meta: {
+                    title: '蒸汽波太阳',
+                    keywords: 'three.js,蒸汽波太阳',
+                    description: '使用three.js蒸汽波太阳'
+                }
             }
         ]
     },

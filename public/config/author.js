@@ -20,13 +20,16 @@ export default [
         github: 'https://github.com/flowers-10',
         icon: '/three-cesium-examples/public/files/author/flowers-10.jpg'
     },
-
-    
     {
         id: 'KallkaGo',
         name: 'KallkaGo',
         github: 'https://github.com/KallkaGo',
         icon: '/three-cesium-examples/public/files/author/KallkaGo.jpg'
+    },
+    {
+        id: 'xzw199509',
+        name: 'xzw199509',
+        github: 'https://github.com/xzw199509',
+        icon: '/three-cesium-examples/public/files/author/xzw199509.jpg'
     }
-
 ]
