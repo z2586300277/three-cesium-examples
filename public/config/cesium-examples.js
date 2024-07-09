@@ -1,7 +1,7 @@
 export default [
     {
         pid: 'layer',
-        name: '图层',
+        name: '在线地图',
         children: [
             {
                 id: 'defaultLayer',
@@ -100,6 +100,60 @@ export default [
                     description: 'cesium 地形'
                 }
             }
+        ]
+    },
+    {
+        pid: 'offline',
+        name: '离线地图',
+        children: [
+            {
+                id: 'offlineBlue',
+                name: '蓝色',
+                author: 'giser2017',
+                codeUrl: '/three-cesium-examples/public/cesiumExamples/offline/blue.js',
+                image: '/three-cesium-examples/public/cesiumExamples/offline/blue.png',
+                meta: {
+                    title: '蓝色',
+                    keywords: 'cesium.js,蓝色',
+                    description: '蓝色'
+                }
+            }, {
+                id: 'day',
+                name: '夜间',
+                author: 'giser2017',
+                codeUrl: '/three-cesium-examples/public/cesiumExamples/offline/day.js',
+                image: '/three-cesium-examples/public/cesiumExamples/offline/day.png',
+                meta: {
+                    title: '夜间',
+                    keywords: 'cesium.js,夜间',
+                    description: '夜间'
+                }
+            }
+            , {
+                id: 'img',
+                name: '影像',
+                author: 'giser2017',
+                codeUrl: '/three-cesium-examples/public/cesiumExamples/offline/img.js',
+                image: '/three-cesium-examples/public/cesiumExamples/offline/img.png',
+                meta: {
+                    title: '影像',
+                    keywords: 'cesium.js,影像',
+                    description: '影像'
+                }
+            }
+            , {
+                id: 'night',
+                name: '夜间',
+                author: 'giser2017',
+                codeUrl: '/three-cesium-examples/public/cesiumExamples/offline/night.js',
+                image: '/three-cesium-examples/public/cesiumExamples/offline/night.png',
+                meta: {
+                    title: '影像',
+                    keywords: 'cesium.js,影像',
+                    description: '夜间'
+                }
+            }
+
         ]
     },
     {
