@@ -38,7 +38,19 @@ export default [
                     keywords: 'three.js,GSAP动画',
                     description: '使用three.js GSAP动画'
                 }
-            }
+            },
+            {
+                id: 'cssElement',
+                name: 'CSS元素',
+                author: 'z2586300277',
+                codeUrl: '/three-cesium-examples/public/threeExamples/basic/cssElement.js',
+                image: '/three-cesium-examples/public/threeExamples/basic/cssElement.jpg',
+                meta: {
+                    title: 'CSS元素',
+                    keywords: 'three.js,CSS元素',
+                    description: '使用three.js CSS元素'
+                }
+            },
         ]
     },
     {
@@ -115,6 +127,35 @@ export default [
                     title: '音乐可视化',
                     keywords: 'three.js,音乐可视化',
                     description: '使用three.js音乐可视化'
+                }
+            }, {
+                id: 'dissolve',
+                name: '溶解',
+                author: 'KallkaGo',
+                codeUrl: '/three-cesium-examples/public/threeExamples/shader/dissolve.js',
+                image: '/three-cesium-examples/public/threeExamples/shader/dissolve.png',
+                meta: {
+                    title: '溶解',
+                    keywords: 'three.js,溶解',
+                    description: '溶解特效'
+                }
+            }
+        ]
+    },
+    {
+        pid: 'effectComposer',
+        name: '后期处理',
+        children: [
+            {
+                id: 'selectBloomPass',
+                name: '辉光-postprocessing',
+                author: 'z2586300277',
+                codeUrl: '/three-cesium-examples/public/threeExamples/effectComposer/selectBloomPass.js',
+                image: '/three-cesium-examples/public/threeExamples/effectComposer/selectBloomPass.jpg',
+                meta: {
+                    title: '辉光通道',
+                    keywords: 'three.js,辉光通道',
+                    description: '使用three.js辉光通道'
                 }
             }
         ]
