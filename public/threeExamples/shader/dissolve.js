@@ -21,11 +21,11 @@ const textureLoader = new THREE.TextureLoader()
 
 
 /* Tex */
-const dissolveTex = textureLoader.load('/three-cesium-examples/public/threeExamples/assets/dissolveTex.png')
+const dissolveTex = textureLoader.load('/three-cesium-examples/public/threeExamples/shader/dissolve/dissolveTex.png')
 dissolveTex.colorSpace = THREE.SRGBColorSpace
-const dissolveRampTex = textureLoader.load('/three-cesium-examples/public/threeExamples/assets/dissolveRamp.png')
+const dissolveRampTex = textureLoader.load('/three-cesium-examples/public/threeExamples/shader/dissolve/dissolveRamp.png')
 dissolveRampTex.colorSpace = THREE.SRGBColorSpace
-const diffuseTex = textureLoader.load('/three-cesium-examples/public/threeExamples/assets/diffuse.png')
+const diffuseTex = textureLoader.load('/three-cesium-examples/public/threeExamples/shader/dissolve/diffuse.png')
 diffuseTex.colorSpace = THREE.SRGBColorSpace
 
 /**
