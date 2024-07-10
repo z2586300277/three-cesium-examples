@@ -38,7 +38,19 @@ export default [
                     keywords: 'three.js,GSAP动画',
                     description: '使用three.js GSAP动画'
                 }
-            }
+            },
+            {
+                id: 'cssElement',
+                name: 'CSS元素',
+                author: 'z2586300277',
+                codeUrl: '/three-cesium-examples/public/threeExamples/basic/cssElement.js',
+                image: '/three-cesium-examples/public/threeExamples/basic/cssElement.jpg',
+                meta: {
+                    title: 'CSS元素',
+                    keywords: 'three.js,CSS元素',
+                    description: '使用three.js CSS元素'
+                }
+            },
         ]
     },
     {
