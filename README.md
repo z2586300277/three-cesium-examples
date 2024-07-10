@@ -8,28 +8,26 @@
 
 #### - 如果这些里面有案例帮助了您 - 我们不求回报 - 有意的话您可以提交您的作品 - 让爱传递给更多开发者
 
-#### - fork仓库后 - 增加用户信息 - 上传您最自豪的作品 - 提交合并到主分支 - 爱心人士赞助后，将爱回馈作者
+#### - fork仓库后 - 增加用户信息 - 上传您最自豪的作品 - 提交合并到主分支 - 爱心人士赞助后，将爱回馈作者 （开发或者合并 基于dev分支）
 
 #### - 开发 如果只修改了 public 里面得内容，没修改src 内容则不需要打包, 如果需要打包手动删除 public/assets 目录
 
 1. 创作者可以在 public/config/author.js 录入你的开发者信息,然后你提交的案例关联上id 就会展示作者信息。
 
-2. 将案例js放入到public目录下的cesiumExamples/threeExamples 中的文件夹中 如threeExamples/basic中放入 test.js, test.jpg。
+2. 将案例js放入到public目录下的cesiumExamples/threeExamples 中的文件夹中 如threeExamples/basic中放入 test.js, test.jpg, 或者目录test[test.js, test.jpg]
 
-3. 在config目录下 找到threeExamples 录入案例信息。
+3. 在config目录下 找到threeExamples 录入案例信息, 内部的资源指向与你的 js 和 image 资源路径对应
 
-4. 注: 为保证轻量化 图片资源使用 - https://yasuo.xunjiepdf.com/img/  _(自定义压缩至4k以内)_
+4. 注: 为保证轻量化 案例展示图片资源使用 - https://yasuo.xunjiepdf.com/img/  _(自定义压缩至4k以内)_
 
-5. 涉及其他js 使用 可将js 放到 public/ js 目录  如 dat.gui,  js 注入方式 config.js 可见
+5. 涉及其他依赖js,可将module.js 放到public/js目录  如 dat.gui,gasp ,注入方式 config.js 可见
 
-6. 涉及到资源文件可创建到 public/ files 文件夹下 能压缩尽量压缩较小
+6. 音视频模型存储等一些可以公用的资源 public/files 文件夹下 为了保证存储库大小尽量缩小到5M以内
 
 - assets 打包后目录
-- cesium cesium官方源码
 - config  js注入和配置案例信息目录
-- files 音视频模型图片等目录
-- js dat.gui gsap 等目录
-- three three官方源码
+- files 音视频模型存储等一些可以公用的资源
+- js dat.gui gsap three官方源码 cesium官方源码
 - threeExamples three.js 案例代码目录
 - cesiumExamples cesium 案例代码目录
 
