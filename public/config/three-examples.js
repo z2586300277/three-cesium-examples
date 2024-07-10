@@ -92,6 +92,18 @@ export default [
                     keywords: 'three.js,蛛网箱子',
                     description: '使用three.js蛛网箱子'
                 }
+            },
+            {
+                id: 'audioSolutions',
+                name: '音乐可视化',
+                author: 'flowers-10',
+                codeUrl: '/three-cesium-examples/public/threeExamples/shader/audioSolutions.js',
+                image: '/three-cesium-examples/public/threeExamples/shader/audioSolutions.png',
+                meta: {
+                    title: '音乐可视化',
+                    keywords: 'three.js,音乐可视化',
+                    description: '使用three.js音乐可视化'
+                }
             }
         ]
     },
