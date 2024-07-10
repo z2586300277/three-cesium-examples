@@ -116,6 +116,17 @@ export default [
                     keywords: 'three.js,音乐可视化',
                     description: '使用three.js音乐可视化'
                 }
+            }, {
+                id: 'dissolve',
+                name: '溶解',
+                author: 'KallkaGo',
+                codeUrl: '/three-cesium-examples/public/threeExamples/shader/dissolve.js',
+                image: '/three-cesium-examples/public/threeExamples/shader/dissolve.png',
+                meta: {
+                    title: '溶解',
+                    keywords: 'three.js,溶解',
+                    description: '溶解特效'
+                }
             }
         ]
     },
