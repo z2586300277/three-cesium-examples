@@ -1,5 +1,4 @@
 export default [
-
     {
         id: 'z2586300277',
         name: '优雅永不过时',

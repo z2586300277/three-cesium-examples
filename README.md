@@ -1,6 +1,6 @@
 ## Three.js 和 Cesium.js 案例
 
-- github预览 http://z2586300277.github.io/three-cesium-examples/public/index.html
+- dev分支更新后 github实时预览 http://z2586300277.github.io/three-cesium-examples/public/index.html
 
 - 官网预览  https://www.threelab.cn/three-cesium-examples/public/index.html
 
@@ -20,9 +20,18 @@
 
 4. 注: 为保证轻量化 图片资源使用 - https://yasuo.xunjiepdf.com/img/  _(自定义压缩至4k以内)_
 
-5. 涉及其他js 使用 可将js 放到 public/ js 目录  如 dat.gui
+5. 涉及其他js 使用 可将js 放到 public/ js 目录  如 dat.gui,  js 注入方式 config.js 可见
 
 6. 涉及到资源文件可创建到 public/ files 文件夹下 能压缩尽量压缩较小
+
+- assets 打包后目录
+- cesium cesium官方源码
+- config  js注入和配置案例信息目录
+- files 音视频模型图片等目录
+- js dat.gui gsap 等目录
+- three three官方源码
+- threeExamples three.js 案例代码目录
+- cesiumExamples cesium 案例代码目录
 
 ```js
 {

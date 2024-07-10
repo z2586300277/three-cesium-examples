@@ -15,11 +15,11 @@ window.THREE_CESIUM_AUTHORS = threeCesiumAuthors
 /* 依赖注入 */
 window.GET_SCRIPT = (v, t) => (t === 'Cesium.js案例[1.119]' ?
 
-`<link rel="stylesheet" href="/three-cesium-examples/public/cesium/style.css">
+`<link rel="stylesheet" href="/three-cesium-examples/public/js/cesium/style.css">
  <script type="importmap">
     {
         "imports": {
-            "cesium": "/three-cesium-examples/public/cesium/Cesium.js",
+            "cesium": "/three-cesium-examples/public/js/cesium/Cesium.js",
             "dat.gui": "/three-cesium-examples/public/js/dat.gui.module.js"
         }
     }
@@ -28,8 +28,8 @@ window.GET_SCRIPT = (v, t) => (t === 'Cesium.js案例[1.119]' ?
 `<script type="importmap">
     {
         "imports": {
-            "three": "/three-cesium-examples/public/three/three.module.min.js",
-            "three/examples/jsm/": "/three-cesium-examples/public/three/addons/",
+            "three": "/three-cesium-examples/public/js/three/three.module.min.js",
+            "three/examples/jsm/": "/three-cesium-examples/public/js/three/addons/",
             "gsap": "/three-cesium-examples/public/js/gsap/index.js",
             "dat.gui": "/three-cesium-examples/public/js/dat.gui.module.js"
         }
