@@ -43,13 +43,14 @@ const openUrl = (k) => window.open(__SITE_URLS__[k])
 .info {
     position: fixed;
     line-height: 20px;
+    right: 3px;
     bottom: 5px;
     z-index: 200;
     opacity: 0.9;
-    margin-right: 2px;
-    font-size: 11px;
+    font-size: 12px;
     display: flex;
     flex-direction: column;
+    align-items: flex-end;
 
     .author {
         display: flex;
@@ -59,7 +60,7 @@ const openUrl = (k) => window.open(__SITE_URLS__[k])
     .text {
         color: #cfd3dc;
         font-weight: bold;
-        font-size: 12px;
+        font-size: 13px;
         transition: all 0.3s;
         cursor: pointer;
 

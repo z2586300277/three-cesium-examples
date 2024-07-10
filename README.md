@@ -1,10 +1,16 @@
 ## Three.js 和 Cesium.js 案例
 
-### 注: 先点星！先点星！先点星！重要的事情说三遍。
+- dev分支更新后 github实时预览 http://z2586300277.github.io/three-cesium-examples/public/index.html
 
-### 如果这些里面有案例帮助了您 - 我们不求回报 - 有意的话您可以提交您的作品 - 让爱传递给更多开发者
+- 官网预览  https://www.threelab.cn/three-cesium-examples/public/index.html
 
-### fork仓库后 - 增加用户信息 - 上传您最自豪的作品 - 提交合并到主分支 - 爱心人士赞助后，将爱回馈作者
+#### - 注: 先点星！先点星！先点星！重要的事情说三遍。
+
+#### - 如果这些里面有案例帮助了您 - 我们不求回报 - 有意的话您可以提交您的作品 - 让爱传递给更多开发者
+
+#### - fork仓库后 - 增加用户信息 - 上传您最自豪的作品 - 提交合并到主分支 - 爱心人士赞助后，将爱回馈作者
+
+#### - 开发 如果只修改了 public 里面得内容，没修改src 内容则不需要打包, 如果需要打包手动删除 public/assets 目录
 
 1. 创作者可以在 public/config/author.js 录入你的开发者信息,然后你提交的案例关联上id 就会展示作者信息。
 
@@ -12,9 +18,20 @@
 
 3. 在config目录下 找到threeExamples 录入案例信息。
 
-4. 注: 为保证轻量化 图片资源使用 - https://yasuo.xunjiepdf.com/img/  自定义压缩至4k以内
+4. 注: 为保证轻量化 图片资源使用 - https://yasuo.xunjiepdf.com/img/  _(自定义压缩至4k以内)_
 
-5. 涉及其他js 使用 可将js 放到 public/ js 目录  如 dat.gui
+5. 涉及其他js 使用 可将js 放到 public/ js 目录  如 dat.gui,  js 注入方式 config.js 可见
+
+6. 涉及到资源文件可创建到 public/ files 文件夹下 能压缩尽量压缩较小
+
+- assets 打包后目录
+- cesium cesium官方源码
+- config  js注入和配置案例信息目录
+- files 音视频模型图片等目录
+- js dat.gui gsap 等目录
+- three three官方源码
+- threeExamples three.js 案例代码目录
+- cesiumExamples cesium 案例代码目录
 
 ```js
 {
@@ -30,10 +47,6 @@
     }
 }
 ```
-
-- github预览 http://z2586300277.github.io/three-cesium-examples/public/index.html
-
-- 官网预览  https://www.threelab.cn/three-cesium-examples/public/index.html
 
 - 加入开发者社区 - 获取知识的同时不忘分享 - fork此模板提交你自己的案例
  

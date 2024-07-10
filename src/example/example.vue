@@ -124,6 +124,8 @@ data.examples_list = examples_list
 
 const showCode = (item) => {
 
+    if(item.githubUrl) return window.open(item.githubUrl)
+
     const path = router.resolve({
 
         name: 'codeMirror',
