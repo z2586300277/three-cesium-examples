@@ -30,6 +30,7 @@ window.GET_SCRIPT = (v, t) => (t === 'Cesium.js案例[1.119]' ?
         "imports": {
             "three": "/three-cesium-examples/public/js/three/three.module.min.js",
             "three/examples/jsm/": "/three-cesium-examples/public/js/three/addons/",
+            "postprocessing": "/three-cesium-examples/public/js/postprocessing.js",
             "gsap": "/three-cesium-examples/public/js/gsap/index.js",
             "dat.gui": "/three-cesium-examples/public/js/dat.gui.module.js"
         }

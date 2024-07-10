@@ -131,6 +131,24 @@ export default [
         ]
     },
     {
+        pid: 'effectComposer',
+        name: '后期处理',
+        children: [
+            {
+                id: 'selectBloomPass',
+                name: '辉光-postprocessing',
+                author: 'z2586300277',
+                codeUrl: '/three-cesium-examples/public/threeExamples/effectComposer/selectBloomPass.js',
+                image: '/three-cesium-examples/public/threeExamples/effectComposer/selectBloomPass.jpg',
+                meta: {
+                    title: '辉光通道',
+                    keywords: 'three.js,辉光通道',
+                    description: '使用three.js辉光通道'
+                }
+            }
+        ]
+    },
+    {
         pid: 'openSource',
         name: '开源作品',
         children: [

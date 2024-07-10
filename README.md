@@ -4,6 +4,8 @@
 
 - 官网预览  https://www.threelab.cn/three-cesium-examples/public/index.html
 
+- 运行框架  安装推荐使用 npm, pnpm, 使用 yarn 安装依赖可能会出现 vue-codemirror 的关联依赖codemirror安装不上,可自行手动安装
+
 #### - 注: 先点星！先点星！先点星！重要的事情说三遍。
 
 #### - 如果这些里面有案例帮助了您 - 我们不求回报 - 有意的话您可以提交您的作品 - 让爱传递给更多开发者
