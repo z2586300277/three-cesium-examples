@@ -26,6 +26,18 @@ export default [
                     keywords: 'three.js,天空盒',
                     description: '使用three.js天空盒'
                 }
+            },
+            {
+                id: 'gsapAnimate',
+                name: 'GSAP动画',
+                author: 'z2586300277',
+                codeUrl: '/three-cesium-examples/public/threeExamples/basic/gsapAnimate.js',
+                image: '/three-cesium-examples/public/threeExamples/basic/gsapAnimate.jpg',
+                meta: {
+                    title: 'GSAP动画',
+                    keywords: 'three.js,GSAP动画',
+                    description: '使用three.js GSAP动画'
+                }
             }
         ]
     },
