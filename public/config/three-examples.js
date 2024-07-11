@@ -163,6 +163,18 @@ export default [
                     keywords: 'three.js,溶解',
                     description: '溶解特效'
                 }
+            },
+            {
+                id: 'changeShaderToy',
+                name:'切换ShaderToy',
+                author:'z2586300277',
+                codeUrl: '/three-cesium-examples/public/threeExamples/shader/changeShaderToy.js',
+                image: '/three-cesium-examples/public/threeExamples/shader/changeShaderToy.jpg',
+                meta: {
+                    title: '切换ShaderToy',
+                    keywords: 'three.js,切换ShaderToy',
+                    description: '切换ShaderToy'
+                }
             }
         ]
     },
