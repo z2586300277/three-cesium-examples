@@ -51,6 +51,18 @@ export default [
                     description: '使用three.js CSS元素'
                 }
             },
+            {
+                id: 'curveAnimate',
+                name: '曲线动画',
+                author: 'z2586300277',
+                codeUrl: '/three-cesium-examples/public/threeExamples/basic/curveAnimate.js',
+                image: '/three-cesium-examples/public/threeExamples/basic/curveAnimate.jpg',
+                meta: {
+                    title: '曲线动画',
+                    keywords: 'three.js,曲线动画',
+                    description: '使用three.js曲线动画'
+                }
+            }
         ]
     },
     {
