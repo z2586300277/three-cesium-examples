@@ -30,5 +30,11 @@ export default [
         name: 'xzw199509',
         github: 'https://github.com/xzw199509',
         icon: '/three-cesium-examples/public/files/author/xzw199509.png'
+    },
+    {
+        id: 'nico',
+        name: 'nico',
+        github: 'https://github.com/Nicolas-zn',
+        icon: '/three-cesium-examples/public/files/author/nico.svg'
     }
 ]

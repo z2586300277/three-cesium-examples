@@ -51,12 +51,36 @@ export default [
                     description: '使用three.js CSS元素'
                 }
             },
+            {
+                id: 'curveAnimate',
+                name: '曲线动画',
+                author: 'z2586300277',
+                codeUrl: '/three-cesium-examples/public/threeExamples/basic/curveAnimate.js',
+                image: '/three-cesium-examples/public/threeExamples/basic/curveAnimate.jpg',
+                meta: {
+                    title: '曲线动画',
+                    keywords: 'three.js,曲线动画',
+                    description: '使用three.js曲线动画'
+                }
+            }
         ]
     },
     {
         pid: 'shader',
         name: '着色器',
         children: [
+            {
+                id: 'modelBlendShader',
+                name: '模型混合着色器',
+                author: 'z2586300277',
+                codeUrl: '/three-cesium-examples/public/threeExamples/shader/modelBlendShader.js',
+                image: '/three-cesium-examples/public/threeExamples/shader/modelBlendShader.jpg',
+                meta: {
+                    title: '模型混合着色器',
+                    keywords: 'three.js,模型混合着色器',
+                    description: '使用three.js模型混合着色器'
+                }
+            },
             {
                 id: 'fenceShader',
                 name: '围栏着色器',
@@ -138,6 +162,18 @@ export default [
                     title: '溶解',
                     keywords: 'three.js,溶解',
                     description: '溶解特效'
+                }
+            },
+            {
+                id: 'changeShaderToy',
+                name:'切换ShaderToy',
+                author:'z2586300277',
+                codeUrl: '/three-cesium-examples/public/threeExamples/shader/changeShaderToy.js',
+                image: '/three-cesium-examples/public/threeExamples/shader/changeShaderToy.jpg',
+                meta: {
+                    title: '切换ShaderToy',
+                    keywords: 'three.js,切换ShaderToy',
+                    description: '切换ShaderToy'
                 }
             }
         ]

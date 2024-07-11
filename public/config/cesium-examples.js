@@ -157,6 +157,19 @@ export default [
         ]
     },
     {
+        pid: 'expand',
+        name: '扩展功能',
+        children: [
+            {
+                id: 'cesiumAndThree',
+                name: 'cesium融合three',
+                author: 'z2586300277',
+                codeUrl: '/three-cesium-examples/public/cesiumExamples/expand/cesiumAndThree.js',
+                image: '/three-cesium-examples/public/cesiumExamples/expand/cesiumAndThree.jpg',
+            }
+        ]
+    },
+    {
         pid: 'tools',
         name: '工具',
         children: [
