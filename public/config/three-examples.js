@@ -223,6 +223,18 @@ export default [
                     keywords: 'three.js,kallkago su7',
                     description: 'kallkago 使用three.js开发的su7'
                 }
+            },
+            {
+                id: 'z2586300277_3d_editor',
+                name: 'Three.js低代码编辑器',
+                author: 'z2586300277',
+                githubUrl: 'https://github.com/z2586300277/three-editor',
+                image: '/three-cesium-examples/public/threeExamples/openSource/z2586300277_3d_editor.jpg',
+                meta: {
+                    title: 'Three.js低代码编辑器',
+                    keywords: 'three.js,Three.js低代码编辑器',
+                    description: 'Three.js低代码编辑器'
+                }
             }
         ]
     },
