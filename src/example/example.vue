@@ -17,7 +17,6 @@
                     <img @click="openUrl('github')" src="/files/site/github.png" alt="logo" width="36px" height="36px">
                 </div>
             </el-menu>
-
         </div>
         <div class="center">
             <div class="nav">
@@ -101,6 +100,8 @@ const goNavigation = async (item) => {
         localStorage.setItem('classify', item.examples[0].pid)
 
     }
+
+    else data.examples_list = findClassify.children
 
     currentNavigationName = item.name
 
