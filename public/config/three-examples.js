@@ -229,24 +229,48 @@ export default [
                 name: 'su7 demo',
                 author: 'KallkaGo',
                 githubUrl: 'https://github.com/KallkaGo/su7-demo',
-                image: '/three-cesium-examples/public/threeExamples/openSource/kallkago_su7.jpg',
-                meta: {
-                    title: 'kallkago su7',
-                    keywords: 'three.js,kallkago su7',
-                    description: 'kallkago 使用three.js开发的su7'
-                }
+                image: '/three-cesium-examples/public/threeExamples/openSource/kallkago_su7.jpg'
             },
             {
                 id: 'z2586300277_3d_editor',
                 name: 'Three.js低代码编辑器',
                 author: 'z2586300277',
                 githubUrl: 'https://github.com/z2586300277/three-editor',
-                image: '/three-cesium-examples/public/threeExamples/openSource/z2586300277_3d_editor.jpg',
-                meta: {
-                    title: 'Three.js低代码编辑器',
-                    keywords: 'three.js,Three.js低代码编辑器',
-                    description: 'Three.js低代码编辑器'
-                }
+                image: '/three-cesium-examples/public/threeExamples/openSource/z2586300277_3d_editor.jpg'
+            }
+        ]
+    },
+    {
+        pid: 'tools',
+        name: '工具',
+        children: [
+            {
+                id: 'gltf_report',
+                name: 'gltf在线draco压缩工具',
+                author: 'z2586300277',
+                githubUrl: 'https://gltf.report/',
+                image: '/three-cesium-examples/public/threeExamples/tools/gltf_report.jpg'
+            },
+            {
+                id: 'skyBox_image',
+                name: '免费hdr全景图资源',
+                author: 'z2586300277',
+                githubUrl: 'https://polyhaven.com/hdris/skies',
+                image: '/three-cesium-examples/public/threeExamples/tools/skyBox_image.jpg'
+            },
+            {
+                id: 'skyBox_Make',
+                name: 'hdr制作天空盒',
+                author: 'z2586300277',
+                githubUrl: 'https://matheowis.github.io/HDRI-to-CubeMap/',
+                image: '/three-cesium-examples/public/threeExamples/tools/skyBox_Make.jpg'
+            },
+            {
+                id: 'make_json_font',
+                name: '字体转Three使用json字体',
+                author: 'z2586300277',
+                githubUrl: 'https://gero3.github.io/facetype.js/',
+                image: '/three-cesium-examples/public/threeExamples/tools/make_json_font.jpg'
             }
         ]
     },
