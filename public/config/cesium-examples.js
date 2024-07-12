@@ -157,6 +157,24 @@ export default [
         ]
     },
     {
+        pid: 'basic',
+        name: '基础功能',
+        children: [
+            {
+                id: 'cssElement',
+                name: 'css2D元素',
+                author: 'z2586300277',
+                codeUrl: '/three-cesium-examples/public/cesiumExamples/basic/cssElement.js',
+                image: '/three-cesium-examples/public/cesiumExamples/basic/cssElement.jpg',
+                meta: {
+                    title: 'css2D元素',
+                    keywords: 'cesium.js,css2D元素',
+                    description: 'cesium css2D元素'
+                }
+            },
+        ]
+    },
+    {
         pid: 'expand',
         name: '扩展功能',
         children: [
