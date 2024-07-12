@@ -62,6 +62,18 @@ export default [
                     keywords: 'three.js,曲线动画',
                     description: '使用three.js曲线动画'
                 }
+            },
+            {
+                id: 'transformAnimate',
+                name: 'Mesh变换动画',
+                author: 'z2586300277',
+                codeUrl: '/three-cesium-examples/public/threeExamples/basic/transformAnimate.js',
+                image: '/three-cesium-examples/public/threeExamples/basic/transformAnimate.jpg',
+                meta: {
+                    title: '变换动画',
+                    keywords: 'three.js,变换动画',
+                    description: '使用three.js变换动画'
+                }
             }
         ]
     },
