@@ -40,6 +40,18 @@ export default [
                 }
             },
             {
+                id: 'modelAnimates',
+                name: '单/多模型动画',
+                author: 'z2586300277',
+                codeUrl: '/three-cesium-examples/public/threeExamples/basic/modelAnimates.js',
+                image: '/three-cesium-examples/public/threeExamples/basic/modelAnimates.jpg',
+                meta: {
+                    title: '模型自带动画',
+                    keywords: 'three.js,模型自带动画',
+                    description: '使用three播放模型自带动画'
+                }
+            },
+            {
                 id: 'gsapAnimate',
                 name: 'GSAP动画',
                 author: 'z2586300277',
