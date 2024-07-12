@@ -229,6 +229,18 @@ export default [
                     keywords: 'three.js,辉光通道',
                     description: '使用three.js辉光通道'
                 }
+            },
+            {
+                id: 'customMaskPass',
+                name: '自定义遮罩通道',
+                author: 'z2586300277',
+                codeUrl: '/three-cesium-examples/public/threeExamples/effectComposer/customMaskPass.js',
+                image: '/three-cesium-examples/public/threeExamples/effectComposer/customMaskPass.jpg',
+                meta: {
+                    title: '自定义遮罩通道',
+                    keywords: 'three.js,自定义遮罩通道',
+                    description: '使用three.js自定义遮罩通道'
+                }
             }
         ]
     },
