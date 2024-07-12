@@ -4,6 +4,18 @@ export default [
         name: '基础案例',
         children: [
             {
+                id: 'modelLoad',
+                name: 'gltf/fbx/obj模型加载',
+                author: 'z2586300277',
+                codeUrl: '/three-cesium-examples/public/threeExamples/basic/modelLoad.js',
+                image: '/three-cesium-examples/public/threeExamples/basic/modelLoad.jpg',
+                meta: {
+                    title: '模型加载',
+                    keywords: 'three.js,模型加载',
+                    description: '使用three.js模型加载'
+                }
+            },
+            {
                 id: 'gradientTriangle',
                 name: '渐变三角形',
                 author: 'giser2017',
