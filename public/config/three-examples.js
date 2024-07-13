@@ -202,8 +202,8 @@ export default [
             },
             {
                 id: 'changeShaderToy',
-                name:'切换ShaderToy',
-                author:'z2586300277',
+                name: '切换ShaderToy',
+                author: 'z2586300277',
                 codeUrl: '/three-cesium-examples/public/threeExamples/shader/changeShaderToy.js',
                 image: '/three-cesium-examples/public/threeExamples/shader/changeShaderToy.jpg',
                 meta: {
@@ -212,6 +212,24 @@ export default [
                     description: '切换ShaderToy'
                 }
             }
+        ]
+    },
+    {
+        pid: 'application',
+        name: '应用场景',
+        children: [
+            {
+                id: 'topology',
+                name: '简单3d拓扑图',
+                author: 'z2586300277',
+                codeUrl: '/three-cesium-examples/public/threeExamples/application/topology.js',
+                image: '/three-cesium-examples/public/threeExamples/application/topology.jpg',
+                meta: {
+                    title: '3d拓扑图',
+                    keywords: 'three.js,3d拓扑图',
+                    description: '使用three.js制作3d拓扑图'
+                }
+            },
         ]
     },
     {
