@@ -172,6 +172,42 @@ export default [
                     description: 'cesium css2D元素'
                 }
             },
+            {
+                id: 'clickEvent',
+                name: '点击事件',
+                author: 'z2586300277',
+                codeUrl: '/three-cesium-examples/public/cesiumExamples/basic/clickEvent.js',
+                image: '/three-cesium-examples/public/cesiumExamples/basic/clickEvent.jpg',
+                meta: {
+                    title: '点击事件',
+                    keywords: 'cesium.js,点击事件',
+                    description: 'cesium 点击事件'
+                }
+            },
+            {
+                id: 'geojsonFace',
+                name: 'geojson面',
+                author: 'z2586300277',
+                codeUrl: '/three-cesium-examples/public/cesiumExamples/basic/geojsonFace.js',
+                image: '/three-cesium-examples/public/cesiumExamples/basic/geojsonFace.jpg',
+                meta: {
+                    title: 'geojson面',
+                    keywords: 'cesium.js,geojson面',
+                    description: 'cesium geojson面'
+                }
+            },
+            {
+                id: 'multPoint',
+                name: 'cesium大量点',
+                author: 'z2586300277',
+                codeUrl: '/three-cesium-examples/public/cesiumExamples/basic/multPoint.js',
+                image: '/three-cesium-examples/public/cesiumExamples/basic/multPoint.jpg',
+                meta: {
+                    title: 'cesium大量点',
+                    keywords: 'cesium.js,cesium大量点',
+                    description: 'cesium cesium大量点'
+                }
+            }
         ]
     },
     {
