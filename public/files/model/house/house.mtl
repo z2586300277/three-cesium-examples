@@ -1,0 +1,24 @@
+# Blender MTL File: '4Stories2.blend'
+# Material Count: 2
+
+newmtl BrickBuildingWall01
+Ns 20.250010
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.040909 0.040909 0.040909
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd brickBuilding07.jpg
+
+newmtl FloorRoofTop
+Ns 73.803701
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.536364 0.536364 0.536364
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd spainTileFloor01.jpg

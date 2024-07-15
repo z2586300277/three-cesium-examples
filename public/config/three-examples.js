@@ -4,6 +4,18 @@ export default [
         name: '基础案例',
         children: [
             {
+                id: 'modelLoad',
+                name: 'gltf/fbx/obj模型加载',
+                author: 'z2586300277',
+                codeUrl: '/three-cesium-examples/public/threeExamples/basic/modelLoad.js',
+                image: '/three-cesium-examples/public/threeExamples/basic/modelLoad.jpg',
+                meta: {
+                    title: '模型加载',
+                    keywords: 'three.js,模型加载',
+                    description: '使用three.js模型加载'
+                }
+            },
+            {
                 id: 'gradientTriangle',
                 name: '渐变三角形',
                 author: 'giser2017',
@@ -25,6 +37,18 @@ export default [
                     title: '天空盒',
                     keywords: 'three.js,天空盒',
                     description: '使用three.js天空盒'
+                }
+            },
+            {
+                id: 'modelAnimates',
+                name: '单/多模型动画',
+                author: 'z2586300277',
+                codeUrl: '/three-cesium-examples/public/threeExamples/basic/modelAnimates.js',
+                image: '/three-cesium-examples/public/threeExamples/basic/modelAnimates.jpg',
+                meta: {
+                    title: '模型自带动画',
+                    keywords: 'three.js,模型自带动画',
+                    description: '使用three播放模型自带动画'
                 }
             },
             {
@@ -61,6 +85,18 @@ export default [
                     title: '曲线动画',
                     keywords: 'three.js,曲线动画',
                     description: '使用three.js曲线动画'
+                }
+            },
+            {
+                id: 'transformAnimate',
+                name: 'Mesh变换动画',
+                author: 'z2586300277',
+                codeUrl: '/three-cesium-examples/public/threeExamples/basic/transformAnimate.js',
+                image: '/three-cesium-examples/public/threeExamples/basic/transformAnimate.jpg',
+                meta: {
+                    title: '变换动画',
+                    keywords: 'three.js,变换动画',
+                    description: '使用three.js变换动画'
                 }
             }
         ]
@@ -166,8 +202,8 @@ export default [
             },
             {
                 id: 'changeShaderToy',
-                name:'切换ShaderToy',
-                author:'z2586300277',
+                name: '切换ShaderToy',
+                author: 'z2586300277',
                 codeUrl: '/three-cesium-examples/public/threeExamples/shader/changeShaderToy.js',
                 image: '/three-cesium-examples/public/threeExamples/shader/changeShaderToy.jpg',
                 meta: {
@@ -176,6 +212,24 @@ export default [
                     description: '切换ShaderToy'
                 }
             }
+        ]
+    },
+    {
+        pid: 'application',
+        name: '应用场景',
+        children: [
+            {
+                id: 'topology',
+                name: '简单3d拓扑图',
+                author: 'z2586300277',
+                codeUrl: '/three-cesium-examples/public/threeExamples/application/topology.js',
+                image: '/three-cesium-examples/public/threeExamples/application/topology.jpg',
+                meta: {
+                    title: '3d拓扑图',
+                    keywords: 'three.js,3d拓扑图',
+                    description: '使用three.js制作3d拓扑图'
+                }
+            },
         ]
     },
     {
@@ -193,6 +247,18 @@ export default [
                     keywords: 'three.js,辉光通道',
                     description: '使用three.js辉光通道'
                 }
+            },
+            {
+                id: 'customMaskPass',
+                name: '自定义遮罩通道',
+                author: 'z2586300277',
+                codeUrl: '/three-cesium-examples/public/threeExamples/effectComposer/customMaskPass.js',
+                image: '/three-cesium-examples/public/threeExamples/effectComposer/customMaskPass.jpg',
+                meta: {
+                    title: '自定义遮罩通道',
+                    keywords: 'three.js,自定义遮罩通道',
+                    description: '使用three.js自定义遮罩通道'
+                }
             }
         ]
     },
@@ -205,12 +271,48 @@ export default [
                 name: 'su7 demo',
                 author: 'KallkaGo',
                 githubUrl: 'https://github.com/KallkaGo/su7-demo',
-                image: '/three-cesium-examples/public/threeExamples/openSource/kallkago_su7.jpg',
-                meta: {
-                    title: 'kallkago su7',
-                    keywords: 'three.js,kallkago su7',
-                    description: 'kallkago 使用three.js开发的su7'
-                }
+                image: '/three-cesium-examples/public/threeExamples/openSource/kallkago_su7.jpg'
+            },
+            {
+                id: 'z2586300277_3d_editor',
+                name: 'Three.js低代码编辑器',
+                author: 'z2586300277',
+                githubUrl: 'https://github.com/z2586300277/three-editor',
+                image: '/three-cesium-examples/public/threeExamples/openSource/z2586300277_3d_editor.jpg'
+            }
+        ]
+    },
+    {
+        pid: 'tools',
+        name: '工具',
+        children: [
+            {
+                id: 'gltf_report',
+                name: 'gltf在线draco压缩工具',
+                author: 'z2586300277',
+                githubUrl: 'https://gltf.report/',
+                image: '/three-cesium-examples/public/threeExamples/tools/gltf_report.jpg'
+            },
+            {
+                id: 'skyBox_image',
+                name: '免费hdr全景图资源',
+                author: 'z2586300277',
+                githubUrl: 'https://polyhaven.com/hdris/skies',
+                image: '/three-cesium-examples/public/threeExamples/tools/skyBox_image.jpg'
+            },
+            {
+                id: 'skyBox_Make',
+                name: 'hdr制作天空盒',
+                author: 'z2586300277',
+                githubUrl: 'https://matheowis.github.io/HDRI-to-CubeMap/',
+                image: '/three-cesium-examples/public/threeExamples/tools/skyBox_Make.jpg'
+            },
+            {
+                id: 'make_json_font',
+                name: '字体转Three使用json字体',
+                author: 'z2586300277',
+                githubUrl: 'https://gero3.github.io/facetype.js/',
+                image: '/three-cesium-examples/public/threeExamples/tools/make_json_font.jpg'
             }
         ]
     },

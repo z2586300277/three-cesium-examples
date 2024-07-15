@@ -157,6 +157,96 @@ export default [
         ]
     },
     {
+        pid: 'basic',
+        name: '基础功能',
+        children: [
+            {
+                id: 'cssElement',
+                name: 'css2D元素',
+                author: 'z2586300277',
+                codeUrl: '/three-cesium-examples/public/cesiumExamples/basic/cssElement.js',
+                image: '/three-cesium-examples/public/cesiumExamples/basic/cssElement.jpg',
+                meta: {
+                    title: 'css2D元素',
+                    keywords: 'cesium.js,css2D元素',
+                    description: 'cesium css2D元素'
+                }
+            },
+            {
+                id: 'clickEvent',
+                name: '点击事件',
+                author: 'z2586300277',
+                codeUrl: '/three-cesium-examples/public/cesiumExamples/basic/clickEvent.js',
+                image: '/three-cesium-examples/public/cesiumExamples/basic/clickEvent.jpg',
+                meta: {
+                    title: '点击事件',
+                    keywords: 'cesium.js,点击事件',
+                    description: 'cesium 点击事件'
+                }
+            },
+            {
+                id: 'geojsonFace',
+                name: 'geojson面',
+                author: 'z2586300277',
+                codeUrl: '/three-cesium-examples/public/cesiumExamples/basic/geojsonFace.js',
+                image: '/three-cesium-examples/public/cesiumExamples/basic/geojsonFace.jpg',
+                meta: {
+                    title: 'geojson面',
+                    keywords: 'cesium.js,geojson面',
+                    description: 'cesium geojson面'
+                }
+            },
+            {
+                id: 'multPoint',
+                name: 'cesium大量点',
+                author: 'z2586300277',
+                codeUrl: '/three-cesium-examples/public/cesiumExamples/basic/multPoint.js',
+                image: '/three-cesium-examples/public/cesiumExamples/basic/multPoint.jpg',
+                meta: {
+                    title: 'cesium大量点',
+                    keywords: 'cesium.js,cesium大量点',
+                    description: 'cesium cesium大量点'
+                }
+            },
+            {
+                id: 'multFaceLine',
+                name: 'cesium大量面线',
+                author: 'z2586300277',
+                codeUrl: '/three-cesium-examples/public/cesiumExamples/basic/multFaceLine.js',
+                image: '/three-cesium-examples/public/cesiumExamples/basic/multFaceLine.jpg',
+                meta: {
+                    title: 'cesium大量面线',
+                    keywords: 'cesium.js,cesium大量面线',
+                    description: 'cesium cesium大量面线'
+                }
+            },
+            {
+                id: 'multCurve',
+                name: 'cesium大量曲线',
+                author: 'z2586300277',
+                codeUrl: '/three-cesium-examples/public/cesiumExamples/basic/multCurve.js',
+                image: '/three-cesium-examples/public/cesiumExamples/basic/multCurve.jpg',
+                meta: {
+                    title: 'cesium大量曲线',
+                    keywords: 'cesium.js,cesium大量曲线',
+                    description: 'cesium cesium大量曲线'
+                }
+            },
+            {
+                id: 'multText',
+                name: 'cesium大量文字',
+                author: 'z2586300277',
+                codeUrl: '/three-cesium-examples/public/cesiumExamples/basic/multText.js',
+                image: '/three-cesium-examples/public/cesiumExamples/basic/multText.jpg',
+                meta: {
+                    title: 'cesium大量文字',
+                    keywords: 'cesium.js,cesium大量文字',
+                    description: 'cesium cesium大量文字'
+                }
+            }
+        ]
+    },
+    {
         pid: 'expand',
         name: '扩展功能',
         children: [

@@ -36,5 +36,11 @@ export default [
         name: 'nico',
         github: 'https://github.com/Nicolas-zn',
         icon: '/three-cesium-examples/public/files/author/nico.svg'
+    },
+    {
+        id: 'zanmeng',
+        name: 'zanmeng',
+        github: 'https://github.com/zanmeng',
+        icon: '/three-cesium-examples/public/files/author/tx.jpg'
     }
 ]
