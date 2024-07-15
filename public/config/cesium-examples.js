@@ -152,8 +152,31 @@ export default [
                     keywords: 'cesium.js,影像',
                     description: '夜间'
                 }
+            },
+            {
+                id: 'gaode',
+                name: '内网高德',
+                author: 'z2586300277',
+                codeUrl: '/three-cesium-examples/public/cesiumExamples/offline/gaode.js',
+                image: '/three-cesium-examples/public/cesiumExamples/offline/gaode.jpg',
+                meta: {
+                    title: '内网高德',
+                    keywords: 'cesium.js,内网高德',
+                    description: '内网高德'
+                }
+            },
+            {
+                id: 'baiDu',
+                name: '内网百度',
+                author: 'z2586300277',
+                codeUrl: '/three-cesium-examples/public/cesiumExamples/offline/baidu.js',
+                image: '/three-cesium-examples/public/cesiumExamples/offline/baidu.jpg',
+                meta: {
+                    title: '内网百度',
+                    keywords: 'cesium.js,内网百度',
+                    description: '内网百度'
+                }
             }
-
         ]
     },
     {
