@@ -207,6 +207,42 @@ export default [
                     keywords: 'cesium.js,cesium大量点',
                     description: 'cesium cesium大量点'
                 }
+            },
+            {
+                id: 'multFaceLine',
+                name: 'cesium大量面线',
+                author: 'z2586300277',
+                codeUrl: '/three-cesium-examples/public/cesiumExamples/basic/multFaceLine.js',
+                image: '/three-cesium-examples/public/cesiumExamples/basic/multFaceLine.jpg',
+                meta: {
+                    title: 'cesium大量面线',
+                    keywords: 'cesium.js,cesium大量面线',
+                    description: 'cesium cesium大量面线'
+                }
+            },
+            {
+                id: 'multCurve',
+                name: 'cesium大量曲线',
+                author: 'z2586300277',
+                codeUrl: '/three-cesium-examples/public/cesiumExamples/basic/multCurve.js',
+                image: '/three-cesium-examples/public/cesiumExamples/basic/multCurve.jpg',
+                meta: {
+                    title: 'cesium大量曲线',
+                    keywords: 'cesium.js,cesium大量曲线',
+                    description: 'cesium cesium大量曲线'
+                }
+            },
+            {
+                id: 'multText',
+                name: 'cesium大量文字',
+                author: 'z2586300277',
+                codeUrl: '/three-cesium-examples/public/cesiumExamples/basic/multText.js',
+                image: '/three-cesium-examples/public/cesiumExamples/basic/multText.jpg',
+                meta: {
+                    title: 'cesium大量文字',
+                    keywords: 'cesium.js,cesium大量文字',
+                    description: 'cesium cesium大量文字'
+                }
             }
         ]
     },
