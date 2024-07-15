@@ -98,6 +98,18 @@ export default [
                     keywords: 'three.js,变换动画',
                     description: '使用three.js变换动画'
                 }
+            },
+            {
+                id: 'screenShot',
+                name: '截图',
+                author: 'z2586300277',
+                codeUrl: '/three-cesium-examples/public/threeExamples/basic/screenShot.js',
+                image: '/three-cesium-examples/public/threeExamples/basic/screenShot.jpg',
+                meta: {
+                    title: '截图',
+                    keywords: 'three.js,截图',
+                    description: '使用three.js截图'
+                }
             }
         ]
     },
