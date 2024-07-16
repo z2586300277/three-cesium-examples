@@ -266,6 +266,18 @@ export default [
                     keywords: 'cesium.js,cesium大量文字',
                     description: 'cesium cesium大量文字'
                 }
+            },
+            {
+                id: 'loadModel',
+                name: '加载模型',
+                author: 'z2586300277',
+                codeUrl: '/three-cesium-examples/public/cesiumExamples/basic/loadModel.js',
+                image: '/three-cesium-examples/public/cesiumExamples/basic/loadModel.jpg',
+                meta: {
+                    title: '加载模型',
+                    keywords: 'cesium.js,加载模型',
+                    description: 'cesium 加载模型'
+                }
             }
         ]
     },
