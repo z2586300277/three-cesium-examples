@@ -302,7 +302,7 @@ export default [
                 id: 'mapDataConvert',
                 name: '地图转换工具',
                 author: 'giser2017',
-                githubUrl: 'https://threelab.cn/dgis/',
+                openUrl: 'https://threelab.cn/dgis/',
                 image: '/three-cesium-examples/public/cesiumExamples/tools/mapDataConvert.jpg',
             }
         ]

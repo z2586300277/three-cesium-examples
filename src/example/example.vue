@@ -125,7 +125,7 @@ data.examples_list = examples_list
 
 const showCode = (item) => {
 
-    if(item.githubUrl) return window.open(item.githubUrl)
+    if(item.openUrl) return window.open(item.openUrl)
 
     const path = router.resolve({
 
