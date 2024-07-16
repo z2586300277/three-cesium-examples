@@ -1,4 +1,4 @@
-## Three.js 和 Cesium.js 案例
+## Three.js 和 Cesium.js 案例 （想要加入一起管理 - qq 2586300277)
 
 - dev分支更新后 github实时预览 http://z2586300277.github.io/three-cesium-examples/public/index.html
 
