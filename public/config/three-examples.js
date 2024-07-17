@@ -245,6 +245,24 @@ export default [
         ]
     },
     {
+        pid: 'expand',
+        name: '扩展',
+        children: [
+            {
+                id: 'loadTiles',
+                name: '加载3dtiles',
+                author: 'z2586300277',
+                codeUrl: '/three-cesium-examples/public/threeExamples/expand/loadTiles.js',
+                image: '/three-cesium-examples/public/threeExamples/expand/loadTiles.jpg',
+                meta: {
+                    title: 'three加载3dtiles',
+                    keywords: 'three.js,3dtiles',
+                    description: '使用three加载3dtiles'
+                }
+            },
+        ]
+    },
+    {
         pid: 'effectComposer',
         name: '后期处理',
         children: [
