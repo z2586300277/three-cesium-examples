@@ -16,6 +16,18 @@ export default [
                 }
             },
             {
+                id: 'outlinePass',
+                name: '轮廓光',
+                author: 'z2586300277',
+                codeUrl: '/three-cesium-examples/public/threeExamples/basic/outlinePass.js',
+                image: '/three-cesium-examples/public/threeExamples/basic/outlinePass.jpg',
+                meta: {
+                    title: '轮廓光',
+                    keywords: 'three.js,轮廓光',
+                    description: '使用three轮廓光'
+                }
+            },
+            {
                 id: 'gradientTriangle',
                 name: '渐变三角形',
                 author: 'giser2017',
