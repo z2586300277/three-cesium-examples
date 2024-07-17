@@ -152,8 +152,31 @@ export default [
                     keywords: 'cesium.js,影像',
                     description: '夜间'
                 }
+            },
+            {
+                id: 'gaode',
+                name: '内网高德',
+                author: 'z2586300277',
+                codeUrl: '/three-cesium-examples/public/cesiumExamples/offline/gaode.js',
+                image: '/three-cesium-examples/public/cesiumExamples/offline/gaode.jpg',
+                meta: {
+                    title: '内网高德',
+                    keywords: 'cesium.js,内网高德',
+                    description: '内网高德'
+                }
+            },
+            {
+                id: 'baiDu',
+                name: '内网百度',
+                author: 'z2586300277',
+                codeUrl: '/three-cesium-examples/public/cesiumExamples/offline/baidu.js',
+                image: '/three-cesium-examples/public/cesiumExamples/offline/baidu.jpg',
+                meta: {
+                    title: '内网百度',
+                    keywords: 'cesium.js,内网百度',
+                    description: '内网百度'
+                }
             }
-
         ]
     },
     {
@@ -243,6 +266,18 @@ export default [
                     keywords: 'cesium.js,cesium大量文字',
                     description: 'cesium cesium大量文字'
                 }
+            },
+            {
+                id: 'loadModel',
+                name: '加载模型',
+                author: 'z2586300277',
+                codeUrl: '/three-cesium-examples/public/cesiumExamples/basic/loadModel.js',
+                image: '/three-cesium-examples/public/cesiumExamples/basic/loadModel.jpg',
+                meta: {
+                    title: '加载模型',
+                    keywords: 'cesium.js,加载模型',
+                    description: 'cesium 加载模型'
+                }
             }
         ]
     },
@@ -267,7 +302,7 @@ export default [
                 id: 'mapDataConvert',
                 name: '地图转换工具',
                 author: 'giser2017',
-                githubUrl: 'https://threelab.cn/dgis/',
+                openUrl: 'https://threelab.cn/dgis/',
                 image: '/three-cesium-examples/public/cesiumExamples/tools/mapDataConvert.jpg',
             }
         ]

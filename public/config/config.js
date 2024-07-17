@@ -32,7 +32,8 @@ window.GET_SCRIPT = (v, t) => (t === 'Cesium.js案例[1.119]' ?
             "three/examples/jsm/": "/three-cesium-examples/public/js/three/addons/",
             "postprocessing": "/three-cesium-examples/public/js/postprocessing.js",
             "gsap": "/three-cesium-examples/public/js/gsap/index.js",
-            "dat.gui": "/three-cesium-examples/public/js/dat.gui.module.js"
+            "dat.gui": "/three-cesium-examples/public/js/dat.gui.module.js",
+            "3d-tiles-renderer": "/three-cesium-examples/public/js/3dTilesRenderer/index.js"
         }
     }
 <\/script>`) +

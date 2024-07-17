@@ -16,6 +16,18 @@ export default [
                 }
             },
             {
+                id: 'outlinePass',
+                name: '轮廓光',
+                author: 'z2586300277',
+                codeUrl: '/three-cesium-examples/public/threeExamples/basic/outlinePass.js',
+                image: '/three-cesium-examples/public/threeExamples/basic/outlinePass.jpg',
+                meta: {
+                    title: '轮廓光',
+                    keywords: 'three.js,轮廓光',
+                    description: '使用three轮廓光'
+                }
+            },
+            {
                 id: 'gradientTriangle',
                 name: '渐变三角形',
                 author: 'giser2017',
@@ -97,6 +109,18 @@ export default [
                     title: '变换动画',
                     keywords: 'three.js,变换动画',
                     description: '使用three.js变换动画'
+                }
+            },
+            {
+                id: 'screenShot',
+                name: '截图',
+                author: 'z2586300277',
+                codeUrl: '/three-cesium-examples/public/threeExamples/basic/screenShot.js',
+                image: '/three-cesium-examples/public/threeExamples/basic/screenShot.jpg',
+                meta: {
+                    title: '截图',
+                    keywords: 'three.js,截图',
+                    description: '使用three.js截图'
                 }
             }
         ]
@@ -233,6 +257,24 @@ export default [
         ]
     },
     {
+        pid: 'expand',
+        name: '扩展',
+        children: [
+            {
+                id: 'loadTiles',
+                name: '加载3dtiles',
+                author: 'z2586300277',
+                codeUrl: '/three-cesium-examples/public/threeExamples/expand/loadTiles.js',
+                image: '/three-cesium-examples/public/threeExamples/expand/loadTiles.jpg',
+                meta: {
+                    title: 'three加载3dtiles',
+                    keywords: 'three.js,3dtiles',
+                    description: '使用three加载3dtiles'
+                }
+            },
+        ]
+    },
+    {
         pid: 'effectComposer',
         name: '后期处理',
         children: [
@@ -270,14 +312,14 @@ export default [
                 id: 'kallkago_su7',
                 name: 'su7 demo',
                 author: 'KallkaGo',
-                githubUrl: 'https://github.com/KallkaGo/su7-demo',
+                openUrl: 'https://github.com/KallkaGo/su7-demo',
                 image: '/three-cesium-examples/public/threeExamples/openSource/kallkago_su7.jpg'
             },
             {
                 id: 'z2586300277_3d_editor',
                 name: 'Three.js低代码编辑器',
                 author: 'z2586300277',
-                githubUrl: 'https://github.com/z2586300277/three-editor',
+                openUrl: 'https://github.com/z2586300277/three-editor',
                 image: '/three-cesium-examples/public/threeExamples/openSource/z2586300277_3d_editor.jpg'
             }
         ]
@@ -290,28 +332,28 @@ export default [
                 id: 'gltf_report',
                 name: 'gltf在线draco压缩工具',
                 author: 'z2586300277',
-                githubUrl: 'https://gltf.report/',
+                openUrl: 'https://gltf.report/',
                 image: '/three-cesium-examples/public/threeExamples/tools/gltf_report.jpg'
             },
             {
                 id: 'skyBox_image',
                 name: '免费hdr全景图资源',
                 author: 'z2586300277',
-                githubUrl: 'https://polyhaven.com/hdris/skies',
+                openUrl: 'https://polyhaven.com/hdris/skies',
                 image: '/three-cesium-examples/public/threeExamples/tools/skyBox_image.jpg'
             },
             {
                 id: 'skyBox_Make',
                 name: 'hdr制作天空盒',
                 author: 'z2586300277',
-                githubUrl: 'https://matheowis.github.io/HDRI-to-CubeMap/',
+                openUrl: 'https://matheowis.github.io/HDRI-to-CubeMap/',
                 image: '/three-cesium-examples/public/threeExamples/tools/skyBox_Make.jpg'
             },
             {
                 id: 'make_json_font',
                 name: '字体转Three使用json字体',
                 author: 'z2586300277',
-                githubUrl: 'https://gero3.github.io/facetype.js/',
+                openUrl: 'https://gero3.github.io/facetype.js/',
                 image: '/three-cesium-examples/public/threeExamples/tools/make_json_font.jpg'
             }
         ]
