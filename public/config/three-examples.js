@@ -122,7 +122,195 @@ export default [
                     keywords: 'three.js,截图',
                     description: '使用three.js截图'
                 }
+            },
+            {
+                id: "入门",
+                name: "入门",
+                author: "giser2017",
+                codeUrl: "/three-cesium-examples/public/threeExamples/basic/入门.js",
+                image: "/three-cesium-examples/public/threeExamples/basic/入门.png",
+                meta: {
+                    title: "入门",
+                    keywords: "three.js,入门",
+                    description: "使用three.js入门"
+                }
+            },
+            {
+                id: "辅助线",
+                name: "辅助线",
+                author: "giser2017",
+                codeUrl: "/three-cesium-examples/public/threeExamples/basic/辅助线.js",
+                image: "/three-cesium-examples/public/threeExamples/basic/辅助线.png",
+                meta: {
+                    title: "辅助线",
+                    keywords: "three.js,辅助线",
+                    description: "使用three.js辅助线"
+                }
+            },
+            {
+                id: "光线",
+                name: "光线",
+                author: "giser2017",
+                codeUrl: "/three-cesium-examples/public/threeExamples/basic/光线.js",
+                image: "/three-cesium-examples/public/threeExamples/basic/光线.png",
+                meta: {
+                    title: "光线",
+                    keywords: "three.js,光线",
+                    description: "使用three.js光线"
+                }
+            },
+            {
+                id: "相机控件",
+                name: "相机控件",
+                author: "giser2017",
+                codeUrl: "/three-cesium-examples/public/threeExamples/basic/相机控件.js",
+                image: "/three-cesium-examples/public/threeExamples/basic/相机控件.png",
+                meta: {
+                    title: "相机控件",
+                    keywords: "three.js,相机控件",
+                    description: "使用three.js相机控件"
+                }
+            },
+            {
+                id: "动画",
+                name: "动画",
+                author: "giser2017",
+                codeUrl: "/three-cesium-examples/public/threeExamples/basic/动画.js",
+                image: "/three-cesium-examples/public/threeExamples/basic/动画.png",
+                meta: {
+                    title: "动画",
+                    keywords: "three.js,动画",
+                    description: "使用three.js动画"
+                }
+            },
+            {
+                id: "全屏",
+                name: "全屏",
+                author: "giser2017",
+                codeUrl: "/three-cesium-examples/public/threeExamples/basic/全屏.js",
+                image: "/three-cesium-examples/public/threeExamples/basic/全屏.png",
+                meta: {
+                    title: "全屏",
+                    keywords: "three.js,全屏",
+                    description: "使用three.js全屏"
+                }
+            },
+            {
+                id: "帧率",
+                name: "帧率",
+                author: "giser2017",
+                codeUrl: "/three-cesium-examples/public/threeExamples/basic/帧率.js",
+                image: "/three-cesium-examples/public/threeExamples/basic/帧率.png",
+                meta: {
+                    title: "帧率",
+                    keywords: "three.js,帧率",
+                    description: "使用three.js帧率"
+                }
+            },
+            {
+                id: "阵列模型",
+                name: "阵列模型",
+                author: "giser2017",
+                codeUrl: "/three-cesium-examples/public/threeExamples/basic/阵列模型.js",
+                image: "/three-cesium-examples/public/threeExamples/basic/阵列模型.png",
+                meta: {
+                    title: "阵列模型",
+                    keywords: "three.js,阵列模型",
+                    description: "使用three.js阵列模型"
+                }
+            },
+            {
+                id: "几何体",
+                name: "几何体",
+                author: "giser2017",
+                codeUrl: "/three-cesium-examples/public/threeExamples/basic/几何体.js",
+                image: "/three-cesium-examples/public/threeExamples/basic/几何体.png",
+                meta: {
+                    title: "几何体",
+                    keywords: "three.js,几何体",
+                    description: "使用three.js几何体"
+                }
+            },
+            {
+                id: "点线",
+                name: "点、线",
+                name_en: "点、线",
+                author: "giser2017",
+                codeUrl: "/three-cesium-examples/public/threeExamples/basic/点线.js",
+                image: "/three-cesium-examples/public/threeExamples/basic/点、线.png",
+                meta: {
+                    title: "点、线",
+                    keywords: "three.js,点线",
+                    description: "使用three.js点、线"
+                }
+            },
+            {
+                id: "网格",
+                name: "网格",
+                name_en: "网格",
+                author: "giser2017",
+                codeUrl: "/three-cesium-examples/public/threeExamples/basic/网格.js",
+                image: "/three-cesium-examples/public/threeExamples/basic/网格.png",
+                meta: {
+                    title: "网格",
+                    keywords: "three.js,网格",
+                    description: "使用three.js网格"
+                }
+            },
+            {
+                id: "索引",
+                name: "索引",
+                name_en: "索引",
+                author: "giser2017",
+                codeUrl: "/three-cesium-examples/public/threeExamples/basic/索引.js",
+                image: "/three-cesium-examples/public/threeExamples/basic/索引.png",
+                meta: {
+                    title: "索引",
+                    keywords: "three.js,索引",
+                    description: "使用three.js索引"
+                }
+            },
+            {
+                id: "旋转缩放平移几何体",
+                name: "旋转、缩放、平移几何体",
+                name_en: "旋转、缩放、平移几何体",
+                author: "giser2017",
+                codeUrl: "/three-cesium-examples/public/threeExamples/basic/旋转、缩放、平移几何体.js",
+                image: "/three-cesium-examples/public/threeExamples/basic/旋转、缩放、平移几何体.png",
+                meta: {
+                    title: "旋转、缩放、平移几何体",
+                    keywords: "three.js,旋转缩放平移几何体",
+                    description: "使用three.js旋转、缩放、平移几何体"
+                }
+            },
+            {
+                id: "自带几何体顶点",
+                name: "自带几何体顶点",
+                name_en: "自带几何体顶点",
+                author: "giser2017",
+                codeUrl: "/three-cesium-examples/public/threeExamples/basic/自带几何体顶点.js",
+                image: "/three-cesium-examples/public/threeExamples/basic/自带几何体顶点.png",
+                meta: {
+                    title: "自带几何体顶点",
+                    keywords: "three.js,自带几何体顶点",
+                    description: "使用three.js自带几何体顶点"
+                }
+            },
+            {
+                id: "顶点颜色",
+                name: "顶点颜色",
+                name_en: "顶点颜色",
+                author: "giser2017",
+                codeUrl: "/three-cesium-examples/public/threeExamples/basic/顶点颜色.js",
+                image: "/three-cesium-examples/public/threeExamples/basic/顶点颜色.png",
+                meta: {
+                    title: "顶点颜色",
+                    keywords: "three.js,顶点颜色",
+                    description: "使用three.js顶点颜色"
+                }
             }
+
+
         ]
     },
     {
