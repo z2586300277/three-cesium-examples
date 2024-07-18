@@ -35,7 +35,7 @@
             <div class="examples">
                 <div class="examples-item" v-for="i, k in data.examples_list">
                     <div class="box">
-                        <el-image class="image" @click="showCode(i)" fit="cover" :src="i.image" lazy />
+                        <div @click="showCode(i)"><el-image class="image"  fit="cover" :src="i.image" lazy /></div>
                         <div class="author" @click="openAuthor(i)">
                             <img :src="getAuthors(i.author).icon" width="16px" height="16px">
                             <span> - {{ getAuthors(i.author).name }}</span>
@@ -209,7 +209,7 @@ const showCode = (item) => {
     grid-template-rows: repeat(auto-fill, 290px);
     overflow: scroll;
     grid-row-gap: 5px;
-    grid-column-gap: 10px;
+    grid-column-gap: 5px;
 
     &-item {
         width: 250px;
@@ -241,16 +241,10 @@ const showCode = (item) => {
                 justify-content: center;
                 align-items: center;
                 border-radius: 3px;
+                transition: all 0.3s;
 
-                img {
-                    border-radius: 3px;
-                    width: 190px;
-                    height: 190px;
-
-                    &:hover {
-                        transform: scale(1.8);
-                        transition: all 0.5s;
-                    }
+                &:hover {
+                    box-shadow: rgba(0, 0, 0, 0.38) 0px 6px 12px, rgba(0, 0, 0, 0.23) 0px 6px 12px;
                 }
             }
         }
@@ -282,6 +276,8 @@ const showCode = (item) => {
 
     &:hover {
         color: #71a5ee;
+        // 发光
+        text-shadow: 0 0 10px #85d7e0;
     }
 }
 
