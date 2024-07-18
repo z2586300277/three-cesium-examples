@@ -1,128 +1,8 @@
 export default [
     {
-        pid: 'basic',
-        name: '基础案例',
+        pid: 'introduction',
+        name: '入门案例',
         children: [
-            {
-                id: 'modelLoad',
-                name: 'gltf/fbx/obj模型加载',
-                author: 'z2586300277',
-                codeUrl: '/three-cesium-examples/public/threeExamples/basic/modelLoad.js',
-                image: '/three-cesium-examples/public/threeExamples/basic/modelLoad.jpg',
-                meta: {
-                    title: '模型加载',
-                    keywords: 'three.js,模型加载',
-                    description: '使用three.js模型加载'
-                }
-            },
-            {
-                id: 'outlinePass',
-                name: '轮廓光',
-                author: 'z2586300277',
-                codeUrl: '/three-cesium-examples/public/threeExamples/basic/outlinePass.js',
-                image: '/three-cesium-examples/public/threeExamples/basic/outlinePass.jpg',
-                meta: {
-                    title: '轮廓光',
-                    keywords: 'three.js,轮廓光',
-                    description: '使用three轮廓光'
-                }
-            },
-            {
-                id: 'gradientTriangle',
-                name: '渐变三角形',
-                author: 'giser2017',
-                codeUrl: '/three-cesium-examples/public/threeExamples/basic/gradientTriangle.js',
-                image: '/three-cesium-examples/public/threeExamples/basic/gradientTriangle.jpg',
-                meta: {
-                    title: '渐变三角形',
-                    keywords: 'three.js,渐变三角形',
-                    description: '使用three.js渐变三角形'
-                }
-            },
-            {
-                id: 'skyAndEnv',
-                name: '天空盒',
-                author: 'z2586300277',
-                codeUrl: '/three-cesium-examples/public/threeExamples/basic/skyAndEnv.js',
-                image: '/three-cesium-examples/public/threeExamples/basic/skyAndEnv.jpg',
-                meta: {
-                    title: '天空盒',
-                    keywords: 'three.js,天空盒',
-                    description: '使用three.js天空盒'
-                }
-            },
-            {
-                id: 'modelAnimates',
-                name: '单/多模型动画',
-                author: 'z2586300277',
-                codeUrl: '/three-cesium-examples/public/threeExamples/basic/modelAnimates.js',
-                image: '/three-cesium-examples/public/threeExamples/basic/modelAnimates.jpg',
-                meta: {
-                    title: '模型自带动画',
-                    keywords: 'three.js,模型自带动画',
-                    description: '使用three播放模型自带动画'
-                }
-            },
-            {
-                id: 'gsapAnimate',
-                name: 'GSAP动画',
-                author: 'z2586300277',
-                codeUrl: '/three-cesium-examples/public/threeExamples/basic/gsapAnimate.js',
-                image: '/three-cesium-examples/public/threeExamples/basic/gsapAnimate.jpg',
-                meta: {
-                    title: 'GSAP动画',
-                    keywords: 'three.js,GSAP动画',
-                    description: '使用three.js GSAP动画'
-                }
-            },
-            {
-                id: 'cssElement',
-                name: 'CSS元素',
-                author: 'z2586300277',
-                codeUrl: '/three-cesium-examples/public/threeExamples/basic/cssElement.js',
-                image: '/three-cesium-examples/public/threeExamples/basic/cssElement.jpg',
-                meta: {
-                    title: 'CSS元素',
-                    keywords: 'three.js,CSS元素',
-                    description: '使用three.js CSS元素'
-                }
-            },
-            {
-                id: 'curveAnimate',
-                name: '曲线动画',
-                author: 'z2586300277',
-                codeUrl: '/three-cesium-examples/public/threeExamples/basic/curveAnimate.js',
-                image: '/three-cesium-examples/public/threeExamples/basic/curveAnimate.jpg',
-                meta: {
-                    title: '曲线动画',
-                    keywords: 'three.js,曲线动画',
-                    description: '使用three.js曲线动画'
-                }
-            },
-            {
-                id: 'transformAnimate',
-                name: 'Mesh变换动画',
-                author: 'z2586300277',
-                codeUrl: '/three-cesium-examples/public/threeExamples/basic/transformAnimate.js',
-                image: '/three-cesium-examples/public/threeExamples/basic/transformAnimate.jpg',
-                meta: {
-                    title: '变换动画',
-                    keywords: 'three.js,变换动画',
-                    description: '使用three.js变换动画'
-                }
-            },
-            {
-                id: 'screenShot',
-                name: '截图',
-                author: 'z2586300277',
-                codeUrl: '/three-cesium-examples/public/threeExamples/basic/screenShot.js',
-                image: '/three-cesium-examples/public/threeExamples/basic/screenShot.jpg',
-                meta: {
-                    title: '截图',
-                    keywords: 'three.js,截图',
-                    description: '使用three.js截图'
-                }
-            },
             {
                 id: "入门",
                 name: "入门",
@@ -309,8 +189,132 @@ export default [
                     description: "使用three.js顶点颜色"
                 }
             }
-
-
+        ]
+    },
+    {
+        pid: 'basic',
+        name: '基础案例',
+        children: [
+            {
+                id: 'modelLoad',
+                name: 'gltf/fbx/obj模型加载',
+                author: 'z2586300277',
+                codeUrl: '/three-cesium-examples/public/threeExamples/basic/modelLoad.js',
+                image: '/three-cesium-examples/public/threeExamples/basic/modelLoad.jpg',
+                meta: {
+                    title: '模型加载',
+                    keywords: 'three.js,模型加载',
+                    description: '使用three.js模型加载'
+                }
+            },
+            {
+                id: 'outlinePass',
+                name: '轮廓光',
+                author: 'z2586300277',
+                codeUrl: '/three-cesium-examples/public/threeExamples/basic/outlinePass.js',
+                image: '/three-cesium-examples/public/threeExamples/basic/outlinePass.jpg',
+                meta: {
+                    title: '轮廓光',
+                    keywords: 'three.js,轮廓光',
+                    description: '使用three轮廓光'
+                }
+            },
+            {
+                id: 'gradientTriangle',
+                name: '渐变三角形',
+                author: 'giser2017',
+                codeUrl: '/three-cesium-examples/public/threeExamples/basic/gradientTriangle.js',
+                image: '/three-cesium-examples/public/threeExamples/basic/gradientTriangle.jpg',
+                meta: {
+                    title: '渐变三角形',
+                    keywords: 'three.js,渐变三角形',
+                    description: '使用three.js渐变三角形'
+                }
+            },
+            {
+                id: 'skyAndEnv',
+                name: '天空盒',
+                author: 'z2586300277',
+                codeUrl: '/three-cesium-examples/public/threeExamples/basic/skyAndEnv.js',
+                image: '/three-cesium-examples/public/threeExamples/basic/skyAndEnv.jpg',
+                meta: {
+                    title: '天空盒',
+                    keywords: 'three.js,天空盒',
+                    description: '使用three.js天空盒'
+                }
+            },
+            {
+                id: 'modelAnimates',
+                name: '单/多模型动画',
+                author: 'z2586300277',
+                codeUrl: '/three-cesium-examples/public/threeExamples/basic/modelAnimates.js',
+                image: '/three-cesium-examples/public/threeExamples/basic/modelAnimates.jpg',
+                meta: {
+                    title: '模型自带动画',
+                    keywords: 'three.js,模型自带动画',
+                    description: '使用three播放模型自带动画'
+                }
+            },
+            {
+                id: 'gsapAnimate',
+                name: 'GSAP动画',
+                author: 'z2586300277',
+                codeUrl: '/three-cesium-examples/public/threeExamples/basic/gsapAnimate.js',
+                image: '/three-cesium-examples/public/threeExamples/basic/gsapAnimate.jpg',
+                meta: {
+                    title: 'GSAP动画',
+                    keywords: 'three.js,GSAP动画',
+                    description: '使用three.js GSAP动画'
+                }
+            },
+            {
+                id: 'cssElement',
+                name: 'CSS元素',
+                author: 'z2586300277',
+                codeUrl: '/three-cesium-examples/public/threeExamples/basic/cssElement.js',
+                image: '/three-cesium-examples/public/threeExamples/basic/cssElement.jpg',
+                meta: {
+                    title: 'CSS元素',
+                    keywords: 'three.js,CSS元素',
+                    description: '使用three.js CSS元素'
+                }
+            },
+            {
+                id: 'curveAnimate',
+                name: '曲线动画',
+                author: 'z2586300277',
+                codeUrl: '/three-cesium-examples/public/threeExamples/basic/curveAnimate.js',
+                image: '/three-cesium-examples/public/threeExamples/basic/curveAnimate.jpg',
+                meta: {
+                    title: '曲线动画',
+                    keywords: 'three.js,曲线动画',
+                    description: '使用three.js曲线动画'
+                }
+            },
+            {
+                id: 'transformAnimate',
+                name: 'Mesh变换动画',
+                author: 'z2586300277',
+                codeUrl: '/three-cesium-examples/public/threeExamples/basic/transformAnimate.js',
+                image: '/three-cesium-examples/public/threeExamples/basic/transformAnimate.jpg',
+                meta: {
+                    title: '变换动画',
+                    keywords: 'three.js,变换动画',
+                    description: '使用three.js变换动画'
+                }
+            },
+            {
+                id: 'screenShot',
+                name: '截图',
+                author: 'z2586300277',
+                codeUrl: '/three-cesium-examples/public/threeExamples/basic/screenShot.js',
+                image: '/three-cesium-examples/public/threeExamples/basic/screenShot.jpg',
+                meta: {
+                    title: '截图',
+                    keywords: 'three.js,截图',
+                    description: '使用three.js截图'
+                }
+            }
         ]
     },
     {
@@ -446,7 +450,7 @@ export default [
     },
     {
         pid: 'expand',
-        name: '扩展',
+        name: '扩展功能',
         children: [
             {
                 id: 'loadTiles',

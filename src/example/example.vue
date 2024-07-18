@@ -25,14 +25,17 @@
                     <el-menu-item :class="{ 'menuItem': item.pid == currentClassify }"
                         v-for="item in data.classify_list" :key="item.pid" :index="String(item.pid)"
                         @click="changeClassify(item)">
-                        {{ item.name }}
+                        <div class="flex-around">
+                            {{ item.name }}
+                            <el-badge class="badge" type="primary" :value="item.children.length"> </el-badge>
+                        </div>
                     </el-menu-item>
                 </el-menu>
             </div>
             <div class="examples">
                 <div class="examples-item" v-for="i, k in data.examples_list">
                     <div class="box">
-                        <div class="image" @click="showCode(i)"><img :src="i.image" /></div>
+                        <el-image class="image" @click="showCode(i)" fit="cover" :src="i.image" lazy />
                         <div class="author" @click="openAuthor(i)">
                             <img :src="getAuthors(i.author).icon" width="16px" height="16px">
                             <span> - {{ getAuthors(i.author).name }}</span>
@@ -125,7 +128,7 @@ data.examples_list = examples_list
 
 const showCode = (item) => {
 
-    if(item.openUrl) return window.open(item.openUrl)
+    if (item.openUrl) return window.open(item.openUrl)
 
     const path = router.resolve({
 
@@ -284,6 +287,18 @@ const showCode = (item) => {
 
 .text {
     font-size: 16px;
+}
+
+.badge {
+    display: flex;
+    align-items: center;
+}
+
+.flex-around {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
 }
 
 ::-webkit-scrollbar {
