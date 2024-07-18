@@ -521,6 +521,13 @@ export default [
         name: '工具',
         children: [
             {
+                id: 'sketchfab_model',
+                name: 'sketchfab免费模型',
+                author: 'z2586300277',
+                openUrl: 'https://sketchfab.com/',
+                image: '/three-cesium-examples/public/threeExamples/tools/sketchfab.png'
+            },
+            {
                 id: 'gltf_report',
                 name: 'gltf在线draco压缩工具',
                 author: 'z2586300277',
