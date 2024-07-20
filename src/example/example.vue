@@ -32,15 +32,25 @@
                     </el-menu-item>
                 </el-menu>
             </div>
-            <div class="examples">
-                <div class="examples-item" v-for="i, k in data.examples_list">
-                    <div class="box">
-                        <div @click="showCode(i)"><el-image class="image"  fit="cover" :src="i.image" lazy /></div>
-                        <div class="author" @click="openAuthor(i)">
-                            <img :src="getAuthors(i.author).icon" width="16px" height="16px">
-                            <span> - {{ getAuthors(i.author).name }}</span>
+            <div class="content">
+                <div class="bar">
+                    <div></div>
+                    <el-input v-model="input" style="max-width: 240px" placeholder="请输入内容" class="input-with-select">
+                        <template #append>
+                            <el-button icon="Search" />
+                        </template>
+                    </el-input>
+                </div>
+                <div class="examples">
+                    <div class="examples-item" v-for="i, k in data.examples_list">
+                        <div class="box">
+                            <div @click="showCode(i)"><el-image class="image" fit="cover" :src="i.image" lazy /></div>
+                            <div class="author" @click="openAuthor(i)">
+                                <img :src="getAuthors(i.author).icon" width="16px" height="16px">
+                                <span> - {{ getAuthors(i.author).name }}</span>
+                            </div>
+                            <div class="text">{{ i.name }}</div>
                         </div>
-                        <div class="text">{{ i.name }}</div>
                     </div>
                 </div>
             </div>
@@ -50,7 +60,9 @@
 
 <script setup>
 import { useRouter } from 'vue-router';
-import { reactive } from 'vue';
+import { reactive, ref } from 'vue';
+
+const input = ref('')
 
 function getAuthors(id) {
 
@@ -179,6 +191,22 @@ const showCode = (item) => {
     }
 }
 
+.content {
+    width: 100%;
+}
+
+.bar {
+    height: 46px;
+    width: 100%;
+    box-shadow: -1px 3px 10px rgba(0, 0, 0, .2);
+    padding-left: 20px;
+    padding-right: 45px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .center {
     display: flex;
     background-color: none;
@@ -193,6 +221,12 @@ const showCode = (item) => {
         box-sizing: border-box;
         font-weight: 550;
         width: 240px;
+        overflow: scroll;
+    }
+
+    .nav::-webkit-scrollbar {
+        width: 0px; //纵向滚动条的宽度
+        height: px; //横向滚动条的高度
     }
 }
 
@@ -204,6 +238,7 @@ const showCode = (item) => {
     padding: 20px;
     box-sizing: border-box;
     width: 100%;
+    height: calc(100vh - 50px);
     display: grid;
     grid-template-columns: repeat(auto-fill, 250px);
     grid-template-rows: repeat(auto-fill, 290px);
@@ -306,5 +341,10 @@ const showCode = (item) => {
 ::-webkit-scrollbar-thumb {
     border-radius: 5px;
     background: rgba(171, 190, 228, 0.3);
+}
+
+//deep是深度选择器，表示选择所有的子孙元素
+:deep(.el-input__inner) {
+    color: #071228;
 }
 </style>

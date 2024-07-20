@@ -2,12 +2,14 @@
     <router-view />
     <div v-show="isShow">
         <div class="info">
-            <div class="text author" v-if="authorInfo.value" @click="openAuthor(authorInfo.value.github)">
+            <div class="text author" v-if="authorInfo.value" @click="openAuthor(authorInfo.value.github)"
+                style="margin-bottom: 5px;">
                 作者 - <img :src="authorInfo.value.icon" width="16px" height="16px">{{ authorInfo.value.name }}
             </div>
             <div class="flexAuthor">
                 <img src="/files/site/logo.png" alt="logo" width="20px" height="20px"> &nbsp;
-                <el-link class="text" @click="openUrl('web')">加入社区-THREELAB</el-link>
+                <el-link class="text" @click="openUrl('web')"
+                    :style="{ color: !authorInfo.value ? '#071228' : '' }">加入社区-THREELAB</el-link>
             </div>
         </div>
     </div>
@@ -58,7 +60,7 @@ const openUrl = (k) => window.open(__SITE_URLS__[k])
     }
 
     .text {
-        color: #cfd3dc;
+        color: #e6e6e6;
         font-weight: bold;
         font-size: 13px;
         transition: all 0.3s;
