@@ -49,10 +49,10 @@
                                 <div class="examples-item" v-for="i in examples.children">
                                     <div class="box">
                                         <div @click="showCode(i, examples)">
-                                            <el-image class="image" fit="cover" :src="i.image" lazy />
+                                            <el-image class="image" fit="cover" :src="i.image" lazy :scroll-container="navigationRef" />
                                         </div>
                                         <div class="author" @click="openAuthor(i)">
-                                            <img :src="getAuthors(i.author).icon" width="16px" height="16px">
+                                            <el-image class="author-image" :src="getAuthors(i.author).icon" lazy :scroll-container="navigationRef" />
                                             <span> - {{ getAuthors(i.author).name }}</span>
                                         </div>
                                         <div class="text">{{ i.name }}</div>
@@ -321,6 +321,11 @@ const showCode = (item, examples) => {
                 &:hover {
                     box-shadow: rgba(0, 0, 0, 0.38) 0px 6px 12px, rgba(0, 0, 0, 0.23) 0px 6px 12px;
                 }
+            }
+
+            .author-image {
+                width: 16px;
+                height: 16px;
             }
         }
     }
