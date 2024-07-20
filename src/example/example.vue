@@ -104,7 +104,7 @@ let classify_list = (navigation_list.find(item => item.name === currentNavigatio
 
 data.classify_list = classify_list
 
-let currentClassify = localStorage.getItem('classify') || classify_list[0].pid
+let currentClassify = ref(localStorage.getItem('classify') || classify_list[0].pid)
 
 const goNavigation = async (item) => {
 
@@ -112,11 +112,11 @@ const goNavigation = async (item) => {
 
     data.classify_list = classify_list
 
-    const findClassify = item.examples.find(item => item.pid === currentClassify)
+    const findClassify = item.examples.find(item => item.pid === currentClassify.value)
 
     if (!findClassify) {
 
-        currentClassify = item.examples[0].pid
+        currentClassify.value = item.examples[0].pid
 
         localStorage.setItem('classify', item.examples[0].pid)
 
@@ -132,7 +132,7 @@ const changeClassify = item => {
 
     navigationRef.value.querySelector(`[to="${item.pid}"]`)?.scrollIntoView({ behavior: 'smooth' })
 
-    currentClassify = item.pid
+    currentClassify.value = item.pid
 
     localStorage.setItem('classify', item.pid)
 
@@ -164,7 +164,7 @@ watch(() => input.value, (v) => {
 
 })
 
-onMounted(() => navigationRef.value.querySelector(`[to="${currentClassify}"]`)?.scrollIntoView())
+onMounted(() => navigationRef.value.querySelector(`[to="${currentClassify.value}"]`)?.scrollIntoView())
 
 const showCode = (item, examples) => {
 
