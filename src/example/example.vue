@@ -22,9 +22,8 @@
             <div class="nav">
                 <el-menu class="menu" style="border: none;" :default-active="currentClassify" :ellipsis="false"
                     text-color="#fff" active-text-color="#71a5ee">
-                    <el-menu-item :class="{ 'menuItem': item.pid == currentClassify }"
-                        v-for="item in data.classify_list" :key="item.pid" :index="String(item.pid)"
-                        @click="changeClassify(item)">
+                    <el-menu-item :class="{ 'menuItem': item.pid == currentClassify }" v-for="item in classify_list"
+                        :key="item.pid" :index="String(item.pid)" @click="changeClassify(item)">
                         <div class="flex-around">
                             {{ item.name }}
                             <el-badge class="badge" type="primary" :value="item.children.length"> </el-badge>
@@ -41,16 +40,27 @@
                         </template>
                     </el-input>
                 </div>
-                <div class="examples">
-                    <div class="examples-item" v-for="i, k in data.examples_list">
-                        <div class="box">
-                            <div @click="showCode(i)"><el-image class="image" fit="cover" :src="i.image" lazy /></div>
-                            <div class="author" @click="openAuthor(i)">
-                                <img :src="getAuthors(i.author).icon" width="16px" height="16px">
-                                <span> - {{ getAuthors(i.author).name }}</span>
+                <div class="navigation-parent">
+                    <div class="navigation" ref="navigationRef">
+                        <div v-for="examples in data.classify_list">
+                            <div :to="examples.pid" style="position: relative;z-index: 1;top:-40px"> </div>
+                            <el-divider content-position="left">{{ examples.name }}</el-divider>
+                            <div class="examples">
+                                <div class="examples-item" v-for="i in examples.children">
+                                    <div class="box">
+                                        <div @click="showCode(i, examples)">
+                                            <el-image class="image" fit="cover" :src="i.image" lazy />
+                                        </div>
+                                        <div class="author" @click="openAuthor(i)">
+                                            <img :src="getAuthors(i.author).icon" width="16px" height="16px">
+                                            <span> - {{ getAuthors(i.author).name }}</span>
+                                        </div>
+                                        <div class="text">{{ i.name }}</div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="text">{{ i.name }}</div>
                         </div>
+
                     </div>
                 </div>
             </div>
@@ -60,9 +70,11 @@
 
 <script setup>
 import { useRouter } from 'vue-router';
-import { reactive, ref } from 'vue';
+import { onMounted, reactive, ref, watch } from 'vue';
 
 const input = ref('')
+
+const navigationRef = ref(null)
 
 function getAuthors(id) {
 
@@ -82,19 +94,13 @@ const router = useRouter();
 
 const openUrl = (k) => window.open(__SITE_URLS__[k])
 
-const data = reactive({
-
-    classify_list: [],
-
-    examples_list: []
-
-})
+const data = reactive({ classify_list: [] })
 
 const navigation_list = window.THREE_CESIUM_NAVIGATION
 
 let currentNavigationName = localStorage.getItem('navigation') || navigation_list[0].name
 
-const classify_list = (navigation_list.find(item => item.name === currentNavigationName) || navigation_list[0]).examples
+let classify_list = (navigation_list.find(item => item.name === currentNavigationName) || navigation_list[0]).examples
 
 data.classify_list = classify_list
 
@@ -102,7 +108,9 @@ let currentClassify = localStorage.getItem('classify') || classify_list[0].pid
 
 const goNavigation = async (item) => {
 
-    data.classify_list = item.examples
+    classify_list = item.examples
+
+    data.classify_list = classify_list
 
     const findClassify = item.examples.find(item => item.pid === currentClassify)
 
@@ -110,13 +118,9 @@ const goNavigation = async (item) => {
 
         currentClassify = item.examples[0].pid
 
-        data.examples_list = item.examples[0].children
-
         localStorage.setItem('classify', item.examples[0].pid)
 
     }
-
-    else data.examples_list = findClassify.children
 
     currentNavigationName = item.name
 
@@ -126,7 +130,7 @@ const goNavigation = async (item) => {
 
 const changeClassify = item => {
 
-    data.examples_list = item.children
+    navigationRef.value.querySelector(`[to="${item.pid}"]`)?.scrollIntoView({ behavior: 'smooth' })
 
     currentClassify = item.pid
 
@@ -134,11 +138,35 @@ const changeClassify = item => {
 
 }
 
-const examples_list = (classify_list.find(item => item.pid === currentClassify) || classify_list[0]).children
+watch(() => input.value, (v) => {
 
-data.examples_list = examples_list
+    if (v) {
 
-const showCode = (item) => {
+        data.classify_list = classify_list.map(item => {
+
+            return {
+
+                ...item,
+
+                children: item.children.map(i => {
+
+                    if (i.name.includes(v)) return { ...i }
+
+                }).filter(i => i)
+
+            }
+
+        }).filter(item => item.children.length)
+
+    }
+
+    else data.classify_list = classify_list
+
+})
+
+onMounted(() => navigationRef.value.querySelector(`[to="${currentClassify}"]`)?.scrollIntoView())
+
+const showCode = (item, examples) => {
 
     if (item.openUrl) return window.open(item.openUrl)
 
@@ -146,7 +174,7 @@ const showCode = (item) => {
 
         name: 'codeMirror',
 
-        query: { navigation: currentNavigationName, classify: currentClassify, id: item.id }
+        query: { navigation: currentNavigationName, classify: examples.pid, id: item.id }
 
     }).href
 
@@ -234,11 +262,23 @@ const showCode = (item) => {
     background-color: rgba(51, 55, 93, 0.4);
 }
 
+.navigation-parent {
+    width: 100%;
+    height: calc(100% - 46px);
+    overflow: hidden;
+}
+
+.navigation {
+    width: 100%;
+    height: 100%;
+    overflow: scroll;
+    padding: 15px 20px 20px 20px;
+    box-sizing: border-box;
+}
+
 .examples {
-    padding: 20px;
     box-sizing: border-box;
     width: 100%;
-    height: calc(100vh - 50px);
     display: grid;
     grid-template-columns: repeat(auto-fill, 250px);
     grid-template-rows: repeat(auto-fill, 290px);
