@@ -22,7 +22,7 @@
             <div class="nav">
                 <el-menu class="menu" style="border: none;" :default-active="currentClassify" :ellipsis="false"
                     text-color="#fff" active-text-color="#71a5ee">
-                    <el-menu-item :class="{ 'menuItem': item.pid == currentClassify }" v-for="item in classify_list"
+                    <el-menu-item :class="{ 'menuItem': item.pid == currentClassify }" v-for="item in data.raw_classify_list"
                         :key="item.pid" :index="String(item.pid)" @click="changeClassify(item)">
                         <div class="flex-around">
                             {{ item.name }}
@@ -49,10 +49,12 @@
                                 <div class="examples-item" v-for="i in examples.children">
                                     <div class="box">
                                         <div @click="showCode(i, examples)">
-                                            <el-image class="image" fit="cover" :src="i.image" lazy :scroll-container="navigationRef" />
+                                            <el-image class="image" fit="cover" :src="i.image" lazy
+                                                :scroll-container="navigationRef" />
                                         </div>
                                         <div class="author" @click="openAuthor(i)">
-                                            <el-image class="author-image" :src="getAuthors(i.author).icon" lazy :scroll-container="navigationRef" />
+                                            <el-image class="author-image" :src="getAuthors(i.author).icon" lazy
+                                                :scroll-container="navigationRef" />
                                             <span> - {{ getAuthors(i.author).name }}</span>
                                         </div>
                                         <div class="text">{{ i.name }}</div>
@@ -60,7 +62,6 @@
                                 </div>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </div>
@@ -70,7 +71,7 @@
 
 <script setup>
 import { useRouter } from 'vue-router';
-import { onMounted, reactive, ref, watch } from 'vue';
+import { onMounted, shallowReactive, ref, watch } from 'vue';
 
 const input = ref('')
 
@@ -94,23 +95,23 @@ const router = useRouter();
 
 const openUrl = (k) => window.open(__SITE_URLS__[k])
 
-const data = reactive({ classify_list: [] })
+const data = shallowReactive({ classify_list: [], raw_classify_list: [] })
 
 const navigation_list = window.THREE_CESIUM_NAVIGATION
 
 let currentNavigationName = localStorage.getItem('navigation') || navigation_list[0].name
 
-let classify_list = (navigation_list.find(item => item.name === currentNavigationName) || navigation_list[0]).examples
+data.raw_classify_list = (navigation_list.find(item => item.name === currentNavigationName) || navigation_list[0]).examples
 
-data.classify_list = classify_list
+data.classify_list = data.raw_classify_list
 
-let currentClassify = ref(localStorage.getItem('classify') || classify_list[0].pid)
+let currentClassify = ref(localStorage.getItem('classify') || data.raw_classify_list[0].pid)
 
 const goNavigation = async (item) => {
 
-    classify_list = item.examples
+    data.raw_classify_list = item.examples
 
-    data.classify_list = classify_list
+    data.classify_list = data.raw_classify_list
 
     const findClassify = item.examples.find(item => item.pid === currentClassify.value)
 
@@ -142,7 +143,7 @@ watch(() => input.value, (v) => {
 
     if (v) {
 
-        data.classify_list = classify_list.map(item => {
+        data.classify_list = data.raw_classify_list.map(item => {
 
             return {
 
@@ -160,7 +161,7 @@ watch(() => input.value, (v) => {
 
     }
 
-    else data.classify_list = classify_list
+    else data.classify_list = data.raw_classify_list
 
 })
 
