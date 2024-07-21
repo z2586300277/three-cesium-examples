@@ -464,6 +464,18 @@ export default [
                     description: '使用three加载3dtiles'
                 }
             },
+            {
+                id: 'map3d',
+                name: '3D地图',
+                author: 'z2586300277',
+                codeUrl: '/three-cesium-examples/public/threeExamples/expand/map3d.js',
+                image: '/three-cesium-examples/public/threeExamples/expand/map3d.jpg',
+                meta: {
+                    title: '3D地图',
+                    keywords: 'three.js,3D地图',
+                    description: '使用three.js制作3D地图'
+                }
+            }
         ]
     },
     {
