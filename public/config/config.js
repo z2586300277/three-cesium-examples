@@ -19,7 +19,6 @@ window.GET_SCRIPT = (v, t) =>
         "imports": {
             "cesium": "/three-cesium-examples/public/js/cesium/Cesium.js",
             "dat.gui": "/three-cesium-examples/public/js/dat.gui.module.js"
-          
         }
     }
  <\/script>`
