@@ -469,7 +469,7 @@ export default [
                 name: '模型导航',
                 author: 'nico',
                 codeUrl: '/three-cesium-examples/public/threeExamples/application/nav_mesh/nav.js',
-                image: '/three-cesium-examples/public/threeExamples/basic/modelLoad.jpg',
+                image: '/three-cesium-examples/public/threeExamples/application/nav_mesh/nav.jpg',
                 meta: {
                     title: '模型导航',
                     keywords: 'three.js,模型导航',
