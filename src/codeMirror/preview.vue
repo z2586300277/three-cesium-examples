@@ -20,7 +20,7 @@ defineExpose({
         const script = window.GET_SCRIPT(v, t)
 
         frame.contentWindow.document.open()
-
+        
         frame.contentWindow.document.write(script)
 
         frame.contentWindow.document.close()

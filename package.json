@@ -12,9 +12,12 @@
     "@codemirror/lang-javascript": "^6.2.2",
     "@codemirror/theme-one-dark": "^6.1.2",
     "@element-plus/icons-vue": "^2.3.1",
+    "@tweenjs/tween.js": "^23.1.2",
     "element-plus": "^2.7.6",
     "less": "^4.2.0",
     "less-loader": "^12.2.0",
+    "recast-navigation": "^0.33.0",
+    "three.path": "^1.0.1",
     "vue": "^3.4.31",
     "vue-codemirror": "^6.1.1",
     "vue-router": "^4.4.0"

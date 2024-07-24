@@ -317,6 +317,24 @@ export default [
             }
         ]
     },
+    // {
+    //     pid:'application',
+    //     name:'应用案例',
+    //     children:[
+    //         {
+    //             id: 'modelLoad',
+    //             name: '模型导航',
+    //             author: 'nico',
+    //             codeUrl: '/three-cesium-examples/public/threeExamples/application/nav_mesh/nav.js',
+    //             image: '/three-cesium-examples/public/threeExamples/basic/modelLoad.jpg',
+    //             meta: {
+    //                 title: '模型加载',
+    //                 keywords: 'three.js,模型加载',
+    //                 description: '使用three.js模型加载'
+    //             }
+    //         },
+    //     ]
+    // },
     {
         pid: 'shader',
         name: '着色器',
@@ -446,6 +464,18 @@ export default [
                     description: '使用three.js制作3d拓扑图'
                 }
             },
+            {
+                id: 'model_navigation',
+                name: '模型导航',
+                author: 'nico',
+                codeUrl: '/three-cesium-examples/public/threeExamples/application/nav_mesh/nav.js',
+                image: '/three-cesium-examples/public/threeExamples/basic/modelLoad.jpg',
+                meta: {
+                    title: '模型导航',
+                    keywords: 'three.js,模型导航',
+                    description: '模型导航'
+                }
+            },
         ]
     },
     {
@@ -569,4 +599,5 @@ export default [
             }
         ]
     },
+
 ]
