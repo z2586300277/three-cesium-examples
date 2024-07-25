@@ -528,14 +528,16 @@ export default [
                 id: 'kallkago_su7',
                 name: 'su7 demo',
                 author: 'KallkaGo',
-                openUrl: 'https://github.com/KallkaGo/su7-demo',
+                openUrl: 'https://z2586300277.github.io/show-site/su7_demo/',
+                githubUrl: 'https://github.com/KallkaGo/su7-demo',
                 image: '/three-cesium-examples/public/threeExamples/openSource/kallkago_su7.jpg'
             },
             {
                 id: 'z2586300277_3d_editor',
                 name: 'Three.js低代码编辑器',
                 author: 'z2586300277',
-                openUrl: 'https://github.com/z2586300277/three-editor',
+                openUrl: 'https://z2586300277.github.io/three-editor/dist/#/editor',
+                githubUrl: 'https://github.com/z2586300277/three-editor',
                 image: '/three-cesium-examples/public/threeExamples/openSource/z2586300277_3d_editor.jpg'
             }
         ]

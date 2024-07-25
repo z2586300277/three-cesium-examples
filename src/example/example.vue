@@ -22,8 +22,9 @@
             <div class="nav">
                 <el-menu class="menu" style="border: none;" :default-active="currentClassify" :ellipsis="false"
                     text-color="#fff" active-text-color="#71a5ee">
-                    <el-menu-item :class="{ 'menuItem': item.pid == currentClassify }" v-for="item in data.raw_classify_list"
-                        :key="item.pid" :index="String(item.pid)" @click="changeClassify(item)">
+                    <el-menu-item :class="{ 'menuItem': item.pid == currentClassify }"
+                        v-for="item in data.raw_classify_list" :key="item.pid" :index="String(item.pid)"
+                        @click="changeClassify(item)">
                         <div class="flex-around">
                             {{ item.name }}
                             <el-badge class="badge" type="primary" :value="item.children.length"> </el-badge>
@@ -57,7 +58,8 @@
                                                 :scroll-container="navigationRef" />
                                             <span> - {{ getAuthors(i.author).name }}</span>
                                         </div>
-                                        <div class="text">{{ i.name }}</div>
+                                        <el-link v-if="i.githubUrl" class="text" @click="openLink(i.githubUrl)"> - {{ i.name }} -</el-link>
+                                        <div class="text" v-else>{{ i.name }}</div>
                                     </div>
                                 </div>
                             </div>
@@ -92,6 +94,8 @@ function openAuthor(item) {
 }
 
 const router = useRouter();
+
+const openLink = (url) => window.open(url)
 
 const openUrl = (k) => window.open(__SITE_URLS__[k])
 
@@ -364,6 +368,7 @@ const showCode = (item, examples) => {
 
 .text {
     font-size: 16px;
+    color: #071228;
 }
 
 .badge {
