@@ -278,7 +278,19 @@ export default [
                     keywords: 'cesium.js,加载模型',
                     description: 'cesium 加载模型'
                 }
-            }
+            },
+            {
+                id: 'flyLine',
+                name: '流动飞线运动',
+                author: 'z2586300277',
+                codeUrl: '/three-cesium-examples/public/cesiumExamples/basic/flyLine.js',
+                image: '/three-cesium-examples/public/cesiumExamples/basic/flyLine.jpg',
+                meta: {
+                    title: '流动飞线运动',
+                    keywords: 'cesium.js,流动飞线运动',
+                    description: 'cesium 流动飞线运动'
+                }
+            },
         ]
     },
     {
