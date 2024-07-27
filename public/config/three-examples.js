@@ -458,6 +458,18 @@ export default [
                     description: '模型导航'
                 }
             },
+            {
+                id: 'textSphere',
+                name: '球体文字',
+                author: 'z2586300277',
+                codeUrl: '/three-cesium-examples/public/threeExamples/application/textSphere.js',
+                image: '/three-cesium-examples/public/threeExamples/application/textSphere.jpg',
+                meta: {
+                    title: '球体文字',
+                    keywords: 'three.js,球体文字',
+                    description: '使用three球体文字'
+                }
+            }
         ]
     },
     {
