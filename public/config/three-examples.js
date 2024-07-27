@@ -461,6 +461,25 @@ export default [
         ]
     },
     {
+        pid: 'particle',
+        name: '粒子',
+        children: [
+            {
+                id: 'particleScattered',
+                name: '粒子聚散',
+                author: 'z2586300277',
+                codeUrl: '/three-cesium-examples/public/threeExamples/particle/particleScattered.js',
+                image: '/three-cesium-examples/public/threeExamples/particle/particleScattered.jpg',
+                meta: {
+                    title: '粒子聚散',
+                    keywords: 'three.js,粒子聚散',
+                    description: '使用three.js粒子聚散'
+                }
+            
+            }
+        ]
+    },
+    {
         pid: 'expand',
         name: '扩展功能',
         children: [
