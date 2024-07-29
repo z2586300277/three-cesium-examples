@@ -184,6 +184,18 @@ export default [
         name: '基础功能',
         children: [
             {
+                id: 'autoRotate',
+                name: '自动旋转',
+                author: 'z2586300277',
+                codeUrl: '/three-cesium-examples/public/cesiumExamples/basic/autoRotate.js',
+                image: '/three-cesium-examples/public/cesiumExamples/layer/defaultLayer.jpg',
+                meta: {
+                    title: '自动旋转',
+                    keywords: 'cesium.js,自动旋转',
+                    description: 'cesium自动旋转'
+                }
+            },
+            {
                 id: 'cssElement',
                 name: 'css2D元素',
                 author: 'z2586300277',
