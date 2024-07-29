@@ -14,6 +14,7 @@ window.THREE_CESIUM_AUTHORS = threeCesiumAuthors;
 window.GET_SCRIPT = (v, t) =>
   (t === "Cesium.js案例[1.119]"
     ? `<link rel="stylesheet" href="/three-cesium-examples/public/js/cesium/style.css">
+    <script src="/three-cesium-examples/public/js/echarts.min.js"></script>
  <script type="importmap">
     {
         "imports": {
