@@ -5,6 +5,12 @@ export default [
         github: 'https://github.com/z2586300277',
         icon: '/three-cesium-examples/public/files/author/z2586300277.png'
     },
+    {
+        id: 'g2657',
+        name: 'g2657',
+        github: 'https://github.com/g2657',
+        icon: 'https://z2586300277.github.io/three-editor/public/vite.svg'
+    },
 
     {
         id: 'giser2017',

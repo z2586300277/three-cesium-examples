@@ -196,6 +196,13 @@ export default [
                 }
             },
             {
+                id: 'cesiumText',
+                name: '绘制文字',
+                author: 'g2657',
+                codeUrl: '/three-cesium-examples/public/cesiumExamples/basic/cesiumText.js',
+                image: '/three-cesium-examples/public/cesiumExamples/layer/defaultLayer.jpg',
+            },
+            {
                 id: 'cssElement',
                 name: 'css2D元素',
                 author: 'z2586300277',
