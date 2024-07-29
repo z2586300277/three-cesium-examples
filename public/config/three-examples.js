@@ -1,5 +1,197 @@
 export default [
     {
+        pid: 'introduction',
+        name: '入门案例',
+        children: [
+            {
+                id: "入门",
+                name: "入门",
+                author: "giser2017",
+                codeUrl: "/three-cesium-examples/public/threeExamples/basic/入门.js",
+                image: "/three-cesium-examples/public/threeExamples/basic/入门.png",
+                meta: {
+                    title: "入门",
+                    keywords: "three.js,入门",
+                    description: "使用three.js入门"
+                }
+            },
+            {
+                id: "辅助线",
+                name: "辅助线",
+                author: "giser2017",
+                codeUrl: "/three-cesium-examples/public/threeExamples/basic/辅助线.js",
+                image: "/three-cesium-examples/public/threeExamples/basic/辅助线.png",
+                meta: {
+                    title: "辅助线",
+                    keywords: "three.js,辅助线",
+                    description: "使用three.js辅助线"
+                }
+            },
+            {
+                id: "光线",
+                name: "光线",
+                author: "giser2017",
+                codeUrl: "/three-cesium-examples/public/threeExamples/basic/光线.js",
+                image: "/three-cesium-examples/public/threeExamples/basic/光线.png",
+                meta: {
+                    title: "光线",
+                    keywords: "three.js,光线",
+                    description: "使用three.js光线"
+                }
+            },
+            {
+                id: "相机控件",
+                name: "相机控件",
+                author: "giser2017",
+                codeUrl: "/three-cesium-examples/public/threeExamples/basic/相机控件.js",
+                image: "/three-cesium-examples/public/threeExamples/basic/相机控件.png",
+                meta: {
+                    title: "相机控件",
+                    keywords: "three.js,相机控件",
+                    description: "使用three.js相机控件"
+                }
+            },
+            {
+                id: "动画",
+                name: "动画",
+                author: "giser2017",
+                codeUrl: "/three-cesium-examples/public/threeExamples/basic/动画.js",
+                image: "/three-cesium-examples/public/threeExamples/basic/动画.png",
+                meta: {
+                    title: "动画",
+                    keywords: "three.js,动画",
+                    description: "使用three.js动画"
+                }
+            },
+            {
+                id: "全屏",
+                name: "全屏",
+                author: "giser2017",
+                codeUrl: "/three-cesium-examples/public/threeExamples/basic/全屏.js",
+                image: "/three-cesium-examples/public/threeExamples/basic/全屏.png",
+                meta: {
+                    title: "全屏",
+                    keywords: "three.js,全屏",
+                    description: "使用three.js全屏"
+                }
+            },
+            {
+                id: "帧率",
+                name: "帧率",
+                author: "giser2017",
+                codeUrl: "/three-cesium-examples/public/threeExamples/basic/帧率.js",
+                image: "/three-cesium-examples/public/threeExamples/basic/帧率.png",
+                meta: {
+                    title: "帧率",
+                    keywords: "three.js,帧率",
+                    description: "使用three.js帧率"
+                }
+            },
+            {
+                id: "阵列模型",
+                name: "阵列模型",
+                author: "giser2017",
+                codeUrl: "/three-cesium-examples/public/threeExamples/basic/阵列模型.js",
+                image: "/three-cesium-examples/public/threeExamples/basic/阵列模型.png",
+                meta: {
+                    title: "阵列模型",
+                    keywords: "three.js,阵列模型",
+                    description: "使用three.js阵列模型"
+                }
+            },
+            {
+                id: "几何体",
+                name: "几何体",
+                author: "giser2017",
+                codeUrl: "/three-cesium-examples/public/threeExamples/basic/几何体.js",
+                image: "/three-cesium-examples/public/threeExamples/basic/几何体.png",
+                meta: {
+                    title: "几何体",
+                    keywords: "three.js,几何体",
+                    description: "使用three.js几何体"
+                }
+            },
+            {
+                id: "点线",
+                name: "点、线",
+                name_en: "点、线",
+                author: "giser2017",
+                codeUrl: "/three-cesium-examples/public/threeExamples/basic/点线.js",
+                image: "/three-cesium-examples/public/threeExamples/basic/点、线.png",
+                meta: {
+                    title: "点、线",
+                    keywords: "three.js,点线",
+                    description: "使用three.js点、线"
+                }
+            },
+            {
+                id: "网格",
+                name: "网格",
+                name_en: "网格",
+                author: "giser2017",
+                codeUrl: "/three-cesium-examples/public/threeExamples/basic/网格.js",
+                image: "/three-cesium-examples/public/threeExamples/basic/网格.png",
+                meta: {
+                    title: "网格",
+                    keywords: "three.js,网格",
+                    description: "使用three.js网格"
+                }
+            },
+            {
+                id: "索引",
+                name: "索引",
+                name_en: "索引",
+                author: "giser2017",
+                codeUrl: "/three-cesium-examples/public/threeExamples/basic/索引.js",
+                image: "/three-cesium-examples/public/threeExamples/basic/索引.png",
+                meta: {
+                    title: "索引",
+                    keywords: "three.js,索引",
+                    description: "使用three.js索引"
+                }
+            },
+            {
+                id: "旋转缩放平移几何体",
+                name: "旋转、缩放、平移几何体",
+                name_en: "旋转、缩放、平移几何体",
+                author: "giser2017",
+                codeUrl: "/three-cesium-examples/public/threeExamples/basic/旋转、缩放、平移几何体.js",
+                image: "/three-cesium-examples/public/threeExamples/basic/旋转、缩放、平移几何体.png",
+                meta: {
+                    title: "旋转、缩放、平移几何体",
+                    keywords: "three.js,旋转缩放平移几何体",
+                    description: "使用three.js旋转、缩放、平移几何体"
+                }
+            },
+            {
+                id: "自带几何体顶点",
+                name: "自带几何体顶点",
+                name_en: "自带几何体顶点",
+                author: "giser2017",
+                codeUrl: "/three-cesium-examples/public/threeExamples/basic/自带几何体顶点.js",
+                image: "/three-cesium-examples/public/threeExamples/basic/自带几何体顶点.png",
+                meta: {
+                    title: "自带几何体顶点",
+                    keywords: "three.js,自带几何体顶点",
+                    description: "使用three.js自带几何体顶点"
+                }
+            },
+            {
+                id: "顶点颜色",
+                name: "顶点颜色",
+                name_en: "顶点颜色",
+                author: "giser2017",
+                codeUrl: "/three-cesium-examples/public/threeExamples/basic/顶点颜色.js",
+                image: "/three-cesium-examples/public/threeExamples/basic/顶点颜色.png",
+                meta: {
+                    title: "顶点颜色",
+                    keywords: "three.js,顶点颜色",
+                    description: "使用three.js顶点颜色"
+                }
+            }
+        ]
+    },
+    {
         pid: 'basic',
         name: '基础案例',
         children: [
@@ -13,6 +205,18 @@ export default [
                     title: '模型加载',
                     keywords: 'three.js,模型加载',
                     description: '使用three.js模型加载'
+                }
+            },
+            {
+                id: 'outlinePass',
+                name: '轮廓光',
+                author: 'z2586300277',
+                codeUrl: '/three-cesium-examples/public/threeExamples/basic/outlinePass.js',
+                image: '/three-cesium-examples/public/threeExamples/basic/outlinePass.jpg',
+                meta: {
+                    title: '轮廓光',
+                    keywords: 'three.js,轮廓光',
+                    description: '使用three轮廓光'
                 }
             },
             {
@@ -97,6 +301,18 @@ export default [
                     title: '变换动画',
                     keywords: 'three.js,变换动画',
                     description: '使用three.js变换动画'
+                }
+            },
+            {
+                id: 'screenShot',
+                name: '截图',
+                author: 'z2586300277',
+                codeUrl: '/three-cesium-examples/public/threeExamples/basic/screenShot.js',
+                image: '/three-cesium-examples/public/threeExamples/basic/screenShot.jpg',
+                meta: {
+                    title: '截图',
+                    keywords: 'three.js,截图',
+                    description: '使用three.js截图'
                 }
             }
         ]
@@ -230,6 +446,79 @@ export default [
                     description: '使用three.js制作3d拓扑图'
                 }
             },
+            {
+                id: 'model_navigation',
+                name: '模型导航',
+                author: 'nico',
+                codeUrl: '/three-cesium-examples/public/threeExamples/application/nav_mesh/nav.js',
+                image: '/three-cesium-examples/public/threeExamples/application/nav_mesh/nav.jpg',
+                meta: {
+                    title: '模型导航',
+                    keywords: 'three.js,模型导航',
+                    description: '模型导航'
+                }
+            },
+            {
+                id: 'textSphere',
+                name: '球体文字',
+                author: 'z2586300277',
+                codeUrl: '/three-cesium-examples/public/threeExamples/application/textSphere.js',
+                image: '/three-cesium-examples/public/threeExamples/application/textSphere.jpg',
+                meta: {
+                    title: '球体文字',
+                    keywords: 'three.js,球体文字',
+                    description: '使用three球体文字'
+                }
+            }
+        ]
+    },
+    {
+        pid: 'particle',
+        name: '粒子',
+        children: [
+            {
+                id: 'particleScattered',
+                name: '粒子聚散',
+                author: 'z2586300277',
+                codeUrl: '/three-cesium-examples/public/threeExamples/particle/particleScattered.js',
+                image: '/three-cesium-examples/public/threeExamples/particle/particleScattered.jpg',
+                meta: {
+                    title: '粒子聚散',
+                    keywords: 'three.js,粒子聚散',
+                    description: '使用three.js粒子聚散'
+                }
+            
+            }
+        ]
+    },
+    {
+        pid: 'expand',
+        name: '扩展功能',
+        children: [
+            {
+                id: 'loadTiles',
+                name: '加载3dtiles',
+                author: 'z2586300277',
+                codeUrl: '/three-cesium-examples/public/threeExamples/expand/loadTiles.js',
+                image: '/three-cesium-examples/public/threeExamples/expand/loadTiles.jpg',
+                meta: {
+                    title: 'three加载3dtiles',
+                    keywords: 'three.js,3dtiles',
+                    description: '使用three加载3dtiles'
+                }
+            },
+            {
+                id: 'map3d',
+                name: '3D地图',
+                author: 'z2586300277',
+                codeUrl: '/three-cesium-examples/public/threeExamples/expand/map3d.js',
+                image: '/three-cesium-examples/public/threeExamples/expand/map3d.jpg',
+                meta: {
+                    title: '3D地图',
+                    keywords: 'three.js,3D地图',
+                    description: '使用three.js制作3D地图'
+                }
+            }
         ]
     },
     {
@@ -270,6 +559,7 @@ export default [
                 id: 'kallkago_su7',
                 name: 'su7 demo',
                 author: 'KallkaGo',
+                openUrl: 'https://z2586300277.github.io/show-site/su7_demo/',
                 githubUrl: 'https://github.com/KallkaGo/su7-demo',
                 image: '/three-cesium-examples/public/threeExamples/openSource/kallkago_su7.jpg'
             },
@@ -277,6 +567,7 @@ export default [
                 id: 'z2586300277_3d_editor',
                 name: 'Three.js低代码编辑器',
                 author: 'z2586300277',
+                openUrl: 'https://z2586300277.github.io/three-editor/dist/#/editor',
                 githubUrl: 'https://github.com/z2586300277/three-editor',
                 image: '/three-cesium-examples/public/threeExamples/openSource/z2586300277_3d_editor.jpg'
             }
@@ -287,33 +578,41 @@ export default [
         name: '工具',
         children: [
             {
+                id: 'sketchfab_model',
+                name: 'sketchfab免费模型',
+                author: 'z2586300277',
+                openUrl: 'https://sketchfab.com/',
+                image: '/three-cesium-examples/public/threeExamples/tools/sketchfab.png'
+            },
+            {
                 id: 'gltf_report',
                 name: 'gltf在线draco压缩工具',
                 author: 'z2586300277',
-                githubUrl: 'https://gltf.report/',
+                openUrl: 'https://gltf.report/',
                 image: '/three-cesium-examples/public/threeExamples/tools/gltf_report.jpg'
             },
             {
                 id: 'skyBox_image',
                 name: '免费hdr全景图资源',
                 author: 'z2586300277',
-                githubUrl: 'https://polyhaven.com/hdris/skies',
+                openUrl: 'https://polyhaven.com/hdris/skies',
                 image: '/three-cesium-examples/public/threeExamples/tools/skyBox_image.jpg'
             },
             {
                 id: 'skyBox_Make',
                 name: 'hdr制作天空盒',
                 author: 'z2586300277',
-                githubUrl: 'https://matheowis.github.io/HDRI-to-CubeMap/',
+                openUrl: 'https://matheowis.github.io/HDRI-to-CubeMap/',
                 image: '/three-cesium-examples/public/threeExamples/tools/skyBox_Make.jpg'
             },
             {
                 id: 'make_json_font',
                 name: '字体转Three使用json字体',
                 author: 'z2586300277',
-                githubUrl: 'https://gero3.github.io/facetype.js/',
+                openUrl: 'https://gero3.github.io/facetype.js/',
                 image: '/three-cesium-examples/public/threeExamples/tools/make_json_font.jpg'
             }
         ]
     },
+
 ]

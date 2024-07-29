@@ -23,21 +23,47 @@
                 <el-menu class="menu" style="border: none;" :default-active="currentClassify" :ellipsis="false"
                     text-color="#fff" active-text-color="#71a5ee">
                     <el-menu-item :class="{ 'menuItem': item.pid == currentClassify }"
-                        v-for="item in data.classify_list" :key="item.pid" :index="String(item.pid)"
+                        v-for="item in data.raw_classify_list" :key="item.pid" :index="String(item.pid)"
                         @click="changeClassify(item)">
-                        {{ item.name }}
+                        <div class="flex-around">
+                            {{ item.name }}
+                            <el-badge class="badge" type="primary" :value="item.children.length"> </el-badge>
+                        </div>
                     </el-menu-item>
                 </el-menu>
             </div>
-            <div class="examples">
-                <div class="examples-item" v-for="i, k in data.examples_list">
-                    <div class="box">
-                        <div class="image" @click="showCode(i)"><img :src="i.image" /></div>
-                        <div class="author" @click="openAuthor(i)">
-                            <img :src="getAuthors(i.author).icon" width="16px" height="16px">
-                            <span> - {{ getAuthors(i.author).name }}</span>
+            <div class="content">
+                <div class="bar">
+                    <div></div>
+                    <el-input v-model="input" style="max-width: 240px" placeholder="请输入内容" class="input-with-select">
+                        <template #append>
+                            <el-button icon="Search" />
+                        </template>
+                    </el-input>
+                </div>
+                <div class="navigation-parent">
+                    <div class="navigation" ref="navigationRef">
+                        <div v-for="examples in data.classify_list">
+                            <div :to="examples.pid" style="position: relative;z-index: 1;top:-40px"> </div>
+                            <el-divider content-position="left">{{ examples.name }}</el-divider>
+                            <div class="examples">
+                                <div class="examples-item" v-for="i in examples.children">
+                                    <div class="box">
+                                        <div @click="showCode(i, examples)">
+                                            <el-image class="image" fit="cover" :src="i.image" lazy
+                                                :scroll-container="navigationRef" />
+                                        </div>
+                                        <div class="author" @click="openAuthor(i)">
+                                            <el-image class="author-image" :src="getAuthors(i.author).icon" lazy
+                                                :scroll-container="navigationRef" />
+                                            <span> - {{ getAuthors(i.author).name }}</span>
+                                        </div>
+                                        <el-link v-if="i.githubUrl" class="text" @click="openLink(i.githubUrl)"> - {{ i.name }} -</el-link>
+                                        <div class="text" v-else>{{ i.name }}</div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="text">{{ i.name }}</div>
                     </div>
                 </div>
             </div>
@@ -47,7 +73,11 @@
 
 <script setup>
 import { useRouter } from 'vue-router';
-import { reactive } from 'vue';
+import { onMounted, shallowReactive, ref, watch } from 'vue';
+
+const input = ref('')
+
+const navigationRef = ref(null)
 
 function getAuthors(id) {
 
@@ -65,43 +95,37 @@ function openAuthor(item) {
 
 const router = useRouter();
 
+const openLink = (url) => window.open(url)
+
 const openUrl = (k) => window.open(__SITE_URLS__[k])
 
-const data = reactive({
-
-    classify_list: [],
-
-    examples_list: []
-
-})
+const data = shallowReactive({ classify_list: [], raw_classify_list: [] })
 
 const navigation_list = window.THREE_CESIUM_NAVIGATION
 
 let currentNavigationName = localStorage.getItem('navigation') || navigation_list[0].name
 
-const classify_list = (navigation_list.find(item => item.name === currentNavigationName) || navigation_list[0]).examples
+data.raw_classify_list = (navigation_list.find(item => item.name === currentNavigationName) || navigation_list[0]).examples
 
-data.classify_list = classify_list
+data.classify_list = data.raw_classify_list
 
-let currentClassify = localStorage.getItem('classify') || classify_list[0].pid
+let currentClassify = ref(localStorage.getItem('classify') || data.raw_classify_list[0].pid)
 
 const goNavigation = async (item) => {
 
-    data.classify_list = item.examples
+    data.raw_classify_list = item.examples
 
-    const findClassify = item.examples.find(item => item.pid === currentClassify)
+    data.classify_list = data.raw_classify_list
+
+    const findClassify = item.examples.find(item => item.pid === currentClassify.value)
 
     if (!findClassify) {
 
-        currentClassify = item.examples[0].pid
-
-        data.examples_list = item.examples[0].children
+        currentClassify.value = item.examples[0].pid
 
         localStorage.setItem('classify', item.examples[0].pid)
 
     }
-
-    else data.examples_list = findClassify.children
 
     currentNavigationName = item.name
 
@@ -111,27 +135,51 @@ const goNavigation = async (item) => {
 
 const changeClassify = item => {
 
-    data.examples_list = item.children
+    navigationRef.value.querySelector(`[to="${item.pid}"]`)?.scrollIntoView({ behavior: 'smooth' })
 
-    currentClassify = item.pid
+    currentClassify.value = item.pid
 
     localStorage.setItem('classify', item.pid)
 
 }
 
-const examples_list = (classify_list.find(item => item.pid === currentClassify) || classify_list[0]).children
+watch(() => input.value, (v) => {
 
-data.examples_list = examples_list
+    if (v) {
 
-const showCode = (item) => {
+        data.classify_list = data.raw_classify_list.map(item => {
 
-    if(item.githubUrl) return window.open(item.githubUrl)
+            return {
+
+                ...item,
+
+                children: item.children.map(i => {
+
+                    if (i.name.includes(v)) return { ...i }
+
+                }).filter(i => i)
+
+            }
+
+        }).filter(item => item.children.length)
+
+    }
+
+    else data.classify_list = data.raw_classify_list
+
+})
+
+onMounted(() => navigationRef.value.querySelector(`[to="${currentClassify.value}"]`)?.scrollIntoView())
+
+const showCode = (item, examples) => {
+
+    if (item.openUrl) return window.open(item.openUrl)
 
     const path = router.resolve({
 
         name: 'codeMirror',
 
-        query: { navigation: currentNavigationName, classify: currentClassify, id: item.id }
+        query: { navigation: currentNavigationName, classify: examples.pid, id: item.id }
 
     }).href
 
@@ -176,6 +224,22 @@ const showCode = (item) => {
     }
 }
 
+.content {
+    width: 100%;
+}
+
+.bar {
+    height: 46px;
+    width: 100%;
+    box-shadow: -1px 3px 10px rgba(0, 0, 0, .2);
+    padding-left: 20px;
+    padding-right: 45px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .center {
     display: flex;
     background-color: none;
@@ -190,6 +254,12 @@ const showCode = (item) => {
         box-sizing: border-box;
         font-weight: 550;
         width: 240px;
+        overflow: scroll;
+    }
+
+    .nav::-webkit-scrollbar {
+        width: 0px; //纵向滚动条的宽度
+        height: px; //横向滚动条的高度
     }
 }
 
@@ -197,8 +267,21 @@ const showCode = (item) => {
     background-color: rgba(51, 55, 93, 0.4);
 }
 
+.navigation-parent {
+    width: 100%;
+    height: calc(100% - 46px);
+    overflow: hidden;
+}
+
+.navigation {
+    width: 100%;
+    height: 100%;
+    overflow: scroll;
+    padding: 15px 20px 20px 20px;
+    box-sizing: border-box;
+}
+
 .examples {
-    padding: 20px;
     box-sizing: border-box;
     width: 100%;
     display: grid;
@@ -206,7 +289,7 @@ const showCode = (item) => {
     grid-template-rows: repeat(auto-fill, 290px);
     overflow: scroll;
     grid-row-gap: 5px;
-    grid-column-gap: 10px;
+    grid-column-gap: 5px;
 
     &-item {
         width: 250px;
@@ -238,17 +321,16 @@ const showCode = (item) => {
                 justify-content: center;
                 align-items: center;
                 border-radius: 3px;
+                transition: all 0.3s;
 
-                img {
-                    border-radius: 3px;
-                    width: 190px;
-                    height: 190px;
-
-                    &:hover {
-                        transform: scale(1.8);
-                        transition: all 0.5s;
-                    }
+                &:hover {
+                    box-shadow: rgba(0, 0, 0, 0.38) 0px 6px 12px, rgba(0, 0, 0, 0.23) 0px 6px 12px;
                 }
+            }
+
+            .author-image {
+                width: 16px;
+                height: 16px;
             }
         }
     }
@@ -279,11 +361,26 @@ const showCode = (item) => {
 
     &:hover {
         color: #71a5ee;
+        // 发光
+        text-shadow: 0 0 10px #85d7e0;
     }
 }
 
 .text {
     font-size: 16px;
+    color: #071228;
+}
+
+.badge {
+    display: flex;
+    align-items: center;
+}
+
+.flex-around {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
 }
 
 ::-webkit-scrollbar {
@@ -295,5 +392,10 @@ const showCode = (item) => {
 ::-webkit-scrollbar-thumb {
     border-radius: 5px;
     background: rgba(171, 190, 228, 0.3);
+}
+
+//deep是深度选择器，表示选择所有的子孙元素
+:deep(.el-input__inner) {
+    color: #071228;
 }
 </style>

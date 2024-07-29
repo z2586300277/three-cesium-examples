@@ -1,0 +1,51 @@
+{
+  "name": "@recast-navigation/wasm",
+  "description": "A webassembly port of Recast Navigation",
+  "author": {
+    "name": "Isaac Mason",
+    "email": "isaac@isaacmason.com",
+    "url": "https://isaacmason.com/"
+  },
+  "version": "0.33.0",
+  "license": "MIT",
+  "homepage": "https://github.com/isaac-mason/recast-navigation-js",
+  "bugs": {
+    "url": "https://github.com/isaac-mason/recast-navigation-js/issues"
+  },
+  "type": "module",
+  "main": "./dist/recast-navigation.wasm-compat.js",
+  "types": "./dist/recast-navigation.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/recast-navigation.d.ts",
+      "import": "./dist/recast-navigation.wasm-compat.js",
+      "default": "./dist/recast-navigation.wasm-compat.js"
+    },
+    "./wasm": {
+      "types": "./dist/recast-navigation.d.ts",
+      "import": "./dist/recast-navigation.wasm.js",
+      "default": "./dist/recast-navigation.wasm.js"
+    },
+    "./wasm-compat": {
+      "types": "./dist/recast-navigation.d.ts",
+      "import": "./dist/recast-navigation.wasm-compat.js",
+      "default": "./dist/recast-navigation.wasm-compat.js"
+    }
+  },
+  "files": [
+    "dist/recast-navigation.d.ts",
+    "dist/recast-navigation.wasm-compat.js",
+    "dist/recast-navigation.wasm.js",
+    "dist/recast-navigation.wasm.wasm",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "sh build.sh",
+    "build:debug": "sh build.sh debug"
+  },
+  "devDependencies": {
+    "webidl-dts-gen": "^1.11.0"
+  },
+  "packageManager": "yarn@3.2.2"
+}
