@@ -1,18 +1,22 @@
-## Three.js 和 Cesium.js 案例 （想要加入一起管理 - qq 2586300277)
+## 💎 原生Three.js 和 Cesium.js 案例 (想要加入一起管理 - qq 2586300277) - 作者更新到死 -
 
 - dev分支更新后 github实时预览 http://z2586300277.github.io/three-cesium-examples/public/index.html
 
 - 官网预览  https://www.threelab.cn/three-cesium-examples/public/index.html
 
-- 运行框架  安装推荐使用 npm, pnpm, 使用 yarn 安装依赖可能会出现 vue-codemirror 的关联依赖codemirror安装不上,可自行手动安装
+- 开发者交流 🐧QQ 2945853209 - 交流群 131995948
 
-#### - 注: 先点星！先点星！先点星！重要的事情说三遍。
+- node 18+ 较好 - 当前适配Node 14 - 22 版本 (当前项目所有依赖 2024-7-2 已经更新 至 最新版本)
 
-#### - 如果这些里面有案例帮助了您 - 我们不求回报 - 有意的话您可以提交您的作品 - 让爱传递给更多开发者
+- 运行框架  安装推荐使用npm,pnpm,使用yarn安装依赖可能会出现vue-codemirror的关联依赖codemirror安装不上,可自行手动安装
 
-#### - fork仓库后 - 增加用户信息 - 上传您最自豪的作品 - 提交合并到主分支 - 爱心人士赞助后，将爱回馈作者 （开发或者合并 基于dev分支）
+##### 💖 - 注: 先点星！先点星！先点星！重要的事情说三遍。
 
-#### - 开发 如果只修改了 public 里面得内容，没修改src 内容则不需要打包, 如果需要打包手动删除 public/assets 目录
+##### - 如果这些里面有案例帮助了您 - 我们不求回报 - 有意的话您可以提交您的作品 - 让爱传递给更多开发者
+
+##### - fork仓库后 - 增加用户信息 - 上传您最自豪的作品 - 提交合并到主分支 - 爱心人士赞助后，将爱回馈作者 （开发或者合并 基于dev分支）
+
+##### - 开发 如果只修改了 public 里面得内容，没修改src 内容则不需要打包, 如果需要打包手动删除 public/assets 目录
 
 1. 创作者可以在 public/config/author.js 录入你的开发者信息,然后你提交的案例关联上id 就会展示作者信息。
 
@@ -47,15 +51,21 @@
     }
 }
 ```
-- 开发者交流 QQ 2945853209- 交流群 131995948
 
-- node 18+ 较好 - 当前适配Node 14 - 22 版本 
+## 🏠 搭建自己的分布式存储仓库
 
-- 当前项目所有依赖 2024-7-2 已经更新 至 最新版本
+- 架构设计是以请求资源形式访问代码,所以如 codeUrl image, 等资源信息不局限于存储在 本仓库中，例如存储在你自己的服务器，然后url 访问到你的资源地址即可。
 
-- 较大资源存储在 https://github.com/z2586300277/3d-file-server 仓库下 —— 访问服务: https://z2586300277.github.io/3d-file-server/
+- 然后在此仓库仅配置 案例信息即可。
 
-- 目录已最简化 - 通俗易懂 - 开发习惯全靠开发者自行遵守
+- 注 由于 github 访问限制 http 会被自动禁止, 建议 也搭建自己得github page ,使用 github 充当自己的资源服务器。
 
-# [国内镜像](https://gitee.com/giser2017/three-cesium-examples)
-# [国外镜像](https://github.com/z2586300277/three-cesium-examples)
+- 如：我的一些分布式资源存储在 https://github.com/z2586300277/3d-file-server 仓库下 —— 访问服务: https://z2586300277.github.io/3d-file-server/
+
+- github page 搭建  => 创建仓库 => 页面流程 => setting => pages => Build and deployment => source (depoly from a branch) => branch 选择对应分支
+
+- 注： github page 搭建完成后 直接访问 如 https://xxxx.github.io/xxxx/ 下的资源文件无法显示是正常现象, 在代码中可正常获取
+
+- 参考访问案例 如 cesium 案例 => 离线地图 => 内网高德
+
+- 如需帮助联系 QQ 2586300277
