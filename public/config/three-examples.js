@@ -511,8 +511,8 @@ export default [
                 id: 'map3d',
                 name: '3D地图',
                 author: 'z2586300277',
-                codeUrl: '/three-cesium-examples/public/threeExamples/expand/map3d.js',
-                image: '/three-cesium-examples/public/threeExamples/expand/map3d.jpg',
+                codeUrl: 'https://g2657.github.io/examples-server/three/test/map3d.js',
+                image: 'https://g2657.github.io/examples-server/three/test/map3d.jpg',
                 meta: {
                     title: '3D地图',
                     keywords: 'three.js,3D地图',
