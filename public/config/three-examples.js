@@ -427,6 +427,19 @@ export default [
                     keywords: 'three.js,切换ShaderToy',
                     description: '切换ShaderToy'
                 }
+            },
+            {
+                pid: "giser2017",
+                name: "波浪效果",
+                author: "giser2017",
+                codeUrl: 'https://aivogenx.github.io/Web3dTest/waterA.js',
+                image:
+                    "http://threelab.cn/three-cesium-examples/public/threeSymbol/water/waterA.png",
+                meta: {
+                    title: "水效果",
+                    keywords: "three.js,水效果",
+                    description: "使用three水效果",
+                },
             }
         ]
     },
@@ -487,7 +500,7 @@ export default [
                     keywords: 'three.js,粒子聚散',
                     description: '使用three.js粒子聚散'
                 }
-            
+
             }
         ]
     },
