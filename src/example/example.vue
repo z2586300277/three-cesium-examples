@@ -16,7 +16,7 @@
                     <img @click="openUrl('gitee')" src="/files/site/gitee.png" alt="logo" width="36px" height="36px">
                     <img @click="openUrl('github')" src="/files/site/github.png" alt="logo" width="36px" height="36px">
                 </div>
-            </el-menu> 
+            </el-menu>
         </div>
         <div class="center">
             <div class="nav">
@@ -31,11 +31,10 @@
                         </div>
                     </el-menu-item>
                 </el-menu>
-                <div class="center">总数：{{ sum }}</div>
             </div>
             <div class="content">
                 <div class="bar">
-                    <div></div>
+                    <div class="num">🍀总数：{{ sum }}</div>
                     <el-input v-model="input" style="max-width: 240px" placeholder="请输入内容" class="input-with-select">
                         <template #append>
                             <el-button icon="Search" />
@@ -59,9 +58,7 @@
                                                 :scroll-container="navigationRef" />
                                             <span> - {{ getAuthors(i.author).name }}</span>
                                         </div>
-                                        <el-link v-if="i.githubUrl" class="text" @click="openLink(i.githubUrl)"> - {{
-                                            i.name }}
-                                            -</el-link>
+                                        <el-link v-if="i.githubUrl" class="text" @click="openLink(i.githubUrl)"> - {{i.name }} -</el-link>
                                         <div class="text" v-else>{{ i.name }}</div>
                                     </div>
                                 </div>
@@ -103,15 +100,17 @@ const openLink = (url) => window.open(url)
 const openUrl = (k) => window.open(__SITE_URLS__[k])
 
 const data = shallowReactive({ classify_list: [], raw_classify_list: [] })
-let sum = 0;
+
 const navigation_list = window.THREE_CESIUM_NAVIGATION
 
 let currentNavigationName = localStorage.getItem('navigation') || navigation_list[0].name
 
 data.raw_classify_list = (navigation_list.find(item => item.name === currentNavigationName) || navigation_list[0]).examples
-data.raw_classify_list.forEach((item) => {
-    sum += item.children.length;
-});
+
+const sum = ref(0)
+
+sum.value = data.raw_classify_list.reduce((acc, item) => acc + item.children.length, 0)
+
 data.classify_list = data.raw_classify_list
 
 let currentClassify = ref(localStorage.getItem('classify') || data.raw_classify_list[0].pid)
@@ -119,10 +118,9 @@ let currentClassify = ref(localStorage.getItem('classify') || data.raw_classify_
 const goNavigation = async (item) => {
 
     data.raw_classify_list = item.examples
-    sum = 0;
-    data.raw_classify_list.forEach((item) => {
-        sum += item.children.length;
-    });
+
+    sum.value = data.raw_classify_list.reduce((acc, item) => acc + item.children.length, 0)
+
     data.classify_list = data.raw_classify_list
 
     const findClassify = item.examples.find(item => item.pid === currentClassify.value)
@@ -267,8 +265,13 @@ const showCode = (item, examples) => {
 
     .nav::-webkit-scrollbar {
         width: 0px; //纵向滚动条的宽度
-        height: px; //横向滚动条的高度
+        height: 0px; //横向滚动条的高度
     }
+}
+
+.num {
+    color: black;
+    font-weight: bold;
 }
 
 .menuItem {
@@ -382,6 +385,7 @@ const showCode = (item, examples) => {
 .badge {
     display: flex;
     align-items: center;
+    font-weight: 500;
 }
 
 .flex-around {
