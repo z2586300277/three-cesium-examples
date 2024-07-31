@@ -575,6 +575,14 @@ export default [
                 openUrl: 'https://z2586300277.github.io/show-site/TaoHuaTing',
                 downloadUrl: 'https://z2586300277.github.io/show-site/TaoHuaTing/TaoHuaTing.zip',
                 image: '/three-cesium-examples/public/threeExamples/openSource/taohuating.jpg'
+            },
+            {
+                id: 'ziTengHua',
+                name: '紫藤花',
+                author: 'huan_meng_hai_yan',
+                openUrl: 'https://g2657.github.io/examples-server/ziTenghua/',
+                downloadUrl: 'https://g2657.github.io/examples-server/ziTenghua/ziTenghua.zip',
+                image: '/three-cesium-examples/public/threeExamples/openSource/ziTengHua.jpg'
             }
         ]
     },
