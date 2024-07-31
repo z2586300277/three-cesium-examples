@@ -577,6 +577,14 @@ export default [
                 image: '/three-cesium-examples/public/threeExamples/openSource/kallkago_su7.jpg'
             },
             {
+                id: 'taohuating',
+                name: '桃花亭',
+                author: 'huan_meng_hai_yan',
+                openUrl: 'https://z2586300277.github.io/show-site/TaoHuaTing',
+                githubUrl: 'https://github.com/z2586300277/show-site/blob/main/TaoHuaTing/TaoHuaTing.zip',
+                image: '/three-cesium-examples/public/threeExamples/openSource/taohuating.jpg'
+            },
+            {
                 id: 'z2586300277_3d_editor',
                 name: 'Three.js低代码编辑器',
                 author: 'z2586300277',
