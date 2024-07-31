@@ -565,6 +565,20 @@ export default [
         ]
     },
     {
+        pid: 'advancedExamples',
+        name: '高级案例',
+        children: [
+            {
+                id: 'taohuating',
+                name: '桃花亭',
+                author: 'huan_meng_hai_yan',
+                openUrl: 'https://z2586300277.github.io/show-site/TaoHuaTing',
+                downloadUrl: 'https://z2586300277.github.io/show-site/TaoHuaTing/TaoHuaTing.zip',
+                image: '/three-cesium-examples/public/threeExamples/openSource/taohuating.jpg'
+            }
+        ]
+    },
+    {
         pid: 'openSource',
         name: '开源作品',
         children: [
@@ -575,14 +589,6 @@ export default [
                 openUrl: 'https://z2586300277.github.io/show-site/su7_demo/',
                 githubUrl: 'https://github.com/KallkaGo/su7-demo',
                 image: '/three-cesium-examples/public/threeExamples/openSource/kallkago_su7.jpg'
-            },
-            {
-                id: 'taohuating',
-                name: '桃花亭',
-                author: 'huan_meng_hai_yan',
-                openUrl: 'https://z2586300277.github.io/show-site/TaoHuaTing',
-                githubUrl: 'https://github.com/z2586300277/show-site/blob/main/TaoHuaTing/TaoHuaTing.zip',
-                image: '/three-cesium-examples/public/threeExamples/openSource/taohuating.jpg'
             },
             {
                 id: 'z2586300277_3d_editor',

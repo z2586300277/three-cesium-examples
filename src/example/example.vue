@@ -12,7 +12,6 @@
                     {{ item.name }}
                 </el-menu-item>
                 <div class="gitLink">
-                    源码
                     <img @click="openUrl('gitee')" src="/files/site/gitee.png" alt="logo" width="36px" height="36px">
                     <img @click="openUrl('github')" src="/files/site/github.png" alt="logo" width="36px" height="36px">
                 </div>
@@ -58,8 +57,20 @@
                                                 :scroll-container="navigationRef" />
                                             <span> - {{ getAuthors(i.author).name }}</span>
                                         </div>
-                                        <el-link v-if="i.githubUrl" class="text" @click="openLink(i.githubUrl)"> - {{i.name }} -</el-link>
-                                        <div class="text" v-else>{{ i.name }}</div>
+                                        <div class="name-content">
+                                            <el-link v-if="i.githubUrl" class="text" @click="openLink(i.githubUrl)"> -
+                                                {{ i.name }}
+                                                -</el-link>
+                                            <div class="text" v-else>{{ i.name }}</div>
+                                            <div class="download" v-if="i.downloadUrl">
+                                                <el-popconfirm title="下载？" @confirm="() => openLink(i.downloadUrl)">
+                                                    <template #reference>
+                                                        <el-link class="link"
+                                                            icon="Download"></el-link>
+                                                    </template>
+                                                </el-popconfirm>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -207,8 +218,8 @@ const showCode = (item, examples) => {
     width: 100vw;
     height: 70px;
     box-sizing: border-box;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
     background-color: #071228;
     display: flex;
     justify-content: space-between;
@@ -349,7 +360,7 @@ const showCode = (item, examples) => {
 
 .gitLink {
     height: 100%;
-    width: 120px;
+    width: 80px;
     margin-left: 10px;
     display: flex;
     justify-content: space-between;
@@ -357,6 +368,11 @@ const showCode = (item, examples) => {
 
     img {
         cursor: pointer;
+        transition: all 0.3s;
+        &:hover {
+            width: 40px;
+            height: 40px;
+        }
     }
 }
 
@@ -377,9 +393,34 @@ const showCode = (item, examples) => {
     }
 }
 
+.name-content {
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .download {
+        position: absolute;
+        display: flex;
+        width: 100%;
+        justify-content: flex-end;
+
+        .link {
+            color: rgb(51, 105, 153);
+            font-size: 20px;
+            margin-right: 6px;
+
+            :hover {
+                color: #71a5ee;
+            }
+        }
+    }
+}
+
 .text {
-    font-size: 16px;
-    color: #071228;
+    font-size: 14px;
+    color: #1e232e;
 }
 
 .badge {
