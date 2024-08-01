@@ -55,5 +55,14 @@ export default [
         name: '幻梦丶海炎',
         github: 'https://gitee.com/hy282',
         icon: '/three-cesium-examples/public/files/author/huan_meng_hai_yan.jpg'
+    },
+
+    {
+        id: 'kavalcio',
+        name: 'kavalcio',
+        github: 'https://github.com/kavalcio',
+        icon: 'https://avatars.githubusercontent.com/u/68965649?v=4'
     }
+
+    
 ]
