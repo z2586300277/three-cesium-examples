@@ -5,6 +5,12 @@ export default [
         github: 'https://github.com/z2586300277',
         icon: '/three-cesium-examples/public/files/author/z2586300277.png'
     },
+    {
+        id: 'g2657',
+        name: 'g2657',
+        github: 'https://github.com/g2657',
+        icon: 'https://z2586300277.github.io/three-editor/public/vite.svg'
+    },
 
     {
         id: 'giser2017',
@@ -42,5 +48,12 @@ export default [
         name: 'zanmeng',
         github: 'https://github.com/zanmeng',
         icon: '/three-cesium-examples/public/files/author/tx.jpg'
+    },
+
+    {
+        id: 'huan_meng_hai_yan',
+        name: '幻梦丶海炎',
+        github: 'https://gitee.com/hy282',
+        icon: '/three-cesium-examples/public/files/author/huan_meng_hai_yan.jpg'
     }
 ]

@@ -184,6 +184,25 @@ export default [
         name: '基础功能',
         children: [
             {
+                id: 'autoRotate',
+                name: '自动旋转',
+                author: 'z2586300277',
+                codeUrl: '/three-cesium-examples/public/cesiumExamples/basic/autoRotate.js',
+                image: '/three-cesium-examples/public/cesiumExamples/layer/defaultLayer.jpg',
+                meta: {
+                    title: '自动旋转',
+                    keywords: 'cesium.js,自动旋转',
+                    description: 'cesium自动旋转'
+                }
+            },
+            {
+                id: 'cesiumText',
+                name: '绘制文字',
+                author: 'g2657',
+                codeUrl: '/three-cesium-examples/public/cesiumExamples/basic/cesiumText.js',
+                image: '/three-cesium-examples/public/cesiumExamples/layer/defaultLayer.jpg',
+            },
+            {
                 id: 'cssElement',
                 name: 'css2D元素',
                 author: 'z2586300277',
@@ -303,6 +322,13 @@ export default [
                 author: 'z2586300277',
                 codeUrl: '/three-cesium-examples/public/cesiumExamples/expand/cesiumAndThree.js',
                 image: '/three-cesium-examples/public/cesiumExamples/expand/cesiumAndThree.jpg',
+            },
+            {
+                id: 'echartsFlyLine',
+                name: 'echarts飞线',
+                author: 'z2586300277',
+                codeUrl: '/three-cesium-examples/public/cesiumExamples/expand/echartsFlyLine.js',
+                image: 'https://z2586300277.github.io/three-editor/src/codes/cesiumjs/basic/flyCharts.jpg',
             }
         ]
     },

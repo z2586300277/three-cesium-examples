@@ -427,6 +427,19 @@ export default [
                     keywords: 'three.js,切换ShaderToy',
                     description: '切换ShaderToy'
                 }
+            },
+            {
+                pid: "giser2017",
+                name: "波浪效果",
+                author: "giser2017",
+                codeUrl: 'https://aivogenx.github.io/Web3dTest/waterA.js',
+                image:
+                    "http://threelab.cn/three-cesium-examples/public/threeSymbol/water/waterA.png",
+                meta: {
+                    title: "水效果",
+                    keywords: "three.js,水效果",
+                    description: "使用three水效果",
+                },
             }
         ]
     },
@@ -487,7 +500,7 @@ export default [
                     keywords: 'three.js,粒子聚散',
                     description: '使用three.js粒子聚散'
                 }
-            
+
             }
         ]
     },
@@ -511,8 +524,8 @@ export default [
                 id: 'map3d',
                 name: '3D地图',
                 author: 'z2586300277',
-                codeUrl: '/three-cesium-examples/public/threeExamples/expand/map3d.js',
-                image: '/three-cesium-examples/public/threeExamples/expand/map3d.jpg',
+                codeUrl: 'https://g2657.github.io/examples-server/three/test/map3d.js',
+                image: 'https://g2657.github.io/examples-server/three/test/map3d.jpg',
                 meta: {
                     title: '3D地图',
                     keywords: 'three.js,3D地图',
@@ -548,6 +561,28 @@ export default [
                     keywords: 'three.js,自定义遮罩通道',
                     description: '使用three.js自定义遮罩通道'
                 }
+            }
+        ]
+    },
+    {
+        pid: 'advancedExamples',
+        name: '高级案例',
+        children: [
+            {
+                id: 'taohuating',
+                name: '桃花亭',
+                author: 'huan_meng_hai_yan',
+                openUrl: 'https://z2586300277.github.io/show-site/TaoHuaTing',
+                downloadUrl: 'https://z2586300277.github.io/show-site/TaoHuaTing/TaoHuaTing.zip',
+                image: '/three-cesium-examples/public/threeExamples/openSource/taohuating.jpg'
+            },
+            {
+                id: 'ziTengHua',
+                name: '紫藤花',
+                author: 'huan_meng_hai_yan',
+                openUrl: 'https://g2657.github.io/examples-server/ziTenghua/',
+                downloadUrl: 'https://g2657.github.io/examples-server/ziTenghua/ziTenghua.zip',
+                image: '/three-cesium-examples/public/threeExamples/openSource/ziTengHua.jpg'
             }
         ]
     },

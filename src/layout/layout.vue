@@ -1,41 +1,47 @@
 <template>
     <router-view />
-    <div v-show="isShow">
-        <div class="info">
-            <div class="text author" v-if="authorInfo.value" @click="openAuthor(authorInfo.value.github)"
+    <div>
+        <div class="info" :key="refreshKey">
+            <div class="text author" v-if="authorInfo" @click="openAuthor(authorInfo.github)"
                 style="margin-bottom: 5px;">
-                作者 - <img :src="authorInfo.value.icon" width="16px" height="16px">{{ authorInfo.value.name }}
+                作者 - <img :src="authorInfo.icon" width="16px" height="16px">&nbsp;{{ authorInfo.name }}
             </div>
             <div class="flexAuthor">
                 <img src="/files/site/logo.png" alt="logo" width="20px" height="20px"> &nbsp;
                 <el-link class="text" @click="openUrl('web')"
-                    :style="{ color: !authorInfo.value ? '#071228' : '' }">加入社区-THREELAB</el-link>
+                    :style="{ color: !authorInfo ? '#071228' : '' }">加入社区-THREELAB</el-link>
             </div>
         </div>
     </div>
 </template>
 
 <script setup>
-import { ref, onMounted, reactive } from 'vue'
-import { useRoute } from 'vue-router'
+import { ref, onMounted } from 'vue'
+import { useRoute, useRouter } from 'vue-router'
 
 const route = useRoute()
 
-const authorInfo = reactive({ value: null })
+const router = useRouter()
+
+const refreshKey = ref(0)
+
+router.beforeEach((to, from, next) => {
+
+    refreshKey.value++
+
+    next()
+
+})
+
+const authorInfo = ref(null)
 
 const openAuthor = (url) => window.open(url)
 
 onMounted(() => {
 
-    if (route.name === 'codeMirror') {
-
-        authorInfo.value = window.NOW_AUTHOR_INFO
-
-    }
+    if (route.name === 'codeMirror') authorInfo.value = window.NOW_AUTHOR_INFO
 
 })
-
-const isShow = ref(!localStorage.getItem('hide_author_info'))
 
 const openUrl = (k) => window.open(__SITE_URLS__[k])
 
@@ -63,11 +69,10 @@ const openUrl = (k) => window.open(__SITE_URLS__[k])
         color: #e6e6e6;
         font-weight: bold;
         font-size: 13px;
-        transition: all 0.3s;
         cursor: pointer;
 
         &:hover {
-            color: #4ec4e4;
+            color: #409eff;
         }
     }
 
