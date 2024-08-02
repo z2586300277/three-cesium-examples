@@ -329,6 +329,13 @@ export default [
                 author: 'z2586300277',
                 codeUrl: '/three-cesium-examples/public/cesiumExamples/expand/echartsFlyLine.js',
                 image: 'https://z2586300277.github.io/three-editor/src/codes/cesiumjs/basic/flyCharts.jpg',
+            },
+            {
+                id: 'heatMap',
+                name: '热力图',
+                author: 'z2586300277',
+                codeUrl: '/three-cesium-examples/public/cesiumExamples/expand/heatMap.js',
+                image: 'https://z2586300277.github.io/three-editor/src/codes/cesiumjs/basic/heatMap.jpg',
             }
         ]
     },
