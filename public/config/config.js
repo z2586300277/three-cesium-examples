@@ -31,12 +31,12 @@ window.GET_SCRIPT = (v, t) =>
             "postprocessing": "/three-cesium-examples/public/js/postprocessing.js",
             "gsap": "/three-cesium-examples/public/js/gsap/index.js",
             "dat.gui": "/three-cesium-examples/public/js/dat.gui.module.js",
-            "3d-tiles-renderer": "/three-cesium-examples/public/js/3dTilesRenderer/index.js",
-            "@recast-navigation/three": "/three-cesium-examples/public/js/@recast-navigation/three/dist/index.mjs",
-            "@recast-navigation/core": "/three-cesium-examples/public/js/@recast-navigation/core/dist/index.mjs",
-            "@recast-navigation/wasm": "/three-cesium-examples/public/js/@recast-navigation/wasm/dist/recast-navigation.wasm-compat.js",
-            "@recast-navigation/generators": "/three-cesium-examples/public/js/@recast-navigation/generators/dist/index.mjs",
-            "three.path": "/three-cesium-examples/public/js/three.path.module.js",
+            "3d-tiles-renderer": "https://z2586300277.github.io/3d-file-server/js/3dTilesRenderer/index.js",
+            "@recast-navigation/three": "https://z2586300277.github.io/3d-file-server/js/@recast-navigation/three/dist/index.mjs",
+            "@recast-navigation/core": "https://z2586300277.github.io/3d-file-server/js/@recast-navigation/core/dist/index.mjs",
+            "@recast-navigation/wasm": "https://z2586300277.github.io/3d-file-server/js/@recast-navigation/wasm/dist/recast-navigation.wasm-compat.js",
+            "@recast-navigation/generators": "https://z2586300277.github.io/3d-file-server/js/@recast-navigation/generators/dist/index.mjs",
+            "three.path": "https://z2586300277.github.io/3d-file-server/js/three.path.module.js",
             "@tweenjs/tween.js":"/three-cesium-examples/public/js/tween.esm.js"
         }
     }
