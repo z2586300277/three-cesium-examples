@@ -428,8 +428,8 @@ export default [
                     description: '切换ShaderToy'
                 }
             },
-            {
-                pid: "giser2017",
+            {   
+                id: "waterA",
                 name: "波浪效果",
                 author: "giser2017",
                 codeUrl: 'https://aivogenx.github.io/Web3dTest/waterA.js',
@@ -440,6 +440,13 @@ export default [
                     keywords: "three.js,水效果",
                     description: "使用three水效果",
                 },
+            },
+            {
+                id: "imageShake",
+                name: "图片抖动",
+                author: "z2586300277",
+                codeUrl: "/three-cesium-examples/public/threeExamples/shader/imageShake.js",
+                image: "/three-cesium-examples/public/threeExamples/shader/imageShake.jpg"
             }
         ]
     },
