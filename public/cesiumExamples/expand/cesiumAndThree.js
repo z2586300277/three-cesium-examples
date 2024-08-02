@@ -1,5 +1,6 @@
+`{"importmap":{"three": "/three-cesium-examples/public/js/three/three.module.min.js"}}`=INCLUDE_SCRIPT_PLACEHOLDER /* 融合 */
 import * as Cesium from 'cesium'
-import * as THREE from '/three-cesium-examples/public/js/three/three.module.min.js'
+import * as THREE from 'three'
 
 const cesiumBox = document.getElementById('box')
 
@@ -25,7 +26,7 @@ const minWGS84 = [115.23, 39.55] // 最小经纬度
 
 const maxWGS84 = [116.23, 41.55] // 最大经纬度
 
-initThree(threeBox,initCesium(cesiumBox) )
+initThree(threeBox,initCesium(cesiumBox))
 
 // 初始化Cesium
 function initCesium() {
@@ -92,6 +93,16 @@ function initThree(threeBox, viewer) {
 
         requestAnimationFrame(render)
 
+    }
+
+    window.onresize = () => {
+
+        renderer.setSize(threeBox.clientWidth, threeBox.clientHeight)
+
+        camera.aspect = threeBox.clientWidth / threeBox.clientHeight
+
+        camera.updateProjectionMatrix()
+        
     }
 
     render()
