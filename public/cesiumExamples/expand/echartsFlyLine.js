@@ -1,5 +1,5 @@
+`{"src": ["https://z2586300277.github.io/3d-file-server/js/echarts490.min.js"]}`=INCLUDE_SCRIPT_PLACEHOLDER/* 注 echarts 版本使用 4.9.0  请自行引入  此处我为 src 引入 */
 import * as Cesium from 'cesium'
-/* 注 echarts 版本使用 4.9.0  请自行引入  此处我为 src 引入 */
 
 const DOM = document.getElementById('box')
 
@@ -22,7 +22,7 @@ const viewer = new Cesium.Viewer(DOM, {
 viewer._cesiumWidget._creditContainer.style.display = "none"
 
 // 视角设置北京
-viewer.camera.flyTo({ destination: Cesium.Cartesian3.fromDegrees(116.4551, 40.2539, 10000000)})
+viewer.camera.flyTo({ destination: Cesium.Cartesian3.fromDegrees(116.4551, 40.2539, 10000000) })
 
 class RegisterCoordinateSystem {
     static dimensions = ['lng', 'lat']

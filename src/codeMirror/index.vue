@@ -56,15 +56,27 @@ function getAuthors(id) {
 
 }
 
-window.NOW_AUTHOR_INFO = getAuthors(currentExample.author)
+window.NOW_AUTHOR_INFO.value = getAuthors(currentExample.author)
 
 if (currentExample?.meta) setMetaContent(currentExample.meta)
+
+let dependent_script
 
 async function getExampleCode(url) {
 
    const code_text = await fetch(url).then(res => res.text())
 
-   jsCode.value = code_text
+   const resolve = code_text.split(/=INCLUDE_SCRIPT_PLACEHOLDER/)
+
+   if (resolve.length > 1) {
+
+      jsCode.value = resolve[1]
+
+      dependent_script = resolve[0].split('`')[1]
+
+   }
+
+   else jsCode.value = code_text
 
 }
 
@@ -82,11 +94,11 @@ onMounted(async () => {
 
    await getExampleCode(currentExample.codeUrl)
 
-   preview.value.usePreview(jsCode.value, query.navigation)
+   preview.value.usePreview(jsCode.value, query.navigation, dependent_script)
 
 }) // 初始执行
 
-const useCode = () => preview.value.usePreview(jsCode.value, query.navigation) // 执行
+const useCode = () => preview.value.usePreview(jsCode.value, query.navigation, dependent_script) // 执行
 
 </script>
 

@@ -1,7 +1,7 @@
 <template>
     <router-view />
     <div>
-        <div class="info" :key="refreshKey">
+        <div class="info">
             <div class="text author" v-if="authorInfo" @click="openAuthor(authorInfo.github)"
                 style="margin-bottom: 5px;">
                 作者 - <img :src="authorInfo.icon" width="16px" height="16px">&nbsp;{{ authorInfo.name }}
@@ -9,39 +9,32 @@
             <div class="flexAuthor">
                 <img src="/files/site/logo.png" alt="logo" width="20px" height="20px"> &nbsp;
                 <el-link class="text" @click="openUrl('web')"
-                    :style="{ color: !authorInfo ? '#071228' : '' }">加入社区-THREELAB</el-link>
+                    :style="{ color: route.name === 'example' ? '#071228' : '' }">加入社区-THREELAB</el-link>
             </div>
         </div>
     </div>
 </template>
 
 <script setup>
-import { ref, onMounted } from 'vue'
+import { ref } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 
 const route = useRoute()
 
-const router = useRouter()
+const authorInfo = ref(null)
 
-const refreshKey = ref(0)
+const router = useRouter()
 
 router.beforeEach((to, from, next) => {
 
-    refreshKey.value++
+    if (from.name == 'codeMirror') authorInfo.value = null
 
     next()
-
 })
 
-const authorInfo = ref(null)
+window.NOW_AUTHOR_INFO = authorInfo
 
 const openAuthor = (url) => window.open(url)
-
-onMounted(() => {
-
-    if (route.name === 'codeMirror') authorInfo.value = window.NOW_AUTHOR_INFO
-
-})
 
 const openUrl = (k) => window.open(__SITE_URLS__[k])
 

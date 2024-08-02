@@ -482,7 +482,19 @@ export default [
                     keywords: 'three.js,球体文字',
                     description: '使用three球体文字'
                 }
-            }
+            },
+            {
+                id: 'coffeeMug',
+                name: '咖啡',
+                author: 'kavalcio',
+                codeUrl: '/three-cesium-examples/public/threeExamples/application/coffeeMug.js',
+                image: '/three-cesium-examples/public/threeExamples/application/coffeeMug.png',
+                meta: {
+                    title: '咖啡',
+                    keywords: 'three.js,咖啡',
+                    description: '咖啡'
+                }
+            },
         ]
     },
     {

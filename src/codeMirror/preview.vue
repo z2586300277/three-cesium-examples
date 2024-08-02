@@ -9,7 +9,7 @@ const iframeParent = ref(null)
 
 defineExpose({
 
-    usePreview: (v, t) => {
+    usePreview: (v, t, dependent) => {
 
         const frame = document.createElement('iframe')
 
@@ -17,7 +17,7 @@ defineExpose({
 
         iframeParent.value.appendChild(frame)
 
-        const script = window.GET_SCRIPT(v, t)
+        const script = window.GET_SCRIPT(v, t, dependent)
 
         frame.contentWindow.document.open()
         
