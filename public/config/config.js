@@ -4,7 +4,8 @@ import threeCesiumAuthors from "./author.js";
 
 window.THREE_CESIUM_NAVIGATION = [
     {
-        name: "Three.js案例[r166]",
+        name: "ThreeJS",
+        label: "Three.js案例[r166]",
         examples: threeExamples,
         inject: {
             importmap: {
@@ -19,7 +20,8 @@ window.THREE_CESIUM_NAVIGATION = [
         }
     },
     {
-        name: "Cesium.js案例[1.119]",
+        name: "CesiumJS",
+        label: "Cesium.js案例[1.119]",
         examples: cesiumExamples,
         inject: {
             link: [`/three-cesium-examples/public/js/cesium/style.css`],

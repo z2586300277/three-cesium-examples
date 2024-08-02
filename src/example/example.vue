@@ -3,16 +3,17 @@
         <div class="top">
             <div class="top-title" @click="openUrl('web')">
                 <img class="logo" src="/files/site/logo.png" alt="logo" width="36px" height="36px">
-                <div class="top-title-text">三界® THREELAB</div>
+                <div class="top-title-text">三界® ThreeLab</div>
             </div>
             <el-menu class="menu" style="border: none;" :default-active="currentNavigationName" mode="horizontal"
                 :ellipsis="false" active-text-color="#fff" text-color="#fff" :default-openeds="[currentNavigationName]">
                 <el-menu-item v-for="item in navigation_list" :key="item.name" :index="String(item.name)"
                     @click="goNavigation(item)">
-                    {{ item.name }}
+                    {{ item.label }}
                 </el-menu-item>
                 <div class="gitLink">
                     <img @click="openUrl('gitee')" src="/files/site/gitee.png" alt="logo" width="36px" height="36px">
+                    |
                     <img @click="openUrl('github')" src="/files/site/github.png" alt="logo" width="36px" height="36px">
                 </div>
             </el-menu>
@@ -114,7 +115,9 @@ const data = shallowReactive({ classify_list: [], raw_classify_list: [] })
 
 const navigation_list = window.THREE_CESIUM_NAVIGATION
 
-let currentNavigationName = localStorage.getItem('navigation') || navigation_list[0].name
+const localNavigation = localStorage.getItem('navigation')
+
+let currentNavigationName =  navigation_list.some(item => item.name === localNavigation) ? localNavigation : navigation_list[0].name
 
 data.raw_classify_list = (navigation_list.find(item => item.name === currentNavigationName) || navigation_list[0]).examples
 
@@ -360,11 +363,11 @@ const showCode = (item, examples) => {
 
 .gitLink {
     height: 100%;
-    width: 80px;
-    margin-left: 10px;
+    width: 90px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-weight: 300;
 
     img {
         cursor: pointer;

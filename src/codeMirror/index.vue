@@ -56,7 +56,7 @@ function getAuthors(id) {
 
 }
 
-window.NOW_AUTHOR_INFO = getAuthors(currentExample.author)
+window.NOW_AUTHOR_INFO.value = getAuthors(currentExample.author)
 
 if (currentExample?.meta) setMetaContent(currentExample.meta)
 
