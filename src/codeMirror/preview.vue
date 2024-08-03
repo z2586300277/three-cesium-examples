@@ -26,7 +26,7 @@ class WaterMark {
         this.maskDiv = document.createElement('div');
         let ctx = canvas.getContext('2d');
         ctx.font = 'normal 18px Microsoft Yahei';
-        ctx.fillStyle = 'rgb(255, 255, 255, 0.2)';
+        ctx.fillStyle = 'rgb(255, 255, 255, 0.1)';
         ctx.textAlign = 'center';
         ctx.textBaseline = 'middle';
         ctx.translate(canvas.width / 2, canvas.height / 2);
