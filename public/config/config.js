@@ -1,6 +1,9 @@
 import cesiumExamples from "./cesium-examples.js";
 import threeExamples from "./three-examples.js";
 import threeCesiumAuthors from "./author.js";
+import threeCesiumLinks from "./links.js";
+
+window.THREE_CESIUM_LINKS = threeCesiumLinks;
 
 window.THREE_CESIUM_NAVIGATION = [
     {
