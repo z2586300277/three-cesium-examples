@@ -502,6 +502,20 @@ export default [
                     description: '咖啡'
                 }
             },
+            {
+                id:'flowerRain',
+                name:'花瓣雨',
+                author:'QuarkGluonPlasma',
+                codeUrl:'/three-cesium-examples/public/threeExamples/application/flowerRain.js',
+                image:'/three-cesium-examples/public/threeExamples/application/flowerRain.jpg',
+            },
+            {
+                id: 'houseScene',
+                name: '第一人称房屋',
+                author: 'QuarkGluonPlasma',
+                codeUrl: '/three-cesium-examples/public/threeExamples/application/houseScene.js',
+                image: '/three-cesium-examples/public/threeExamples/application/houseScene.jpg'
+            }
         ]
     },
     {

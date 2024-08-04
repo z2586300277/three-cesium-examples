@@ -62,7 +62,13 @@ export default [
         name: 'kavalcio',
         github: 'https://github.com/kavalcio',
         icon: 'https://avatars.githubusercontent.com/u/68965649?v=4'
-    }
+    },
 
+    {
+        id: 'QuarkGluonPlasma',
+        name: 'QuarkGluonPlasma',
+        github: 'https://github.com/QuarkGluonPlasma',
+        icon: 'https://avatars.githubusercontent.com/u/80755847?v=4'
+    }
     
 ]
