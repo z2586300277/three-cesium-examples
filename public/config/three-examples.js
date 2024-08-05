@@ -409,7 +409,7 @@ export default [
                 name: '溶解',
                 author: 'KallkaGo',
                 codeUrl: '/three-cesium-examples/public/threeExamples/shader/dissolve.js',
-                image: '/three-cesium-examples/public/threeExamples/shader/dissolve.png',
+                image: 'https://z2586300277.github.io/3d-file-server/images/dissolve/dissolve.png',
                 meta: {
                     title: '溶解',
                     keywords: 'three.js,溶解',
@@ -470,8 +470,8 @@ export default [
                 id: 'model_navigation',
                 name: '模型导航',
                 author: 'nico',
-                codeUrl: '/three-cesium-examples/public/threeExamples/application/nav_mesh/nav.js',
-                image: '/three-cesium-examples/public/threeExamples/application/nav_mesh/nav.jpg',
+                codeUrl: '/three-cesium-examples/public/threeExamples/application/nav.js',
+                image: '/three-cesium-examples/public/threeExamples/application/nav.jpg',
                 meta: {
                     title: '模型导航',
                     keywords: 'three.js,模型导航',
@@ -495,7 +495,7 @@ export default [
                 name: '咖啡',
                 author: 'kavalcio',
                 codeUrl: '/three-cesium-examples/public/threeExamples/application/coffeeMug.js',
-                image: '/three-cesium-examples/public/threeExamples/application/coffeeMug.png',
+                image: '/three-cesium-examples/public/threeExamples/application/coffeeMug.jpg',
                 meta: {
                     title: '咖啡',
                     keywords: 'three.js,咖啡',
@@ -650,7 +650,7 @@ export default [
                 name: 'sketchfab免费模型',
                 author: 'z2586300277',
                 openUrl: 'https://sketchfab.com/',
-                image: '/three-cesium-examples/public/threeExamples/tools/sketchfab.png'
+                image: '/three-cesium-examples/public/threeExamples/tools/sketchfab.jpg'
             },
             {
                 id: 'gltf_report',

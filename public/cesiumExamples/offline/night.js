@@ -19,6 +19,6 @@ const viewer = new Cesium.Viewer(box, {
 })
 
 let imagelayer = new Cesium.SingleTileImageryProvider({
-    url: "/three-cesium-examples/public/cesiumExamples/offline/world_n.jpg",
+    url: "https://z2586300277.github.io/3d-file-server/images/offlineLayer/world_n.jpg",
 });
 viewer.imageryLayers.addImageryProvider(imagelayer);

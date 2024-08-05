@@ -20,7 +20,7 @@ export default [
                 name: '坐标参考',
                 author: 'giser2017',
                 codeUrl: '/three-cesium-examples/public/cesiumExamples/layer/coordLayer.js',
-                image: '/three-cesium-examples/public/cesiumExamples/layer/coord.png',
+                image: '/three-cesium-examples/public/cesiumExamples/layer/coord.jpg',
                 meta: {
                     title: '坐标参考',
                     keywords: 'cesium.js,坐标参考',
@@ -111,7 +111,7 @@ export default [
                 name: '蓝色',
                 author: 'giser2017',
                 codeUrl: '/three-cesium-examples/public/cesiumExamples/offline/blue.js',
-                image: '/three-cesium-examples/public/cesiumExamples/offline/blue.png',
+                image: '/three-cesium-examples/public/cesiumExamples/offline/blue.jpg',
                 meta: {
                     title: '蓝色',
                     keywords: 'cesium.js,蓝色',
@@ -122,7 +122,7 @@ export default [
                 name: '夜间',
                 author: 'giser2017',
                 codeUrl: '/three-cesium-examples/public/cesiumExamples/offline/day.js',
-                image: '/three-cesium-examples/public/cesiumExamples/offline/day.png',
+                image: '/three-cesium-examples/public/cesiumExamples/offline/day.jpg',
                 meta: {
                     title: '夜间',
                     keywords: 'cesium.js,夜间',
@@ -134,7 +134,7 @@ export default [
                 name: '影像',
                 author: 'giser2017',
                 codeUrl: '/three-cesium-examples/public/cesiumExamples/offline/img.js',
-                image: '/three-cesium-examples/public/cesiumExamples/offline/img.png',
+                image: '/three-cesium-examples/public/cesiumExamples/offline/img.jpg',
                 meta: {
                     title: '影像',
                     keywords: 'cesium.js,影像',
@@ -146,7 +146,7 @@ export default [
                 name: '夜间',
                 author: 'giser2017',
                 codeUrl: '/three-cesium-examples/public/cesiumExamples/offline/night.js',
-                image: '/three-cesium-examples/public/cesiumExamples/offline/night.png',
+                image: '/three-cesium-examples/public/cesiumExamples/offline/night.jpg',
                 meta: {
                     title: '影像',
                     keywords: 'cesium.js,影像',
