@@ -43,7 +43,7 @@ const tilesRenderer = new TilesRenderer('https://z2586300277.github.io/3d-file-s
 // 可选 gltf draco 配置
 const loader = new GLTFLoader();
 
-loader.setDRACOLoader(new DRACOLoader().setDecoderPath('/three-cesium-examples/public/js/three/draco/'));
+loader.setDRACOLoader(new DRACOLoader().setDecoderPath('https://z2586300277.github.io/3d-file-server/js/three/draco/'));
 
 tilesRenderer.manager.addHandler(/\.gltf$/, loader)
 
