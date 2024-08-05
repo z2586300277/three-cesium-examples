@@ -1,6 +1,9 @@
 import cesiumExamples from "./cesium-examples.js";
 import threeExamples from "./three-examples.js";
 import threeCesiumAuthors from "./author.js";
+import threeCesiumLinks from "./links.js";
+
+window.THREE_CESIUM_LINKS = threeCesiumLinks;
 
 window.THREE_CESIUM_NAVIGATION = [
     {
@@ -9,11 +12,11 @@ window.THREE_CESIUM_NAVIGATION = [
         examples: threeExamples,
         inject: {
             importmap: {
-                "three": "/three-cesium-examples/public/js/three/three.module.min.js",
-                "three/examples/jsm/": "/three-cesium-examples/public/js/three/addons/",
-                "three/addons/": "/three-cesium-examples/public/js/three/addons/",
+                "three": "https://z2586300277.github.io/3d-file-server/js/three/three.module.min.js",
+                "three/examples/jsm/": "https://z2586300277.github.io/3d-file-server/js/three/addons/",
+                "three/addons/": "https://z2586300277.github.io/3d-file-server/js/three/addons/",
+                "gsap": "https://z2586300277.github.io/3d-file-server/js/gsap/index.js",
                 "postprocessing": "/three-cesium-examples/public/js/postprocessing.js",
-                "gsap": "/three-cesium-examples/public/js/gsap/index.js",
                 "dat.gui": "/three-cesium-examples/public/js/dat.gui.module.js",
                 "@tweenjs/tween.js": "/three-cesium-examples/public/js/tween.esm.js"
             }
@@ -24,13 +27,13 @@ window.THREE_CESIUM_NAVIGATION = [
         label: "Cesium.js案例[1.119]",
         examples: cesiumExamples,
         inject: {
-            link: [`/three-cesium-examples/public/js/cesium/style.css`],
+            link: [`https://z2586300277.github.io/3d-file-server/js/cesium/style.css`],
             src: [],
             importmap: {
-                "cesium": "/three-cesium-examples/public/js/cesium/Cesium.js",
+                "cesium": "https://z2586300277.github.io/3d-file-server/js/cesium/Cesium.js",
                 "dat.gui": "/three-cesium-examples/public/js/dat.gui.module.js"
             },
-            jsHeader: `window.CESIUM_BASE_URL = "/three-cesium-examples/public/js/cesium"`
+            jsHeader: `window.CESIUM_BASE_URL = "https://z2586300277.github.io/3d-file-server/js/cesium"`
         }
     }
 ];

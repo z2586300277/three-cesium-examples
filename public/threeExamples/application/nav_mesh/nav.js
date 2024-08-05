@@ -60,7 +60,7 @@ const loader = new GLTFLoader();
 
 loader.setDRACOLoader(
   new DRACOLoader().setDecoderPath(
-    "/three-cesium-examples/public/js/three/draco/"
+    "https://z2586300277.github.io/3d-file-server/js/three/draco/"
   )
 );
 

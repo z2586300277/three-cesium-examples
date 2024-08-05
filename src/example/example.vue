@@ -3,7 +3,26 @@
         <div class="top">
             <div class="top-title" @click="openUrl('web')">
                 <img class="logo" src="/files/site/logo.png" alt="logo" width="36px" height="36px">
-                <div class="top-title-text">三界® ThreeLab</div>
+                <div class="top-title-text">三界® THREELAB</div>
+            </div>
+            <div class="topLink">
+                <div v-for="i in links" :key="i.name" style="display: flex;align-items: center;margin: 0px 8px 0px 8px;">
+                    <el-dropdown v-if="i.children">
+                        <el-button class="btnLink" link>
+                            {{ i.name }}<el-icon class="el-icon--right"><arrow-down /></el-icon>
+                        </el-button>
+                        <template #dropdown>
+                            <el-dropdown-menu>
+                                <el-dropdown-item v-for="j in i.children">
+                                    <el-link @click="openLink(j.url)">{{ j.name }}</el-link>
+                                </el-dropdown-item>
+                            </el-dropdown-menu>
+                        </template>
+                    </el-dropdown>
+                    <el-button class="btnLink" @click="openLink(i.url)" link v-else>
+                        {{ i.name }}
+                    </el-button>
+                </div>
             </div>
             <el-menu class="menu" style="border: none;" :default-active="currentNavigationName" mode="horizontal"
                 :ellipsis="false" active-text-color="#fff" text-color="#fff" :default-openeds="[currentNavigationName]">
@@ -35,6 +54,24 @@
             <div class="content">
                 <div class="bar">
                     <div class="num">🍀总数：{{ sum }}</div>
+                    <div class="gitInfo">
+                        <!-- 贡献者数量 -->
+                        <img @click="openUrl('gitee')"
+                            src="https://gitee.com/giser2017/three-cesium-examples/badge/star.svg?theme=dark"
+                            alt="Gitee stars">
+                        <img @click="openUrl('github')"
+                            src="https://img.shields.io/github/stars/z2586300277/three-cesium-examples?style=social"
+                            alt="GitHub stars">
+                        <img @click="openUrl('github')"
+                            :src="'https://img.shields.io/badge/' + authorSum + '人-贡献者-ff69b4'"
+                            alt="GitHub contributors">
+                        <img @click="openUrl('github')"
+                            src="https://img.shields.io/github/last-commit/z2586300277/three-cesium-examples"
+                            alt="GitHub last commit">
+                        <img @click="openUrl('github')"
+                            src="https://img.shields.io/github/license/z2586300277/three-cesium-examples"
+                            alt="GitHub license">
+                    </div>
                     <el-input v-model="input" style="max-width: 240px" placeholder="请输入内容" class="input-with-select">
                         <template #append>
                             <el-button icon="Search" />
@@ -66,8 +103,7 @@
                                             <div class="download" v-if="i.downloadUrl">
                                                 <el-popconfirm title="下载？" @confirm="() => openLink(i.downloadUrl)">
                                                     <template #reference>
-                                                        <el-link class="link"
-                                                            icon="Download"></el-link>
+                                                        <el-link class="link" icon="Download"></el-link>
                                                     </template>
                                                 </el-popconfirm>
                                             </div>
@@ -87,9 +123,13 @@
 import { useRouter } from 'vue-router';
 import { onMounted, shallowReactive, ref, watch } from 'vue';
 
+const links = window.THREE_CESIUM_LINKS
+
 const input = ref('')
 
 const navigationRef = ref(null)
+
+const authorSum = window.THREE_CESIUM_AUTHORS.length
 
 function getAuthors(id) {
 
@@ -117,7 +157,7 @@ const navigation_list = window.THREE_CESIUM_NAVIGATION
 
 const localNavigation = localStorage.getItem('navigation')
 
-let currentNavigationName =  navigation_list.some(item => item.name === localNavigation) ? localNavigation : navigation_list[0].name
+let currentNavigationName = navigation_list.some(item => item.name === localNavigation) ? localNavigation : navigation_list[0].name
 
 data.raw_classify_list = (navigation_list.find(item => item.name === currentNavigationName) || navigation_list[0]).examples
 
@@ -227,7 +267,7 @@ const showCode = (item, examples) => {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 700;
     color: #fff;
     border-bottom: 1px solid #636871;
@@ -372,6 +412,7 @@ const showCode = (item, examples) => {
     img {
         cursor: pointer;
         transition: all 0.3s;
+
         &:hover {
             width: 40px;
             height: 40px;
@@ -432,6 +473,22 @@ const showCode = (item, examples) => {
     font-weight: 500;
 }
 
+.gitInfo {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+
+    img {
+        margin: 0px 5px 0px 5px;
+        transition: all 0.3s;
+        cursor: pointer;
+
+        &:hover {
+            box-shadow: rgba(0, 0, 0, 0.38) 0px 6px 12px, rgba(0, 0, 0, 0.23) 0px 6px 12px;
+        }
+    }
+}
+
 .flex-around {
     display: flex;
     justify-content: space-between;
@@ -453,5 +510,18 @@ const showCode = (item, examples) => {
 //deep是深度选择器，表示选择所有的子孙元素
 :deep(.el-input__inner) {
     color: #071228;
+}
+
+.el-tooltip__trigger:first-child:focus-visible {
+    outline: unset;
+}
+
+.topLink {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.btnLink {
+    font-size: 15px;
 }
 </style>
