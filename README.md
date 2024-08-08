@@ -2,7 +2,7 @@
 
 - dev分支更新后 github实时预览 http://z2586300277.github.io/three-cesium-examples/public/index.html
 
-- 官网预览  https://www.threelab.cn/three-cesium-examples/public/index.html
+- 官网预览 https://threelab.cn/public/index.html#/example
 
 🐧QQ             |  🐧QQ群         |   加入仓库一起管理 联系🐧QQ 
 :-------------------------:|:-------------------------:|:-------------------------:
