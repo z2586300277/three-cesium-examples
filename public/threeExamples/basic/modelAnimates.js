@@ -55,7 +55,7 @@ loader.setDRACOLoader(new DRACOLoader().setDecoderPath('https://z2586300277.gith
 
 loader.load(
 
-    '/three-cesium-examples/public/files/model/Soldier.glb',
+    'https://z2586300277.github.io/3d-file-server/files/model/Soldier.glb',
 
     gltf => {
 

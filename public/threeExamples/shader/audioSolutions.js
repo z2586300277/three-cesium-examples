@@ -404,8 +404,10 @@ const updateOffsetData = () => {
 const play = () => {
   const listener = new THREE.AudioListener();
   const audio = new THREE.Audio(listener);
-  const file = "/three-cesium-examples/public/files/audio/Avicii-WeBurn.mp3";
+
+  const file = "https://z2586300277.github.io/3d-file-server/files/audio/Avicii-WeBurn.mp3";
   mediaElement = new Audio(file);
+  mediaElement.crossOrigin = "crossOrigin";
   mediaElement.play();
   audio.setMediaElementSource(mediaElement);
   analyser = new THREE.AudioAnalyser(audio, fftSize);

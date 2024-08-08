@@ -16,7 +16,7 @@ export default [
         id: 'giser2017',
         name: 'giser2017',
         github: 'https://gitee.com/giser2017',
-        icon: '/three-cesium-examples/public/files/author/AivoGenX.png'
+        icon: '/three-cesium-examples/public/files/author/AivoGenX.jpg'
     },
 
     {

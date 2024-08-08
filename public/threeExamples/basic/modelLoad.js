@@ -77,7 +77,7 @@ const objLoader = new OBJLoader()
 
 const mtlLoader = new MTLLoader()
 
-mtlLoader.load('/three-cesium-examples/public/files/model/house/house.mtl', (mtl) => {
+mtlLoader.load('https://z2586300277.github.io/3d-file-server/files/model/house/house.mtl', (mtl) => {
 
     mtl.preload()
 
@@ -85,7 +85,7 @@ mtlLoader.load('/three-cesium-examples/public/files/model/house/house.mtl', (mtl
 
     objLoader.load(
 
-        '/three-cesium-examples/public/files/model/house/house.obj',
+        'https://z2586300277.github.io/3d-file-server/files/model/house/house.obj',
 
         (obj) => {
 
