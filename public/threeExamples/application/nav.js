@@ -1,12 +1,3 @@
-`{
-  "importmap":{
-    "@recast-navigation/three":"https://z2586300277.github.io/3d-file-server/js/@recast-navigation/three/dist/index.mjs",
-    "@recast-navigation/core":"https://z2586300277.github.io/3d-file-server/js/@recast-navigation/core/dist/index.mjs",
-    "@recast-navigation/wasm":"https://z2586300277.github.io/3d-file-server/js/@recast-navigation/wasm/dist/recast-navigation.wasm-compat.js",
-    "@recast-navigation/generators":"https://z2586300277.github.io/3d-file-server/js/@recast-navigation/generators/dist/index.mjs",
-    "three.path":"https://z2586300277.github.io/3d-file-server/js/three.path.module.js"
-  }
-}`=INCLUDE_SCRIPT_PLACEHOLDER
 // 模型导航 从0，0，0自动寻路至56，0，0 改变坐标即可重新计算（version：0.1:导航错误等未处理）
 import * as THREE from "three";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls.js";

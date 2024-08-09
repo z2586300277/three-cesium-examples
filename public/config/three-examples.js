@@ -428,7 +428,7 @@ export default [
                     description: '切换ShaderToy'
                 }
             },
-            {   
+            {
                 id: "waterA",
                 name: "波浪效果",
                 author: "giser2017",
@@ -472,6 +472,15 @@ export default [
                 author: 'nico',
                 codeUrl: '/three-cesium-examples/public/threeExamples/application/nav.js',
                 image: '/three-cesium-examples/public/threeExamples/application/nav.jpg',
+                inject: {
+                    "importmap": {
+                        "@recast-navigation/three": "https://z2586300277.github.io/3d-file-server/js/@recast-navigation/three/dist/index.mjs",
+                        "@recast-navigation/core": "https://z2586300277.github.io/3d-file-server/js/@recast-navigation/core/dist/index.mjs",
+                        "@recast-navigation/wasm": "https://z2586300277.github.io/3d-file-server/js/@recast-navigation/wasm/dist/recast-navigation.wasm-compat.js",
+                        "@recast-navigation/generators": "https://z2586300277.github.io/3d-file-server/js/@recast-navigation/generators/dist/index.mjs",
+                        "three.path": "https://z2586300277.github.io/3d-file-server/js/three.path.module.js"
+                    }
+                },
                 meta: {
                     title: '模型导航',
                     keywords: 'three.js,模型导航',
@@ -503,11 +512,11 @@ export default [
                 }
             },
             {
-                id:'flowerRain',
-                name:'花瓣雨',
-                author:'QuarkGluonPlasma',
-                codeUrl:'/three-cesium-examples/public/threeExamples/application/flowerRain.js',
-                image:'/three-cesium-examples/public/threeExamples/application/flowerRain.jpg',
+                id: 'flowerRain',
+                name: '花瓣雨',
+                author: 'QuarkGluonPlasma',
+                codeUrl: '/three-cesium-examples/public/threeExamples/application/flowerRain.js',
+                image: '/three-cesium-examples/public/threeExamples/application/flowerRain.jpg',
             },
             {
                 id: 'houseScene',
@@ -533,7 +542,20 @@ export default [
                     keywords: 'three.js,粒子聚散',
                     description: '使用three.js粒子聚散'
                 }
-
+            },
+            {
+                id: "RandomParticle",
+                name: "随机粒子效果",
+                author: "giser2017",
+                htmlUrl: "/three-cesium-examples/public/threeExamples/particle/RandomParticle.html",
+                image: "/three-cesium-examples/public/threeExamples/particle/RandomParticle.png",
+            },
+            {
+                id: "PlanetParticle",
+                name: "粒子效果的行星",
+                author: "giser2017",
+                htmlUrl: "/three-cesium-examples/public/threeExamples/particle/PlanetParticle.html",
+                image: "/three-cesium-examples/public/threeExamples/particle/PlanetParticle.png",
             }
         ]
     },
@@ -547,6 +569,7 @@ export default [
                 author: 'z2586300277',
                 codeUrl: '/three-cesium-examples/public/threeExamples/expand/loadTiles.js',
                 image: '/three-cesium-examples/public/threeExamples/expand/loadTiles.jpg',
+                inject: { "importmap": { "3d-tiles-renderer": "https://z2586300277.github.io/3d-file-server/js/3dTilesRenderer/index.js" } },
                 meta: {
                     title: 'three加载3dtiles',
                     keywords: 'three.js,3dtiles',

@@ -5,6 +5,7 @@ import threeCesiumLinks from "./links.js";
 
 window.THREE_CESIUM_LINKS = threeCesiumLinks;
 
+// 依赖注入可使用 如 线上官网 或 cdn 或者本地路径
 window.THREE_CESIUM_NAVIGATION = [
     {
         name: "ThreeJS",
@@ -12,9 +13,9 @@ window.THREE_CESIUM_NAVIGATION = [
         examples: threeExamples,
         inject: {
             importmap: {
-                "three": "https://z2586300277.github.io/3d-file-server/js/three/three.module.min.js",
-                "three/examples/jsm/": "https://z2586300277.github.io/3d-file-server/js/three/addons/",
-                "three/addons/": "https://z2586300277.github.io/3d-file-server/js/three/addons/",
+                "three": "https://threejs.org/build/three.module.min.js",
+                "three/addons/": "https://threejs.org/examples/jsm/",
+                "three/examples/jsm/": "https://threejs.org/examples/jsm/",
                 "gsap": "https://z2586300277.github.io/3d-file-server/js/gsap/index.js",
                 "postprocessing": "/three-cesium-examples/public/js/postprocessing.js",
                 "dat.gui": "/three-cesium-examples/public/js/dat.gui.module.js",
@@ -41,20 +42,19 @@ window.THREE_CESIUM_NAVIGATION = [
 window.THREE_CESIUM_AUTHORS = threeCesiumAuthors;
 
 /** 
- * dependent 
- * 附加依赖注入方式参考
- * 在文件头部注入以下系列代码
+ * inject 附加依赖注入方式 
+ * 上述 为公共依赖注入
+ * 单个的案例配置额外的依赖注入参考 threeExamples => expand => loadTiles.js, threeExamples => application => nav_mesh,nav.js, cesiumExamples => expand => echartsFlyLine.js
  * src 形式引入 列表
  * link 样式引入 列表
  * importmap 映射引入 列表
- * 严格执行案例代码缩进
- * 参考 threeExamples => expand => loadTiles.js, threeExamples => application => nav_mesh,nav.js, cesiumExamples => expand => echartsFlyLine.js
-`{  
-    "link": ["/test.css"],
-    "src": ["/three-cesium-examples/public/js/echarts.min.js"],
-    "importmap":{
-      "3d-tiles-renderer": "https://z2586300277.github.io/3d-file-server/js/3dTilesRenderer/index.js",
-      "three.path":"https://z2586300277.github.io/3d-file-server/js/three.path.module.js"
+ * 配置单个 案例信息的 inject 属性
+    {  
+        "link": ["/test.css"],
+        "src": ["/three-cesium-examples/public/js/echarts.min.js"],
+        "importmap":{
+        "3d-tiles-renderer": "https://z2586300277.github.io/3d-file-server/js/3dTilesRenderer/index.js",
+        "three.path":"https://z2586300277.github.io/3d-file-server/js/three.path.module.js"
+        }
     }
-}`=INCLUDE_SCRIPT_PLACEHOLDER
 */

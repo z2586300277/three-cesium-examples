@@ -256,6 +256,9 @@ export default [
                 author: 'z2586300277',
                 codeUrl: '/three-cesium-examples/public/cesiumExamples/basic/multPointCluster.js',
                 image: 'https://z2586300277.github.io/three-editor/src/codes/cesiumjs/basic/multPointCluster.jpg',
+                inject: {
+                    src: ["https://z2586300277.github.io/3d-file-server/js/supercluster.min.js"]
+                },
                 meta: {
                     title: 'cesium大量点聚合',
                     keywords: 'cesium.js,cesium大量点聚合',
@@ -334,6 +337,9 @@ export default [
                 author: 'z2586300277',
                 codeUrl: '/three-cesium-examples/public/cesiumExamples/expand/cesiumAndThree.js',
                 image: '/three-cesium-examples/public/cesiumExamples/expand/cesiumAndThree.jpg',
+                inject: {
+                    importmap: { three: "https://z2586300277.github.io/3d-file-server/js/three/three.module.min.js" }
+                }
             },
             {
                 id: 'echartsFlyLine',
@@ -341,6 +347,9 @@ export default [
                 author: 'z2586300277',
                 codeUrl: '/three-cesium-examples/public/cesiumExamples/expand/echartsFlyLine.js',
                 image: 'https://z2586300277.github.io/three-editor/src/codes/cesiumjs/basic/flyCharts.jpg',
+                inject: {
+                    src: ["https://z2586300277.github.io/3d-file-server/js/echarts490.min.js"]
+                }
             },
             {
                 id: 'heatMap',

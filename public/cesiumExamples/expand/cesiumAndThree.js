@@ -1,4 +1,3 @@
-`{"importmap":{"three": "/three-cesium-examples/public/js/three/three.module.min.js"}}`=INCLUDE_SCRIPT_PLACEHOLDER /* 融合 */
 import * as Cesium from 'cesium'
 import * as THREE from 'three'
 

@@ -1,4 +1,4 @@
-`{"src": ["https://z2586300277.github.io/3d-file-server/js/supercluster.min.js"]}`=INCLUDE_SCRIPT_PLACEHOLDER/* 注 Supercluster 依赖请自行引入  此处我为 src 引入 */
+/* 注 Supercluster 依赖请自行引入  此处我为 src 引入 */
 import * as Cesium from 'cesium'
 
 const DOM = document.getElementById('box')
