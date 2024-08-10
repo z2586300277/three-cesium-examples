@@ -57,7 +57,7 @@ for (var longitude = -180; longitude < 180; longitude++) {
 
             position: Cesium.Cartesian3.fromDegrees(longitude, latitude),
 
-            image: '/three-cesium-examples/public/files/author/z2586300277.png', // 图标
+            image: '/files/author/z2586300277.png', // 图标
 
             scale: 0.1, // 调整图标的大小
 

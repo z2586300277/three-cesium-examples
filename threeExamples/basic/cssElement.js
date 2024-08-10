@@ -99,7 +99,7 @@ function createDom(text) {
 
     const img = document.createElement('img')
 
-    img.src = '/three-cesium-examples/public/files/author/z2586300277.png'
+    img.src = '/files/author/z2586300277.png'
 
     img.style.width = '50px'
 

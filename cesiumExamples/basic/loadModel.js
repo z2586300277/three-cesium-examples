@@ -37,7 +37,7 @@ viewer.entities.add({
 
     model: {
 
-        uri: '/three-cesium-examples/public/files/model/car.glb',
+        uri: '/files/model/car.glb',
 
         minimumPixelSize: 128,
 

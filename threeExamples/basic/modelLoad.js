@@ -53,7 +53,7 @@ loader.setDRACOLoader(new DRACOLoader().setDecoderPath('https://z2586300277.gith
 
 loader.load(
 
-    '/three-cesium-examples/public/files/model/car.glb',
+    '/files/model/car.glb',
 
     gltf => {
 
@@ -64,7 +64,7 @@ loader.load(
 )
 
 // 加载模型 fbx
-new FBXLoader().load('/three-cesium-examples/public/files/model/city.FBX', (object3d) => {
+new FBXLoader().load('/files/model/city.FBX', (object3d) => {
 
     scene.add(object3d)
 
