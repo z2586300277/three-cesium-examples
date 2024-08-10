@@ -1,5 +1,3 @@
-
-`{"importmap":{"3d-tiles-renderer": "https://z2586300277.github.io/3d-file-server/js/3dTilesRenderer/index.js"}}`=INCLUDE_SCRIPT_PLACEHOLDER
 import * as THREE from 'three'
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js'
 import { TilesRenderer } from '3d-tiles-renderer'

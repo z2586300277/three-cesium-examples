@@ -1,3 +1,5 @@
+import { HOST } from "./host.js";
+
 export default [
     {
         pid: 'layer',
@@ -7,8 +9,8 @@ export default [
                 id: 'defaultLayer',
                 name: '默认图层',
                 author: 'z2586300277',
-                codeUrl: '/three-cesium-examples/public/cesiumExamples/layer/defaultLayer.js',
-                image: '/three-cesium-examples/public/cesiumExamples/layer/defaultLayer.jpg',
+                codeUrl: HOST + 'cesiumExamples/layer/defaultLayer.js',
+                image: HOST + 'cesiumExamples/layer/defaultLayer.jpg',
                 meta: {
                     title: '默认图层',
                     keywords: 'cesium.js,默认图层',
@@ -19,8 +21,8 @@ export default [
                 id: 'coordLayer',
                 name: '坐标参考',
                 author: 'giser2017',
-                codeUrl: '/three-cesium-examples/public/cesiumExamples/layer/coordLayer.js',
-                image: '/three-cesium-examples/public/cesiumExamples/layer/coord.jpg',
+                codeUrl: HOST + 'cesiumExamples/layer/coordLayer.js',
+                image: HOST + 'cesiumExamples/layer/coord.jpg',
                 meta: {
                     title: '坐标参考',
                     keywords: 'cesium.js,坐标参考',
@@ -32,8 +34,8 @@ export default [
                 id: 'baiduLayer',
                 name: '百度图层',
                 author: 'giser2017',
-                codeUrl: '/three-cesium-examples/public/cesiumExamples/layer/baiduLayer.js',
-                image: '/three-cesium-examples/public/cesiumExamples/layer/baiduLayer.jpg',
+                codeUrl: HOST + 'cesiumExamples/layer/baiduLayer.js',
+                image: HOST + 'cesiumExamples/layer/baiduLayer.jpg',
                 meta: {
                     title: '百度图层',
                     keywords: 'cesium.js,百度图层',
@@ -44,8 +46,8 @@ export default [
                 id: 'arcgisLayer',
                 name: 'arcgis图层',
                 author: 'z2586300277',
-                codeUrl: '/three-cesium-examples/public/cesiumExamples/layer/arcgisLayer.js',
-                image: '/three-cesium-examples/public/cesiumExamples/layer/arcgisLayer.jpg',
+                codeUrl: HOST + 'cesiumExamples/layer/arcgisLayer.js',
+                image: HOST + 'cesiumExamples/layer/arcgisLayer.jpg',
                 meta: {
                     title: 'arcgis图层',
                     keywords: 'cesium.js,arcgis图层',
@@ -56,8 +58,8 @@ export default [
                 id: 'gaodeLayer',
                 name: '高德图层',
                 author: 'z2586300277',
-                codeUrl: '/three-cesium-examples/public/cesiumExamples/layer/gaodeLayer.js',
-                image: '/three-cesium-examples/public/cesiumExamples/layer/gaodeLayer.jpg',
+                codeUrl: HOST + 'cesiumExamples/layer/gaodeLayer.js',
+                image: HOST + 'cesiumExamples/layer/gaodeLayer.jpg',
                 meta: {
                     title: '高德图层',
                     keywords: 'cesium.js,高德图层',
@@ -68,8 +70,8 @@ export default [
                 id: 'mapfilterLayer',
                 name: '地图滤镜',
                 author: 'z2586300277',
-                codeUrl: '/three-cesium-examples/public/cesiumExamples/layer/mapfilterLayer.js',
-                image: '/three-cesium-examples/public/cesiumExamples/layer/mapfilterLayer.jpg',
+                codeUrl: HOST + 'cesiumExamples/layer/mapfilterLayer.js',
+                image: HOST + 'cesiumExamples/layer/mapfilterLayer.jpg',
                 meta: {
                     title: '地图滤镜',
                     keywords: 'cesium.js,地图滤镜',
@@ -80,8 +82,8 @@ export default [
                 id: 'tiandituLayer',
                 name: '天地图',
                 author: 'z2586300277',
-                codeUrl: '/three-cesium-examples/public/cesiumExamples/layer/tiandituLayer.js',
-                image: '/three-cesium-examples/public/cesiumExamples/layer/tiandituLayer.jpg',
+                codeUrl: HOST + 'cesiumExamples/layer/tiandituLayer.js',
+                image: HOST + 'cesiumExamples/layer/tiandituLayer.jpg',
                 meta: {
                     title: '天地图',
                     keywords: 'cesium.js,天地图',
@@ -92,8 +94,8 @@ export default [
                 id: 'terrainLayer',
                 name: '地形',
                 author: 'z2586300277',
-                codeUrl: '/three-cesium-examples/public/cesiumExamples/layer/terrainLayer.js',
-                image: '/three-cesium-examples/public/cesiumExamples/layer/terrainLayer.jpg',
+                codeUrl: HOST + 'cesiumExamples/layer/terrainLayer.js',
+                image: HOST + 'cesiumExamples/layer/terrainLayer.jpg',
                 meta: {
                     title: '地形',
                     keywords: 'cesium.js,地形',
@@ -110,8 +112,8 @@ export default [
                 id: 'offlineBlue',
                 name: '蓝色',
                 author: 'giser2017',
-                codeUrl: '/three-cesium-examples/public/cesiumExamples/offline/blue.js',
-                image: '/three-cesium-examples/public/cesiumExamples/offline/blue.jpg',
+                codeUrl: HOST + 'cesiumExamples/offline/blue.js',
+                image: HOST + 'cesiumExamples/offline/blue.jpg',
                 meta: {
                     title: '蓝色',
                     keywords: 'cesium.js,蓝色',
@@ -121,8 +123,8 @@ export default [
                 id: 'day',
                 name: '夜间',
                 author: 'giser2017',
-                codeUrl: '/three-cesium-examples/public/cesiumExamples/offline/day.js',
-                image: '/three-cesium-examples/public/cesiumExamples/offline/day.jpg',
+                codeUrl: HOST + 'cesiumExamples/offline/day.js',
+                image: HOST + 'cesiumExamples/offline/day.jpg',
                 meta: {
                     title: '夜间',
                     keywords: 'cesium.js,夜间',
@@ -133,8 +135,8 @@ export default [
                 id: 'img',
                 name: '影像',
                 author: 'giser2017',
-                codeUrl: '/three-cesium-examples/public/cesiumExamples/offline/img.js',
-                image: '/three-cesium-examples/public/cesiumExamples/offline/img.jpg',
+                codeUrl: HOST + 'cesiumExamples/offline/img.js',
+                image: HOST + 'cesiumExamples/offline/img.jpg',
                 meta: {
                     title: '影像',
                     keywords: 'cesium.js,影像',
@@ -145,8 +147,8 @@ export default [
                 id: 'night',
                 name: '夜间',
                 author: 'giser2017',
-                codeUrl: '/three-cesium-examples/public/cesiumExamples/offline/night.js',
-                image: '/three-cesium-examples/public/cesiumExamples/offline/night.jpg',
+                codeUrl: HOST + 'cesiumExamples/offline/night.js',
+                image: HOST + 'cesiumExamples/offline/night.jpg',
                 meta: {
                     title: '影像',
                     keywords: 'cesium.js,影像',
@@ -157,8 +159,8 @@ export default [
                 id: 'gaode',
                 name: '内网高德',
                 author: 'z2586300277',
-                codeUrl: '/three-cesium-examples/public/cesiumExamples/offline/gaode.js',
-                image: '/three-cesium-examples/public/cesiumExamples/offline/gaode.jpg',
+                codeUrl: HOST + 'cesiumExamples/offline/gaode.js',
+                image: HOST + 'cesiumExamples/offline/gaode.jpg',
                 meta: {
                     title: '内网高德',
                     keywords: 'cesium.js,内网高德',
@@ -169,8 +171,8 @@ export default [
                 id: 'baiDu',
                 name: '内网百度',
                 author: 'z2586300277',
-                codeUrl: '/three-cesium-examples/public/cesiumExamples/offline/baidu.js',
-                image: '/three-cesium-examples/public/cesiumExamples/offline/baidu.jpg',
+                codeUrl: HOST + 'cesiumExamples/offline/baidu.js',
+                image: HOST + 'cesiumExamples/offline/baidu.jpg',
                 meta: {
                     title: '内网百度',
                     keywords: 'cesium.js,内网百度',
@@ -187,8 +189,8 @@ export default [
                 id: 'autoRotate',
                 name: '自动旋转',
                 author: 'z2586300277',
-                codeUrl: '/three-cesium-examples/public/cesiumExamples/basic/autoRotate.js',
-                image: '/three-cesium-examples/public/cesiumExamples/layer/defaultLayer.jpg',
+                codeUrl: HOST + 'cesiumExamples/basic/autoRotate.js',
+                image: HOST + 'cesiumExamples/layer/defaultLayer.jpg',
                 meta: {
                     title: '自动旋转',
                     keywords: 'cesium.js,自动旋转',
@@ -199,15 +201,15 @@ export default [
                 id: 'cesiumText',
                 name: '绘制文字',
                 author: 'g2657',
-                codeUrl: '/three-cesium-examples/public/cesiumExamples/basic/cesiumText.js',
-                image: '/three-cesium-examples/public/cesiumExamples/layer/defaultLayer.jpg',
+                codeUrl: HOST + 'cesiumExamples/basic/cesiumText.js',
+                image: HOST + 'cesiumExamples/layer/defaultLayer.jpg',
             },
             {
                 id: 'cssElement',
                 name: 'css2D元素',
                 author: 'z2586300277',
-                codeUrl: '/three-cesium-examples/public/cesiumExamples/basic/cssElement.js',
-                image: '/three-cesium-examples/public/cesiumExamples/basic/cssElement.jpg',
+                codeUrl: HOST + 'cesiumExamples/basic/cssElement.js',
+                image: HOST + 'cesiumExamples/basic/cssElement.jpg',
                 meta: {
                     title: 'css2D元素',
                     keywords: 'cesium.js,css2D元素',
@@ -218,8 +220,8 @@ export default [
                 id: 'clickEvent',
                 name: '点击事件',
                 author: 'z2586300277',
-                codeUrl: '/three-cesium-examples/public/cesiumExamples/basic/clickEvent.js',
-                image: '/three-cesium-examples/public/cesiumExamples/basic/clickEvent.jpg',
+                codeUrl: HOST + 'cesiumExamples/basic/clickEvent.js',
+                image: HOST + 'cesiumExamples/basic/clickEvent.jpg',
                 meta: {
                     title: '点击事件',
                     keywords: 'cesium.js,点击事件',
@@ -230,8 +232,8 @@ export default [
                 id: 'geojsonFace',
                 name: 'geojson面',
                 author: 'z2586300277',
-                codeUrl: '/three-cesium-examples/public/cesiumExamples/basic/geojsonFace.js',
-                image: '/three-cesium-examples/public/cesiumExamples/basic/geojsonFace.jpg',
+                codeUrl: HOST + 'cesiumExamples/basic/geojsonFace.js',
+                image: HOST + 'cesiumExamples/basic/geojsonFace.jpg',
                 meta: {
                     title: 'geojson面',
                     keywords: 'cesium.js,geojson面',
@@ -242,8 +244,8 @@ export default [
                 id: 'multPoint',
                 name: 'cesium大量点',
                 author: 'z2586300277',
-                codeUrl: '/three-cesium-examples/public/cesiumExamples/basic/multPoint.js',
-                image: '/three-cesium-examples/public/cesiumExamples/basic/multPoint.jpg',
+                codeUrl: HOST + 'cesiumExamples/basic/multPoint.js',
+                image: HOST + 'cesiumExamples/basic/multPoint.jpg',
                 meta: {
                     title: 'cesium大量点',
                     keywords: 'cesium.js,cesium大量点',
@@ -254,8 +256,11 @@ export default [
                 id: 'multPointCluster',
                 name: 'cesium大量点聚合',
                 author: 'z2586300277',
-                codeUrl: '/three-cesium-examples/public/cesiumExamples/basic/multPointCluster.js',
+                codeUrl: HOST + 'cesiumExamples/basic/multPointCluster.js',
                 image: 'https://z2586300277.github.io/three-editor/src/codes/cesiumjs/basic/multPointCluster.jpg',
+                inject: {
+                    src: ["https://z2586300277.github.io/3d-file-server/js/supercluster.min.js"]
+                },
                 meta: {
                     title: 'cesium大量点聚合',
                     keywords: 'cesium.js,cesium大量点聚合',
@@ -266,8 +271,8 @@ export default [
                 id: 'multFaceLine',
                 name: 'cesium大量面线',
                 author: 'z2586300277',
-                codeUrl: '/three-cesium-examples/public/cesiumExamples/basic/multFaceLine.js',
-                image: '/three-cesium-examples/public/cesiumExamples/basic/multFaceLine.jpg',
+                codeUrl: HOST + 'cesiumExamples/basic/multFaceLine.js',
+                image: HOST + 'cesiumExamples/basic/multFaceLine.jpg',
                 meta: {
                     title: 'cesium大量面线',
                     keywords: 'cesium.js,cesium大量面线',
@@ -278,8 +283,8 @@ export default [
                 id: 'multCurve',
                 name: 'cesium大量曲线',
                 author: 'z2586300277',
-                codeUrl: '/three-cesium-examples/public/cesiumExamples/basic/multCurve.js',
-                image: '/three-cesium-examples/public/cesiumExamples/basic/multCurve.jpg',
+                codeUrl: HOST + 'cesiumExamples/basic/multCurve.js',
+                image: HOST + 'cesiumExamples/basic/multCurve.jpg',
                 meta: {
                     title: 'cesium大量曲线',
                     keywords: 'cesium.js,cesium大量曲线',
@@ -290,8 +295,8 @@ export default [
                 id: 'multText',
                 name: 'cesium大量文字',
                 author: 'z2586300277',
-                codeUrl: '/three-cesium-examples/public/cesiumExamples/basic/multText.js',
-                image: '/three-cesium-examples/public/cesiumExamples/basic/multText.jpg',
+                codeUrl: HOST + 'cesiumExamples/basic/multText.js',
+                image: HOST + 'cesiumExamples/basic/multText.jpg',
                 meta: {
                     title: 'cesium大量文字',
                     keywords: 'cesium.js,cesium大量文字',
@@ -302,8 +307,8 @@ export default [
                 id: 'loadModel',
                 name: '加载模型',
                 author: 'z2586300277',
-                codeUrl: '/three-cesium-examples/public/cesiumExamples/basic/loadModel.js',
-                image: '/three-cesium-examples/public/cesiumExamples/basic/loadModel.jpg',
+                codeUrl: HOST + 'cesiumExamples/basic/loadModel.js',
+                image: HOST + 'cesiumExamples/basic/loadModel.jpg',
                 meta: {
                     title: '加载模型',
                     keywords: 'cesium.js,加载模型',
@@ -314,8 +319,8 @@ export default [
                 id: 'flyLine',
                 name: '流动飞线运动',
                 author: 'z2586300277',
-                codeUrl: '/three-cesium-examples/public/cesiumExamples/basic/flyLine.js',
-                image: '/three-cesium-examples/public/cesiumExamples/basic/flyLine.jpg',
+                codeUrl: HOST + 'cesiumExamples/basic/flyLine.js',
+                image: HOST + 'cesiumExamples/basic/flyLine.jpg',
                 meta: {
                     title: '流动飞线运动',
                     keywords: 'cesium.js,流动飞线运动',
@@ -332,21 +337,27 @@ export default [
                 id: 'cesiumAndThree',
                 name: 'cesium融合three',
                 author: 'z2586300277',
-                codeUrl: '/three-cesium-examples/public/cesiumExamples/expand/cesiumAndThree.js',
-                image: '/three-cesium-examples/public/cesiumExamples/expand/cesiumAndThree.jpg',
+                codeUrl: HOST + 'cesiumExamples/expand/cesiumAndThree.js',
+                image: HOST + 'cesiumExamples/expand/cesiumAndThree.jpg',
+                inject: {
+                    importmap: { three: "https://z2586300277.github.io/3d-file-server/js/three/three.module.min.js" }
+                }
             },
             {
                 id: 'echartsFlyLine',
                 name: 'echarts飞线',
                 author: 'z2586300277',
-                codeUrl: '/three-cesium-examples/public/cesiumExamples/expand/echartsFlyLine.js',
+                codeUrl: HOST + 'cesiumExamples/expand/echartsFlyLine.js',
                 image: 'https://z2586300277.github.io/three-editor/src/codes/cesiumjs/basic/flyCharts.jpg',
+                inject: {
+                    src: ["https://z2586300277.github.io/3d-file-server/js/echarts490.min.js"]
+                }
             },
             {
                 id: 'heatMap',
                 name: '热力图',
                 author: 'z2586300277',
-                codeUrl: '/three-cesium-examples/public/cesiumExamples/expand/heatMap.js',
+                codeUrl: HOST + 'cesiumExamples/expand/heatMap.js',
                 image: 'https://z2586300277.github.io/three-editor/src/codes/cesiumjs/basic/heatMap.jpg',
             }
         ]
@@ -360,7 +371,7 @@ export default [
                 name: '地图转换工具',
                 author: 'giser2017',
                 openUrl: 'https://threelab.cn/dgis/',
-                image: '/three-cesium-examples/public/cesiumExamples/tools/mapDataConvert.jpg',
+                image: HOST + 'cesiumExamples/tools/mapDataConvert.jpg',
             }
         ]
     }
