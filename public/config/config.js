@@ -2,6 +2,7 @@ import cesiumExamples from "./cesium-examples.js";
 import threeExamples from "./three-examples.js";
 import threeCesiumAuthors from "./author.js";
 import threeCesiumLinks from "./links.js";
+import { HOST } from "./host.js";
 
 window.THREE_CESIUM_LINKS = threeCesiumLinks;
 
@@ -17,9 +18,9 @@ window.THREE_CESIUM_NAVIGATION = [
                 "three/addons/": "https://threejs.org/examples/jsm/",
                 "three/examples/jsm/": "https://threejs.org/examples/jsm/",
                 "gsap": "https://z2586300277.github.io/3d-file-server/js/gsap/index.js",
-                "postprocessing": "/three-cesium-examples/public/js/postprocessing.js",
-                "dat.gui": "/three-cesium-examples/public/js/dat.gui.module.js",
-                "@tweenjs/tween.js": "/three-cesium-examples/public/js/tween.esm.js"
+                "postprocessing": HOST + "js/postprocessing.js",
+                "dat.gui": HOST + "js/dat.gui.module.js",
+                "@tweenjs/tween.js": HOST + "js/tween.esm.js"
             }
         }
     },
@@ -32,7 +33,7 @@ window.THREE_CESIUM_NAVIGATION = [
             src: [],
             importmap: {
                 "cesium": "https://z2586300277.github.io/3d-file-server/js/cesium/Cesium.js",
-                "dat.gui": "/three-cesium-examples/public/js/dat.gui.module.js"
+                "dat.gui": HOST + "js/dat.gui.module.js"
             },
             jsHeader: `window.CESIUM_BASE_URL = "https://z2586300277.github.io/3d-file-server/js/cesium"`
         }
@@ -51,7 +52,7 @@ window.THREE_CESIUM_AUTHORS = threeCesiumAuthors;
  * 配置单个 案例信息的 inject 属性
     {  
         "link": ["/test.css"],
-        "src": ["/three-cesium-examples/public/js/echarts.min.js"],
+        "src": [HOST+"js/echarts.min.js"],
         "importmap":{
         "3d-tiles-renderer": "https://z2586300277.github.io/3d-file-server/js/3dTilesRenderer/index.js",
         "three.path":"https://z2586300277.github.io/3d-file-server/js/three.path.module.js"

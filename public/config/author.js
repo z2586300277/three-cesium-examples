@@ -1,9 +1,11 @@
+import { HOST } from "./host.js"
+
 export default [
     {
         id: 'z2586300277',
         name: '优雅永不过时',
         github: 'https://github.com/z2586300277',
-        icon: '/three-cesium-examples/public/files/author/z2586300277.png'
+        icon: HOST + '/files/author/z2586300277.png'
     },
     {
         id: 'g2657',
@@ -16,45 +18,45 @@ export default [
         id: 'giser2017',
         name: 'giser2017',
         github: 'https://gitee.com/giser2017',
-        icon: '/three-cesium-examples/public/files/author/AivoGenX.jpg'
+        icon: HOST + '/files/author/AivoGenX.jpg'
     },
 
     {
         id: 'flowers-10',
         name: 'flowers-10',
         github: 'https://github.com/flowers-10',
-        icon: '/three-cesium-examples/public/files/author/flowers-10.jpg'
+        icon: HOST + '/files/author/flowers-10.jpg'
     },
     {
         id: 'KallkaGo',
         name: 'KallkaGo',
         github: 'https://github.com/KallkaGo',
-        icon: '/three-cesium-examples/public/files/author/KallkaGo.jpg'
+        icon: HOST + '/files/author/KallkaGo.jpg'
     },
     {
         id: 'xzw199509',
         name: 'xzw199509',
         github: 'https://github.com/xzw199509',
-        icon: '/three-cesium-examples/public/files/author/xzw199509.png'
+        icon: HOST + '/files/author/xzw199509.png'
     },
     {
         id: 'nico',
         name: 'nico',
         github: 'https://github.com/Nicolas-zn',
-        icon: '/three-cesium-examples/public/files/author/nico.svg'
+        icon: HOST + '/files/author/nico.svg'
     },
     {
         id: 'zanmeng',
         name: 'zanmeng',
         github: 'https://github.com/zanmeng',
-        icon: '/three-cesium-examples/public/files/author/tx.jpg'
+        icon: HOST + '/files/author/tx.jpg'
     },
 
     {
         id: 'huan_meng_hai_yan',
         name: '幻梦丶海炎',
         github: 'https://gitee.com/hy282',
-        icon: '/three-cesium-examples/public/files/author/huan_meng_hai_yan.jpg'
+        icon: HOST + '/files/author/huan_meng_hai_yan.jpg'
     },
 
     {
@@ -70,5 +72,5 @@ export default [
         github: 'https://github.com/QuarkGluonPlasma',
         icon: 'https://avatars.githubusercontent.com/u/80755847?v=4'
     }
-    
+
 ]

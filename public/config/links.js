@@ -24,7 +24,7 @@ export default [
             },
             {
                 name: '🌟gitee点星',
-                url: 'https://gitee.com/giser2017/threelab-threejs-webgpu-vue-js'
+                url: 'https://gitee.com/giser2017/three-cesium-examples'
             }
         ]
     },
