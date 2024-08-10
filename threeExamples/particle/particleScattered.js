@@ -60,7 +60,7 @@ function createParticleAnimation1() {
         new THREE.BufferAttribute(colors, 3)
     );
 
-    const particleTexture = new THREE.TextureLoader().load('/files/images/particle.jpg');
+    const particleTexture = new THREE.TextureLoader().load(HOST + '/files/images/particle.jpg');
     const pointMaterial = new THREE.PointsMaterial({
         size: 0.1,
         sizeAttenuation: true,
@@ -102,7 +102,7 @@ function createParticleAnimation2() {
     // 创建粒子系统
     const particleCount = 2000; // 粒子数量
     const particles = new THREE.BufferGeometry();
-    const particleTexture = new THREE.TextureLoader().load('/files/images/particle.jpg');
+    const particleTexture = new THREE.TextureLoader().load(HOST + '/files/images/particle.jpg');
     const pointMaterial = new THREE.PointsMaterial({
         size: 0.1,
         sizeAttenuation: true,

@@ -41,7 +41,7 @@ loader.setDRACOLoader(new DRACOLoader().setDecoderPath('https://z2586300277.gith
 
 loader.load(
 
-    '/files/model/car.glb',
+    HOST + '/files/model/car.glb',
 
     gltf => {
 

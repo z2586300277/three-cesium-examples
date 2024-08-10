@@ -434,9 +434,8 @@ export default [
                 id: "waterA",
                 name: "波浪效果",
                 author: "giser2017",
-                codeUrl: 'https://aivogenx.github.io/Web3dTest/waterA.js',
-                image:
-                    "http://threelab.cHOST + nthreeSymbol/water/waterA.png",
+                codeUrl: HOST + "threeExamples/shader/waterA.js",
+                image: HOST + "threeExamples/shader/waterA.jpg",
                 meta: {
                     title: "水效果",
                     keywords: "three.js,水效果",

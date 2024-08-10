@@ -6,6 +6,8 @@ import { HOST } from "./host.js";
 
 window.THREE_CESIUM_LINKS = threeCesiumLinks;
 
+window.HOST = HOST
+
 // 依赖注入可使用 如 线上官网 或 cdn 或者本地路径
 window.THREE_CESIUM_NAVIGATION = [
     {
