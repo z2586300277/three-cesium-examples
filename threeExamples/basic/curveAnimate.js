@@ -68,7 +68,7 @@ loader.setDRACOLoader(new DRACOLoader().setDecoderPath('https://z2586300277.gith
 
 loader.load(
 
-    '/three-cesium-examples/public/files/model/car.glb',
+    HOST + '/files/model/car.glb',
 
     gltf => {
 

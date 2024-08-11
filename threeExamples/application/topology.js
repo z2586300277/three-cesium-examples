@@ -32,19 +32,19 @@ function animate() {
 scene.add(new THREE.AxesHelper(200))
 
 const arr = [
-    { id: 1, name: '电脑', color: 0x38c9d8, level: 1, coord: [0, 0], line: [2, 3, 4, 5, 13], icon: '/three-cesium-examples/public/files/author/z2586300277.png' },
-    { id: 2, name: '主机', level: 1, color: 0x3021c1, coord: [2, 1], line: [6, 7, 8, 9, 10, 11], icon: '/three-cesium-examples/public/files/author/z2586300277.png' },
-    { id: 3, name: '显示器', level: 1, color: 0x3021c1, coord: [2, 2], line: [9], icon: '/three-cesium-examples/public/files/author/KallkaGo.jpg' },
-    { id: 4, name: '键盘', level: 1, color: 0x3021c1, coord: [2, -2], line: [6], icon: '/three-cesium-examples/public/files/author/z2586300277.png' },
-    { id: 5, name: '鼠标', level: 1, color: 0x3021c1, coord: [2, 3], line: [], icon: '/three-cesium-examples/public/files/author/z2586300277.png' },
-    { id: 6, name: '主板', level: 1, color: 0xffe0a1, coord: [4, -1], line: [], icon: '/three-cesium-examples/public/files/author/flowers-10.jpg' },
-    { id: 7, name: '硬盘', level: 1, color: 0xffe0a1, coord: [4, -2], line: [], icon: '/three-cesium-examples/public/files/author/flowers-10.jpg' },
-    { id: 8, name: '显卡', level: 1, color: 0xffe0a1, coord: [4, -3], line: [], icon: '/three-cesium-examples/public/files/author/flowers-10.jpg' },
-    { id: 9, name: '屏幕', level: 1, color: 0xffe0a1, coord: [4, 2], line: [], icon: '/three-cesium-examples/public/files/author/flowers-10.jpg' },
-    { id: 10, name: 'CPU', level: 1, color: 0xffe0a1, coord: [4, 1], line: [], icon: '/three-cesium-examples/public/files/author/flowers-10.jpg' },
-    { id: 11, name: '内存条', level: 1, color: 0xffe0a1, coord: [4, 0], line: [12], icon: '/three-cesium-examples/public/files/author/flowers-10.jpg' },
-    { id: 12, name: '测试', level: 1, color: 'pink', coord: [6, 0], line: [], icon: '/three-cesium-examples/public/files/author/flowers-10.jpg' },
-    { id: 13, name: '测试', level: 2, color: 'pink', coord: [7, 5], line: [], icon: '/three-cesium-examples/public/files/author/KallkaGo.jpg' },
+    { id: 1, name: '电脑', color: 0x38c9d8, level: 1, coord: [0, 0], line: [2, 3, 4, 5, 13], icon: HOST + '/files/author/z2586300277.png' },
+    { id: 2, name: '主机', level: 1, color: 0x3021c1, coord: [2, 1], line: [6, 7, 8, 9, 10, 11], icon: HOST + '/files/author/z2586300277.png' },
+    { id: 3, name: '显示器', level: 1, color: 0x3021c1, coord: [2, 2], line: [9], icon: HOST + '/files/author/KallkaGo.jpg' },
+    { id: 4, name: '键盘', level: 1, color: 0x3021c1, coord: [2, -2], line: [6], icon: HOST + '/files/author/z2586300277.png' },
+    { id: 5, name: '鼠标', level: 1, color: 0x3021c1, coord: [2, 3], line: [], icon: HOST + '/files/author/z2586300277.png' },
+    { id: 6, name: '主板', level: 1, color: 0xffe0a1, coord: [4, -1], line: [], icon: HOST + '/files/author/flowers-10.jpg' },
+    { id: 7, name: '硬盘', level: 1, color: 0xffe0a1, coord: [4, -2], line: [], icon: HOST + '/files/author/flowers-10.jpg' },
+    { id: 8, name: '显卡', level: 1, color: 0xffe0a1, coord: [4, -3], line: [], icon: HOST + '/files/author/flowers-10.jpg' },
+    { id: 9, name: '屏幕', level: 1, color: 0xffe0a1, coord: [4, 2], line: [], icon: HOST + '/files/author/flowers-10.jpg' },
+    { id: 10, name: 'CPU', level: 1, color: 0xffe0a1, coord: [4, 1], line: [], icon: HOST + '/files/author/flowers-10.jpg' },
+    { id: 11, name: '内存条', level: 1, color: 0xffe0a1, coord: [4, 0], line: [12], icon: HOST + '/files/author/flowers-10.jpg' },
+    { id: 12, name: '测试', level: 1, color: 'pink', coord: [6, 0], line: [], icon: HOST + '/files/author/flowers-10.jpg' },
+    { id: 13, name: '测试', level: 2, color: 'pink', coord: [7, 5], line: [], icon: HOST + '/files/author/KallkaGo.jpg' },
 ]
 
 const arr2 = [

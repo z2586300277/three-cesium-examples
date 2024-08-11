@@ -42,7 +42,7 @@ window.onresize = () => {
 scene.add(new THREE.AxesHelper(100000), new THREE.AmbientLight(0xffffff, 6))
 
 // 加载模型
-new FBXLoader().load('/three-cesium-examples/public/files/model/city.FBX', (object3d) => {
+new FBXLoader().load(HOST + '/files/model/city.FBX', (object3d) => {
 
     scene.add(object3d)
 
