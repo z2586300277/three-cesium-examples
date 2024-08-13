@@ -3,39 +3,35 @@ import { HOST } from "./host.js"
 // 企业可根据自己的需求修改url 成自己的导航地址 链接
 export default {
     site: {
-        name: 'THREELAB',
-        url: 'https://threelab.cn/',
-        logo: HOST + 'files/site/logo.png',
-        footName: '加入-THREELAB',
-        footLink: 'https://threelab.cn/'
+        name: 'THREE.JS',
+        url: 'https://threejs.org/',
+        logo: HOST + 'files/site/logo.svg',
+        footName: '-THREE.JS',
+        footLink: 'https://threejs.org/'
     },
     links : [
         {
-            name: '🏡官网',
-            url: 'https://threelab.cn/'
+            name: '🏡Home',
+            url: 'https://threejs.org/'
         },
         {
-            name: '📚笔记',
-            url: 'https://threelab.cn/pages/5a8283/'
+            name: '📚Documents',
+            url: 'https://threejs.org/docs/index.html#manual/en/introduction/Creating-a-scene'
         },
         {
-            name: '🐘贡献者',
-            url: 'https://threelab.cn/pages/5d571c11/',
+            name: '🐘Examples',
+            url: 'https://threejs.org/examples/#webgl_animation_keyframes',
         },
         {
-            name: '🍃开源助力',
+            name: '🍃Open Source',
             children: [
                 {
-                    name: '👬加入开发者',
+                    name: '👬Join Us',
                     url: 'https://github.com/z2586300277'
                 },
                 {
-                    name: '⭐github点星',
+                    name: '⭐github star',
                     url: 'https://github.com/z2586300277/three-cesium-examples'
-                },
-                {
-                    name: '🌟gitee点星',
-                    url: 'https://gitee.com/giser2017/three-cesium-examples'
                 }
             ]
         }
