@@ -12,7 +12,7 @@ window.HOST = HOST
 window.THREE_CESIUM_NAVIGATION = [
     {
         name: "ThreeJS",
-        label: "Three.js案例[r166]",
+        label: "Three.js[r166]",
         examples: threeExamples,
         inject: {
             importmap: {
@@ -28,7 +28,7 @@ window.THREE_CESIUM_NAVIGATION = [
     },
     {
         name: "CesiumJS",
-        label: "Cesium.js案例[1.119]",
+        label: "Cesium.js[1.119]",
         examples: cesiumExamples,
         inject: {
             link: [`https://z2586300277.github.io/3d-file-server/js/cesium/style.css`],

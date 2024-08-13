@@ -1,8 +1,6 @@
-## 💎 原生Three.js 和 Cesium.js 案例 - 作者更新到死 -
+## 💎 原生Three.js 和 Cesium.js 案例 - 作者更新到死 - 只做开源 -
 
 - dev分支更新后 github实时预览 http://z2586300277.github.io/three-cesium-examples/index.html
-
-- 官网预览  https://www.threelab.cn/three-cesium-examples/public/index.html
 
 加入仓库一起管理 联系🐧QQ             |  🐧QQ群         
 :-------------------------:|:-------------------------:
@@ -10,13 +8,15 @@
 
 - 运行框架  启动服务端口指向index.html即可
 
+### 📦 自行部署可通过 config/links 文件修改 所有的链接和 logo
+
 ##### 💖 - 注: 先点星！先点星！先点星！重要的事情说三遍。
 
 ##### - 如果这些里面有案例帮助了您 - 有意的话您可以提交您的作品 - 让爱传递给更多开发者
 
 ##### - fork仓库后 - 增加用户信息 - 上传您最自豪的作品 - 提交合并到主分支 - 开发或者合并 基于dev分支
 
-1. 创作者可以在 /config/author.js 录入你的开发者信息,然后你提交的案例关联上id 就会展示作者信息。
+1. 创作者可以在 config/author.js 录入你的开发者信息,然后你提交的案例关联上id 就会展示作者信息。
 
 2. 将案例js放入目录cesiumExamples/threeExamples 中的文件夹中 如threeExamples/basic中放入 test.js, test.jpg, 或者目录test[test.js, test.jpg]
 
