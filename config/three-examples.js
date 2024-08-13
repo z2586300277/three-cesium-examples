@@ -448,7 +448,14 @@ export default [
                 author: "z2586300277",
                 codeUrl: HOST + "threeExamples/shader/imageShake.js",
                 image: HOST + "threeExamples/shader/imageShake.jpg"
-            }
+            },
+            {
+                id: "fireball",
+                name: "火球效果",
+                author: "giser2017",
+                htmlUrl: HOST + "threeExamples/shader/fireball.html",
+                image: "https://z2586300277.github.io/3d-file-server/images/four/fireball.png",
+            },
         ]
     },
     {
@@ -557,7 +564,14 @@ export default [
                 author: "giser2017",
                 htmlUrl: HOST + "threeExamples/particle/PlanetParticle.html",
                 image: HOST + "threeExamples/particle/PlanetParticle.png",
-            }
+            },
+            {
+                id: "bubble",
+                name: "粒子泡泡",
+                author: "huan_meng_hai_yan",
+                codeUrl: HOST + "threeExamples/particle/bubble.js",
+                image: "https://z2586300277.github.io/3d-file-server/images/four/bubble.png",
+              },
         ]
     },
     {
@@ -618,7 +632,21 @@ export default [
                     keywords: 'three.js,自定义遮罩通道',
                     description: '使用three.js自定义遮罩通道'
                 }
-            }
+            },
+            {
+                id: "uvTransformation",
+                name: "UV图像变换",
+                author: "giser2017",
+                codeUrl: HOST + 'threeExamples/effectComposer/uvTransformation.js',
+                image: "https://z2586300277.github.io/3d-file-server/images/four/uvTransformation.png",
+            },
+            {
+                id: "EdgeBlurringEffect",
+                name: "边缘模糊效果",
+                author: "giser2017",
+                codeUrl: HOST + 'threeExamples/effectComposer/EdgeBlurringEffect.js',
+                image: "https://z2586300277.github.io/3d-file-server/images/four/EdgeBlurringEffect.png",
+            },
         ]
     },
     {
