@@ -532,7 +532,14 @@ export default [
                 author: 'QuarkGluonPlasma',
                 codeUrl: HOST + 'threeExamples/application/houseScene.js',
                 image: HOST + 'threeExamples/application/houseScene.jpg'
-            }
+            },
+            {
+                id: "3DCircle",
+                name: "扩散半球",
+                author: "giser2017",
+                codeUrl: HOST + "threeExamples/application/3DCircle.js",
+                image: "https://z2586300277.github.io/3d-file-server/images/four/3DCircle.png",
+            },
         ]
     },
     {
@@ -571,7 +578,7 @@ export default [
                 author: "huan_meng_hai_yan",
                 codeUrl: HOST + "threeExamples/particle/bubble.js",
                 image: "https://z2586300277.github.io/3d-file-server/images/four/bubble.png",
-              },
+            },
         ]
     },
     {
