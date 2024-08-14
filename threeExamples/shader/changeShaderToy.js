@@ -37,7 +37,7 @@ scene.add(mesh);
 // GUI 对象
 const GUI = new dat.GUI()
 
-const fileList = new Array(6).fill().map((_, i) => `https://z2586300277.github.io/3d-file-server/files/glsl/${i}.frag`)
+const fileList = new Array(6).fill().map((_, i) => FILE_HOST + `files/glsl/${i}.frag`)
 
 GUI.add({ url: fileList[0] }, 'url', fileList).onChange((url) => changeShader(url))
 

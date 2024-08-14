@@ -21,11 +21,11 @@ const textureLoader = new THREE.TextureLoader()
 
 
 /* Tex */
-const dissolveTex = textureLoader.load('https://z2586300277.github.io/3d-file-server/images/dissolve/dissolveTex.png')
+const dissolveTex = textureLoader.load(FILE_HOST + 'images/dissolve/dissolveTex.png')
 dissolveTex.colorSpace = THREE.SRGBColorSpace
-const dissolveRampTex = textureLoader.load('https://z2586300277.github.io/3d-file-server/images/dissolve/dissolveRamp.png')
+const dissolveRampTex = textureLoader.load(FILE_HOST + 'images/dissolve/dissolveRamp.png')
 dissolveRampTex.colorSpace = THREE.SRGBColorSpace
-const diffuseTex = textureLoader.load('https://z2586300277.github.io/3d-file-server/images/dissolve/diffuse.png')
+const diffuseTex = textureLoader.load(FILE_HOST + 'images/dissolve/diffuse.png')
 diffuseTex.colorSpace = THREE.SRGBColorSpace
 
 /**

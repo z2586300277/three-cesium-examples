@@ -2,6 +2,8 @@ let HOST = window.origin + window.location.pathname
 
 HOST = HOST.replace(/\/index.html$/, '/')
 
-// console.log('当前域名/ip资源前缀设置:', HOST)
+const FILE_HOST = 'https://z2586300277.github.io/3d-file-server/' // 文件资源服务器
 
-export { HOST }
+export { HOST, FILE_HOST }
+
+/* 注 部署可将 资源全部下载 然后配置成自己的资源地址即可 */

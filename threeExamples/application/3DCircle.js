@@ -66,7 +66,7 @@ function scatter3DCircle(r) {
       // transparent: true,
       // color:new THREE.Color("#ff0000")
       map: new THREE.TextureLoader().load(
-        "https://z2586300277.github.io/3d-file-server/images/four/gradual_red_01.png"
+        FILE_HOST + "images/four/gradual_red_01.png"
       ),
     })
   );

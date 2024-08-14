@@ -37,7 +37,7 @@ let car = null
 
 const loader = new GLTFLoader()
 
-loader.setDRACOLoader(new DRACOLoader().setDecoderPath('https://z2586300277.github.io/3d-file-server/js/three/draco/'))
+loader.setDRACOLoader(new DRACOLoader().setDecoderPath(FILE_HOST + 'js/three/draco/'))
 
 loader.load(
 

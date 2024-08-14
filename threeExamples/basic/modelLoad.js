@@ -49,7 +49,7 @@ scene.add(new THREE.AxesHelper(1000))
 // 加载模型 gltf/ glb  draco解码器
 const loader = new GLTFLoader()
 
-loader.setDRACOLoader(new DRACOLoader().setDecoderPath('https://z2586300277.github.io/3d-file-server/js/three/draco/'))
+loader.setDRACOLoader(new DRACOLoader().setDecoderPath(FILE_HOST + 'js/three/draco/'))
 
 loader.load(
 
@@ -77,7 +77,7 @@ const objLoader = new OBJLoader()
 
 const mtlLoader = new MTLLoader()
 
-mtlLoader.load('https://z2586300277.github.io/3d-file-server/files/model/house/house.mtl', (mtl) => {
+mtlLoader.load(FILE_HOST + 'files/model/house/house.mtl', (mtl) => {
 
     mtl.preload()
 
@@ -85,7 +85,7 @@ mtlLoader.load('https://z2586300277.github.io/3d-file-server/files/model/house/h
 
     objLoader.load(
 
-        'https://z2586300277.github.io/3d-file-server/files/model/house/house.obj',
+        FILE_HOST + 'files/model/house/house.obj',
 
         (obj) => {
 

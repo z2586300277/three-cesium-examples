@@ -61,14 +61,14 @@ const init = (root) => {
     camera.position.set(12, 6, 12);
 
     const gltfLoader = new GLTFLoader();
-    gltfLoader.load('https://z2586300277.github.io/3d-file-server/examples/coffeeMug/coffeeMug.glb', (gltf) => {
+    gltfLoader.load(FILE_HOST + 'examples/coffeeMug/coffeeMug.glb', (gltf) => {
         gltf.scene.getObjectByName('baked').material.map.anisotropy = 8;
         controls.target.y += 3;
         scene.add(gltf.scene);
     });
 
     const textureLoader = new THREE.TextureLoader();
-    const perlinTexture = textureLoader.load('https://z2586300277.github.io/3d-file-server/examples/coffeeMug/perlin.png');
+    const perlinTexture = textureLoader.load(FILE_HOST + 'examples/coffeeMug/perlin.png');
     perlinTexture.wrapS = THREE.RepeatWrapping;
     perlinTexture.wrapT = THREE.RepeatWrapping;
 

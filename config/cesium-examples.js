@@ -1,4 +1,4 @@
-import { HOST } from "./host.js";
+import { FILE_HOST, HOST } from "./host.js";
 
 export default [
     {
@@ -259,7 +259,7 @@ export default [
                 codeUrl: HOST + 'cesiumExamples/basic/multPointCluster.js',
                 image: 'https://z2586300277.github.io/three-editor/src/codes/cesiumjs/basic/multPointCluster.jpg',
                 inject: {
-                    src: ["https://z2586300277.github.io/3d-file-server/js/supercluster.min.js"]
+                    src: [FILE_HOST + "js/supercluster.min.js"]
                 },
                 meta: {
                     title: 'cesium大量点聚合',
@@ -340,7 +340,7 @@ export default [
                 codeUrl: HOST + 'cesiumExamples/expand/cesiumAndThree.js',
                 image: HOST + 'cesiumExamples/expand/cesiumAndThree.jpg',
                 inject: {
-                    importmap: { three: "https://z2586300277.github.io/3d-file-server/js/three/three.module.min.js" }
+                    importmap: { three: FILE_HOST + "js/three/three.module.min.js" }
                 }
             },
             {
@@ -350,7 +350,7 @@ export default [
                 codeUrl: HOST + 'cesiumExamples/expand/echartsFlyLine.js',
                 image: 'https://z2586300277.github.io/three-editor/src/codes/cesiumjs/basic/flyCharts.jpg',
                 inject: {
-                    src: ["https://z2586300277.github.io/3d-file-server/js/echarts490.min.js"]
+                    src: [FILE_HOST + "js/echarts490.min.js"]
                 }
             },
             {

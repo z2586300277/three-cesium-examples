@@ -28,7 +28,7 @@ viewer.imageryLayers.addImageryProvider(
 
     new Cesium.UrlTemplateImageryProvider({
 
-        url: 'https://z2586300277.github.io/3d-file-server/map/Gaode/tiles/{z}/{x}/{y}.png',
+        url: FILE_HOST + 'map/Gaode/tiles/{z}/{x}/{y}.png',
 
         maximumLevel: 5,
 
