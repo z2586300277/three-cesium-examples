@@ -1,4 +1,8 @@
-## 💎 原生Three.js 和 Cesium.js 案例 - 作者更新到死 - 只做开源 -
+# 💎 原生Three 和 Cesium 案例 - 更新到死 - 只做开源 -
+
+##  开源不易 - ⭐ - 点星助力
+
+###  3D编辑器 https://github.com/z2586300277/three-editor
 
 - dev分支更新后 github实时预览 http://z2586300277.github.io/three-cesium-examples/index.html
 
@@ -10,7 +14,7 @@
 
 ### 📦 自行部署可通过 config/links 文件修改 所有的链接和 logo
 
-##### 💖 - 注: 先点星！先点星！先点星！重要的事情说三遍。
+
 
 ##### - 如果这些里面有案例帮助了您 - 有意的话您可以提交您的作品 - 让爱传递给更多开发者
 
