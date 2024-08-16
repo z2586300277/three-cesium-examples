@@ -2,7 +2,7 @@
 
 ##  开源不易 - ⭐ - 点星助力
 
-##  寻找Three.js 低代码组态编辑器移步 https://github.com/z2586300277/three-editor
+###  3D编辑器 https://github.com/z2586300277/three-editor
 
 - dev分支更新后 github实时预览 http://z2586300277.github.io/three-cesium-examples/index.html
 
