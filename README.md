@@ -2,9 +2,9 @@
 
 ##  开源不易 - ⭐ - 点星助力
 
-###  3D编辑器 https://github.com/z2586300277/three-editor
+### - dev分支更新后 github实时预览 http://z2586300277.github.io/three-cesium-examples/index.html
 
-- dev分支更新后 github实时预览 http://z2586300277.github.io/three-cesium-examples/index.html
+### - 友情链接3D编辑器 https://github.com/z2586300277/three-editor
 
 加入仓库一起管理 联系🐧QQ             |  🐧QQ群         
 :-------------------------:|:-------------------------:
