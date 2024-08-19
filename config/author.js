@@ -71,6 +71,12 @@ export default [
         name: 'QuarkGluonPlasma',
         github: 'https://github.com/QuarkGluonPlasma',
         icon: 'https://avatars.githubusercontent.com/u/80755847?v=4'
-    }
+    },
 
+    {
+        id: 'yjsdszz',
+        name: '听闻远方有你',
+        github: 'https://gitee.com/yjsdszz',
+        icon: HOST + 'files/site/logo.svg'
+    }
 ]

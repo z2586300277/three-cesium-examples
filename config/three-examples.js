@@ -540,6 +540,13 @@ export default [
                 codeUrl: HOST + "threeExamples/application/3DCircle.js",
                 image: FILE_HOST + "images/four/3DCircle.png",
             },
+            {
+                id: 'happyNewYear',
+                name: '新年快乐',
+                author: 'yjsdszz',
+                codeUrl: HOST + 'threeExamples/application/happyNewYear.js',
+                image: HOST + 'threeExamples/application/happyNewYear.jpg'
+            }
         ]
     },
     {
