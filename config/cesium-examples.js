@@ -304,6 +304,18 @@ export default [
                 }
             },
             {
+                id: 'multBox',
+                name: 'cesium大量立方体',
+                author: 'z2586300277',
+                codeUrl: HOST + 'cesiumExamples/basic/multBox.js',
+                image: HOST + 'cesiumExamples/basic/multBox.jpg',
+                meta: {
+                    title: 'cesium大量立方体',
+                    keywords: 'cesium.js,cesium大量立方体',
+                    description: 'cesium cesium大量立方体'
+                }
+            },
+            {
                 id: 'loadModel',
                 name: '加载模型',
                 author: 'z2586300277',
