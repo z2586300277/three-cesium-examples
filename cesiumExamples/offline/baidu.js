@@ -68,7 +68,7 @@ viewer.imageryLayers.addImageryProvider(
 
     new BaiduImageryProvider({
 
-        url: 'https://z2586300277.github.io/3d-file-server/map/Baidu/tiles/{z}/{x}/{y}.jpg'
+        url: FILE_HOST + 'map/Baidu/tiles/{z}/{x}/{y}.jpg'
 
     })
 

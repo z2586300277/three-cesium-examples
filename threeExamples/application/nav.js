@@ -51,7 +51,7 @@ const loader = new GLTFLoader();
 
 loader.setDRACOLoader(
   new DRACOLoader().setDecoderPath(
-    "https://z2586300277.github.io/3d-file-server/js/three/draco/"
+    FILE_HOST + "js/three/draco/"
   )
 );
 
@@ -62,7 +62,7 @@ const add_nav_mesh = async () => {
   console.log(init);
   await init();
   loader.load(
-    "https://z2586300277.github.io/3d-file-server/files/model/navmesh02.glb",
+    FILE_HOST + "files/model/navmesh02.glb",
     (gltf) => {
       scene.add(gltf.scene);
       let navMesh = TRR.threeToSoloNavMesh(gltf.scene.children);

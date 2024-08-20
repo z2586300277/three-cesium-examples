@@ -19,7 +19,7 @@ const viewer = new Cesium.Viewer(box, {
 })
 
 // 3dtiles 模型
-const tileset = await Cesium.Cesium3DTileset.fromUrl('https://z2586300277.github.io/3d-file-server/3dtiles/test/tileset.json')
+const tileset = await Cesium.Cesium3DTileset.fromUrl(FILE_HOST + '3dtiles/test/tileset.json')
 
 viewer.scene.primitives.add(tileset)
 

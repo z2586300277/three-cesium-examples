@@ -1,4 +1,4 @@
-import { HOST } from './host.js'
+import { HOST, FILE_HOST } from './host.js'
 
 export default [
     {
@@ -411,7 +411,7 @@ export default [
                 name: '溶解',
                 author: 'KallkaGo',
                 codeUrl: HOST + 'threeExamples/shader/dissolve.js',
-                image: 'https://z2586300277.github.io/3d-file-server/images/dissolve/dissolve.png',
+                image: FILE_HOST + 'images/dissolve/dissolve.png',
                 meta: {
                     title: '溶解',
                     keywords: 'three.js,溶解',
@@ -454,7 +454,7 @@ export default [
                 name: "火球效果",
                 author: "giser2017",
                 htmlUrl: HOST + "threeExamples/shader/fireball.html",
-                image: "https://z2586300277.github.io/3d-file-server/images/four/fireball.png",
+                image: FILE_HOST + "images/four/fireball.png",
             },
         ]
     },
@@ -482,11 +482,11 @@ export default [
                 image: HOST + 'threeExamples/application/nav.jpg',
                 inject: {
                     "importmap": {
-                        "@recast-navigation/three": "https://z2586300277.github.io/3d-file-server/js/@recast-navigation/three/dist/index.mjs",
-                        "@recast-navigation/core": "https://z2586300277.github.io/3d-file-server/js/@recast-navigation/core/dist/index.mjs",
-                        "@recast-navigation/wasm": "https://z2586300277.github.io/3d-file-server/js/@recast-navigation/wasm/dist/recast-navigation.wasm-compat.js",
-                        "@recast-navigation/generators": "https://z2586300277.github.io/3d-file-server/js/@recast-navigation/generators/dist/index.mjs",
-                        "three.path": "https://z2586300277.github.io/3d-file-server/js/three.path.module.js"
+                        "@recast-navigation/three": FILE_HOST + "js/@recast-navigation/three/dist/index.mjs",
+                        "@recast-navigation/core": FILE_HOST + "js/@recast-navigation/core/dist/index.mjs",
+                        "@recast-navigation/wasm": FILE_HOST + "js/@recast-navigation/wasm/dist/recast-navigation.wasm-compat.js",
+                        "@recast-navigation/generators": FILE_HOST + "js/@recast-navigation/generators/dist/index.mjs",
+                        "three.path": FILE_HOST + "js/three.path.module.js"
                     }
                 },
                 meta: {
@@ -532,6 +532,20 @@ export default [
                 author: 'QuarkGluonPlasma',
                 codeUrl: HOST + 'threeExamples/application/houseScene.js',
                 image: HOST + 'threeExamples/application/houseScene.jpg'
+            },
+            {
+                id: "3DCircle",
+                name: "扩散半球",
+                author: "giser2017",
+                codeUrl: HOST + "threeExamples/application/3DCircle.js",
+                image: FILE_HOST + "images/four/3DCircle.png",
+            },
+            {
+                id: 'happyNewYear',
+                name: '新年快乐',
+                author: 'yjsdszz',
+                codeUrl: HOST + 'threeExamples/application/happyNewYear.js',
+                image: HOST + 'threeExamples/application/happyNewYear.jpg'
             }
         ]
     },
@@ -570,8 +584,8 @@ export default [
                 name: "粒子泡泡",
                 author: "huan_meng_hai_yan",
                 codeUrl: HOST + "threeExamples/particle/bubble.js",
-                image: "https://z2586300277.github.io/3d-file-server/images/four/bubble.png",
-              },
+                image: FILE_HOST + "images/four/bubble.png",
+            },
         ]
     },
     {
@@ -584,7 +598,7 @@ export default [
                 author: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/expand/loadTiles.js',
                 image: HOST + 'threeExamples/expand/loadTiles.jpg',
-                inject: { "importmap": { "3d-tiles-renderer": "https://z2586300277.github.io/3d-file-server/js/3dTilesRenderer/index.js" } },
+                inject: { "importmap": { "3d-tiles-renderer": FILE_HOST + "js/3dTilesRenderer/index.js" } },
                 meta: {
                     title: 'three加载3dtiles',
                     keywords: 'three.js,3dtiles',
@@ -638,14 +652,14 @@ export default [
                 name: "UV图像变换",
                 author: "giser2017",
                 codeUrl: HOST + 'threeExamples/effectComposer/uvTransformation.js',
-                image: "https://z2586300277.github.io/3d-file-server/images/four/uvTransformation.png",
+                image: FILE_HOST + "images/four/uvTransformation.png",
             },
             {
                 id: "EdgeBlurringEffect",
                 name: "边缘模糊效果",
                 author: "giser2017",
                 codeUrl: HOST + 'threeExamples/effectComposer/EdgeBlurringEffect.js',
-                image: "https://z2586300277.github.io/3d-file-server/images/four/EdgeBlurringEffect.png",
+                image: FILE_HOST + "images/four/EdgeBlurringEffect.png",
             },
         ]
     },

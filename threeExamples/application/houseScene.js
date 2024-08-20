@@ -2,7 +2,7 @@ import * as THREE from 'three';
 import { FBXLoader } from 'three/examples/jsm/loaders/FBXLoader.js';
 import { FirstPersonControls } from 'three/examples/jsm/controls/FirstPersonControls.js';
 
-const HOST = 'https://z2586300277.github.io/3d-file-server/examples/flowerAndHouse';
+const HOST = FILE_HOST + 'examples/flowerAndHouse';
 
 const box = document.getElementById('box');
 

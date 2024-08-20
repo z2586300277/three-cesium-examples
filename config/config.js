@@ -2,24 +2,26 @@ import cesiumExamples from "./cesium-examples.js";
 import threeExamples from "./three-examples.js";
 import threeCesiumAuthors from "./author.js";
 import threeCesiumLinks from "./links.js";
-import { HOST } from "./host.js";
+import { HOST, FILE_HOST } from "./host.js";
 
-window.THREE_CESIUM_LINKS = threeCesiumLinks;
+window.THREE_CESIUM_LINKS = threeCesiumLinks; // 链接
 
-window.HOST = HOST
+window.HOST = HOST // 当前项目服务 host 地址, 注入到全局变量
+
+window.FILE_HOST = FILE_HOST // 文件资源服务器地址, 注入到全局变量
 
 // 依赖注入可使用 如 线上官网 或 cdn 或者本地路径
 window.THREE_CESIUM_NAVIGATION = [
     {
         name: "ThreeJS",
-        label: "Three.js[r166]",
+        label: "Three.js案例[r166]",
         examples: threeExamples,
         inject: {
             importmap: {
                 "three": "https://threejs.org/build/three.module.min.js",
                 "three/addons/": "https://threejs.org/examples/jsm/",
                 "three/examples/jsm/": "https://threejs.org/examples/jsm/",
-                "gsap": "https://z2586300277.github.io/3d-file-server/js/gsap/index.js",
+                "gsap": FILE_HOST + "js/gsap/index.js",
                 "postprocessing": HOST + "js/postprocessing.js",
                 "dat.gui": HOST + "js/dat.gui.module.js",
                 "@tweenjs/tween.js": HOST + "js/tween.esm.js"
@@ -28,21 +30,21 @@ window.THREE_CESIUM_NAVIGATION = [
     },
     {
         name: "CesiumJS",
-        label: "Cesium.js[1.119]",
+        label: "Cesium.js案例[1.119]",
         examples: cesiumExamples,
         inject: {
-            link: [`https://z2586300277.github.io/3d-file-server/js/cesium/style.css`],
+            link: [FILE_HOST + `js/cesium/style.css`],
             src: [],
             importmap: {
-                "cesium": "https://z2586300277.github.io/3d-file-server/js/cesium/Cesium.js",
+                "cesium": FILE_HOST + "js/cesium/Cesium.js",
                 "dat.gui": HOST + "js/dat.gui.module.js"
             },
-            jsHeader: `window.CESIUM_BASE_URL = "https://z2586300277.github.io/3d-file-server/js/cesium"`
+            jsHeader: `window.CESIUM_BASE_URL = "${FILE_HOST}js/cesium"`
         }
     }
 ];
 
-window.THREE_CESIUM_AUTHORS = threeCesiumAuthors;
+window.THREE_CESIUM_AUTHORS = threeCesiumAuthors; // 作者
 
 /** 
  * inject 附加依赖注入方式 

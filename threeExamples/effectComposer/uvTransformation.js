@@ -3,14 +3,14 @@ import { OrbitControls } from "three/addons/controls/OrbitControls.js";
 import { RenderPass, EffectPass, EffectComposer, GodRaysEffect } from 'postprocessing'
 // Max Muselmann https://unsplash.com/photos/oIVvGqqwVJw
 const image_url =
-  "https://z2586300277.github.io/3d-file-server/images/four/photo-1583766395091-2eb9994ed094.avif";
+  FILE_HOST + "images/four/photo-1583766395091-2eb9994ed094.avif";
 const image_ratio = 687 / 1031;
 const image_tex = new THREE.TextureLoader().load(image_url);
 image_tex.repeat.set(1, 1);
 
 // Daniil Silantev https://unsplash.com/photos/dxGTQArsC3M
 const alpha_url =
-  "https://z2586300277.github.io/3d-file-server/images/four/photo-1510942752400-ebce99a8a2c0.avif";
+  FILE_HOST + "images/four/photo-1510942752400-ebce99a8a2c0.avif";
 const alpha_tex = new THREE.TextureLoader().load(alpha_url);
 alpha_tex.repeat.set(0.6, 2);
 alpha_tex.offset.x = (1 - alpha_tex.repeat.x) / 2;

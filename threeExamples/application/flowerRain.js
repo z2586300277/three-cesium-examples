@@ -34,11 +34,11 @@ function create() {
     // const axisHelper = new THREE.AxisHelper(1000);
     // scene.add(axisHelper)
 
-    var flowerTexture1 = new THREE.TextureLoader().load("https://z2586300277.github.io/3d-file-server/examples/flowerAndHouse/img/flower1.png");
-    var flowerTexture2 = new THREE.TextureLoader().load("https://z2586300277.github.io/3d-file-server/examples/flowerAndHouse/img/flower2.png");
-    var flowerTexture3 = new THREE.TextureLoader().load("https://z2586300277.github.io/3d-file-server/examples/flowerAndHouse/img/flower3.png");
-    var flowerTexture4 = new THREE.TextureLoader().load("https://z2586300277.github.io/3d-file-server/examples/flowerAndHouse/img/flower4.png");
-    var flowerTexture5 = new THREE.TextureLoader().load("https://z2586300277.github.io/3d-file-server/examples/flowerAndHouse/img/flower5.png");
+    var flowerTexture1 = new THREE.TextureLoader().load(FILE_HOST + "examples/flowerAndHouse/img/flower1.png");
+    var flowerTexture2 = new THREE.TextureLoader().load(FILE_HOST + "examples/flowerAndHouse/img/flower2.png");
+    var flowerTexture3 = new THREE.TextureLoader().load(FILE_HOST + "examples/flowerAndHouse/img/flower3.png");
+    var flowerTexture4 = new THREE.TextureLoader().load(FILE_HOST + "examples/flowerAndHouse/img/flower4.png");
+    var flowerTexture5 = new THREE.TextureLoader().load(FILE_HOST + "examples/flowerAndHouse/img/flower5.png");
     var imageList = [flowerTexture1, flowerTexture2, flowerTexture3, flowerTexture4, flowerTexture5];
 
     for (let i = 0; i < 400; i++) {

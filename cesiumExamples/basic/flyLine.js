@@ -135,7 +135,7 @@ function createPlaneCurve(p1, p2) {
 
         model: {
 
-            uri: 'https://z2586300277.github.io/3d-file-server/models/glb/plane.glb',
+            uri: FILE_HOST + 'models/glb/plane.glb',
 
             minimumPixelSize: 40,
 

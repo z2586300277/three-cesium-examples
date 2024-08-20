@@ -36,12 +36,12 @@ window.onresize = () => {
   
 }
 
-const tilesRenderer = new TilesRenderer('https://z2586300277.github.io/3d-file-server/3dtiles/test/tileset.json')
+const tilesRenderer = new TilesRenderer(FILE_HOST + '3dtiles/test/tileset.json')
 
 // 可选 gltf draco 配置
 const loader = new GLTFLoader();
 
-loader.setDRACOLoader(new DRACOLoader().setDecoderPath('https://z2586300277.github.io/3d-file-server/js/three/draco/'));
+loader.setDRACOLoader(new DRACOLoader().setDecoderPath(FILE_HOST + 'js/three/draco/'));
 
 tilesRenderer.manager.addHandler(/\.gltf$/, loader)
 
