@@ -2,7 +2,7 @@
 
 ##  开源不易 - ⭐ - 点星助力
 
-### - dev分支更新后 github实时预览 http://z2586300277.github.io/three-cesium-examples/index.html
+### - github dev分支实时预览 http://z2586300277.github.io/three-cesium-examples
 
 ### - 友情链接3D编辑器 https://github.com/z2586300277/three-editor
 
@@ -10,15 +10,19 @@
 :-------------------------:|:-------------------------:
 2586300277  |  865182188    
 
-- 运行框架  启动服务端口指向index.html即可
+## 📦 自行部署
 
-### 📦 自行部署可通过 config/links 文件修改 所有的链接和 logo
+1.可通过 config/links 文件修改 所有的链接和 logo, 替换成自己的官网或者链接地址。
 
+2.如在 http://threehub.cn/ 部署
 
+## 🌳创作
 
 ##### - 如果这些里面有案例帮助了您 - 有意的话您可以提交您的作品 - 让爱传递给更多开发者
 
 ##### - fork仓库后 - 增加用户信息 - 上传您最自豪的作品 - 提交合并到主分支 - 开发或者合并 基于dev分支
+
+- 运行框架  启动服务端口指向index.html即可
 
 1. 创作者可以在 config/author.js 录入你的开发者信息,然后你提交的案例关联上id 就会展示作者信息。
 
