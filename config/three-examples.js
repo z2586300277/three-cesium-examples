@@ -546,6 +546,13 @@ export default [
                 author: 'yjsdszz',
                 codeUrl: HOST + 'threeExamples/application/happyNewYear.js',
                 image: HOST + 'threeExamples/application/happyNewYear.jpg'
+            },
+            {
+                id: 'windMove',
+                name: '风吹动画',
+                author: 'yjsdszz',
+                codeUrl: HOST + 'threeExamples/application/windMove.js',
+                image: HOST + 'threeExamples/application/windMove.jpg'
             }
         ]
     },
