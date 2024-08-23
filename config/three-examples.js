@@ -348,6 +348,18 @@ export default [
                 }
             },
             {
+                id: 'fenceWall',
+                name: '围墙着色器',
+                author: 'yjsdszz',
+                codeUrl: HOST + 'threeExamples/shader/fenceWall.js',
+                image: HOST + 'threeExamples/shader/fenceWall.jpg',
+                meta: {
+                    title: '围墙着色器',
+                    keywords: 'three.js,围墙着色器',
+                    description: '使用three.js围墙着色器'
+                }
+            },
+            {
                 id: 'cityMoveLight',
                 name: '智慧城市扫光',
                 author: 'z2586300277',
