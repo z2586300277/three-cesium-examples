@@ -456,6 +456,13 @@ export default [
                 htmlUrl: HOST + "threeExamples/shader/fireball.html",
                 image: FILE_HOST + "images/four/fireball.png",
             },
+            {
+                id: "warnInfo",
+                name: "警告信息",
+                author: "yjsdszz",
+                codeUrl: HOST + "threeExamples/shader/warnInfo.js",
+                image: HOST + "threeExamples/shader/warnInfo.jpg",
+            }
         ]
     },
     {
@@ -593,6 +600,13 @@ export default [
                 codeUrl: HOST + "threeExamples/particle/bubble.js",
                 image: FILE_HOST + "images/four/bubble.png",
             },
+            {
+                id: "downSnow",
+                name: "下雪",
+                author: "yjsdszz",
+                codeUrl: HOST + "threeExamples/particle/downSnow.js",
+                image: HOST + "threeExamples/particle/downSnow.jpg",
+            }
         ]
     },
     {
