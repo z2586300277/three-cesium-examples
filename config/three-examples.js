@@ -408,6 +408,18 @@ export default [
                 }
             },
             {
+                id: 'flowLight',
+                name: '流光',
+                author: 'yjsdszz',
+                codeUrl: HOST + 'threeExamples/shader/flowLight.js',
+                image: HOST + 'threeExamples/shader/flowLight.jpg',
+                meta: {
+                    title: '流光',
+                    keywords: 'three.js,流光',
+                    description: '使用three.js流光'
+                }
+            },
+            {
                 id: 'audioSolutions',
                 name: '音乐可视化',
                 author: 'flowers-10',
