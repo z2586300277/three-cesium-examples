@@ -2,7 +2,7 @@ import * as THREE from 'three';
 import { FBXLoader } from 'three/examples/jsm/loaders/FBXLoader.js';
 import { FirstPersonControls } from 'three/examples/jsm/controls/FirstPersonControls.js';
 
-const HOST = FILE_HOST + 'examples/flowerAndHouse';
+const host = FILE_HOST + 'examples/flowerAndHouse';
 
 const box = document.getElementById('box');
 
@@ -67,7 +67,7 @@ function create() {
 function createGrass() {
     const geometry = new THREE.PlaneGeometry( 10000, 10000);
 
-    const texture = new THREE.TextureLoader().load(HOST+'/img/grass.jpg');
+    const texture = new THREE.TextureLoader().load(host+'/img/grass.jpg');
     texture.wrapS = THREE.RepeatWrapping;
     texture.wrapT = THREE.RepeatWrapping;
     texture.repeat.set( 100, 100 );
@@ -84,7 +84,7 @@ function createGrass() {
 function createFloor() {
     const geometry = new THREE.PlaneGeometry( 200, 300);
 
-    const texture = new THREE.TextureLoader().load(HOST + '/img/wood.jpg');
+    const texture = new THREE.TextureLoader().load(host + '/img/wood.jpg');
     texture.wrapS = THREE.RepeatWrapping;
     texture.wrapT = THREE.RepeatWrapping;
     texture.repeat.set( 2, 2 );
@@ -111,7 +111,7 @@ function createSideWall() {
 
     const extrudeGeometry = new THREE.ExtrudeGeometry( shape );
 
-    const texture = new THREE.TextureLoader().load(HOST+'/img/wall.jpg');
+    const texture = new THREE.TextureLoader().load(host+'/img/wall.jpg');
     texture.wrapS = texture.wrapT = THREE.RepeatWrapping;
     texture.repeat.set( 0.01, 0.005 );
 
@@ -150,7 +150,7 @@ function createFrontWall() {
 
     const extrudeGeometry = new THREE.ExtrudeGeometry( shape ) 
 
-    const texture = new THREE.TextureLoader().load(HOST+'/img/wall.jpg');
+    const texture = new THREE.TextureLoader().load(host+'/img/wall.jpg');
     texture.wrapS = texture.wrapT = THREE.RepeatWrapping;
     texture.repeat.set( 0.01, 0.005 );
 
@@ -174,7 +174,7 @@ function createBackWall() {
 
     const extrudeGeometry = new THREE.ExtrudeGeometry( shape ) 
 
-    const texture = new THREE.TextureLoader().load(HOST+'/img/wall.jpg');
+    const texture = new THREE.TextureLoader().load(host+'/img/wall.jpg');
     texture.wrapS = texture.wrapT = THREE.RepeatWrapping;
     texture.repeat.set( 0.01, 0.005 );
 
@@ -192,7 +192,7 @@ function createBackWall() {
 function createRoof() {
     const geometry = new THREE.BoxGeometry( 120, 320, 10 );
 
-    const texture = new THREE.TextureLoader().load(HOST+'/img/tile.jpg');
+    const texture = new THREE.TextureLoader().load(host+'/img/tile.jpg');
     texture.wrapS = texture.wrapT = THREE.RepeatWrapping;
     texture.repeat.set( 5, 1);
     texture.rotation = Math.PI / 2;
@@ -285,7 +285,7 @@ function createDoor() {
 
 function createBed() {
     var loader = new FBXLoader();
-    loader.load(HOST + '/bed.fbx', function ( object ) {
+    loader.load(host + '/bed.fbx', function ( object ) {
         object.position.x = 40;
         object.position.z = 80;
         object.position.y = 20;
