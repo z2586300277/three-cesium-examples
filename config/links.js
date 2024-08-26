@@ -6,8 +6,8 @@ export default {
         name: 'THREE.JS',
         url: 'https://threejs.org/',
         logo: HOST + 'files/site/logo.svg',
-        footName: '-THREE.JS',
-        footLink: 'https://threejs.org/'
+        footName: '-Examples',
+        footLink: HOST
     },
     links : [
         {
