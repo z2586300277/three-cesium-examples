@@ -8,7 +8,7 @@ export default [
             {
                 id: "入门",
                 name: "入门",
-                author: "giser2017",
+                author: "jiawanlong",
                 codeUrl: HOST + "threeExamples/basic/入门.js",
                 image: HOST + "threeExamples/basic/入门.png",
                 meta: {
@@ -20,7 +20,7 @@ export default [
             {
                 id: "辅助线",
                 name: "辅助线",
-                author: "giser2017",
+                author: "jiawanlong",
                 codeUrl: HOST + "threeExamples/basic/辅助线.js",
                 image: HOST + "threeExamples/basic/辅助线.png",
                 meta: {
@@ -493,6 +493,13 @@ export default [
         pid: 'application',
         name: '应用场景',
         children: [
+            {
+                id: 'smokeAir',
+                name: '烟雾效果',
+                author: 'yjsdszz',
+                codeUrl: HOST + 'threeExamples/application/smokeAir.js',
+                image: FILE_HOST + 'threeExamples/application/smokeAir.jpg',
+            },
             {
                 id: 'topology',
                 name: '简单3d拓扑图',

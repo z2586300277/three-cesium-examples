@@ -78,5 +78,12 @@ export default [
         name: '听闻远方有你',
         github: 'https://gitee.com/yjsdszz',
         icon: HOST + 'files/site/logo.svg'
+    },
+
+    {
+        id: 'jiawanlong',
+        name: 'jiawanlong',
+        github: 'https://github.com/jiawanlong',
+        icon: 'https://avatars.githubusercontent.com/u/20716499?v=4'
     }
 ]

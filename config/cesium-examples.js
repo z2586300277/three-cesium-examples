@@ -33,7 +33,7 @@ export default [
             {
                 id: 'baiduLayer',
                 name: '百度图层',
-                author: 'giser2017',
+                author: 'z2586300277',
                 codeUrl: HOST + 'cesiumExamples/layer/baiduLayer.js',
                 image: HOST + 'cesiumExamples/layer/baiduLayer.jpg',
                 meta: {
@@ -146,7 +146,7 @@ export default [
             , {
                 id: 'night',
                 name: '夜间',
-                author: 'giser2017',
+                author: 'jiawanlong',
                 codeUrl: HOST + 'cesiumExamples/offline/night.js',
                 image: HOST + 'cesiumExamples/offline/night.jpg',
                 meta: {
