@@ -316,6 +316,18 @@ export default [
                     keywords: 'three.js,截图',
                     description: '使用three.js截图'
                 }
+            },
+            {
+                id: 'skeletonBone',
+                name: '骨骼动画',
+                author: 'yjsdszz',
+                codeUrl: HOST + 'threeExamples/basic/skeletonBone.js',
+                image: FILE_HOST + 'threeExamples/basic/skeletonBone.jpg',
+                meta: {
+                    title: '骨骼动画',
+                    keywords: 'three.js,骨骼动画',
+                    description: '使用three.js骨骼动画'
+                }                
             }
         ]
     },
