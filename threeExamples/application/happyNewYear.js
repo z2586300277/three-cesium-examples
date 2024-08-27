@@ -24,24 +24,6 @@ float smoothNoise( vec2 ip ){ // https://www.youtube.com/watch?v=zXsWftRdsvU
 }
 `;
 
-// load fonts
-await (async function () {
-    async function loadFont(fontface) {
-        await fontface.load();
-        document.fonts.add(fontface);
-    }
-    let fonts = [
-        new FontFace(
-            "TulpenOne",
-            "url(https://fonts.gstatic.com/s/tulpenone/v25/dFa6ZfeC474skLgesc0Cajo6_Q.woff2) format('woff2')"
-        )
-    ];
-    for (let font in fonts) {
-        //console.log(fonts[font]);
-        await loadFont(fonts[font]);
-    }
-})();
-
 class Background extends THREE.Mesh {
     constructor () {
         super(
@@ -464,7 +446,7 @@ let gu = {
                 return tex;
             }
 
-            return Math.random() > 0.5 ? createTexture("2024") : createTexture("2024")
+            return Math.random() > 0.5 ? createTexture("年") : createTexture("乐")
         })()
     }
 };
