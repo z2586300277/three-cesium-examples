@@ -506,6 +506,13 @@ export default [
         name: '应用场景',
         children: [
             {
+                id: 'flyLine',
+                name: '飞线效果',
+                author: 'ecojust',
+                codeUrl: HOST + 'threeExamples/application/flyLine.js',
+                image: FILE_HOST + 'threeExamples/application/flyLine/colorful.gif',
+            },
+            {
                 id: 'smokeAir',
                 name: '烟雾效果',
                 author: 'yjsdszz',

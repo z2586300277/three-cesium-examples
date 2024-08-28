@@ -85,5 +85,12 @@ export default [
         name: 'jiawanlong',
         github: 'https://github.com/jiawanlong',
         icon: 'https://avatars.githubusercontent.com/u/20716499?v=4'
+    },
+
+    {
+        id: 'ecojust',
+        name:'桔子桑',
+        github: 'https://github.com/ecojust',
+        icon: 'https://avatars.githubusercontent.com/u/30574854?v=4'
     }
 ]
