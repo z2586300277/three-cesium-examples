@@ -328,6 +328,18 @@ export default [
                 }
             },
             {
+                id: 'tilesShader',
+                name: '智慧城市着色器',
+                author: 'liaoqinwei',
+                codeUrl: HOST + 'cesiumExamples/basic/tilesShader.js',
+                image: HOST + 'cesiumExamples/basic/tilesShader.jpg',
+                meta: {
+                    title: '智慧城市着色器',
+                    keywords: 'cesium.js,智慧城市着色器',
+                    description: 'cesium 智慧城市着色器'
+                }
+            },
+            {
                 id: 'flyLine',
                 name: '流动飞线运动',
                 author: 'z2586300277',

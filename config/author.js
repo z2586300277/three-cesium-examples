@@ -92,5 +92,12 @@ export default [
         name:'桔子桑',
         github: 'https://github.com/ecojust',
         icon: 'https://avatars.githubusercontent.com/u/30574854?v=4'
+    },
+
+    {
+        id: 'liaoqinwei',
+        name: 'liaoqinwei',
+        github: 'https://github.com/liaoqinwei',
+        icon: 'https://avatars.githubusercontent.com/u/62747994?v=4'
     }
 ]
