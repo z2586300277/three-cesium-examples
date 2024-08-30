@@ -2,6 +2,28 @@ import { HOST, FILE_HOST } from './host.js'
 
 export default [
     {
+        pid: 'friendStation',
+        name: '开源案例站',
+        children: [
+            {
+                id: 'alwxkxk',
+                author: 'alwxkxk',
+                name: 'Three.js 案例',
+                openUrl: 'https://alwxkxk.github.io/threejs-example/',
+                githubUrl: 'https://github.com/alwxkxk/threejs-example',
+                image: FILE_HOST + 'images/alwxkxk.jpg'
+            },
+            {
+                id: 'jiawanlong',
+                author: 'jiawanlong',
+                name: 'Cesium&Three.js 案例',
+                openUrl: 'https://jiawanlong.github.io/examples/cesiumEx/examples.html',
+                githubUrl: 'https://github.com/jiawanlong/Cesium-Examples',
+                image: FILE_HOST + 'images/jiawanlong.jpg'
+            }
+        ]
+    },
+    {
         pid: 'basic',
         name: '基础案例',
         children: [
