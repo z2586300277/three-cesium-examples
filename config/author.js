@@ -89,7 +89,7 @@ export default [
 
     {
         id: 'ecojust',
-        name:'桔子桑',
+        name: '桔子桑',
         github: 'https://github.com/ecojust',
         icon: 'https://avatars.githubusercontent.com/u/30574854?v=4'
     },
@@ -99,5 +99,13 @@ export default [
         name: 'liaoqinwei',
         github: 'https://github.com/liaoqinwei',
         icon: 'https://avatars.githubusercontent.com/u/62747994?v=4'
+    },
+
+    {
+        id: 'alwxkxk',
+        name: '生子当如哈士奇',
+        github: 'https://github.com/alwxkxk',
+        icon: 'https://avatars.githubusercontent.com/u/16029024?v=4'
     }
+
 ]
