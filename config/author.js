@@ -106,6 +106,20 @@ export default [
         name: '生子当如哈士奇',
         github: 'https://github.com/alwxkxk',
         icon: 'https://avatars.githubusercontent.com/u/16029024?v=4'
+    },
+
+    {
+        id: 'bosombaby',
+        name: '知心宝贝',
+        github: 'https://github.com/bosombaby',
+        icon: 'https://avatars.githubusercontent.com/u/80099933?v=4'
+    },
+
+    {
+        id: 'wuyifan0203',
+        name: 'wuyifan0203',
+        github: 'https://github.com/wuyifan0203',
+        icon: 'https://avatars.githubusercontent.com/u/58818101?v=4'
     }
 
 ]

@@ -20,7 +20,24 @@ export default [
                 openUrl: 'https://jiawanlong.github.io/examples/cesiumEx/examples.html',
                 githubUrl: 'https://github.com/jiawanlong/Cesium-Examples',
                 image: FILE_HOST + 'images/jiawanlong.jpg'
-            }
+            },
+            {
+                id: 'bosombaby',
+                author: 'bosombaby',
+                name: 'Three.js 源码地址',
+                openUrl: 'https://product.vrteam.top/',
+                githubUrl: 'https://github.com/bosombaby/web3d-product',
+                image: FILE_HOST + 'images/bosombaby.jpg'
+            },
+            
+            {
+                id: 'wuyifan0203',
+                author: 'wuyifan0203',
+                name: 'Three.js 源码案例',
+                openUrl: 'https://wuyifan0203.github.io/threejs-demo',
+                githubUrl: 'https://github.com/wuyifan0203/threejs-demo',
+                image: FILE_HOST + 'images/wuyifan0203.jpg'
+            },
         ]
     },
     {
