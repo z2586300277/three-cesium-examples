@@ -38,6 +38,15 @@ export default [
                 githubUrl: 'https://github.com/wuyifan0203/threejs-demo',
                 image: FILE_HOST + 'images/wuyifan0203.jpg'
             },
+
+            {
+                id: 'dragonir',
+                author: 'dragonir',
+                name: 'Three 案例',
+                openUrl: 'https://dragonir.github.io/3d',
+                githubUrl: 'https://github.com/dragonir/3d',
+                image: FILE_HOST + 'images/dragonir.jpg'
+            },
         ]
     },
     {

@@ -120,6 +120,13 @@ export default [
         name: 'wuyifan0203',
         github: 'https://github.com/wuyifan0203',
         icon: 'https://avatars.githubusercontent.com/u/58818101?v=4'
+    },
+
+    {
+        id: 'dragonir',
+        name: 'dragonir',
+        github: 'https://github.com/dragonir',
+        icon: 'https://avatars.githubusercontent.com/u/21058931?v=4'
     }
 
 ]
