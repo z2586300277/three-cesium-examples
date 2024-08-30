@@ -78,5 +78,34 @@ export default [
         name: '听闻远方有你',
         github: 'https://gitee.com/yjsdszz',
         icon: HOST + 'files/site/logo.svg'
+    },
+
+    {
+        id: 'jiawanlong',
+        name: 'jiawanlong',
+        github: 'https://github.com/jiawanlong',
+        icon: 'https://avatars.githubusercontent.com/u/20716499?v=4'
+    },
+
+    {
+        id: 'ecojust',
+        name: '桔子桑',
+        github: 'https://github.com/ecojust',
+        icon: 'https://avatars.githubusercontent.com/u/30574854?v=4'
+    },
+
+    {
+        id: 'liaoqinwei',
+        name: 'liaoqinwei',
+        github: 'https://github.com/liaoqinwei',
+        icon: 'https://avatars.githubusercontent.com/u/62747994?v=4'
+    },
+
+    {
+        id: 'alwxkxk',
+        name: '生子当如哈士奇',
+        github: 'https://github.com/alwxkxk',
+        icon: 'https://avatars.githubusercontent.com/u/16029024?v=4'
     }
+
 ]

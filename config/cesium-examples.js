@@ -33,7 +33,7 @@ export default [
             {
                 id: 'baiduLayer',
                 name: '百度图层',
-                author: 'giser2017',
+                author: 'z2586300277',
                 codeUrl: HOST + 'cesiumExamples/layer/baiduLayer.js',
                 image: HOST + 'cesiumExamples/layer/baiduLayer.jpg',
                 meta: {
@@ -146,7 +146,7 @@ export default [
             , {
                 id: 'night',
                 name: '夜间',
-                author: 'giser2017',
+                author: 'jiawanlong',
                 codeUrl: HOST + 'cesiumExamples/offline/night.js',
                 image: HOST + 'cesiumExamples/offline/night.jpg',
                 meta: {
@@ -325,6 +325,18 @@ export default [
                     title: '加载模型',
                     keywords: 'cesium.js,加载模型',
                     description: 'cesium 加载模型'
+                }
+            },
+            {
+                id: 'tilesShader',
+                name: '智慧城市着色器',
+                author: 'liaoqinwei',
+                codeUrl: HOST + 'cesiumExamples/basic/tilesShader.js',
+                image: HOST + 'cesiumExamples/basic/tilesShader.jpg',
+                meta: {
+                    title: '智慧城市着色器',
+                    keywords: 'cesium.js,智慧城市着色器',
+                    description: 'cesium 智慧城市着色器'
                 }
             },
             {
