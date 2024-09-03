@@ -834,6 +834,14 @@ export default [
                 openUrl: 'https://g2657.github.io/examples-server/ziTenghua/',
                 downloadUrl: 'https://g2657.github.io/examples-server/ziTenghua/ziTenghua.zip',
                 image: HOST + 'threeExamples/openSource/ziTengHua.jpg'
+            },
+            {
+                id: '3dEarth',
+                name: '3D地球',
+                author: 'RainManGO',
+                openUrl: 'https://z2586300277.github.io/show-site/3dEarth/',
+                githubUrl: 'https://github.com/RainManGO/3d-earth',
+                image: FILE_HOST + 'images/3dEarth.png'
             }
         ]
     },

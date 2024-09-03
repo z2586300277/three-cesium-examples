@@ -142,6 +142,13 @@ export default [
         name: 'WangPengfei',
         github: 'https://github.com/pengfeiw',
         icon: 'https://avatars.githubusercontent.com/u/37898750?v=4'
+    },
+
+    {   
+        id: 'RainManGO',
+        name: 'RainManGO',
+        github: 'https://github.com/RainManGO',
+        icon: 'https://avatars.githubusercontent.com/u/9261077?v=4'
     }
     
 
