@@ -135,6 +135,14 @@ export default [
         github: 'https://github.com/sxguojf',
         icon: 'https://avatars.githubusercontent.com/u/67039275?v=4'
 
+    },
+
+    {
+        id: 'pengfeiw',
+        name: 'WangPengfei',
+        github: 'https://github.com/pengfeiw',
+        icon: 'https://avatars.githubusercontent.com/u/37898750?v=4'
     }
+    
 
 ]

@@ -55,6 +55,15 @@ export default [
                 openUrl: 'https://sxguojf.github.io/three-tile-example/',
                 githubUrl: 'https://github.com/sxguojf/three-tile',
                 image: 'https://raw.githubusercontent.com/sxguojf/three-tile/master/images/image-3.png'
+            },
+
+            {
+                id: 'pengfeiw',
+                author: 'pengfeiw',
+                name: '3d 案例',
+                githubUrl:'https://github.com/pengfeiw/threejs-case',
+                openUrl: 'https://pengfeiw.github.io/minicode/',
+                image:  HOST + 'threeExamples/openSource/wangpengfei.jpg'
             }
         ]
     },
