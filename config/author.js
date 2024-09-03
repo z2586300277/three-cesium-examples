@@ -127,6 +127,14 @@ export default [
         name: 'dragonir',
         github: 'https://github.com/dragonir',
         icon: 'https://avatars.githubusercontent.com/u/21058931?v=4'
+    },
+
+    {
+        id: 'sxguojf',
+        name: '老郭',
+        github: 'https://github.com/sxguojf',
+        icon: 'https://avatars.githubusercontent.com/u/67039275?v=4'
+
     }
 
 ]

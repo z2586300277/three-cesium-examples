@@ -47,6 +47,15 @@ export default [
                 githubUrl: 'https://github.com/dragonir/3d',
                 image: FILE_HOST + 'images/dragonir.jpg'
             },
+
+            {
+                id: 'sxguojf',
+                author: 'sxguojf',
+                name: 'Three结合地图瓦片',
+                openUrl: 'https://sxguojf.github.io/three-tile-example/',
+                githubUrl: 'https://github.com/sxguojf/three-tile',
+                image: 'https://raw.githubusercontent.com/sxguojf/three-tile/master/images/image-3.png'
+            }
         ]
     },
     {
