@@ -63,7 +63,7 @@ export default [
                 name: '3d 案例',
                 githubUrl:'https://github.com/pengfeiw/threejs-case',
                 openUrl: 'https://pengfeiw.github.io/minicode/',
-                image:  HOST + 'threeExamples/openSource/wangpengfei.jpg'
+                image:  FILE_HOST + 'images/wangpengfei.jpg'
             }
         ]
     },
