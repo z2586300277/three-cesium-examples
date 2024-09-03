@@ -7,9 +7,11 @@
 2586300277  |  865182188  
 
 - github dev分支实时预览 http://z2586300277.github.io/three-cesium-examples
-
+  
+- vercel 部署预览 https://three-cesium-examples.vercel.app
+  
 - 友情链接3D编辑器 https://github.com/z2586300277/three-editor
-
+  
 - 注: 点个星星，不管遇到任何技术艰难险阻，three-cesium-examples 永远站在你身后。
 
 ## 📦 自行部署
