@@ -81,3 +81,168 @@
 - 注： github page 搭建完成后 直接访问 如 https://xxxx.github.io/xxxx/ 下的资源文件无法显示是正常现象, 在代码中可正常获取
 
 - 参考访问案例 如 cesium 案例 => 离线地图 => 内网高德
+# 💎 Native Three and Cesium Cases - Updated to the death - Only open source-
+
+
+
+##Open source is not easy- ⭐ - Dianxing Assistance
+
+
+
+Join the warehouse and manage contacts together 🐧QQ | 🐧 QQ group
+
+:-------------------------:|:-------------------------:
+
+2586300277 | 865182188
+
+
+
+-Real time preview of GitHub dev branch http://z2586300277.github.io/three-cesium-examples
+
+
+
+-Vercel Deployment Preview https://three-cesium-examples.vercel.app
+
+
+
+-Friendship Link 3D Editor https://github.com/z2586300277/three-editor
+
+
+
+-Note: Click on a star, no matter what technical difficulties or obstacles you encounter, thread examples will always stand behind you.
+
+
+
+## 📦 Self deployment
+
+
+
+1. All links and logos can be modified through the config/links file and replaced with one's own official website or link address.
+
+
+
+2. As in http://threehub.cn/ Deployment
+
+
+
+## 🌳 a literary creation
+
+
+
+#####If any of these cases have helped you, you can submit your work if you are interested to spread love to more developers
+
+
+
+#####- After forking the repository - Add user information - Upload your proudest work - Submit and merge to the main branch - Develop or merge based on dev branch
+
+
+
+-Run the framework to start the service port pointing to index.html
+
+
+
+1. Creators can enter their developer information in config/author.js, and then the ID associated with the submitted case will display the author information.
+
+
+
+2. Place the case js in a folder in the directory cesiumExamples/threeEmples, such as ThreeEmples/basic, and put test.exe, test.jpg, or the directory test [test. js, test. jpg]
+
+
+
+3. Find ThreeEmples in the config directory and enter the case information. The internal resources point to the paths corresponding to your JS and image resources
+
+
+
+4. Note: To ensure the use of lightweight case display image resources- https://yasuo.xunjiepdf.com/img/ _(Custom compression to within 4k)_
+
+
+
+5. If it involves other dependencies on JS, module.js can be placed in the JS directory such as dat.gui, Gasp, and the injection method can be seen in fig.js
+
+
+
+6. Store audio and video models and other resources that can be shared in the files folder. Whenever possible, reference external URLs for file resources
+
+
+
+-Config js injection and configuration case information directory
+
+-Files, audio and video model storage, and other resources that can be shared should be avoided as much as possible, and external URL addresses should be used to access them
+
+-Js=>dat.gui gsap and other dependency repositories, try to use online dependencies to introduce them as much as possible
+
+-ThreeEamples Three.js Case Code Catalog
+
+-CesiumExamples cesium case code directory
+
+
+
+```js
+
+//HOST automatically retrieves the current domain name/IP to prevent invalid resource references in different deployment environments
+
+{
+
+Id: 'Unique id in parent list',
+
+Name: 'Name',
+
+Author: 'Author ID',
+
+Image: HOST+'ThreeEmples/basic/test. jpg',//corresponding window image
+
+CodeURL: HOST+'threExamples/basic/test. js',//js module format Most case forms
+
+HtmlURL: HOST+'threExamples/test/test. html '//HTML online format such as three case=>particle=>random particle particle planet
+
+OpenURL: 'Preview external link URL',//openURL and codeURL are in either form as seen in the Peach Blossom Pavilion Su7 case
+
+DownloadURL: 'URL with attached download',//e.g. Three.js=>Advanced case=>Peach Blossom Pavilion
+
+GithubURL: 'URL with GitHub repository attached',//e.g. Three.js=>Open source works=>su7
+
+meta: {
+
+Title: 'This Case Website Title',
+
+Keywords: 'Search engine keywords',
+
+Description: 'This case page description'
+
+}
+
+}
+
+```
+
+
+
+## 🏠 Build your own distributed storage warehouse
+
+
+
+-Architecture design is to access code in the form of requesting resources, so resource information such as codeURL image is not limited to being stored in this repository, such as on your own server, and then the URL can be accessed to your resource address.
+
+
+
+-Then only the case information can be configured in this warehouse, which can refer to the configuration of three cases=>extended functions=>3D map cases
+
+
+
+-Due to access restrictions on GitHub, HTTP will be automatically banned. It is recommended to set up your own GitHub page and use GitHub as your resource server.
+
+
+
+-For example, some of my distributed resources are stored in https://github.com/z2586300277/3d-file-server Under the warehouse - Access service: https://z2586300277.github.io/3d-file-server/
+
+
+
+-GitHub page setup=>create repository=>page process=>settings=>pages=>build and deployment=>source (depoly from a branch)=>branch Select the corresponding branch
+
+
+
+-Note: After the GitHub page is built, you can directly access it as follows: https://xxxx.github.io/xxxx/ It is normal that the resource files under cannot be displayed, but they can be obtained normally in the code
+
+
+
+-Reference access cases such as Cesium case=>Offline map=>Intranet Gaode
