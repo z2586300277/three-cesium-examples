@@ -905,6 +905,14 @@ export default [
                 author: 'z2586300277',
                 openUrl: 'https://gero3.github.io/facetype.js/',
                 image: HOST + 'threeExamples/tools/make_json_font.jpg'
+            },
+            {
+                id: 'shaderToy',
+                name: '开源shader社区',
+                author: 'z2586300277',
+                openUrl: 'https://www.shadertoy.com/',
+                image: FILE_HOST + 'images/shaderToy.jpg'
+
             }
         ]
     },
