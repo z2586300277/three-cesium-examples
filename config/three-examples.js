@@ -54,7 +54,7 @@ export default [
                 name: 'Three结合地图瓦片',
                 openUrl: 'https://sxguojf.github.io/three-tile-example/',
                 githubUrl: 'https://github.com/sxguojf/three-tile',
-                image: 'https://raw.githubusercontent.com/sxguojf/three-tile/master/images/image-3.png'
+                image: FILE_HOST + 'images/wangpengfei.jpg'
             },
 
             {
@@ -63,7 +63,7 @@ export default [
                 name: '3d 案例',
                 githubUrl:'https://github.com/pengfeiw/threejs-case',
                 openUrl: 'https://pengfeiw.github.io/minicode/',
-                image:  FILE_HOST + 'images/wangpengfei.jpg'
+                image:  HOST + 'threeExamples/openSource/wangpengfei.jpg'
             }
         ]
     },
