@@ -68,336 +68,56 @@ export default [
         ]
     },
     {
-        gid: 'generalGroup',
-        group: '常规案例',
-        pid: 'basic',
-        name: '基础案例',
+        pid: 'advancedExamples',
+        name: '高级案例',
         children: [
             {
-                id: 'modelLoad',
-                name: 'gltf/fbx/obj模型加载',
+                id: 'taohuating',
+                name: '桃花亭',
+                author: 'huan_meng_hai_yan',
+                openUrl: 'https://z2586300277.github.io/show-site/TaoHuaTing',
+                downloadUrl: 'https://z2586300277.github.io/show-site/TaoHuaTing/TaoHuaTing.zip',
+                image: HOST + 'threeExamples/openSource/taohuating.jpg'
+            },
+            {
+                id: 'ziTengHua',
+                name: '紫藤花',
+                author: 'huan_meng_hai_yan',
+                openUrl: 'https://g2657.github.io/examples-server/ziTenghua/',
+                downloadUrl: 'https://g2657.github.io/examples-server/ziTenghua/ziTenghua.zip',
+                image: HOST + 'threeExamples/openSource/ziTengHua.jpg'
+            },
+            {
+                id: '3dEarth',
+                name: '3D地球',
+                author: 'RainManGO',
+                openUrl: 'https://z2586300277.github.io/show-site/3dEarth/',
+                githubUrl: 'https://github.com/RainManGO/3d-earth',
+                image: FILE_HOST + 'images/3dEarth.png'
+            },
+            {
+                id: '3dGeoMap',
+                name: '3D地图',
+                author: 'xiaogua-bushigua',
+                githubUrl: 'https://github.com/xiaogua-bushigua/3d-geoMap',
+                openUrl: 'https://z2586300277.github.io/show-site/3dGeoMap',
+                image: FILE_HOST + 'images/3dGeoMap.gif'
+            },
+            {
+                id: 'kallkago_su7',
+                name: 'su7 demo',
+                author: 'KallkaGo',
+                openUrl: 'https://z2586300277.github.io/show-site/su7_demo/',
+                githubUrl: 'https://github.com/KallkaGo/su7-demo',
+                image: HOST + 'threeExamples/openSource/kallkago_su7.jpg'
+            },
+            {
+                id: 'z2586300277_3d_editor',
+                name: 'Three.js低代码编辑器',
                 author: 'z2586300277',
-                codeUrl: HOST + 'threeExamples/basic/modelLoad.js',
-                image: HOST + 'threeExamples/basic/modelLoad.jpg',
-                meta: {
-                    title: '模型加载',
-                    keywords: 'three.js,模型加载',
-                    description: '使用three.js模型加载'
-                }
-            },
-            {
-                id: 'outlinePass',
-                name: '轮廓光',
-                author: 'z2586300277',
-                codeUrl: HOST + 'threeExamples/basic/outlinePass.js',
-                image: HOST + 'threeExamples/basic/outlinePass.jpg',
-                meta: {
-                    title: '轮廓光',
-                    keywords: 'three.js,轮廓光',
-                    description: '使用three轮廓光'
-                }
-            },
-            {
-                id: 'gradientTriangle',
-                name: '渐变三角形',
-                author: 'giser2017',
-                codeUrl: HOST + 'threeExamples/basic/gradientTriangle.js',
-                image: HOST + 'threeExamples/basic/gradientTriangle.jpg',
-                meta: {
-                    title: '渐变三角形',
-                    keywords: 'three.js,渐变三角形',
-                    description: '使用three.js渐变三角形'
-                }
-            },
-            {
-                id: 'skyAndEnv',
-                name: '天空盒',
-                author: 'z2586300277',
-                codeUrl: HOST + 'threeExamples/basic/skyAndEnv.js',
-                image: HOST + 'threeExamples/basic/skyAndEnv.jpg',
-                meta: {
-                    title: '天空盒',
-                    keywords: 'three.js,天空盒',
-                    description: '使用three.js天空盒'
-                }
-            },
-            {
-                id: 'modelAnimates',
-                name: '单/多模型动画',
-                author: 'z2586300277',
-                codeUrl: HOST + 'threeExamples/basic/modelAnimates.js',
-                image: HOST + 'threeExamples/basic/modelAnimates.jpg',
-                meta: {
-                    title: '模型自带动画',
-                    keywords: 'three.js,模型自带动画',
-                    description: '使用three播放模型自带动画'
-                }
-            },
-            {
-                id: 'gsapAnimate',
-                name: 'GSAP动画',
-                author: 'z2586300277',
-                codeUrl: HOST + 'threeExamples/basic/gsapAnimate.js',
-                image: HOST + 'threeExamples/basic/gsapAnimate.jpg',
-                meta: {
-                    title: 'GSAP动画',
-                    keywords: 'three.js,GSAP动画',
-                    description: '使用three.js GSAP动画'
-                }
-            },
-            {
-                id: 'cssElement',
-                name: 'CSS元素',
-                author: 'z2586300277',
-                codeUrl: HOST + 'threeExamples/basic/cssElement.js',
-                image: HOST + 'threeExamples/basic/cssElement.jpg',
-                meta: {
-                    title: 'CSS元素',
-                    keywords: 'three.js,CSS元素',
-                    description: '使用three.js CSS元素'
-                }
-            },
-            {
-                id: 'curveAnimate',
-                name: '曲线动画',
-                author: 'z2586300277',
-                codeUrl: HOST + 'threeExamples/basic/curveAnimate.js',
-                image: HOST + 'threeExamples/basic/curveAnimate.jpg',
-                meta: {
-                    title: '曲线动画',
-                    keywords: 'three.js,曲线动画',
-                    description: '使用three.js曲线动画'
-                }
-            },
-            {
-                id: 'transformAnimate',
-                name: 'Mesh变换动画',
-                author: 'z2586300277',
-                codeUrl: HOST + 'threeExamples/basic/transformAnimate.js',
-                image: HOST + 'threeExamples/basic/transformAnimate.jpg',
-                meta: {
-                    title: '变换动画',
-                    keywords: 'three.js,变换动画',
-                    description: '使用three.js变换动画'
-                }
-            },
-            {
-                id: 'screenShot',
-                name: '截图',
-                author: 'z2586300277',
-                codeUrl: HOST + 'threeExamples/basic/screenShot.js',
-                image: HOST + 'threeExamples/basic/screenShot.jpg',
-                meta: {
-                    title: '截图',
-                    keywords: 'three.js,截图',
-                    description: '使用three.js截图'
-                }
-            },
-            {
-                id: 'skeletonBone',
-                name: '骨骼动画',
-                author: 'yjsdszz',
-                codeUrl: HOST + 'threeExamples/basic/skeletonBone.js',
-                image: FILE_HOST + 'threeExamples/basic/skeletonBone.jpg',
-                meta: {
-                    title: '骨骼动画',
-                    keywords: 'three.js,骨骼动画',
-                    description: '使用three.js骨骼动画'
-                }
-            }
-        ]
-    },
-    {
-        gid: 'generalGroup',
-        group: '常规案例',
-        pid: 'introduction',
-        name: '入门案例',
-        children: [
-            {
-                id: "入门",
-                name: "入门",
-                author: "jiawanlong",
-                codeUrl: HOST + "threeExamples/basic/入门.js",
-                image: HOST + "threeExamples/basic/入门.png",
-                meta: {
-                    title: "入门",
-                    keywords: "three.js,入门",
-                    description: "使用three.js入门"
-                }
-            },
-            {
-                id: "辅助线",
-                name: "辅助线",
-                author: "jiawanlong",
-                codeUrl: HOST + "threeExamples/basic/辅助线.js",
-                image: HOST + "threeExamples/basic/辅助线.png",
-                meta: {
-                    title: "辅助线",
-                    keywords: "three.js,辅助线",
-                    description: "使用three.js辅助线"
-                }
-            },
-            {
-                id: "光线",
-                name: "光线",
-                author: "jiawanlong",
-                codeUrl: HOST + "threeExamples/basic/光线.js",
-                image: HOST + "threeExamples/basic/光线.png",
-                meta: {
-                    title: "光线",
-                    keywords: "three.js,光线",
-                    description: "使用three.js光线"
-                }
-            },
-            {
-                id: "相机控件",
-                name: "相机控件",
-                author: "jiawanlong",
-                codeUrl: HOST + "threeExamples/basic/相机控件.js",
-                image: HOST + "threeExamples/basic/相机控件.png",
-                meta: {
-                    title: "相机控件",
-                    keywords: "three.js,相机控件",
-                    description: "使用three.js相机控件"
-                }
-            },
-            {
-                id: "动画",
-                name: "动画",
-                author: "jiawanlong",
-                codeUrl: HOST + "threeExamples/basic/动画.js",
-                image: HOST + "threeExamples/basic/动画.png",
-                meta: {
-                    title: "动画",
-                    keywords: "three.js,动画",
-                    description: "使用three.js动画"
-                }
-            },
-            {
-                id: "全屏",
-                name: "全屏",
-                author: "jiawanlong",
-                codeUrl: HOST + "threeExamples/basic/全屏.js",
-                image: HOST + "threeExamples/basic/全屏.png",
-                meta: {
-                    title: "全屏",
-                    keywords: "three.js,全屏",
-                    description: "使用three.js全屏"
-                }
-            },
-            {
-                id: "帧率",
-                name: "帧率",
-                author: "jiawanlong",
-                codeUrl: HOST + "threeExamples/basic/帧率.js",
-                image: HOST + "threeExamples/basic/帧率.png",
-                meta: {
-                    title: "帧率",
-                    keywords: "three.js,帧率",
-                    description: "使用three.js帧率"
-                }
-            },
-            {
-                id: "阵列模型",
-                name: "阵列模型",
-                author: "jiawanlong",
-                codeUrl: HOST + "threeExamples/basic/阵列模型.js",
-                image: HOST + "threeExamples/basic/阵列模型.png",
-                meta: {
-                    title: "阵列模型",
-                    keywords: "three.js,阵列模型",
-                    description: "使用three.js阵列模型"
-                }
-            },
-            {
-                id: "几何体",
-                name: "几何体",
-                author: "jiawanlong",
-                codeUrl: HOST + "threeExamples/basic/几何体.js",
-                image: HOST + "threeExamples/basic/几何体.png",
-                meta: {
-                    title: "几何体",
-                    keywords: "three.js,几何体",
-                    description: "使用three.js几何体"
-                }
-            },
-            {
-                id: "点线",
-                name: "点、线",
-                name_en: "点、线",
-                author: "jiawanlong",
-                codeUrl: HOST + "threeExamples/basic/点线.js",
-                image: HOST + "threeExamples/basic/点、线.png",
-                meta: {
-                    title: "点、线",
-                    keywords: "three.js,点线",
-                    description: "使用three.js点、线"
-                }
-            },
-            {
-                id: "网格",
-                name: "网格",
-                name_en: "网格",
-                author: "jiawanlong",
-                codeUrl: HOST + "threeExamples/basic/网格.js",
-                image: HOST + "threeExamples/basic/网格.png",
-                meta: {
-                    title: "网格",
-                    keywords: "three.js,网格",
-                    description: "使用three.js网格"
-                }
-            },
-            {
-                id: "索引",
-                name: "索引",
-                name_en: "索引",
-                author: "jiawanlong",
-                codeUrl: HOST + "threeExamples/basic/索引.js",
-                image: HOST + "threeExamples/basic/索引.png",
-                meta: {
-                    title: "索引",
-                    keywords: "three.js,索引",
-                    description: "使用three.js索引"
-                }
-            },
-            {
-                id: "旋转缩放平移几何体",
-                name: "旋转、缩放、平移几何体",
-                name_en: "旋转、缩放、平移几何体",
-                author: "jiawanlong",
-                codeUrl: HOST + "threeExamples/basic/旋转、缩放、平移几何体.js",
-                image: HOST + "threeExamples/basic/旋转、缩放、平移几何体.png",
-                meta: {
-                    title: "旋转、缩放、平移几何体",
-                    keywords: "three.js,旋转缩放平移几何体",
-                    description: "使用three.js旋转、缩放、平移几何体"
-                }
-            },
-            {
-                id: "自带几何体顶点",
-                name: "自带几何体顶点",
-                name_en: "自带几何体顶点",
-                author: "jiawanlong",
-                codeUrl: HOST + "threeExamples/basic/自带几何体顶点.js",
-                image: HOST + "threeExamples/basic/自带几何体顶点.png",
-                meta: {
-                    title: "自带几何体顶点",
-                    keywords: "three.js,自带几何体顶点",
-                    description: "使用three.js自带几何体顶点"
-                }
-            },
-            {
-                id: "顶点颜色",
-                name: "顶点颜色",
-                name_en: "顶点颜色",
-                author: "jiawanlong",
-                codeUrl: HOST + "threeExamples/basic/顶点颜色.js",
-                image: HOST + "threeExamples/basic/顶点颜色.png",
-                meta: {
-                    title: "顶点颜色",
-                    keywords: "three.js,顶点颜色",
-                    description: "使用three.js顶点颜色"
-                }
+                openUrl: 'https://z2586300277.github.io/three-editor/dist/#/editor',
+                githubUrl: 'https://github.com/z2586300277/three-editor',
+                image: FILE_HOST + 'images/editor.jpg'
             }
         ]
     },
@@ -816,54 +536,336 @@ export default [
         ]
     },
     {
-        pid: 'advancedExamples',
-        name: '高级案例',
+        gid: 'generalGroup',
+        group: '常规案例',
+        pid: 'basic',
+        name: '基础案例',
         children: [
             {
-                id: 'taohuating',
-                name: '桃花亭',
-                author: 'huan_meng_hai_yan',
-                openUrl: 'https://z2586300277.github.io/show-site/TaoHuaTing',
-                downloadUrl: 'https://z2586300277.github.io/show-site/TaoHuaTing/TaoHuaTing.zip',
-                image: HOST + 'threeExamples/openSource/taohuating.jpg'
+                id: 'modelLoad',
+                name: 'gltf/fbx/obj模型加载',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/basic/modelLoad.js',
+                image: HOST + 'threeExamples/basic/modelLoad.jpg',
+                meta: {
+                    title: '模型加载',
+                    keywords: 'three.js,模型加载',
+                    description: '使用three.js模型加载'
+                }
             },
             {
-                id: 'ziTengHua',
-                name: '紫藤花',
-                author: 'huan_meng_hai_yan',
-                openUrl: 'https://g2657.github.io/examples-server/ziTenghua/',
-                downloadUrl: 'https://g2657.github.io/examples-server/ziTenghua/ziTenghua.zip',
-                image: HOST + 'threeExamples/openSource/ziTengHua.jpg'
+                id: 'outlinePass',
+                name: '轮廓光',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/basic/outlinePass.js',
+                image: HOST + 'threeExamples/basic/outlinePass.jpg',
+                meta: {
+                    title: '轮廓光',
+                    keywords: 'three.js,轮廓光',
+                    description: '使用three轮廓光'
+                }
             },
             {
-                id: '3dEarth',
-                name: '3D地球',
-                author: 'RainManGO',
-                openUrl: 'https://z2586300277.github.io/show-site/3dEarth/',
-                githubUrl: 'https://github.com/RainManGO/3d-earth',
-                image: FILE_HOST + 'images/3dEarth.png'
+                id: 'gradientTriangle',
+                name: '渐变三角形',
+                author: 'giser2017',
+                codeUrl: HOST + 'threeExamples/basic/gradientTriangle.js',
+                image: HOST + 'threeExamples/basic/gradientTriangle.jpg',
+                meta: {
+                    title: '渐变三角形',
+                    keywords: 'three.js,渐变三角形',
+                    description: '使用three.js渐变三角形'
+                }
+            },
+            {
+                id: 'skyAndEnv',
+                name: '天空盒',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/basic/skyAndEnv.js',
+                image: HOST + 'threeExamples/basic/skyAndEnv.jpg',
+                meta: {
+                    title: '天空盒',
+                    keywords: 'three.js,天空盒',
+                    description: '使用three.js天空盒'
+                }
+            },
+            {
+                id: 'modelAnimates',
+                name: '单/多模型动画',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/basic/modelAnimates.js',
+                image: HOST + 'threeExamples/basic/modelAnimates.jpg',
+                meta: {
+                    title: '模型自带动画',
+                    keywords: 'three.js,模型自带动画',
+                    description: '使用three播放模型自带动画'
+                }
+            },
+            {
+                id: 'gsapAnimate',
+                name: 'GSAP动画',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/basic/gsapAnimate.js',
+                image: HOST + 'threeExamples/basic/gsapAnimate.jpg',
+                meta: {
+                    title: 'GSAP动画',
+                    keywords: 'three.js,GSAP动画',
+                    description: '使用three.js GSAP动画'
+                }
+            },
+            {
+                id: 'cssElement',
+                name: 'CSS元素',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/basic/cssElement.js',
+                image: HOST + 'threeExamples/basic/cssElement.jpg',
+                meta: {
+                    title: 'CSS元素',
+                    keywords: 'three.js,CSS元素',
+                    description: '使用three.js CSS元素'
+                }
+            },
+            {
+                id: 'curveAnimate',
+                name: '曲线动画',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/basic/curveAnimate.js',
+                image: HOST + 'threeExamples/basic/curveAnimate.jpg',
+                meta: {
+                    title: '曲线动画',
+                    keywords: 'three.js,曲线动画',
+                    description: '使用three.js曲线动画'
+                }
+            },
+            {
+                id: 'transformAnimate',
+                name: 'Mesh变换动画',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/basic/transformAnimate.js',
+                image: HOST + 'threeExamples/basic/transformAnimate.jpg',
+                meta: {
+                    title: '变换动画',
+                    keywords: 'three.js,变换动画',
+                    description: '使用three.js变换动画'
+                }
+            },
+            {
+                id: 'screenShot',
+                name: '截图',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/basic/screenShot.js',
+                image: HOST + 'threeExamples/basic/screenShot.jpg',
+                meta: {
+                    title: '截图',
+                    keywords: 'three.js,截图',
+                    description: '使用three.js截图'
+                }
+            },
+            {
+                id: 'skeletonBone',
+                name: '骨骼动画',
+                author: 'yjsdszz',
+                codeUrl: HOST + 'threeExamples/basic/skeletonBone.js',
+                image: FILE_HOST + 'threeExamples/basic/skeletonBone.jpg',
+                meta: {
+                    title: '骨骼动画',
+                    keywords: 'three.js,骨骼动画',
+                    description: '使用three.js骨骼动画'
+                }
             }
         ]
     },
     {
-        pid: 'openSource',
-        name: '开源作品',
+        gid: 'generalGroup',
+        group: '常规案例',
+        pid: 'introduction',
+        name: '入门案例',
         children: [
             {
-                id: 'kallkago_su7',
-                name: 'su7 demo',
-                author: 'KallkaGo',
-                openUrl: 'https://z2586300277.github.io/show-site/su7_demo/',
-                githubUrl: 'https://github.com/KallkaGo/su7-demo',
-                image: HOST + 'threeExamples/openSource/kallkago_su7.jpg'
+                id: "入门",
+                name: "入门",
+                author: "jiawanlong",
+                codeUrl: HOST + "threeExamples/basic/入门.js",
+                image: HOST + "threeExamples/basic/入门.png",
+                meta: {
+                    title: "入门",
+                    keywords: "three.js,入门",
+                    description: "使用three.js入门"
+                }
             },
             {
-                id: 'z2586300277_3d_editor',
-                name: 'Three.js低代码编辑器',
-                author: 'z2586300277',
-                openUrl: 'https://z2586300277.github.io/three-editor/dist/#/editor',
-                githubUrl: 'https://github.com/z2586300277/three-editor',
-                image: HOST + 'threeExamples/openSource/z2586300277_3d_editor.jpg'
+                id: "辅助线",
+                name: "辅助线",
+                author: "jiawanlong",
+                codeUrl: HOST + "threeExamples/basic/辅助线.js",
+                image: HOST + "threeExamples/basic/辅助线.png",
+                meta: {
+                    title: "辅助线",
+                    keywords: "three.js,辅助线",
+                    description: "使用three.js辅助线"
+                }
+            },
+            {
+                id: "光线",
+                name: "光线",
+                author: "jiawanlong",
+                codeUrl: HOST + "threeExamples/basic/光线.js",
+                image: HOST + "threeExamples/basic/光线.png",
+                meta: {
+                    title: "光线",
+                    keywords: "three.js,光线",
+                    description: "使用three.js光线"
+                }
+            },
+            {
+                id: "相机控件",
+                name: "相机控件",
+                author: "jiawanlong",
+                codeUrl: HOST + "threeExamples/basic/相机控件.js",
+                image: HOST + "threeExamples/basic/相机控件.png",
+                meta: {
+                    title: "相机控件",
+                    keywords: "three.js,相机控件",
+                    description: "使用three.js相机控件"
+                }
+            },
+            {
+                id: "动画",
+                name: "动画",
+                author: "jiawanlong",
+                codeUrl: HOST + "threeExamples/basic/动画.js",
+                image: HOST + "threeExamples/basic/动画.png",
+                meta: {
+                    title: "动画",
+                    keywords: "three.js,动画",
+                    description: "使用three.js动画"
+                }
+            },
+            {
+                id: "全屏",
+                name: "全屏",
+                author: "jiawanlong",
+                codeUrl: HOST + "threeExamples/basic/全屏.js",
+                image: HOST + "threeExamples/basic/全屏.png",
+                meta: {
+                    title: "全屏",
+                    keywords: "three.js,全屏",
+                    description: "使用three.js全屏"
+                }
+            },
+            {
+                id: "帧率",
+                name: "帧率",
+                author: "jiawanlong",
+                codeUrl: HOST + "threeExamples/basic/帧率.js",
+                image: HOST + "threeExamples/basic/帧率.png",
+                meta: {
+                    title: "帧率",
+                    keywords: "three.js,帧率",
+                    description: "使用three.js帧率"
+                }
+            },
+            {
+                id: "阵列模型",
+                name: "阵列模型",
+                author: "jiawanlong",
+                codeUrl: HOST + "threeExamples/basic/阵列模型.js",
+                image: HOST + "threeExamples/basic/阵列模型.png",
+                meta: {
+                    title: "阵列模型",
+                    keywords: "three.js,阵列模型",
+                    description: "使用three.js阵列模型"
+                }
+            },
+            {
+                id: "几何体",
+                name: "几何体",
+                author: "jiawanlong",
+                codeUrl: HOST + "threeExamples/basic/几何体.js",
+                image: HOST + "threeExamples/basic/几何体.png",
+                meta: {
+                    title: "几何体",
+                    keywords: "three.js,几何体",
+                    description: "使用three.js几何体"
+                }
+            },
+            {
+                id: "点线",
+                name: "点、线",
+                name_en: "点、线",
+                author: "jiawanlong",
+                codeUrl: HOST + "threeExamples/basic/点线.js",
+                image: HOST + "threeExamples/basic/点、线.png",
+                meta: {
+                    title: "点、线",
+                    keywords: "three.js,点线",
+                    description: "使用three.js点、线"
+                }
+            },
+            {
+                id: "网格",
+                name: "网格",
+                name_en: "网格",
+                author: "jiawanlong",
+                codeUrl: HOST + "threeExamples/basic/网格.js",
+                image: HOST + "threeExamples/basic/网格.png",
+                meta: {
+                    title: "网格",
+                    keywords: "three.js,网格",
+                    description: "使用three.js网格"
+                }
+            },
+            {
+                id: "索引",
+                name: "索引",
+                name_en: "索引",
+                author: "jiawanlong",
+                codeUrl: HOST + "threeExamples/basic/索引.js",
+                image: HOST + "threeExamples/basic/索引.png",
+                meta: {
+                    title: "索引",
+                    keywords: "three.js,索引",
+                    description: "使用three.js索引"
+                }
+            },
+            {
+                id: "旋转缩放平移几何体",
+                name: "旋转、缩放、平移几何体",
+                name_en: "旋转、缩放、平移几何体",
+                author: "jiawanlong",
+                codeUrl: HOST + "threeExamples/basic/旋转、缩放、平移几何体.js",
+                image: HOST + "threeExamples/basic/旋转、缩放、平移几何体.png",
+                meta: {
+                    title: "旋转、缩放、平移几何体",
+                    keywords: "three.js,旋转缩放平移几何体",
+                    description: "使用three.js旋转、缩放、平移几何体"
+                }
+            },
+            {
+                id: "自带几何体顶点",
+                name: "自带几何体顶点",
+                name_en: "自带几何体顶点",
+                author: "jiawanlong",
+                codeUrl: HOST + "threeExamples/basic/自带几何体顶点.js",
+                image: HOST + "threeExamples/basic/自带几何体顶点.png",
+                meta: {
+                    title: "自带几何体顶点",
+                    keywords: "three.js,自带几何体顶点",
+                    description: "使用three.js自带几何体顶点"
+                }
+            },
+            {
+                id: "顶点颜色",
+                name: "顶点颜色",
+                name_en: "顶点颜色",
+                author: "jiawanlong",
+                codeUrl: HOST + "threeExamples/basic/顶点颜色.js",
+                image: HOST + "threeExamples/basic/顶点颜色.png",
+                meta: {
+                    title: "顶点颜色",
+                    keywords: "three.js,顶点颜色",
+                    description: "使用three.js顶点颜色"
+                }
             }
         ]
     },

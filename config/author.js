@@ -149,6 +149,13 @@ export default [
         name: 'RainManGO',
         github: 'https://github.com/RainManGO',
         icon: 'https://avatars.githubusercontent.com/u/9261077?v=4'
+    },
+
+    {
+        id: 'xiaogua-bushigua',
+        name: 'xiaoguabushigua',
+        github: 'https://github.com/xiaogua-bushigua',
+        icon: 'https://avatars.githubusercontent.com/u/87176773?v=4'
     }
     
 
