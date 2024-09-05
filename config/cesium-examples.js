@@ -388,13 +388,13 @@ export default [
     },
     {
         pid: 'tools',
-        name: '工具',
+        name: '相关工具',
         children: [
             {
                 id: 'mapDataConvert',
                 name: '地图转换工具',
                 author: 'giser2017',
-                openUrl: 'https://threelab.cn/dgis/',
+                openUrl: 'https://z2586300277.github.io/show-site/dgis/',
                 image: HOST + 'cesiumExamples/tools/mapDataConvert.jpg',
             }
         ]
