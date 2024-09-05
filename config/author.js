@@ -106,6 +106,57 @@ export default [
         name: '生子当如哈士奇',
         github: 'https://github.com/alwxkxk',
         icon: 'https://avatars.githubusercontent.com/u/16029024?v=4'
+    },
+
+    {
+        id: 'bosombaby',
+        name: '知心宝贝',
+        github: 'https://github.com/bosombaby',
+        icon: 'https://avatars.githubusercontent.com/u/80099933?v=4'
+    },
+
+    {
+        id: 'wuyifan0203',
+        name: 'wuyifan0203',
+        github: 'https://github.com/wuyifan0203',
+        icon: 'https://avatars.githubusercontent.com/u/58818101?v=4'
+    },
+
+    {
+        id: 'dragonir',
+        name: 'dragonir',
+        github: 'https://github.com/dragonir',
+        icon: 'https://avatars.githubusercontent.com/u/21058931?v=4'
+    },
+
+    {
+        id: 'sxguojf',
+        name: '老郭',
+        github: 'https://github.com/sxguojf',
+        icon: 'https://avatars.githubusercontent.com/u/67039275?v=4'
+
+    },
+
+    {
+        id: 'pengfeiw',
+        name: 'WangPengfei',
+        github: 'https://github.com/pengfeiw',
+        icon: 'https://avatars.githubusercontent.com/u/37898750?v=4'
+    },
+
+    {   
+        id: 'RainManGO',
+        name: 'RainManGO',
+        github: 'https://github.com/RainManGO',
+        icon: 'https://avatars.githubusercontent.com/u/9261077?v=4'
+    },
+
+    {
+        id: 'xiaogua-bushigua',
+        name: 'xiaoguabushigua',
+        github: 'https://github.com/xiaogua-bushigua',
+        icon: 'https://avatars.githubusercontent.com/u/87176773?v=4'
     }
+    
 
 ]
