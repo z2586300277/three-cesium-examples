@@ -156,6 +156,13 @@ export default [
         name: 'xiaoguabushigua',
         github: 'https://github.com/xiaogua-bushigua',
         icon: 'https://avatars.githubusercontent.com/u/87176773?v=4'
+    },
+
+    {
+        id: 'superzay',
+        name: '赵艾阳',
+        github: 'https://gitee.com/superzay',
+        icon: HOST + 'files/site/logo.svg'
     }
     
 

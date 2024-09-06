@@ -176,6 +176,13 @@ export default [
                 }
             },
             {
+                id: 'imageParticle',
+                name: '颗粒图像',
+                author: 'superzay',
+                codeUrl: HOST + 'threeExamples/shader/imageParticle.js',
+                image: HOST + 'threeExamples/shader/imageParticle.jpg',
+            },
+            {
                 id: 'videoShader',
                 name: '视频着色器',
                 author: 'z2586300277',
