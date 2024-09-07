@@ -176,6 +176,18 @@ export default [
                 }
             },
             {
+                id: 'cityLine',
+                name: '城市线条',
+                author: 'superzay',
+                codeUrl: HOST + 'threeExamples/shader/cityLine.js',
+                image: HOST + 'threeExamples/shader/cityLine.jpg',
+                meta: {
+                    title: '城市线条',
+                    keywords: 'three.js,城市线条',
+                    description: '使用three.js城市线条'
+                }
+            },
+            {
                 id: 'imageParticle',
                 name: '颗粒图像',
                 author: 'superzay',
