@@ -64,6 +64,15 @@ export default [
                 githubUrl:'https://github.com/pengfeiw/threejs-case',
                 openUrl: 'https://pengfeiw.github.io/minicode/',
                 image:  HOST + 'threeExamples/openSource/wangpengfei.jpg'
+            },
+
+            {
+                id: 'lpya',
+                author: 'lpya',
+                name: 'vue Three案例',
+                openUrl: 'https://lpya.github.io/vue2-threejs-sefficacy',
+                githubUrl: 'https://github.com/lpya/vue2-threejs-sefficacy',
+                image: FILE_HOST + 'images/lpya.jpg'
             }
         ]
     },

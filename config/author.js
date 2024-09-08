@@ -144,7 +144,7 @@ export default [
         icon: 'https://avatars.githubusercontent.com/u/37898750?v=4'
     },
 
-    {   
+    {
         id: 'RainManGO',
         name: 'RainManGO',
         github: 'https://github.com/RainManGO',
@@ -163,7 +163,14 @@ export default [
         name: '赵艾阳',
         github: 'https://gitee.com/superzay',
         icon: HOST + 'files/site/logo.svg'
+    },
+
+    {
+        id: 'lpya',
+        name: '糊涂',
+        github: 'https://github.com/lpya',
+        icon: 'https://avatars.githubusercontent.com/u/65885528?v=4'
     }
-    
+
 
 ]
