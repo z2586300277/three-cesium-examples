@@ -390,6 +390,18 @@ export default [
                 }
             },
             {
+                id: 'pieCharts',
+                name: '3D饼图',
+                author: 'superzay',
+                codeUrl: HOST + 'threeExamples/application/pieCharts.js',
+                image: HOST + 'threeExamples/application/pieCharts.jpg',
+                meta: {
+                    title: '3D饼图',
+                    keywords: 'three.js,3D饼图',
+                    description: '使用three.js制作3D饼图'
+                }
+            },
+            {
                 id: 'model_navigation',
                 name: '模型导航',
                 author: 'nico',
