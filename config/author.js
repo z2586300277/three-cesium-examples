@@ -170,6 +170,13 @@ export default [
         name: '糊涂',
         github: 'https://github.com/lpya',
         icon: 'https://avatars.githubusercontent.com/u/65885528?v=4'
+    },
+
+    {   
+        id: '193Eric',
+        name: 'Eric.Li',
+        github: 'https://github.com/193Eric',
+        icon: 'https://avatars.githubusercontent.com/u/20290762?v=4'
     }
 
 

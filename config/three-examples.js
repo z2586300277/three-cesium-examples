@@ -105,6 +105,15 @@ export default [
                 image: FILE_HOST + 'images/3dEarth.png'
             },
             {
+                id:'smartCity',
+                name:'智慧城市特效',
+                author: '193Eric',
+                openUrl: ' https://g2657.github.io/examples-server/smartCity/demo/',
+                githubUrl: 'https://github.com/193Eric/threejs-demo',
+                downloadUrl: 'https://g2657.github.io/examples-server/smartCity/smartCity.zip',
+                image: HOST + 'threeExamples/openSource/smartCity.jpg'
+            },
+            {
                 id: '3dGeoMap',
                 name: '3D地图',
                 author: 'xiaogua-bushigua',
