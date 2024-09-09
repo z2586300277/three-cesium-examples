@@ -38,20 +38,20 @@
 
 4. 注: 为保证轻量化 案例展示图片资源使用 - https://yasuo.xunjiepdf.com/img/  _(自定义压缩至4k以内)_
 
-5. 涉及其他依赖js,可将module.js 放到js目录  如 dat.gui,gasp ,注入方式 config.js 可见
+5. 涉及其他依赖js,可将module.js 放到js目录  如 dat.gui,gasp ,注入方式 config/config.js 可见
 
 6. 音视频模型存储等一些可以公用的资源 files 文件夹下,涉及文件资源尽量引用外部url
 
-- config  js注入和配置案例信息目录
+- config => js注入和配置案例 等所有案例配置目录
 - files 音视频模型存储等一些可以公用的资源, 尽量不要上传文件资源, 使用 外部url 地址访问
-- js => dat.gui gsap 等等一些依赖存放处,尽量可使用线上依赖引入
+- js => dat.gui gsap 等等一些依赖存放处,尽量可使用 如 cdn 线上js引入
 - threeExamples three.js 案例代码目录
 - cesiumExamples cesium 案例代码目录
 
 ```js
 // HOST 自动获取 当前域名/ip 防止部署环境不同 资源引用失效
 {
-    id: '父级列表唯一id',
+    id: '父级对应列表唯一id',
     name: '名称',
     author: '作者id',
     image: HOST + 'threeExamples/basic/test.jpg', // 对应窗口图
@@ -83,6 +83,7 @@
 - 注： github page 搭建完成后 直接访问 如 https://xxxx.github.io/xxxx/ 下的资源文件无法显示是正常现象, 在代码中可正常获取
 
 - 参考访问案例 如 cesium 案例 => 离线地图 => 内网高德
+
 # 💎 Native Three and Cesium Cases - Updated to the death - Only open source-
 
 
@@ -108,6 +109,10 @@ Join the warehouse and manage contacts together 🐧QQ | 🐧 QQ group
 
 
 -Friendship Link 3D Editor https://github.com/z2586300277/three-editor
+
+
+
+-Gitee repository https://gitee.com/zhang-jingguang/three-cesium-examples
 
 
 
@@ -159,7 +164,7 @@ Join the warehouse and manage contacts together 🐧QQ | 🐧 QQ group
 
 
 
-5. If it involves other dependencies on JS, module.js can be placed in the JS directory such as dat.gui, Gasp, and the injection method can be seen in fig.js
+5. If it involves other dependent JS, you can place module.js in the JS directory such as dat.gui, Gasp, and inject it through config/config.js
 
 
 
@@ -167,11 +172,11 @@ Join the warehouse and manage contacts together 🐧QQ | 🐧 QQ group
 
 
 
--Config js injection and configuration case information directory
+-Config=>JS injection and configuration case, all case configuration directories
 
 -Files, audio and video model storage, and other resources that can be shared should be avoided as much as possible, and external URL addresses should be used to access them
 
--Js=>dat.gui gsap and other dependency repositories, try to use online dependencies to introduce them as much as possible
+-Js=>dat.gui gsap and other dependency repositories, try to use online js such as CDN to introduce them as much as possible
 
 -ThreeEamples Three.js Case Code Catalog
 
@@ -185,7 +190,7 @@ Join the warehouse and manage contacts together 🐧QQ | 🐧 QQ group
 
 {
 
-Id: 'Unique id in parent list',
+Id: 'Unique id in the parent corresponding list',
 
 Name: 'Name',
 
