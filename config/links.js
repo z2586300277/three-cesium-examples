@@ -3,7 +3,7 @@ import { HOST } from "./host.js"
 // 企业可根据自己的需求修改url 成自己的导航地址 链接
 export default {
     site: {
-        name: 'Three.js',
+        name: 'Three JS',
         url: 'https://threejs.org/',
         logo: HOST + 'files/site/logo.svg',
         footName: '- Home',
@@ -50,14 +50,18 @@ export default {
             ]
         },
         {
-            name: '🍃Open Source',
+            name: '🍃github',
             children: [
                 {
-                    name: '👬Join Us',
-                    url: 'https://github.com/z2586300277'
+                    name: '📦Three',
+                    url: 'https://github.com/mrdoob/three.js'
                 },
                 {
-                    name: '⭐github star',
+                    name: '🌐Cesium',
+                    url: 'https://github.com/CesiumGS/cesium'
+                },
+                {
+                    name: '⭐Join us',
                     url: 'https://github.com/z2586300277/three-cesium-examples'
                 }
             ]

@@ -14,7 +14,7 @@ window.FILE_HOST = FILE_HOST // 文件资源服务器地址, 注入到全局变�
 window.THREE_CESIUM_NAVIGATION = [
     {
         name: "ThreeJS",
-        label: "Three.js案例[r166]",
+        label: "Three.js案例",
         examples: threeExamples,
         inject: {
             importmap: {
@@ -30,7 +30,7 @@ window.THREE_CESIUM_NAVIGATION = [
     },
     {
         name: "CesiumJS",
-        label: "Cesium.js案例[1.119]",
+        label: "Cesium.js案例",
         examples: cesiumExamples,
         inject: {
             link: [FILE_HOST + `js/cesium/style.css`],

@@ -64,6 +64,15 @@ export default [
                 githubUrl:'https://github.com/pengfeiw/threejs-case',
                 openUrl: 'https://pengfeiw.github.io/minicode/',
                 image:  HOST + 'threeExamples/openSource/wangpengfei.jpg'
+            },
+
+            {
+                id: 'lpya',
+                author: 'lpya',
+                name: 'vue Three案例',
+                openUrl: 'https://lpya.github.io/vue2-threejs-sefficacy',
+                githubUrl: 'https://github.com/lpya/vue2-threejs-sefficacy',
+                image: FILE_HOST + 'images/lpya.jpg'
             }
         ]
     },
@@ -94,6 +103,15 @@ export default [
                 openUrl: 'https://z2586300277.github.io/show-site/3dEarth/',
                 githubUrl: 'https://github.com/RainManGO/3d-earth',
                 image: FILE_HOST + 'images/3dEarth.png'
+            },
+            {
+                id:'smartCity',
+                name:'智慧城市特效',
+                author: '193Eric',
+                openUrl: ' https://g2657.github.io/examples-server/smartCity/demo/',
+                githubUrl: 'https://github.com/193Eric/threejs-demo',
+                downloadUrl: 'https://g2657.github.io/examples-server/smartCity/smartCity.zip',
+                image: HOST + 'threeExamples/openSource/smartCity.jpg'
             },
             {
                 id: '3dGeoMap',
@@ -174,6 +192,25 @@ export default [
                     keywords: 'three.js,智慧城市扫光',
                     description: '使用three.智慧城市扫光'
                 }
+            },
+            {
+                id: 'cityLine',
+                name: '城市线条',
+                author: 'superzay',
+                codeUrl: HOST + 'threeExamples/shader/cityLine.js',
+                image: HOST + 'threeExamples/shader/cityLine.jpg',
+                meta: {
+                    title: '城市线条',
+                    keywords: 'three.js,城市线条',
+                    description: '使用three.js城市线条'
+                }
+            },
+            {
+                id: 'imageParticle',
+                name: '颗粒图像',
+                author: 'superzay',
+                codeUrl: HOST + 'threeExamples/shader/imageParticle.js',
+                image: HOST + 'threeExamples/shader/imageParticle.jpg',
             },
             {
                 id: 'videoShader',
@@ -371,6 +408,18 @@ export default [
                 }
             },
             {
+                id: 'pieCharts',
+                name: '3D饼图',
+                author: 'superzay',
+                codeUrl: HOST + 'threeExamples/application/pieCharts.js',
+                image: HOST + 'threeExamples/application/pieCharts.jpg',
+                meta: {
+                    title: '3D饼图',
+                    keywords: 'three.js,3D饼图',
+                    description: '使用three.js制作3D饼图'
+                }
+            },
+            {
                 id: 'model_navigation',
                 name: '模型导航',
                 author: 'nico',
@@ -390,6 +439,13 @@ export default [
                     keywords: 'three.js,模型导航',
                     description: '模型导航'
                 }
+            },
+            {
+                id: 'terrain',
+                name: '程序化地形生成',
+                author: 'nico',
+                codeUrl: HOST + 'threeExamples/application/generate_terrain.js',
+                image: HOST + 'threeExamples/application/generate_terrain.jpg',
             },
             {
                 id: 'textSphere',
@@ -914,8 +970,22 @@ export default [
                 author: 'z2586300277',
                 openUrl: 'https://www.shadertoy.com/',
                 image: FILE_HOST + 'images/shaderToy.jpg'
-
+            },
+            {
+                id: 'shaderWebgl',
+                name: 'Webgl直接可用Shader',
+                author: 'z2586300277',
+                openUrl: 'https://glslsandbox.com/',
+                image: FILE_HOST + 'images/shaderWebgl.jpg'
+            },
+            {
+                id: 'shaderEditor',
+                name: 'Shader编辑器',
+                author: 'z2586300277',
+                openUrl: 'https://editor.thebookofshaders.com/',
+                image: FILE_HOST + 'images/shaderEditor.jpg'
             }
+
         ]
     },
 

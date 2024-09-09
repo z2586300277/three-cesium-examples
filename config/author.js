@@ -144,7 +144,7 @@ export default [
         icon: 'https://avatars.githubusercontent.com/u/37898750?v=4'
     },
 
-    {   
+    {
         id: 'RainManGO',
         name: 'RainManGO',
         github: 'https://github.com/RainManGO',
@@ -156,7 +156,28 @@ export default [
         name: 'xiaoguabushigua',
         github: 'https://github.com/xiaogua-bushigua',
         icon: 'https://avatars.githubusercontent.com/u/87176773?v=4'
+    },
+
+    {
+        id: 'superzay',
+        name: '赵艾阳',
+        github: 'https://gitee.com/superzay',
+        icon: HOST + 'files/site/logo.svg'
+    },
+
+    {
+        id: 'lpya',
+        name: '糊涂',
+        github: 'https://github.com/lpya',
+        icon: 'https://avatars.githubusercontent.com/u/65885528?v=4'
+    },
+
+    {   
+        id: '193Eric',
+        name: 'Eric.Li',
+        github: 'https://github.com/193Eric',
+        icon: 'https://avatars.githubusercontent.com/u/20290762?v=4'
     }
-    
+
 
 ]

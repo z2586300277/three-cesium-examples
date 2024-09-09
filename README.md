@@ -11,6 +11,8 @@
 - vercel 部署预览 https://three-cesium-examples.vercel.app
   
 - 友情链接3D编辑器 https://github.com/z2586300277/three-editor
+
+- gitee仓库 https://gitee.com/zhang-jingguang/three-cesium-examples
   
 - 注: 点个星星，不管遇到任何技术艰难险阻，three-cesium-examples 永远站在你身后。
 
