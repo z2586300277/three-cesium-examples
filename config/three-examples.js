@@ -954,8 +954,22 @@ export default [
                 author: 'z2586300277',
                 openUrl: 'https://www.shadertoy.com/',
                 image: FILE_HOST + 'images/shaderToy.jpg'
-
+            },
+            {
+                id: 'shaderWebgl',
+                name: 'Webgl直接可用Shader',
+                author: 'z2586300277',
+                openUrl: 'https://glslsandbox.com/',
+                image: FILE_HOST + 'images/shaderWebgl.jpg'
+            },
+            {
+                id: 'shaderEditor',
+                name: 'Shader编辑器',
+                author: 'z2586300277',
+                openUrl: 'https://editor.thebookofshaders.com/',
+                image: FILE_HOST + 'images/shaderEditor.jpg'
             }
+
         ]
     },
 
