@@ -441,6 +441,13 @@ export default [
                 }
             },
             {
+                id: 'terrain',
+                name: '程序化地形生成',
+                author: 'nico',
+                codeUrl: HOST + 'threeExamples/application/generate_terrain.js',
+                image: HOST + 'threeExamples/application/generate_terrain.jpg',
+            },
+            {
                 id: 'textSphere',
                 name: '球体文字',
                 author: 'z2586300277',
