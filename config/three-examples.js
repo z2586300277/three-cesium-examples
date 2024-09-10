@@ -128,7 +128,7 @@ export default [
                 author: 'xiaogua-bushigua',
                 githubUrl: 'https://github.com/xiaogua-bushigua/3d-geoMap',
                 openUrl: 'https://z2586300277.github.io/show-site/3dGeoMap',
-                image: FILE_HOST + 'images/3dGeoMap.gif'
+                image: FILE_HOST + 'images/3dGeoMap.jpg'
             },
             {
                 id: 'kallkago_su7',
@@ -407,7 +407,15 @@ export default [
                 name: '飞线效果',
                 author: 'ecojust',
                 codeUrl: HOST + 'threeExamples/application/flyLine.js',
-                image: FILE_HOST + 'threeExamples/application/flyLine/colorful.gif',
+                image: FILE_HOST + 'threeExamples/application/flyLine/colorful.jpg',
+            },
+            {   
+                id: 'diffuseLine',
+                name: '发散飞线',
+                author: 'stonerao',
+                codeUrl: HOST + 'threeExamples/application/diffuseLine.js',
+                image: HOST + 'threeExamples/application/diffuseLine.jpg',
+
             },
             {
                 id: 'smokeAir',
