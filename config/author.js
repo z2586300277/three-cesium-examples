@@ -177,7 +177,27 @@ export default [
         name: 'Eric.Li',
         github: 'https://github.com/193Eric',
         icon: 'https://avatars.githubusercontent.com/u/20290762?v=4'
-    }
+    },
 
+    {
+        id: 'gitee18247670551',
+        name: '18247670551',
+        github: 'https://gitee.com/gitee18247670551',
+        icon: HOST + 'files/site/logo.svg'
+    },
+
+    {   
+        id: 'youngdro',
+        name: 'youngdro',
+        github: 'https://github.com/youngdro',
+        icon: 'https://avatars.githubusercontent.com/u/18225656?v=4'
+    },
+
+    {
+        id: 'stonerao',
+        name: 'stonerao',
+        github: 'https://github.com/stonerao',
+        icon: HOST +'files/site/logo.svg'
+    }
 
 ]

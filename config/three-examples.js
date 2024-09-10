@@ -105,6 +105,15 @@ export default [
                 image: FILE_HOST + 'images/3dEarth.png'
             },
             {
+                id: '3dPointsModel',
+                name: '3D点云模型',
+                author: 'youngdro',
+                openUrl: 'https://g2657.github.io/examples-server/3DPoints/',
+                githubUrl: 'https://github.com/youngdro/3DPoints',
+                image: HOST + 'threeExamples/openSource/3dPointsModel.jpg',
+                downloadUrl: 'https://g2657.github.io/examples-server/3DPoints/3DPoints.zip'
+            },
+            {
                 id:'smartCity',
                 name:'智慧城市特效',
                 author: '193Eric',
@@ -119,7 +128,7 @@ export default [
                 author: 'xiaogua-bushigua',
                 githubUrl: 'https://github.com/xiaogua-bushigua/3d-geoMap',
                 openUrl: 'https://z2586300277.github.io/show-site/3dGeoMap',
-                image: FILE_HOST + 'images/3dGeoMap.gif'
+                image: FILE_HOST + 'images/3dGeoMap.jpg'
             },
             {
                 id: 'kallkago_su7',
@@ -382,11 +391,31 @@ export default [
         name: '应用场景',
         children: [
             {
+                id: 'magicCircle',
+                name: '魔法阵',
+                author: 'gitee18247670551',
+                codeUrl: HOST + 'threeExamples/application/magicCircle.js',
+                image: HOST + 'threeExamples/application/magicCircle.jpg',
+                meta: {
+                    title: '魔法阵',
+                    keywords: 'three.js,魔法阵',
+                    description: '使用three.js魔法阵'
+                }
+            },
+            {
                 id: 'flyLine',
                 name: '飞线效果',
                 author: 'ecojust',
                 codeUrl: HOST + 'threeExamples/application/flyLine.js',
-                image: FILE_HOST + 'threeExamples/application/flyLine/colorful.gif',
+                image: FILE_HOST + 'threeExamples/application/flyLine/colorful.jpg',
+            },
+            {   
+                id: 'diffuseLine',
+                name: '发散飞线',
+                author: 'stonerao',
+                codeUrl: HOST + 'threeExamples/application/diffuseLine.js',
+                image: HOST + 'threeExamples/application/diffuseLine.jpg',
+
             },
             {
                 id: 'smokeAir',
