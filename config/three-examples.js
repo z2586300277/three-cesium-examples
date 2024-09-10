@@ -105,6 +105,15 @@ export default [
                 image: FILE_HOST + 'images/3dEarth.png'
             },
             {
+                id: '3dPointsModel',
+                name: '3D点云模型',
+                author: 'youngdro',
+                openUrl: 'https://g2657.github.io/examples-server/3DPoints/',
+                githubUrl: 'https://github.com/youngdro/3DPoints',
+                image: HOST + 'threeExamples/openSource/3dPointsModel.jpg',
+                downloadUrl: 'https://g2657.github.io/examples-server/3DPoints/3DPoints.zip'
+            },
+            {
                 id:'smartCity',
                 name:'智慧城市特效',
                 author: '193Eric',

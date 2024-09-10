@@ -184,6 +184,13 @@ export default [
         name: '18247670551',
         github: 'https://gitee.com/gitee18247670551',
         icon: HOST + 'files/site/logo.svg'
+    },
+
+    {   
+        id: 'youngdro',
+        name: 'youngdro',
+        github: 'https://github.com/youngdro',
+        icon: 'https://avatars.githubusercontent.com/u/18225656?v=4'
     }
 
 ]
