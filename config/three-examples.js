@@ -382,6 +382,18 @@ export default [
         name: '应用场景',
         children: [
             {
+                id: 'magicCircle',
+                name: '魔法阵',
+                author: 'gitee18247670551',
+                codeUrl: HOST + 'threeExamples/application/magicCircle.js',
+                image: HOST + 'threeExamples/application/magicCircle.jpg',
+                meta: {
+                    title: '魔法阵',
+                    keywords: 'three.js,魔法阵',
+                    description: '使用three.js魔法阵'
+                }
+            },
+            {
                 id: 'flyLine',
                 name: '飞线效果',
                 author: 'ecojust',
