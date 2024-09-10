@@ -73,6 +73,15 @@ export default [
                 openUrl: 'https://lpya.github.io/vue2-threejs-sefficacy',
                 githubUrl: 'https://github.com/lpya/vue2-threejs-sefficacy',
                 image: FILE_HOST + 'images/lpya.jpg'
+            },
+
+            {
+                id: 'zhengjie9510',
+                author: 'zhengjie9510',
+                name: 'Cesium.js案例',
+                openUrl: 'https://zhengjie9510.github.io/webgis-demo',
+                githubUrl: 'https://github.com/zhengjie9510/webgis-demo',
+                image: FILE_HOST + 'images/zhengjie9510.jpg'
             }
         ]
     },
