@@ -224,6 +224,18 @@ export default [
                 }
             },
             {
+                id: 'wallShader',
+                name: '扩散圆墙',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/shader/wallShader.js',
+                image: HOST + 'threeExamples/shader/wallShader.jpg',
+                meta: {
+                    title: '扩散圆墙',
+                    keywords: 'three.js,扩散圆墙',
+                    description: '使用three.js扩散圆墙'
+                }
+            },
+            {
                 id: 'imageParticle',
                 name: '颗粒图像',
                 author: 'superzay',
