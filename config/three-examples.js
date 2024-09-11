@@ -114,6 +114,14 @@ export default [
                 image: FILE_HOST + 'images/3dEarth.png'
             },
             {
+                id: '3dEarth2',
+                name: '虚幻地球',
+                author: 'GhostCatcg',
+                openUrl: 'https://z2586300277.github.io/show-site/3dEarth2/',
+                githubUrl: 'https://github.com/GhostCatcg/3d-earth',
+                image: HOST + 'threeExamples/openSource/3dEarth2.jpg'
+            },
+            {
                 id: '3dPointsModel',
                 name: '3D点云模型',
                 author: 'youngdro',
