@@ -203,6 +203,11 @@ export default [
                 author: 'g2657',
                 codeUrl: HOST + 'cesiumExamples/basic/cesiumText.js',
                 image: HOST + 'cesiumExamples/layer/defaultLayer.jpg',
+                meta: {
+                    title: '绘制文字',
+                    keywords: 'cesium.js,绘制文字',
+                    description: 'cesium绘制文字'
+                }
             },
             {
                 id: 'cssElement',
@@ -365,6 +370,11 @@ export default [
                 image: HOST + 'cesiumExamples/expand/cesiumAndThree.jpg',
                 inject: {
                     importmap: { three: FILE_HOST + "js/three/three.module.min.js" }
+                },
+                meta: {
+                    title: 'cesium融合three',
+                    keywords: 'cesium融合three,场景,融合',
+                    description: '使用three.js创建3D场景，cesium创建2D场景，融合在一起'
                 }
             },
             {
@@ -375,6 +385,11 @@ export default [
                 image: 'https://z2586300277.github.io/three-editor/src/codes/cesiumjs/basic/flyCharts.jpg',
                 inject: {
                     src: [FILE_HOST + "js/echarts490.min.js"]
+                },
+                meta: {
+                    title: 'echarts飞线',
+                    keywords: 'cesium.js,echarts飞线',
+                    description: 'cesium 结合 echarts 创建美丽的动态流动飞线'
                 }
             },
             {
@@ -383,6 +398,11 @@ export default [
                 author: 'z2586300277',
                 codeUrl: HOST + 'cesiumExamples/expand/heatMap.js',
                 image: 'https://z2586300277.github.io/three-editor/src/codes/cesiumjs/basic/heatMap.jpg',
+                meta: {
+                    title: '热力图',
+                    keywords: 'cesium.js,热力图',
+                    description: 'cesium 结合 热力图'
+                }
             }
         ]
     },
