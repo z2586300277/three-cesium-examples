@@ -63,3 +63,48 @@ window.THREE_CESIUM_AUTHORS = threeCesiumAuthors; // 作者
         }
     }
 */
+
+function setMeta(query) {
+    
+    const navigation = window.THREE_CESIUM_NAVIGATION.find(item => item.name === query.navigation)
+
+    const classify = navigation.examples.find(item => item.pid === query.classify)
+
+    const example = classify.children.find(item => item.id === query.id)
+
+    if (!example) return
+
+    const { meta } = example
+
+    if (!meta) return
+
+    if (meta.title) document.title = meta.title
+
+    if (meta.keywords) document.querySelector('meta[name="keywords"]').setAttribute('content', meta.keywords)
+  
+    if (meta.description) document.querySelector('meta[name="description"]').setAttribute('content', meta.description)
+
+    return example
+
+}
+
+// 提取hash url 传参
+const href = window.location.href
+
+const params = href.split('?')[1]
+
+if (params) {
+   
+    const query = params.split('&').reduce((pre, cur) => {
+
+        const [key, value] = cur.split('=')
+
+        pre[key] = decodeURIComponent(value)
+
+        return pre
+
+    }, {})
+
+    setMeta(query)
+
+}

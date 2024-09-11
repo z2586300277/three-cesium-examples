@@ -73,6 +73,15 @@ export default [
                 openUrl: 'https://lpya.github.io/vue2-threejs-sefficacy',
                 githubUrl: 'https://github.com/lpya/vue2-threejs-sefficacy',
                 image: FILE_HOST + 'images/lpya.jpg'
+            },
+
+            {
+                id: 'zhengjie9510',
+                author: 'zhengjie9510',
+                name: 'Cesium.js案例',
+                openUrl: 'https://zhengjie9510.github.io/webgis-demo',
+                githubUrl: 'https://github.com/zhengjie9510/webgis-demo',
+                image: FILE_HOST + 'images/zhengjie9510.jpg'
             }
         ]
     },
@@ -103,6 +112,14 @@ export default [
                 openUrl: 'https://z2586300277.github.io/show-site/3dEarth/',
                 githubUrl: 'https://github.com/RainManGO/3d-earth',
                 image: FILE_HOST + 'images/3dEarth.png'
+            },
+            {
+                id: '3dEarth2',
+                name: '虚幻地球',
+                author: 'GhostCatcg',
+                openUrl: 'https://z2586300277.github.io/show-site/3dEarth2/',
+                githubUrl: 'https://github.com/GhostCatcg/3d-earth',
+                image: HOST + 'threeExamples/openSource/3dEarth2.jpg'
             },
             {
                 id: '3dPointsModel',
@@ -212,6 +229,18 @@ export default [
                     title: '城市线条',
                     keywords: 'three.js,城市线条',
                     description: '使用three.js城市线条'
+                }
+            },
+            {
+                id: 'wallShader',
+                name: '扩散圆墙',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/shader/wallShader.js',
+                image: HOST + 'threeExamples/shader/wallShader.jpg',
+                meta: {
+                    title: '扩散圆墙',
+                    keywords: 'three.js,扩散圆墙',
+                    description: '使用three.js扩散圆墙'
                 }
             },
             {

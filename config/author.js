@@ -198,6 +198,20 @@ export default [
         name: 'stonerao',
         github: 'https://github.com/stonerao',
         icon: HOST +'files/site/logo.svg'
+    },
+
+    {
+        id: 'zhengjie9510',
+        name: 'zhengjie9510',
+        github: 'https://github.com/zhengjie9510',
+        icon: 'https://avatars.githubusercontent.com/u/48191797'
+    },
+
+    {
+        id: 'GhostCatcg',
+        name: 'GhostCatcg',
+        github: 'https://github.com/GhostCatcg',
+        icon: 'https://avatars.githubusercontent.com/u/33864029?v=4'
     }
 
 ]
