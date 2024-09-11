@@ -292,6 +292,18 @@ export default [
                 }
             },
             {
+                id: 'rasterGrid',
+                name: '栅格网格',
+                author: 'yjsdszz',
+                codeUrl: HOST + 'threeExamples/shader/rasterGrid.js',
+                image: HOST + 'threeExamples/shader/rasterGrid.jpg',
+                meta: {
+                    title: '栅格网格',
+                    keywords: 'three.js,栅格网格',
+                    description: '使用three.js栅格网格'
+                }
+            },
+            {
                 id: 'flowLight',
                 name: '流光',
                 author: 'yjsdszz',
