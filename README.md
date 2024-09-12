@@ -20,7 +20,7 @@
 
 1.可通过 config/links 文件修改 所有的链接和 logo, 替换成自己的官网或者链接地址。
 
-2.如在 http://threehub.cn/ 部署
+2.如在 https://threehub.cn/ 部署
 
 ## 🌳创作
 
@@ -128,7 +128,7 @@ Join the warehouse and manage contacts together 🐧QQ | 🐧 QQ group
 
 
 
-2. As in http://threehub.cn/ Deployment
+2. As in https://threehub.cn/ Deployment
 
 
 
