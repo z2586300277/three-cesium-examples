@@ -509,6 +509,18 @@ export default [
                 }
             },
             {
+                id: 'codeCloud',
+                name: '代码云',
+                author: 'yiiiiiiqianyao',
+                codeUrl: HOST + 'threeExamples/application/codeCloud.js',
+                image: HOST + 'threeExamples/application/codeCloud.jpg',
+                meta: {
+                    title: '代码云',
+                    keywords: 'three.js,代码云',
+                    description: '使用three.js代码云'
+                }
+            },
+            {
                 id: 'flyLine',
                 name: '飞线效果',
                 author: 'ecojust',
