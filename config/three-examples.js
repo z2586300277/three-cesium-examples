@@ -376,6 +376,18 @@ export default [
                 },
             },
             {
+                id: 'dissolveAnimate',
+                name: '溶解动画',
+                author: 'yiiiiiiqianyao',
+                codeUrl: HOST + 'threeExamples/shader/dissolveAnimate.js',
+                image: HOST + 'threeExamples/shader/dissolveAnimate.jpg',
+                meta: {
+                    title: '溶解动画',
+                    keywords: 'three.js,溶解动画',
+                    description: '使用three.js溶解动画'
+                }
+            },
+            {
                 id: "imageShake",
                 name: "图片抖动",
                 author: "z2586300277",
