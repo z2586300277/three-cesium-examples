@@ -256,6 +256,18 @@ export default [
                 }
             },
             {
+                id: 'halfCircle',
+                name: '半圆',
+                author: 'yiiiiiiqianyao',
+                codeUrl: HOST + 'threeExamples/shader/halfCircle.js',
+                image: HOST + 'threeExamples/shader/halfCircle.jpg',
+                meta: {
+                    title: '半圆',
+                    keywords: 'three.js,半圆',
+                    description: '使用three.js半圆'
+                }
+            },
+            {
                 id: 'videoShader',
                 name: '视频着色器',
                 author: 'z2586300277',
