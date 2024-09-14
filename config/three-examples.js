@@ -545,6 +545,18 @@ export default [
                 }
             },
             {
+                id: 'pipeFlow',
+                name: '管道流动',
+                author:'gitee18247670551',
+                codeUrl: HOST + 'threeExamples/application/pipeFlow.js',
+                image: HOST + 'threeExamples/application/pipeFlow.jpg',
+                meta: {
+                    title: '管道流动',
+                    keywords: 'three.js,管道流动',
+                    description: '使用three.js管道流动'
+                }
+            },
+            {
                 id: 'diffuseLine',
                 name: '发散飞线',
                 author: 'stonerao',
