@@ -29,7 +29,7 @@ export default [
                 githubUrl: 'https://github.com/bosombaby/web3d-product',
                 image: FILE_HOST + 'images/bosombaby.jpg'
             },
-            
+
             {
                 id: 'wuyifan0203',
                 author: 'wuyifan0203',
@@ -61,9 +61,9 @@ export default [
                 id: 'pengfeiw',
                 author: 'pengfeiw',
                 name: '3d 案例',
-                githubUrl:'https://github.com/pengfeiw/threejs-case',
+                githubUrl: 'https://github.com/pengfeiw/threejs-case',
                 openUrl: 'https://pengfeiw.github.io/minicode/',
-                image:  HOST + 'threeExamples/openSource/wangpengfei.jpg'
+                image: HOST + 'threeExamples/openSource/wangpengfei.jpg'
             },
 
             {
@@ -131,8 +131,8 @@ export default [
                 downloadUrl: 'https://g2657.github.io/examples-server/3DPoints/3DPoints.zip'
             },
             {
-                id:'smartCity',
-                name:'智慧城市特效',
+                id: 'smartCity',
+                name: '智慧城市特效',
                 author: '193Eric',
                 openUrl: ' https://g2657.github.io/examples-server/smartCity/demo/',
                 githubUrl: 'https://github.com/193Eric/threejs-demo',
@@ -249,6 +249,23 @@ export default [
                 author: 'superzay',
                 codeUrl: HOST + 'threeExamples/shader/imageParticle.js',
                 image: HOST + 'threeExamples/shader/imageParticle.jpg',
+                meta: {
+                    title: '颗粒图像',
+                    keywords: 'three.js,颗粒图像',
+                    description: '使用three.js颗粒图像'
+                }
+            },
+            {
+                id: 'halfCircle',
+                name: '半圆',
+                author: 'yiiiiiiqianyao',
+                codeUrl: HOST + 'threeExamples/shader/halfCircle.js',
+                image: HOST + 'threeExamples/shader/halfCircle.jpg',
+                meta: {
+                    title: '半圆',
+                    keywords: 'three.js,半圆',
+                    description: '使用three.js半圆'
+                }
             },
             {
                 id: 'videoShader',
@@ -287,6 +304,18 @@ export default [
                 }
             },
             {
+                id: 'rasterGrid',
+                name: '栅格网格',
+                author: 'yjsdszz',
+                codeUrl: HOST + 'threeExamples/shader/rasterGrid.js',
+                image: HOST + 'threeExamples/shader/rasterGrid.jpg',
+                meta: {
+                    title: '栅格网格',
+                    keywords: 'three.js,栅格网格',
+                    description: '使用three.js栅格网格'
+                }
+            },
+            {
                 id: 'flowLight',
                 name: '流光',
                 author: 'yjsdszz',
@@ -309,7 +338,20 @@ export default [
                     keywords: 'three.js,音乐可视化',
                     description: '使用three.js音乐可视化'
                 }
-            }, {
+            },
+            {
+                id: 'waveShader',
+                name: '图像波动',
+                author: 'gitee18247670551',
+                codeUrl: HOST + 'threeExamples/shader/waveShader.js',
+                image: HOST + 'threeExamples/shader/waveShader.jpg',
+                meta: {
+                    title: '图像波动',
+                    keywords: 'three.js,图像波动',
+                    description: '使用three.js图像波动'
+                }
+            },
+            {
                 id: 'dissolve',
                 name: '溶解',
                 author: 'KallkaGo',
@@ -346,11 +388,28 @@ export default [
                 },
             },
             {
+                id: 'dissolveAnimate',
+                name: '溶解动画',
+                author: 'yiiiiiiqianyao',
+                codeUrl: HOST + 'threeExamples/shader/dissolveAnimate.js',
+                image: HOST + 'threeExamples/shader/dissolveAnimate.jpg',
+                meta: {
+                    title: '溶解动画',
+                    keywords: 'three.js,溶解动画',
+                    description: '使用three.js溶解动画'
+                }
+            },
+            {
                 id: "imageShake",
                 name: "图片抖动",
                 author: "z2586300277",
                 codeUrl: HOST + "threeExamples/shader/imageShake.js",
-                image: HOST + "threeExamples/shader/imageShake.jpg"
+                image: HOST + "threeExamples/shader/imageShake.jpg",
+                meta: {
+                    title: "图片抖动",
+                    keywords: "three.js,图片抖动",
+                    description: "使用three图片抖动",
+                }
             },
             {
                 id: "fireball",
@@ -358,6 +417,11 @@ export default [
                 author: "giser2017",
                 htmlUrl: HOST + "threeExamples/shader/fireball.html",
                 image: FILE_HOST + "images/four/fireball.png",
+                meta: {
+                    title: "火球效果",
+                    keywords: "three.js,火球效果",
+                    description: "火球效果"
+                }
             },
             {
                 id: "warnInfo",
@@ -365,6 +429,11 @@ export default [
                 author: "yjsdszz",
                 codeUrl: HOST + "threeExamples/shader/warnInfo.js",
                 image: HOST + "threeExamples/shader/warnInfo.jpg",
+                meta: {
+                    title: "警告信息",
+                    keywords: "three.js,警告信息",
+                    description: "使用three.js 制作警告信息"
+                }
             }
         ]
     },
@@ -391,6 +460,11 @@ export default [
                 author: "giser2017",
                 htmlUrl: HOST + "threeExamples/particle/RandomParticle.html",
                 image: HOST + "threeExamples/particle/RandomParticle.png",
+                meta: {
+                    title: "随机粒子效果",
+                    keywords: "three.js,随机粒子效果",
+                    description: "随机粒子效果"
+                }
             },
             {
                 id: "PlanetParticle",
@@ -398,6 +472,11 @@ export default [
                 author: "giser2017",
                 htmlUrl: HOST + "threeExamples/particle/PlanetParticle.html",
                 image: HOST + "threeExamples/particle/PlanetParticle.png",
+                meta: {
+                    title: "粒子效果的行星",
+                    keywords: "three.js,粒子效果的行星",
+                    description: "粒子效果的行星"
+                }
             },
             {
                 id: "bubble",
@@ -405,6 +484,11 @@ export default [
                 author: "huan_meng_hai_yan",
                 codeUrl: HOST + "threeExamples/particle/bubble.js",
                 image: FILE_HOST + "images/four/bubble.png",
+                meta: {
+                    title: "粒子泡泡",
+                    keywords: "three.js,粒子泡泡",
+                    description: "粒子泡泡"
+                }
             },
             {
                 id: "downSnow",
@@ -412,6 +496,23 @@ export default [
                 author: "yjsdszz",
                 codeUrl: HOST + "threeExamples/particle/downSnow.js",
                 image: HOST + "threeExamples/particle/downSnow.jpg",
+                meta: {
+                    title: "下雪",
+                    keywords: "three.js,下雪",
+                    description: "使用three.js下雪"
+                }
+            },
+            {
+                id: 'galaxyStar',
+                name: '星系',
+                author: 'kavalcio',
+                codeUrl: HOST + 'threeExamples/particle/galaxyStar.js',
+                image: HOST + 'threeExamples/particle/galaxyStar.jpg',
+                meta: {
+                    title: '星系',
+                    keywords: 'three.js,星系',
+                    description: '使用three.js星系'
+                }
             }
         ]
     },
@@ -432,19 +533,52 @@ export default [
                 }
             },
             {
+                id: 'codeCloud',
+                name: '代码云',
+                author: 'yiiiiiiqianyao',
+                codeUrl: HOST + 'threeExamples/application/codeCloud.js',
+                image: HOST + 'threeExamples/application/codeCloud.jpg',
+                meta: {
+                    title: '代码云',
+                    keywords: 'three.js,代码云',
+                    description: '使用three.js代码云'
+                }
+            },
+            {
                 id: 'flyLine',
                 name: '飞线效果',
                 author: 'ecojust',
                 codeUrl: HOST + 'threeExamples/application/flyLine.js',
                 image: FILE_HOST + 'threeExamples/application/flyLine/colorful.jpg',
+                meta: {
+                    title: '飞线效果',
+                    keywords: 'three.js,飞线效果',
+                    description: '使用three.js飞线效果'
+                }
             },
-            {   
+            {
+                id: 'pipeFlow',
+                name: '管道流动',
+                author:'gitee18247670551',
+                codeUrl: HOST + 'threeExamples/application/pipeFlow.js',
+                image: HOST + 'threeExamples/application/pipeFlow.jpg',
+                meta: {
+                    title: '管道流动',
+                    keywords: 'three.js,管道流动',
+                    description: '使用three.js管道流动'
+                }
+            },
+            {
                 id: 'diffuseLine',
                 name: '发散飞线',
                 author: 'stonerao',
                 codeUrl: HOST + 'threeExamples/application/diffuseLine.js',
                 image: HOST + 'threeExamples/application/diffuseLine.jpg',
-
+                meta: {
+                    title: '发散飞线',
+                    keywords: 'three.js,发散飞线',
+                    description: '使用three.js发散飞线'
+                }
             },
             {
                 id: 'smokeAir',
@@ -452,6 +586,11 @@ export default [
                 author: 'yjsdszz',
                 codeUrl: HOST + 'threeExamples/application/smokeAir.js',
                 image: FILE_HOST + 'threeExamples/application/smokeAir.jpg',
+                meta: {
+                    title: '烟雾效果',
+                    keywords: 'three.js,烟雾效果',
+                    description: '使用three.js烟雾效果'
+                }
             },
             {
                 id: 'topology',
@@ -504,6 +643,11 @@ export default [
                 author: 'nico',
                 codeUrl: HOST + 'threeExamples/application/generate_terrain.js',
                 image: HOST + 'threeExamples/application/generate_terrain.jpg',
+                meta: {
+                    title: '程序化地形生成',
+                    keywords: 'three.js,程序化地形生成',
+                    description: '程序化地形生成'
+                }
             },
             {
                 id: 'textSphere',
@@ -522,7 +666,12 @@ export default [
                 name: '矩阵操作',
                 author: 'alwxkxk',
                 htmlUrl: HOST + 'threeExamples/application/matrixOperation.html',
-                image: HOST + 'threeExamples/application/matrixOperation.jpg'
+                image: HOST + 'threeExamples/application/matrixOperation.jpg',
+                meta: {
+                    title: '矩阵操作',
+                    keywords: 'three.js,矩阵操作',
+                    description: '矩阵操作'
+                }
             },
             {
                 id: 'coffeeMug',
@@ -542,13 +691,23 @@ export default [
                 author: 'QuarkGluonPlasma',
                 codeUrl: HOST + 'threeExamples/application/flowerRain.js',
                 image: HOST + 'threeExamples/application/flowerRain.jpg',
+                meta: {
+                    title: '花瓣雨',
+                    keywords: 'three.js,花瓣雨',
+                    description: '花瓣雨'
+                }
             },
             {
                 id: 'houseScene',
                 name: '第一人称房屋',
                 author: 'QuarkGluonPlasma',
                 codeUrl: HOST + 'threeExamples/application/houseScene.js',
-                image: HOST + 'threeExamples/application/houseScene.jpg'
+                image: HOST + 'threeExamples/application/houseScene.jpg',
+                meta: {
+                    title: '第一人称房屋',
+                    keywords: 'three.js,第一人称房屋',
+                    description: '第一人称房屋'
+                }
             },
             {
                 id: "3DCircle",
@@ -556,20 +715,35 @@ export default [
                 author: "giser2017",
                 codeUrl: HOST + "threeExamples/application/3DCircle.js",
                 image: FILE_HOST + "images/four/3DCircle.png",
+                meta: {
+                    title: "扩散半球",
+                    keywords: "three.js,扩散半球",
+                    description: "扩散半球"
+                }
             },
             {
                 id: 'happyNewYear',
                 name: '新年快乐',
                 author: 'yjsdszz',
                 codeUrl: HOST + 'threeExamples/application/happyNewYear.js',
-                image: HOST + 'threeExamples/application/happyNewYear.jpg'
+                image: HOST + 'threeExamples/application/happyNewYear.jpg',
+                meta: {
+                    title: '新年快乐',
+                    keywords: 'three.js,新年快乐',
+                    description: '新年快乐'
+                }
             },
             {
                 id: 'windMove',
                 name: '风吹动画',
                 author: 'yjsdszz',
                 codeUrl: HOST + 'threeExamples/application/windMove.js',
-                image: HOST + 'threeExamples/application/windMove.jpg'
+                image: HOST + 'threeExamples/application/windMove.jpg',
+                meta: {
+                    title: '风吹动画',
+                    keywords: 'three.js,风吹动画',
+                    description: '风吹动画'
+                }
             }
         ]
     },

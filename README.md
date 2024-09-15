@@ -16,11 +16,13 @@
   
 - 注: 点个星星，不管遇到任何技术艰难险阻，three-cesium-examples 永远站在你身后。
 
+- 注: 本站框架和在线调试源于three-editor库。
+
 ## 📦 自行部署
 
 1.可通过 config/links 文件修改 所有的链接和 logo, 替换成自己的官网或者链接地址。
 
-2.如在 http://threehub.cn/ 部署
+2.如在 https://threehub.cn/ 部署
 
 ## 🌳创作
 
@@ -119,6 +121,7 @@ Join the warehouse and manage contacts together 🐧QQ | 🐧 QQ group
 -Note: Click on a star, no matter what technical difficulties or obstacles you encounter, thread examples will always stand behind you.
 
 
+-Note: The framework and online debugging of this website are derived from the three-editor library
 
 ## 📦 Self deployment
 
@@ -128,7 +131,7 @@ Join the warehouse and manage contacts together 🐧QQ | 🐧 QQ group
 
 
 
-2. As in http://threehub.cn/ Deployment
+2. As in https://threehub.cn/ Deployment
 
 
 

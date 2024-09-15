@@ -212,6 +212,13 @@ export default [
         name: 'GhostCatcg',
         github: 'https://github.com/GhostCatcg',
         icon: 'https://avatars.githubusercontent.com/u/33864029?v=4'
+    },
+
+    {
+        id: 'yiiiiiiqianyao',
+        name: 'YiQianYao',
+        github: 'https://github.com/yiiiiiiqianyao',
+        icon: 'https://avatars.githubusercontent.com/u/42212176'
     }
 
 ]
