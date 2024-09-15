@@ -501,6 +501,18 @@ export default [
                     keywords: "three.js,下雪",
                     description: "使用three.js下雪"
                 }
+            },
+            {
+                id: 'galaxyStar',
+                name: '星系',
+                author: 'kavalcio',
+                codeUrl: HOST + 'threeExamples/particle/galaxyStar.js',
+                image: HOST + 'threeExamples/particle/galaxyStar.jpg',
+                meta: {
+                    title: '星系',
+                    keywords: 'three.js,星系',
+                    description: '使用three.js星系'
+                }
             }
         ]
     },
