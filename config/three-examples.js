@@ -220,6 +220,18 @@ export default [
                 }
             },
             {
+                id: 'shaderSky',
+                name: '着色器天空',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/shader/shaderSky.js',
+                image: HOST + 'threeExamples/shader/shaderSky.jpg',
+                meta: {
+                    title: '着色器天空',
+                    keywords: 'three.js,着色器天空',
+                    description: '使用three.js着色器天空'
+                }
+            },
+            {
                 id: 'cityLine',
                 name: '城市线条',
                 author: 'superzay',
