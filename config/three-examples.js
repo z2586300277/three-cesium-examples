@@ -571,7 +571,7 @@ export default [
             {
                 id: 'pipeFlow',
                 name: '管道流动',
-                author:'gitee18247670551',
+                author: 'gitee18247670551',
                 codeUrl: HOST + 'threeExamples/application/pipeFlow.js',
                 image: HOST + 'threeExamples/application/pipeFlow.jpg',
                 meta: {
@@ -787,6 +787,21 @@ export default [
                     title: '3D地图',
                     keywords: 'three.js,3D地图',
                     description: '使用three.js制作3D地图'
+                }
+            },
+            {
+                id: 'heatmap3D',
+                name: '3D热力图',
+                author: 'treasureMoment',
+                codeUrl: HOST + 'threeExamples/expand/heatmap3D.js',
+                image: HOST + 'threeExamples/expand/heatmap3D.jpg',
+                meta: {
+                    title: '3D热力图',
+                    keywords: 'three.js,3D热力图',
+                    description: '使用three.js制作3D热力图'
+                },
+                inject: {
+                    src: [HOST + "js/heatmap.js"]
                 }
             }
         ]

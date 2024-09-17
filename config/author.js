@@ -219,6 +219,13 @@ export default [
         name: 'YiQianYao',
         github: 'https://github.com/yiiiiiiqianyao',
         icon: 'https://avatars.githubusercontent.com/u/42212176'
+    },
+
+    {
+        id: 'treasureMoment',
+        name: 'treasureMoment',
+        github: 'https://github.com/treasureMoment',
+        icon: 'https://avatars.githubusercontent.com/u/35365475?v=4'
     }
 
 ]
