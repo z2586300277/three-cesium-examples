@@ -446,6 +446,13 @@ export default [
                     keywords: "three.js,警告信息",
                     description: "使用three.js 制作警告信息"
                 }
+            },
+            {
+                id: 'whiteCloud',
+                name: '白云',
+                author: 'yjsdszz',
+                codeUrl: HOST + 'threeExamples/shader/whiteCloud.js',
+                image: HOST + 'threeExamples/shader/whiteCloud.jpg',
             }
         ]
     },
