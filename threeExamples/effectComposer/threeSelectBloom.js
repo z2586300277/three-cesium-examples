@@ -20,7 +20,7 @@ light.position.set(100, 100, 100)
 scene.add(light)
 
 // 物体
-new GLTFLoader().load("https://z2586300277.github.io/3d-file-server/files/model/Fox.glb", (gltf) => scene.add(gltf.scene))
+new GLTFLoader().load(FILE_HOST + "files/model/Fox.glb", (gltf) => scene.add(gltf.scene))
 const mesh = new THREE.Mesh(new THREE.BoxGeometry(20, 20, 20), new THREE.MeshStandardMaterial({ color: 0x00ff00 }))
 mesh.position.set(50, 0, 0)
 scene.add(mesh)
