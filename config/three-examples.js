@@ -847,6 +847,11 @@ export default [
                 author: "giser2017",
                 codeUrl: HOST + 'threeExamples/effectComposer/uvTransformation.js',
                 image: FILE_HOST + "images/four/uvTransformation.png",
+                meta: {
+                    title: "UV图像变换",
+                    keywords: "three.js,UV图像变换",
+                    description: "UV图像变换"
+                }
             },
             {
                 id: "EdgeBlurringEffect",
@@ -854,7 +859,24 @@ export default [
                 author: "giser2017",
                 codeUrl: HOST + 'threeExamples/effectComposer/EdgeBlurringEffect.js',
                 image: FILE_HOST + "images/four/EdgeBlurringEffect.png",
+                meta: {
+                    title: "边缘模糊效果",
+                    keywords: "three.js,边缘模糊效果",
+                    description: "边缘模糊效果"
+                }
             },
+            {
+                id: 'threeSelectBloom',
+                name: '官方选择辉光简化版',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/effectComposer/threeSelectBloom.js',
+                image: HOST + 'threeExamples/effectComposer/threeSelectBloom.jpg',
+                meta: {
+                    title: '官方选择辉光简化版',
+                    keywords: 'three.js,官方选择辉光简化版',
+                    description: '使用three.js官方选择辉光简化版'
+                }
+            }
         ]
     },
     {
