@@ -669,6 +669,13 @@ export default [
                 }
             },
             {
+                id: 'lineMeasure',
+                name: '测量',
+                author: 'yjsdszz',
+                codeUrl: HOST + 'threeExamples/application/lineMeasure.js',
+                image: HOST + 'threeExamples/application/lineMeasure.jpg',
+            },
+            {
                 id: 'textSphere',
                 name: '球体文字',
                 author: 'z2586300277',
