@@ -280,6 +280,13 @@ export default [
                 }
             },
             {
+                id: 'heatmapShader',
+                name: '热力图',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/shader/heatmapShader.js',
+                image: HOST + 'threeExamples/shader/heatmapShader.jpg',
+            },
+            {
                 id: 'videoShader',
                 name: '视频着色器',
                 author: 'z2586300277',
