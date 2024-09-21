@@ -595,6 +595,18 @@ export default [
                 }
             },
             {
+                id: 'spriteText',
+                name: '精灵文字',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/application/spriteText.js',
+                image: HOST + 'threeExamples/application/spriteText.jpg',
+                meta: {
+                    title: '精灵文字',
+                    keywords: 'three.js,精灵文字',
+                    description: '使用three.js精灵文字'
+                }
+            },
+            {
                 id: 'diffuseLine',
                 name: '发散飞线',
                 author: 'stonerao',
