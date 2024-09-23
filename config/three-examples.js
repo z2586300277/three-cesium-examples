@@ -220,6 +220,18 @@ export default [
                 }
             },
             {
+                id: 'shaderSky',
+                name: '着色器天空',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/shader/shaderSky.js',
+                image: HOST + 'threeExamples/shader/shaderSky.jpg',
+                meta: {
+                    title: '着色器天空',
+                    keywords: 'three.js,着色器天空',
+                    description: '使用three.js着色器天空'
+                }
+            },
+            {
                 id: 'cityLine',
                 name: '城市线条',
                 author: 'superzay',
@@ -266,6 +278,13 @@ export default [
                     keywords: 'three.js,半圆',
                     description: '使用three.js半圆'
                 }
+            },
+            {
+                id: 'heatmapShader',
+                name: '热力图',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/shader/heatmapShader.js',
+                image: HOST + 'threeExamples/shader/heatmapShader.jpg',
             },
             {
                 id: 'videoShader',
@@ -412,6 +431,18 @@ export default [
                 }
             },
             {
+                id: "shaderBlock",
+                name: "方块着色器",
+                author: "z2586300277",
+                codeUrl: HOST + "threeExamples/shader/shaderBlock.js",
+                image: HOST + "threeExamples/shader/shaderBlock.jpg",
+                meta: {
+                    title: "方块着色器",
+                    keywords: "three.js,方块着色器",
+                    description: "使用three方块着色器"
+                }
+            },
+            {
                 id: "fireball",
                 name: "火球效果",
                 author: "giser2017",
@@ -434,6 +465,13 @@ export default [
                     keywords: "three.js,警告信息",
                     description: "使用three.js 制作警告信息"
                 }
+            },
+            {
+                id: 'whiteCloud',
+                name: '白云',
+                author: 'yjsdszz',
+                codeUrl: HOST + 'threeExamples/shader/whiteCloud.js',
+                image: HOST + 'threeExamples/shader/whiteCloud.jpg',
             }
         ]
     },
@@ -559,13 +597,25 @@ export default [
             {
                 id: 'pipeFlow',
                 name: '管道流动',
-                author:'gitee18247670551',
+                author: 'gitee18247670551',
                 codeUrl: HOST + 'threeExamples/application/pipeFlow.js',
                 image: HOST + 'threeExamples/application/pipeFlow.jpg',
                 meta: {
                     title: '管道流动',
                     keywords: 'three.js,管道流动',
                     description: '使用three.js管道流动'
+                }
+            },
+            {
+                id: 'spriteText',
+                name: '精灵文字',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/application/spriteText.js',
+                image: HOST + 'threeExamples/application/spriteText.jpg',
+                meta: {
+                    title: '精灵文字',
+                    keywords: 'three.js,精灵文字',
+                    description: '使用three.js精灵文字'
                 }
             },
             {
@@ -648,6 +698,13 @@ export default [
                     keywords: 'three.js,程序化地形生成',
                     description: '程序化地形生成'
                 }
+            },
+            {
+                id: 'lineMeasure',
+                name: '测量',
+                author: 'yjsdszz',
+                codeUrl: HOST + 'threeExamples/application/lineMeasure.js',
+                image: HOST + 'threeExamples/application/lineMeasure.jpg',
             },
             {
                 id: 'textSphere',
@@ -776,6 +833,21 @@ export default [
                     keywords: 'three.js,3D地图',
                     description: '使用three.js制作3D地图'
                 }
+            },
+            {
+                id: 'heatmap3D',
+                name: '3D热力图',
+                author: 'treasureMoment',
+                codeUrl: HOST + 'threeExamples/expand/heatmap3D.js',
+                image: HOST + 'threeExamples/expand/heatmap3D.jpg',
+                meta: {
+                    title: '3D热力图',
+                    keywords: 'three.js,3D热力图',
+                    description: '使用three.js制作3D热力图'
+                },
+                inject: {
+                    src: [HOST + "js/heatmap.js"]
+                }
             }
         ]
     },
@@ -813,6 +885,11 @@ export default [
                 author: "giser2017",
                 codeUrl: HOST + 'threeExamples/effectComposer/uvTransformation.js',
                 image: FILE_HOST + "images/four/uvTransformation.png",
+                meta: {
+                    title: "UV图像变换",
+                    keywords: "three.js,UV图像变换",
+                    description: "UV图像变换"
+                }
             },
             {
                 id: "EdgeBlurringEffect",
@@ -820,7 +897,24 @@ export default [
                 author: "giser2017",
                 codeUrl: HOST + 'threeExamples/effectComposer/EdgeBlurringEffect.js',
                 image: FILE_HOST + "images/four/EdgeBlurringEffect.png",
+                meta: {
+                    title: "边缘模糊效果",
+                    keywords: "three.js,边缘模糊效果",
+                    description: "边缘模糊效果"
+                }
             },
+            {
+                id: 'threeSelectBloom',
+                name: '官方选择辉光简化版',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/effectComposer/threeSelectBloom.js',
+                image: HOST + 'threeExamples/effectComposer/threeSelectBloom.jpg',
+                meta: {
+                    title: '官方选择辉光简化版',
+                    keywords: 'three.js,官方选择辉光简化版',
+                    description: '使用three.js官方选择辉光简化版'
+                }
+            }
         ]
     },
     {
