@@ -226,6 +226,13 @@ export default [
         name: 'treasureMoment',
         github: 'https://github.com/treasureMoment',
         icon: 'https://avatars.githubusercontent.com/u/35365475?v=4'
+    },
+
+    {
+        id:'Siricee',
+        name: 'Liu Zijian',
+        github: 'https://github.com/Siricee',
+        icon: 'https://avatars.githubusercontent.com/u/25154957?v=4'
     }
 
 ]

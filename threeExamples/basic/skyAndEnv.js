@@ -38,7 +38,7 @@ window.onresize = () => {
 }
 
 // 文件地址
-const urls = [0, 1, 2, 3, 4, 5].map(k => ('https://z2586300277.github.io/three-editor/dist/files/scene/skyBox0/' + (k + 1) + '.png'));
+const urls = [0, 1, 2, 3, 4, 5].map(k => (FILE_HOST + 'files/sky/skyBox0/' + (k + 1) + '.png'));
 
 const textureCube = new THREE.CubeTextureLoader().load(urls);
 

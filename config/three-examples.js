@@ -82,6 +82,14 @@ export default [
                 openUrl: 'https://zhengjie9510.github.io/webgis-demo',
                 githubUrl: 'https://github.com/zhengjie9510/webgis-demo',
                 image: FILE_HOST + 'images/zhengjie9510.jpg'
+            },
+            {
+                id: 'Siricee',
+                author: 'Siricee',
+                name: 'Three案例',
+                openUrl: 'https://sirice-playground.netlify.app/#/grid',
+                githubUrl: 'https://github.com/Siricee/FrontEnd-Playground',
+                image: FILE_HOST + 'images/Siricee.jpg'
             }
         ]
     },
@@ -181,6 +189,19 @@ export default [
                     title: '模型混合着色器',
                     keywords: 'three.js,模型混合着色器',
                     description: '使用three.js模型混合着色器'
+                }
+            },
+            {
+                id: 'grassShader',
+                name: '草地着色器',
+                author: 'Siricee',
+                codeUrl: HOST + 'threeExamples/shader/grassShader.js',
+                image: HOST + 'threeExamples/shader/grassShader.jpg',
+                image: HOST + 'threeExamples/shader/grassShader.jpg',
+                meta: {
+                    title: '草地着色器',
+                    keywords: 'three.js,草地着色器',
+                    description: '使用three.js草地着色器'
                 }
             },
             {
