@@ -431,6 +431,18 @@ export default [
                 }
             },
             {
+                id: "shaderBlock",
+                name: "方块着色器",
+                author: "z2586300277",
+                codeUrl: HOST + "threeExamples/shader/shaderBlock.js",
+                image: HOST + "threeExamples/shader/shaderBlock.jpg",
+                meta: {
+                    title: "方块着色器",
+                    keywords: "three.js,方块着色器",
+                    description: "使用three方块着色器"
+                }
+            },
+            {
                 id: "fireball",
                 name: "火球效果",
                 author: "giser2017",
