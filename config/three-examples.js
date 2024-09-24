@@ -277,6 +277,30 @@ export default [
                 }
             },
             {
+                id:'radarShader',
+                name:'雷达着色器',
+                author:'treasureMoment',
+                codeUrl:HOST+'threeExamples/shader/radarShader.js',
+                image:HOST+'threeExamples/shader/radarShader.jpg',
+                meta:{
+                    title:'雷达着色器',
+                    keywords:'three.js,雷达着色器',
+                    description:'使用three.雷达着色器'
+                }
+            },
+            {
+                id: 'ringShader',
+                name: '环形着色器',
+                author: 'treasureMoment',
+                codeUrl: HOST + 'threeExamples/shader/ringShader.js',
+                image: HOST + 'threeExamples/shader/ringShader.jpg',
+                meta: {
+                    title: '环形着色器',
+                    keywords: 'three.js,环形着色器',
+                    description: '使用three.js环形着色器'
+                }
+            },
+            {
                 id: 'imageParticle',
                 name: '颗粒图像',
                 author: 'superzay',
