@@ -517,6 +517,23 @@ export default [
                 author: 'yjsdszz',
                 codeUrl: HOST + 'threeExamples/shader/whiteCloud.js',
                 image: HOST + 'threeExamples/shader/whiteCloud.jpg',
+                meta: {
+                    title: '白云',
+                    keywords: 'three.js,白云',
+                    description: '使用three.js白云'
+                }
+            },
+            {
+                id: 'darkClouds',
+                name: '乌云',
+                author: 'treasureMoment',
+                codeUrl: HOST + 'threeExamples/shader/darkClouds.js',
+                image: HOST + 'threeExamples/shader/darkClouds.jpg',
+                meta: {
+                    title: '乌云',
+                    keywords: 'three.js,乌云',
+                    description: '使用three.js乌云'
+                }
             }
         ]
     },
