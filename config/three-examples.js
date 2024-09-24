@@ -82,6 +82,14 @@ export default [
                 openUrl: 'https://zhengjie9510.github.io/webgis-demo',
                 githubUrl: 'https://github.com/zhengjie9510/webgis-demo',
                 image: FILE_HOST + 'images/zhengjie9510.jpg'
+            },
+            {
+                id: 'Siricee',
+                author: 'Siricee',
+                name: 'Three案例',
+                openUrl: 'https://sirice-playground.netlify.app/#/grid',
+                githubUrl: 'https://github.com/Siricee/FrontEnd-Playground',
+                image: FILE_HOST + 'images/Siricee.jpg'
             }
         ]
     },
@@ -184,6 +192,19 @@ export default [
                 }
             },
             {
+                id: 'grassShader',
+                name: '草地着色器',
+                author: 'Siricee',
+                codeUrl: HOST + 'threeExamples/shader/grassShader.js',
+                image: HOST + 'threeExamples/shader/grassShader.jpg',
+                image: HOST + 'threeExamples/shader/grassShader.jpg',
+                meta: {
+                    title: '草地着色器',
+                    keywords: 'three.js,草地着色器',
+                    description: '使用three.js草地着色器'
+                }
+            },
+            {
                 id: 'fenceShader',
                 name: '围栏着色器',
                 author: 'flowers-10',
@@ -253,6 +274,30 @@ export default [
                     title: '扩散圆墙',
                     keywords: 'three.js,扩散圆墙',
                     description: '使用three.js扩散圆墙'
+                }
+            },
+            {
+                id:'radarShader',
+                name:'雷达着色器',
+                author:'treasureMoment',
+                codeUrl:HOST+'threeExamples/shader/radarShader.js',
+                image:HOST+'threeExamples/shader/radarShader.jpg',
+                meta:{
+                    title:'雷达着色器',
+                    keywords:'three.js,雷达着色器',
+                    description:'使用three.雷达着色器'
+                }
+            },
+            {
+                id: 'ringShader',
+                name: '环形着色器',
+                author: 'treasureMoment',
+                codeUrl: HOST + 'threeExamples/shader/ringShader.js',
+                image: HOST + 'threeExamples/shader/ringShader.jpg',
+                meta: {
+                    title: '环形着色器',
+                    keywords: 'three.js,环形着色器',
+                    description: '使用three.js环形着色器'
                 }
             },
             {
@@ -472,6 +517,23 @@ export default [
                 author: 'yjsdszz',
                 codeUrl: HOST + 'threeExamples/shader/whiteCloud.js',
                 image: HOST + 'threeExamples/shader/whiteCloud.jpg',
+                meta: {
+                    title: '白云',
+                    keywords: 'three.js,白云',
+                    description: '使用three.js白云'
+                }
+            },
+            {
+                id: 'darkClouds',
+                name: '乌云',
+                author: 'treasureMoment',
+                codeUrl: HOST + 'threeExamples/shader/darkClouds.js',
+                image: HOST + 'threeExamples/shader/darkClouds.jpg',
+                meta: {
+                    title: '乌云',
+                    keywords: 'three.js,乌云',
+                    description: '使用three.js乌云'
+                }
             }
         ]
     },
@@ -1263,11 +1325,11 @@ export default [
                 image: HOST + 'threeExamples/tools/sketchfab.jpg'
             },
             {
-                id: 'gltf_report',
-                name: 'gltf在线draco压缩工具',
+                id: 'shaderToy',
+                name: '开源shader社区',
                 author: 'z2586300277',
-                openUrl: 'https://gltf.report/',
-                image: HOST + 'threeExamples/tools/gltf_report.jpg'
+                openUrl: 'https://www.shadertoy.com/',
+                image: FILE_HOST + 'images/shaderToy.jpg'
             },
             {
                 id: 'skyBox_image',
@@ -1277,41 +1339,44 @@ export default [
                 image: HOST + 'threeExamples/tools/skyBox_image.jpg'
             },
             {
+                id: 'gltf_report',
+                name: 'gltf在线draco压缩工具',
+                author: 'donmccurdy',
+                openUrl: 'https://gltf.report/',
+                image: HOST + 'threeExamples/tools/gltf_report.jpg'
+            },
+            {
                 id: 'skyBox_Make',
                 name: 'hdr制作天空盒',
-                author: 'z2586300277',
+                author: 'matheowis',
                 openUrl: 'https://matheowis.github.io/HDRI-to-CubeMap/',
+                githubUrl: 'https://github.com/matheowis/HDRI-to-CubeMap',
                 image: HOST + 'threeExamples/tools/skyBox_Make.jpg'
             },
             {
                 id: 'make_json_font',
                 name: '字体转Three使用json字体',
-                author: 'z2586300277',
+                author: 'gero3',
                 openUrl: 'https://gero3.github.io/facetype.js/',
+                githubUrl: 'https://github.com/gero3/facetype.js',
                 image: HOST + 'threeExamples/tools/make_json_font.jpg'
-            },
-            {
-                id: 'shaderToy',
-                name: '开源shader社区',
-                author: 'z2586300277',
-                openUrl: 'https://www.shadertoy.com/',
-                image: FILE_HOST + 'images/shaderToy.jpg'
             },
             {
                 id: 'shaderWebgl',
                 name: 'Webgl直接可用Shader',
-                author: 'z2586300277',
+                author: 'mrdoob',
                 openUrl: 'https://glslsandbox.com/',
+                githubUrl: 'https://github.com/mrdoob/glsl-sandbox',
                 image: FILE_HOST + 'images/shaderWebgl.jpg'
             },
             {
                 id: 'shaderEditor',
                 name: 'Shader编辑器',
-                author: 'z2586300277',
+                author: 'patriciogonzalezvivo',
                 openUrl: 'https://editor.thebookofshaders.com/',
+                githubUrl: 'https://github.com/patriciogonzalezvivo/glslEditor',
                 image: FILE_HOST + 'images/shaderEditor.jpg'
             }
-
         ]
     },
 

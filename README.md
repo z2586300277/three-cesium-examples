@@ -8,6 +8,8 @@
 
 - github dev分支实时预览 http://z2586300277.github.io/three-cesium-examples
   
+- netlify部署预览 https://three-cesium-examples.netlify.app
+
 - vercel 部署预览 https://three-cesium-examples.vercel.app
   
 - 友情链接3D编辑器 https://github.com/z2586300277/three-editor
@@ -104,6 +106,8 @@ Join the warehouse and manage contacts together 🐧QQ | 🐧 QQ group
 
 -Real time preview of GitHub dev branch http://z2586300277.github.io/three-cesium-examples
 
+
+-Netlify Deployment Preview https://three-cesium-examples.netlify.app
 
 
 -Vercel Deployment Preview https://three-cesium-examples.vercel.app

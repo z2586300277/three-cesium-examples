@@ -1,12 +1,49 @@
 import { HOST } from "./host.js"
 
 export default [
+    
     {
         id: 'z2586300277',
         name: '优雅永不过时',
         github: 'https://github.com/z2586300277',
         icon: HOST + 'files/author/z2586300277.png'
     },
+
+    {
+        id: 'mrdoob',
+        name: 'mrdoob',
+        github: 'https://github.com/mrdoob',
+        icon: 'https://avatars.githubusercontent.com/u/97088?v=4'
+    },
+
+    {
+        id: 'patriciogonzalezvivo',
+        name: 'patriciogonzalezvivo',
+        github: 'https://github.com/patriciogonzalezvivo',
+        icon: 'https://avatars.githubusercontent.com/u/346914'
+    },
+
+    {
+        id: 'gero3',
+        name: 'gero3',
+        github: 'https://github.com/gero3',
+        icon: 'https://avatars.githubusercontent.com/u/155535?v=4'
+    },
+
+    {
+        id: 'donmccurdy',
+        name: 'donmccurdy',
+        github:'https://github.com/donmccurdy',
+        icon: 'https://avatars.githubusercontent.com/u/1848368?v=4'
+    },
+
+    {
+        id: 'matheowis',
+        name: 'matheowis',
+        github: 'https://github.com/matheowis',
+        icon: 'https://avatars.githubusercontent.com/u/892134?v=4'
+    },
+
     {
         id: 'g2657',
         name: 'g2657',
@@ -27,24 +64,28 @@ export default [
         github: 'https://github.com/flowers-10',
         icon: HOST + 'files/author/flowers-10.jpg'
     },
+
     {
         id: 'KallkaGo',
         name: 'KallkaGo',
         github: 'https://github.com/KallkaGo',
         icon: HOST + 'files/author/KallkaGo.jpg'
     },
+
     {
         id: 'xzw199509',
         name: 'xzw199509',
         github: 'https://github.com/xzw199509',
         icon: HOST + 'files/author/xzw199509.png'
     },
+
     {
         id: 'nico',
         name: 'nico',
         github: 'https://github.com/Nicolas-zn',
         icon: HOST + 'files/author/nico.svg'
     },
+
     {
         id: 'zanmeng',
         name: 'zanmeng',
@@ -226,6 +267,13 @@ export default [
         name: 'treasureMoment',
         github: 'https://github.com/treasureMoment',
         icon: 'https://avatars.githubusercontent.com/u/35365475?v=4'
+    },
+
+    {
+        id:'Siricee',
+        name: 'Liu Zijian',
+        github: 'https://github.com/Siricee',
+        icon: 'https://avatars.githubusercontent.com/u/25154957?v=4'
     }
 
 ]
