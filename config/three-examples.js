@@ -408,7 +408,7 @@ export default [
                 name: '音乐可视化',
                 author: 'flowers-10',
                 codeUrl: HOST + 'threeExamples/shader/audioSolutions.js',
-                image: HOST + 'threeExamples/shader/audioSolutions.png',
+                image: HOST + 'threeExamples/shader/audioSolutions.jpg',
                 meta: {
                     title: '音乐可视化',
                     keywords: 'three.js,音乐可视化',
@@ -578,7 +578,7 @@ export default [
                 name: "随机粒子效果",
                 author: "giser2017",
                 htmlUrl: HOST + "threeExamples/particle/RandomParticle.html",
-                image: HOST + "threeExamples/particle/RandomParticle.png",
+                image: HOST + "threeExamples/particle/RandomParticle.jpg",
                 meta: {
                     title: "随机粒子效果",
                     keywords: "three.js,随机粒子效果",
@@ -590,7 +590,7 @@ export default [
                 name: "粒子效果的行星",
                 author: "giser2017",
                 htmlUrl: HOST + "threeExamples/particle/PlanetParticle.html",
-                image: HOST + "threeExamples/particle/PlanetParticle.png",
+                image: HOST + "threeExamples/particle/PlanetParticle.jpg",
                 meta: {
                     title: "粒子效果的行星",
                     keywords: "three.js,粒子效果的行星",
@@ -1221,7 +1221,7 @@ export default [
                 name: "帧率",
                 author: "jiawanlong",
                 codeUrl: HOST + "threeExamples/basic/帧率.js",
-                image: HOST + "threeExamples/basic/帧率.png",
+                image: HOST + "threeExamples/basic/帧率.jpg",
                 meta: {
                     title: "帧率",
                     keywords: "three.js,帧率",
@@ -1233,7 +1233,7 @@ export default [
                 name: "阵列模型",
                 author: "jiawanlong",
                 codeUrl: HOST + "threeExamples/basic/阵列模型.js",
-                image: HOST + "threeExamples/basic/阵列模型.png",
+                image: HOST + "threeExamples/basic/阵列模型.jpg",
                 meta: {
                     title: "阵列模型",
                     keywords: "three.js,阵列模型",
@@ -1245,7 +1245,7 @@ export default [
                 name: "几何体",
                 author: "jiawanlong",
                 codeUrl: HOST + "threeExamples/basic/几何体.js",
-                image: HOST + "threeExamples/basic/几何体.png",
+                image: HOST + "threeExamples/basic/几何体.jpg",
                 meta: {
                     title: "几何体",
                     keywords: "three.js,几何体",
@@ -1297,7 +1297,7 @@ export default [
                 name_en: "旋转、缩放、平移几何体",
                 author: "jiawanlong",
                 codeUrl: HOST + "threeExamples/basic/旋转、缩放、平移几何体.js",
-                image: HOST + "threeExamples/basic/旋转、缩放、平移几何体.png",
+                image: HOST + "threeExamples/basic/旋转、缩放、平移几何体.jpg",
                 meta: {
                     title: "旋转、缩放、平移几何体",
                     keywords: "three.js,旋转缩放平移几何体",
@@ -1323,7 +1323,7 @@ export default [
                 name_en: "顶点颜色",
                 author: "jiawanlong",
                 codeUrl: HOST + "threeExamples/basic/顶点颜色.js",
-                image: HOST + "threeExamples/basic/顶点颜色.png",
+                image: HOST + "threeExamples/basic/顶点颜色.jpg",
                 meta: {
                     title: "顶点颜色",
                     keywords: "three.js,顶点颜色",
