@@ -274,6 +274,13 @@ export default [
         name: 'Liu Zijian',
         github: 'https://github.com/Siricee',
         icon: 'https://avatars.githubusercontent.com/u/25154957?v=4'
+    },
+
+    {
+        id: 'hafly',
+        name: 'hafly',
+        github: 'https://github.com/hafly',
+        icon: 'https://avatars.githubusercontent.com/u/13634263?v=4'
     }
 
 ]

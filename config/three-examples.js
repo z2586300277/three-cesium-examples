@@ -279,7 +279,7 @@ export default [
             {
                 id:'radarShader',
                 name:'雷达着色器',
-                author:'treasureMoment',
+                author:'stonerao',
                 codeUrl:HOST+'threeExamples/shader/radarShader.js',
                 image:HOST+'threeExamples/shader/radarShader.jpg',
                 meta:{
@@ -291,7 +291,7 @@ export default [
             {
                 id: 'ringShader',
                 name: '环形着色器',
-                author: 'treasureMoment',
+                author: 'stonerao',
                 codeUrl: HOST + 'threeExamples/shader/ringShader.js',
                 image: HOST + 'threeExamples/shader/ringShader.jpg',
                 meta: {
@@ -310,6 +310,18 @@ export default [
                     title: '颗粒图像',
                     keywords: 'three.js,颗粒图像',
                     description: '使用three.js颗粒图像'
+                }
+            },
+            {
+                id: 'gaussianBlur',
+                name: '高斯模糊',
+                author: 'hafly',
+                codeUrl: HOST + 'threeExamples/shader/gaussianBlur.js',
+                image: HOST + 'threeExamples/shader/gaussianBlur.jpg',
+                meta: {
+                    title: '高斯模糊',
+                    keywords: 'three.js,高斯模糊',
+                    description: '使用three.js高斯模糊'
                 }
             },
             {
@@ -526,7 +538,7 @@ export default [
             {
                 id: 'darkClouds',
                 name: '乌云',
-                author: 'treasureMoment',
+                author: 'stonerao',
                 codeUrl: HOST + 'threeExamples/shader/darkClouds.js',
                 image: HOST + 'threeExamples/shader/darkClouds.jpg',
                 meta: {
