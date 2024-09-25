@@ -464,6 +464,13 @@ export default [
                 },
             },
             {
+                id: 'reliefImage',
+                name: '浮雕图像',
+                author: 'hafly',
+                codeUrl: HOST + 'threeExamples/shader/reliefImage.js',
+                image: HOST + 'threeExamples/shader/reliefImage.jpg',
+            },
+            {
                 id: 'dissolveAnimate',
                 name: '溶解动画',
                 author: 'yiiiiiiqianyao',
