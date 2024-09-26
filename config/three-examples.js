@@ -337,6 +337,13 @@ export default [
                 }
             },
             {
+                id: 'vortexShader',
+                name: '扭曲',
+                author: 'hafly',
+                codeUrl: HOST + 'threeExamples/shader/vortexShader.js',
+                image: HOST + 'threeExamples/shader/vortexShader.jpg'
+            },
+            {
                 id: 'heatmapShader',
                 name: '热力图',
                 author: 'z2586300277',
