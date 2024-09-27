@@ -28,6 +28,8 @@
 
 ## 🌳创作
 
+### - 加入并管理仓库的开发者，可自行创建自己的分支
+
 ##### - 如果这些里面有案例帮助了您 - 有意的话您可以提交您的作品 - 让爱传递给更多开发者
 
 ##### - fork仓库后 - 增加用户信息 - 上传您最自豪的作品 - 提交合并到主分支 - 开发或者合并 基于dev分支
@@ -141,13 +143,13 @@ Join the warehouse and manage contacts together 🐧QQ | 🐧 QQ group
 
 ## 🌳 a literary creation
 
+#### - Developers who join and manage the repository can create their own branches on their own
+
+##### If any of these cases have helped you, you can submit your work if you are interested to spread love to more developers
 
 
-#####If any of these cases have helped you, you can submit your work if you are interested to spread love to more developers
 
-
-
-#####- After forking the repository - Add user information - Upload your proudest work - Submit and merge to the main branch - Develop or merge based on dev branch
+##### - After forking the repository - Add user information - Upload your proudest work - Submit and merge to the main branch - Develop or merge based on dev branch
 
 
 
