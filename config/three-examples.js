@@ -344,6 +344,13 @@ export default [
                 image: HOST + 'threeExamples/shader/vortexShader.jpg'
             },
             {
+                id: 'ringsShader',
+                name: '环彩虹着色器',
+                author: 'stonerao',
+                codeUrl: HOST + 'threeExamples/shader/ringsShader.js',
+                image: HOST + 'threeExamples/shader/ringsShader.jpg',
+            },
+            {
                 id: 'heatmapShader',
                 name: '热力图',
                 author: 'z2586300277',
