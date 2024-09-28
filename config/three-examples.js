@@ -899,7 +899,19 @@ export default [
             }
         ]
     },
-
+    {
+        pid: 'physics',
+        name: '物理应用',
+        children: [
+            {
+                id: 'physicsMesh',
+                name: '物理cannon使用',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/physics/physicsMesh.js',
+                image: HOST + 'threeExamples/physics/physicsMesh.jpg',
+            }
+        ]
+    },
     {
         pid: 'expand',
         name: '扩展功能',
