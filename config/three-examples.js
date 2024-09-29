@@ -646,7 +646,19 @@ export default [
                     keywords: 'three.js,星系',
                     description: '使用three.js星系'
                 }
-            }
+            },
+            {
+                id: 'pointsEarth',
+                name: '粒子地球',
+                author: 'giser2017',
+                codeUrl: HOST + 'threeExamples/particle/pointsEarth.js',
+                image: HOST + 'threeExamples/particle/pointsEarth.jpg',
+                meta: {
+                    title: '粒子地球',
+                    keywords: 'three.js,粒子地球',
+                    description: '使用three.js粒子地球'
+                }
+            },
         ]
     },
     {
