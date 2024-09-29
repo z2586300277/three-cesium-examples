@@ -659,6 +659,13 @@ export default [
                     description: '使用three.js粒子地球'
                 }
             },
+            {
+                id: 'waveParticleShader',
+                name: '波浪粒子',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/particle/waveParticleShader.js',
+                image: HOST + 'threeExamples/particle/waveParticleShader.jpg',
+            }
         ]
     },
     {
