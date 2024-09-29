@@ -205,6 +205,13 @@ export default [
                 }
             },
             {
+                id: 'raningSea',
+                name: '波涛海浪',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/shader/raningSea.js',
+                image: HOST + 'threeExamples/shader/raningSea.jpg',
+            },
+            {
                 id: 'fenceShader',
                 name: '围栏着色器',
                 author: 'flowers-10',

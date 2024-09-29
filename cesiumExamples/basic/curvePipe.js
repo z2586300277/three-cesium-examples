@@ -237,7 +237,7 @@ function createCurvePipe(curvePoints, params = {}) {
 
         cornerType: Cesium.CornerType.ROUNDED,
 
-        material: new PolylineTrailLinkMaterialProperty('https://z2586300277.github.io/3d-file-server/images/channels/lmap.png', Cesium.Color.RED, 2000)
+        material: new PolylineTrailLinkMaterialProperty(FILE_HOST + 'images/channels/lmap.png', Cesium.Color.RED, 2000)
 
     }
 

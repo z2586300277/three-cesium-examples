@@ -110,7 +110,7 @@ for (let i = 0; i < totalCount; i += 3) {
     const textGeometry = new TextGeometry(TEXT[index], {
         font,
         size: 0.1 /* 字体大小 */,
-        height: 0.001 /* 文本厚度 */,
+        depth: 0.001 /* 文本厚度 */,
         curveSegments: 12 /* 曲线点数 (5降低优化性能) */,
         bevelEnabled: false /* 是否开启斜角 */,
         bevelThickness: 0.01 /* 斜角深度 */,

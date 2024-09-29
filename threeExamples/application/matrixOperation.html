@@ -6,7 +6,6 @@
     <script type="importmap">
         {
           "imports": {
-            "@tweenjs/tween.js": "https://z2586300277.github.io/three-cesium-examples/js/tween.esm.js",
             "three": "https://threejs.org/build/three.module.js",
             "three/addons/": "https://threejs.org/examples/jsm/"
           }
@@ -64,9 +63,7 @@
 </body>
 <script type="module">
     import * as THREE from "three";
-
-    // import TWEEN from "three/examples/jsm/libs/tween.module.js";
-    import TWEEN from "@tweenjs/tween.js";
+    import TWEEN from "three/addons/libs/tween.module.js";
     import { TrackballControls } from "three/addons/controls/TrackballControls.js";
     import { CSS3DRenderer, CSS3DObject } from "three/addons/renderers/CSS3DRenderer.js";
 
