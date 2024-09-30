@@ -308,6 +308,13 @@ export default [
                 }
             },
             {
+                id: 'smokeCircle',
+                name: '圆泡吸附',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/shader/smokeCircle.js',
+                image: HOST + 'threeExamples/shader/smokeCircle.jpg',
+            },
+            {
                 id: 'imageParticle',
                 name: '颗粒图像',
                 author: 'superzay',
