@@ -107,9 +107,6 @@ Join the warehouse and manage contacts together 🐧QQ | 🐧 QQ group
 -Real time preview of GitHub dev branch http://z2586300277.github.io/three-cesium-examples
 
 
--Netlify Deployment Preview https://three-cesium-examples.netlify.app
-
-
 -Vercel Deployment Preview https://three-cesium-examples.vercel.app
 
 
