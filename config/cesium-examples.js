@@ -356,6 +356,13 @@ export default [
                     description: 'cesium 流动飞线运动'
                 }
             },
+            {
+                id: 'curvePipe',
+                name: '曲线管道',
+                author: 'z2586300277',
+                codeUrl: HOST + 'cesiumExamples/basic/curvePipe.js',
+                image: HOST + 'cesiumExamples/basic/curvePipe.jpg',
+            }
         ]
     },
     {

@@ -1,14 +1,12 @@
 # 💎 原生Three 和 Cesium 案例 - 更新到死 - 只做开源 -
 
-##  开源不易 - ⭐ - 点星助力
+##  开源不易 - ⭐ - 点星助力 -⚡ - 每日更新
 
 加入仓库一起管理 联系🐧QQ             |  🐧QQ群         
 :-------------------------:|:-------------------------:
 2586300277  |  865182188  
 
 - github dev分支实时预览 http://z2586300277.github.io/three-cesium-examples
-  
-- netlify部署预览 https://three-cesium-examples.netlify.app
 
 - vercel 部署预览 https://three-cesium-examples.vercel.app
   
@@ -27,6 +25,8 @@
 2.如在 https://threehub.cn/ 部署
 
 ## 🌳创作
+
+### - 加入并管理仓库的开发者，可自行创建自己的分支
 
 ##### - 如果这些里面有案例帮助了您 - 有意的话您可以提交您的作品 - 让爱传递给更多开发者
 
@@ -107,9 +107,6 @@ Join the warehouse and manage contacts together 🐧QQ | 🐧 QQ group
 -Real time preview of GitHub dev branch http://z2586300277.github.io/three-cesium-examples
 
 
--Netlify Deployment Preview https://three-cesium-examples.netlify.app
-
-
 -Vercel Deployment Preview https://three-cesium-examples.vercel.app
 
 
@@ -141,13 +138,13 @@ Join the warehouse and manage contacts together 🐧QQ | 🐧 QQ group
 
 ## 🌳 a literary creation
 
+#### - Developers who join and manage the repository can create their own branches on their own
+
+##### If any of these cases have helped you, you can submit your work if you are interested to spread love to more developers
 
 
-#####If any of these cases have helped you, you can submit your work if you are interested to spread love to more developers
 
-
-
-#####- After forking the repository - Add user information - Upload your proudest work - Submit and merge to the main branch - Develop or merge based on dev branch
+##### - After forking the repository - Add user information - Upload your proudest work - Submit and merge to the main branch - Develop or merge based on dev branch
 
 
 

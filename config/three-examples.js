@@ -205,6 +205,13 @@ export default [
                 }
             },
             {
+                id: 'raningSea',
+                name: '波涛海浪',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/shader/raningSea.js',
+                image: HOST + 'threeExamples/shader/raningSea.jpg',
+            },
+            {
                 id: 'fenceShader',
                 name: '围栏着色器',
                 author: 'flowers-10',
@@ -279,7 +286,7 @@ export default [
             {
                 id:'radarShader',
                 name:'雷达着色器',
-                author:'treasureMoment',
+                author:'stonerao',
                 codeUrl:HOST+'threeExamples/shader/radarShader.js',
                 image:HOST+'threeExamples/shader/radarShader.jpg',
                 meta:{
@@ -291,7 +298,7 @@ export default [
             {
                 id: 'ringShader',
                 name: '环形着色器',
-                author: 'treasureMoment',
+                author: 'stonerao',
                 codeUrl: HOST + 'threeExamples/shader/ringShader.js',
                 image: HOST + 'threeExamples/shader/ringShader.jpg',
                 meta: {
@@ -299,6 +306,13 @@ export default [
                     keywords: 'three.js,环形着色器',
                     description: '使用three.js环形着色器'
                 }
+            },
+            {
+                id: 'smokeCircle',
+                name: '圆泡吸附',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/shader/smokeCircle.js',
+                image: HOST + 'threeExamples/shader/smokeCircle.jpg',
             },
             {
                 id: 'imageParticle',
@@ -313,6 +327,18 @@ export default [
                 }
             },
             {
+                id: 'gaussianBlur',
+                name: '高斯模糊',
+                author: 'hafly',
+                codeUrl: HOST + 'threeExamples/shader/gaussianBlur.js',
+                image: HOST + 'threeExamples/shader/gaussianBlur.jpg',
+                meta: {
+                    title: '高斯模糊',
+                    keywords: 'three.js,高斯模糊',
+                    description: '使用three.js高斯模糊'
+                }
+            },
+            {
                 id: 'halfCircle',
                 name: '半圆',
                 author: 'yiiiiiiqianyao',
@@ -323,6 +349,20 @@ export default [
                     keywords: 'three.js,半圆',
                     description: '使用three.js半圆'
                 }
+            },
+            {
+                id: 'vortexShader',
+                name: '扭曲',
+                author: 'hafly',
+                codeUrl: HOST + 'threeExamples/shader/vortexShader.js',
+                image: HOST + 'threeExamples/shader/vortexShader.jpg'
+            },
+            {
+                id: 'ringsShader',
+                name: '环彩虹着色器',
+                author: 'stonerao',
+                codeUrl: HOST + 'threeExamples/shader/ringsShader.js',
+                image: HOST + 'threeExamples/shader/ringsShader.jpg',
             },
             {
                 id: 'heatmapShader',
@@ -396,7 +436,7 @@ export default [
                 name: '音乐可视化',
                 author: 'flowers-10',
                 codeUrl: HOST + 'threeExamples/shader/audioSolutions.js',
-                image: HOST + 'threeExamples/shader/audioSolutions.png',
+                image: HOST + 'threeExamples/shader/audioSolutions.jpg',
                 meta: {
                     title: '音乐可视化',
                     keywords: 'three.js,音乐可视化',
@@ -450,6 +490,13 @@ export default [
                     keywords: "three.js,水效果",
                     description: "使用three水效果",
                 },
+            },
+            {
+                id: 'reliefImage',
+                name: '浮雕图像',
+                author: 'hafly',
+                codeUrl: HOST + 'threeExamples/shader/reliefImage.js',
+                image: HOST + 'threeExamples/shader/reliefImage.jpg',
             },
             {
                 id: 'dissolveAnimate',
@@ -526,7 +573,7 @@ export default [
             {
                 id: 'darkClouds',
                 name: '乌云',
-                author: 'treasureMoment',
+                author: 'stonerao',
                 codeUrl: HOST + 'threeExamples/shader/darkClouds.js',
                 image: HOST + 'threeExamples/shader/darkClouds.jpg',
                 meta: {
@@ -559,7 +606,7 @@ export default [
                 name: "随机粒子效果",
                 author: "giser2017",
                 htmlUrl: HOST + "threeExamples/particle/RandomParticle.html",
-                image: HOST + "threeExamples/particle/RandomParticle.png",
+                image: HOST + "threeExamples/particle/RandomParticle.jpg",
                 meta: {
                     title: "随机粒子效果",
                     keywords: "three.js,随机粒子效果",
@@ -571,7 +618,7 @@ export default [
                 name: "粒子效果的行星",
                 author: "giser2017",
                 htmlUrl: HOST + "threeExamples/particle/PlanetParticle.html",
-                image: HOST + "threeExamples/particle/PlanetParticle.png",
+                image: HOST + "threeExamples/particle/PlanetParticle.jpg",
                 meta: {
                     title: "粒子效果的行星",
                     keywords: "three.js,粒子效果的行星",
@@ -613,6 +660,25 @@ export default [
                     keywords: 'three.js,星系',
                     description: '使用three.js星系'
                 }
+            },
+            {
+                id: 'pointsEarth',
+                name: '粒子地球',
+                author: 'giser2017',
+                codeUrl: HOST + 'threeExamples/particle/pointsEarth.js',
+                image: HOST + 'threeExamples/particle/pointsEarth.jpg',
+                meta: {
+                    title: '粒子地球',
+                    keywords: 'three.js,粒子地球',
+                    description: '使用three.js粒子地球'
+                }
+            },
+            {
+                id: 'waveParticleShader',
+                name: '波浪粒子',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/particle/waveParticleShader.js',
+                image: HOST + 'threeExamples/particle/waveParticleShader.jpg',
             }
         ]
     },
@@ -866,7 +932,19 @@ export default [
             }
         ]
     },
-
+    {
+        pid: 'physics',
+        name: '物理应用',
+        children: [
+            {
+                id: 'physicsMesh',
+                name: '物理cannon使用',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/physics/physicsMesh.js',
+                image: HOST + 'threeExamples/physics/physicsMesh.jpg',
+            }
+        ]
+    },
     {
         pid: 'expand',
         name: '扩展功能',
@@ -1202,7 +1280,7 @@ export default [
                 name: "帧率",
                 author: "jiawanlong",
                 codeUrl: HOST + "threeExamples/basic/帧率.js",
-                image: HOST + "threeExamples/basic/帧率.png",
+                image: HOST + "threeExamples/basic/帧率.jpg",
                 meta: {
                     title: "帧率",
                     keywords: "three.js,帧率",
@@ -1214,7 +1292,7 @@ export default [
                 name: "阵列模型",
                 author: "jiawanlong",
                 codeUrl: HOST + "threeExamples/basic/阵列模型.js",
-                image: HOST + "threeExamples/basic/阵列模型.png",
+                image: HOST + "threeExamples/basic/阵列模型.jpg",
                 meta: {
                     title: "阵列模型",
                     keywords: "three.js,阵列模型",
@@ -1226,7 +1304,7 @@ export default [
                 name: "几何体",
                 author: "jiawanlong",
                 codeUrl: HOST + "threeExamples/basic/几何体.js",
-                image: HOST + "threeExamples/basic/几何体.png",
+                image: HOST + "threeExamples/basic/几何体.jpg",
                 meta: {
                     title: "几何体",
                     keywords: "three.js,几何体",
@@ -1278,7 +1356,7 @@ export default [
                 name_en: "旋转、缩放、平移几何体",
                 author: "jiawanlong",
                 codeUrl: HOST + "threeExamples/basic/旋转、缩放、平移几何体.js",
-                image: HOST + "threeExamples/basic/旋转、缩放、平移几何体.png",
+                image: HOST + "threeExamples/basic/旋转、缩放、平移几何体.jpg",
                 meta: {
                     title: "旋转、缩放、平移几何体",
                     keywords: "three.js,旋转缩放平移几何体",
@@ -1304,7 +1382,7 @@ export default [
                 name_en: "顶点颜色",
                 author: "jiawanlong",
                 codeUrl: HOST + "threeExamples/basic/顶点颜色.js",
-                image: HOST + "threeExamples/basic/顶点颜色.png",
+                image: HOST + "threeExamples/basic/顶点颜色.jpg",
                 meta: {
                     title: "顶点颜色",
                     keywords: "three.js,顶点颜色",

@@ -1,7 +1,7 @@
 import { HOST } from "./host.js"
 
 export default [
-    
+
     {
         id: 'z2586300277',
         name: '优雅永不过时',
@@ -33,7 +33,7 @@ export default [
     {
         id: 'donmccurdy',
         name: 'donmccurdy',
-        github:'https://github.com/donmccurdy',
+        github: 'https://github.com/donmccurdy',
         icon: 'https://avatars.githubusercontent.com/u/1848368?v=4'
     },
 
@@ -83,7 +83,7 @@ export default [
         id: 'nico',
         name: 'nico',
         github: 'https://github.com/Nicolas-zn',
-        icon: HOST + 'files/author/nico.svg'
+        icon: 'https://avatars.githubusercontent.com/u/56536031?v=4'
     },
 
     {
@@ -213,7 +213,7 @@ export default [
         icon: 'https://avatars.githubusercontent.com/u/65885528?v=4'
     },
 
-    {   
+    {
         id: '193Eric',
         name: 'Eric.Li',
         github: 'https://github.com/193Eric',
@@ -227,7 +227,7 @@ export default [
         icon: HOST + 'files/site/logo.svg'
     },
 
-    {   
+    {
         id: 'youngdro',
         name: 'youngdro',
         github: 'https://github.com/youngdro',
@@ -238,7 +238,7 @@ export default [
         id: 'stonerao',
         name: 'stonerao',
         github: 'https://github.com/stonerao',
-        icon: HOST +'files/site/logo.svg'
+        icon: HOST + 'files/site/logo.svg'
     },
 
     {
@@ -270,10 +270,17 @@ export default [
     },
 
     {
-        id:'Siricee',
+        id: 'Siricee',
         name: 'Liu Zijian',
         github: 'https://github.com/Siricee',
         icon: 'https://avatars.githubusercontent.com/u/25154957?v=4'
+    },
+
+    {
+        id: 'hafly',
+        name: 'hafly',
+        github: 'https://github.com/hafly',
+        icon: 'https://avatars.githubusercontent.com/u/13634263?v=4'
     }
 
 ]
