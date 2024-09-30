@@ -7,8 +7,6 @@
 2586300277  |  865182188  
 
 - github dev分支实时预览 http://z2586300277.github.io/three-cesium-examples
-  
-- netlify部署预览 https://three-cesium-examples.netlify.app
 
 - vercel 部署预览 https://three-cesium-examples.vercel.app
   
