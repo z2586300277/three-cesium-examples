@@ -547,6 +547,13 @@ export default [
                 }
             },
             {
+                id: 'blobShader',
+                name: '一团揉动',
+                author: 'z2586300277',
+                codeUrl: HOST + "threeExamples/shader/blobShader.js",
+                image: HOST + "threeExamples/shader/blobShader.jpg",
+            },
+            {
                 id: "warnInfo",
                 name: "警告信息",
                 author: "yjsdszz",
