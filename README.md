@@ -22,11 +22,11 @@
 
 1.可通过 config/links 文件修改 所有的链接和 logo, 替换成自己的官网或者链接地址。
 
-2.如在 https://threehub.cn/ 部署
+2.如在 https://threehub.cn 部署
 
 ## 🌳创作
 
-### - 加入并管理仓库的开发者，可自行创建自己的分支
+### - 加入并管理仓库的开发者，可自行创建自己的分支进行开发
 
 ##### - 如果这些里面有案例帮助了您 - 有意的话您可以提交您的作品 - 让爱传递给更多开发者
 
@@ -44,7 +44,7 @@
 
 5. 涉及其他依赖js,可将module.js 放到js目录  如 dat.gui,gasp ,注入方式 config/config.js 可见
 
-6. 音视频模型存储等一些可以公用的资源 files 文件夹下,涉及文件资源尽量引用外部url
+6. 音视频模型存储等一些可以公用的资源 files 文件夹下,涉及文件资源尽量引用外部url,保证仓库轻量化
 
 - config => js注入和配置案例 等所有案例配置目录
 - files 音视频模型存储等一些可以公用的资源, 尽量不要上传文件资源, 使用 外部url 地址访问
@@ -58,6 +58,7 @@
     id: '父级对应列表唯一id',
     name: '名称',
     author: '作者id',
+    referAuthor: '案例参考来源作者id', // 如 没有可不配置
     image: HOST + 'threeExamples/basic/test.jpg', // 对应窗口图
     codeUrl: HOST + 'threeExamples/basic/test.js', // js module格式 大多数案例形式
     htmlUrl: HOST + 'threeExamples/test/test.html' // html 在线格式 如 three案例 => 粒子 => 随机粒子 粒子行星
@@ -92,7 +93,7 @@
 
 
 
-##Open source is not easy- ⭐ - Dianxing Assistance
+##Open source is not easy- ⭐ - Dianxing Assistance- ⚡ - Daily updates
 
 
 
@@ -105,6 +106,7 @@ Join the warehouse and manage contacts together 🐧QQ | 🐧 QQ group
 
 
 -Real time preview of GitHub dev branch http://z2586300277.github.io/three-cesium-examples
+
 
 
 -Vercel Deployment Preview https://three-cesium-examples.vercel.app
@@ -122,7 +124,10 @@ Join the warehouse and manage contacts together 🐧QQ | 🐧 QQ group
 -Note: Click on a star, no matter what technical difficulties or obstacles you encounter, thread examples will always stand behind you.
 
 
--Note: The framework and online debugging of this website are derived from the three-editor library
+
+-Note: The framework and online debugging of this website are derived from the three editor library.
+
+
 
 ## 📦 Self deployment
 
@@ -132,13 +137,17 @@ Join the warehouse and manage contacts together 🐧QQ | 🐧 QQ group
 
 
 
-2. As in https://threehub.cn/ Deployment
+2. As in https://threehub.cn Deployment
 
 
 
 ## 🌳 a literary creation
 
-#### - Developers who join and manage the repository can create their own branches on their own
+
+
+#### - Developers who join and manage the repository can create their own branches for development
+
+
 
 ##### If any of these cases have helped you, you can submit your work if you are interested to spread love to more developers
 
@@ -172,7 +181,7 @@ Join the warehouse and manage contacts together 🐧QQ | 🐧 QQ group
 
 
 
-6. Store audio and video models and other resources that can be shared in the files folder. Whenever possible, reference external URLs for file resources
+6. Store audio and video models and other resources that can be shared in the files folder. Whenever possible, reference external URLs for file resources to ensure a lightweight warehouse
 
 
 
@@ -199,6 +208,8 @@ Id: 'Unique id in the parent corresponding list',
 Name: 'Name',
 
 Author: 'Author ID',
+
+ReferAuthor: 'Case reference source author id',//If not available, do not configure it
 
 Image: HOST+'ThreeEmples/basic/test. jpg',//corresponding window image
 
