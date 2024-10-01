@@ -977,7 +977,9 @@ export default [
             {
                 id: 'heatmap3D',
                 name: '3D热力图',
-                author: 'treasureMoment',
+                referAuthor: 'treasureMoment',
+                author: 'z2586300277',
+                githubUrl: 'https://github.com/treasureMoment/heatmap-three.js',
                 codeUrl: HOST + 'threeExamples/expand/heatmap3D.js',
                 image: HOST + 'threeExamples/expand/heatmap3D.jpg',
                 meta: {

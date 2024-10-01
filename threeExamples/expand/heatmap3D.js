@@ -98,8 +98,3 @@ const mesh = new THREE.Mesh(geometry, material);
 scene.add(mesh);
 
 new dat.GUI().add(mesh.material.uniforms.heightRatio, "value", 1, 15).name("heightRatio")
-
-
-
-
-
