@@ -139,6 +139,16 @@ export default [
                 downloadUrl: 'https://g2657.github.io/examples-server/3DPoints/3DPoints.zip'
             },
             {
+                id:'threePerson',
+                name: '第三人称控制',
+                author: 'z2586300277',
+                referAuthor: 'simondevyoutube',
+                openUrl: 'https://g2657.github.io/examples-server/thirdPerson/',
+                githubUrl: 'https://github.com/simondevyoutube/ThreeJS_Tutorial_ThirdPersonCamera',
+                image: 'https://g2657.github.io/examples-server/thirdPerson/thirdPerson.jpg',
+                downloadUrl: 'https://g2657.github.io/examples-server/thirdPerson/thirdPerson.zip'
+            },
+            {
                 id: 'smartCity',
                 name: '智慧城市特效',
                 author: '193Eric',
