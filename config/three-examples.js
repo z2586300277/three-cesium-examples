@@ -694,6 +694,13 @@ export default [
         name: '应用场景',
         children: [
             {
+                id: 'z2586300277',
+                name: '优雅永不过时',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/application/z2586300277.js',
+                image: HOST + 'threeExamples/application/z2586300277.jpg',
+            },
+            {
                 id: 'magicCircle',
                 name: '魔法阵',
                 author: 'gitee18247670551',
