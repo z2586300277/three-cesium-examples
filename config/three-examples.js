@@ -418,6 +418,13 @@ export default [
                 }
             },
             {
+                id: 'chinaFlag',
+                name: '中国旗帜',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/shader/chinaFlag.js',
+                image: HOST + 'threeExamples/shader/chinaFlag.jpg',
+            },
+            {
                 id: 'rasterGrid',
                 name: '栅格网格',
                 author: 'yjsdszz',
