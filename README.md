@@ -57,6 +57,7 @@
 {
     id: '父级对应列表唯一id',
     name: '名称',
+    tag: '标签名字-背景颜色',
     author: '作者id',
     referAuthor: '案例参考来源作者id', // 如 没有可不配置
     image: HOST + 'threeExamples/basic/test.jpg', // 对应窗口图
@@ -206,6 +207,8 @@ Join the warehouse and manage contacts together 🐧QQ | 🐧 QQ group
 Id: 'Unique id in the parent corresponding list',
 
 Name: 'Name',
+
+tag: 'tag-color',
 
 Author: 'Author ID',
 

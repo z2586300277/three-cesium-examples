@@ -15,6 +15,7 @@ export default [
             },
             {
                 id: 'jiawanlong',
+                tag: '推荐',
                 author: 'jiawanlong',
                 name: 'Cesium&Three.js 案例',
                 openUrl: 'https://jiawanlong.github.io/examples/cesiumEx/examples.html',
@@ -167,6 +168,7 @@ export default [
             },
             {
                 id: 'kallkago_su7',
+                tag: '优秀',
                 name: 'su7 demo',
                 author: 'KallkaGo',
                 openUrl: 'https://z2586300277.github.io/show-site/su7_demo/',
@@ -175,6 +177,7 @@ export default [
             },
             {
                 id: 'z2586300277_3d_editor',
+                tag:'编辑器-#795cddba',
                 name: 'Three.js低代码编辑器',
                 author: 'z2586300277',
                 openUrl: 'https://z2586300277.github.io/three-editor/dist/#/editor',
@@ -450,6 +453,7 @@ export default [
             },
             {
                 id: 'audioSolutions',
+                tag: '声音',
                 name: '音乐可视化',
                 author: 'flowers-10',
                 codeUrl: HOST + 'threeExamples/shader/audioSolutions.js',
