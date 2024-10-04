@@ -14,7 +14,9 @@
 
 - gitee仓库 https://gitee.com/zhang-jingguang/three-cesium-examples
   
-- 人生旅程中的web3d知识记录, 复习回顾, 高效查阅, 资源共享, 为爱发电。  
+- 人生旅程中的web3d知识记录, 复习回顾, 高效查阅, 资源共享, 为爱发电。 
+
+- 关注git histroy, 记录我的每一天。 
 
 - 注: 本站框架和在线调试源于three-editor库。
 
@@ -104,27 +106,28 @@ Join the warehouse and manage contacts together 🐧QQ | 🐧 Mutual assistance 
 
 
 
--Real time preview of GitHub dev branch http://z2586300277.github.io/three-cesium-examples
+- Real time preview of GitHub dev branch http://z2586300277.github.io/three-cesium-examples
 
 
 
--Vercel Deployment Preview https://three-cesium-examples.vercel.app
+- Vercel Deployment Preview https://three-cesium-examples.vercel.app
 
 
 
--Friendship Link 3D Editor https://github.com/z2586300277/three-editor
+- Friendship Link 3D Editor https://github.com/z2586300277/three-editor
 
 
 
--Gitee repository https://gitee.com/zhang-jingguang/three-cesium-examples
+- Gitee repository https://gitee.com/zhang-jingguang/three-cesium-examples
 
 
-
--Web3D knowledge recording, review, efficient searching, resource sharing in the journey of life, generating electricity for love
-
+- Web3D knowledge recording, review, efficient searching, resource sharing in the journey of life, generating electricity for love
 
 
--Note: The framework and online debugging of this website are derived from the three editor library.
+- Follow git histroy and record my every day.
+
+
+- Note: The framework and online debugging of this website are derived from the three editor library.
 
 
 
@@ -156,7 +159,7 @@ Join the warehouse and manage contacts together 🐧QQ | 🐧 Mutual assistance 
 
 
 
--Run the framework to start the service port pointing to index.html
+- Run the framework to start the service port pointing to index.html
 
 
 
@@ -184,15 +187,15 @@ Join the warehouse and manage contacts together 🐧QQ | 🐧 Mutual assistance 
 
 
 
--Config=>JS injection and configuration case, all case configuration directories
+- Config=>JS injection and configuration case, all case configuration directories
 
--Files, audio and video model storage, and other resources that can be shared should be avoided as much as possible, and external URL addresses should be used to access them
+- Files, audio and video model storage, and other resources that can be shared should be avoided as much as possible, and external URL addresses should be used to access them
 
--Js=>dat.gui gsap and other dependency repositories, try to use online js such as CDN to introduce them as much as possible
+- Js=>dat.gui gsap and other dependency repositories, try to use online js such as CDN to introduce them as much as possible
 
--ThreeEamples Three.js Case Code Catalog
+- ThreeEamples Three.js Case Code Catalog
 
--CesiumExamples cesium case code directory
+- CesiumExamples cesium case code directory
 
 
 
@@ -244,28 +247,28 @@ Description: 'This case page description'
 
 
 
--Architecture design is to access code in the form of requesting resources, so resource information such as codeURL image is not limited to being stored in this repository, such as on your own server, and then the URL can be accessed to your resource address.
+- Architecture design is to access code in the form of requesting resources, so resource information such as codeURL image is not limited to being stored in this repository, such as on your own server, and then the URL can be accessed to your resource address.
 
 
 
--Then only the case information can be configured in this warehouse, which can refer to the configuration of three cases=>extended functions=>3D map cases
+- Then only the case information can be configured in this warehouse, which can refer to the configuration of three cases=>extended functions=>3D map cases
 
 
 
--Due to access restrictions on GitHub, HTTP will be automatically banned. It is recommended to set up your own GitHub page and use GitHub as your resource server.
+- Due to access restrictions on GitHub, HTTP will be automatically banned. It is recommended to set up your own GitHub page and use GitHub as your resource server.
 
 
 
--For example, some of my distributed resources are stored in https://github.com/z2586300277/3d-file-server Under the warehouse - Access service: https://z2586300277.github.io/3d-file-server/
+- For example, some of my distributed resources are stored in https://github.com/z2586300277/3d-file-server Under the warehouse - Access service: https://z2586300277.github.io/3d-file-server/
 
 
 
--GitHub page setup=>create repository=>page process=>settings=>pages=>build and deployment=>source (depoly from a branch)=>branch Select the corresponding branch
+- GitHub page setup=>create repository=>page process=>settings=>pages=>build and deployment=>source (depoly from a branch)=>branch Select the corresponding branch
 
 
 
--Note: After the GitHub page is built, you can directly access it as follows: https://xxxx.github.io/xxxx/ It is normal that the resource files under cannot be displayed, but they can be obtained normally in the code
+- Note: After the GitHub page is built, you can directly access it as follows: https://xxxx.github.io/xxxx/ It is normal that the resource files under cannot be displayed, but they can be obtained normally in the code
 
 
 
--Reference access cases such as Cesium case=>Offline map=>Intranet Gaode
+- Reference access cases such as Cesium case=>Offline map=>Intranet Gaode

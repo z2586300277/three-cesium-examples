@@ -971,6 +971,13 @@ export default [
                     keywords: 'three.js,风吹动画',
                     description: '风吹动画'
                 }
+            },
+            {
+                id: 'gsapCollection',
+                name: '动画合集',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/application/gsapCollection.js',
+                image: HOST + 'threeExamples/application/gsapCollection.jpg'
             }
         ]
     },
