@@ -2,7 +2,7 @@
 
 ##  开源不易 - ⭐ - 点星助力 -⚡ - 每日更新
 
-加入仓库一起管理 联系🐧QQ             |  🐧QQ群         
+加入仓库一起管理 联系🐧QQ             |  🐧互相帮助QQ群         
 :-------------------------:|:-------------------------:
 2586300277  |  865182188  
 
@@ -14,7 +14,7 @@
 
 - gitee仓库 https://gitee.com/zhang-jingguang/three-cesium-examples
   
-- 注: 点个星星，不管遇到任何技术艰难险阻，three-cesium-examples 永远站在你身后。
+- 人生旅程中的web3d知识记录, 复习回顾, 高效查阅, 资源共享, 为爱发电。  
 
 - 注: 本站框架和在线调试源于three-editor库。
 
@@ -98,10 +98,8 @@
 
 
 
-Join the warehouse and manage contacts together 🐧QQ | 🐧 QQ group
-
+Join the warehouse and manage contacts together 🐧QQ | 🐧 Mutual assistance QQ group
 :-------------------------:|:-------------------------:
-
 2586300277 | 865182188
 
 
@@ -122,7 +120,7 @@ Join the warehouse and manage contacts together 🐧QQ | 🐧 QQ group
 
 
 
--Note: Click on a star, no matter what technical difficulties or obstacles you encounter, thread examples will always stand behind you.
+-Web3D knowledge recording, review, efficient searching, resource sharing in the journey of life, generating electricity for love
 
 
 
