@@ -618,16 +618,11 @@ export default [
         name: '粒子',
         children: [
             {
-                id: 'particleScattered',
-                name: '粒子聚散',
+                id: 'z2586300277',
+                name: '优雅永不过时',
                 author: 'z2586300277',
-                codeUrl: HOST + 'threeExamples/particle/particleScattered.js',
-                image: HOST + 'threeExamples/particle/particleScattered.jpg',
-                meta: {
-                    title: '粒子聚散',
-                    keywords: 'three.js,粒子聚散',
-                    description: '使用three.js粒子聚散'
-                }
+                codeUrl: HOST + 'threeExamples/particle/z2586300277.js',
+                image: HOST + 'threeExamples/particle/z2586300277.jpg',
             },
             {
                 id: "RandomParticle",
@@ -663,6 +658,18 @@ export default [
                     title: "粒子泡泡",
                     keywords: "three.js,粒子泡泡",
                     description: "粒子泡泡"
+                }
+            },
+            {
+                id: 'particleScattered',
+                name: '粒子聚散',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/particle/particleScattered.js',
+                image: HOST + 'threeExamples/particle/particleScattered.jpg',
+                meta: {
+                    title: '粒子聚散',
+                    keywords: 'three.js,粒子聚散',
+                    description: '使用three.js粒子聚散'
                 }
             },
             {
