@@ -10,6 +10,13 @@ export default [
     },
 
     {
+        id: 'Threejs',
+        name: 'Threejs官方',
+        github: 'https://threejs.org/',
+        icon: HOST + 'files/site/logo.svg'
+    },
+
+    {
         id: 'mrdoob',
         name: 'mrdoob',
         github: 'https://github.com/mrdoob',

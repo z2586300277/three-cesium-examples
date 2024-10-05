@@ -168,7 +168,7 @@ export default [
             },
             {
                 id: 'kallkago_su7',
-                tag: '优秀',
+                tag: '热门-#5f9be3',
                 name: 'su7 demo',
                 author: 'KallkaGo',
                 openUrl: 'https://z2586300277.github.io/show-site/su7_demo/',
@@ -218,11 +218,13 @@ export default [
                 }
             },
             {
-                id: 'raningSea',
-                name: '波涛海浪',
+                id: 'textStarShader',
+                name: '点星感谢',
+                tag: '致谢',
+                referAuthor: 'Threejs',
                 author: 'z2586300277',
-                codeUrl: HOST + 'threeExamples/shader/raningSea.js',
-                image: HOST + 'threeExamples/shader/raningSea.jpg',
+                codeUrl: HOST + 'threeExamples/shader/textStarShader.js',
+                image: HOST + 'threeExamples/shader/textStarShader.jpg',
             },
             {
                 id: 'fenceShader',
@@ -235,6 +237,13 @@ export default [
                     keywords: 'three.js,围栏着色器',
                     description: '使用three.js围栏着色器'
                 }
+            },
+            {
+                id: 'raningSea',
+                name: '波涛海浪',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/shader/raningSea.js',
+                image: HOST + 'threeExamples/shader/raningSea.jpg',
             },
             {
                 id: 'fenceWall',
@@ -1026,6 +1035,7 @@ export default [
             {
                 id: 'heatmap3D',
                 name: '3D热力图',
+                tag: '常用-#e1d100',
                 referAuthor: 'treasureMoment',
                 author: 'z2586300277',
                 githubUrl: 'https://github.com/treasureMoment/heatmap-three.js',
