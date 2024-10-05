@@ -10,6 +10,13 @@ export default [
     },
 
     {
+        id: 'Threejs',
+        name: 'Threejs官方',
+        github: 'https://threejs.org/',
+        icon: HOST + 'files/site/logo.svg'
+    },
+
+    {
         id: 'mrdoob',
         name: 'mrdoob',
         github: 'https://github.com/mrdoob',
@@ -281,6 +288,13 @@ export default [
         name: 'hafly',
         github: 'https://github.com/hafly',
         icon: 'https://avatars.githubusercontent.com/u/13634263?v=4'
+    },
+
+    {
+        id:'simondevyoutube',
+        name:'simondevyoutube',
+        github: 'https://github.com/simondevyoutube',
+        icon: 'https://avatars.githubusercontent.com/u/57015305?v=4'
     }
 
 ]

@@ -15,6 +15,7 @@ export default [
             },
             {
                 id: 'jiawanlong',
+                tag: '推荐',
                 author: 'jiawanlong',
                 name: 'Cesium&Three.js 案例',
                 openUrl: 'https://jiawanlong.github.io/examples/cesiumEx/examples.html',
@@ -139,6 +140,16 @@ export default [
                 downloadUrl: 'https://g2657.github.io/examples-server/3DPoints/3DPoints.zip'
             },
             {
+                id:'threePerson',
+                name: '第三人称控制',
+                author: 'z2586300277',
+                referAuthor: 'simondevyoutube',
+                openUrl: 'https://g2657.github.io/examples-server/thirdPerson/',
+                githubUrl: 'https://github.com/simondevyoutube/ThreeJS_Tutorial_ThirdPersonCamera',
+                image: 'https://g2657.github.io/examples-server/thirdPerson/thirdPerson.jpg',
+                downloadUrl: 'https://g2657.github.io/examples-server/thirdPerson/thirdPerson.zip'
+            },
+            {
                 id: 'smartCity',
                 name: '智慧城市特效',
                 author: '193Eric',
@@ -157,6 +168,7 @@ export default [
             },
             {
                 id: 'kallkago_su7',
+                tag: '热门-#5f9be3',
                 name: 'su7 demo',
                 author: 'KallkaGo',
                 openUrl: 'https://z2586300277.github.io/show-site/su7_demo/',
@@ -165,6 +177,7 @@ export default [
             },
             {
                 id: 'z2586300277_3d_editor',
+                tag:'编辑器-#795cddba',
                 name: 'Three.js低代码编辑器',
                 author: 'z2586300277',
                 openUrl: 'https://z2586300277.github.io/three-editor/dist/#/editor',
@@ -205,11 +218,13 @@ export default [
                 }
             },
             {
-                id: 'raningSea',
-                name: '波涛海浪',
+                id: 'textStarShader',
+                name: '点星感谢',
+                tag: '致谢',
+                referAuthor: 'Threejs',
                 author: 'z2586300277',
-                codeUrl: HOST + 'threeExamples/shader/raningSea.js',
-                image: HOST + 'threeExamples/shader/raningSea.jpg',
+                codeUrl: HOST + 'threeExamples/shader/textStarShader.js',
+                image: HOST + 'threeExamples/shader/textStarShader.jpg',
             },
             {
                 id: 'fenceShader',
@@ -222,6 +237,13 @@ export default [
                     keywords: 'three.js,围栏着色器',
                     description: '使用three.js围栏着色器'
                 }
+            },
+            {
+                id: 'raningSea',
+                name: '波涛海浪',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/shader/raningSea.js',
+                image: HOST + 'threeExamples/shader/raningSea.jpg',
             },
             {
                 id: 'fenceWall',
@@ -408,6 +430,13 @@ export default [
                 }
             },
             {
+                id: 'chinaFlag',
+                name: '中国旗帜',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/shader/chinaFlag.js',
+                image: HOST + 'threeExamples/shader/chinaFlag.jpg',
+            },
+            {
                 id: 'rasterGrid',
                 name: '栅格网格',
                 author: 'yjsdszz',
@@ -433,6 +462,7 @@ export default [
             },
             {
                 id: 'audioSolutions',
+                tag: '声音',
                 name: '音乐可视化',
                 author: 'flowers-10',
                 codeUrl: HOST + 'threeExamples/shader/audioSolutions.js',
@@ -597,16 +627,11 @@ export default [
         name: '粒子',
         children: [
             {
-                id: 'particleScattered',
-                name: '粒子聚散',
+                id: 'z2586300277',
+                name: '优雅永不过时',
                 author: 'z2586300277',
-                codeUrl: HOST + 'threeExamples/particle/particleScattered.js',
-                image: HOST + 'threeExamples/particle/particleScattered.jpg',
-                meta: {
-                    title: '粒子聚散',
-                    keywords: 'three.js,粒子聚散',
-                    description: '使用three.js粒子聚散'
-                }
+                codeUrl: HOST + 'threeExamples/particle/z2586300277.js',
+                image: HOST + 'threeExamples/particle/z2586300277.jpg',
             },
             {
                 id: "RandomParticle",
@@ -642,6 +667,18 @@ export default [
                     title: "粒子泡泡",
                     keywords: "three.js,粒子泡泡",
                     description: "粒子泡泡"
+                }
+            },
+            {
+                id: 'particleScattered',
+                name: '粒子聚散',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/particle/particleScattered.js',
+                image: HOST + 'threeExamples/particle/particleScattered.jpg',
+                meta: {
+                    title: '粒子聚散',
+                    keywords: 'three.js,粒子聚散',
+                    description: '使用three.js粒子聚散'
                 }
             },
             {
@@ -693,6 +730,13 @@ export default [
         pid: 'application',
         name: '应用场景',
         children: [
+            {
+                id: 'z2586300277',
+                name: '优雅永不过时',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/application/z2586300277.js',
+                image: HOST + 'threeExamples/application/z2586300277.jpg',
+            },
             {
                 id: 'magicCircle',
                 name: '魔法阵',
@@ -936,6 +980,13 @@ export default [
                     keywords: 'three.js,风吹动画',
                     description: '风吹动画'
                 }
+            },
+            {
+                id: 'gsapCollection',
+                name: '动画合集',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/application/gsapCollection.js',
+                image: HOST + 'threeExamples/application/gsapCollection.jpg'
             }
         ]
     },
@@ -984,6 +1035,7 @@ export default [
             {
                 id: 'heatmap3D',
                 name: '3D热力图',
+                tag: '常用-#e1d100',
                 referAuthor: 'treasureMoment',
                 author: 'z2586300277',
                 githubUrl: 'https://github.com/treasureMoment/heatmap-three.js',
