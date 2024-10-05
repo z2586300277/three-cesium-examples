@@ -618,6 +618,13 @@ export default [
                     keywords: 'three.js,乌云',
                     description: '使用three.js乌云'
                 }
+            },
+            {
+                id: 'cellShader',
+                name: '细胞',
+                author: 'stonerao',
+                codeUrl: HOST + 'threeExamples/shader/cellShader.js',
+                image: HOST + 'threeExamples/shader/cellShader.jpg',
             }
         ]
     },
