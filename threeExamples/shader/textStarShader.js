@@ -4,7 +4,10 @@ import { TessellateModifier } from 'three/addons/modifiers/TessellateModifier.js
 import { FontLoader } from 'three/addons/loaders/FontLoader.js';
 import { TextGeometry } from 'three/addons/geometries/TextGeometry.js';
 
-const data = await fetch('https://api.github.com/repos/z2586300277/three-cesium-examples').then(res => res.json())
+const data =  {
+    stargazers_count: 230,
+    forks_count: 40
+}
 
 let mesh, uniforms, renderer, scene, camera, controls;
 
