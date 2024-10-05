@@ -4,10 +4,13 @@ import { TessellateModifier } from 'three/addons/modifiers/TessellateModifier.js
 import { FontLoader } from 'three/addons/loaders/FontLoader.js';
 import { TextGeometry } from 'three/addons/geometries/TextGeometry.js';
 
-const data =  {
-    stargazers_count: 230,
-    forks_count: 40
-}
+const data = await new Promise((r) => {
+    fetch('https://api.github.com/repos/z2586300277/three-cesium-examples').then(res => res.json()).then(d => r(d))
+    setTimeout(() => r({
+        stargazers_count: 230,
+        forks_count: 40
+    }), 1000)
+})
 
 let mesh, uniforms, renderer, scene, camera, controls;
 
@@ -29,7 +32,6 @@ function init(font) {
 
     scene = new THREE.Scene();
     scene.background = new THREE.Color(0x050505);
-
 
     let geometry = new TextGeometry(text, {
         font: font,
@@ -60,7 +62,7 @@ function init(font) {
             color.setHSL(h, s, l);
         }
         else color.set(0xa58fb5);
-        const d = 300 * (0.5 - Math.random());
+        const d = 60 * (0.5 - Math.random());
         for (let i = 0; i < 3; i++) {
             colors[index + (3 * i)] = color.r;
             colors[index + (3 * i) + 1] = color.g;
@@ -114,7 +116,7 @@ function init(font) {
                 vec3 light = vec3( 1.0 );
                 light = normalize( light );
                 float directional = max( dot( vNormal, light ), 0.0 );
-                gl_FragColor = vec4( mix(( directional + ambient ) * vColor, wave_color,  0.5), opacityf );
+                gl_FragColor = vec4( mix(( directional + ambient ) * vColor, wave_color,  0.6), opacityf );
             }
         `,
         transparent: true,
@@ -141,9 +143,7 @@ function onWindowResize() {
 }
 
 function render() {
-    const time = Date.now() * 0.002;
-    uniforms.amplitude.value = 1.0 + Math.cos(time * 0.5);
+    uniforms.amplitude.value = Math.sin(Date.now() * 0.001);
     controls.update();
     renderer.render(scene, camera);
 }
-
