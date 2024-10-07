@@ -608,6 +608,18 @@ export default [
                 }
             },
             {
+                id: 'waterSky',
+                name: '水天一色',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/shader/waterSky.js',
+                image: HOST + 'threeExamples/shader/waterSky.jpg',
+                meta: {
+                    title: '水天一色',
+                    keywords: 'three.js,水天一色',
+                    description: '使用three.js水天一色'
+                }
+            },
+            {
                 id: 'darkClouds',
                 name: '乌云',
                 author: 'stonerao',
