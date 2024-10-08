@@ -295,6 +295,13 @@ export default [
         name:'simondevyoutube',
         github: 'https://github.com/simondevyoutube',
         icon: 'https://avatars.githubusercontent.com/u/57015305?v=4'
+    },
+
+    {
+        id: 'bubinyang',
+        name: 'bubinyang',
+        github: 'https://github.com/bubinyang',
+        icon: 'https://avatars.githubusercontent.com/u/52728481?v=4'
     }
 
 ]
