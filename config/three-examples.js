@@ -644,6 +644,13 @@ export default [
                 author: 'stonerao',
                 codeUrl: HOST + 'threeExamples/shader/cellShader.js',
                 image: HOST + 'threeExamples/shader/cellShader.jpg',
+            },
+            {
+                id: 'mushroom',
+                name: '蘑菇',
+                author: 'bubinyang',
+                codeUrl: HOST + 'threeExamples/shader/mushroom.js',
+                image: HOST + 'threeExamples/shader/mushroom.jpg',
             }
         ]
     },
