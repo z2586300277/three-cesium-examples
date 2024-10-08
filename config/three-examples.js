@@ -529,6 +529,13 @@ export default [
                 image: HOST + 'threeExamples/shader/reliefImage.jpg',
             },
             {
+                id: 'flowerShader',
+                name: '花',
+                author:'z2586300277',
+                codeUrl: HOST + 'threeExamples/shader/flowerShader.js',
+                image: HOST + 'threeExamples/shader/flowerShader.jpg',
+            },
+            {
                 id: 'dissolveAnimate',
                 name: '溶解动画',
                 author: 'yiiiiiiqianyao',
@@ -608,6 +615,18 @@ export default [
                 }
             },
             {
+                id: 'waterSky',
+                name: '水天一色',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/shader/waterSky.js',
+                image: HOST + 'threeExamples/shader/waterSky.jpg',
+                meta: {
+                    title: '水天一色',
+                    keywords: 'three.js,水天一色',
+                    description: '使用three.js水天一色'
+                }
+            },
+            {
                 id: 'darkClouds',
                 name: '乌云',
                 author: 'stonerao',
@@ -618,6 +637,13 @@ export default [
                     keywords: 'three.js,乌云',
                     description: '使用three.js乌云'
                 }
+            },
+            {
+                id: 'cellShader',
+                name: '细胞',
+                author: 'stonerao',
+                codeUrl: HOST + 'threeExamples/shader/cellShader.js',
+                image: HOST + 'threeExamples/shader/cellShader.jpg',
             }
         ]
     },
