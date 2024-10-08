@@ -529,6 +529,13 @@ export default [
                 image: HOST + 'threeExamples/shader/reliefImage.jpg',
             },
             {
+                id: 'flowerShader',
+                name: '花',
+                author:'z2586300277',
+                codeUrl: HOST + 'threeExamples/shader/flowerShader.js',
+                image: HOST + 'threeExamples/shader/flowerShader.jpg',
+            },
+            {
                 id: 'dissolveAnimate',
                 name: '溶解动画',
                 author: 'yiiiiiiqianyao',
