@@ -1028,6 +1028,14 @@ export default [
         name: '物理应用',
         children: [
             {
+                id: 'threeForce',
+                name: '力导向图',
+                author: 'vasturiano',
+                openUrl: 'https://vasturiano.github.io/3d-force-graph/example/large-graph/',
+                githubUrl: 'https://github.com/vasturiano/3d-force-graph',
+                image: HOST + 'threeExamples/physics/threeForce.jpg',
+            },
+            {
                 id: 'physicsMesh',
                 name: '物理cannon使用',
                 author: 'z2586300277',

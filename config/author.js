@@ -302,6 +302,13 @@ export default [
         name: 'bubinyang',
         github: 'https://github.com/bubinyang',
         icon: 'https://avatars.githubusercontent.com/u/52728481?v=4'
+    },
+
+    {
+        id: 'vasturiano',
+        name: 'vasturiano',
+        github: 'https://github.com/vasturiano',
+        icon: 'https://avatars.githubusercontent.com/u/6784226?v=4'
     }
 
 ]
