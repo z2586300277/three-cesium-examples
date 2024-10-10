@@ -651,6 +651,13 @@ export default [
                 author: 'bubinyang',
                 codeUrl: HOST + 'threeExamples/shader/mushroom.js',
                 image: HOST + 'threeExamples/shader/mushroom.jpg',
+            },
+            {
+                id: 'mosaicShader',
+                name: '马赛克',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/shader/mosaicShader.js',
+                image: HOST + 'threeExamples/shader/mosaicShader.jpg',
             }
         ]
     },
