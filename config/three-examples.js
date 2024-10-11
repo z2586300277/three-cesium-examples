@@ -210,7 +210,6 @@ export default [
                 author: 'Siricee',
                 codeUrl: HOST + 'threeExamples/shader/grassShader.js',
                 image: HOST + 'threeExamples/shader/grassShader.jpg',
-                image: HOST + 'threeExamples/shader/grassShader.jpg',
                 meta: {
                     title: '草地着色器',
                     keywords: 'three.js,草地着色器',
@@ -644,6 +643,32 @@ export default [
                 author: 'stonerao',
                 codeUrl: HOST + 'threeExamples/shader/cellShader.js',
                 image: HOST + 'threeExamples/shader/cellShader.jpg',
+            },
+            {
+                id: 'mushroom',
+                name: '蘑菇',
+                author: 'bubinyang',
+                codeUrl: HOST + 'threeExamples/shader/mushroom.js',
+                image: HOST + 'threeExamples/shader/mushroom.jpg',
+            },
+            {
+                id: 'mosaicShader',
+                name: '马赛克',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/shader/mosaicShader.js',
+                image: HOST + 'threeExamples/shader/mosaicShader.jpg',
+            },
+            {
+                id: 'shader_planet',
+                name: '着色器行星',
+                author: 'nico',
+                codeUrl: HOST + 'threeExamples/shader/shader_planet.js',
+                image: HOST + 'threeExamples/shader/shader_planet.jpg',
+                inject: {
+                    importmap: {
+                        "three_noise": HOST + "js/wasm/three_noise.js"
+                    }
+                }
             }
         ]
     },
@@ -683,6 +708,7 @@ export default [
                     description: "粒子效果的行星"
                 }
             },
+            
             {
                 id: "bubble",
                 name: "粒子泡泡",
@@ -749,6 +775,13 @@ export default [
                 author: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/particle/waveParticleShader.js',
                 image: HOST + 'threeExamples/particle/waveParticleShader.jpg',
+            },
+            {
+                id: 'particleLine',
+                name: '粒子线条',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/particle/particleLine.js',
+                image: HOST + 'threeExamples/particle/particleLine.jpg',
             }
         ]
     },
@@ -1020,6 +1053,14 @@ export default [
         pid: 'physics',
         name: '物理应用',
         children: [
+            {
+                id: 'threeForce',
+                name: '力导向图',
+                author: 'vasturiano',
+                openUrl: 'https://vasturiano.github.io/3d-force-graph/example/large-graph/',
+                githubUrl: 'https://github.com/vasturiano/3d-force-graph',
+                image: HOST + 'threeExamples/physics/threeForce.jpg',
+            },
             {
                 id: 'physicsMesh',
                 name: '物理cannon使用',

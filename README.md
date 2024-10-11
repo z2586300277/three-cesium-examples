@@ -1,10 +1,12 @@
 # 💎 原生Three 和 Cesium 案例 - 更新到死 - 只做开源 -
 
-##  开源不易 - ⭐ - 点星助力 -⚡ - 每日更新
+##  开源不易 - ⭐ - 点星助力 -⚡ - 每日更新 - 👋 - 欢迎加入
 
 加入仓库一起管理 联系🐧QQ             |  🐧互相帮助QQ群         
 :-------------------------:|:-------------------------:
-2586300277  |  865182188  
+2586300277 / 805879871  |  865182188  
+
+<img src="https://contrib.rocks/image?repo=z2586300277/three-cesium-examples" />
 
 - github dev分支实时预览 http://z2586300277.github.io/three-cesium-examples
 
@@ -14,9 +16,9 @@
 
 - gitee仓库 https://gitee.com/zhang-jingguang/three-cesium-examples
   
-- 人生旅程中的web3d知识记录, 复习回顾, 高效查阅, 资源共享, 为爱发电。 
+- 人生旅程中的web3d知识记录, 复习回顾, 高效查阅, 资源共享, 为爱发电。(期待你的一起加入) 
 
-- 关注git histroy, 记录我的每一天。 
+- 关注git histroy, 记录我的每一天, 对学习热爱的朋友可 follow me。
 
 - 注: 本站框架和在线调试源于three-editor库。
 
