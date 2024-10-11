@@ -3,7 +3,7 @@ import { OrbitControls } from "three/examples/jsm/controls/OrbitControls.js";
 
 const box = document.getElementById("box");
 const scene = new THREE.Scene();
-const texture = await new THREE.TextureLoader().load(HOST + '/files/images/8k_stars_milky_way.jpg')
+const texture = await new THREE.TextureLoader().load(FILE_HOST + 'images/channels/8k_stars_milky_way.jpg')
 scene.background = texture;
 const camera = new THREE.PerspectiveCamera(
     75,

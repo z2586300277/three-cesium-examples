@@ -776,7 +776,13 @@ export default [
                 codeUrl: HOST + 'threeExamples/particle/waveParticleShader.js',
                 image: HOST + 'threeExamples/particle/waveParticleShader.jpg',
             },
-
+            {
+                id: 'particleLine',
+                name: '粒子线条',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/particle/particleLine.js',
+                image: HOST + 'threeExamples/particle/particleLine.jpg',
+            }
         ]
     },
     {
