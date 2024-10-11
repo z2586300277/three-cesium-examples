@@ -10,6 +10,8 @@ window.HOST = HOST // 当前项目服务 host 地址, 注入到全局变量
 
 window.FILE_HOST = FILE_HOST // 文件资源服务器地址, 注入到全局变量
 
+window.GLOBAL_CONFIG = { HOST, FILE_HOST } // 全局配置 此变量可以在 iframe 中获取
+
 // 依赖注入可使用 如 线上官网 或 cdn 或者本地路径
 window.THREE_CESIUM_NAVIGATION = [
     {
