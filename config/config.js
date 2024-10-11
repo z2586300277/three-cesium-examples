@@ -25,7 +25,8 @@ window.THREE_CESIUM_NAVIGATION = [
                 "postprocessing": HOST + "js/postprocessing.js",
                 "cannon-es": HOST + "js/cannon-es.js",
                 "dat.gui": HOST + "js/dat.gui.module.js",
-                "@tweenjs/tween.js": HOST + "js/tween.esm.js"
+                "@tweenjs/tween.js": HOST + "js/tween.esm.js",
+                "three_noise": HOST + "js/wasm/three_noise.js"
             }
         }
     },

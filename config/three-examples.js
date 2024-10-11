@@ -210,7 +210,6 @@ export default [
                 author: 'Siricee',
                 codeUrl: HOST + 'threeExamples/shader/grassShader.js',
                 image: HOST + 'threeExamples/shader/grassShader.jpg',
-                image: HOST + 'threeExamples/shader/grassShader.jpg',
                 meta: {
                     title: '草地着色器',
                     keywords: 'three.js,草地着色器',
@@ -658,6 +657,13 @@ export default [
                 author: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/shader/mosaicShader.js',
                 image: HOST + 'threeExamples/shader/mosaicShader.jpg',
+            },
+            {
+                id: 'shader_planet',
+                name: '着色器行星',
+                author: 'nico',
+                codeUrl: HOST + 'threeExamples/shader/shader_planet.js',
+                image: HOST + 'threeExamples/shader/shader_planet.jpg',
             }
         ]
     },
@@ -697,6 +703,7 @@ export default [
                     description: "粒子效果的行星"
                 }
             },
+            
             {
                 id: "bubble",
                 name: "粒子泡泡",
@@ -763,7 +770,8 @@ export default [
                 author: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/particle/waveParticleShader.js',
                 image: HOST + 'threeExamples/particle/waveParticleShader.jpg',
-            }
+            },
+
         ]
     },
     {
