@@ -664,6 +664,11 @@ export default [
                 author: 'nico',
                 codeUrl: HOST + 'threeExamples/shader/shader_planet.js',
                 image: HOST + 'threeExamples/shader/shader_planet.jpg',
+                inject: {
+                    importmap: {
+                        "three_noise": HOST + "js/wasm/three_noise.js"
+                    }
+                }
             }
         ]
     },
