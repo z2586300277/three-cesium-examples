@@ -143,7 +143,7 @@ export default [
                 id:'threePerson',
                 name: '第三人称控制',
                 author: 'z2586300277',
-                referAuthor: 'simondevyoutube',
+                referUrl: 'https://github.com/simondevyoutube/ThreeJS_Tutorial_ThirdPersonCamera',
                 openUrl: 'https://g2657.github.io/examples-server/thirdPerson/',
                 githubUrl: 'https://github.com/simondevyoutube/ThreeJS_Tutorial_ThirdPersonCamera',
                 image: 'https://g2657.github.io/examples-server/thirdPerson/thirdPerson.jpg',
@@ -228,7 +228,6 @@ export default [
                 id: 'textStarShader',
                 name: '点星感谢',
                 tag: '致谢',
-                referAuthor: 'Threejs',
                 author: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/shader/textStarShader.js',
                 image: HOST + 'threeExamples/shader/textStarShader.jpg',
@@ -1058,6 +1057,7 @@ export default [
             {
                 id: 'gsapCollection',
                 name: '动画合集',
+                tag: '动画',
                 author: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/application/gsapCollection.js',
                 image: HOST + 'threeExamples/application/gsapCollection.jpg'
@@ -1118,8 +1118,8 @@ export default [
                 id: 'heatmap3D',
                 name: '3D热力图',
                 tag: '常用-#e1d100',
-                referAuthor: 'treasureMoment',
                 author: 'z2586300277',
+                referUrl: 'https://github.com/treasureMoment/heatmap-three.js',
                 githubUrl: 'https://github.com/treasureMoment/heatmap-three.js',
                 codeUrl: HOST + 'threeExamples/expand/heatmap3D.js',
                 image: HOST + 'threeExamples/expand/heatmap3D.jpg',
@@ -1131,6 +1131,14 @@ export default [
                 inject: {
                     src: [HOST + "js/heatmap.js"]
                 }
+            },
+            {
+                id: 'multWindowScene',
+                name: '多浏览器窗口连接',
+                author: 'z2586300277',
+                referUrl: 'https://github.com/bgstaal/multipleWindow3dScene',
+                codeUrl: HOST + 'threeExamples/expand/multWindowScene.js',
+                image: HOST + 'threeExamples/expand/multWindowScene.jpg',
             }
         ]
     },
@@ -1219,6 +1227,13 @@ export default [
                 }
             },
             {
+                id: 'loadingAnimate',
+                name: '加载动画',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/basic/loadingAnimate.js',
+                image: HOST + 'threeExamples/basic/loadingAnimate.jpg',
+            },
+            {
                 id: 'outlinePass',
                 name: '轮廓光',
                 author: 'z2586300277',
@@ -1281,6 +1296,7 @@ export default [
             {
                 id: 'cssElement',
                 name: 'CSS元素',
+                tag: 'DOM',
                 author: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/basic/cssElement.js',
                 image: HOST + 'threeExamples/basic/cssElement.jpg',

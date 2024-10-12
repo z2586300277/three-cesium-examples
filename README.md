@@ -61,7 +61,7 @@
     name: '名称',
     tag: '标签名字-背景颜色',
     author: '作者id',
-    referAuthor: '案例参考来源作者id', // 如 没有可不配置
+    referUrl: '案例参考来源地址', // 如 没有可不配置
     image: HOST + 'threeExamples/basic/test.jpg', // 对应窗口图
     codeUrl: HOST + 'threeExamples/basic/test.js', // js module格式 大多数案例形式
     htmlUrl: HOST + 'threeExamples/test/test.html' // html 在线格式 如 three案例 => 粒子 => 随机粒子 粒子行星
@@ -205,7 +205,7 @@ tag: 'tag-color',
 
 Author: 'Author ID',
 
-ReferAuthor: 'Case reference source author id',//If not available, do not configure it
+referUrl: 'Case reference source address',//If not available, do not configure it
 
 Image: HOST+'ThreeEmples/basic/test. jpg',//corresponding window image
 
