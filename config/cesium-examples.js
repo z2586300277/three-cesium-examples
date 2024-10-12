@@ -89,6 +89,54 @@ export default [
                     keywords: 'cesium.js,天地图',
                     description: 'cesium 天地图'
                 }
+            }, 
+            {
+                id: 'xyz',
+                name: 'OGC- xyz服务',
+                author: 'jiawanlong',
+                codeUrl: HOST + 'cesiumExamples/layer/xyz.js',
+                image: HOST + 'cesiumExamples/layer/xyz.jpg',
+                meta: {
+                    title: 'xyz服务',
+                    keywords: 'cesium.js,影像',
+                    description: 'xyz服务'
+                }
+            },
+            {
+                id: 'tms',
+                name: 'OGC- tms服务',
+                author: 'jiawanlong',
+                codeUrl: HOST + 'cesiumExamples/layer/tms.js',
+                image: HOST + 'cesiumExamples/layer/tms.jpg',
+                meta: {
+                    title: 'tms服务',
+                    keywords: 'cesium.js,影像',
+                    description: 'tms服务'
+                }
+            },
+            {
+                id: 'wms',
+                name: 'OGC- wms服务',
+                author: 'jiawanlong',
+                codeUrl: HOST + 'cesiumExamples/layer/wms.js',
+                image: HOST + 'cesiumExamples/layer/wms.jpg',
+                meta: {
+                    title: 'wms服务',
+                    keywords: 'cesium.js,影像',
+                    description: 'wms服务'
+                }
+            },
+            {
+                id: 'wmts',
+                name: 'OGC- wmts服务',
+                author: 'jiawanlong',
+                codeUrl: HOST + 'cesiumExamples/layer/wmts.js',
+                image: HOST + 'cesiumExamples/layer/wmts.jpg',
+                meta: {
+                    title: 'wmts服务',
+                    keywords: 'cesium.js,影像',
+                    description: 'wmts服务'
+                }
             },
             {
                 id: 'terrainLayer',

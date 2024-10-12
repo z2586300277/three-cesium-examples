@@ -176,6 +176,14 @@ export default [
                 image: HOST + 'threeExamples/openSource/kallkago_su7.jpg'
             },
             {
+                id: 'su7peng',
+                name: 'SU7复刻仿真',
+                author: 'Pong-lei',
+                openUrl: 'https://g2657.github.io/examples-server/su7_2/',
+                githubUrl: 'https://github.com/Pong-lei/su7_imitate',
+                image: HOST + 'threeExamples/openSource/su7peng.jpg'
+            },
+            {
                 id: 'z2586300277_3d_editor',
                 tag:'编辑器-#795cddba',
                 name: 'Three.js低代码编辑器',
@@ -315,6 +323,13 @@ export default [
                     keywords:'three.js,雷达着色器',
                     description:'使用three.雷达着色器'
                 }
+            },
+            {
+                id: 'candleShader',
+                name: '蜡烛',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/shader/candleShader.js',
+                image: HOST + 'threeExamples/shader/candleShader.jpg',
             },
             {
                 id: 'ringShader',
