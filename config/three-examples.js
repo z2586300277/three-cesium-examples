@@ -1219,6 +1219,13 @@ export default [
                 }
             },
             {
+                id: 'loadingAnimate',
+                name: '加载动画',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/basic/loadingAnimate.js',
+                image: HOST + 'threeExamples/basic/loadingAnimate.jpg',
+            },
+            {
                 id: 'outlinePass',
                 name: '轮廓光',
                 author: 'z2586300277',
