@@ -30,7 +30,7 @@ var matrixIds = new Array(maxLevel);
 for (var z = 0; z <= maxLevel; z++) {
     matrixIds[z] = (z + 1).toString();
 }
-var _url = 'http://t{s}.tianditu.gov.cn/' + _layer + '_c/wmts?service=WMTS&version=1.0.0&request=GetTile&tilematrix={TileMatrix}&layer=' + _layer + '&style={style}&tilerow={TileRow}&tilecol={TileCol}&tilematrixset={TileMatrixSet}&format=tiles&tk=' + token;
+var _url = 'https://t{s}.tianditu.gov.cn/' + _layer + '_c/wmts?service=WMTS&version=1.0.0&request=GetTile&tilematrix={TileMatrix}&layer=' + _layer + '&style={style}&tilerow={TileRow}&tilecol={TileCol}&tilematrixset={TileMatrixSet}&format=tiles&tk=' + token;
 var wmts = new Cesium.WebMapTileServiceImageryProvider({
     url: _url,
     layer: _layer,

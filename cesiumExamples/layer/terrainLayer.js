@@ -50,7 +50,15 @@ viewer.scene.backgroundColor = new Cesium.Color(0.0, 0.0, 0.0, 0.0)
 viewer._cesiumWidget._creditContainer.style.display = "none"
 
 // 加载地形
-viewer.terrainProvider = await Cesium.CesiumTerrainProvider.fromIonAssetId(3957, {
+// viewer.terrainProvider = await Cesium.CesiumTerrainProvider.fromIonAssetId(3957, {
+
+//     requestWaterMask: true,
+
+//     requestVertexNormals: true
+
+// })
+
+viewer.terrainProvider = await Cesium.createWorldTerrainAsync({
 
     requestWaterMask: true,
 

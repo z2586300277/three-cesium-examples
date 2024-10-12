@@ -325,6 +325,13 @@ export default [
                 }
             },
             {
+                id: 'candleShader',
+                name: '蜡烛',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/shader/candleShader.js',
+                image: HOST + 'threeExamples/shader/candleShader.jpg',
+            },
+            {
                 id: 'ringShader',
                 name: '环形着色器',
                 author: 'stonerao',

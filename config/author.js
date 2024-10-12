@@ -314,7 +314,7 @@ export default [
     {   
         id:'Pong-lei',
         name:'Pong-lei',
-        github: 'https://github.com/Pong-lei/su7_imitate',
+        github: 'https://github.com/Pong-lei',
         icon: 'https://avatars.githubusercontent.com/u/57822607?v=4'
     }
 

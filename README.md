@@ -12,9 +12,7 @@
 
 - vercel 部署预览 https://three-cesium-examples.vercel.app
   
-- 友情链接3D编辑器 https://github.com/z2586300277/three-editor
-
-- gitee仓库 https://gitee.com/zhang-jingguang/three-cesium-examples
+- 国内 gitee仓库 https://gitee.com/zhang-jingguang/three-cesium-examples
   
 - 人生旅程中的web3d知识记录, 复习回顾, 高效查阅, 资源共享, 为爱发电。(期待你的一起加入) 
 
@@ -113,14 +111,6 @@ Join the warehouse and manage contacts together 🐧QQ | 🐧 Mutual assistance 
 
 
 - Vercel Deployment Preview https://three-cesium-examples.vercel.app
-
-
-
-- Friendship Link 3D Editor https://github.com/z2586300277/three-editor
-
-
-
-- Gitee repository https://gitee.com/zhang-jingguang/three-cesium-examples
 
 
 - Web3D knowledge recording, review, efficient searching, resource sharing in the journey of life, generating electricity for love
