@@ -1131,6 +1131,13 @@ export default [
                 inject: {
                     src: [HOST + "js/heatmap.js"]
                 }
+            },
+            {
+                id: 'multWindowScene',
+                name: '多浏览器窗口连接',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/expand/multWindowScene.js',
+                image: HOST + 'threeExamples/expand/multWindowScene.jpg',
             }
         ]
     },
