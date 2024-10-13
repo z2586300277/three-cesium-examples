@@ -573,6 +573,14 @@ export default [
                 }
             },
             {
+                id: 'heartShader',
+                name: '心',
+                author: 'z2586300277',
+                referUrl: 'https://github.com/xiaolidan00/my-earth?tab=readme-ov-file',
+                codeUrl: HOST + 'threeExamples/shader/heartShader.js',
+                image: HOST + 'threeExamples/shader/heartShader.jpg',
+            },
+            {
                 id: "shaderBlock",
                 name: "方块着色器",
                 author: "z2586300277",
