@@ -981,6 +981,13 @@ export default [
                 }
             },
             {
+                id: 'lightBar',
+                name: '光柱',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/application/lightBar.js',
+                image: HOST + 'threeExamples/application/lightBar.jpg',
+            },
+            {
                 id: 'flowerRain',
                 name: '花瓣雨',
                 author: 'QuarkGluonPlasma',
