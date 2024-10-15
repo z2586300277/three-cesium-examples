@@ -189,7 +189,7 @@ export default [
                 author: 'Threejs',
                 openUrl: 'https://fengtianxi001.github.io/MF-TurbineMonitor',
                 githubUrl: 'https://github.com/fengtianxi001/MF-TurbineMonitor',
-                image: 'https://raw.githubusercontent.com/fengtianxi001/MF-TurbineMonitor/v3.0.0/screenshot/screenshot.png'
+                image: FILE_HOST + 'images/fengji.jpg'
             },
             {
                 id: 'z2586300277_3d_editor',
@@ -1158,6 +1158,7 @@ export default [
             {
                 id: 'modelBlendReflector',
                 name: '模型反射效果',
+                tag: '反射',
                 author: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/expand/modelBlendReflector.js',
                 image: HOST + 'threeExamples/expand/modelBlendReflector.jpg',
