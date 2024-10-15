@@ -1148,6 +1148,13 @@ export default [
                 }
             },
             {
+                id: 'modelBlendReflector',
+                name: '模型反射效果',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/expand/modelBlendReflector.js',
+                image: HOST + 'threeExamples/expand/modelBlendReflector.jpg',
+            },
+            {
                 id: 'multWindowScene',
                 name: '多浏览器窗口连接',
                 author: 'z2586300277',
