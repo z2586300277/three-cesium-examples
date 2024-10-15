@@ -14,7 +14,7 @@
   
 - 国内 gitee仓库 https://gitee.com/zhang-jingguang/three-cesium-examples
   
-- 人生旅程中的web3d知识记录, 复习回顾, 高效查阅, 资源共享, 为爱发电。(期待你的一起加入) 
+- 人生旅程中的web3d知识记录, 复习回顾, 高效查阅, 资源共享, 为爱发电。(有好的仓库或作品分享给我哦🐸) 
 
 - 关注git histroy, 记录我的每一天, 对学习热爱的朋友可 follow me。
 
