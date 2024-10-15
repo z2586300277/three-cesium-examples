@@ -1,12 +1,12 @@
 # 💎 原生Three 和 Cesium 案例 - 更新到死 - 只做开源 -
 
-##  开源不易 - ⭐ - 点星助力 -⚡ - 每日更新 - 👋 - 欢迎加入
+##  开源不易 - ⭐ - 点星助力 -⚡ - 每日更新 - 👋 - 为爱发电
 
-加入仓库一起管理 联系🐧QQ             |  🐧互相帮助QQ群         
+加入仓库 联系🐧QQ             |  🐧互助QQ群         
 :-------------------------:|:-------------------------:
 2586300277 / 805879871  |  865182188  
 
-<img src="https://contrib.rocks/image?repo=z2586300277/three-cesium-examples" />
+<img src="https://contrib.rocks/image?repo=z2586300277/three-cesium-examples&v=1" />
 
 - github dev分支实时预览 http://z2586300277.github.io/three-cesium-examples
 
@@ -14,7 +14,7 @@
   
 - 国内 gitee仓库 https://gitee.com/zhang-jingguang/three-cesium-examples
   
-- 人生旅程中的web3d知识记录, 复习回顾, 高效查阅, 资源共享, 为爱发电。(期待你的一起加入) 
+- 人生旅程中的web3d知识记录, 复习回顾, 高效查阅, 资源共享, 为爱发电。(有好的仓库或作品分享给我哦🐸) 
 
 - 关注git histroy, 记录我的每一天, 对学习热爱的朋友可 follow me。
 
@@ -28,7 +28,7 @@
 
 ## 🌳创作
 
-### - 加入并管理仓库的开发者，可自行创建自己的分支进行开发
+### - 加入仓库的开发者，可自行创建自己的分支
 
 ##### - 如果这些里面有案例帮助了您 - 有意的话您可以提交您的作品 - 让爱传递给更多开发者
 

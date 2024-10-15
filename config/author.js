@@ -11,7 +11,7 @@ export default [
 
     {
         id: 'Threejs',
-        name: 'Threejs官方',
+        name: 'Threejs',
         github: 'https://threejs.org/',
         icon: HOST + 'files/site/logo.svg'
     },

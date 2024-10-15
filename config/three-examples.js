@@ -8,7 +8,7 @@ export default [
             {
                 id: 'alwxkxk',
                 author: 'alwxkxk',
-                name: 'Three.js 案例',
+                name: 'Three案例',
                 openUrl: 'https://alwxkxk.github.io/threejs-example/',
                 githubUrl: 'https://github.com/alwxkxk/threejs-example',
                 image: FILE_HOST + 'images/alwxkxk.jpg'
@@ -17,7 +17,7 @@ export default [
                 id: 'jiawanlong',
                 tag: '推荐',
                 author: 'jiawanlong',
-                name: 'Cesium&Three.js 案例',
+                name: 'Cesium案例',
                 openUrl: 'https://jiawanlong.github.io/examples/cesiumEx/examples.html',
                 githubUrl: 'https://github.com/jiawanlong/Cesium-Examples',
                 image: FILE_HOST + 'images/jiawanlong.jpg'
@@ -25,7 +25,7 @@ export default [
             {
                 id: 'bosombaby',
                 author: 'bosombaby',
-                name: 'Three.js 源码地址',
+                name: 'Three 案例',
                 openUrl: 'https://product.vrteam.top/',
                 githubUrl: 'https://github.com/bosombaby/web3d-product',
                 image: FILE_HOST + 'images/bosombaby.jpg'
@@ -34,7 +34,7 @@ export default [
             {
                 id: 'wuyifan0203',
                 author: 'wuyifan0203',
-                name: 'Three.js 源码案例',
+                name: 'Three源码案例',
                 openUrl: 'https://wuyifan0203.github.io/threejs-demo',
                 githubUrl: 'https://github.com/wuyifan0203/threejs-demo',
                 image: FILE_HOST + 'images/wuyifan0203.jpg'
@@ -79,18 +79,18 @@ export default [
             {
                 id: 'zhengjie9510',
                 author: 'zhengjie9510',
-                name: 'Cesium.js案例',
+                name: 'Cesium案例',
                 openUrl: 'https://zhengjie9510.github.io/webgis-demo',
                 githubUrl: 'https://github.com/zhengjie9510/webgis-demo',
                 image: FILE_HOST + 'images/zhengjie9510.jpg'
             },
             {
-                id: 'Siricee',
-                author: 'Siricee',
-                name: 'Three案例',
-                openUrl: 'https://sirice-playground.netlify.app/#/grid',
-                githubUrl: 'https://github.com/Siricee/FrontEnd-Playground',
-                image: FILE_HOST + 'images/Siricee.jpg'
+                id: 'sketchThree',
+                author: 'Threejs',
+                name: 'Three特效',
+                openUrl: 'https://ykob.github.io/sketch-threejs/',
+                githubUrl: 'https://github.com/ykob/sketch-threejs',
+                image: FILE_HOST + 'images/sketchThree.jpg'
             }
         ]
     },
@@ -182,6 +182,14 @@ export default [
                 openUrl: 'https://g2657.github.io/examples-server/su7_2/',
                 githubUrl: 'https://github.com/Pong-lei/su7_imitate',
                 image: HOST + 'threeExamples/openSource/su7peng.jpg'
+            },
+            {
+                id: 'feng_ji',
+                name: '风机',
+                author: 'Threejs',
+                openUrl: 'https://fengtianxi001.github.io/MF-TurbineMonitor',
+                githubUrl: 'https://github.com/fengtianxi001/MF-TurbineMonitor',
+                image: 'https://raw.githubusercontent.com/fengtianxi001/MF-TurbineMonitor/v3.0.0/screenshot/screenshot.png'
             },
             {
                 id: 'z2586300277_3d_editor',
@@ -571,6 +579,14 @@ export default [
                     keywords: "three.js,图片抖动",
                     description: "使用three图片抖动",
                 }
+            },
+            {
+                id: 'heartShader',
+                name: '心',
+                author: 'z2586300277',
+                referUrl: 'https://github.com/xiaolidan00/my-earth?tab=readme-ov-file',
+                codeUrl: HOST + 'threeExamples/shader/heartShader.js',
+                image: HOST + 'threeExamples/shader/heartShader.jpg',
             },
             {
                 id: "shaderBlock",
@@ -995,6 +1011,13 @@ export default [
                 }
             },
             {
+                id: 'lightBar',
+                name: '光柱',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/application/lightBar.js',
+                image: HOST + 'threeExamples/application/lightBar.jpg',
+            },
+            {
                 id: 'flowerRain',
                 name: '花瓣雨',
                 author: 'QuarkGluonPlasma',
@@ -1131,6 +1154,13 @@ export default [
                 inject: {
                     src: [HOST + "js/heatmap.js"]
                 }
+            },
+            {
+                id: 'modelBlendReflector',
+                name: '模型反射效果',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/expand/modelBlendReflector.js',
+                image: HOST + 'threeExamples/expand/modelBlendReflector.jpg',
             },
             {
                 id: 'multWindowScene',
