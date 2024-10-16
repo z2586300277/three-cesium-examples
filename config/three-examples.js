@@ -699,6 +699,18 @@ export default [
                         "three_noise": HOST + "js/wasm/three_noise.js"
                     }
                 }
+            },
+            {
+                id: 'contour',
+                name: '魔幻山体',
+                author: 'nico',
+                codeUrl: HOST + 'threeExamples/shader/contour.js',
+                image: HOST + 'threeExamples/shader/contour.jpg',
+                inject: {
+                    importmap: {
+                        "three_noise": HOST + "js/wasm/three_noise.js"
+                    }
+                }
             }
         ]
     },
