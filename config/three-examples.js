@@ -86,7 +86,7 @@ export default [
             },
             {
                 id: 'sketchThree',
-                author: 'Threejs',
+                author: 'AUTO',
                 name: 'Three特效',
                 openUrl: 'https://ykob.github.io/sketch-threejs/',
                 githubUrl: 'https://github.com/ykob/sketch-threejs',
@@ -140,7 +140,7 @@ export default [
                 downloadUrl: 'https://g2657.github.io/examples-server/3DPoints/3DPoints.zip'
             },
             {
-                id:'threePerson',
+                id: 'threePerson',
                 name: '第三人称控制',
                 author: 'z2586300277',
                 referUrl: 'https://github.com/simondevyoutube/ThreeJS_Tutorial_ThirdPersonCamera',
@@ -186,19 +186,25 @@ export default [
             {
                 id: 'feng_ji',
                 name: '风机',
-                author: 'Threejs',
+                author: 'AUTO',
                 openUrl: 'https://fengtianxi001.github.io/MF-TurbineMonitor',
                 githubUrl: 'https://github.com/fengtianxi001/MF-TurbineMonitor',
                 image: FILE_HOST + 'images/fengji.jpg'
             },
             {
                 id: 'z2586300277_3d_editor',
-                tag:'编辑器-#795cddba',
-                name: 'Three.js低代码编辑器',
+                tag: '编辑器-#795cddba',
+                name: '低代码组态编辑器',
                 author: 'z2586300277',
                 openUrl: 'https://z2586300277.github.io/three-editor/dist/#/editor',
                 githubUrl: 'https://github.com/z2586300277/three-editor',
-                image: FILE_HOST + 'images/editor.jpg'
+                image: FILE_HOST + 'images/editor.jpg',
+                links: [
+                    {
+                        name: '📖CSDN',
+                        url: 'https://blog.csdn.net/guang2586/article/details/142910241'
+                    }
+                ]
             }
         ]
     },
@@ -320,15 +326,15 @@ export default [
                 }
             },
             {
-                id:'radarShader',
-                name:'雷达着色器',
-                author:'stonerao',
-                codeUrl:HOST+'threeExamples/shader/radarShader.js',
-                image:HOST+'threeExamples/shader/radarShader.jpg',
-                meta:{
-                    title:'雷达着色器',
-                    keywords:'three.js,雷达着色器',
-                    description:'使用three.雷达着色器'
+                id: 'radarShader',
+                name: '雷达着色器',
+                author: 'stonerao',
+                codeUrl: HOST + 'threeExamples/shader/radarShader.js',
+                image: HOST + 'threeExamples/shader/radarShader.jpg',
+                meta: {
+                    title: '雷达着色器',
+                    keywords: 'three.js,雷达着色器',
+                    description: '使用three.雷达着色器'
                 }
             },
             {
@@ -552,7 +558,7 @@ export default [
             {
                 id: 'flowerShader',
                 name: '花',
-                author:'z2586300277',
+                author: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/shader/flowerShader.js',
                 image: HOST + 'threeExamples/shader/flowerShader.jpg',
             },
@@ -745,7 +751,7 @@ export default [
                     description: "粒子效果的行星"
                 }
             },
-            
+
             {
                 id: "bubble",
                 name: "粒子泡泡",
@@ -1165,7 +1171,7 @@ export default [
             {
                 id: 'modelBlendReflector',
                 name: '模型反射效果',
-                tag: '反射',
+                tag: '模型反射--14',
                 author: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/expand/modelBlendReflector.js',
                 image: HOST + 'threeExamples/expand/modelBlendReflector.jpg',

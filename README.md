@@ -59,9 +59,10 @@
 {
     id: '父级对应列表唯一id',
     name: '名称',
-    tag: '标签名字-背景颜色',
+    tag: '标签名字-背景颜色-字体大小',
     author: '作者id',
     referUrl: '案例参考来源地址', // 如 没有可不配置
+    links: [{ url: '连接', name: '名称' }] //配置link referUrl 将不显示
     image: HOST + 'threeExamples/basic/test.jpg', // 对应窗口图
     codeUrl: HOST + 'threeExamples/basic/test.js', // js module格式 大多数案例形式
     htmlUrl: HOST + 'threeExamples/test/test.html' // html 在线格式 如 three案例 => 粒子 => 随机粒子 粒子行星
@@ -201,11 +202,12 @@ Id: 'Unique id in the parent corresponding list',
 
 Name: 'Name',
 
-tag: 'tag-color',
+tag: 'tag-color-size',
 
 Author: 'Author ID',
 
 referUrl: 'Case reference source address',//If not available, do not configure it
+links: [{ url, name  }] // use links referUrl don`t show
 
 Image: HOST+'ThreeEmples/basic/test. jpg',//corresponding window image
 
