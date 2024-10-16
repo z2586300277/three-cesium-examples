@@ -706,11 +706,6 @@ export default [
                 author: 'nico',
                 codeUrl: HOST + 'threeExamples/shader/contour.js',
                 image: HOST + 'threeExamples/shader/contour.jpg',
-                inject: {
-                    importmap: {
-                        "three_noise": HOST + "js/wasm/three_noise.js"
-                    }
-                }
             }
         ]
     },
@@ -1299,6 +1294,14 @@ export default [
                     keywords: 'three.js,渐变三角形',
                     description: '使用three.js渐变三角形'
                 }
+            },
+            {
+                id: 'modelUnpack',
+                name: '模型拆解动画',
+                tag: '拆解',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/basic/modelUnpack.js',
+                image: HOST + 'threeExamples/basic/modelUnpack.jpg',
             },
             {
                 id: 'skyAndEnv',
