@@ -445,6 +445,14 @@ export default [
                 }
             },
             {
+                id: 'groundglass',
+                name: '毛玻璃',
+                author: 'z2586300277',
+                referUrl: 'https://github.com/hafly',
+                codeUrl: HOST + 'threeExamples/shader/groundglass.js',
+                image: HOST + 'threeExamples/shader/groundglass.jpg',
+            },
+            {
                 id: 'cobwebBox',
                 name: '蛛网箱子',
                 author: 'xzw199509',
