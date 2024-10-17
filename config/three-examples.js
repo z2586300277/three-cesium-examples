@@ -1177,6 +1177,14 @@ export default [
                 }
             },
             {
+                id: 'heatmapModel',
+                name: '模型热力图',
+                author: 'z2586300277',
+                referUrl: 'https://github.com/CHENJIAMIAN/InterpolatedGradientMaterial',
+                codeUrl: HOST + 'threeExamples/expand/heatmapModel.js',
+                image: HOST + 'threeExamples/expand/heatmapModel.jpg',
+            },
+            {
                 id: 'modelBlendReflector',
                 name: '模型反射效果',
                 tag: '模型反射--14',
