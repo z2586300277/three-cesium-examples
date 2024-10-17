@@ -9,21 +9,25 @@ const camera = new THREE.PerspectiveCamera(75, box.clientWidth / box.clientHeigh
 
 camera.position.set(0, 10, 10)
 
-const renderer = new THREE.WebGLRenderer()
+const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true, logarithmicDepthBuffer: true })
 
 renderer.setSize(box.clientWidth, box.clientHeight)
 
 box.appendChild(renderer.domElement)
 
-new OrbitControls(camera, renderer.domElement)
+const controls = new OrbitControls(camera, renderer.domElement)
+
+controls.enableDamping = true
 
 animate()
 
 function animate() {
 
-    requestAnimationFrame(animate)
+  requestAnimationFrame(animate)
 
-    renderer.render(scene, camera)
+  controls.update()
+
+  renderer.render(scene, camera)
 
 }
 
@@ -34,7 +38,7 @@ window.onresize = () => {
   camera.aspect = box.clientWidth / box.clientHeight
 
   camera.updateProjectionMatrix()
-  
+
 }
 
 // 文件地址

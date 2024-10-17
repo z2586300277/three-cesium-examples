@@ -1159,6 +1159,13 @@ export default [
                 }
             },
             {
+                id: 'geoBorder',
+                name: '地理边界',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/expand/geoBorder.js',
+                image: HOST + 'threeExamples/expand/geoBorder.jpg',
+            },
+            {
                 id: 'heatmap3D',
                 name: '3D热力图',
                 tag: '常用-#e1d100',
