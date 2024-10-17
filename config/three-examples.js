@@ -1362,6 +1362,13 @@ export default [
                 }
             },
             {
+                id: 'modelView',
+                name: '模型视图',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/basic/modelView.js',
+                image: HOST + 'threeExamples/basic/modelView.jpg',
+            },
+            {
                 id: 'cssElement',
                 name: 'CSS元素',
                 tag: 'DOM',
