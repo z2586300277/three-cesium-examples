@@ -11,7 +11,7 @@ const camera = new THREE.PerspectiveCamera(
     0.1,
     1000,
 );
-camera.position.set(0, 10, 10);
+camera.position.set(0, 0, 20);
 const renderer = new THREE.WebGLRenderer();
 renderer.setSize(box.clientWidth, box.clientHeight);
 box.appendChild(renderer.domElement);
@@ -22,9 +22,10 @@ window.onresize = () => {
     camera.updateProjectionMatrix();
 };
 
-animate();
+
 function animate() {
     // uniforms.iTime.value += 0.01
+    mesh.rotation.y += 0.01;
     requestAnimationFrame(animate);
     renderer.render(scene, camera);
 }
@@ -34,8 +35,8 @@ const generate_texture = async () => {
 
     // let noise = new ImprovedNoise();
 
-    let texture_height = 256,
-        texture_width = 256;
+    let texture_height = 1024,
+        texture_width = 1024;
     let texture_data = new Uint8Array(texture_height * texture_width * 4);
     for (let x = 0; x < texture_width; x++) {
         for (let y = 0; y < texture_height; y++) {
@@ -67,6 +68,7 @@ const generate_texture = async () => {
     texture.needsUpdate = true;
     return texture;
 };
+let material,mesh;
 const add_sky_sphere = async () => {
     const texture = await generate_texture();
     const uniforms = {
@@ -74,7 +76,7 @@ const add_sky_sphere = async () => {
             value: texture,
         },
     };
-    const sphere_geo = new THREE.SphereGeometry(5, 30, 30);
+    const sphere_geo = new THREE.SphereGeometry(5, 100, 100);
     const vertexShader = `
               varying vec2 vUv;
               void main() {
@@ -87,25 +89,56 @@ const add_sky_sphere = async () => {
             uniform sampler2D u_texture;
             void main(){
                   vec2 uv = vUv;
-                  // 通过 uv 的值进行某种平滑处理
-                  // uv.x = smoothstep(0.0, 1.0, uv.x);
-                  // uv颜色
                   vec4 color = texture2D(u_texture,uv);
                   gl_FragColor = color;
             }
           `;
-
-    const material = new THREE.ShaderMaterial({
+    material = new THREE.ShaderMaterial({
         uniforms,
         vertexShader,
         fragmentShader,
         side: THREE.DoubleSide,
         // wireframe:true
     });
-    const mesh = new THREE.Mesh(sphere_geo, material);
+    mesh = new THREE.Mesh(sphere_geo, material);
     // mesh.translateX(-10);
-
+    material.needsUpdate = true
     scene.add(mesh);
 };
 
+const change_material = ()=>{
+    if (params.showTerrain) {
+        material.vertexShader = `
+        uniform sampler2D u_texture;
+        varying vec2 vUv;
+        void main() {
+            vUv = uv;
+            vec4 color = texture2D(u_texture, uv);
+            // float height = length(color);
+            float height = color.r;
+            vec3 newPosition = position + normal * height * 1.5;
+            gl_Position = projectionMatrix * modelViewMatrix * vec4(newPosition, 1.0);
+        }
+        `
+    }else{
+        material.vertexShader = `
+        varying vec2 vUv;
+        void main() {
+            vUv = uv;
+            gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0);
+        }
+        `
+    }
+    material.needsUpdate = true
+}
+import { GUI } from "dat.gui";
+const params = {
+    showTerrain:false
+}
+const add_gui = ()=>{
+    const gui = new GUI()
+    gui.add(params,'showTerrain').onChange(change_material)
+}
 await add_sky_sphere();
+add_gui()
+animate();

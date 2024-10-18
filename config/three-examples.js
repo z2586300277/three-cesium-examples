@@ -86,7 +86,7 @@ export default [
             },
             {
                 id: 'sketchThree',
-                author: 'Threejs',
+                author: 'AUTO',
                 name: 'Three特效',
                 openUrl: 'https://ykob.github.io/sketch-threejs/',
                 githubUrl: 'https://github.com/ykob/sketch-threejs',
@@ -140,7 +140,7 @@ export default [
                 downloadUrl: 'https://g2657.github.io/examples-server/3DPoints/3DPoints.zip'
             },
             {
-                id:'threePerson',
+                id: 'threePerson',
                 name: '第三人称控制',
                 author: 'z2586300277',
                 referUrl: 'https://github.com/simondevyoutube/ThreeJS_Tutorial_ThirdPersonCamera',
@@ -186,19 +186,25 @@ export default [
             {
                 id: 'feng_ji',
                 name: '风机',
-                author: 'Threejs',
+                author: 'AUTO',
                 openUrl: 'https://fengtianxi001.github.io/MF-TurbineMonitor',
                 githubUrl: 'https://github.com/fengtianxi001/MF-TurbineMonitor',
-                image: 'https://raw.githubusercontent.com/fengtianxi001/MF-TurbineMonitor/v3.0.0/screenshot/screenshot.png'
+                image: FILE_HOST + 'images/fengji.jpg'
             },
             {
                 id: 'z2586300277_3d_editor',
-                tag:'编辑器-#795cddba',
-                name: 'Three.js低代码编辑器',
+                tag: '编辑器-#795cddba',
+                name: '低代码组态编辑器',
                 author: 'z2586300277',
                 openUrl: 'https://z2586300277.github.io/three-editor/dist/#/editor',
                 githubUrl: 'https://github.com/z2586300277/three-editor',
-                image: FILE_HOST + 'images/editor.jpg'
+                image: FILE_HOST + 'images/editor.jpg',
+                links: [
+                    {
+                        name: '📖CSDN',
+                        url: 'https://blog.csdn.net/guang2586/article/details/142910241'
+                    }
+                ]
             }
         ]
     },
@@ -320,15 +326,15 @@ export default [
                 }
             },
             {
-                id:'radarShader',
-                name:'雷达着色器',
-                author:'stonerao',
-                codeUrl:HOST+'threeExamples/shader/radarShader.js',
-                image:HOST+'threeExamples/shader/radarShader.jpg',
-                meta:{
-                    title:'雷达着色器',
-                    keywords:'three.js,雷达着色器',
-                    description:'使用three.雷达着色器'
+                id: 'radarShader',
+                name: '雷达着色器',
+                author: 'stonerao',
+                codeUrl: HOST + 'threeExamples/shader/radarShader.js',
+                image: HOST + 'threeExamples/shader/radarShader.jpg',
+                meta: {
+                    title: '雷达着色器',
+                    keywords: 'three.js,雷达着色器',
+                    description: '使用three.雷达着色器'
                 }
             },
             {
@@ -437,6 +443,14 @@ export default [
                     keywords: 'three.js,蒸汽波太阳',
                     description: '使用three.js蒸汽波太阳'
                 }
+            },
+            {
+                id: 'groundglass',
+                name: '毛玻璃',
+                author: 'z2586300277',
+                referUrl: 'https://github.com/hafly',
+                codeUrl: HOST + 'threeExamples/shader/groundglass.js',
+                image: HOST + 'threeExamples/shader/groundglass.jpg',
             },
             {
                 id: 'cobwebBox',
@@ -552,7 +566,7 @@ export default [
             {
                 id: 'flowerShader',
                 name: '花',
-                author:'z2586300277',
+                author: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/shader/flowerShader.js',
                 image: HOST + 'threeExamples/shader/flowerShader.jpg',
             },
@@ -699,6 +713,13 @@ export default [
                         "three_noise": HOST + "js/wasm/three_noise.js"
                     }
                 }
+            },
+            {
+                id: 'contour',
+                name: '魔幻山体',
+                author: 'nico',
+                codeUrl: HOST + 'threeExamples/shader/contour.js',
+                image: HOST + 'threeExamples/shader/contour.jpg',
             }
         ]
     },
@@ -738,7 +759,7 @@ export default [
                     description: "粒子效果的行星"
                 }
             },
-            
+
             {
                 id: "bubble",
                 name: "粒子泡泡",
@@ -933,6 +954,13 @@ export default [
                     keywords: 'three.js,3D饼图',
                     description: '使用three.js制作3D饼图'
                 }
+            },
+            {
+                id: 'drawFace',
+                name: '绘制面',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/application/drawFace.js',
+                image: HOST + 'threeExamples/application/drawFace.jpg',
             },
             {
                 id: 'model_navigation',
@@ -1138,6 +1166,13 @@ export default [
                 }
             },
             {
+                id: 'geoBorder',
+                name: '地理边界',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/expand/geoBorder.js',
+                image: HOST + 'threeExamples/expand/geoBorder.jpg',
+            },
+            {
                 id: 'heatmap3D',
                 name: '3D热力图',
                 tag: '常用-#e1d100',
@@ -1156,8 +1191,17 @@ export default [
                 }
             },
             {
+                id: 'heatmapModel',
+                name: '模型热力图',
+                author: 'z2586300277',
+                referUrl: 'https://github.com/CHENJIAMIAN/InterpolatedGradientMaterial',
+                codeUrl: HOST + 'threeExamples/expand/heatmapModel.js',
+                image: HOST + 'threeExamples/expand/heatmapModel.jpg',
+            },
+            {
                 id: 'modelBlendReflector',
                 name: '模型反射效果',
+                tag: '模型反射--14',
                 author: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/expand/modelBlendReflector.js',
                 image: HOST + 'threeExamples/expand/modelBlendReflector.jpg',
@@ -1288,6 +1332,14 @@ export default [
                 }
             },
             {
+                id: 'modelUnpack',
+                name: '模型拆解动画',
+                tag: '拆解',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/basic/modelUnpack.js',
+                image: HOST + 'threeExamples/basic/modelUnpack.jpg',
+            },
+            {
                 id: 'skyAndEnv',
                 name: '天空盒',
                 author: 'z2586300277',
@@ -1322,6 +1374,13 @@ export default [
                     keywords: 'three.js,GSAP动画',
                     description: '使用three.js GSAP动画'
                 }
+            },
+            {
+                id: 'modelView',
+                name: '模型视图',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/basic/modelView.js',
+                image: HOST + 'threeExamples/basic/modelView.jpg',
             },
             {
                 id: 'cssElement',
