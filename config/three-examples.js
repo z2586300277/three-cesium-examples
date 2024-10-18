@@ -956,6 +956,13 @@ export default [
                 }
             },
             {
+                id: 'drawFace',
+                name: '绘制面',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/application/drawFace.js',
+                image: HOST + 'threeExamples/application/drawFace.jpg',
+            },
+            {
                 id: 'model_navigation',
                 name: '模型导航',
                 author: 'nico',
