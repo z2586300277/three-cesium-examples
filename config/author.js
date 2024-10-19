@@ -316,6 +316,13 @@ export default [
         name:'Pong-lei',
         github: 'https://github.com/Pong-lei',
         icon: 'https://avatars.githubusercontent.com/u/57822607?v=4'
+    },
+
+    {
+        id: 'ASouthernCat',
+        name: 'ASouthernCat',
+        github: 'https://github.com/ASouthernCat',
+        icon: 'https://avatars.githubusercontent.com/u/103131106?v=4'
     }
 
 ]

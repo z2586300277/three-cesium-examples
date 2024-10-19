@@ -169,7 +169,7 @@ export default [
             {
                 id: 'kallkago_su7',
                 tag: '热门-#5f9be3',
-                name: 'su7 demo',
+                name: 'su7-R3f',
                 author: 'KallkaGo',
                 openUrl: 'https://z2586300277.github.io/show-site/su7_demo/',
                 githubUrl: 'https://github.com/KallkaGo/su7-demo',
@@ -177,11 +177,25 @@ export default [
             },
             {
                 id: 'su7peng',
-                name: 'SU7复刻仿真',
+                name: 'SU7-Vue3',
                 author: 'Pong-lei',
                 openUrl: 'https://g2657.github.io/examples-server/su7_2/',
                 githubUrl: 'https://github.com/Pong-lei/su7_imitate',
                 image: HOST + 'threeExamples/openSource/su7peng.jpg'
+            },
+            {
+                id: 'su7_three',
+                name: '原生su7',
+                author: 'ASouthernCat',
+                openUrl: 'https://z2586300277.github.io/show-site/su7_car/',
+                githubUrl: 'https://github.com/ASouthernCat/Porsche911-carshow-threejs',
+                image: HOST + 'threeExamples/openSource/su7_three.jpg',
+                links: [
+                    {
+                        name: '📖BiBi',
+                        url: 'https://www.bilibili.com/video/BV1JH4y1N7pT'
+                    }
+                ]
             },
             {
                 id: 'feng_ji',
