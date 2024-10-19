@@ -164,7 +164,13 @@ export default [
                 author: 'xiaogua-bushigua',
                 githubUrl: 'https://github.com/xiaogua-bushigua/3d-geoMap',
                 openUrl: 'https://z2586300277.github.io/show-site/3dGeoMap',
-                image: FILE_HOST + 'images/3dGeoMap.jpg'
+                image: FILE_HOST + 'images/3dGeoMap.jpg',
+                links: [
+                    {
+                        name: '📺B站',
+                        url: 'https://www.bilibili.com/video/BV1ku4y1X7wU/'
+                    }
+                ]
             },
             {
                 id: 'kallkago_su7',
@@ -192,7 +198,7 @@ export default [
                 image: HOST + 'threeExamples/openSource/su7_three.jpg',
                 links: [
                     {
-                        name: '📖BiBi',
+                        name: '📺BiBi',
                         url: 'https://www.bilibili.com/video/BV1JH4y1N7pT'
                     }
                 ]
@@ -219,6 +225,14 @@ export default [
                         url: 'https://blog.csdn.net/guang2586/article/details/142910241'
                     }
                 ]
+            },
+            {
+                id: 'roaming',
+                author: 'AUTO',
+                name: '漫游模拟器',
+                githubUrl:'https://github.com/Junhong-Chen/roaming-simulator',
+                openUrl:'https://junhong-chen.github.io/roaming-simulator/',
+                image: HOST + 'threeExamples/openSource/roaming.jpg'
             }
         ]
     },
