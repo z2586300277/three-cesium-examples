@@ -524,6 +524,14 @@ export default [
                 }
             },
             {
+                id: 'grayShader',
+                name: '灰度',
+                author: 'z2586300277',
+                referUrl: 'https://github.com/hafly',
+                codeUrl: HOST + 'threeExamples/shader/grayShader.js',
+                image: HOST + 'threeExamples/shader/grayShader.jpg',
+            },
+            {
                 id: 'audioSolutions',
                 tag: '声音',
                 name: '音乐可视化',
