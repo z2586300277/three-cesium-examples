@@ -164,12 +164,18 @@ export default [
                 author: 'xiaogua-bushigua',
                 githubUrl: 'https://github.com/xiaogua-bushigua/3d-geoMap',
                 openUrl: 'https://z2586300277.github.io/show-site/3dGeoMap',
-                image: FILE_HOST + 'images/3dGeoMap.jpg'
+                image: FILE_HOST + 'images/3dGeoMap.jpg',
+                links: [
+                    {
+                        name: '📺B站',
+                        url: 'https://www.bilibili.com/video/BV1ku4y1X7wU/'
+                    }
+                ]
             },
             {
                 id: 'kallkago_su7',
                 tag: '热门-#5f9be3',
-                name: 'su7 demo',
+                name: 'su7-R3f',
                 author: 'KallkaGo',
                 openUrl: 'https://z2586300277.github.io/show-site/su7_demo/',
                 githubUrl: 'https://github.com/KallkaGo/su7-demo',
@@ -177,11 +183,25 @@ export default [
             },
             {
                 id: 'su7peng',
-                name: 'SU7复刻仿真',
+                name: 'SU7-Vue3',
                 author: 'Pong-lei',
                 openUrl: 'https://g2657.github.io/examples-server/su7_2/',
                 githubUrl: 'https://github.com/Pong-lei/su7_imitate',
                 image: HOST + 'threeExamples/openSource/su7peng.jpg'
+            },
+            {
+                id: 'su7_three',
+                name: '原生su7',
+                author: 'ASouthernCat',
+                openUrl: 'https://z2586300277.github.io/show-site/su7_car/',
+                githubUrl: 'https://github.com/ASouthernCat/Porsche911-carshow-threejs',
+                image: HOST + 'threeExamples/openSource/su7_three.jpg',
+                links: [
+                    {
+                        name: '📺BiBi',
+                        url: 'https://www.bilibili.com/video/BV1JH4y1N7pT'
+                    }
+                ]
             },
             {
                 id: 'feng_ji',
@@ -205,6 +225,14 @@ export default [
                         url: 'https://blog.csdn.net/guang2586/article/details/142910241'
                     }
                 ]
+            },
+            {
+                id: 'roaming',
+                author: 'AUTO',
+                name: '漫游模拟器',
+                githubUrl:'https://github.com/Junhong-Chen/roaming-simulator',
+                openUrl:'https://junhong-chen.github.io/roaming-simulator/',
+                image: HOST + 'threeExamples/openSource/roaming.jpg'
             }
         ]
     },
@@ -494,6 +522,14 @@ export default [
                     keywords: 'three.js,流光',
                     description: '使用three.js流光'
                 }
+            },
+            {
+                id: 'grayShader',
+                name: '灰度',
+                author: 'z2586300277',
+                referUrl: 'https://github.com/hafly',
+                codeUrl: HOST + 'threeExamples/shader/grayShader.js',
+                image: HOST + 'threeExamples/shader/grayShader.jpg',
             },
             {
                 id: 'audioSolutions',
@@ -1114,6 +1150,20 @@ export default [
                 image: HOST + 'threeExamples/application/gsapCollection.jpg'
             }
         ]
+    },
+    {
+        pid: 'animation',
+        name: '动画效果',
+        children: [
+            {
+                id: 'clipAnimation',
+                name: '裁剪动画',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/animation/clipAnimation.js',
+                image: HOST + 'threeExamples/animation/clipAnimation.jpg',
+            }
+        ]
+        
     },
     {
         pid: 'physics',
