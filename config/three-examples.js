@@ -1152,6 +1152,20 @@ export default [
         ]
     },
     {
+        pid: 'animation',
+        name: '动画效果',
+        children: [
+            {
+                id: 'clipAnimation',
+                name: '裁剪动画',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/animation/clipAnimation.js',
+                image: HOST + 'threeExamples/animation/clipAnimation.jpg',
+            }
+        ]
+        
+    },
+    {
         pid: 'physics',
         name: '物理应用',
         children: [
