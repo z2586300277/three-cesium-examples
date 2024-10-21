@@ -999,6 +999,13 @@ export default [
                 image: HOST + 'threeExamples/application/drawFace.jpg',
             },
             {
+                id: 'drawFace_improve',
+                name: '绘制面_内置点',
+                author: 'nico',
+                codeUrl: HOST + 'threeExamples/application/draw_face_improve.js',
+                image: HOST + 'threeExamples/application/draw_face_improve.jpg',
+            },
+            {
                 id: 'model_navigation',
                 name: '模型导航',
                 author: 'nico',
