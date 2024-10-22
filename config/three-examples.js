@@ -1358,6 +1358,13 @@ export default [
                 }
             },
             {
+                id: 'gltfOptLoader',
+                name: 'Opt解压(su7 模型)',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/basic/gltfOptLoader.js',
+                image: HOST + 'threeExamples/basic/gltfOptLoader.jpg'
+            },
+            {
                 id: 'loadingAnimate',
                 name: '加载动画',
                 author: 'z2586300277',
