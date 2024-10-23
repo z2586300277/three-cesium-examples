@@ -999,6 +999,21 @@ export default [
                 image: HOST + 'threeExamples/application/drawFace.jpg',
             },
             {
+                id: 'drawFace_improve',
+                name: '绘制面_内置点',
+                author: 'nico',
+                codeUrl: HOST + 'threeExamples/application/draw_face_improve.js',
+                image: HOST + 'threeExamples/application/draw_face_improve.jpg',
+            },
+            {
+                id: 'roadShader',
+                name: '道路流光',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/application/roadShader.js',
+                image: HOST + 'threeExamples/application/roadShader.jpg',
+                referUrl: 'https://github.com/xiaolidan00/my-earth'
+            },
+            {
                 id: 'model_navigation',
                 name: '模型导航',
                 author: 'nico',
@@ -1349,6 +1364,13 @@ export default [
                     keywords: 'three.js,模型加载',
                     description: '使用three.js模型加载'
                 }
+            },
+            {
+                id: 'gltfOptLoader',
+                name: 'Opt解压(su7 模型)',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/basic/gltfOptLoader.js',
+                image: HOST + 'threeExamples/basic/gltfOptLoader.jpg'
             },
             {
                 id: 'loadingAnimate',
