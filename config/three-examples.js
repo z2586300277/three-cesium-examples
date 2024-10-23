@@ -1006,6 +1006,14 @@ export default [
                 image: HOST + 'threeExamples/application/draw_face_improve.jpg',
             },
             {
+                id: 'roadShader',
+                name: '道路流光',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/application/roadShader.js',
+                image: HOST + 'threeExamples/application/roadShader.jpg',
+                referUrl: 'https://github.com/xiaolidan00/my-earth'
+            },
+            {
                 id: 'model_navigation',
                 name: '模型导航',
                 author: 'nico',
