@@ -500,6 +500,13 @@ export default [
                 image: HOST + 'threeExamples/shader/chinaFlag.jpg',
             },
             {
+                id: 'jumpHeart',
+                name: '跳动的心',
+                author: 'stonerao',
+                codeUrl: HOST + 'threeExamples/shader/jumpHeart.js',
+                image: HOST + 'threeExamples/shader/jumpHeart.jpg',
+            },
+            {
                 id: 'rasterGrid',
                 name: '栅格网格',
                 author: 'yjsdszz',
