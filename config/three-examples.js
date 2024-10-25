@@ -689,6 +689,13 @@ export default [
                 }
             },
             {
+                id: 'circleRotate',
+                name: '旋转的圆',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/shader/circleRotate.js',
+                image: HOST + 'threeExamples/shader/circleRotate.jpg',
+            },
+            {
                 id: 'whiteCloud',
                 name: '白云',
                 author: 'yjsdszz',
