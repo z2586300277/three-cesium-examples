@@ -1788,6 +1788,13 @@ export default [
                 openUrl: 'https://editor.thebookofshaders.com/',
                 githubUrl: 'https://github.com/patriciogonzalezvivo/glslEditor',
                 image: FILE_HOST + 'images/shaderEditor.jpg'
+            },
+            {
+                id: 'geojsonTool',
+                name: 'geojson获取工具',
+                author: 'z2586300277',
+                openUrl: 'https://datav.aliyun.com/portal/school/atlas/area_selector',
+                image: HOST + 'threeExamples/tools/geojsonTool.jpg'
             }
         ]
     },
