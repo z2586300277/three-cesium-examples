@@ -720,6 +720,13 @@ export default [
                 }
             },
             {
+                id: 'cloudShader',
+                name: '天空云',
+                author: 'wuyifan0203',
+                codeUrl: HOST + 'threeExamples/shader/cloudShader.js',
+                image: HOST + 'threeExamples/shader/cloudShader.jpg',
+            },
+            {
                 id: 'darkClouds',
                 name: '乌云',
                 author: 'stonerao',
