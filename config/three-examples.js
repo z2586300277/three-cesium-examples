@@ -521,7 +521,7 @@ export default [
             {
                 id: 'flowLight',
                 name: '流光',
-                author: 'yjsdszz',
+                author: 'Fate-ui',
                 codeUrl: HOST + 'threeExamples/shader/flowLight.js',
                 image: HOST + 'threeExamples/shader/flowLight.jpg',
                 meta: {
@@ -975,6 +975,13 @@ export default [
                     keywords: 'three.js,发散飞线',
                     description: '使用three.js发散飞线'
                 }
+            },
+            {
+                id: 'lampshade',
+                name: '灯罩',
+                author: 'Fate-ui',
+                codeUrl: HOST + 'threeExamples/application/lampshade.js',
+                image: HOST + 'threeExamples/application/lampshade.jpg',
             },
             {
                 id: 'smokeAir',

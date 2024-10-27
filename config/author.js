@@ -323,6 +323,13 @@ export default [
         name: 'ASouthernCat',
         github: 'https://github.com/ASouthernCat',
         icon: 'https://avatars.githubusercontent.com/u/103131106?v=4'
+    },
+
+    {
+        id: 'Fate-ui',
+        name: 'Fate-ui',
+        github: 'https://github.com/Fate-ui',
+        icon: 'https://avatars.githubusercontent.com/u/69997002?v=4'
     }
 
 ]
