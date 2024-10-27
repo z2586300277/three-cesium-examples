@@ -500,6 +500,13 @@ export default [
                 image: HOST + 'threeExamples/shader/chinaFlag.jpg',
             },
             {
+                id: 'jumpHeart',
+                name: '跳动的心',
+                author: 'stonerao',
+                codeUrl: HOST + 'threeExamples/shader/jumpHeart.js',
+                image: HOST + 'threeExamples/shader/jumpHeart.jpg',
+            },
+            {
                 id: 'rasterGrid',
                 name: '栅格网格',
                 author: 'yjsdszz',
@@ -514,7 +521,7 @@ export default [
             {
                 id: 'flowLight',
                 name: '流光',
-                author: 'yjsdszz',
+                author: 'Fate-ui',
                 codeUrl: HOST + 'threeExamples/shader/flowLight.js',
                 image: HOST + 'threeExamples/shader/flowLight.jpg',
                 meta: {
@@ -682,6 +689,13 @@ export default [
                 }
             },
             {
+                id: 'circleRotate',
+                name: '旋转的圆',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/shader/circleRotate.js',
+                image: HOST + 'threeExamples/shader/circleRotate.jpg',
+            },
+            {
                 id: 'whiteCloud',
                 name: '白云',
                 author: 'yjsdszz',
@@ -704,6 +718,13 @@ export default [
                     keywords: 'three.js,水天一色',
                     description: '使用three.js水天一色'
                 }
+            },
+            {
+                id: 'cloudShader',
+                name: '天空云',
+                author: 'wuyifan0203',
+                codeUrl: HOST + 'threeExamples/shader/cloudShader.js',
+                image: HOST + 'threeExamples/shader/cloudShader.jpg',
             },
             {
                 id: 'darkClouds',
@@ -954,6 +975,13 @@ export default [
                     keywords: 'three.js,发散飞线',
                     description: '使用three.js发散飞线'
                 }
+            },
+            {
+                id: 'lampshade',
+                name: '灯罩',
+                author: 'Fate-ui',
+                codeUrl: HOST + 'threeExamples/application/lampshade.js',
+                image: HOST + 'threeExamples/application/lampshade.jpg',
             },
             {
                 id: 'smokeAir',
@@ -1774,6 +1802,13 @@ export default [
                 openUrl: 'https://editor.thebookofshaders.com/',
                 githubUrl: 'https://github.com/patriciogonzalezvivo/glslEditor',
                 image: FILE_HOST + 'images/shaderEditor.jpg'
+            },
+            {
+                id: 'geojsonTool',
+                name: 'geojson获取工具',
+                author: 'z2586300277',
+                openUrl: 'https://datav.aliyun.com/portal/school/atlas/area_selector',
+                image: HOST + 'threeExamples/tools/geojsonTool.jpg'
             }
         ]
     },

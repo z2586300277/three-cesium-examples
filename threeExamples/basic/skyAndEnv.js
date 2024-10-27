@@ -5,7 +5,7 @@ const box = document.getElementById('box')
 
 const scene = new THREE.Scene()
 
-const camera = new THREE.PerspectiveCamera(75, box.clientWidth / box.clientHeight, 0.1, 1000)
+const camera = new THREE.PerspectiveCamera(50, box.clientWidth / box.clientHeight, 0.1, 1000)
 
 camera.position.set(0, 10, 10)
 
