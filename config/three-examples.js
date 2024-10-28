@@ -996,6 +996,13 @@ export default [
                 }
             },
             {
+                id: 'lightIcon',
+                name: '亮光标记',
+                author: 'Fate-ui',
+                codeUrl: HOST + 'threeExamples/application/lightIcon.js',
+                image: HOST + 'threeExamples/application/lightIcon.jpg',
+            },
+            {
                 id: 'topology',
                 name: '简单3d拓扑图',
                 author: 'z2586300277',
