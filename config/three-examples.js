@@ -318,6 +318,14 @@ export default [
                 }
             },
             {
+                id: 'cityLight',
+                name: '城市光影',
+                author: 'z2586300277',
+                referUrl: 'https://github.com/Fate-ui/WebglStudy',
+                codeUrl: HOST + 'threeExamples/shader/cityLight.js',
+                image: HOST + 'threeExamples/shader/cityLight.jpg',
+            },
+            {
                 id: 'shaderSky',
                 name: '着色器天空',
                 author: 'z2586300277',
@@ -996,6 +1004,13 @@ export default [
                 }
             },
             {
+                id: 'lightIcon',
+                name: '亮光标记',
+                author: 'Fate-ui',
+                codeUrl: HOST + 'threeExamples/application/lightIcon.js',
+                image: HOST + 'threeExamples/application/lightIcon.jpg',
+            },
+            {
                 id: 'topology',
                 name: '简单3d拓扑图',
                 author: 'z2586300277',
@@ -1226,6 +1241,11 @@ export default [
                 author: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/physics/physicsMesh.js',
                 image: HOST + 'threeExamples/physics/physicsMesh.jpg',
+                inject: {
+                    importmap: {
+                        "cannon-es": HOST + "js/cannon-es.js"
+                    }
+                }
             }
         ]
     },
@@ -1319,6 +1339,11 @@ export default [
                 author: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/effectComposer/selectBloomPass.js',
                 image: HOST + 'threeExamples/effectComposer/selectBloomPass.jpg',
+                inject: {
+                    importmap: {
+                        "postprocessing": HOST + "js/postprocessing.js"
+                    }
+                },
                 meta: {
                     title: '辉光通道',
                     keywords: 'three.js,辉光通道',
@@ -1343,6 +1368,11 @@ export default [
                 author: "giser2017",
                 codeUrl: HOST + 'threeExamples/effectComposer/uvTransformation.js',
                 image: FILE_HOST + "images/four/uvTransformation.png",
+                inject: {
+                    importmap: {
+                        "postprocessing": HOST + "js/postprocessing.js"
+                    }
+                },
                 meta: {
                     title: "UV图像变换",
                     keywords: "three.js,UV图像变换",
