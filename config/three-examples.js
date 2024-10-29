@@ -1424,6 +1424,13 @@ export default [
                 }
             },
             {
+                id: 'modelShadow',
+                name: '模型阴影',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/basic/modelShadow.js',
+                image: HOST + 'threeExamples/basic/modelShadow.jpg',
+            },
+            {
                 id: 'gltfOptLoader',
                 name: 'Opt解压(su7 模型)',
                 author: 'z2586300277',
