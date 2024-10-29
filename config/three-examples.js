@@ -318,6 +318,14 @@ export default [
                 }
             },
             {
+                id: 'cityLight',
+                name: '城市光影',
+                author: 'z2586300277',
+                referUrl: 'https://github.com/Fate-ui/WebglStudy',
+                codeUrl: HOST + 'threeExamples/shader/cityLight.js',
+                image: HOST + 'threeExamples/shader/cityLight.jpg',
+            },
+            {
                 id: 'shaderSky',
                 name: '着色器天空',
                 author: 'z2586300277',
