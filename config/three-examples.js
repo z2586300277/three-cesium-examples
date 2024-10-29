@@ -1241,6 +1241,11 @@ export default [
                 author: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/physics/physicsMesh.js',
                 image: HOST + 'threeExamples/physics/physicsMesh.jpg',
+                inject: {
+                    importmap: {
+                        "cannon-es": HOST + "js/cannon-es.js"
+                    }
+                }
             }
         ]
     },
@@ -1334,6 +1339,11 @@ export default [
                 author: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/effectComposer/selectBloomPass.js',
                 image: HOST + 'threeExamples/effectComposer/selectBloomPass.jpg',
+                inject: {
+                    importmap: {
+                        "postprocessing": HOST + "js/postprocessing.js"
+                    }
+                },
                 meta: {
                     title: '辉光通道',
                     keywords: 'three.js,辉光通道',
@@ -1358,6 +1368,11 @@ export default [
                 author: "giser2017",
                 codeUrl: HOST + 'threeExamples/effectComposer/uvTransformation.js',
                 image: FILE_HOST + "images/four/uvTransformation.png",
+                inject: {
+                    importmap: {
+                        "postprocessing": HOST + "js/postprocessing.js"
+                    }
+                },
                 meta: {
                     title: "UV图像变换",
                     keywords: "three.js,UV图像变换",

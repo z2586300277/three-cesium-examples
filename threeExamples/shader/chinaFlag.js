@@ -27,7 +27,7 @@ window.onresize = () => {
 
 }
 
-const flagTexture = new THREE.TextureLoader().load(FILE_HOST + "images/chinaFlag.jpg")
+const flagTexture = new THREE.TextureLoader().load(GLOBAL_CONFIG.getFileUrl("images/chinaFlag.jpg"))
 
 const flagMaterial = new THREE.RawShaderMaterial({
 
