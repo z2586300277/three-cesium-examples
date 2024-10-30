@@ -13,7 +13,7 @@ const camera = new THREE.PerspectiveCamera(50, box.clientWidth / box.clientHeigh
 
 camera.position.set(0, 10, 10)
 
-const renderer = new THREE.WebGLRenderer({ })
+const renderer = new THREE.WebGLRenderer({})
 
 renderer.setSize(box.clientWidth, box.clientHeight)
 
@@ -50,7 +50,7 @@ new GLTFLoader().load(GLOBAL_CONFIG.getFileUrl('files/model/Fox.glb'), (gltf) =>
   })
 
   scene.add(model)
-  
+
 })
 
 const mesh = new THREE.Mesh(new THREE.BoxGeometry(1, 1, 1), new THREE.MeshStandardMaterial({ color: 0xffffff }))
@@ -79,7 +79,7 @@ plane.receiveShadow = true
 
 scene.add(plane)
 
-const folder = new GUI()  
+const folder = new GUI()
 
 const shadowMapList = {
 
@@ -93,9 +93,25 @@ const shadowMapList = {
 
 }
 
-folder.add(renderer.shadowMap, 'enabled').name('shadowEnabled')
+folder.add(renderer.shadowMap, 'enabled').name('shadowEnabled').onChange(() => {
 
-folder.add(renderer.shadowMap, 'type', shadowMapList).name('shadowType')
+  scene.traverse((object) => {
+
+    if (object.material) object.material.needsUpdate = true;
+    
+  })
+
+})
+
+folder.add(renderer.shadowMap, 'type', shadowMapList).name('shadowType').onChange(() => {
+
+  scene.traverse((object) => {
+
+    if (object.material) object.material.needsUpdate = true;
+
+  })
+
+})
 
 folder.add(plane, 'receiveShadow').name('planeShadow')
 

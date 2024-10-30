@@ -1431,6 +1431,13 @@ export default [
                 image: HOST + 'threeExamples/basic/modelShadow.jpg',
             },
             {
+                id: 'orbControls',
+                name: '轨道控制器',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/basic/orbControls.js',
+                image: HOST + 'threeExamples/basic/orbControls.jpg',
+            },
+            {
                 id: 'gltfOptLoader',
                 name: 'Opt解压(su7 模型)',
                 author: 'z2586300277',
