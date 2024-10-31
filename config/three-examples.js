@@ -1431,6 +1431,13 @@ export default [
                 image: HOST + 'threeExamples/basic/modelShadow.jpg',
             },
             {
+                id: 'cameraAttribute',
+                name: '相机属性',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/basic/cameraAttribute.js',
+                image: HOST + 'threeExamples/basic/cameraAttribute.jpg',
+            },
+            {
                 id: 'orbControls',
                 name: '轨道控制器',
                 author: 'z2586300277',
