@@ -233,6 +233,14 @@ export default [
                 githubUrl:'https://github.com/Junhong-Chen/roaming-simulator',
                 openUrl:'https://junhong-chen.github.io/roaming-simulator/',
                 image: HOST + 'threeExamples/openSource/roaming.jpg'
+            },
+            {
+                id: 'Sketchbook',
+                author: 'AUTO',
+                name: '飞车',
+                githubUrl:'https://github.com/swift502/Sketchbook',
+                openUrl:'https://jblaha.art/sketchbook/0.4/',
+                image: 'https://github.com/swift502/Sketchbook/raw/master/src/img/thumbnail.png'
             }
         ]
     },
