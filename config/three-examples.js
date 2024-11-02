@@ -1,4 +1,5 @@
 import { HOST, FILE_HOST } from './host.js'
+import githubExamples from './three-examples/github-examples.js'
 
 export default [
     {
@@ -242,7 +243,7 @@ export default [
                 openUrl:'https://jblaha.art/sketchbook/0.4/',
                 image: 'https://github.com/swift502/Sketchbook/raw/master/src/img/thumbnail.png'
             }
-        ]
+        ].concat(githubExamples)
     },
     {
         gid: 'effectGroup',
