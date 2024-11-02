@@ -241,7 +241,7 @@ export default [
                 name: '飞车',
                 githubUrl:'https://github.com/swift502/Sketchbook',
                 openUrl:'https://jblaha.art/sketchbook/0.4/',
-                image: HOST + 'threeExamples/openSource/Sketchbook.jpg'
+                image: HOST + 'threeExamples/openSource/sketchbook.jpg'
             }
         ].concat(githubExamples)
     },
