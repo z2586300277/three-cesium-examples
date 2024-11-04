@@ -246,7 +246,7 @@ export default [
             {
                 id: 'lonlat23',
                 author: 'nico',
-                name: '经纬度驱动的three运动（车流模拟、孪生仿真）',
+                name: '经纬度路线运动(车流模拟)',
                 // githubUrl:'https://github.com/swift502/Sketchbook',
                 openUrl:'http://nicowebgl.cn:88/d3_geo/',
                 image: HOST + 'threeExamples/openSource/lonlat23.jpg'
@@ -415,6 +415,13 @@ export default [
                 author: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/shader/smokeCircle.js',
                 image: HOST + 'threeExamples/shader/smokeCircle.jpg',
+            },
+            {
+                id: 'radarScan',
+                name: '雷达扫描',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/shader/radarScan.js',
+                image: HOST + 'threeExamples/shader/radarScan.jpg',
             },
             {
                 id: 'imageParticle',
