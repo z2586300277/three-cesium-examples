@@ -242,6 +242,14 @@ export default [
                 githubUrl:'https://github.com/swift502/Sketchbook',
                 openUrl:'https://jblaha.art/sketchbook/0.4/',
                 image: HOST + 'threeExamples/openSource/sketchbook.jpg'
+            },
+            {
+                id: 'lonlat23',
+                author: 'nico',
+                name: '经纬度驱动的three运动（车流模拟、孪生仿真）',
+                // githubUrl:'https://github.com/swift502/Sketchbook',
+                openUrl:'http://nicowebgl.cn:88/d3_geo/',
+                image: HOST + 'threeExamples/openSource/lonlat23.jpg'
             }
         ].concat(githubExamples)
     },
