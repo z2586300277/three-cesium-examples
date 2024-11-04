@@ -250,6 +250,14 @@ export default [
                 // githubUrl:'https://github.com/swift502/Sketchbook',
                 openUrl:'http://nicowebgl.cn:88/d3_geo/',
                 image: HOST + 'threeExamples/openSource/lonlat23.jpg'
+            },
+            {
+                id: 'draw,roam',
+                author: 'nico',
+                name: '绘线漫游',
+                githubUrl:'https://github.com/Nicolas-zn/path',
+                openUrl:'http://nicowebgl.cn:88/path/',
+                image: HOST + 'threeExamples/openSource/roam.jpg'
             }
         ].concat(githubExamples)
     },
