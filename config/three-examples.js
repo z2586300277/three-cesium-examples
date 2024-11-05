@@ -1477,6 +1477,13 @@ export default [
                 image: HOST + 'threeExamples/basic/orbControls.jpg',
             },
             {
+                id: 'modelSky',
+                name: '模型天空',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/basic/modelSky.js',
+                image: HOST + 'threeExamples/basic/modelSky.jpg',
+            },
+            {
                 id: 'gltfOptLoader',
                 name: 'Opt解压(su7 模型)',
                 author: 'z2586300277',
