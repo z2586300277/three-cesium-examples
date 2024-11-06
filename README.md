@@ -2,9 +2,10 @@
 
 ##  开源不易 - ⭐ - 点星助力 -⚡ - 每日更新 - 👋 - 为爱发电
 
-加入仓库 联系🐧QQ             |  🐧互助QQ群         
+加入仓库🐧QQ           |  预览图        
 :-------------------------:|:-------------------------:
-2586300277 / 805879871  |  865182188  
+🐧- 2586300277 <br> 🐧- 805879871 <br> 🐧群- 865182188 |  <img src="https://z2586300277.github.io/3d-file-server/images/threeCesiumExamples.jpg" width="318px" height="180px" />
+
 
 <img src="https://contrib.rocks/image?repo=z2586300277/three-cesium-examples&v=1" />
 

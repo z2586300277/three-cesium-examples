@@ -1,4 +1,5 @@
 import { HOST, FILE_HOST } from './host.js'
+import githubExamples from './three-examples/github-examples.js'
 
 export default [
     {
@@ -233,8 +234,32 @@ export default [
                 githubUrl:'https://github.com/Junhong-Chen/roaming-simulator',
                 openUrl:'https://junhong-chen.github.io/roaming-simulator/',
                 image: HOST + 'threeExamples/openSource/roaming.jpg'
+            },
+            {
+                id: 'Sketchbook',
+                author: 'AUTO',
+                name: '飞车',
+                githubUrl:'https://github.com/swift502/Sketchbook',
+                openUrl:'https://jblaha.art/sketchbook/0.4/',
+                image: HOST + 'threeExamples/openSource/sketchbook.jpg'
+            },
+            {
+                id: 'lonlat23',
+                author: 'nico',
+                name: '经纬度路线运动(车流模拟)',
+                // githubUrl:'https://github.com/swift502/Sketchbook',
+                openUrl:'http://nicowebgl.cn:88/d3_geo/',
+                image: HOST + 'threeExamples/openSource/lonlat23.jpg'
+            },
+            {
+                id: 'draw,roam',
+                author: 'nico',
+                name: '绘线漫游',
+                githubUrl:'https://github.com/Nicolas-zn/path',
+                openUrl:'http://nicowebgl.cn:88/path/',
+                image: HOST + 'threeExamples/openSource/roam.jpg'
             }
-        ]
+        ].concat(githubExamples)
     },
     {
         gid: 'effectGroup',
@@ -398,6 +423,13 @@ export default [
                 author: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/shader/smokeCircle.js',
                 image: HOST + 'threeExamples/shader/smokeCircle.jpg',
+            },
+            {
+                id: 'radarScan',
+                name: '雷达扫描',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/shader/radarScan.js',
+                image: HOST + 'threeExamples/shader/radarScan.jpg',
             },
             {
                 id: 'imageParticle',
@@ -898,6 +930,13 @@ export default [
                 author: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/particle/particleLine.js',
                 image: HOST + 'threeExamples/particle/particleLine.jpg',
+            },
+            {
+                id: 'sphereLine',
+                name: '球体线条',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/particle/sphereLine.js',
+                image: HOST + 'threeExamples/particle/sphereLine.jpg',
             }
         ]
     },
@@ -1422,6 +1461,34 @@ export default [
                     keywords: 'three.js,模型加载',
                     description: '使用three.js模型加载'
                 }
+            },
+            {
+                id: 'modelShadow',
+                name: '模型阴影',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/basic/modelShadow.js',
+                image: HOST + 'threeExamples/basic/modelShadow.jpg',
+            },
+            {
+                id: 'cameraAttribute',
+                name: '相机属性',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/basic/cameraAttribute.js',
+                image: HOST + 'threeExamples/basic/cameraAttribute.jpg',
+            },
+            {
+                id: 'orbControls',
+                name: '轨道控制器',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/basic/orbControls.js',
+                image: HOST + 'threeExamples/basic/orbControls.jpg',
+            },
+            {
+                id: 'modelSky',
+                name: '模型天空',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/basic/modelSky.js',
+                image: HOST + 'threeExamples/basic/modelSky.jpg',
             },
             {
                 id: 'gltfOptLoader',
