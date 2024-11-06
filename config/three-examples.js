@@ -930,6 +930,13 @@ export default [
                 author: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/particle/particleLine.js',
                 image: HOST + 'threeExamples/particle/particleLine.jpg',
+            },
+            {
+                id: 'sphereLine',
+                name: '球体线条',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/particle/sphereLine.js',
+                image: HOST + 'threeExamples/particle/sphereLine.jpg',
             }
         ]
     },
