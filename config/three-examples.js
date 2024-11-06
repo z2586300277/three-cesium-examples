@@ -952,6 +952,14 @@ export default [
                 image: HOST + 'threeExamples/application/z2586300277.jpg',
             },
             {
+                id: 'unreal',
+                author: 'nico',
+                name: 'unreal风格场景标注',
+                githubUrl:'https://github.com/Nicolas-zn/annotations',
+                openUrl:'http://nicowebgl.cn/path/',
+                image: HOST + 'threeExamples/openSource/unrealstyle.jpg'
+            },
+            {
                 id: 'magicCircle',
                 name: '魔法阵',
                 author: 'gitee18247670551',
