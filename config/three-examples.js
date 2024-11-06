@@ -248,7 +248,7 @@ export default [
                 author: 'nico',
                 name: '经纬度路线运动(车流模拟)',
                 // githubUrl:'https://github.com/swift502/Sketchbook',
-                openUrl:'http://nicowebgl.cn:88/d3_geo/',
+                openUrl:'http://nicowebgl.cn/d3_geo/',
                 image: HOST + 'threeExamples/openSource/lonlat23.jpg'
             },
             {
@@ -256,7 +256,7 @@ export default [
                 author: 'nico',
                 name: '绘线漫游',
                 githubUrl:'https://github.com/Nicolas-zn/path',
-                openUrl:'http://nicowebgl.cn:88/path/',
+                openUrl:'http://nicowebgl.cn/path/',
                 image: HOST + 'threeExamples/openSource/roam.jpg'
             }
         ].concat(githubExamples)
