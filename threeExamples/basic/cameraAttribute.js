@@ -24,7 +24,7 @@ const geomerty = new THREE.PlaneGeometry(1, 1)
 
 const map = new THREE.TextureLoader().load(HOST + 'files/author/flowers-10.jpg')
 
-const material = new THREE.MeshBasicMaterial({ map , color: 0x737373, side: THREE.DoubleSide })
+const material = new THREE.MeshBasicMaterial({ map, color: 0x737373, side: THREE.DoubleSide })
 
 const mesh = new THREE.Mesh(geomerty, material)
 
@@ -80,4 +80,4 @@ folder.add(camera.position, 'y').name('相机位置y').listen()
 
 folder.add(camera.position, 'z').name('相机位置z').listen()
 
-folder.addFn(() => folder.reset()).name('重置')
+folder.add({ fn: () => folder.reset() }, 'fn').name('重置')

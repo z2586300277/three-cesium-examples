@@ -1491,6 +1491,13 @@ export default [
                 image: HOST + 'threeExamples/basic/modelSky.jpg',
             },
             {
+                id: 'sceneFog',
+                name: '场景雾化',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/basic/sceneFog.js',
+                image: HOST + 'threeExamples/basic/sceneFog.jpg'
+            },
+            {
                 id: 'gltfOptLoader',
                 name: 'Opt解压(su7 模型)',
                 author: 'z2586300277',
