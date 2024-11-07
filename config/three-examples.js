@@ -7,38 +7,36 @@ export default [
         name: '开源导航',
         children: [
             {
-                id: 'alwxkxk',
-                author: 'alwxkxk',
-                name: 'Three案例',
-                openUrl: 'https://alwxkxk.github.io/threejs-example/',
-                githubUrl: 'https://github.com/alwxkxk/threejs-example',
-                image: FILE_HOST + 'images/alwxkxk.jpg'
-            },
-            {
-                id: 'jiawanlong',
-                tag: '推荐',
-                author: 'jiawanlong',
-                name: 'Cesium案例',
-                openUrl: 'https://jiawanlong.github.io/examples/cesiumEx/examples.html',
-                githubUrl: 'https://github.com/jiawanlong/Cesium-Examples',
-                image: FILE_HOST + 'images/jiawanlong.jpg'
-            },
-            {
-                id: 'bosombaby',
-                author: 'bosombaby',
-                name: 'Three 案例',
-                openUrl: 'https://product.vrteam.top/',
-                githubUrl: 'https://github.com/bosombaby/web3d-product',
-                image: FILE_HOST + 'images/bosombaby.jpg'
+                id: 'codePen',
+                name: 'CodePen 社区',
+                author: 'Threejs',
+                openUrl: 'https://codepen.io/search/pens?q=three+js',
+                image: FILE_HOST + 'images/codepen.jpg'
             },
 
             {
-                id: 'wuyifan0203',
-                author: 'wuyifan0203',
-                name: 'Three源码案例',
-                openUrl: 'https://wuyifan0203.github.io/threejs-demo',
-                githubUrl: 'https://github.com/wuyifan0203/threejs-demo',
-                image: FILE_HOST + 'images/wuyifan0203.jpg'
+                id: 'codeSandbox',
+                name: 'CodeSandbox 社区',
+                author: 'Threejs',
+                openUrl: 'https://codesandbox.io/search?query=three',
+                image: FILE_HOST + 'images/sandbox.jpg'
+            },
+
+            {
+                id: 'tympanus',
+                name: 'Codrops 社区',
+                author: 'Threejs',
+                openUrl: 'https://tympanus.net/codrops/demos/?tag=three-js',
+                image: FILE_HOST + 'images/tympanus.jpg'
+            },
+
+            {
+                id: 'sketchThree',
+                author: 'AUTO',
+                name: 'Three特效',
+                openUrl: 'https://ykob.github.io/sketch-threejs/',
+                githubUrl: 'https://github.com/ykob/sketch-threejs',
+                image: FILE_HOST + 'images/sketchThree.jpg'
             },
 
             {
@@ -49,6 +47,36 @@ export default [
                 githubUrl: 'https://github.com/dragonir/3d',
                 image: FILE_HOST + 'images/dragonir.jpg'
             },
+           
+            {
+                id: 'jiawanlong',
+                tag: '推荐',
+                author: 'jiawanlong',
+                name: 'Cesium案例',
+                openUrl: 'https://jiawanlong.github.io/examples/cesiumEx/examples.html',
+                githubUrl: 'https://github.com/jiawanlong/Cesium-Examples',
+                image: FILE_HOST + 'images/jiawanlong.jpg'
+            },
+    
+
+            {
+                id: 'wuyifan0203',
+                author: 'wuyifan0203',
+                name: 'Three源码案例',
+                openUrl: 'https://wuyifan0203.github.io/threejs-demo',
+                githubUrl: 'https://github.com/wuyifan0203/threejs-demo',
+                image: FILE_HOST + 'images/wuyifan0203.jpg'
+            },
+            {
+                id: 'alwxkxk',
+                author: 'alwxkxk',
+                name: 'Three案例',
+                openUrl: 'https://alwxkxk.github.io/threejs-example/',
+                githubUrl: 'https://github.com/alwxkxk/threejs-example',
+                image: FILE_HOST + 'images/alwxkxk.jpg'
+            },
+
+          
 
             {
                 id: 'sxguojf',
@@ -59,23 +87,7 @@ export default [
                 image: FILE_HOST + 'images/wangpengfei.jpg'
             },
 
-            {
-                id: 'pengfeiw',
-                author: 'pengfeiw',
-                name: '3d 案例',
-                githubUrl: 'https://github.com/pengfeiw/threejs-case',
-                openUrl: 'https://pengfeiw.github.io/minicode/',
-                image: HOST + 'threeExamples/openSource/wangpengfei.jpg'
-            },
-
-            {
-                id: 'lpya',
-                author: 'lpya',
-                name: 'vue Three案例',
-                openUrl: 'https://lpya.github.io/vue2-threejs-sefficacy',
-                githubUrl: 'https://github.com/lpya/vue2-threejs-sefficacy',
-                image: FILE_HOST + 'images/lpya.jpg'
-            },
+          
 
             {
                 id: 'zhengjie9510',
@@ -85,14 +97,7 @@ export default [
                 githubUrl: 'https://github.com/zhengjie9510/webgis-demo',
                 image: FILE_HOST + 'images/zhengjie9510.jpg'
             },
-            {
-                id: 'sketchThree',
-                author: 'AUTO',
-                name: 'Three特效',
-                openUrl: 'https://ykob.github.io/sketch-threejs/',
-                githubUrl: 'https://github.com/ykob/sketch-threejs',
-                image: FILE_HOST + 'images/sketchThree.jpg'
-            }
+          
         ]
     },
     {
@@ -248,7 +253,7 @@ export default [
                 author: 'nico',
                 name: '经纬度路线运动(车流模拟)',
                 // githubUrl:'https://github.com/swift502/Sketchbook',
-                openUrl:'http://nicowebgl.cn:88/d3_geo/',
+                openUrl:'http://nicowebgl.cn/d3_geo/',
                 image: HOST + 'threeExamples/openSource/lonlat23.jpg'
             },
             {
@@ -256,7 +261,7 @@ export default [
                 author: 'nico',
                 name: '绘线漫游',
                 githubUrl:'https://github.com/Nicolas-zn/path',
-                openUrl:'http://nicowebgl.cn:88/path/',
+                openUrl:'http://nicowebgl.cn/path/',
                 image: HOST + 'threeExamples/openSource/roam.jpg'
             }
         ].concat(githubExamples)
@@ -952,6 +957,14 @@ export default [
                 image: HOST + 'threeExamples/application/z2586300277.jpg',
             },
             {
+                id: 'unreal',
+                author: 'nico',
+                name: 'unreal风格场景标注',
+                githubUrl:'https://github.com/Nicolas-zn/annotations',
+                openUrl:'http://nicowebgl.cn/path/',
+                image: HOST + 'threeExamples/openSource/unrealstyle.jpg'
+            },
+            {
                 id: 'magicCircle',
                 name: '魔法阵',
                 author: 'gitee18247670551',
@@ -1489,6 +1502,13 @@ export default [
                 author: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/basic/modelSky.js',
                 image: HOST + 'threeExamples/basic/modelSky.jpg',
+            },
+            {
+                id: 'sceneFog',
+                name: '场景雾化',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/basic/sceneFog.js',
+                image: HOST + 'threeExamples/basic/sceneFog.jpg'
             },
             {
                 id: 'gltfOptLoader',
