@@ -10,10 +10,10 @@ window.HOST = HOST // 当前项目服务 host 地址, 注入到全局变量
 
 window.FILE_HOST = FILE_HOST // 文件资源服务器地址, 注入到全局变量
 
-window.GLOBAL_CONFIG = { 
-    
+window.GLOBAL_CONFIG = {
+
     HOST,
-    
+
     FILE_HOST,
 
     getFileUrl: (url) => FILE_HOST + url, // 例 threeExamples/shader/chinaFlag.js 文件中的图片资源引用
@@ -76,7 +76,7 @@ window.THREE_CESIUM_AUTHORS = threeCesiumAuthors; // 作者
 */
 
 function setMeta(query) {
-    
+
     const navigation = window.THREE_CESIUM_NAVIGATION.find(item => item.name === query.navigation)
 
     const classify = navigation.examples.find(item => item.pid === query.classify)
@@ -92,7 +92,7 @@ function setMeta(query) {
     if (meta.title) document.title = meta.title
 
     if (meta.keywords) document.querySelector('meta[name="keywords"]').setAttribute('content', meta.keywords)
-  
+
     if (meta.description) document.querySelector('meta[name="description"]').setAttribute('content', meta.description)
 
     return example
@@ -105,7 +105,7 @@ const href = window.location.href
 const params = href.split('?')[1]
 
 if (params) {
-   
+
     const query = params.split('&').reduce((pre, cur) => {
 
         const [key, value] = cur.split('=')
@@ -119,3 +119,36 @@ if (params) {
     setMeta(query)
 
 }
+
+/* 
+🌹🍀🍎💰📱🌙🍁🍂🍃🌷💎🔪🔫🏀⚽⚡👄👍🔥 
+😀😁😂😃😄😅😆😉😊😋😎😍😘😗😙😚☺
+😇😐😑 😶😏😣😥😮😯😪😫😴😌😛😜😝😒
+😓😔😕😲😷😖😞 😟😤😢😭😦😧😨😬😰😱😳
+😵😡😠😈👿👹👺💀👻 👽👦👧👨👩👴👵👶👱👮
+👲👳👷👸💂🎅👰👼 💆💇🙍🙎🙅🙆💁🙋🙇🙌🙏
+👤👥🚶🏃👯💃👫👬👭💏💑 👪💪👈👉☝👆👇✌
+✋👌👍👎✊👊👋👏👐✍👣👀👂👃👅👄💋 👓👔
+👕👖👗👘👙👚👛👜👝🎒💼👞👟👠👡👢👑👒🎩
+🎓💄💅💍🌂 🙈🙉🙊🐵🐒🐶🐕🐩🐺🐱😺😸😹😻
+😼😽🙀😿😾🐈 🐯🐅🐆🐴🐎🐮🐂🐃🐄🐷🐖🐗🐽🐏
+🐑🐐🐪🐫🐘🐭 🐁🐀🐹🐰🐇🐻🐨🐼🐾🐔🐓🐣🐤🐥
+🐦🐧🐸🐊🐢🐍🐲🐉🐳 🐋🐬🐟🐠🐡🐙🐚🐌🐛🐜🐝🐞🦋💐
+🌸💮🌹🌺🌻🌼🌷🌱🌲 🌳🌴🌵🌾🌿🍀🍁🍂🍃🌍🌎🌏🌐🌑
+🌒🌓🌔🌕🌖🌗🌘🌙🌚 🌛🌜☀🌝🌞⭐🌟🌠☁⛅☔⚡❄🔥💧🌊💩🍇🍈
+🍉🍊🍋🍌🍍🍎🍏 🍐🍑🍒🍓🍅🍆🌽🍄🌰🍞🍖🍗🍔🍟🍕🍳🍲🍱🍘🍙🍚
+🍛🍜 🍝🍠🍢🍣🍤🍥🍡🍦🍧🍨🍩🍪🎂🍰🍫🍬🍭🍮🍯🍼☕🍵🍶🍷🍸🍹🍺
+🍻🍴 🎪🎭🎨🎰🚣🛀🎫🏆⚽⚾🏀🏈🏉🎾🎱🎳⛳🎣🎽🎿🏂🏄🏇🏊🚴🚵 🎯🎮🎲🎷
+🎸🎺🎻🎬👾🌋🗻🏠🏡🏢🏣🏤🏥🏦🏨🏩🏪🏫🏬🏭🏯 🏰💒🗼🗽⛪⛲🌁🌃🌆🌇🌉🌌🎠
+🎡🎢🚂🚃🚄🚅🚆🚇🚈🚉🚊🚝🚞🚋🚌 🚍🚎🚏🚐🚑🚒🚓🚔🚕🚖🚗🚘🚚🚛🚜🚲⛽🚨🚥🚦
+🚧⚓⛵🚤🚢✈💺🚁 🚟🚠🚡🚀🎑🗿🛂🛃🛄🛅💌💎🔪💈🚪🚽🚿🛁⌛⏳⌚⏰🎈🎉🎊🎎🎏🎐
+🎀 🎁📯📻📱📲☎📞📟📠🔋🔌💻💽💾💿📀🎥📺📷📹📼🔍🔎🔬🔭📡💡🔦 🏮📔📕📖📗📘📙📚
+📓📃📜📄📰📑🔖💰💴💵💶💷💸💳✉📧📨📩 📤📥📦📫📪📬📭📮✏✒📝📁📂📅📆📇📈📉📊📋📌
+📍📎📏📐✂ 🔒🔓🔏🔐🔑🔨🔫🔧🔩🔗💉💊🚬🔮🚩🎌💦💨💣☠♠♥♦♣🀄🎴 🔇🔈🔉🔊📢📣💤💢💬💭
+♨🌀🔔🔕✡✝🔯📛🔰🔱⭕✅☑ ✔✖❌❎➕➖➗➰➿〽✳✴❇‼⁉❓❔❕❗©®™🎦🔅🔆💯🔠🔡🔢🔣 🔤🅰🆎
+🅱🆑🆒🆓ℹ🆔Ⓜ🆕🆖🅾🆗🅿 🆘🆙🆚🈁🈂🈷🈶🈯🉐🈹🈚🈲🉑🈸🈴🈳㊗㊙🈺🈵 ▪▫◻◼◽◾⬛⬜🔶🔷🔸
+🔹🔺🔻💠🔲🔳⚪⚫🔴🔵 ♈♉♊♋♌♍♎♏♐♑♒♓⛎💘❤💓💔💕💖💗💙💚💛💜💝💞 💟❣🌿🚧💒
+☎📟💽 ⬆↗➡↘⬇↙⬅↖↕↔↩↪⤴⤵🔃🔄🔙🔚🔛🔜🔝🔀🔁🔂 ▶⏩◀⏪
+🔼⏫🔽⏬📱📶📳📴♻🏧🚮🚰♿🚹🚺🚻🚼🚾⚠🚸
+⛔🚫🚳🚭🚯🚱🚷🔞
+*/
