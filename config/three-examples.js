@@ -1372,6 +1372,21 @@ export default [
                 image: HOST + 'threeExamples/expand/modelBlendReflector.jpg',
             },
             {
+                id: 'blurReflect',
+                name: '模糊反射(drei转原生)',
+                tag: '磨砂反射-#d265bb',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/expand/blurReflect.js',
+                image: HOST + 'threeExamples/expand/blurReflect.jpg',
+                referUrl: 'https://codesandbox.io/p/sandbox/bfplr',
+                inject: {
+                    importmap: {
+                        "postprocessing": HOST + "js/postprocessing.js",
+                        "tweakpane": HOST + "js/tweakpane.min.js"
+                    }
+                },
+            },
+            {
                 id: 'multWindowScene',
                 name: '多浏览器窗口连接',
                 author: 'z2586300277',
