@@ -61,6 +61,7 @@
     id: '父级对应列表唯一id',
     name: '名称',
     tag: '标签名字-背景颜色-字体大小',
+    tip: '提示信息',
     author: '作者id',
     referUrl: '案例参考来源地址', // 如 没有可不配置
     links: [{ url: '连接', name: '名称' }] //配置link referUrl 将不显示
@@ -204,6 +205,8 @@ Id: 'Unique id in the parent corresponding list',
 Name: 'Name',
 
 tag: 'tag-color-size',
+
+tip: 'tip',
 
 Author: 'Author ID',
 

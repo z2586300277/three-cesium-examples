@@ -9,9 +9,21 @@ export default [
             {
                 id: 'codePen',
                 name: 'CodePen 社区',
+                tip: '国外包含大量在线运行的前端案例社区',
                 author: 'Threejs',
                 openUrl: 'https://codepen.io/search/pens?q=three+js',
                 image: FILE_HOST + 'images/codepen.jpg'
+            },
+
+            {
+                id: 'jiawanlong',
+                tag: '推荐',
+                tip: '200多个原生示例：自定义纹理、地形开挖、可视域分析、洪水淹没、缓冲分析、日照分析、方量分析、通透分析、剖面、单体化、视频融合、视频投射、雨雪雾、天空盒、场景出图、体积云、闪电、视锥体、雷达扫描、水波纹、动态扩散点、电子围栏、粒子效果、物理引擎、克里金、海流、大数据可视化、坐标转换、相机、飞行漫游、瓦片加载',
+                author: 'jiawanlong',
+                name: 'Cesium案例',
+                openUrl: 'https://jiawanlong.github.io/examples/cesiumEx/examples.html',
+                githubUrl: 'https://github.com/jiawanlong/Cesium-Examples',
+                image: FILE_HOST + 'images/jiawanlong.jpg'
             },
 
             {
@@ -48,15 +60,7 @@ export default [
                 image: FILE_HOST + 'images/dragonir.jpg'
             },
            
-            {
-                id: 'jiawanlong',
-                tag: '推荐',
-                author: 'jiawanlong',
-                name: 'Cesium案例',
-                openUrl: 'https://jiawanlong.github.io/examples/cesiumEx/examples.html',
-                githubUrl: 'https://github.com/jiawanlong/Cesium-Examples',
-                image: FILE_HOST + 'images/jiawanlong.jpg'
-            },
+          
     
 
             {
@@ -129,6 +133,32 @@ export default [
                 image: FILE_HOST + 'images/3dEarth.png'
             },
             {
+                id: 'kallkago_su7',
+                tag: '热门-#5f9be3',
+                tip: 'SU7车展示案例，使用React+Three.js开发',
+                name: 'su7-R3f',
+                author: 'KallkaGo',
+                openUrl: 'https://z2586300277.github.io/show-site/su7_demo/',
+                githubUrl: 'https://github.com/KallkaGo/su7-demo',
+                image: HOST + 'threeExamples/openSource/kallkago_su7.jpg'
+            },
+            {
+                id: 'z2586300277_3d_editor',
+                tag: '编辑器-#795cddba',
+                tip: '使用three.js开发的低代码组态易用的编辑器',
+                name: '低代码组态编辑器',
+                author: 'z2586300277',
+                openUrl: 'https://z2586300277.github.io/three-editor/dist/#/editor',
+                githubUrl: 'https://github.com/z2586300277/three-editor',
+                image: FILE_HOST + 'images/editor.jpg',
+                links: [
+                    {
+                        name: '📖CSDN',
+                        url: 'https://blog.csdn.net/guang2586/article/details/142910241'
+                    }
+                ]
+            },
+            {
                 id: '3dEarth2',
                 name: '虚幻地球',
                 author: 'GhostCatcg',
@@ -179,15 +209,6 @@ export default [
                 ]
             },
             {
-                id: 'kallkago_su7',
-                tag: '热门-#5f9be3',
-                name: 'su7-R3f',
-                author: 'KallkaGo',
-                openUrl: 'https://z2586300277.github.io/show-site/su7_demo/',
-                githubUrl: 'https://github.com/KallkaGo/su7-demo',
-                image: HOST + 'threeExamples/openSource/kallkago_su7.jpg'
-            },
-            {
                 id: 'su7peng',
                 name: 'SU7-Vue3',
                 author: 'Pong-lei',
@@ -216,21 +237,6 @@ export default [
                 openUrl: 'https://fengtianxi001.github.io/MF-TurbineMonitor',
                 githubUrl: 'https://github.com/fengtianxi001/MF-TurbineMonitor',
                 image: FILE_HOST + 'images/fengji.jpg'
-            },
-            {
-                id: 'z2586300277_3d_editor',
-                tag: '编辑器-#795cddba',
-                name: '低代码组态编辑器',
-                author: 'z2586300277',
-                openUrl: 'https://z2586300277.github.io/three-editor/dist/#/editor',
-                githubUrl: 'https://github.com/z2586300277/three-editor',
-                image: FILE_HOST + 'images/editor.jpg',
-                links: [
-                    {
-                        name: '📖CSDN',
-                        url: 'https://blog.csdn.net/guang2586/article/details/142910241'
-                    }
-                ]
             },
             {
                 id: 'roaming',
@@ -303,6 +309,20 @@ export default [
                 author: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/shader/textStarShader.js',
                 image: HOST + 'threeExamples/shader/textStarShader.jpg',
+            },
+            {
+                id: 'audioSolutions',
+                tag: '音乐',
+                tip: '将音乐可视化为动态效果',
+                name: '音乐可视化',
+                author: 'flowers-10',
+                codeUrl: HOST + 'threeExamples/shader/audioSolutions.js',
+                image: HOST + 'threeExamples/shader/audioSolutions.jpg',
+                meta: {
+                    title: '音乐可视化',
+                    keywords: 'three.js,音乐可视化',
+                    description: '使用three.js音乐可视化'
+                }
             },
             {
                 id: 'fenceShader',
@@ -582,19 +602,6 @@ export default [
                 referUrl: 'https://github.com/hafly',
                 codeUrl: HOST + 'threeExamples/shader/grayShader.js',
                 image: HOST + 'threeExamples/shader/grayShader.jpg',
-            },
-            {
-                id: 'audioSolutions',
-                tag: '声音',
-                name: '音乐可视化',
-                author: 'flowers-10',
-                codeUrl: HOST + 'threeExamples/shader/audioSolutions.js',
-                image: HOST + 'threeExamples/shader/audioSolutions.jpg',
-                meta: {
-                    title: '音乐可视化',
-                    keywords: 'three.js,音乐可视化',
-                    description: '使用three.js音乐可视化'
-                }
             },
             {
                 id: 'waveShader',
@@ -1370,6 +1377,21 @@ export default [
                 author: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/expand/modelBlendReflector.js',
                 image: HOST + 'threeExamples/expand/modelBlendReflector.jpg',
+            },
+            {
+                id: 'blurReflect',
+                name: '模糊反射(drei转原生)',
+                tag: '磨砂反射-#d265bb',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/expand/blurReflect.js',
+                image: HOST + 'threeExamples/expand/blurReflect.jpg',
+                referUrl: 'https://codesandbox.io/p/sandbox/bfplr',
+                inject: {
+                    importmap: {
+                        "postprocessing": HOST + "js/postprocessing.js",
+                        "tweakpane": HOST + "js/tweakpane.min.js"
+                    }
+                },
             },
             {
                 id: 'multWindowScene',

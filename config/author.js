@@ -5,8 +5,19 @@ export default [
     {
         id: 'z2586300277',
         name: '优雅永不过时',
+        describe: '一个专注于可视化基于的前端工程师',
         github: 'https://github.com/z2586300277',
-        icon: HOST + 'files/author/z2586300277.png'
+        icon: HOST + 'files/author/z2586300277.png',
+        links: [
+            {
+                name: '博客',
+                url: 'https://blog.csdn.net/guang2586'
+            },
+            {
+                name: 'BiBi',
+                url: 'https://space.bilibili.com/245165721'
+            }
+        ]
     },
 
     {
@@ -68,15 +79,29 @@ export default [
     {
         id: 'flowers-10',
         name: 'flowers-10',
+        describe: '热爱Three.js的前端工程师',
         github: 'https://github.com/flowers-10',
-        icon: HOST + 'files/author/flowers-10.jpg'
+        icon: HOST + 'files/author/flowers-10.jpg',
+        links: [
+            {
+                name: '博客',
+                url: 'https://blog.csdn.net/m0_68324632?type=blog'
+            }
+        ]
     },
 
     {
         id: 'KallkaGo',
         name: 'KallkaGo',
+        describe: 'Three.js 偏底层的大佬，github 有很多优秀的项目',
         github: 'https://github.com/KallkaGo',
-        icon: HOST + 'files/author/KallkaGo.jpg'
+        icon: HOST + 'files/author/KallkaGo.jpg',
+        links: [
+            {
+                name: '主页(vercel)',
+                url: 'https://my-website-one-topaz.vercel.app/'
+            }
+        ]
     },
 
     {
@@ -104,7 +129,13 @@ export default [
         id: 'huan_meng_hai_yan',
         name: '幻梦丶海炎',
         github: 'https://gitee.com/hy282',
-        icon: HOST + 'files/author/huan_meng_hai_yan.jpg'
+        icon: HOST + 'files/author/huan_meng_hai_yan.jpg',
+        links: [
+            {
+                name: '博客',
+                url: 'https://blog.csdn.net/qq_42760477'
+            }
+        ]
     },
 
     {
@@ -131,6 +162,7 @@ export default [
     {
         id: 'jiawanlong',
         name: 'jiawanlong',
+        describe: 'Cesium 业界顶级大佬, 专注于三维地理信息可视化',
         github: 'https://github.com/jiawanlong',
         icon: 'https://avatars.githubusercontent.com/u/20716499?v=4'
     },

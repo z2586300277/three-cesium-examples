@@ -16,6 +16,15 @@ export default [
         githubUrl: 'https://github.com/mtsee/vr-hall',
         openUrl: 'http://test4.h5ds.com/',
         image: HOST + 'files/site/logo.svg',
+    },
+    {
+        id: 'music_wobble',
+        name: '3D音乐 (简化)',
+        author: 'AUTO',
+        githubUrl: 'https://github.com/d3ttl4ff/music-wobble',
+        openUrl: 'https://z2586300277.github.io/show-site/music_wobble',
+        downloadUrl: 'https://z2586300277.github.io/show-site/music_wobble/source.zip',
+        image: HOST + 'threeExamples/openSource/music_wobble.jpg',
     }
 ]
 
