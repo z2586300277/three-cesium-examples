@@ -829,7 +829,14 @@ export default [
                 author: 'nico',
                 codeUrl: HOST + 'threeExamples/shader/contour.js',
                 image: HOST + 'threeExamples/shader/contour.jpg',
-            }
+            },
+            {
+                id: 'softLight',
+                name: '柔光',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/shader/softLight.js',
+                image: HOST + 'threeExamples/shader/softLight.jpg',
+            },
         ]
     },
     {
