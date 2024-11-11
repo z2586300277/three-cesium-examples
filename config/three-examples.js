@@ -1461,6 +1461,13 @@ export default [
                 }
             },
             {
+                id: 'afterimagePass',
+                name: '残影效果',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/effectComposer/afterimagePass.js',
+                image: HOST + 'threeExamples/effectComposer/afterimagePass.jpg',
+            },
+            {
                 id: "EdgeBlurringEffect",
                 name: "边缘模糊效果",
                 author: "giser2017",
