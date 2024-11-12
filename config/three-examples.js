@@ -991,6 +991,14 @@ export default [
                 }
             },
             {
+                id: 'area,pixijs,webgl',
+                author: 'nico',
+                name: '场景导航（免模型）',
+                githubUrl:'https://github.com/Nicolas-zn/my_code/blob/main/src/code/interactive_image.vue',
+                openUrl:'http://nicowebgl.cn/portfolio/#/interactive_image',
+                image: HOST + 'threeExamples/openSource/area.jpg'
+            },
+            {
                 id: 'codeCloud',
                 name: '代码云',
                 author: 'yiiiiiiqianyao',
@@ -1287,7 +1295,6 @@ export default [
                 image: HOST + 'threeExamples/animation/clipAnimation.jpg',
             }
         ]
-        
     },
     {
         pid: 'physics',
