@@ -1399,13 +1399,7 @@ export default [
                 author: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/expand/blurReflect.js',
                 image: HOST + 'threeExamples/expand/blurReflect.jpg',
-                referUrl: 'https://codesandbox.io/p/sandbox/bfplr',
-                inject: {
-                    importmap: {
-                        "postprocessing": HOST + "js/postprocessing.js",
-                        "tweakpane": HOST + "js/tweakpane.min.js"
-                    }
-                },
+                referUrl: 'https://codesandbox.io/p/sandbox/bfplr'
             },
             {
                 id: 'multWindowScene',
@@ -1427,11 +1421,6 @@ export default [
                 author: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/effectComposer/selectBloomPass.js',
                 image: HOST + 'threeExamples/effectComposer/selectBloomPass.jpg',
-                inject: {
-                    importmap: {
-                        "postprocessing": HOST + "js/postprocessing.js"
-                    }
-                },
                 meta: {
                     title: '辉光通道',
                     keywords: 'three.js,辉光通道',
@@ -1456,11 +1445,6 @@ export default [
                 author: "giser2017",
                 codeUrl: HOST + 'threeExamples/effectComposer/uvTransformation.js',
                 image: FILE_HOST + "images/four/uvTransformation.png",
-                inject: {
-                    importmap: {
-                        "postprocessing": HOST + "js/postprocessing.js"
-                    }
-                },
                 meta: {
                     title: "UV图像变换",
                     keywords: "three.js,UV图像变换",

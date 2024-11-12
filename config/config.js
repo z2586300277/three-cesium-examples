@@ -35,6 +35,8 @@ window.THREE_CESIUM_NAVIGATION = [
                 "three/examples/jsm/": "https://threejs.org/examples/jsm/",
                 "gsap": FILE_HOST + "js/gsap/index.js",
                 "dat.gui": HOST + "js/dat.gui.module.js",
+                "postprocessing": HOST + "js/postprocessing.js",
+                "tweakpane": HOST + "js/tweakpane.min.js",
                 "@tweenjs/tween.js": HOST + "js/tween.esm.js"
             }
         }
