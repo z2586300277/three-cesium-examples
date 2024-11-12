@@ -1468,6 +1468,13 @@ export default [
                 image: HOST + 'threeExamples/effectComposer/afterimagePass.jpg',
             },
             {
+                id: 'saturationPass',
+                name: '饱和度(自定义Pass)',
+                author: 'huan_meng_hai_yan',
+                codeUrl: HOST + 'threeExamples/effectComposer/saturationPass.js',
+                image: HOST + 'threeExamples/effectComposer/saturationPass.jpg',
+            },
+            {
                 id: "EdgeBlurringEffect",
                 name: "边缘模糊效果",
                 author: "giser2017",
