@@ -975,7 +975,7 @@ export default [
                 author: 'nico',
                 name: 'unreal风格场景标注',
                 githubUrl:'https://github.com/Nicolas-zn/annotations',
-                openUrl:'http://nicowebgl.cn/path/',
+                openUrl:'http://www.nicowebgl.cn/annotations/',
                 image: HOST + 'threeExamples/openSource/unrealstyle.jpg'
             },
             {
