@@ -6,6 +6,7 @@ export default [
         pid: 'friendStation',
         name: '开源导航',
         children: [
+ 
             {
                 id: 'codePen',
                 name: 'CodePen 社区',
@@ -40,6 +41,21 @@ export default [
                 author: 'Threejs',
                 openUrl: 'https://tympanus.net/codrops/demos/?tag=three-js',
                 image: FILE_HOST + 'images/tympanus.jpg'
+            },
+
+            {
+                id: 'thanksBibi',
+                name: '感谢来自BiBi的支持',
+                tag: '感谢BiBi-#ff69b4',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/application/thanksBibi.js',
+                image: HOST + 'threeExamples/application/thanksBibi.jpg',
+                links: [
+                    {
+                        name: '📺BiBi',
+                        url: 'https://www.bilibili.com/video/BV1HumBYMEa1'
+                    }
+                ]
             },
 
             {
@@ -819,7 +835,7 @@ export default [
                 image: HOST + 'threeExamples/shader/shader_planet.jpg',
                 inject: {
                     importmap: {
-                        "three_noise": HOST + "js/wasm/three_noise.js"
+                        "three_noise": FILE_HOST + "js/wasm/three_noise.js"
                     }
                 }
             },
