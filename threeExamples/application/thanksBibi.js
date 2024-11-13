@@ -98,9 +98,9 @@ function createText(font) {
 
     const text =
 
-    `            Three-Cesium-Examples 
+    `           Three-Cesium-Examples 
 
-                 Thanks Form BiBi
+                Thanks From BiBi
 
 
 
