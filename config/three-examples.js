@@ -141,12 +141,14 @@ export default [
                 image: HOST + 'threeExamples/openSource/ziTengHua.jpg'
             },
             {
-                id: '3dEarth',
-                name: '3D地球',
-                author: 'RainManGO',
-                openUrl: 'https://z2586300277.github.io/show-site/3dEarth/',
-                githubUrl: 'https://github.com/RainManGO/3d-earth',
-                image: FILE_HOST + 'images/3dEarth.png'
+                id: 'customEffect',
+                name: '自定义后期处理(r3f)',
+                tag: '后期处理',
+                tip: '基于react-three-fiber 制作的自定义后期处理效果',
+                author: 'KallkaGo',
+                openUrl: 'https://z2586300277.github.io/show-site/customEffect/',
+                githubUrl: 'https://github.com/KallkaGo/CustomEffect',
+                image: 'https://z2586300277.github.io/show-site/customEffect/customEffect.jpg'
             },
             {
                 id: 'kallkago_su7',
@@ -173,6 +175,14 @@ export default [
                         url: 'https://blog.csdn.net/guang2586/article/details/142910241'
                     }
                 ]
+            },
+            {
+                id: '3dEarth',
+                name: '3D地球',
+                author: 'RainManGO',
+                openUrl: 'https://z2586300277.github.io/show-site/3dEarth/',
+                githubUrl: 'https://github.com/RainManGO/3d-earth',
+                image: FILE_HOST + 'images/3dEarth.png'
             },
             {
                 id: '3dEarth2',
