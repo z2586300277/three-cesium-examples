@@ -5,7 +5,7 @@ export default [
     {
         id: 'z2586300277',
         name: '优雅永不过时',
-        describe: '一个专注于可视化基于的前端工程师',
+        describe: '专注于三维可视化领域的前端工程师',
         github: 'https://github.com/z2586300277',
         icon: HOST + 'files/author/z2586300277.png',
         links: [
@@ -98,7 +98,7 @@ export default [
         icon: HOST + 'files/author/KallkaGo.jpg',
         links: [
             {
-                name: '主页(vercel)',
+                name: '主页(外网)',
                 url: 'https://my-website-one-topaz.vercel.app/'
             }
         ]
@@ -114,8 +114,15 @@ export default [
     {
         id: 'nico',
         name: 'nico',
+        describe: 'webgl知无不尽，canvas尽无不知，rust似水中月，wasm似镜中花，线性代数就在脚下，而shader路遥且长',
         github: 'https://github.com/Nicolas-zn',
-        icon: 'https://avatars.githubusercontent.com/u/56536031?v=4'
+        icon: 'https://avatars.githubusercontent.com/u/56536031?v=4',
+        links: [
+            {
+                name: '主页',
+                url: 'http://nicowebgl.cn/portfolio/#/my_resume'
+            }
+        ]
     },
 
     {
@@ -128,6 +135,7 @@ export default [
     {
         id: 'huan_meng_hai_yan',
         name: '幻梦丶海炎',
+        describe: '一位热爱webgl的大佬，在各个webgl QQ群活跃，经常帮助人解决问题',
         github: 'https://gitee.com/hy282',
         icon: HOST + 'files/author/huan_meng_hai_yan.jpg',
         links: [
@@ -142,7 +150,13 @@ export default [
         id: 'kavalcio',
         name: 'kavalcio',
         github: 'https://github.com/kavalcio',
-        icon: 'https://avatars.githubusercontent.com/u/68965649?v=4'
+        icon: 'https://avatars.githubusercontent.com/u/68965649?v=4',
+        links: [
+            {
+                name: '案例(外网)',
+                url: 'https://three-js-playground-sigma.vercel.app/'
+            }
+        ]
     },
 
     {
@@ -311,8 +325,15 @@ export default [
     {
         id: 'Siricee',
         name: 'Liu Zijian',
+        describe: '一位在github Three.js 板块上活跃的三维大佬, 关注了很多Three.js 的项目和开发者',
         github: 'https://github.com/Siricee',
-        icon: 'https://avatars.githubusercontent.com/u/25154957?v=4'
+        icon: 'https://avatars.githubusercontent.com/u/25154957?v=4',
+        links: [
+            {
+                name: '收藏(netlify)',
+                url: 'https://sirice.netlify.app/collections'
+            }
+        ]
     },
 
     {
@@ -353,6 +374,7 @@ export default [
     {
         id: 'ASouthernCat',
         name: 'ASouthernCat',
+        describe: '一个web3d，threejs，blender 爱好者',
         github: 'https://github.com/ASouthernCat',
         icon: 'https://avatars.githubusercontent.com/u/103131106?v=4'
     },

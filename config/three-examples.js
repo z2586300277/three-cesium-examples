@@ -6,6 +6,7 @@ export default [
         pid: 'friendStation',
         name: '开源导航',
         children: [
+ 
             {
                 id: 'codePen',
                 name: 'CodePen 社区',
@@ -18,7 +19,7 @@ export default [
             {
                 id: 'jiawanlong',
                 tag: '推荐',
-                tip: '200多个原生示例：自定义纹理、地形开挖、可视域分析、洪水淹没、缓冲分析、日照分析、方量分析、通透分析、剖面、单体化、视频融合、视频投射、雨雪雾、天空盒、场景出图、体积云、闪电、视锥体、雷达扫描、水波纹、动态扩散点、电子围栏、粒子效果、物理引擎、克里金、海流、大数据可视化、坐标转换、相机、飞行漫游、瓦片加载',
+                tip: 'Cesium2024年最新demos，200多个原生示例：自定义纹理、地形开挖、可视域分析、洪水淹没、缓冲分析、日照分析、方量分析、通透分析、剖面、单体化、视频融合、视频投射、雨雪雾、天空盒、场景出图、体积云、闪电、视锥体、雷达扫描、水波纹、动态扩散点、电子围栏、粒子效果、物理引擎、克里金、海流、大数据可视化、坐标转换、相机、飞行漫游、瓦片加载、xyz、tms、wms、wmts、天地图、高德、百度、wkt、shp、geojson、pbf、地形、entity、模型、海量数据、Primitive、gif、聚合、czml、字体图标、运动、3Dtiles、模型偏移、等等。。',
                 author: 'jiawanlong',
                 name: 'Cesium案例',
                 openUrl: 'https://jiawanlong.github.io/examples/cesiumEx/examples.html',
@@ -40,6 +41,21 @@ export default [
                 author: 'Threejs',
                 openUrl: 'https://tympanus.net/codrops/demos/?tag=three-js',
                 image: FILE_HOST + 'images/tympanus.jpg'
+            },
+
+            {
+                id: 'thanksBibi',
+                name: '感谢来自BiBi的支持',
+                tag: '感谢BiBi-#ff69b4',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/application/thanksBibi.js',
+                image: HOST + 'threeExamples/application/thanksBibi.jpg',
+                links: [
+                    {
+                        name: '📺BiBi',
+                        url: 'https://www.bilibili.com/video/BV1HumBYMEa1'
+                    }
+                ]
             },
 
             {
@@ -819,7 +835,7 @@ export default [
                 image: HOST + 'threeExamples/shader/shader_planet.jpg',
                 inject: {
                     importmap: {
-                        "three_noise": HOST + "js/wasm/three_noise.js"
+                        "three_noise": FILE_HOST + "js/wasm/three_noise.js"
                     }
                 }
             },
@@ -829,7 +845,14 @@ export default [
                 author: 'nico',
                 codeUrl: HOST + 'threeExamples/shader/contour.js',
                 image: HOST + 'threeExamples/shader/contour.jpg',
-            }
+            },
+            {
+                id: 'softLight',
+                name: '柔光',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/shader/softLight.js',
+                image: HOST + 'threeExamples/shader/softLight.jpg',
+            },
         ]
     },
     {
@@ -968,7 +991,7 @@ export default [
                 author: 'nico',
                 name: 'unreal风格场景标注',
                 githubUrl:'https://github.com/Nicolas-zn/annotations',
-                openUrl:'http://nicowebgl.cn/path/',
+                openUrl:'http://www.nicowebgl.cn/annotations/',
                 image: HOST + 'threeExamples/openSource/unrealstyle.jpg'
             },
             {
@@ -982,6 +1005,14 @@ export default [
                     keywords: 'three.js,魔法阵',
                     description: '使用three.js魔法阵'
                 }
+            },
+            {
+                id: 'area,pixijs,webgl',
+                author: 'nico',
+                name: '场景导航（免模型）',
+                githubUrl:'https://github.com/Nicolas-zn/my_code/blob/main/src/code/interactive_image.vue',
+                openUrl:'http://nicowebgl.cn/portfolio/#/interactive_image',
+                image: HOST + 'threeExamples/openSource/area.jpg'
             },
             {
                 id: 'codeCloud',
@@ -1280,7 +1311,6 @@ export default [
                 image: HOST + 'threeExamples/animation/clipAnimation.jpg',
             }
         ]
-        
     },
     {
         pid: 'physics',
@@ -1385,13 +1415,7 @@ export default [
                 author: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/expand/blurReflect.js',
                 image: HOST + 'threeExamples/expand/blurReflect.jpg',
-                referUrl: 'https://codesandbox.io/p/sandbox/bfplr',
-                inject: {
-                    importmap: {
-                        "postprocessing": HOST + "js/postprocessing.js",
-                        "tweakpane": HOST + "js/tweakpane.min.js"
-                    }
-                },
+                referUrl: 'https://codesandbox.io/p/sandbox/bfplr'
             },
             {
                 id: 'multWindowScene',
@@ -1413,11 +1437,6 @@ export default [
                 author: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/effectComposer/selectBloomPass.js',
                 image: HOST + 'threeExamples/effectComposer/selectBloomPass.jpg',
-                inject: {
-                    importmap: {
-                        "postprocessing": HOST + "js/postprocessing.js"
-                    }
-                },
                 meta: {
                     title: '辉光通道',
                     keywords: 'three.js,辉光通道',
@@ -1442,16 +1461,25 @@ export default [
                 author: "giser2017",
                 codeUrl: HOST + 'threeExamples/effectComposer/uvTransformation.js',
                 image: FILE_HOST + "images/four/uvTransformation.png",
-                inject: {
-                    importmap: {
-                        "postprocessing": HOST + "js/postprocessing.js"
-                    }
-                },
                 meta: {
                     title: "UV图像变换",
                     keywords: "three.js,UV图像变换",
                     description: "UV图像变换"
                 }
+            },
+            {
+                id: 'afterimagePass',
+                name: '残影效果',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/effectComposer/afterimagePass.js',
+                image: HOST + 'threeExamples/effectComposer/afterimagePass.jpg',
+            },
+            {
+                id: 'saturationPass',
+                name: '饱和度(自定义Pass)',
+                author: 'huan_meng_hai_yan',
+                codeUrl: HOST + 'threeExamples/effectComposer/saturationPass.js',
+                image: HOST + 'threeExamples/effectComposer/saturationPass.jpg',
             },
             {
                 id: "EdgeBlurringEffect",
