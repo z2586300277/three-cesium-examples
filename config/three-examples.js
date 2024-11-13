@@ -991,7 +991,7 @@ export default [
                 author: 'nico',
                 name: 'unreal风格场景标注',
                 githubUrl:'https://github.com/Nicolas-zn/annotations',
-                openUrl:'http://nicowebgl.cn/path/',
+                openUrl:'http://www.nicowebgl.cn/annotations/',
                 image: HOST + 'threeExamples/openSource/unrealstyle.jpg'
             },
             {
@@ -1005,6 +1005,14 @@ export default [
                     keywords: 'three.js,魔法阵',
                     description: '使用three.js魔法阵'
                 }
+            },
+            {
+                id: 'area,pixijs,webgl',
+                author: 'nico',
+                name: '场景导航（免模型）',
+                githubUrl:'https://github.com/Nicolas-zn/my_code/blob/main/src/code/interactive_image.vue',
+                openUrl:'http://nicowebgl.cn/portfolio/#/interactive_image',
+                image: HOST + 'threeExamples/openSource/area.jpg'
             },
             {
                 id: 'codeCloud',
@@ -1303,7 +1311,6 @@ export default [
                 image: HOST + 'threeExamples/animation/clipAnimation.jpg',
             }
         ]
-        
     },
     {
         pid: 'physics',
@@ -1408,13 +1415,7 @@ export default [
                 author: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/expand/blurReflect.js',
                 image: HOST + 'threeExamples/expand/blurReflect.jpg',
-                referUrl: 'https://codesandbox.io/p/sandbox/bfplr',
-                inject: {
-                    importmap: {
-                        "postprocessing": HOST + "js/postprocessing.js",
-                        "tweakpane": HOST + "js/tweakpane.min.js"
-                    }
-                },
+                referUrl: 'https://codesandbox.io/p/sandbox/bfplr'
             },
             {
                 id: 'multWindowScene',
@@ -1436,11 +1437,6 @@ export default [
                 author: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/effectComposer/selectBloomPass.js',
                 image: HOST + 'threeExamples/effectComposer/selectBloomPass.jpg',
-                inject: {
-                    importmap: {
-                        "postprocessing": HOST + "js/postprocessing.js"
-                    }
-                },
                 meta: {
                     title: '辉光通道',
                     keywords: 'three.js,辉光通道',
@@ -1465,11 +1461,6 @@ export default [
                 author: "giser2017",
                 codeUrl: HOST + 'threeExamples/effectComposer/uvTransformation.js',
                 image: FILE_HOST + "images/four/uvTransformation.png",
-                inject: {
-                    importmap: {
-                        "postprocessing": HOST + "js/postprocessing.js"
-                    }
-                },
                 meta: {
                     title: "UV图像变换",
                     keywords: "three.js,UV图像变换",
