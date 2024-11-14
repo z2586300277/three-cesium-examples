@@ -402,6 +402,13 @@ export default [
                 image: HOST + 'threeExamples/shader/cityLight.jpg',
             },
             {
+                id: 'audioDance',
+                name: '音乐舞动',
+                author: 'wuyifan0203',
+                codeUrl: HOST + 'threeExamples/shader/audioDance.js',
+                image: HOST + 'threeExamples/shader/audioDance.jpg',
+            },
+            {
                 id: 'shaderSky',
                 name: '着色器天空',
                 author: 'z2586300277',
