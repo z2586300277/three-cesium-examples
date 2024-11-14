@@ -1,5 +1,6 @@
 import cesiumExamples from "./cesium-examples.js";
 import threeExamples from "./three-examples.js";
+import githubExamples from "./github-examples.js";
 import threeCesiumAuthors from "./author.js";
 import threeCesiumLinks from "./links.js";
 import { HOST, FILE_HOST } from "./host.js";
@@ -54,6 +55,11 @@ window.THREE_CESIUM_NAVIGATION = [
             },
             jsHeader: `window.CESIUM_BASE_URL = "${FILE_HOST}js/cesium"`
         }
+    },
+    {
+        name: "Github",
+        label: "Github导航",
+        examples: githubExamples,
     }
 ];
 
