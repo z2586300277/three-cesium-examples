@@ -4,7 +4,7 @@
 
 加入仓库🐧QQ       | 微信             |  预览图                       |            Stars                
 :-------------------------:|:-------------------------:|:-------------------------:|:-------------------------
-🐧QQ：2586300277 <br> 🐧QQ：805879871 <br> 🐧群：865182188 <br> 微信：15230117323 | <img src="https://z2586300277.github.io/3d-file-server/images/wechat.jpg" width="140px" height="140px" />| <img src="https://z2586300277.github.io/3d-file-server/images/threeCesiumExamples.jpg" width="200px" height="140px" /> | <img src="https://api.star-history.com/svg?repos=z2586300277/three-cesium-examples&type=Date" width="200px" height="140px" /> 
+🐧QQ：2586300277 <br> 🐧QQ：805879871 <br> 🐧群：865182188 <br> 微信：15230117323 | <img src="https://z2586300277.github.io/3d-file-server/images/wechat.jpg" height="140px" />| <img src="https://z2586300277.github.io/3d-file-server/images/threeCesiumExamples.jpg" width="200px" height="140px" /> | <img src="https://api.star-history.com/svg?repos=z2586300277/three-cesium-examples&type=Date" width="200px" height="140px" /> 
 
 - github dev分支实时预览 http://z2586300277.github.io/three-cesium-examples
 
