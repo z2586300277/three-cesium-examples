@@ -2,12 +2,9 @@
 
 ##  开源不易 - ⭐ - 点星助力 -⚡ - 每日更新 - 👋 - 为爱发电
 
-加入仓库🐧QQ           |  预览图                       |            Stars
-:-------------------------:|:-------------------------:|:-------------------------
-🐧QQ：2586300277 <br> 🐧QQ：805879871 <br> 🐧群：865182188 |  <img src="https://z2586300277.github.io/3d-file-server/images/threeCesiumExamples.jpg" width="300px" height="180px" /> | <img src="https://api.star-history.com/svg?repos=z2586300277/three-cesium-examples&type=Date" width="300px" height="180px" /> 
-
-
-<img src="https://contrib.rocks/image?repo=z2586300277/three-cesium-examples&v=1" />
+加入仓库🐧QQ       | 微信             |  预览图                       |            Stars                
+:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------
+🐧QQ：2586300277 <br> 🐧QQ：805879871 <br> 🐧群：865182188 <br> 微信：15230117323 | <img src="https://z2586300277.github.io/3d-file-server/images/wechat.jpg" height="140px" />| <img src="https://z2586300277.github.io/3d-file-server/images/threeCesiumExamples.jpg" width="200px" height="140px" /> | <img src="https://api.star-history.com/svg?repos=z2586300277/three-cesium-examples&type=Date" width="200px" height="140px" /> 
 
 - github dev分支实时预览 http://z2586300277.github.io/three-cesium-examples
 
@@ -20,6 +17,8 @@
 - 关注git histroy, 记录我的每一天, 对学习热爱的朋友可 follow me。
 
 - 注: 本站框架和在线调试源于three-editor库。
+
+<img src="https://contrib.rocks/image?repo=z2586300277/three-cesium-examples&v=1" />
 
 ## 📦 自行部署
 

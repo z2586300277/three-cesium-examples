@@ -860,6 +860,14 @@ export default [
                 }
             },
             {
+                id: 'videoModel',
+                name: '模型视频材质',
+                author: 'z2586300277',
+                referUrl: 'https://github.com/YCYTeam/YCY-TrainingCamp-S2/blob/main/src/day02_%E7%9B%B4%E6%92%AD%E4%BB%A3%E7%A0%81.js',
+                codeUrl: HOST + 'threeExamples/application/videoModel.js',
+                image: HOST + 'threeExamples/application/videoModel.jpg',
+            },
+            {
                 id: 'spriteText',
                 name: '精灵文字',
                 author: 'z2586300277',
