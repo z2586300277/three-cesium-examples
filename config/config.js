@@ -58,7 +58,7 @@ window.THREE_CESIUM_NAVIGATION = [
     },
     {
         name: "Github",
-        label: "Github导航",
+        label: "Github案例",
         examples: githubExamples,
     }
 ];
