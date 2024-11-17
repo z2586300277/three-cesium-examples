@@ -136,7 +136,7 @@ export default [
         id: 'huan_meng_hai_yan',
         name: '幻梦丶海炎',
         describe: '一位热爱webgl的大佬，在各个webgl QQ群活跃，经常帮助人解决问题',
-        github: 'https://gitee.com/hy282',
+        github: 'https://github.com/HuanMengHaiYan',
         icon: HOST + 'files/author/huan_meng_hai_yan.jpg',
         links: [
             {
@@ -364,7 +364,7 @@ export default [
         icon: 'https://avatars.githubusercontent.com/u/6784226?v=4'
     },
 
-    {   
+    {
         id:'Pong-lei',
         name:'Pong-lei',
         github: 'https://github.com/Pong-lei',
@@ -384,6 +384,13 @@ export default [
         name: 'Fate-ui',
         github: 'https://github.com/Fate-ui',
         icon: 'https://avatars.githubusercontent.com/u/69997002?v=4'
+    },
+
+    {
+        id: 'CrimsonHu',
+        name: 'CrimsonHu',
+        github: 'https://gitee.com/CrimsonHu',
+        icon: HOST + 'files/site/logo.svg'
     }
 
 ]

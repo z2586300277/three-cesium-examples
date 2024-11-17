@@ -320,6 +320,13 @@ export default [
                 }
             },
             {
+                id:'compassShader',
+                name: '罗盘',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/shader/compassShader.js',
+                image: HOST + 'threeExamples/shader/compassShader.jpg',
+            },
+            {
                 id: 'halfCircle',
                 name: '半圆',
                 author: 'yiiiiiiqianyao',
@@ -676,6 +683,13 @@ export default [
                 codeUrl: HOST + 'threeExamples/shader/softLight.js',
                 image: HOST + 'threeExamples/shader/softLight.jpg',
             },
+            {
+                id: 'earthScan',
+                name: '地球扫描',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/shader/earthScan.js',
+                image: HOST + 'threeExamples/shader/earthScan.jpg',
+            }
         ]
     },
     {

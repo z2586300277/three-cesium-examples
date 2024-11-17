@@ -8,7 +8,7 @@ const scene = new THREE.Scene()
 
 const camera = new THREE.PerspectiveCamera(75, box.clientWidth / box.clientHeight, 0.1, 1000)
 
-camera.position.set(0, 10, 10)
+camera.position.set(0, 0, 20)
 
 const renderer = new THREE.WebGLRenderer()
 
@@ -40,6 +40,7 @@ window.onresize = () => {
 
 scene.add(new THREE.AmbientLight(0xffffff, 2), new THREE.AxesHelper(1000))
 
+/* 热力图实现 */
 const arr = [[0., 0., 10.], [.2, .6, 5.], [.25, .7, 8.], [.33, .9, 5.], [.35, .8, 6.], [0.017, 5.311, 6.000], [-.45, .8, 4.], [-.2, -.6, 5.], [-.25, -.7, 8.], [-.33, -.9, 8.], [.35, -.45, 10.], [-.1, -.8, 10.], [.33, -.3, 5.], [-.35, .75, 6.], [.6, .4, 10.], [-.4, -.8, 4.], [.7, -.3, 6.], [.3, -.8, 8.]].map(i => new THREE.Vector3(...i))
 
 const uniforms1 = {
@@ -100,7 +101,7 @@ void main() {
 }
 `
 
-const fragmentShader = 'precision highp float;\n' + 'varying vec2 vUv; \n' +
+const getFragmentShader = () => 'precision highp float;\n' + 'varying vec2 vUv; \n' +
 
     Object.keys(uniforms1).map(i => 'uniform ' + uniforms1[i].unit + ' ' + i + ';')
         .join('\n')
@@ -127,22 +128,34 @@ void main()
     gl_FragColor = vec4(gradient(d, uv), opacity);
 } `
 
-
 const shaderMaterial = new THREE.ShaderMaterial({
 
     uniforms,
 
     vertexShader,
 
-    fragmentShader,
+    fragmentShader: getFragmentShader(),
 
     transparent: true
 
 
 })
 
-const plane = new THREE.Mesh(new THREE.PlaneGeometry(10, 10), shaderMaterial)
+const plane = new THREE.Mesh(new THREE.PlaneGeometry(20, 20), shaderMaterial)
 
 scene.add(plane)
 
-console.log(shaderMaterial)
+/* 循环 */
+setInterval(() => {
+
+    arr.pop()
+
+    arr.unshift(new THREE.Vector3(Math.random() * 2 - 1, Math.random() * 2 - 1, Math.random() * 10))
+
+    uniforms.PointsCount.value = arr.length
+
+    shaderMaterial.fragmentShader = getFragmentShader()
+
+    shaderMaterial.needsUpdate = true
+
+}, 200)

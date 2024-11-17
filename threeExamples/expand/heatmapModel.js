@@ -1,7 +1,7 @@
 import * as THREE from 'three'
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js'
 import { OBJLoader } from 'three/examples/jsm/loaders/OBJLoader.js'
-import * as dat from 'dat.gui'
+import { GUI } from "three/addons/libs/lil-gui.module.min.js";
 
 const box = document.getElementById('box')
 
@@ -214,18 +214,20 @@ function setHeat(box3) {
     const dataPoints = []
     const dataValues = []
 
+    const getPoint = () => new THREE.Vector3(  
+
+        Math.random() * (box3.max.x - box3.min.x) + box3.min.x,
+
+        Math.random() * (box3.max.y - box3.min.y) + box3.min.y,
+
+        Math.random() * (box3.max.z - box3.min.z) + box3.min.z
+
+    )
+
     // 在box3 的范围内随机生成点
     for (let i = 0; i < 20; i++) {
 
-        dataPoints.push(new THREE.Vector3(
-
-            Math.random() * (box3.max.x - box3.min.x) + box3.min.x,
-
-            Math.random() * (box3.max.y - box3.min.y) + box3.min.y,
-
-            Math.random() * (box3.max.z - box3.min.z) + box3.min.z
-
-        ))
+        dataPoints.push(getPoint())
 
         dataValues.push(Math.random())
 
@@ -244,8 +246,22 @@ function setHeat(box3) {
         smoothstepEdges: { min: 0.0, max: 1.0 }
     });
 
+    setInterval(() => {
+
+        dataPoints.pop()
+
+        dataPoints.unshift(getPoint())
+
+        dataValues.pop()
+
+        dataValues.unshift(Math.random())
+
+        material.updateData(dataPoints, dataValues)
+
+    }, 200)
+
     // GUI 控制
-    const materialFolder = new dat.GUI();
+    const materialFolder = new GUI();
 
     materialFolder
         .addColor(material.uniforms.colorLow, "value")

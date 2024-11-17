@@ -459,7 +459,32 @@ export default [
                     keywords: 'cesium.js,热力图',
                     description: 'cesium 结合 热力图'
                 }
-            }
+            },
+            {
+                id: 'fire',
+                name: '粒子（火焰）',
+                author: 'jiawanlong',
+                codeUrl: HOST + 'cesiumExamples/expand/fire.js',
+                image: HOST + 'cesiumExamples/expand/fire.jpg',
+                meta: {
+                    title: '粒子（火焰）',
+                    keywords: '粒子',
+                    description: '粒子（火焰）'
+                }
+            },
+            {
+                id: 'ripple',
+                name: '水波纹',
+                author: 'jiawanlong',
+                codeUrl: HOST + 'cesiumExamples/expand/ripple.js',
+                image: HOST + 'cesiumExamples/expand/ripple.jpg',
+                meta: {
+                    title: '水波纹',
+                    keywords: '水波纹',
+                    description: '水波纹'
+                }
+            },
+            
         ]
     },
     {
@@ -472,7 +497,14 @@ export default [
                 author: 'giser2017',
                 openUrl: 'https://z2586300277.github.io/show-site/dgis/',
                 image: HOST + 'cesiumExamples/tools/mapDataConvert.jpg',
+            },
+            {
+                pid: 'layerDownload',
+                name: '地图下载器',
+                author: 'CrimsonHu',
+                openUrl: 'https://gitee.com/CrimsonHu/java_map_download',
+                image: HOST + 'cesiumExamples/tools/layerDownload.jpg',
             }
-        ]
+        ],
     }
 ]
