@@ -35,6 +35,7 @@ window.THREE_CESIUM_NAVIGATION = [
                 "three/addons/": "https://threejs.org/examples/jsm/",
                 "three/examples/jsm/": "https://threejs.org/examples/jsm/",
                 "gsap": FILE_HOST + "js/gsap/index.js",
+                "animejs/": FILE_HOST + "/js/animejs/", // HOST + "js/anime.es.js",
                 "dat.gui": HOST + "js/dat.gui.module.js",
                 "postprocessing": HOST + "js/postprocessing.js",
                 "tweakpane": HOST + "js/tweakpane.min.js",
