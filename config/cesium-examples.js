@@ -497,7 +497,14 @@ export default [
                 author: 'giser2017',
                 openUrl: 'https://z2586300277.github.io/show-site/dgis/',
                 image: HOST + 'cesiumExamples/tools/mapDataConvert.jpg',
+            },
+            {
+                pid: 'layerDownload',
+                name: '地图下载器',
+                author: 'CrimsonHu',
+                openUrl: 'https://gitee.com/CrimsonHu/java_map_download',
+                image: HOST + 'cesiumExamples/tools/layerDownload.jpg',
             }
-        ]
+        ],
     }
 ]

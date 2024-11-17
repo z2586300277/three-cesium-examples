@@ -384,6 +384,13 @@ export default [
         name: 'Fate-ui',
         github: 'https://github.com/Fate-ui',
         icon: 'https://avatars.githubusercontent.com/u/69997002?v=4'
+    },
+
+    {
+        id: 'CrimsonHu',
+        name: 'CrimsonHu',
+        github: 'https://gitee.com/CrimsonHu',
+        icon: HOST + 'files/site/logo.svg'
     }
 
 ]
