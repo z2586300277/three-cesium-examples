@@ -254,6 +254,7 @@ export default [
                 id: 'blanderCar',
                 author: 'ASouthernCat',
                 name: '硬核小车',
+                githubUrl: 'https://github.com/ASouthernCat/simple-muscle-car',
                 openUrl: 'https://g2657.github.io/examples-server/blender_car/',
                 image: HOST + 'threeExamples/openSource/blenderCar.jpg',
                 links: [
