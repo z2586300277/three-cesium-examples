@@ -1430,6 +1430,13 @@ export default [
                 image: HOST + 'threeExamples/basic/modelUnpack.jpg',
             },
             {
+                id: 'changeMaterial',
+                name: '材质修改动画',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/basic/changeMaterial.js',
+                image: HOST + 'threeExamples/basic/changeMaterial.jpg', 
+            },
+            {
                 id: 'skyAndEnv',
                 name: '天空盒',
                 author: 'z2586300277',
