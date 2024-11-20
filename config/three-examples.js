@@ -1437,6 +1437,13 @@ export default [
                 image: HOST + 'threeExamples/basic/changeMaterial.jpg', 
             },
             {
+                id: 'transformObject',
+                name: '拖拽控制',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/basic/transformObject.js',
+                image: HOST + 'threeExamples/basic/transformObject.jpg',
+            },
+            {
                 id: 'skyAndEnv',
                 name: '天空盒',
                 author: 'z2586300277',
