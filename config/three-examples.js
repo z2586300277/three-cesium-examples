@@ -1430,6 +1430,20 @@ export default [
                 image: HOST + 'threeExamples/basic/modelUnpack.jpg',
             },
             {
+                id: 'changeMaterial',
+                name: '材质修改动画',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/basic/changeMaterial.js',
+                image: HOST + 'threeExamples/basic/changeMaterial.jpg', 
+            },
+            {
+                id: 'transformObject',
+                name: '拖拽控制',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/basic/transformObject.js',
+                image: HOST + 'threeExamples/basic/transformObject.jpg',
+            },
+            {
                 id: 'skyAndEnv',
                 name: '天空盒',
                 author: 'z2586300277',
@@ -1464,6 +1478,13 @@ export default [
                     keywords: 'three.js,GSAP动画',
                     description: '使用three.js GSAP动画'
                 }
+            },
+            {
+                id: 'spriteTexture',
+                name: '精灵标签',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/basic/spriteTexture.js',
+                image: HOST + 'threeExamples/basic/spriteTexture.jpg',
             },
             {
                 id: 'modelView',

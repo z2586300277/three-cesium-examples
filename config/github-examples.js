@@ -250,6 +250,24 @@ export default [
                 openUrl:'http://www.nicowebgl.cn/annotations/',
                 image: HOST + 'threeExamples/openSource/unrealstyle.jpg'
             },
+            {
+                id: 'blanderCar',
+                author: 'ASouthernCat',
+                name: '硬核小车',
+                githubUrl: 'https://github.com/ASouthernCat/simple-muscle-car',
+                openUrl: 'https://g2657.github.io/examples-server/blender_car/',
+                image: HOST + 'threeExamples/openSource/blenderCar.jpg',
+                links: [
+                    {
+                        name: '预览(vercel)',
+                        url: 'https://simple-muscle-car.vercel.app/'
+                    },
+                    {
+                        name: '📺BiBi',
+                        url: 'https://www.bilibili.com/video/BV1AcSUY3Ez2'
+                    }
+                ]
+            }
         ]
     },
     {

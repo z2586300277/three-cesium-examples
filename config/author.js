@@ -176,7 +176,7 @@ export default [
     {
         id: 'jiawanlong',
         name: 'jiawanlong',
-        describe: 'Cesium 业界顶级大佬, 专注于三维地理信息可视化',
+        describe: '人生如逆旅，我亦是行人',
         github: 'https://github.com/jiawanlong',
         icon: 'https://avatars.githubusercontent.com/u/20716499?v=4'
     },
