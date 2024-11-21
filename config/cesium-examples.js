@@ -484,6 +484,42 @@ export default [
                     description: '水波纹'
                 }
             },
+            {
+                id: 'snow',
+                name: '雪景',
+                author: '20Savage',
+                codeUrl: HOST + 'cesiumExamples/expand/snow.js',
+                image: HOST + 'cesiumExamples/expand/snow.jpg',
+                meta: {
+                    title: '雪景',
+                    keywords: '雪景，模型积雪',
+                    description: '雪景，模型积雪'
+                }
+            },
+            {
+                id: 'rain',
+                name: '下雨',
+                author: '20Savage',
+                codeUrl: HOST + 'cesiumExamples/expand/rain.js',
+                image: HOST + 'cesiumExamples/expand/rain.jpg',
+                meta: {
+                    title: '雨景',
+                    keywords: '雨景，雨滴效果',
+                    description: '雨景，雨滴效果'
+                }
+            },
+            {
+                id: 'lensFlare',
+                name: '镜头光晕',
+                author: '20Savage',
+                codeUrl: HOST + 'cesiumExamples/expand/lensFlare.js',
+                image: HOST + 'cesiumExamples/expand/lensFlare.jpg',
+                meta: {
+                    title: '镜头光晕',
+                    keywords: '镜头光晕，太阳效果',
+                    description: '镜头光晕，太阳效果'
+                }
+            },
             
         ]
     },
