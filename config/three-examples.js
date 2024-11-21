@@ -1480,6 +1480,13 @@ export default [
                 }
             },
             {
+                id: 'spriteTexture',
+                name: '精灵标签',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/basic/spriteTexture.js',
+                image: HOST + 'threeExamples/basic/spriteTexture.jpg',
+            },
+            {
                 id: 'modelView',
                 name: '模型视图',
                 author: 'z2586300277',
