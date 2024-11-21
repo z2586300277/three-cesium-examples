@@ -18,7 +18,7 @@
 
 - 注: 本站框架和在线调试源于three-editor库。
 
-<img src="https://contrib.rocks/image?repo=z2586300277/three-cesium-examples&type=1" />
+<img src="https://contrib.rocks/image?repo=z2586300277/three-cesium-examples&type=5" />
 
 ## 📦 自行部署
 

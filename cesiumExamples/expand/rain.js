@@ -118,7 +118,7 @@ const addMaterial = () => {
 };
 const initScene = async () => {
   tileset = await Cesium.Cesium3DTileset.fromUrl(
-    "http://data.mars3d.cn/3dtiles/max-fsdzm/tileset.json",
+    FILE_HOST + '3dtiles/test/tileset.json',
     {
       customShader: new Cesium.CustomShader({
         uniforms: {

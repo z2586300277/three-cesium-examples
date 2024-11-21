@@ -26,8 +26,12 @@ const initViewer = async () => {
     requestVertexNormals: true,
   });
   viewer.camera.flyTo({
-    destination: Cesium.Cartesian3.fromDegrees(117.623473, 40.61697, 400),
-    orientation: {},
+    destination: Cesium.Cartesian3.fromDegrees(117.623473, 40.61697, 1000),
+    orientation: {
+      heading: 4.399419347553678,
+      pitch: 0.1699544300063054,
+      roll: 6.28315827512673,
+    },
     duration: 3,
   });
 
