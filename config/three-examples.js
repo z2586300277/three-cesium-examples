@@ -1444,6 +1444,13 @@ export default [
                 image: HOST + 'threeExamples/basic/transformObject.jpg',
             },
             {
+                id: 'transformBox3',
+                name: '变换Box3',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/basic/transformBox3.js',
+                image: HOST + 'threeExamples/basic/transformBox3.jpg',
+            },
+            {
                 id: 'skyAndEnv',
                 name: '天空盒',
                 author: 'z2586300277',
