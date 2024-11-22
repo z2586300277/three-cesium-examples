@@ -9,13 +9,31 @@ let rainEffect;
 const initViewer = () => {
   const DOM = document.getElementById("box");
   viewer = new Cesium.Viewer(DOM, {
-    animation: false,//是否创建动画小器件，左下角仪表    
-    baseLayerPicker: false,//是否显示图层选择器，右上角图层选择按钮
-    baseLayer: Cesium.ImageryLayer.fromProviderAsync(Cesium.ArcGisMapServerImageryProvider.fromUrl('https://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer')),
-    fullscreenButton: false,//是否显示全屏按钮，右下角全屏选择按钮
-    timeline: false,//是否显示时间轴    
-    infoBox: false,//是否显示信息框   
+    animation: false, //是否创建动画小器件，左下角仪表
+    baseLayerPicker: false, //是否显示图层选择器，右上角图层选择按钮
+    baseLayer: Cesium.ImageryLayer.fromProviderAsync(
+      Cesium.ArcGisMapServerImageryProvider.fromUrl(
+        "https://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer"
+      )
+    ),
+    fullscreenButton: false, //是否显示全屏按钮，右下角全屏选择按钮
+    timeline: false, //是否显示时间轴
+    infoBox: false, //是否显示信息框
   });
+  let handler = new Cesium.ScreenSpaceEventHandler(viewer.scene.canvas);
+  handler.setInputAction(function (event) {
+    let cartesian = viewer.camera.pickEllipsoid(event.position);
+    let cartographic = Cesium.Cartographic.fromCartesian(cartesian);
+    let lng = Cesium.Math.toDegrees(cartographic.longitude); // 经度
+    let lat = Cesium.Math.toDegrees(cartographic.latitude); // 纬度
+    let alt = cartographic.height; // 高度，椭球面height永远等于0
+    let coordinate = {
+      longitude: Number(lng.toFixed(6)),
+      latitude: Number(lat.toFixed(6)),
+      altitude: Number(alt.toFixed(2)),
+    };
+    console.log(coordinate);
+  }, Cesium.ScreenSpaceEventType.LEFT_CLICK);
   initScene();
   addMaterial();
   let interval;
@@ -33,7 +51,7 @@ const addMaterial = () => {
       fabric: {
         type: "MyImage",
         uniforms: {
-          image: "/files/images/rain.png",
+          image: HOST + "/files/images/rain.png",
         },
       },
     }),
@@ -99,17 +117,17 @@ const addMaterial = () => {
         }
         `,
   });
+
   var positions = Cesium.Cartesian3.fromDegreesArray([
-    121.48033090358801, 29.790483294870796, 121.4778771950879,
-    29.79083578574342, 121.47877939338282, 29.79193540741442, 121.4804061804202,
-    29.791480141327728,
+    113.059339, 22.645815, 113.060204, 22.645928, 113.060253, 22.642831,
+    113.059298, 22.642799,
   ]);
   viewer.scene.primitives.add(
     new Cesium.Primitive({
       geometryInstances: new Cesium.GeometryInstance({
         geometry: Cesium.PolygonGeometry.fromPositions({
           positions: positions,
-          height: 20,
+          height: 70,
         }),
       }),
       appearance: appearance,
@@ -118,7 +136,7 @@ const addMaterial = () => {
 };
 const initScene = async () => {
   tileset = await Cesium.Cesium3DTileset.fromUrl(
-    FILE_HOST + '3dtiles/test/tileset.json',
+    FILE_HOST + "3dtiles/test/tileset.json",
     {
       customShader: new Cesium.CustomShader({
         uniforms: {
