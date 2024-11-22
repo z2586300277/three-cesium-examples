@@ -1370,6 +1370,16 @@ export default [
                 image: HOST + 'threeExamples/basic/orbControls.jpg',
             },
             {
+                id: 'createScene',
+                name: '创建场景',
+                tag: '分布库-#f00',
+                tip: '使用分布式仓库, 开发案例, 可互相引用运行',
+                referUrl: 'https://z2586300277.github.io/three-cesium-examples-self/',
+                codeUrl: 'https://z2586300277.github.io/three-cesium-examples-self/threeExamples/createScene.js',
+                image: 'https://z2586300277.github.io/three-cesium-examples-self/threeExamples/createScene.jpg',
+                githubUrl: 'https://github.com/z2586300277/three-cesium-examples-self',
+            },
+            {
                 id: 'modelSky',
                 name: '模型天空',
                 author: 'z2586300277',
@@ -1514,6 +1524,7 @@ export default [
                 }
             },
             {
+
                 id: 'curveAnimate',
                 name: '曲线动画',
                 author: 'z2586300277',
