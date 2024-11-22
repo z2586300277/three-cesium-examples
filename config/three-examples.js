@@ -894,6 +894,18 @@ export default [
                 }
             },
             {
+                id: 'simple_collision',
+                name: '简单碰撞检测',
+                author: 'nico',
+                codeUrl: HOST + 'threeExamples/application/simpleCollision.js',
+                image: HOST + 'threeExamples/application/simple_coll.jpg',
+                inject: {
+                    importmap: {
+                        "three-mesh-bvh": FILE_HOST + "js/bvh.module.js"
+                    }
+                }
+            },
+            {
                 id: 'diffuseLine',
                 name: '发散飞线',
                 author: 'stonerao',
