@@ -88,7 +88,11 @@ function setMeta(query) {
 
     const navigation = window.THREE_CESIUM_NAVIGATION.find(item => item.name === query.navigation)
 
+    if (!navigation) return
+
     const classify = navigation.examples.find(item => item.pid === query.classify)
+
+    if (!classify) return
 
     const example = classify.children.find(item => item.id === query.id)
 
