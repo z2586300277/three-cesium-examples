@@ -391,6 +391,13 @@ export default [
         name: 'CrimsonHu',
         github: 'https://gitee.com/CrimsonHu',
         icon: HOST + 'files/site/logo.svg'
-    }
+    },
+
+    {
+      id: '20Savage',
+      name: '20Savage',
+      github: 'https://github.com/zhengsixsix',
+      icon: 'https://avatars.githubusercontent.com/u/86777555?v=4',
+    },
 
 ]
