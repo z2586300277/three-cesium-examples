@@ -292,5 +292,20 @@ export default [
             },
         ]
 
+    },
+    {
+        pid: 'ortherSource',
+        name: '其他资源',
+        children: [
+            {
+                id: 'loveCode',
+                author: 'AUTO',
+                name: '爱心代码',
+                githubUrl:'https://github.com/sun0225SUN/Awesome-Love-Code',
+                openUrl:'https://sun0225sun.github.io/Awesome-Love-Code/',
+                image: HOST + 'threeExamples/openSource/loveCode.jpg'
+            }
+        ]
+
     }
 ]

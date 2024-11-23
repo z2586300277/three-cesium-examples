@@ -1374,6 +1374,7 @@ export default [
                 name: '创建场景',
                 tag: '分布库-#f00',
                 tip: '使用分布式仓库, 开发案例, 可互相引用运行',
+                author: 'z2586300277',
                 referUrl: 'https://z2586300277.github.io/three-cesium-examples-self/',
                 codeUrl: 'https://z2586300277.github.io/three-cesium-examples-self/threeExamples/createScene.js',
                 image: 'https://z2586300277.github.io/three-cesium-examples-self/threeExamples/createScene.jpg',
