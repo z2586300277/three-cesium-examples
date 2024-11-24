@@ -1170,6 +1170,16 @@ export default [
                         "cannon-es": HOST + "js/cannon-es.js"
                     }
                 }
+            },
+            {
+                id: 'ammoPhysics',
+                name: '物理ammo使用',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/physics/ammoPhysics.js',
+                image: HOST + 'threeExamples/physics/ammoPhysics.jpg',
+                inject: {
+                    src: [FILE_HOST + "js/three/addons/libs/ammo.wasm.js"]
+                }
             }
         ]
     },
