@@ -5,15 +5,6 @@ export default [
         pid: 'friendStation',
         name: '开源导航',
         children: [
- 
-            {
-                id: 'codePen',
-                name: 'CodePen 社区',
-                tip: '国外包含大量在线运行的前端案例社区',
-                author: 'Threejs',
-                openUrl: 'https://codepen.io/search/pens?q=three+js',
-                image: FILE_HOST + 'images/codepen.jpg'
-            },
 
             {
                 id: 'jiawanlong',
@@ -27,19 +18,20 @@ export default [
             },
 
             {
-                id: 'codeSandbox',
-                name: 'CodeSandbox 社区',
-                author: 'Threejs',
-                openUrl: 'https://codesandbox.io/search?query=three',
-                image: FILE_HOST + 'images/sandbox.jpg'
-            },
-
-            {
-                id: 'tympanus',
-                name: 'Codrops 社区',
-                author: 'Threejs',
-                openUrl: 'https://tympanus.net/codrops/demos/?tag=three-js',
-                image: FILE_HOST + 'images/tympanus.jpg'
+                id: 'z2586300277_3d_editor',
+                tag: '编辑器-#795cddba',
+                tip: '使用three.js开发的低代码组态易用的编辑器',
+                name: '低代码组态编辑器',
+                author: 'z2586300277',
+                openUrl: 'https://z2586300277.github.io/three-editor/dist/#/editor',
+                githubUrl: 'https://github.com/z2586300277/three-editor',
+                image: FILE_HOST + 'images/editor.jpg',
+                links: [
+                    {
+                        name: '📖CSDN',
+                        url: 'https://blog.csdn.net/guang2586/article/details/142910241'
+                    }
+                ]
             },
 
             {
@@ -57,50 +49,7 @@ export default [
                 ]
             },
 
-            {
-                id: 'sketchThree',
-                author: 'AUTO',
-                name: 'Three特效',
-                openUrl: 'https://ykob.github.io/sketch-threejs/',
-                githubUrl: 'https://github.com/ykob/sketch-threejs',
-                image: FILE_HOST + 'images/sketchThree.jpg'
-            },
-
-            {
-                id: 'dragonir',
-                author: 'dragonir',
-                name: 'Three 案例',
-                openUrl: 'https://dragonir.github.io/3d',
-                githubUrl: 'https://github.com/dragonir/3d',
-                image: FILE_HOST + 'images/dragonir.jpg'
-            },
-
-            {
-                id: 'wuyifan0203',
-                author: 'wuyifan0203',
-                name: 'Three源码案例',
-                openUrl: 'https://wuyifan0203.github.io/threejs-demo',
-                githubUrl: 'https://github.com/wuyifan0203/threejs-demo',
-                image: FILE_HOST + 'images/wuyifan0203.jpg'
-            },
-            {
-                id: 'alwxkxk',
-                author: 'alwxkxk',
-                name: 'Three案例',
-                openUrl: 'https://alwxkxk.github.io/threejs-example/',
-                githubUrl: 'https://github.com/alwxkxk/threejs-example',
-                image: FILE_HOST + 'images/alwxkxk.jpg'
-            },
-
-            {
-                id: 'sxguojf',
-                author: 'sxguojf',
-                name: 'Three结合地图瓦片',
-                openUrl: 'https://sxguojf.github.io/three-tile-example/',
-                githubUrl: 'https://github.com/sxguojf/three-tile',
-                image: FILE_HOST + 'images/wangpengfei.jpg'
-            },
-          
+           
         ]
     },
 
