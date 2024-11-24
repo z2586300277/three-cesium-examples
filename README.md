@@ -4,7 +4,7 @@
 
 加入仓库🐧QQ       | 微信             |  预览图                       |            Stars                
 :-------------------------:|:-------------------------:|:-------------------------:|:-------------------------
-🐧QQ：2586300277 <br> 🐧(nico)：805879871 <br> 🐧群：865182188 <br> 微信：z2586300277 <br> 微信(nico):15230117323 | <img src="https://z2586300277.github.io/3d-file-server/images/wechat.jpg" height="140px" />| <img src="https://z2586300277.github.io/3d-file-server/images/threeCesiumExamples.jpg" width="240px" height="160px" /> | <img src="https://api.star-history.com/svg?repos=z2586300277/three-cesium-examples&type=Date" width="160px" height="140px" /> 
+🐧QQ：2586300277 <br> 🐧(nico)：805879871 <br> 🐧群：865182188 <br> 微信：z2586300277 <br> 微(nico):15230117323 | <img src="https://z2586300277.github.io/3d-file-server/images/wechat.jpg" height="140px" />| <img src="https://z2586300277.github.io/3d-file-server/images/threeCesiumExamples.jpg" width="240px" height="160px" /> | <img src="https://api.star-history.com/svg?repos=z2586300277/three-editor,z2586300277/three-cesium-examples&type=Date" width="180px" height="140px" /> 
 
 - github dev分支实时预览 http://z2586300277.github.io/three-cesium-examples
 
@@ -18,8 +18,7 @@
 
 - 注: 本站框架和在线调试源于three-editor库。
 
-<img src="https://contrib.rocks/image?repo=z2586300277/three-cesium-examples&type=5" />
-
+<img src="https://contrib.rocks/image?repo=z2586300277/three-cesium-examples&type=Date" />
 ## 📦 自行部署
 
 1.可通过 config/links 文件修改 所有的链接和 logo, 替换成自己的官网或者链接地址。
@@ -27,6 +26,8 @@
 2.如在 https://threehub.cn 部署
 
 ## 🌳创作
+
+- 分布式仓库 可见 https://github.com/z2586300277/three-cesium-examples-self
 
 ### - 加入仓库的开发者，可自行创建自己的分支
 

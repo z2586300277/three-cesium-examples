@@ -5,15 +5,6 @@ export default [
         pid: 'friendStation',
         name: '开源导航',
         children: [
- 
-            {
-                id: 'codePen',
-                name: 'CodePen 社区',
-                tip: '国外包含大量在线运行的前端案例社区',
-                author: 'Threejs',
-                openUrl: 'https://codepen.io/search/pens?q=three+js',
-                image: FILE_HOST + 'images/codepen.jpg'
-            },
 
             {
                 id: 'jiawanlong',
@@ -27,19 +18,20 @@ export default [
             },
 
             {
-                id: 'codeSandbox',
-                name: 'CodeSandbox 社区',
-                author: 'Threejs',
-                openUrl: 'https://codesandbox.io/search?query=three',
-                image: FILE_HOST + 'images/sandbox.jpg'
-            },
-
-            {
-                id: 'tympanus',
-                name: 'Codrops 社区',
-                author: 'Threejs',
-                openUrl: 'https://tympanus.net/codrops/demos/?tag=three-js',
-                image: FILE_HOST + 'images/tympanus.jpg'
+                id: 'z2586300277_3d_editor',
+                tag: '编辑器-#795cddba',
+                tip: '使用three.js开发的低代码组态易用的编辑器',
+                name: '低代码组态编辑器',
+                author: 'z2586300277',
+                openUrl: 'https://z2586300277.github.io/three-editor/dist/#/editor',
+                githubUrl: 'https://github.com/z2586300277/three-editor',
+                image: FILE_HOST + 'images/editor.jpg',
+                links: [
+                    {
+                        name: '📖CSDN',
+                        url: 'https://blog.csdn.net/guang2586/article/details/142910241'
+                    }
+                ]
             },
 
             {
@@ -57,50 +49,7 @@ export default [
                 ]
             },
 
-            {
-                id: 'sketchThree',
-                author: 'AUTO',
-                name: 'Three特效',
-                openUrl: 'https://ykob.github.io/sketch-threejs/',
-                githubUrl: 'https://github.com/ykob/sketch-threejs',
-                image: FILE_HOST + 'images/sketchThree.jpg'
-            },
-
-            {
-                id: 'dragonir',
-                author: 'dragonir',
-                name: 'Three 案例',
-                openUrl: 'https://dragonir.github.io/3d',
-                githubUrl: 'https://github.com/dragonir/3d',
-                image: FILE_HOST + 'images/dragonir.jpg'
-            },
-
-            {
-                id: 'wuyifan0203',
-                author: 'wuyifan0203',
-                name: 'Three源码案例',
-                openUrl: 'https://wuyifan0203.github.io/threejs-demo',
-                githubUrl: 'https://github.com/wuyifan0203/threejs-demo',
-                image: FILE_HOST + 'images/wuyifan0203.jpg'
-            },
-            {
-                id: 'alwxkxk',
-                author: 'alwxkxk',
-                name: 'Three案例',
-                openUrl: 'https://alwxkxk.github.io/threejs-example/',
-                githubUrl: 'https://github.com/alwxkxk/threejs-example',
-                image: FILE_HOST + 'images/alwxkxk.jpg'
-            },
-
-            {
-                id: 'sxguojf',
-                author: 'sxguojf',
-                name: 'Three结合地图瓦片',
-                openUrl: 'https://sxguojf.github.io/three-tile-example/',
-                githubUrl: 'https://github.com/sxguojf/three-tile',
-                image: FILE_HOST + 'images/wangpengfei.jpg'
-            },
-          
+           
         ]
     },
 
@@ -894,6 +843,18 @@ export default [
                 }
             },
             {
+                id: 'simple_collision',
+                name: '简单碰撞检测',
+                author: 'nico',
+                codeUrl: HOST + 'threeExamples/application/simpleCollision.js',
+                image: HOST + 'threeExamples/application/simple_coll.jpg',
+                inject: {
+                    importmap: {
+                        "three-mesh-bvh": FILE_HOST + "js/bvh.module.js"
+                    }
+                }
+            },
+            {
                 id: 'diffuseLine',
                 name: '发散飞线',
                 author: 'stonerao',
@@ -1158,6 +1119,16 @@ export default [
                         "cannon-es": HOST + "js/cannon-es.js"
                     }
                 }
+            },
+            {
+                id: 'ammoPhysics',
+                name: '物理ammo使用',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/physics/ammoPhysics.js',
+                image: HOST + 'threeExamples/physics/ammoPhysics.jpg',
+                inject: {
+                    src: [FILE_HOST + "js/three/addons/libs/ammo.wasm.js"]
+                }
             }
         ]
     },
@@ -1370,6 +1341,17 @@ export default [
                 image: HOST + 'threeExamples/basic/orbControls.jpg',
             },
             {
+                id: 'createScene',
+                name: '创建场景',
+                tag: '分布库-#f00',
+                tip: '使用分布式仓库, 开发案例, 可互相引用运行',
+                author: 'z2586300277',
+                referUrl: 'https://z2586300277.github.io/three-cesium-examples-self/',
+                codeUrl: 'https://z2586300277.github.io/three-cesium-examples-self/threeExamples/createScene.js',
+                image: 'https://z2586300277.github.io/three-cesium-examples-self/threeExamples/createScene.jpg',
+                githubUrl: 'https://github.com/z2586300277/three-cesium-examples-self',
+            },
+            {
                 id: 'modelSky',
                 name: '模型天空',
                 author: 'z2586300277',
@@ -1514,6 +1496,7 @@ export default [
                 }
             },
             {
+
                 id: 'curveAnimate',
                 name: '曲线动画',
                 author: 'z2586300277',
