@@ -520,6 +520,18 @@ export default [
                     description: '镜头光晕，太阳效果'
                 }
             },
+            {
+                id: '3DheatMap',
+                name: '3D热力图',
+                author: '20Savage',
+                codeUrl: HOST + 'cesiumExamples/expand/3DheatMap.js',
+                image: HOST + 'cesiumExamples/expand/3DheatMap.jpg',
+                meta: {
+                    title: '3D热力图',
+                    keywords: 'cesium.js,3D热力图',
+                    description: 'cesium 结合 3D热力图'
+                }
+            },
             
         ]
     },

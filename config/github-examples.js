@@ -73,7 +73,7 @@ export default [
                 githubUrl: 'https://github.com/sxguojf/three-tile',
                 image: FILE_HOST + 'images/wangpengfei.jpg'
             },
-          
+
             {
                 id: 'zhengjie9510',
                 author: 'zhengjie9510',
@@ -98,7 +98,7 @@ export default [
                 openUrl: 'https://pengfeiw.github.io/minicode/',
                 image: HOST + 'threeExamples/openSource/wangpengfei.jpg'
             },
-            
+
             {
                 id: 'lpya',
                 author: 'lpya',
@@ -257,8 +257,8 @@ export default [
                 id: 'roaming',
                 author: 'AUTO',
                 name: '漫游模拟器',
-                githubUrl:'https://github.com/Junhong-Chen/roaming-simulator',
-                openUrl:'https://junhong-chen.github.io/roaming-simulator/',
+                githubUrl: 'https://github.com/Junhong-Chen/roaming-simulator',
+                openUrl: 'https://junhong-chen.github.io/roaming-simulator/',
                 image: HOST + 'threeExamples/openSource/roaming.jpg'
             },
 
@@ -267,15 +267,15 @@ export default [
                 author: 'nico',
                 name: '经纬度路线运动(车流模拟)',
                 // githubUrl:'https://github.com/swift502/Sketchbook',
-                openUrl:'http://nicowebgl.cn/d3_geo/',
+                openUrl: 'http://nicowebgl.cn/d3_geo/',
                 image: HOST + 'threeExamples/openSource/lonlat23.jpg'
             },
             {
                 id: 'draw,roam',
                 author: 'nico',
                 name: '绘线漫游',
-                githubUrl:'https://github.com/Nicolas-zn/path',
-                openUrl:'http://nicowebgl.cn/path/',
+                githubUrl: 'https://github.com/Nicolas-zn/path',
+                openUrl: 'http://nicowebgl.cn/path/',
                 image: HOST + 'threeExamples/openSource/roam.jpg'
             },
             {
@@ -307,16 +307,16 @@ export default [
                 id: 'area,pixijs,webgl',
                 author: 'nico',
                 name: '场景导航（免模型）',
-                githubUrl:'https://github.com/Nicolas-zn/my_code/blob/main/src/code/interactive_image.vue',
-                openUrl:'http://nicowebgl.cn/portfolio/#/interactive_image',
+                githubUrl: 'https://github.com/Nicolas-zn/my_code/blob/main/src/code/interactive_image.vue',
+                openUrl: 'http://nicowebgl.cn/portfolio/#/interactive_image',
                 image: HOST + 'threeExamples/openSource/area.jpg'
             },
             {
                 id: 'unreal',
                 author: 'nico',
                 name: 'unreal风格场景标注',
-                githubUrl:'https://github.com/Nicolas-zn/annotations',
-                openUrl:'http://www.nicowebgl.cn/annotations/',
+                githubUrl: 'https://github.com/Nicolas-zn/annotations',
+                openUrl: 'http://www.nicowebgl.cn/annotations/',
                 image: HOST + 'threeExamples/openSource/unrealstyle.jpg'
             },
             {
@@ -347,8 +347,8 @@ export default [
                 id: 'Sketchbook',
                 author: 'AUTO',
                 name: '飞车',
-                githubUrl:'https://github.com/swift502/Sketchbook',
-                openUrl:'https://jblaha.art/sketchbook/0.4/',
+                githubUrl: 'https://github.com/swift502/Sketchbook',
+                openUrl: 'https://jblaha.art/sketchbook/0.4/',
                 image: HOST + 'threeExamples/openSource/sketchbook.jpg'
             },
             {
@@ -363,6 +363,31 @@ export default [
 
     },
     {
+        pid: 'threejsSource',
+        name: '扩展依赖',
+        children: [
+            {
+                id: 'threejsExamples',
+                name: 'alien.js',
+                tag: '众多效果',
+                author: 'AUTO',
+                tip: '基于three.js封装了大量的特效和组件',
+                openUrl: 'https://alien.js.org/examples/three/shader_fluid_distortion.html',
+                githubUrl: 'https://github.com/alienkitty/alien.js',
+                image: HOST + 'threeExamples/openSource/alien.jpg'
+            },
+            {
+                id: 'cameraControls',
+                name: '相机控制器',
+                author: 'AUTO',
+                tip: '基于three.js封装的相机控制器',
+                openUrl: 'https://yomotsu.github.io/camera-controls/examples/basic.html',
+                githubUrl: 'https://github.com/yomotsu/camera-controls',
+                image: HOST + 'threeExamples/openSource/cameraControls.jpg'
+            }
+        ]
+    },
+    {
         pid: 'ortherSource',
         name: '其他资源',
         children: [
@@ -370,8 +395,8 @@ export default [
                 id: 'loveCode',
                 author: 'AUTO',
                 name: '爱心代码',
-                githubUrl:'https://github.com/sun0225SUN/Awesome-Love-Code',
-                openUrl:'https://sun0225sun.github.io/Awesome-Love-Code/',
+                githubUrl: 'https://github.com/sun0225SUN/Awesome-Love-Code',
+                openUrl: 'https://sun0225sun.github.io/Awesome-Love-Code/',
                 image: HOST + 'threeExamples/openSource/loveCode.jpg'
             }
         ]
