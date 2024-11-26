@@ -375,6 +375,15 @@ export default [
                 openUrl: 'https://alien.js.org/examples/three/shader_fluid_distortion.html',
                 githubUrl: 'https://github.com/alienkitty/alien.js',
                 image: HOST + 'threeExamples/openSource/alien.jpg'
+            },
+            {
+                id: 'cameraControls',
+                name: '相机控制器',
+                author: 'AUTO',
+                tip: '基于three.js封装的相机控制器',
+                openUrl: 'https://yomotsu.github.io/camera-controls/examples/basic.html',
+                githubUrl: 'https://github.com/yomotsu/camera-controls',
+                image: HOST + 'threeExamples/openSource/cameraControls.jpg'
             }
         ]
     },
