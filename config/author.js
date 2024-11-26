@@ -400,4 +400,11 @@ export default [
       icon: 'https://avatars.githubusercontent.com/u/86777555?v=4',
     },
 
+    {
+        id: '79040740',
+        name: 'Zhongzhong',
+        github: 'https://github.com/chuxihan',
+        icon: 'https://avatars.githubusercontent.com/u/79040740?v=4',
+    },
+  
 ]
