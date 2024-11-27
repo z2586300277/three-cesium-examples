@@ -384,6 +384,15 @@ export default [
                 openUrl: 'https://yomotsu.github.io/camera-controls/examples/basic.html',
                 githubUrl: 'https://github.com/yomotsu/camera-controls',
                 image: HOST + 'threeExamples/openSource/cameraControls.jpg'
+            },
+            {
+                id: 'CustomShaderMaterial',
+                name: '自定义ShaderMaterial',
+                tip: ' 使用您自己的着色器扩展 Three.js 标准材质！',
+                author: 'AUTO',
+                openUrl: 'https://farazzshaikh.github.io/THREE-CustomShaderMaterial/',
+                githubUrl: 'https://github.com/FarazzShaikh/THREE-CustomShaderMaterial',
+                image: HOST + 'threeExamples/openSource/CustomShaderMaterial.jpg'
             }
         ]
     },
