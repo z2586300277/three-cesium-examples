@@ -406,5 +406,11 @@ export default [
         github: 'https://github.com/chuxihan',
         icon: 'https://avatars.githubusercontent.com/u/79040740?v=4',
     },
+    {
+        id: '11513497',
+        name: 'kacim',
+        github: 'https://github.com/kacim',
+        icon: 'https://avatars.githubusercontent.com/u/11513497?v=4',
+    },
   
 ]
