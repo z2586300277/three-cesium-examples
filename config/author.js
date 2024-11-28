@@ -412,5 +412,12 @@ export default [
         github: 'https://github.com/kacim',
         icon: 'https://avatars.githubusercontent.com/u/11513497?v=4',
     },
+
+    {
+        id: 'FFMMCC',
+        name: 'FFMMCC',
+        github:'https://gitee.com/fu-meichuan',
+        icon: HOST + 'files/author/FFMMCC.jpg'
+    }
   
 ]

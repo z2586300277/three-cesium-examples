@@ -3,7 +3,7 @@ import { HOST, FILE_HOST } from './host.js'
 export default [
     {
         pid: 'friendStation',
-        name: '开源导航',
+        name: '首页导航',
         children: [
 
             {
@@ -33,6 +33,24 @@ export default [
                     }
                 ]
             },
+            
+            {
+                id: 'fmc_car',
+                tag: '效果佳',
+                name: '麦克斯韦汽车',
+                author: 'FFMMCC',
+                tip: '效果超级棒的 three.js实现麦克斯韦汽车展厅项目',
+                openUrl: 'https://g2657.github.io/examples-server/fmc_car/',
+                githubUrl: 'https://gitee.com/fu-meichuan/fmc-personal-blog',
+                image: FILE_HOST + 'images/fmc_car.jpg',
+                links: [
+                    {
+                        name: '📺BiBi',
+                        url: 'https://www.bilibili.com/video/BV1dxBxYvEnh'
+                    }
+                ]
+            },
+    
 
             {
                 id: 'thanksBibi',
