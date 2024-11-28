@@ -1088,6 +1088,13 @@ export default [
                 author: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/application/gsapCollection.js',
                 image: HOST + 'threeExamples/application/gsapCollection.jpg'
+            },
+            {
+                id: 'customGrid',
+                name: '自定义网格',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/application/customGrid.js',
+                image: HOST + 'threeExamples/application/customGrid.jpg',
             }
         ]
     },
