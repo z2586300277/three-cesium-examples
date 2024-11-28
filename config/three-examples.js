@@ -1543,6 +1543,13 @@ export default [
                     keywords: 'three.js,骨骼动画',
                     description: '使用three.js骨骼动画'
                 }
+            },
+            {
+                id: 'viewHelper',
+                name: '视图辅助',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/basic/viewHelper.js',
+                image: HOST + 'threeExamples/basic/viewHelper.jpg',
             }
         ]
     },
