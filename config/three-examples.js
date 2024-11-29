@@ -33,7 +33,7 @@ export default [
                     }
                 ]
             },
-            
+
             {
                 id: 'fmc_car',
                 tag: '效果佳',
@@ -50,7 +50,7 @@ export default [
                     }
                 ]
             },
-    
+
 
             {
                 id: 'thanksBibi',
@@ -67,7 +67,7 @@ export default [
                 ]
             },
 
-           
+
         ]
     },
 
@@ -287,7 +287,7 @@ export default [
                 }
             },
             {
-                id:'compassShader',
+                id: 'compassShader',
                 name: '罗盘',
                 author: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/shader/compassShader.js',
@@ -776,6 +776,14 @@ export default [
                 author: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/particle/sphereLine.js',
                 image: HOST + 'threeExamples/particle/sphereLine.jpg',
+            },
+            {
+                id: 'particleWire',
+                referUrl: 'https://mp.weixin.qq.com/s/R-WEoTG30DlqXvFfDgXQdg',
+                name: '粒子线',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/particle/particleWire.js',
+                image: HOST + 'threeExamples/particle/particleWire.jpg',
             }
         ]
     },
@@ -803,7 +811,7 @@ export default [
                     description: '使用three.js魔法阵'
                 }
             },
-          
+
             {
                 id: 'codeCloud',
                 name: '代码云',
@@ -1441,7 +1449,7 @@ export default [
                 name: '材质修改动画',
                 author: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/basic/changeMaterial.js',
-                image: HOST + 'threeExamples/basic/changeMaterial.jpg', 
+                image: HOST + 'threeExamples/basic/changeMaterial.jpg',
             },
             {
                 id: 'transformObject',
