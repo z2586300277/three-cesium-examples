@@ -270,6 +270,15 @@ export default [
                 openUrl: 'http://nicowebgl.cn/d3_geo/',
                 image: HOST + 'threeExamples/openSource/lonlat23.jpg'
             },
+
+            {
+                id: 'change',
+                author: 'nico',
+                name: '二三位联动-物理实验',
+                githubUrl:'https://github.com/Nicolas-zn/distance_sign',
+                openUrl: 'http://nicowebgl.cn/distance_sign/',
+                image: HOST + 'threeExamples/openSource/distance_sign.jpg'
+            },
             {
                 id: 'draw,roam',
                 author: 'nico',
