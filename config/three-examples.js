@@ -825,6 +825,13 @@ export default [
                 }
             },
             {
+                id: 'ghostHouse',
+                name: '鬼屋',
+                author: 'FFMMCC',
+                codeUrl: HOST + 'threeExamples/application/ghostHouse.js',
+                image: HOST + 'threeExamples/application/ghostHouse.jpg',
+            },
+            {
                 id: 'flyLine',
                 name: '飞线效果',
                 author: 'ecojust',
