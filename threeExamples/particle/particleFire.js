@@ -20,14 +20,14 @@ sizes.resolution = new THREE.Vector2(
 const textureLoader = new THREE.TextureLoader();
 
 const textures = [
-  textureLoader.load("/particles/1.png"),
-  textureLoader.load("/particles/10.png"),
-  textureLoader.load("/particles/3.png"),
-  textureLoader.load("/particles/4.png"),
-  textureLoader.load("/particles/5.png"),
-  textureLoader.load("/particles/6.png"),
-  textureLoader.load("/particles/7.png"),
-  textureLoader.load("/particles/8.png"),
+  textureLoader.load(FILE_HOST + "threeExamples/particle/particleFire/1.png"),
+  textureLoader.load(FILE_HOST + "threeExamples/particle/particleFire/10.png"),
+  textureLoader.load(FILE_HOST + "threeExamples/particle/particleFire/3.png"),
+  textureLoader.load(FILE_HOST + "threeExamples/particle/particleFire/4.png"),
+  textureLoader.load(FILE_HOST + "threeExamples/particle/particleFire/5.png"),
+  textureLoader.load(FILE_HOST + "threeExamples/particle/particleFire/6.png"),
+  textureLoader.load(FILE_HOST + "threeExamples/particle/particleFire/7.png"),
+  textureLoader.load(FILE_HOST + "threeExamples/particle/particleFire/8.png"),
 ];
 
 /**
