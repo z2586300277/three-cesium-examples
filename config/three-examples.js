@@ -656,6 +656,7 @@ export default [
                 author: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/shader/earthScan.js',
                 image: HOST + 'threeExamples/shader/earthScan.jpg',
+                referUrl: 'https://juejin.cn/post/7378535517950525466'
             }
         ]
     },
@@ -784,6 +785,13 @@ export default [
                 author: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/particle/particleWire.js',
                 image: HOST + 'threeExamples/particle/particleWire.jpg',
+            },
+            {
+                id: 'particleFire',
+                name: '粒子烟花',
+                author:'FFMMCC',
+                codeUrl: HOST + 'threeExamples/particle/particleFire.js',
+                image: HOST + 'threeExamples/particle/particleFire.jpg',
             }
         ]
     },
@@ -969,7 +977,7 @@ export default [
                 author: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/application/roadShader.js',
                 image: HOST + 'threeExamples/application/roadShader.jpg',
-                referUrl: 'https://github.com/xiaolidan00/my-earth'
+                referUrl: 'https://juejin.cn/post/7386485874300223514'
             },
             {
                 id: 'model_navigation',
