@@ -275,7 +275,7 @@ export default [
                 id: 'change',
                 author: 'nico',
                 name: '二三位联动-物理实验',
-                githubUrl:'https://github.com/Nicolas-zn/distance_sign',
+                githubUrl: 'https://github.com/Nicolas-zn/distance_sign',
                 openUrl: 'http://nicowebgl.cn/distance_sign/',
                 image: HOST + 'threeExamples/openSource/distance_sign.jpg'
             },
@@ -402,7 +402,16 @@ export default [
                 openUrl: 'https://farazzshaikh.github.io/THREE-CustomShaderMaterial/',
                 githubUrl: 'https://github.com/FarazzShaikh/THREE-CustomShaderMaterial',
                 image: HOST + 'threeExamples/openSource/CustomShaderMaterial.jpg'
-            }
+            },
+            {
+                id: 'drei_vanilla',
+                name: 'drei-vanilla',
+                author: 'AUTO',
+                tip: 'Drei的原生版本，封装了很多函数',
+                openUrl: 'https://pmndrs.github.io/drei-vanilla/',
+                githubUrl: 'https://github.com/pmndrs/drei-vanilla',
+                image: HOST + 'threeExamples/openSource/drei_vanilla.jpg'
+            },
         ]
     },
     {
