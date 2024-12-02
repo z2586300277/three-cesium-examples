@@ -792,6 +792,13 @@ export default [
                 author:'FFMMCC',
                 codeUrl: HOST + 'threeExamples/particle/particleFire.js',
                 image: HOST + 'threeExamples/particle/particleFire.jpg',
+            },
+            {
+                id:'starrySky',
+                name:'粒子星空',
+                author:'z2586300277',
+                codeUrl:HOST+'threeExamples/particle/starrySky.js',
+                image:HOST+'threeExamples/particle/starrySky.jpg',
             }
         ]
     },
