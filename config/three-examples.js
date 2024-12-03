@@ -33,7 +33,7 @@ export default [
                     }
                 ]
             },
-            
+
             {
                 id: 'fmc_car',
                 tag: '效果佳',
@@ -50,7 +50,7 @@ export default [
                     }
                 ]
             },
-    
+
 
             {
                 id: 'thanksBibi',
@@ -67,7 +67,7 @@ export default [
                 ]
             },
 
-           
+
         ]
     },
 
@@ -287,7 +287,7 @@ export default [
                 }
             },
             {
-                id:'compassShader',
+                id: 'compassShader',
                 name: '罗盘',
                 author: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/shader/compassShader.js',
@@ -656,6 +656,7 @@ export default [
                 author: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/shader/earthScan.js',
                 image: HOST + 'threeExamples/shader/earthScan.jpg',
+                referUrl: 'https://juejin.cn/post/7378535517950525466'
             }
         ]
     },
@@ -776,6 +777,28 @@ export default [
                 author: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/particle/sphereLine.js',
                 image: HOST + 'threeExamples/particle/sphereLine.jpg',
+            },
+            {
+                id: 'particleWire',
+                referUrl: 'https://mp.weixin.qq.com/s/R-WEoTG30DlqXvFfDgXQdg',
+                name: '粒子线',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/particle/particleWire.js',
+                image: HOST + 'threeExamples/particle/particleWire.jpg',
+            },
+            {
+                id: 'particleFire',
+                name: '粒子烟花',
+                author:'FFMMCC',
+                codeUrl: HOST + 'threeExamples/particle/particleFire.js',
+                image: HOST + 'threeExamples/particle/particleFire.jpg',
+            },
+            {
+                id:'starrySky',
+                name:'粒子星空',
+                author:'z2586300277',
+                codeUrl:HOST+'threeExamples/particle/starrySky.js',
+                image:HOST+'threeExamples/particle/starrySky.jpg',
             }
         ]
     },
@@ -803,7 +826,7 @@ export default [
                     description: '使用three.js魔法阵'
                 }
             },
-          
+
             {
                 id: 'codeCloud',
                 name: '代码云',
@@ -815,6 +838,13 @@ export default [
                     keywords: 'three.js,代码云',
                     description: '使用three.js代码云'
                 }
+            },
+            {
+                id: 'ghostHouse',
+                name: '鬼屋',
+                author: 'FFMMCC',
+                codeUrl: HOST + 'threeExamples/application/ghostHouse.js',
+                image: HOST + 'threeExamples/application/ghostHouse.jpg',
             },
             {
                 id: 'flyLine',
@@ -954,7 +984,7 @@ export default [
                 author: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/application/roadShader.js',
                 image: HOST + 'threeExamples/application/roadShader.jpg',
-                referUrl: 'https://github.com/xiaolidan00/my-earth'
+                referUrl: 'https://juejin.cn/post/7386485874300223514'
             },
             {
                 id: 'model_navigation',
@@ -1126,6 +1156,15 @@ export default [
                 author: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/animation/clipAnimation.js',
                 image: HOST + 'threeExamples/animation/clipAnimation.jpg',
+            },
+            {
+                id: 'personAnimation',
+                name: '点击第三人称移动',
+                tag: '人物行走',
+                tip: '点击地面，人物会自动走到目标位置',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/animation/personAnimation.js',
+                image: HOST + 'threeExamples/animation/personAnimation.jpg',
             }
         ]
     },
@@ -1441,7 +1480,7 @@ export default [
                 name: '材质修改动画',
                 author: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/basic/changeMaterial.js',
-                image: HOST + 'threeExamples/basic/changeMaterial.jpg', 
+                image: HOST + 'threeExamples/basic/changeMaterial.jpg',
             },
             {
                 id: 'transformObject',
