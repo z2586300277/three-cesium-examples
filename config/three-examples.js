@@ -1333,6 +1333,18 @@ export default [
         name: '基础案例',
         children: [
             {
+                id: 'modelAnimation',
+                name: '人物模型动画案例',
+                author: 'abining',
+                codeUrl: HOST + 'threeExamples/basic/modelAnimation.js',
+                image: HOST + 'threeExamples/basic/modelAnimation.gif',
+                meta: {
+                    title: '模型动画',
+                    keywords: 'three.js,模型动画',
+                    description: '使用three.js的fbx模型动画'
+                }
+            },
+            {
                 id: 'modelLoad',
                 name: 'gltf/fbx/obj模型加载',
                 author: 'z2586300277',
