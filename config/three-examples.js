@@ -67,7 +67,14 @@ export default [
                 ]
             },
 
-
+            {
+                id: '700stars',
+                name: 'tks-700stars留念',
+                tag: '共筑,共享-rgb(198,0,0)',
+                author: 'nico',
+                codeUrl: HOST + 'threeExamples/application/700stars.js',
+                image: HOST + 'threeExamples/application/700stars.jpg',
+            },
         ]
     },
 
