@@ -1156,6 +1156,15 @@ export default [
                 author: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/animation/clipAnimation.js',
                 image: HOST + 'threeExamples/animation/clipAnimation.jpg',
+            },
+            {
+                id: 'personAnimation',
+                name: '点击第三人称移动',
+                tag: '人物行走',
+                tip: '点击地面，人物会自动走到目标位置',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/animation/personAnimation.js',
+                image: HOST + 'threeExamples/animation/personAnimation.jpg',
             }
         ]
     },
