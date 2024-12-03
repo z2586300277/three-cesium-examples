@@ -67,7 +67,14 @@ export default [
                 ]
             },
 
-
+            {
+                id: '700stars',
+                name: '700stars留念',
+                tag: '700stars-#ff69b4',
+                author: 'nico',
+                codeUrl: HOST + 'threeExamples/application/700stars.js',
+                image: HOST + 'threeExamples/application/thanksBibi.jpg',
+            },
         ]
     },
 
