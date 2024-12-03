@@ -1,7 +1,7 @@
 import * as THREE from "three";
 import { ImprovedNoise } from 'three/examples/jsm/Addons.js';
-// 700stars留念  --- 举足覆手之间，地形尽作湮灭
-import {  DirectionalLight, AmbientLight, Mesh, PlaneGeometry, MeshLambertMaterial, Vector2,Color,Fog } from 'three';
+// 700stars留念 共筑 共享
+import {  DirectionalLight, AmbientLight, Mesh, PlaneGeometry, MeshLambertMaterial, Vector2,Color } from 'three';
 let fbm = `
     // https://github.com/yiwenl/glsl-fbm/blob/master/3d.glsl
     #define NUM_OCTAVES 6
@@ -173,7 +173,7 @@ const new_fun = () => {
     const position_array = position.array;
     const new_position_array = generate_new_terrain_1;
     gsap.to(position_array, {
-        duration: 2, // 动画时长
+        duration: 1.5, // 动画时长
         ease: "power2.out", // 缓动效果
         endArray: new_position_array, // 动画目标值
         onUpdate: () => {
@@ -189,6 +189,32 @@ init_scene();
 load_terrain();
 setInterval(() => {
     new_fun();
-}, 3000);
+}, 2000);
 render();
-// console.log(4);
+
+// 文字
+
+const ele = ()=>{
+    const box = document.getElementById("box");
+    box.style.position = 'relative'
+    const div = document.createElement('div')
+    div.style.position ='absolute'
+    div.style.top ='0px'
+    div.style.width ='100%'
+    div.style.height ='100%'
+    div.style.display = 'grid'
+    div.style.placeItems = 'center'
+    div.innerHTML = `
+        <div style="width:40%;height:35%;display:grid;place-items:center;position:relative;">
+            <div style="font-size:calc(45px);white-space: nowrap;text-shadow: 2px 3px 1px rgb(155,155,155);">共筑3D世界,共享3D世界</div>
+            <div style="font-size:calc(45px);white-space: nowrap;text-shadow: 2px 3px 1px rgb(155,155,155);">Build & Share 3D World Together</div>
+               <div style="position:absolute;right:0px;bottom:0px;">
+                    for 'three-cesium-examples' 700 stars
+                </div>
+            </div>
+
+    `
+    box.appendChild(div)
+}
+
+ele()
