@@ -187,7 +187,12 @@ export default [
         github: 'https://github.com/ecojust',
         icon: 'https://avatars.githubusercontent.com/u/30574854?v=4'
     },
-
+    {
+        id: 'abining',
+        name: 'abining',
+        github: 'https://github.com/abining',
+        icon: 'https://avatars.githubusercontent.com/u/86543671?v=4'
+    },
     {
         id: 'liaoqinwei',
         name: 'liaoqinwei',
