@@ -2,6 +2,8 @@
 
 ##  开源不易 - ⭐ - 点星助力 -⚡ - 每日更新 - 👋 - 为爱发电
 
+#### 注：方便开发者的案例代码📘、资源链接保存和共享👬，方便在日后的开发中便捷高效查阅📖。
+
 加入仓库🐧QQ       | 微信             |  预览图                       |            Stars                
 :-------------------------:|:-------------------------:|:-------------------------:|:-------------------------
 🐧QQ：2586300277 <br> 🐧群：865182188  <br> 微信：15230117323 | <img src="https://z2586300277.github.io/3d-file-server/images/wechat.jpg" height="140px" />| <img src="https://z2586300277.github.io/3d-file-server/images/threeCesiumExamples.jpg" width="240px" height="160px" /> | <img src="https://api.star-history.com/svg?repos=z2586300277/three-editor,z2586300277/three-cesium-examples&type=Date" width="180px" height="140px" /> 
@@ -14,21 +16,19 @@
   
 - 人生旅程中的web3d知识记录, 复习回顾, 高效查阅, 资源共享, 为爱发电。(有好的仓库或作品分享给我哦🐸) 
 
-- 关注git histroy, 记录我的每一天, 对学习热爱的朋友可 follow me。
+- 关注git histroy, 记录我的每一天, 等到20年以后, 人生每一天的回忆, 对学习热爱的朋友可 follow me。
 
 - 注: 本站框架和在线调试源于three-editor库。
 
 <img src="https://contrib.rocks/image?repo=z2586300277/three-cesium-examples&type=Date" />
 
-### 联系
+### 👋 联系(自行添加）
 
  作者      |        联系方式             |           联系方式         |  链接
 :-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
 优雅永不过时 | 🐧2586300277|  微:z2586300277
 nico | 805879871 |  微:15230117323 | http://nicowebgl.cn
 jiawanlong | 微: trampjwl | 🐧群 585667336 | https://jiawanlong.github.io
-
-- 注: 可自定义增加信息。
 
 ## 📦 自行部署
 
@@ -38,15 +38,15 @@ jiawanlong | 微: trampjwl | 🐧群 585667336 | https://jiawanlong.github.io
 
 ## 🌳创作
 
-- 分布式仓库 可见 https://github.com/z2586300277/three-cesium-examples-self
+#### ✋ 如果这些里面有案例帮助了您，有意的话您可以提交您的作品，让爱传递给更多开发者
 
-### - 加入仓库的开发者，可自行创建自己的分支
+#### 👏 加入仓库的开发者，可自行创建自己的分支，或者在dev 分支直接开发
 
-##### - 如果这些里面有案例帮助了您 - 有意的话您可以提交您的作品 - 让爱传递给更多开发者
+#### 📑 fork仓库开发 - 增加用户信息 - 提交代码 - 合并到dev
 
-##### - fork仓库后 - 增加用户信息 - 上传您最自豪的作品 - 提交合并到主分支 - 开发或者合并 基于dev分支
+#### 🌿 分布式仓库开发模式 https://github.com/z2586300277/three-cesium-examples-self
 
-- 运行框架  启动服务端口指向index.html即可
+- 运行框架  启动服务端口指向index.html即可 如 nginx apache node.js liveServer 等只要可启动服务即可
 
 1. 创作者可以在 config/author.js 录入你的开发者信息,然后你提交的案例关联上id 就会展示作者信息。
 
