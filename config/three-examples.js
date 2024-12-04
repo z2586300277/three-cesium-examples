@@ -796,16 +796,16 @@ export default [
             {
                 id: 'particleFire',
                 name: '粒子烟花',
-                author:'FFMMCC',
+                author: 'FFMMCC',
                 codeUrl: HOST + 'threeExamples/particle/particleFire.js',
                 image: HOST + 'threeExamples/particle/particleFire.jpg',
             },
             {
-                id:'starrySky',
-                name:'粒子星空',
-                author:'z2586300277',
-                codeUrl:HOST+'threeExamples/particle/starrySky.js',
-                image:HOST+'threeExamples/particle/starrySky.jpg',
+                id: 'starrySky',
+                name: '粒子星空',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/particle/starrySky.js',
+                image: HOST + 'threeExamples/particle/starrySky.jpg',
             }
         ]
     },
@@ -1383,7 +1383,7 @@ export default [
                 name: '人物模型动画案例',
                 author: 'abining',
                 codeUrl: HOST + 'threeExamples/basic/modelAnimation.js',
-                image: HOST + 'threeExamples/basic/modelAnimation.gif',
+                image: HOST + 'threeExamples/basic/modelAnimation.jpg',
                 meta: {
                     title: '模型动画',
                     keywords: 'three.js,模型动画',

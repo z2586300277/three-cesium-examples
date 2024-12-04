@@ -69,7 +69,7 @@ function init() {
   const loader = new GLTFLoader();
 
   loader.load(
-    "https://raw.githubusercontent.com/abining/picgo_imgs/main/images/Soldier.glb",
+    FILE_HOST + 'files/model/Soldier.glb',
     function (gltf) {
       model = gltf.scene;
       scene.add(model);
