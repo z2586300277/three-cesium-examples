@@ -131,6 +131,14 @@ export default [
                 }
             },
             {
+                id: 'cityBlendLight',
+                name: '城市混合扫光',
+                tag: '常用扫光',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/shader/cityBlendLight.js',
+                image: HOST + 'threeExamples/shader/cityBlendLight.jpg',
+            },
+            {
                 id: 'fenceShader',
                 name: '围栏着色器',
                 author: 'flowers-10',
