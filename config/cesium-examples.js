@@ -532,6 +532,18 @@ export default [
                     description: 'cesium 结合 3D热力图'
                 }
             },
+            {
+                id: 'gradienGeojsonFace',
+                name: '渐变行政区',
+                author: '20Savage',
+                codeUrl: HOST + 'cesiumExamples/expand/gradienGeojsonFace.js',
+                image: HOST + 'cesiumExamples/expand/gradienGeojsonFace.jpg',
+                meta: {
+                    title: '渐变行政区',
+                    keywords: 'cesium.js,渐变行政区',
+                    description: 'cesium 结合 渐变行政区'
+                }
+            },
             
         ]
     },

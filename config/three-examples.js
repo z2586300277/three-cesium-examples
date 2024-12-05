@@ -131,6 +131,14 @@ export default [
                 }
             },
             {
+                id: 'cityBlendLight',
+                name: '城市混合扫光',
+                tag: '常用扫光',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/shader/cityBlendLight.js',
+                image: HOST + 'threeExamples/shader/cityBlendLight.jpg',
+            },
+            {
                 id: 'fenceShader',
                 name: '围栏着色器',
                 author: 'flowers-10',
@@ -796,9 +804,16 @@ export default [
             {
                 id: 'particleFire',
                 name: '粒子烟花',
-                author:'FFMMCC',
+                author: 'FFMMCC',
                 codeUrl: HOST + 'threeExamples/particle/particleFire.js',
                 image: HOST + 'threeExamples/particle/particleFire.jpg',
+            },
+            {
+                id: 'starrySky',
+                name: '粒子星空',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/particle/starrySky.js',
+                image: HOST + 'threeExamples/particle/starrySky.jpg',
             }
         ]
     },
@@ -1156,6 +1171,15 @@ export default [
                 author: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/animation/clipAnimation.js',
                 image: HOST + 'threeExamples/animation/clipAnimation.jpg',
+            },
+            {
+                id: 'personAnimation',
+                name: '点击第三人称移动',
+                tag: '人物行走',
+                tip: '点击地面，人物会自动走到目标位置',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/animation/personAnimation.js',
+                image: HOST + 'threeExamples/animation/personAnimation.jpg',
             }
         ]
     },
@@ -1362,6 +1386,18 @@ export default [
         pid: 'basic',
         name: '基础案例',
         children: [
+            {
+                id: 'modelAnimation',
+                name: '人物模型动画案例',
+                author: 'abining',
+                codeUrl: HOST + 'threeExamples/basic/modelAnimation.js',
+                image: HOST + 'threeExamples/basic/modelAnimation.jpg',
+                meta: {
+                    title: '模型动画',
+                    keywords: 'three.js,模型动画',
+                    description: '使用three.js的fbx模型动画'
+                }
+            },
             {
                 id: 'modelLoad',
                 name: 'gltf/fbx/obj模型加载',
