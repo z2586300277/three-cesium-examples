@@ -1915,6 +1915,7 @@ export default [
                 author: 'nico',
                 openUrl: 'http://nicowebgl.cn/three_tool/',
                 image: HOST + 'threeExamples/tools/scene.jpg'
+                
             }
         ]
     },
