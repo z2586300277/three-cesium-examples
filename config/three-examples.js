@@ -1158,6 +1158,13 @@ export default [
                 author: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/application/customGrid.js',
                 image: HOST + 'threeExamples/application/customGrid.jpg',
+            },
+            {   
+                id:'faceMesh',
+                name:'表情',
+                author:'z2586300277',
+                codeUrl:HOST+'threeExamples/application/faceMesh.js',
+                image:HOST+'threeExamples/application/faceMesh.jpg',
             }
         ]
     },
