@@ -131,6 +131,14 @@ export default [
                 }
             },
             {
+                id: 'cityBlendLight',
+                name: '城市混合扫光',
+                tag: '常用扫光',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/shader/cityBlendLight.js',
+                image: HOST + 'threeExamples/shader/cityBlendLight.jpg',
+            },
+            {
                 id: 'fenceShader',
                 name: '围栏着色器',
                 author: 'flowers-10',
@@ -1150,6 +1158,13 @@ export default [
                 author: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/application/customGrid.js',
                 image: HOST + 'threeExamples/application/customGrid.jpg',
+            },
+            {   
+                id:'faceMesh',
+                name:'表情',
+                author:'z2586300277',
+                codeUrl:HOST+'threeExamples/application/faceMesh.js',
+                image:HOST+'threeExamples/application/faceMesh.jpg',
             }
         ]
     },
@@ -1900,6 +1915,14 @@ export default [
                 author: 'z2586300277',
                 openUrl: 'https://datav.aliyun.com/portal/school/atlas/area_selector',
                 image: HOST + 'threeExamples/tools/geojsonTool.jpg'
+            },
+            {
+                id: 'scene_fase',
+                name: '场景快速调试工具',
+                author: 'nico',
+                openUrl: 'http://nicowebgl.cn/three_tool/',
+                image: HOST + 'threeExamples/tools/scene.jpg'
+                
             }
         ]
     },
