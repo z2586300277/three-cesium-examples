@@ -724,6 +724,16 @@ export default [
                     description: "粒子泡泡"
                 }
             },
+            
+            {
+                id: 'particleBlendShader',
+                name: '粒子混合着色器',
+                tag: '混合着色',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/particle/particleBlendShader.js',
+                image: HOST + 'threeExamples/particle/particleBlendShader.jpg',
+            },
+
             {
                 id: 'particleScattered',
                 name: '粒子聚散',
