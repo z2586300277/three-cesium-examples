@@ -20,7 +20,7 @@
 
 - 注: 本站框架和在线调试源于three-editor库。
 
-<img src="https://contrib.rocks/image?repo=z2586300277/three-cesium-examples&type=Date" />
+<img src="https://contrib.rocks/image?repo=z2586300277/three-cesium-examples&type=Date&1" />
 
 ### 👋 联系(自行添加）
 

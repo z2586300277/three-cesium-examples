@@ -724,6 +724,16 @@ export default [
                     description: "粒子泡泡"
                 }
             },
+            
+            {
+                id: 'particleBlendShader',
+                name: '粒子混合着色器',
+                tag: '混合着色',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/particle/particleBlendShader.js',
+                image: HOST + 'threeExamples/particle/particleBlendShader.jpg',
+            },
+
             {
                 id: 'particleScattered',
                 name: '粒子聚散',
@@ -1488,6 +1498,13 @@ export default [
                     keywords: 'three.js,轮廓光',
                     description: '使用three轮廓光'
                 }
+            },
+            {
+                id: 'screenCoord',
+                name: '三维转屏幕坐标',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/basic/screenCoord.js',
+                image: HOST + 'threeExamples/basic/screenCoord.jpg'
             },
             {
                 id: 'gradientTriangle',

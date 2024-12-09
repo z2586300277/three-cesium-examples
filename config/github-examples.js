@@ -412,6 +412,15 @@ export default [
                 githubUrl: 'https://github.com/pmndrs/drei-vanilla',
                 image: HOST + 'threeExamples/openSource/drei_vanilla.jpg'
             },
+            {
+                id: 'tShaderMaterial',
+                name:'threejs-shader-materials',
+                author:'AUTO',
+                tip:'Three.js的着色器材质扩展，包括多种着色器材质',
+                openUrl:'https://masatomakino.github.io/threejs-shader-materials/demo/',
+                githubUrl:'https://github.com/MasatoMakino/threejs-shader-materials',
+                image:HOST+'threeExamples/openSource/tShaderMaterial.jpg'
+            }
         ]
     },
     {
