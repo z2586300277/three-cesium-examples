@@ -879,6 +879,13 @@ export default [
                 image: HOST + 'threeExamples/application/ghostHouse.jpg',
             },
             {
+                id: 'flowLine',
+                name: '贴图飞线',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/application/flowLine.js',
+                image: HOST + 'threeExamples/application/flowLine.jpg',
+            },
+            {
                 id: 'flyLine',
                 name: '飞线效果',
                 author: 'ecojust',
