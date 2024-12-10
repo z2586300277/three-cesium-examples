@@ -672,6 +672,13 @@ export default [
                 codeUrl: HOST + 'threeExamples/shader/earthScan.js',
                 image: HOST + 'threeExamples/shader/earthScan.jpg',
                 referUrl: 'https://juejin.cn/post/7378535517950525466'
+            },
+            {
+                id: 'waveScan',
+                name: '波扫描',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/shader/waveScan.js',
+                image: HOST + 'threeExamples/shader/waveScan.jpg',
             }
         ]
     },
