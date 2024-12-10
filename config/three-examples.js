@@ -731,7 +731,7 @@ export default [
                     description: "粒子泡泡"
                 }
             },
-            
+
             {
                 id: 'particleBlendShader',
                 name: '粒子混合着色器',
@@ -1176,12 +1176,19 @@ export default [
                 codeUrl: HOST + 'threeExamples/application/customGrid.js',
                 image: HOST + 'threeExamples/application/customGrid.jpg',
             },
-            {   
-                id:'faceMesh',
-                name:'表情',
-                author:'z2586300277',
-                codeUrl:HOST+'threeExamples/application/faceMesh.js',
-                image:HOST+'threeExamples/application/faceMesh.jpg',
+            {
+                id: 'faceMesh',
+                name: '表情',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/application/faceMesh.js',
+                image: HOST + 'threeExamples/application/faceMesh.jpg',
+            },
+            {
+                id: 'isoline',
+                name: '等值线',
+                author: 'nico',
+                codeUrl: HOST + 'threeExamples/application/isoline.js',
+                image: HOST + 'threeExamples/application/isoline.jpg',
             }
         ]
     },
@@ -1946,7 +1953,7 @@ export default [
                 author: 'nico',
                 openUrl: 'http://nicowebgl.cn/three_tool/',
                 image: HOST + 'threeExamples/tools/scene.jpg'
-                
+
             }
         ]
     },
