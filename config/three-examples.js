@@ -672,6 +672,13 @@ export default [
                 codeUrl: HOST + 'threeExamples/shader/earthScan.js',
                 image: HOST + 'threeExamples/shader/earthScan.jpg',
                 referUrl: 'https://juejin.cn/post/7378535517950525466'
+            },
+            {
+                id: 'waveScan',
+                name: '波扫描',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/shader/waveScan.js',
+                image: HOST + 'threeExamples/shader/waveScan.jpg',
             }
         ]
     },
@@ -724,7 +731,7 @@ export default [
                     description: "粒子泡泡"
                 }
             },
-            
+
             {
                 id: 'particleBlendShader',
                 name: '粒子混合着色器',
@@ -870,6 +877,13 @@ export default [
                 author: 'FFMMCC',
                 codeUrl: HOST + 'threeExamples/application/ghostHouse.js',
                 image: HOST + 'threeExamples/application/ghostHouse.jpg',
+            },
+            {
+                id: 'flowLine',
+                name: '贴图飞线',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/application/flowLine.js',
+                image: HOST + 'threeExamples/application/flowLine.jpg',
             },
             {
                 id: 'flyLine',
@@ -1169,12 +1183,19 @@ export default [
                 codeUrl: HOST + 'threeExamples/application/customGrid.js',
                 image: HOST + 'threeExamples/application/customGrid.jpg',
             },
-            {   
-                id:'faceMesh',
-                name:'表情',
-                author:'z2586300277',
-                codeUrl:HOST+'threeExamples/application/faceMesh.js',
-                image:HOST+'threeExamples/application/faceMesh.jpg',
+            {
+                id: 'faceMesh',
+                name: '表情',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/application/faceMesh.js',
+                image: HOST + 'threeExamples/application/faceMesh.jpg',
+            },
+            {
+                id: 'isoline',
+                name: '等值线',
+                author: 'nico',
+                codeUrl: HOST + 'threeExamples/application/isoline.js',
+                image: HOST + 'threeExamples/application/isoline.jpg',
             }
         ]
     },
@@ -1939,7 +1960,7 @@ export default [
                 author: 'nico',
                 openUrl: 'http://nicowebgl.cn/three_tool/',
                 image: HOST + 'threeExamples/tools/scene.jpg'
-                
+
             }
         ]
     },
