@@ -1202,7 +1202,7 @@ export default [
                 name: '管道表面运动',
                 author: 'nico',
                 codeUrl: HOST + 'threeExamples/application/flowTube.js',
-                image: HOST + 'threeExamples/application/flowTube.jpg',
+                image: HOST + 'threeExamples/application/flowTube.png',
             }
         ]
     },
