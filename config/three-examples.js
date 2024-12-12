@@ -1196,6 +1196,13 @@ export default [
                 author: 'nico',
                 codeUrl: HOST + 'threeExamples/application/isoline.js',
                 image: HOST + 'threeExamples/application/isoline.jpg',
+            },
+            {
+                id: 'flowTube',
+                name: '管道表面运动',
+                author: 'nico',
+                codeUrl: HOST + 'threeExamples/application/flowTube.js',
+                image: HOST + 'threeExamples/application/flowTube.jpg',
             }
         ]
     },
