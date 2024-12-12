@@ -82,6 +82,15 @@ export default [
                 githubUrl: 'https://github.com/zhengjie9510/webgis-demo',
                 image: FILE_HOST + 'images/zhengjie9510.jpg'
             },
+
+            {   
+                id: 'quyinggang',
+                name: 'Three学习案例',
+                author: 'AUTO',
+                githubUrl: 'https://github.com/quyinggang/three3d',
+                openUrl: 'https://quyinggang.github.io/three3d/',
+                image: FILE_HOST + 'images/quyinggang.jpg'
+            },
             {
                 id: 'bosombaby',
                 author: 'bosombaby',

@@ -170,10 +170,3 @@ function animate() {
     renderer.render(scene, camera)
 
 }
-
-
-
-/**
- * 名称: 罗盘
- * 作者: 优雅永不过时 https://github.com/z2586300277
-*/
