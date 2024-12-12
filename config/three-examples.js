@@ -1639,6 +1639,13 @@ export default [
                 }
             },
             {
+                id: 'domDisplay',
+                name: 'DOM遮挡',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/basic/domDisplay.js',
+                image: HOST + 'threeExamples/basic/domDisplay.jpg',
+            },
+            {
 
                 id: 'curveAnimate',
                 name: '曲线动画',
