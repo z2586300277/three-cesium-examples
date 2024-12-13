@@ -26,7 +26,7 @@
 
 <img src="https://contrib.rocks/image?repo=z2586300277/three-cesium-examples&type=Date&1" />
 
-### 👋 联系(自行添加）
+### 👋 联系(作者自行添加）
 
 |     作者     |   联系方式   |    联系方式     |             链接             |
 | :----------: | :----------: | :-------------: | :--------------------------: |
@@ -34,11 +34,13 @@
 |     nico     |  805879871   | 微:15230117323  |     http://nicowebgl.cn      |
 |  jiawanlong  | 微: trampjwl | 🐧 群 585667336 | https://jiawanlong.github.io |
 
-## 📦 自行部署
+## 📦 自行部署 - 助力企业
 
 1.可通过 config/links 文件修改 所有的链接和 logo, 替换成自己的官网或者链接地址。
 
 2.如在 https://threehub.cn 部署
+
+2.如在 http://nicowebgl.cn/three-cesium-examples 部署
 
 ## 🌳 创作
 
