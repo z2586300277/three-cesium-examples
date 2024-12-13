@@ -8,17 +8,21 @@
 | :-----------------------------------------------------------: | :-----------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------------------------------------------------------- |
 | 🐧QQ：2586300277 <br> 🐧 群：865182188 <br> 微信：15230117323 | <img src="https://z2586300277.github.io/3d-file-server/images/wechat.jpg" height="140px" /> | <img src="https://z2586300277.github.io/3d-file-server/images/threeCesiumExamples.jpg" width="240px" height="160px" /> | <img src="https://api.star-history.com/svg?repos=z2586300277/three-editor,z2586300277/three-cesium-examples&type=Date" width="180px" height="140px" /> |
 
-- 由于最近仓库火了，很多人找作者接单，奈何精力有限，有意愿接单的开发者，可以联系作者😊。
-
 - github dev 分支实时预览 http://z2586300277.github.io/three-cesium-examples
 
 - vercel 部署预览 https://three-cesium-examples.vercel.app
+
 - 国内 gitee 仓库 https://gitee.com/zhang-jingguang/three-cesium-examples
-- 人生旅程中的 web3d 知识记录, 复习回顾, 高效查阅, 资源共享, 为爱发电。(有好的仓库或作品分享给我哦 🐸)
 
-- 关注 git histroy, 记录我的每一天, 等到 20 年以后, 人生每一天的回忆, 对学习热爱的朋友可 follow me。
+- 人生旅程中的 Web3D 知识记录, 复习回顾, 高效查阅, 资源共享, 为爱发电。(有好的仓库或作品分享一下🍀)
 
-- 注: 源码总内存10M内，框架和在线调试源于 作者名下的 three-editor 库
+- 由于接收到了各平台同学点赞鼎力支持, 本仓库未来每天都会更新案例, 可以点个 watch 获取最新动态🐸。
+
+- 关注 git histroy, 记录人生的每一天, 待到20年以后, 人生美好的回忆, 热爱学习的朋友可 follow me🍏。
+
+- 最近仓库火了, 经常有人找作者接单, 奈何精力有限, 有意愿接单的开发者, 可以与作者和其他伙伴结识🐋。
+
+- 注: 源码总内存10M内，框架和在线调试源于 作者名下的 three-editor 库。
 
 <img src="https://contrib.rocks/image?repo=z2586300277/three-cesium-examples&type=Date&1" />
 
