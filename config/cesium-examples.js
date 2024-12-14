@@ -384,7 +384,8 @@ export default [
             {
                 id: 'tilesShader',
                 name: '智慧城市着色器',
-                author: 'liaoqinwei',
+                author: 'z2586300277',
+                referUrl: 'https://blog.csdn.net/weixin_45412353/article/details/130598349',
                 codeUrl: HOST + 'cesiumExamples/basic/tilesShader.js',
                 image: HOST + 'cesiumExamples/basic/tilesShader.jpg',
                 meta: {

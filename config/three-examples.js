@@ -267,6 +267,7 @@ export default [
                 id: 'smokeCircle',
                 name: '圆泡吸附',
                 author: 'z2586300277',
+                referUrl: 'https://codepen.io/vcomics/pen/KBMyjE',
                 codeUrl: HOST + 'threeExamples/shader/smokeCircle.js',
                 image: HOST + 'threeExamples/shader/smokeCircle.jpg',
             },
@@ -372,6 +373,14 @@ export default [
                 referUrl: 'https://github.com/hafly',
                 codeUrl: HOST + 'threeExamples/shader/groundglass.js',
                 image: HOST + 'threeExamples/shader/groundglass.jpg',
+            },
+            {
+                id: 'infiniteGrid',
+                name: '无限网格',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/shader/infiniteGrid.js',
+                image: HOST + 'threeExamples/shader/infiniteGrid.jpg',
+                referUrl: 'https://github.com/Fyrestar/THREE.InfiniteGridHelper'
             },
             {
                 id: 'cobwebBox',
@@ -490,6 +499,7 @@ export default [
                 id: 'flowerShader',
                 name: '花',
                 author: 'z2586300277',
+                referUrl: 'https://codepen.io/vcomics/pen/jeWpgX',
                 codeUrl: HOST + 'threeExamples/shader/flowerShader.js',
                 image: HOST + 'threeExamples/shader/flowerShader.jpg',
             },
