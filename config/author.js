@@ -423,6 +423,13 @@ export default [
         name: 'FFMMCC',
         github:'https://gitee.com/fu-meichuan',
         icon: HOST + 'files/author/FFMMCC.jpg'
+    },
+
+    {   
+        id:'quyinggang',
+        name:'quyinggang',
+        github:'https://github.com/quyinggang',
+        icon:'https://avatars.githubusercontent.com/u/20634057?v=4'
     }
   
 ]
