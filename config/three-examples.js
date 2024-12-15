@@ -1213,7 +1213,14 @@ export default [
                 author: 'nico',
                 codeUrl: HOST + 'threeExamples/application/flowTube.js',
                 image: HOST + 'threeExamples/application/flowTube.png',
-            }
+            },
+            {
+                id: 'videoEffect',
+                name: '视频碎片',
+                author: 'quyinggang',
+                codeUrl: HOST + 'threeExamples/application/videoEffect.js',
+                image: HOST + 'threeExamples/application/videoEffect.jpg',
+            },
         ]
     },
     {
