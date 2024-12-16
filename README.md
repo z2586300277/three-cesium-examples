@@ -13,8 +13,6 @@
 - vercel 部署预览 https://three-cesium-examples.vercel.app
 
 - 国内 gitee 仓库 https://gitee.com/zhang-jingguang/three-cesium-examples
-- 小程序threejs，推荐ThreeX https://three-x.cn
-- 中大型3D项目，推荐未来之门 https://meta-gate.cn
 
 - 人生旅程中的 Web3D 知识记录, 复习回顾, 高效查阅, 资源共享, 为爱发电。(有好的仓库或作品分享一下🍀)
 
@@ -26,25 +24,33 @@
 
 - 注: 源码总内存10M内，框架和在线调试源于 作者名下的 three-editor 库。
 
-<img src="https://contrib.rocks/image?repo=z2586300277/three-cesium-examples&type=Date&1" />
 
 ### 👋 联系(作者自行添加）
 
-|     作者     |   联系方式   |    联系方式     |             链接             |
-| :----------: | :----------: | :-------------: | :--------------------------: |
+<img src="https://contrib.rocks/image?repo=z2586300277/three-cesium-examples&type=Date&8" />
+
+
+|     作者     |   联系方式   |    联系方式     |             链接             |          描述
+| :----------: | :----------: | :-------------: | :------------------------: | :------------------------: |
 | 优雅永不过时 | 🐧2586300277 | 微:z2586300277  |
-|     ThreeX     |  🐧383612104   | 微:web-gpu  |     https://three-x.cn      |
-|     nico     |  805879871   | 微:15230117323  |     http://nicowebgl.cn      |
-|  jiawanlong  | 微: trampjwl | 🐧 群 585667336 | https://jiawanlong.github.io |
+|     ThreeX     |  🐧383612104   | 微:web-gpu  |     https://three-x.cn      |   致力于Three.js移动端
+|     nico     |  🐧805879871   | 微:15230117323  |     http://nicowebgl.cn   |   Three.js Cesium.js
+|  jiawanlong  | 微: trampjwl | 🐧 群 585667336 | https://jiawanlong.github.io |  专注于Cesium.js领域
 |  -  | - | - | - |
+
+### 🏫 解决方案 (项目)
+
+- 小程序threejs，推荐ThreeX https://three-x.cn
+
+- 中大型3D项目，推荐未来之门 https://meta-gate.cn
 
 ## 📦 自行部署 - 助力企业
 
-1.可通过 config/links 文件修改 所有的链接和 logo, 替换成自己的官网或者链接地址。
+- 可通过 config/links 文件修改 所有的链接和 logo, 替换成自己的官网或者链接地址。
 
-2.如在 https://threehub.cn 部署
+- 如在 https://threehub.cn 部署
 
-2.如在 http://nicowebgl.cn/three-cesium-examples 部署
+- 如在 http://nicowebgl.cn/three-cesium-examples 部署
 
 ## 🌳 创作
 
