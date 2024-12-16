@@ -13,6 +13,8 @@
 - vercel 部署预览 https://three-cesium-examples.vercel.app
 
 - 国内 gitee 仓库 https://gitee.com/zhang-jingguang/three-cesium-examples
+- 小程序，推荐threejs https://three-x.cn
+- 中大3D项目，推荐未来之门 https://mega-gate.cn
 
 - 人生旅程中的 Web3D 知识记录, 复习回顾, 高效查阅, 资源共享, 为爱发电。(有好的仓库或作品分享一下🍀)
 
