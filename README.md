@@ -38,13 +38,13 @@
 
 ### 🏫 解决方案 - 项目
 
-- 小程序threejs https://three-x.cn , 移动端 https://meta-gate.cn 
+- 小程序threejs https://three-x.cn  、 移动端 https://meta-gate.cn 
 
 ## 📦 自行部署 - 助力企业
 
 - 可通过 config/links 文件修改 所有的链接和 logo, 替换成自己的官网或者链接地址。
 
-- 如在 https://threehub.cn， http://nicowebgl.cn/three-cesium-examples 部署。
+- 如在 https://threehub.cn  、 http://nicowebgl.cn/three-cesium-examples 部署。
 
 ## 🌳 创作
 
