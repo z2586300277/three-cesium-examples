@@ -28,7 +28,6 @@
 
 <img src="https://contrib.rocks/image?repo=z2586300277/three-cesium-examples&type=Date&8" />
 
-
 |     作者     |   联系方式   |    联系方式     |             链接             |          描述
 | :----------: | :----------: | :-------------: | :------------------------: | :------------------------: |
 | 优雅永不过时 | 🐧2586300277 | 微:z2586300277  |
@@ -37,19 +36,15 @@
 |  jiawanlong  | 微: trampjwl | 🐧 群 585667336 | https://jiawanlong.github.io |  专注于Cesium.js领域
 |  -  | - | - | - | -
 
-### 🏫 解决方案 (项目)
+### 🏫 解决方案 - 项目
 
-- 小程序threejs，推荐ThreeX https://three-x.cn
-
-- 中大型3D项目，推荐未来之门 https://meta-gate.cn
+- 小程序threejs https://three-x.cn , 移动端 https://meta-gate.cn 
 
 ## 📦 自行部署 - 助力企业
 
 - 可通过 config/links 文件修改 所有的链接和 logo, 替换成自己的官网或者链接地址。
 
-- 如在 https://threehub.cn 部署
-
-- 如在 http://nicowebgl.cn/three-cesium-examples 部署
+- 如在 https://threehub.cn， http://nicowebgl.cn/three-cesium-examples 部署。
 
 ## 🌳 创作
 
