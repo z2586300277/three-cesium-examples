@@ -1207,6 +1207,7 @@ export default [
                 codeUrl: HOST + 'threeExamples/application/isoline.js',
                 image: HOST + 'threeExamples/application/isoline.jpg',
             },
+
             {
                 id: 'flowTube',
                 name: '管道表面运动',
@@ -1220,6 +1221,13 @@ export default [
                 author: 'quyinggang',
                 codeUrl: HOST + 'threeExamples/application/videoEffect.js',
                 image: HOST + 'threeExamples/application/videoEffect.jpg',
+            },
+            {
+                id: 'punk',
+                name: '朋克风',
+                author: 'nico',
+                codeUrl: HOST + 'threeExamples/application/punk.js',
+                image: HOST + 'threeExamples/application/punk.jpg',
             },
         ]
     },
