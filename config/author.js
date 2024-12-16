@@ -431,5 +431,12 @@ export default [
         github:'https://github.com/quyinggang',
         icon:'https://avatars.githubusercontent.com/u/20634057?v=4'
     }
-  
+    ,
+
+    {   
+        id:'onekit-boss',
+        name:'Edison',
+        github:'https://gitee.com/onekit-boss',
+        icon:'https://foruda.gitee.com/avatar/1677828979213943210/121886_onekit_boss_1677828979.png!avatar200'
+    }
 ]
