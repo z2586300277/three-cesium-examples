@@ -191,6 +191,14 @@ export default [
                 image: HOST + 'threeExamples/openSource/3dEarth2.jpg'
             },
             {
+                id: 'fogEarth',
+                name: '雾地球',
+                author: 'AUTO',
+                openUrl: 'https://dgreenheck.github.io/threejs-procedural-planets/',
+                githubUrl: 'https://github.com/dgreenheck/threejs-procedural-planets',
+                image: HOST + 'threeExamples/openSource/fogEarth.jpg'
+            },
+            {
                 id: '3dPointsModel',
                 name: '3D点云模型',
                 author: 'youngdro',

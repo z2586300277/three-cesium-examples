@@ -24,23 +24,32 @@
 
 - 注: 源码总内存10M内，框架和在线调试源于 作者名下的 three-editor 库。
 
-<img src="https://contrib.rocks/image?repo=z2586300277/three-cesium-examples&type=Date&1" />
-
 ### 👋 联系(作者自行添加）
 
-|     作者     |   联系方式   |    联系方式     |             链接             |
-| :----------: | :----------: | :-------------: | :--------------------------: |
+<img src="https://contrib.rocks/image?repo=z2586300277/three-cesium-examples&type=Date&8" />
+
+
+|     作者     |   联系方式   |    联系方式     |             链接             |          描述
+| :----------: | :----------: | :-------------: | :------------------------: | :------------------------: |
 | 优雅永不过时 | 🐧2586300277 | 微:z2586300277  |
-|     nico     |  805879871   | 微:15230117323  |     http://nicowebgl.cn      |
-|  jiawanlong  | 微: trampjwl | 🐧 群 585667336 | https://jiawanlong.github.io |
+|     ThreeX     |  🐧383612104   | 微:web-gpu  |     https://three-x.cn      |   致力于Three.js小程序
+|     nico     |  🐧805879871   | 微:15230117323  |     http://nicowebgl.cn   |   Three.js Cesium.js
+|  jiawanlong  | 微: trampjwl | 🐧 群 585667336 | https://jiawanlong.github.io |  专注于Cesium.js领域
+|  -  | - | - | - | -
+
+### 🏫 解决方案 (项目)
+
+- 小程序threejs，推荐ThreeX https://three-x.cn
+
+- 中大型3D项目，推荐未来之门 https://meta-gate.cn
 
 ## 📦 自行部署 - 助力企业
 
-1.可通过 config/links 文件修改 所有的链接和 logo, 替换成自己的官网或者链接地址。
+- 可通过 config/links 文件修改 所有的链接和 logo, 替换成自己的官网或者链接地址。
 
-2.如在 https://threehub.cn 部署
+- 如在 https://threehub.cn 部署
 
-2.如在 http://nicowebgl.cn/three-cesium-examples 部署
+- 如在 http://nicowebgl.cn/three-cesium-examples 部署
 
 ## 🌳 创作
 
@@ -112,119 +121,61 @@
 
 - 参考访问案例 如 cesium 案例 => 离线地图 => 内网高德
 
-# 💎 Native Three and Cesium Cases - Updated to the death - Only open source-
+#  💎  Native Three and Cesium Cases - Generating for Love - Only Open Source-
+## Share knowledge- 👋 -  Open source is not easy- ⭐ -  Dianxing Assistance- ⚡ -  Prevent work interruption (daily shift)
+#### Note: Case code for developers' convenience 📘、 Save and share resource links 👬， Convenient and efficient access in future development 📖。
 
-##Open source is not easy- ⭐ - Dianxing Assistance- ⚡ - Daily updates
+- Web3D knowledge recording, review, efficient searching, resource sharing in the journey of life, generating electricity for love. (Share good warehouses or works) 🍀)
+- Due to receiving likes and strong support from students on various platforms, our warehouse will update cases every day in the future. You can click on 'watch' to get the latest updates 🐸。
+- Follow git histroy, record every day of your life, and in 20 years, cherish the beautiful memories of your life. Friends who love learning can follow me 🍏。
+- Recently, the warehouse has become popular, and people often come to the author to take orders. However, due to limited energy, developers who are willing to take orders can get to know the author and other partners 🐋。
+- Note: The total memory of the source code is within 10M, and the framework and online debugging are sourced from the three editor library under the author's name.
 
-| Join the warehouse and manage contacts together 🐧QQ | 🐧 Mutual assistance QQ group |
-| :--------------------------------------------------: | :---------------------------: |
-|                      2586300277                      |           865182188           |
-
-- Real time preview of GitHub dev branch http://z2586300277.github.io/three-cesium-examples
-
-- Vercel Deployment Preview https://three-cesium-examples.vercel.app
-
-- Web3D knowledge recording, review, efficient searching, resource sharing in the journey of life, generating electricity for love
-
-- Follow git histroy and record my every day.
-
-- Note: The framework and online debugging of this website are derived from the three editor library.
-
-## 📦 Self deployment
-
-1. All links and logos can be modified through the config/links file and replaced with one's own official website or link address.
-
-2. As in https://threehub.cn Deployment
-
-## 🌳 a literary creation
-
-#### - Developers who join and manage the repository can create their own branches for development
-
-##### If any of these cases have helped you, you can submit your work if you are interested to spread love to more developers
-
-##### - After forking the repository - Add user information - Upload your proudest work - Submit and merge to the main branch - Develop or merge based on dev branch
-
-- Run the framework to start the service port pointing to index.html
-
+##  🌳  a literary creation
+####  ✋  If there are any cases that have helped you, if interested, you can submit your work to spread love to more developers
+####  👏  Developers who join the repository can create their own branches or develop directly in the dev branch
+####  📑  Fork repository development - Add user information - Submit code - Merge into dev
+####  🌿  Distributed Warehouse Development Model https://github.com/z2586300277/three-cesium-examples-self
+- Run the framework to start the service port pointing to index.html, such as nginx Apache Node.js LiveServer, as long as the service can be started
 1. Creators can enter their developer information in config/author.js, and then the ID associated with the submitted case will display the author information.
-
-2. Place the case js in a folder in the directory cesiumExamples/threeEmples, such as ThreeEmples/basic, and put test.exe, test.jpg, or the directory test [test. js, test. jpg]
-
+2. Place the case js in the folder cesiumExamples/threeEmples in the directory, such as ThreeEmples/basic, and put testjs in it, test.jpg,  Or directory test [test. js, test. jpg]
 3. Find ThreeEmples in the config directory and enter the case information. The internal resources point to the paths corresponding to your JS and image resources
-
 4. Note: To ensure the use of lightweight case display image resources- https://yasuo.xunjiepdf.com/img/ _(Custom compression to within 4k)_
-
-5. If it involves other dependent JS, you can place module.js in the JS directory such as dat.gui, Gasp, and inject it through config/config.js
-
+5. If it involves other dependent JS, you can place module.js in the JS directory such as dat.gui, gasp , The injection method config/config.js is visible
 6. Store audio and video models and other resources that can be shared in the files folder. Whenever possible, reference external URLs for file resources to ensure a lightweight warehouse
-
 - Config=>JS injection and configuration case, all case configuration directories
-
 - Files, audio and video model storage, and other resources that can be shared should be avoided as much as possible, and external URL addresses should be used to access them
-
 - Js=>dat.gui gsap and other dependency repositories, try to use online js such as CDN to introduce them as much as possible
-
 - ThreeEamples Three.js Case Code Catalog
-
 - CesiumExamples cesium case code directory
-
 ```js
-
 //HOST automatically retrieves the current domain name/IP to prevent invalid resource references in different deployment environments
-
 {
-
-Id: 'Unique id in the parent corresponding list',
-
-Name: 'Name',
-
-tag: 'tag-color-size',
-
-tip: 'tip',
-
-Author: 'Author ID',
-
-referUrl: 'Case reference source address',//If not available, do not configure it
-links: [{ url, name  }] // use links referUrl don`t show
-
-Image: HOST+'ThreeEmples/basic/test. jpg',//corresponding window image
-
+id: ' The unique id 'in the parent corresponding list,
+name: ' Name ',
+tag: ' Tag Name - Background Color - Font Size ',
+tip: ' Prompt message ',
+author: ' Author ID ',
+referUrl: ' Case reference source address',//if not available, do not configure
+Links: [{url: 'Connect', name: ' Name '}]//Configure link referURL to not display
+image: HOST + 'threeExamples/basic/test.jpg', //  Corresponding window diagram
 CodeURL: HOST+'threExamples/basic/test. js',//js module format Most case forms
-
 HtmlURL: HOST+'threExamples/test/test. html '//HTML online format such as three case=>particle=>random particle particle planet
-
-OpenURL: 'Preview external link URL',//openURL and codeURL are in either form as seen in the Peach Blossom Pavilion Su7 case
-
-DownloadURL: 'URL with attached download',//e.g. Three.js=>Advanced case=>Peach Blossom Pavilion
-
-GithubURL: 'URL with GitHub repository attached',//e.g. Three.js=>Open source works=>su7
-
+openUrl: ' Preview the external link URL '// Choose between openURL and codeURL, as seen in the case of Taohua Pavilion Su7
+downloadUrl: ' Attached download URL ',//such as Three.js=>Advanced Case=>Peach Blossom Pavilion
+githubUrl: ' URL 'with GitHub repository attached,//e.g. Three.js=>Open source works=>su7
 meta: {
-
-Title: 'This Case Website Title',
-
-Keywords: 'Search engine keywords',
-
-Description: 'This case page description'
-
+    title: ' The title of this case website is',
+    keywords: ' Search engine keywords',
+    description: ' This case page describes'
 }
-
 }
-
 ```
-
-## 🏠 Build your own distributed storage warehouse
-
+##  🏠  Build your own distributed storage warehouse
 - Architecture design is to access code in the form of requesting resources, so resource information such as codeURL image is not limited to being stored in this repository, such as on your own server, and then the URL can be accessed to your resource address.
-
 - Then only the case information can be configured in this warehouse, which can refer to the configuration of three cases=>extended functions=>3D map cases
-
 - Due to access restrictions on GitHub, HTTP will be automatically banned. It is recommended to set up your own GitHub page and use GitHub as your resource server.
-
 - For example, some of my distributed resources are stored in https://github.com/z2586300277/3d-file-server Under the warehouse - Access service: https://z2586300277.github.io/3d-file-server/
-
 - GitHub page setup=>create repository=>page process=>settings=>pages=>build and deployment=>source (depoly from a branch)=>branch Select the corresponding branch
-
-- Note: After the GitHub page is built, you can directly access it as follows: https://xxxx.github.io/xxxx/ It is normal that the resource files under cannot be displayed, but they can be obtained normally in the code
-
+- Note: After building the GitHub page, you can directly access it as follows: https://xxxx.github.io/xxxx/ It is normal that the resource files under cannot be displayed, but they can be obtained normally in the code
 - Reference access cases such as Cesium case=>Offline map=>Intranet Gaode
