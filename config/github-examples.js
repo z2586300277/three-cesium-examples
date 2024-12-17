@@ -385,6 +385,14 @@ export default [
                 githubUrl: 'https://github.com/vasturiano/3d-force-graph',
                 image: HOST + 'threeExamples/physics/threeForce.jpg',
             },
+            {
+                id: 'octreeDemo',
+                name: '八叉树',
+                author: 'AUTO',
+                openUrl: 'https://eriksom.github.io/threejs-octree/dist/example/',
+                githubUrl: 'https://github.com/ErikSom/threejs-octree',
+                image: HOST + 'threeExamples/physics/octreeDemo.jpg'
+            }
         ]
 
     },
