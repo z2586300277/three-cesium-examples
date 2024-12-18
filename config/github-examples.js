@@ -362,6 +362,14 @@ export default [
                         url: 'https://www.bilibili.com/video/BV1AcSUY3Ez2'
                     }
                 ]
+            },
+            {
+                id: 'small_island',
+                author: 'AUTO',
+                name: '小岛',
+                githubUrl: 'https://github.com/alezen9/unshaken',
+                openUrl: 'https://alezen9.github.io/unshaken/',
+                image: HOST + 'threeExamples/openSource/small_island.jpg'
             }
         ]
     },
