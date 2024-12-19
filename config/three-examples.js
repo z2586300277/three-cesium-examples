@@ -139,6 +139,14 @@ export default [
                 image: HOST + 'threeExamples/shader/cityBlendLight.jpg',
             },
             {
+                id: 'cityEffect',
+                name: '城市光效',
+                referUrl: 'https://quyinggang.github.io/three3d',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/shader/cityEffect.js',
+                image: HOST + 'threeExamples/shader/cityEffect.jpg',
+            },
+            {
                 id: 'fenceShader',
                 name: '围栏着色器',
                 author: 'flowers-10',
