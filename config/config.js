@@ -13,9 +13,7 @@ window.FILE_HOST = FILE_HOST // 文件资源服务器地址, 注入到全局变�
 
 window.GLOBAL_CONFIG = {
 
-    HOST,
-
-    FILE_HOST,
+    getLayerUrl: () => "https://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer", // cesium 图层配置
 
     getFileUrl: (url) => FILE_HOST + url, // 例 threeExamples/shader/chinaFlag.js 文件中的图片资源引用
 

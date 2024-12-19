@@ -1103,7 +1103,7 @@ const viewer = new Cesium.Viewer(DOM, {
 
   baseLayer: Cesium.ImageryLayer.fromProviderAsync(
     Cesium.ArcGisMapServerImageryProvider.fromUrl(
-      "https://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer"
+      GLOBAL_CONFIG.getLayerUrl()
     )
   ),
 

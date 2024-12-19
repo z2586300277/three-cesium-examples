@@ -560,7 +560,7 @@ export default [
                 image: HOST + 'cesiumExamples/tools/mapDataConvert.jpg',
             },
             {
-                pid: 'layerDownload',
+                id: 'layerDownload',
                 name: '地图下载器',
                 author: 'CrimsonHu',
                 openUrl: 'https://gitee.com/CrimsonHu/java_map_download',
