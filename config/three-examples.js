@@ -100,7 +100,6 @@ export default [
                 id: 'grassShader',
                 name: '草地着色器',
                 author: 'Siricee',
-                improver: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/shader/grassShader.js',
                 image: HOST + 'threeExamples/shader/grassShader.jpg',
                 meta: {
@@ -433,7 +432,6 @@ export default [
                 id: 'flowLight',
                 name: '流光',
                 author: 'Fate-ui',
-                improver: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/shader/flowLight.js',
                 image: HOST + 'threeExamples/shader/flowLight.jpg',
                 meta: {
@@ -851,6 +849,14 @@ export default [
                 author: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/particle/starrySky.js',
                 image: HOST + 'threeExamples/particle/starrySky.jpg',
+            },
+            {
+                id: 'technologyParticle',
+                name: '科技粒子',
+                author: 'FFMMCC',
+                codeUrl: HOST + 'threeExamples/particle/technologyParticle.js',
+                image: HOST + 'threeExamples/particle/technologyParticle.jpg',
+                improver: 'z2586300277',
             }
         ]
     },
@@ -897,14 +903,6 @@ export default [
                 author: 'FFMMCC',
                 codeUrl: HOST + 'threeExamples/application/ghostHouse.js',
                 image: HOST + 'threeExamples/application/ghostHouse.jpg',
-            },
-            {
-                id: 'pointLockControls',
-                tag: '漫游',
-                name: '第一人称漫游控制',
-                author: 'z2586300277',
-                codeUrl: HOST + 'threeExamples/application/pointLockControls.js',
-                image: HOST + 'threeExamples/application/pointLockControls.jpg',
             },
             {
                 id: 'flowLine',
