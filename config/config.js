@@ -21,6 +21,8 @@ window.GLOBAL_CONFIG = {
 
 } // 全局配置 此变量可以在 iframe 内嵌的 案例 js 页面代码中使用 
 
+// GLOBAL_CONFIG.ElMessage 消息提示 可在内部使用 不影响代码逻辑
+
 // 依赖注入可使用 如 线上官网 或 cdn 或者本地路径
 window.THREE_CESIUM_NAVIGATION = [
     {
