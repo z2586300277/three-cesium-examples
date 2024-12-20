@@ -100,6 +100,7 @@ export default [
                 id: 'grassShader',
                 name: '草地着色器',
                 author: 'Siricee',
+                improver: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/shader/grassShader.js',
                 image: HOST + 'threeExamples/shader/grassShader.jpg',
                 meta: {
@@ -432,6 +433,7 @@ export default [
                 id: 'flowLight',
                 name: '流光',
                 author: 'Fate-ui',
+                improver: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/shader/flowLight.js',
                 image: HOST + 'threeExamples/shader/flowLight.jpg',
                 meta: {
