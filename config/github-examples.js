@@ -83,7 +83,7 @@ export default [
                 image: FILE_HOST + 'images/zhengjie9510.jpg'
             },
 
-            {   
+            {
                 id: 'quyinggang',
                 name: 'Three学习案例',
                 author: 'AUTO',
@@ -116,6 +116,14 @@ export default [
                 githubUrl: 'https://github.com/lpya/vue2-threejs-sefficacy',
                 image: FILE_HOST + 'images/lpya.jpg'
             },
+            {
+                id: 'etudes',
+                author: 'AUTO',
+                name: 'Three案例',
+                openUrl: 'https://boytchev.github.io/etudes/',
+                githubUrl: 'https://github.com/boytchev/etudes',
+                image: HOST + 'threeExamples/openSource/etudes.jpg'
+            }
         ]
     },
     {
@@ -447,12 +455,12 @@ export default [
             },
             {
                 id: 'tShaderMaterial',
-                name:'threejs-shader-materials',
-                author:'AUTO',
-                tip:'Three.js的着色器材质扩展，包括多种着色器材质',
-                openUrl:'https://masatomakino.github.io/threejs-shader-materials/demo/',
-                githubUrl:'https://github.com/MasatoMakino/threejs-shader-materials',
-                image:HOST+'threeExamples/openSource/tShaderMaterial.jpg'
+                name: 'threejs-shader-materials',
+                author: 'AUTO',
+                tip: 'Three.js的着色器材质扩展，包括多种着色器材质',
+                openUrl: 'https://masatomakino.github.io/threejs-shader-materials/demo/',
+                githubUrl: 'https://github.com/MasatoMakino/threejs-shader-materials',
+                image: HOST + 'threeExamples/openSource/tShaderMaterial.jpg'
             }
         ]
     },

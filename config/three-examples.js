@@ -139,6 +139,14 @@ export default [
                 image: HOST + 'threeExamples/shader/cityBlendLight.jpg',
             },
             {
+                id: 'cityEffect',
+                name: '城市光效',
+                referUrl: 'https://quyinggang.github.io/three3d',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/shader/cityEffect.js',
+                image: HOST + 'threeExamples/shader/cityEffect.jpg',
+            },
+            {
                 id: 'fenceShader',
                 name: '围栏着色器',
                 author: 'flowers-10',
@@ -887,6 +895,14 @@ export default [
                 author: 'FFMMCC',
                 codeUrl: HOST + 'threeExamples/application/ghostHouse.js',
                 image: HOST + 'threeExamples/application/ghostHouse.jpg',
+            },
+            {
+                id: 'pointLockControls',
+                tag: '漫游',
+                name: '第一人称漫游控制',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/application/pointLockControls.js',
+                image: HOST + 'threeExamples/application/pointLockControls.jpg',
             },
             {
                 id: 'flowLine',

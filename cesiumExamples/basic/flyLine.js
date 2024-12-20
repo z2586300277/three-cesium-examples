@@ -9,7 +9,7 @@ const viewer = new Cesium.Viewer(box, {
 
     baseLayerPicker: false,//是否显示图层选择器，右上角图层选择按钮
 
-    baseLayer: Cesium.ImageryLayer.fromProviderAsync(Cesium.ArcGisMapServerImageryProvider.fromUrl('https://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer')),
+    baseLayer: Cesium.ImageryLayer.fromProviderAsync(Cesium.ArcGisMapServerImageryProvider.fromUrl(GLOBAL_CONFIG.getLayerUrl())),
 
     fullscreenButton: false,//是否显示全屏按钮，右下角全屏选择按钮
 
@@ -153,7 +153,7 @@ function createPlaneCurve(p1, p2) {
 
             width: 8,
 
-            material: new PolylineTrailLinkMaterialProperty('https://gd-hbimg.huaban.com/679a707a941eacbc2601e34bbc4ce41d6f30f9f0c44a-CdmHDR_fw1200webp', Cesium.Color.RED, 2000)
+            material: new PolylineTrailLinkMaterialProperty(FILE_HOST + 'images/channels/line.webp', Cesium.Color.RED, 2000)
 
         }
 

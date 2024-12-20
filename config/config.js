@@ -13,15 +13,15 @@ window.FILE_HOST = FILE_HOST // 文件资源服务器地址, 注入到全局变�
 
 window.GLOBAL_CONFIG = {
 
-    HOST,
-
-    FILE_HOST,
+    getLayerUrl: () => "https://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer", // cesium 图层配置
 
     getFileUrl: (url) => FILE_HOST + url, // 例 threeExamples/shader/chinaFlag.js 文件中的图片资源引用
 
     // ... 可任意增添方法 返回 boolean number string 的值
 
 } // 全局配置 此变量可以在 iframe 内嵌的 案例 js 页面代码中使用 
+
+// GLOBAL_CONFIG.ElMessage 消息提示 可在内部使用 不影响代码逻辑
 
 // 依赖注入可使用 如 线上官网 或 cdn 或者本地路径
 window.THREE_CESIUM_NAVIGATION = [
