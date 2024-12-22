@@ -378,6 +378,14 @@ export default [
                 githubUrl: 'https://github.com/alezen9/unshaken',
                 openUrl: 'https://alezen9.github.io/unshaken/',
                 image: HOST + 'threeExamples/openSource/small_island.jpg'
+            },
+            {   
+                id: 'threejs-image-gallery',
+                name: '图片画廊',
+                author: 'AUTO',
+                githubUrl: 'https://github.com/dgreenheck/threejs-image-gallery',
+                openUrl: 'https://dgreenheck.github.io/threejs-image-gallery/',
+                image: HOST + 'threeExamples/openSource/threejs-image-gallery.jpg'
             }
         ]
     },
