@@ -1757,6 +1757,13 @@ export default [
                 author: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/basic/viewHelper.js',
                 image: HOST + 'threeExamples/basic/viewHelper.jpg',
+            },
+            {
+                id: 'renderTarget',
+                name: '渲染贴图物体',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/basic/renderTarget.js',
+                image: HOST + 'threeExamples/basic/renderTarget.jpg',
             }
         ]
     },
