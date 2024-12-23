@@ -206,6 +206,14 @@ export default [
                 githubUrl: 'https://github.com/dgreenheck/threejs-procedural-planets',
                 image: HOST + 'threeExamples/openSource/fogEarth.jpg'
             },
+            {   
+                id: 'numberEarth',
+                name: '数字地球',
+                author: 'AUTO',
+                openUrl: 'https://jackgit.github.io/xplan/',
+                githubUrl:'https://github.com/JackGit/xplan',
+                image: HOST + 'threeExamples/openSource/numberEarth.jpg'
+            },
             {
                 id: '3dPointsModel',
                 name: '3D点云模型',
