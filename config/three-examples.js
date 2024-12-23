@@ -1254,6 +1254,13 @@ export default [
                 codeUrl: HOST + 'threeExamples/application/punk.js',
                 image: HOST + 'threeExamples/application/punk.jpg',
             },
+            {
+                id: 'white model',
+                name: '随机城市白膜',
+                author: 'nico',
+                codeUrl: HOST + 'threeExamples/application/white_model.js',
+                image: HOST + 'threeExamples/application/white_model.jpg',
+            },
         ]
     },
     {
