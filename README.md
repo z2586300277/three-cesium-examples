@@ -34,18 +34,18 @@
 |     ThreeX     |  🐧383612104   | 微:web-gpu  |     https://three-x.cn      |   致力于Three.js小程序
 |     nico     |  🐧805879871   | 微:15230117323  |     http://nicowebgl.cn   |   Three.js Cesium.js
 |  jiawanlong  | 微: trampjwl | 🐧 群 585667336 | https://jiawanlong.github.io |  专注于Cesium.js领域
-|  Threelab |🐧2945853209 | - | http://xgis.threelab.cn | 海量点云渲染引擎
+|  Threelab |🐧2945853209 | - | http://points.threelab.cn | 海量点云渲染引擎
 |  -  | - | - | - | -
-
-### 🏫 解决方案 - 项目
-
-- 小程序threejs https://three-x.cn  、 移动端 https://meta-gate.cn 
 
 ## 📦 自行部署 - 助力企业
 
 - 可通过 config/links 文件修改 所有的链接和 logo, 替换成自己的官网或者链接地址。
 
 - 如在 https://threehub.cn  、 http://nicowebgl.cn/three-cesium-examples 部署。
+
+### 🏫 解决方案 - 项目
+
+- 小程序threejs https://three-x.cn  、 移动端 https://meta-gate.cn 
 
 ## 🌳 创作
 

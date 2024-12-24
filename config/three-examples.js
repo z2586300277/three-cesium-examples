@@ -1254,6 +1254,13 @@ export default [
                 codeUrl: HOST + 'threeExamples/application/punk.js',
                 image: HOST + 'threeExamples/application/punk.jpg',
             },
+            {
+                id: 'white model',
+                name: '随机城市白膜',
+                author: 'nico',
+                codeUrl: HOST + 'threeExamples/application/white_model.js',
+                image: HOST + 'threeExamples/application/white_model.jpg',
+            },
         ]
     },
     {
@@ -1750,6 +1757,13 @@ export default [
                 author: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/basic/viewHelper.js',
                 image: HOST + 'threeExamples/basic/viewHelper.jpg',
+            },
+            {
+                id: 'renderTarget',
+                name: '渲染贴图物体',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/basic/renderTarget.js',
+                image: HOST + 'threeExamples/basic/renderTarget.jpg',
             }
         ]
     },
