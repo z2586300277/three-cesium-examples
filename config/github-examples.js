@@ -394,6 +394,14 @@ export default [
                 githubUrl: 'https://github.com/dgreenheck/threejs-image-gallery',
                 openUrl: 'https://dgreenheck.github.io/threejs-image-gallery/',
                 image: HOST + 'threeExamples/openSource/threejs-image-gallery.jpg'
+            },
+            {
+                id: 'noise_gird',
+                name: '噪声网格',
+                author: 'AUTO',
+                githubUrl: 'https://github.com/AadarshGupta07/noise-grid',
+                openUrl: 'https://z2586300277.github.io/show-site/nosie_gird/',
+                image: HOST + 'threeExamples/openSource/noise_gird.jpg'
             }
         ]
     },
