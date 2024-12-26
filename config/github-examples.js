@@ -48,6 +48,15 @@ export default [
                 image: FILE_HOST + 'images/dragonir.jpg'
             },
 
+            {   
+                id: 'ThreeJourney',
+                author:'AUTO',
+                name: 'ThreeJourney',
+                openUrl: 'https://journey.pmnd.rs/',
+                githubUrl: 'https://github.com/pmndrs/threejs-journey',
+                image: HOST + 'threeExamples/openSource/threejs-journey.jpg'
+            },
+
             {
                 id: 'wuyifan0203',
                 author: 'wuyifan0203',
