@@ -507,6 +507,7 @@ export default [
             {
                 id: 'flowerShader',
                 name: '花',
+                referUrl: 'https://codepen.io/vcomics/pen/jeWpgX',
                 author: 'z2586300277',
                 referUrl: 'https://codepen.io/vcomics/pen/jeWpgX',
                 codeUrl: HOST + 'threeExamples/shader/flowerShader.js',
@@ -571,6 +572,7 @@ export default [
             {
                 id: 'blobShader',
                 name: '一团揉动',
+                referUrl: 'https://codepen.io/vcomics/pen/ZwNgvX',
                 author: 'z2586300277',
                 codeUrl: HOST + "threeExamples/shader/blobShader.js",
                 image: HOST + "threeExamples/shader/blobShader.jpg",
