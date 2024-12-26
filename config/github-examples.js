@@ -48,6 +48,15 @@ export default [
                 image: FILE_HOST + 'images/dragonir.jpg'
             },
 
+            {   
+                id: 'ThreeJourney',
+                author:'AUTO',
+                name: 'ThreeJourney',
+                openUrl: 'https://journey.pmnd.rs/',
+                githubUrl: 'https://github.com/pmndrs/threejs-journey',
+                image: HOST + 'threeExamples/openSource/threejs-journey.jpg'
+            },
+
             {
                 id: 'wuyifan0203',
                 author: 'wuyifan0203',
@@ -226,8 +235,8 @@ export default [
             {
                 id: 'threePerson',
                 name: '第三人称控制',
-                author: 'z2586300277',
-                referUrl: 'https://github.com/simondevyoutube/ThreeJS_Tutorial_ThirdPersonCamera',
+                author: 'simondevyoutube',
+                improver: 'z2586300277',
                 openUrl: 'https://g2657.github.io/examples-server/thirdPerson/',
                 githubUrl: 'https://github.com/simondevyoutube/ThreeJS_Tutorial_ThirdPersonCamera',
                 image: 'https://g2657.github.io/examples-server/thirdPerson/thirdPerson.jpg',
