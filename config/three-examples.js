@@ -700,7 +700,14 @@ export default [
                 author: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/shader/waveScan.js',
                 image: HOST + 'threeExamples/shader/waveScan.jpg',
-            }
+            },
+            {
+                id: 'innerGlow',
+                name: '内发光',
+                author: 'quyinggang',
+                codeUrl: HOST + 'threeExamples/shader/innerGlow.js',
+                image: HOST + 'threeExamples/shader/innerGlow.jpg',
+            },
         ]
     },
     {
