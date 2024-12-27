@@ -88,7 +88,7 @@ export default [
         icon: HOST + 'files/author/flowers-10.jpg',
         links: [
             {
-                name: '博客',
+                name: '📙博客',
                 url: 'https://blog.csdn.net/m0_68324632?type=blog'
             }
         ]
@@ -102,7 +102,7 @@ export default [
         icon: HOST + 'files/author/KallkaGo.jpg',
         links: [
             {
-                name: '主页(外网)',
+                name: '🏠主页',
                 url: 'https://my-website-one-topaz.vercel.app/'
             }
         ]
@@ -123,7 +123,7 @@ export default [
         icon: 'https://avatars.githubusercontent.com/u/56536031?v=4',
         links: [
             {
-                name: '主页',
+                name: '🏠主页',
                 url: 'http://nicowebgl.cn/portfolio/#/my_resume'
             }
         ]
@@ -144,7 +144,7 @@ export default [
         icon: HOST + 'files/author/huan_meng_hai_yan.jpg',
         links: [
             {
-                name: '博客',
+                name: '📘博客',
                 url: 'https://blog.csdn.net/qq_42760477'
             }
         ]
@@ -157,7 +157,7 @@ export default [
         icon: 'https://avatars.githubusercontent.com/u/68965649?v=4',
         links: [
             {
-                name: '案例(外网)',
+                name: '🏫案例',
                 url: 'https://three-js-playground-sigma.vercel.app/'
             }
         ]
@@ -181,6 +181,12 @@ export default [
         id: 'jiawanlong',
         name: 'jiawanlong',
         describe: '人生如逆旅，我亦是行人',
+        links: [
+            {
+                name: '📺B站',
+                url: 'https://space.bilibili.com/269344644'
+            }
+        ],
         github: 'https://github.com/jiawanlong',
         icon: 'https://avatars.githubusercontent.com/u/20716499?v=4'
     },
@@ -339,7 +345,7 @@ export default [
         icon: 'https://avatars.githubusercontent.com/u/25154957?v=4',
         links: [
             {
-                name: '收藏(netlify)',
+                name: '📜收藏',
                 url: 'https://sirice.netlify.app/collections'
             }
         ]
@@ -425,6 +431,12 @@ export default [
     {
         id: 'FFMMCC',
         name: 'FFMMCC',
+        links: [
+            {
+                name: '📺B站',
+                url: 'https://space.bilibili.com/277443412'
+            }
+        ],
         github:'https://gitee.com/fu-meichuan',
         icon: HOST + 'files/author/FFMMCC.jpg'
     },
