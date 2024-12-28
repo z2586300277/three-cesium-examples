@@ -147,6 +147,13 @@ export default [
                 image: HOST + 'threeExamples/shader/cityEffect.jpg',
             },
             {
+                id: 'planeScan',
+                name: '平面扫描',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/shader/planeScan.js',
+                image: HOST + 'threeExamples/shader/planeScan.jpg',
+            },
+            {
                 id: 'fenceShader',
                 name: '围栏着色器',
                 author: 'flowers-10',
