@@ -147,6 +147,13 @@ export default [
                 image: HOST + 'threeExamples/shader/cityEffect.jpg',
             },
             {
+                id: 'planeScan',
+                name: '平面扫描',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/shader/planeScan.js',
+                image: HOST + 'threeExamples/shader/planeScan.jpg',
+            },
+            {
                 id: 'fenceShader',
                 name: '围栏着色器',
                 author: 'flowers-10',
@@ -867,6 +874,14 @@ export default [
                 codeUrl: HOST + 'threeExamples/particle/technologyParticle.js',
                 image: HOST + 'threeExamples/particle/technologyParticle.jpg',
                 improver: 'z2586300277',
+            },
+            {
+                id: 'textParticle',
+                name: '文字采集成粒子',
+                tag: '文字粒子',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/particle/textParticle.js',
+                image: HOST + 'threeExamples/particle/textParticle.jpg',
             }
         ]
     },

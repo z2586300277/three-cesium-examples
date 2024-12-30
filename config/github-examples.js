@@ -494,6 +494,14 @@ export default [
                 openUrl: 'https://masatomakino.github.io/threejs-shader-materials/demo/',
                 githubUrl: 'https://github.com/MasatoMakino/threejs-shader-materials',
                 image: HOST + 'threeExamples/openSource/tShaderMaterial.jpg'
+            },
+            {
+                id: 'GaussianSplats3D',
+                name: '高斯点云渲染',
+                author: 'AUTO',
+                githubUrl: 'https://github.com/mkkellogg/GaussianSplats3D',
+                openUrl: 'https://projects.markkellogg.org/threejs/demo_gaussian_splats_3d.php',
+                image: HOST + 'threeExamples/openSource/GaussianSplats3D.jpg'
             }
         ]
     },
