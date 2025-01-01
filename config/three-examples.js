@@ -715,6 +715,13 @@ export default [
                 codeUrl: HOST + 'threeExamples/shader/innerGlow.js',
                 image: HOST + 'threeExamples/shader/innerGlow.jpg',
             },
+            {
+                id: 'fireShader',
+                name: '火焰',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/shader/fireShader.js',
+                image: HOST + 'threeExamples/shader/fireShader.jpg',
+            },
         ]
     },
     {
