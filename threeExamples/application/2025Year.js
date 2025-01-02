@@ -7,16 +7,6 @@ import { ShaderPass } from 'three/addons/postprocessing/ShaderPass.js';
 import { VignetteShader } from 'three/addons/shaders/VignetteShader.js';
 import { GammaCorrectionShader } from 'three/addons/shaders/GammaCorrectionShader.js';
 
-console.clear();
-
-window.addEventListener("dblclick", () => {
-  if(!document.fullscreenElement){
-    document.documentElement.requestFullscreen();
-  }else{
-    document.exitFullscreen();
-  }
-});
-
 let rotations = `
 // https://forum.gamemaker.io/index.php?threads/solved-3d-rotations-with-a-shader-matrix-or-a-matrix-glsl-es.61064/
   mat4 rx(float a) {
@@ -45,26 +35,7 @@ let rotations = `
     return rz(angles.z) * ry(angles.y) * rx(angles.x);
   }
 `;
-// load fonts
-await (async function () {
-  async function loadFont(fontface) {
-    await fontface.load();
-    document.fonts.add(fontface);
-  }
-  let fonts = [
-    new FontFace(
-      "Limelight",
-      "url(https://fonts.gstatic.com/s/limelight/v19/XLYkIZL7aopJVbZJHDuoNOlH.woff2) format('woff2')"
-    ),
-    new FontFace(
-      "BerkshireSwash",
-      "url(https://fonts.gstatic.com/s/berkshireswash/v20/ptRRTi-cavZOGqCvnNJDl5m5XmN_qs4z.woff2) format('woff2')"
-    )
-  ];
-  for (let font in fonts) {
-    await loadFont(fonts[font]);
-  }
-})();
+
 
 class Postprocessing extends EffectComposer{
   constructor(){
@@ -98,7 +69,7 @@ class Postprocessing extends EffectComposer{
           ctx.textBaseline = "middle";
           
           //ctx.strokeRect(0, 0, c.width, c.height);
-          let text = "Happy New Year!";
+          let text = `Happy New Year!`;
           ctx.fillText(text, c.width * 0.5, c.height * 0.5);
           ctx.strokeText(text, c.width * 0.5, c.height * 0.5);
           

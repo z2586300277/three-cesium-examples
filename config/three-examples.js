@@ -75,16 +75,8 @@ export default [
                 author: 'nico',
                 codeUrl: HOST + 'threeExamples/application/700stars.js',
                 image: HOST + 'threeExamples/application/700stars.jpg',
-            },
+            }
 
-            {
-                id: '2025Year',
-                name: '2025',
-                author: 'Threejs',
-                referUrl: 'https://codepen.io/prisoner849/pen/gbYgjom',
-                codeUrl: HOST + 'threeExamples/application/2025Year.js',
-                image: HOST + 'threeExamples/application/2025Year.jpg',
-            },
         ]
     },
 
@@ -125,6 +117,14 @@ export default [
                 author: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/shader/textStarShader.js',
                 image: HOST + 'threeExamples/shader/textStarShader.jpg',
+            },
+            {
+                id: '2025Year',
+                name: '2025',
+                author: 'Threejs',
+                referUrl: 'https://codepen.io/prisoner849/pen/gbYgjom',
+                codeUrl: HOST + 'threeExamples/application/2025Year.js',
+                image: HOST + 'threeExamples/application/2025Year.jpg',
             },
             {
                 id: 'audioSolutions',
