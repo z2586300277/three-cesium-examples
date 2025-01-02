@@ -516,6 +516,14 @@ export default [
                 githubUrl: 'https://github.com/sun0225SUN/Awesome-Love-Code',
                 openUrl: 'https://sun0225sun.github.io/Awesome-Love-Code/',
                 image: HOST + 'threeExamples/openSource/loveCode.jpg'
+            },
+            {
+                id: 'bigScreen',
+                author: 'AUTO',
+                name: '大屏模板100套',
+                githubUrl: 'https://github.com/iGaoWei/BigDataView',
+                openUrl: 'https://igaowei.github.io/BigDataView/',
+                image: HOST + 'threeExamples/openSource/bigScreen.jpg'
             }
         ]
 
