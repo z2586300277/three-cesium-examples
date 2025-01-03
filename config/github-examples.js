@@ -411,6 +411,14 @@ export default [
                 githubUrl: 'https://github.com/AadarshGupta07/noise-grid',
                 openUrl: 'https://z2586300277.github.io/show-site/nosie_gird/',
                 image: HOST + 'threeExamples/openSource/noise_gird.jpg'
+            },
+            {
+                id: 'cheapwater',
+                name: '交互水效果',
+                author: 'AUTO',
+                openUrl: 'https://mqnc.github.io/cheapwater/',
+                githubUrl: 'https://github.com/mqnc/cheapwater',
+                image: HOST + 'threeExamples/openSource/cheapwater.jpg'
             }
         ]
     },
