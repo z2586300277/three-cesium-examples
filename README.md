@@ -8,6 +8,8 @@
 | :-----------------------------------------------------------: | :-----------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------------------------------------------------------- |
 | 🐧QQ：2586300277 <br> 🐧 群：865182188 <br> 微信：15230117323 | <img src="https://z2586300277.github.io/3d-file-server/images/wechat.jpg" height="140px" /> | <img src="https://z2586300277.github.io/3d-file-server/images/threeCesiumExamples.jpg" width="240px" height="160px" /> | <img src="https://api.star-history.com/svg?repos=z2586300277/three-editor,z2586300277/three-cesium-examples&type=Date" width="180px" height="140px" /> |
 
+- 2025 为长久开源考虑，未来开源相关内容会陆续转移到 [开源组织](https://github.com/OpenThree) - OpenThree、[仓库链接](https://github.com/OpenThree/three-cesium-examples) 、 [预览地址](https://openthree.github.io/three-cesium-examples/)
+
 - github dev 分支实时预览 http://z2586300277.github.io/three-cesium-examples
 
 - vercel 部署预览 https://three-cesium-examples.vercel.app
