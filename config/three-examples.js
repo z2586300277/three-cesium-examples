@@ -164,6 +164,13 @@ export default [
                 image: HOST + 'threeExamples/shader/planeScan.jpg',
             },
             {
+                id: 'transparentGradient',
+                name: '透明渐变',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/shader/transparentGradient.js',
+                image: HOST + 'threeExamples/shader/transparentGradient.jpg',
+            },
+            {
                 id: 'fenceShader',
                 name: '围栏着色器',
                 author: 'flowers-10',
