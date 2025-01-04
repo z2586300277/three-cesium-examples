@@ -8,6 +8,8 @@
 | :-----------------------------------------------------------: | :-----------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------------------------------------------------------- |
 | 🐧QQ：2586300277 <br> 🐧 群：865182188 <br> 微信：15230117323 | <img src="https://z2586300277.github.io/3d-file-server/images/wechat.jpg" height="140px" /> | <img src="https://z2586300277.github.io/3d-file-server/images/threeCesiumExamples.jpg" width="240px" height="160px" /> | <img src="https://api.star-history.com/svg?repos=z2586300277/three-editor,z2586300277/three-cesium-examples&type=Date" width="180px" height="140px" /> |
 
+- 2025 为长久开源考虑，未来开源相关内容会陆续转移到 [开源组织](https://github.com/OpenThree) - OpenThree、[仓库链接](https://github.com/OpenThree/three-cesium-examples) 、 [预览地址](https://openthree.github.io/three-cesium-examples/)
+
 - github dev 分支实时预览 http://z2586300277.github.io/three-cesium-examples
 
 - vercel 部署预览 https://three-cesium-examples.vercel.app
@@ -20,9 +22,9 @@
 
 - 关注 git histroy, 记录人生的每一天, 待到20年以后, 人生美好的回忆, 热爱学习的朋友可 follow me🍏。
 
-- 最近仓库火了, 经常有人找作者接单, 奈何精力有限, 有意愿接单的开发者, 可以与作者和其他伙伴结识🐋。
+- 源码总内存10M内，框架和在线调试源于 作者名下的 three-editor 库。
 
-- 注: 源码总内存10M内，框架和在线调试源于 作者名下的 three-editor 库。
+-  注: 留下链接联系，便于企业寻求专业的技术与人员支持，个人开发者承接项目，合作共赢🐋。
 
 ### 👋 联系(作者自行添加）
 
@@ -30,7 +32,7 @@
 
 |     作者     |   联系方式   |    联系方式     |             链接             |          描述
 | :----------: | :----------: | :-------------: | :------------------------: | :------------------------: |
-| 优雅永不过时 | 🐧2586300277 | 微:z2586300277  |
+| 优雅永不过时 | 🐧2586300277 | 微:z2586300277  |  https://github.com/OpenThree |  开源三维
 |     ThreeX     |  🐧383612104   | 微:web-gpu  |     https://three-x.cn      |   致力于Three.js小程序
 |     nico     |  🐧805879871   | 微:15230117323  |     http://nicowebgl.cn   |   Three.js Cesium.js
 |  jiawanlong  | 微: trampjwl | 🐧 群 585667336 | https://jiawanlong.github.io |  专注于Cesium.js领域

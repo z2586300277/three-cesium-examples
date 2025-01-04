@@ -45,7 +45,11 @@ const css3DRender = setCss3DRenderer(DOM)
 // 添加内嵌 iframe
 const iframeDOM = document.createElement('iframe')
 
-iframeDOM.src = '//player.bilibili.com/player.html?isOutside=true&aid=113457500327757&bvid=BV1HumBYMEa1&cid=26696878993&p=1'
+const link1 = '//player.bilibili.com/player.html?isOutside=true&aid=113632553733888&bvid=BV16PqmYKEdX&cid=27284210810&p=1'
+
+const link2 = '//player.bilibili.com/player.html?isOutside=true&aid=113457500327757&bvid=BV1HumBYMEa1&cid=26696878993&p=1'
+
+iframeDOM.src = Math.random() > 0.5 ? link1 : link2
 
 iframeDOM.style.width = '100%'
 
