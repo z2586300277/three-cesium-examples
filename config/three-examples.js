@@ -536,7 +536,6 @@ export default [
                 name: '花',
                 referUrl: 'https://codepen.io/vcomics/pen/jeWpgX',
                 author: 'z2586300277',
-                referUrl: 'https://codepen.io/vcomics/pen/jeWpgX',
                 codeUrl: HOST + 'threeExamples/shader/flowerShader.js',
                 image: HOST + 'threeExamples/shader/flowerShader.jpg',
             },
@@ -1311,6 +1310,13 @@ export default [
                 author: 'nico',
                 codeUrl: HOST + 'threeExamples/application/white_model.js',
                 image: HOST + 'threeExamples/application/white_model.jpg',
+            },
+            {
+                id: 'model_base',
+                name: '生成模型底座',
+                author: 'nico',
+                codeUrl: HOST + 'threeExamples/application/model_base.js',
+                image: HOST + 'threeExamples/application/model_base.jpg',
             },
         ]
     },
