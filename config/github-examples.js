@@ -419,6 +419,14 @@ export default [
                 openUrl: 'https://mqnc.github.io/cheapwater/',
                 githubUrl: 'https://github.com/mqnc/cheapwater',
                 image: HOST + 'threeExamples/openSource/cheapwater.jpg'
+            },
+            {   
+                id: 'threeCSGMesh',
+                name: 'CSG网格',
+                author: 'AUTO',
+                githubUrl: 'https://github.com/manthrax/THREE-CSGMesh',
+                openUrl: 'https://manthrax.github.io/THREE-CSGMesh/demos/CSGDemo.html',
+                image: HOST + 'threeExamples/openSource/threeCSGMesh.jpg'
             }
         ]
     },

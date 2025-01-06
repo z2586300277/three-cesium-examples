@@ -72,7 +72,10 @@ export default [
                 id: '700stars',
                 name: 'tks-700stars留念',
                 tag: '共筑,共享-rgb(198,0,0)',
+                tip: '一个专注于前端可视化的开源组织，三维可视化开发者抱团取暖，开源分享知识，接活盈利，让自己更有底气，加入请联系',
                 author: 'nico',
+                improver: 'OpenThree',
+                githubUrl: 'https://github.com/OpenThree',
                 codeUrl: HOST + 'threeExamples/application/700stars.js',
                 image: HOST + 'threeExamples/application/700stars.jpg',
             }
@@ -533,7 +536,6 @@ export default [
                 name: '花',
                 referUrl: 'https://codepen.io/vcomics/pen/jeWpgX',
                 author: 'z2586300277',
-                referUrl: 'https://codepen.io/vcomics/pen/jeWpgX',
                 codeUrl: HOST + 'threeExamples/shader/flowerShader.js',
                 image: HOST + 'threeExamples/shader/flowerShader.jpg',
             },
@@ -1308,6 +1310,13 @@ export default [
                 author: 'nico',
                 codeUrl: HOST + 'threeExamples/application/white_model.js',
                 image: HOST + 'threeExamples/application/white_model.jpg',
+            },
+            {
+                id: 'model_base',
+                name: '生成模型底座',
+                author: 'nico',
+                codeUrl: HOST + 'threeExamples/application/model_base.js',
+                image: HOST + 'threeExamples/application/model_base.jpg',
             },
         ]
     },
