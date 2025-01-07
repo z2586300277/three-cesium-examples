@@ -741,6 +741,13 @@ export default [
                 codeUrl: HOST + 'threeExamples/shader/fireShader.js',
                 image: HOST + 'threeExamples/shader/fireShader.jpg',
             },
+            {
+                id: 'oceanShader',
+                name: '海面',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/shader/oceanShader.js',
+                image: HOST + 'threeExamples/shader/oceanShader.jpg',
+            }
         ]
     },
     {
