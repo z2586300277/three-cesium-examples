@@ -83,4 +83,4 @@ function animationLoop() {
     light.position.copy(camera.position);
     renderer.render(scene, camera);
 }
-// test robot test
+// test robot test robot test
