@@ -427,6 +427,14 @@ export default [
                 githubUrl: 'https://github.com/manthrax/THREE-CSGMesh',
                 openUrl: 'https://manthrax.github.io/THREE-CSGMesh/demos/CSGDemo.html',
                 image: HOST + 'threeExamples/openSource/threeCSGMesh.jpg'
+            },
+            {
+                id: 'flyBy',
+                name: '飞行漫游',
+                author: 'AUTO',
+                githubUrl: 'https://github.com/jessehhydee/fly-by',
+                openUrl: 'https://hydeit.co/fly-by/',
+                image: HOST + 'threeExamples/openSource/flyBy.jpg'
             }
         ]
     },
