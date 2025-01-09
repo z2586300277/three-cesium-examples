@@ -1325,6 +1325,14 @@ export default [
                 codeUrl: HOST + 'threeExamples/application/model_base.js',
                 image: HOST + 'threeExamples/application/model_base.jpg',
             },
+            {
+                id: 'rainRoof',
+                name: '下雨效果',
+                author: 'AUTO',
+                referUrl: 'https://codepen.io/prisoner849/pen/yLWMLjK',
+                codeUrl: HOST + 'threeExamples/application/rainRoof.js',
+                image: HOST + 'threeExamples/application/rainRoof.jpg',
+            }
         ]
     },
     {
