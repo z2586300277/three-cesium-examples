@@ -747,6 +747,13 @@ export default [
                 author: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/shader/oceanShader.js',
                 image: HOST + 'threeExamples/shader/oceanShader.jpg',
+            },
+            {
+                id: 'emitShader',
+                name: '发散着色器',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/shader/emitShader.js',
+                image: HOST + 'threeExamples/shader/emitShader.jpg',
             }
         ]
     },
