@@ -6,7 +6,7 @@
 
 |                         加入仓库 🐧QQ                         |                                           微信群                                            |                                                         预览图                                                         | Stars                                                                                                                                                  |
 | :-----------------------------------------------------------: | :-----------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 🐧QQ：2586300277 <br> 🐧 群：865182188 <br> 微信：15230117323 | <img src="https://z2586300277.github.io/3d-file-server/images/wechat.jpg" height="140px" /> | <img src="https://z2586300277.github.io/3d-file-server/images/threeCesiumExamples.jpg" width="240px" height="160px" /> | <img src="https://api.star-history.com/svg?repos=z2586300277/three-editor,z2586300277/three-cesium-examples&type=Date" width="180px" height="140px" /> |
+| QQ：2586300277 <br> 🐧 群：865182188 <br> 微：15230117323 | <img src="https://z2586300277.github.io/3d-file-server/images/wechat.jpg" height="140px" /> | <img src="https://z2586300277.github.io/3d-file-server/images/threeCesiumExamples.jpg" width="240px" height="160px" /> | <img src="https://api.star-history.com/svg?repos=z2586300277/three-editor,z2586300277/three-cesium-examples&type=Date" width="180px" height="140px" /> |
 
 - 2025 为长久开源考虑，未来开源相关内容会陆续转移到 [开源组织](https://github.com/OpenThree) - OpenThree、[仓库链接](https://github.com/OpenThree/three-cesium-examples) 、 [预览地址](https://openthree.github.io/three-cesium-examples/)
 
@@ -24,19 +24,19 @@
 
 - 源码总内存10M内，框架和在线调试源于 作者名下的 three-editor 库。
 
--  注: 留下链接联系，便于企业寻求专业的技术与人员支持，个人开发者承接项目，合作共赢🐋。
+-  注: 留下链接，便于企业寻求专业的技术或人员支持，个人开发者承接项目、资源售卖，合作共赢🐋。
 
-### 👋 联系(作者自行添加）
+### 👋 联系(任意用户自行添加）
 
 <img src="https://contrib.rocks/image?repo=z2586300277/three-cesium-examples&type=Date&8" />
 
 |     作者     |   联系方式   |    联系方式     |             链接             |          描述
 | :----------: | :----------: | :-------------: | :------------------------: | :------------------------: |
-| 优雅永不过时 | 🐧2586300277 | 微:z2586300277  |  https://github.com/OpenThree |  开源三维
-|     ThreeX     |  🐧383612104   | 微:web-gpu  |     https://three-x.cn      |   致力于Three.js小程序
-|     nico     |  🐧805879871   | 微:15230117323  |     http://nicowebgl.cn   |   Three.js Cesium.js
-|  jiawanlong  | 微: trampjwl | 🐧 群 585667336 | https://jiawanlong.github.io |  专注于Cesium.js领域
-|  Threelab |🐧2945853209 | - | http://points.threelab.cn | 海量点云渲染引擎
+| 优雅永不过时 | 🐧2586300277 | 微:z2586300277  |  [开源组织](https://github.com/OpenThree) |  Web3D 为爱发电
+|     ThreeX     |  🐧383612104   | 微:web-gpu  |     [官网](https://three-x.cn)      |   致力于Three.js小程序
+|     nico     |  🐧805879871   | 微:15230117323  |     [官网](http://nicowebgl.cn )  |   Three.js Cesium.js
+|  jiawanlong  | 微: trampjwl | 🐧 群 585667336 | [Cesium案例](https://jiawanlong.github.io) |  专注于Cesium.js领域
+|  Threelab |🐧2945853209 | - | [官网](http://points.threelab.cn) | 海量点云渲染引擎
 |  -  | - | - | - | -
 
 ## 📦 自行部署 - 助力企业

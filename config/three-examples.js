@@ -741,6 +741,20 @@ export default [
                 codeUrl: HOST + 'threeExamples/shader/fireShader.js',
                 image: HOST + 'threeExamples/shader/fireShader.jpg',
             },
+            {
+                id: 'oceanShader',
+                name: '海面',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/shader/oceanShader.js',
+                image: HOST + 'threeExamples/shader/oceanShader.jpg',
+            },
+            {
+                id: 'emitShader',
+                name: '发散着色器',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/shader/emitShader.js',
+                image: HOST + 'threeExamples/shader/emitShader.jpg',
+            }
         ]
     },
     {
@@ -1318,6 +1332,14 @@ export default [
                 codeUrl: HOST + 'threeExamples/application/model_base.js',
                 image: HOST + 'threeExamples/application/model_base.jpg',
             },
+            {
+                id: 'rainRoof',
+                name: '下雨效果',
+                author: 'AUTO',
+                referUrl: 'https://codepen.io/prisoner849/pen/yLWMLjK',
+                codeUrl: HOST + 'threeExamples/application/rainRoof.js',
+                image: HOST + 'threeExamples/application/rainRoof.jpg',
+            }
         ]
     },
     {
