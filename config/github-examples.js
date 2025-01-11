@@ -548,6 +548,14 @@ export default [
                 githubUrl: 'https://github.com/iGaoWei/BigDataView',
                 openUrl: 'https://igaowei.github.io/BigDataView/',
                 image: HOST + 'threeExamples/openSource/bigScreen.jpg'
+            },
+            {
+                id: 'axydemo',
+                author: 'AUTO',
+                name: '可视化大屏与3D',
+                githubUrl: 'https://github.com/whanxueyu/demo-collection',
+                openUrl: 'https://axydemo.netlify.app/#/bigScreen',
+                image: HOST + 'threeExamples/openSource/axydemo.jpg'
             }
         ]
 
