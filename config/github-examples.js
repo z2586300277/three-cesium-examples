@@ -526,6 +526,14 @@ export default [
                 githubUrl: 'https://github.com/mkkellogg/GaussianSplats3D',
                 openUrl: 'https://projects.markkellogg.org/threejs/demo_gaussian_splats_3d.php',
                 image: HOST + 'threeExamples/openSource/GaussianSplats3D.jpg'
+            },
+            {   
+                id: 'three-viewport-gizmo',
+                name: '视口控制器',
+                author: 'AUTO',
+                githubUrl: 'https://github.com/Fennec-hub/three-viewport-gizmo',
+                openUrl: 'https://fennec-hub.github.io/three-viewport-gizmo/examples/orbit-controls',
+                image: HOST + 'threeExamples/openSource/three-viewport-gizmo.jpg'
             }
         ]
     },
