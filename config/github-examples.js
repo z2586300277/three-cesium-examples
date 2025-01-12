@@ -526,6 +526,14 @@ export default [
                 githubUrl: 'https://github.com/mkkellogg/GaussianSplats3D',
                 openUrl: 'https://projects.markkellogg.org/threejs/demo_gaussian_splats_3d.php',
                 image: HOST + 'threeExamples/openSource/GaussianSplats3D.jpg'
+            },
+            {   
+                id: 'three-viewport-gizmo',
+                name: '视口控制器',
+                author: 'AUTO',
+                githubUrl: 'https://github.com/Fennec-hub/three-viewport-gizmo',
+                openUrl: 'https://fennec-hub.github.io/three-viewport-gizmo/examples/orbit-controls',
+                image: HOST + 'threeExamples/openSource/three-viewport-gizmo.jpg'
             }
         ]
     },
@@ -548,6 +556,14 @@ export default [
                 githubUrl: 'https://github.com/iGaoWei/BigDataView',
                 openUrl: 'https://igaowei.github.io/BigDataView/',
                 image: HOST + 'threeExamples/openSource/bigScreen.jpg'
+            },
+            {
+                id: 'axydemo',
+                author: 'AUTO',
+                name: '可视化大屏与3D',
+                githubUrl: 'https://github.com/whanxueyu/demo-collection',
+                openUrl: 'https://axydemo.netlify.app/#/bigScreen',
+                image: HOST + 'threeExamples/openSource/axydemo.jpg'
             }
         ]
 
