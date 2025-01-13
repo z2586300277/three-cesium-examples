@@ -435,6 +435,14 @@ export default [
                 githubUrl: 'https://github.com/jessehhydee/fly-by',
                 openUrl: 'https://hydeit.co/fly-by/',
                 image: HOST + 'threeExamples/openSource/flyBy.jpg'
+            },
+            {
+                id: 'musicParticle',
+                name: '音乐粒子',
+                author: 'AUTO',
+                githubUrl: 'https://github.com/najafmohammed/muon-music-visualizer',
+                openUrl: 'https://muon-vis.netlify.app/',
+                image: HOST + 'threeExamples/openSource/musicParticle.jpg'
             }
         ]
     },
