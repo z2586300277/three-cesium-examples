@@ -754,6 +754,14 @@ export default [
                 author: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/shader/emitShader.js',
                 image: HOST + 'threeExamples/shader/emitShader.jpg',
+            },
+            {
+                id: 'ephemeralFlower',
+                name: '幻影花烟',
+                author: 'z2586300277',
+                referUrl: 'https://codepen.io/prisoner849/pen/LYmXKrr',
+                codeUrl: HOST + 'threeExamples/shader/ephemeralFlower.js',
+                image: HOST + 'threeExamples/shader/ephemeralFlower.jpg',
             }
         ]
     },
