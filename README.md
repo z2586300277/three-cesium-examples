@@ -43,7 +43,11 @@
 
 - 可通过 config/links 文件修改 所有的链接和 logo, 替换成自己的官网或者链接地址。
 
-- 如在 https://threehub.cn  、 http://nicowebgl.cn/three-cesium-examples 部署。
+| 部署列表🍊 |
+| ------- |
+| https://threehub.cn        | 
+| http://cesiumhub.cn        |  
+| http://nicowebgl.cn/three-cesium-examples      |
 
 ### 🏫 解决方案 - 项目
 
