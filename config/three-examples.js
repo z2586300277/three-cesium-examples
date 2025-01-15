@@ -762,6 +762,15 @@ export default [
                 referUrl: 'https://codepen.io/prisoner849/pen/LYmXKrr',
                 codeUrl: HOST + 'threeExamples/shader/ephemeralFlower.js',
                 image: HOST + 'threeExamples/shader/ephemeralFlower.jpg',
+            },
+            {
+                id: 'fishShader',
+                name: '鱼',
+                author: 'Threejs',
+                improver: 'z2586300277',
+                referUrl: 'https://codepen.io/prisoner849/pen/bGgQmrX',
+                codeUrl: HOST + 'threeExamples/shader/fishShader.js',
+                image: HOST + 'threeExamples/shader/fishShader.jpg',
             }
         ]
     },
