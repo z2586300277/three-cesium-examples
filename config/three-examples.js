@@ -2128,6 +2128,14 @@ export default [
                 openUrl: 'https://datav.aliyun.com/portal/school/atlas/area_selector',
                 image: HOST + 'threeExamples/tools/geojsonTool.jpg'
             },
+            {   
+                id: 'TRELLIS',
+                name: '图片生成3D模型',
+                author: 'AUTO',
+                githubUrl: 'https://github.com/microsoft/TRELLIS',
+                openUrl: 'https://huggingface.co/spaces/JeffreyXiang/TRELLIS',
+                image: HOST + 'threeExamples/tools/TRELLIS.jpg'
+            },
             {
                 id: 'scene_fase',
                 name: '场景快速调试工具',
