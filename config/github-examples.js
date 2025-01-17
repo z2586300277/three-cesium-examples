@@ -473,6 +473,14 @@ export default [
                 openUrl: 'https://eriksom.github.io/threejs-octree/dist/example/',
                 githubUrl: 'https://github.com/ErikSom/threejs-octree',
                 image: HOST + 'threeExamples/physics/octreeDemo.jpg'
+            },
+            {
+                id: 'phy',
+                name: '小物理游戏',
+                author: 'AUTO',
+                openUrl: 'https://lo-th.github.io/phy/',
+                githubUrl: 'https://github.com/lo-th/phy',
+                image: HOST + 'threeExamples/openSource/phy.jpg'
             }
         ]
 
