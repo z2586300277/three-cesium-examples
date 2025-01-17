@@ -4,9 +4,9 @@
 
 #### 注：方便开发者资源、代码，保存、共享、查阅📘。(开发者本地调试产生的修改、优化内容可提交合并🍉)
 
-|                                           微信群                                            |                                                         预览图                                                         | Stars                                                                                                                                                  |
-| :-----------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------------------------------------------------------- |
-| <img src="https://z2586300277.github.io/3d-file-server/images/wechat.jpg" height="160px" /> | <img src="https://z2586300277.github.io/3d-file-server/images/threeCesiumExamples.jpg" width="240px" height="160px" /> | <img src="https://api.star-history.com/svg?repos=z2586300277/three-editor,z2586300277/three-cesium-examples&type=Date" height="140px" /> |
+| QQ 群 |           微信群            |              预览图                       | Stars           |
+| :---------------:| :---------------: | :---------: | :--------- |
+| <img src="https://z2586300277.github.io/3d-file-server/images/QQ.png" height="140px" /> | <img src="https://z2586300277.github.io/3d-file-server/images/wechat.jpg" height="140px" /> | <img src="https://z2586300277.github.io/3d-file-server/images/threeCesiumExamples.jpg" width="200px" height="140px" /> | <img src="https://api.star-history.com/svg?repos=z2586300277/three-editor,z2586300277/three-cesium-examples&type=Date" width="200px" height="140px" /> |
 
 - 2025 为长久开源考虑，未来开源相关内容会陆续转移到 [开源组织](https://github.com/OpenThree) - OpenThree、[仓库链接](https://github.com/OpenThree/three-cesium-examples) 、 [预览地址](https://openthree.github.io/three-cesium-examples/)
 
