@@ -4,17 +4,15 @@
 
 #### 注：方便开发者资源、代码，保存、共享、查阅📘。(开发者本地调试产生的修改、优化内容可提交合并🍉)
 
-|                         加入仓库 🐧QQ                         |                                           微信群                                            |                                                         预览图                                                         | Stars                                                                                                                                                  |
-| :-----------------------------------------------------------: | :-----------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 🐧QQ：2586300277 <br> 🐧 群：865182188 <br> 微信：15230117323 | <img src="https://z2586300277.github.io/3d-file-server/images/wechat.jpg" height="140px" /> | <img src="https://z2586300277.github.io/3d-file-server/images/threeCesiumExamples.jpg" width="240px" height="160px" /> | <img src="https://api.star-history.com/svg?repos=z2586300277/three-editor,z2586300277/three-cesium-examples&type=Date" width="180px" height="140px" /> |
+| QQ 群 |           微信群            |              预览图                       | Stars           |
+| :---------------:| :---------------: | :---------: | :--------- |
+| <img src="https://z2586300277.github.io/3d-file-server/images/QQ.png" height="140px" /> | <img src="https://z2586300277.github.io/3d-file-server/images/wechat.jpg" height="140px" /> | <img src="https://z2586300277.github.io/3d-file-server/images/threeCesiumExamples.jpg" width="200px" height="140px" /> | <img src="https://api.star-history.com/svg?repos=z2586300277/three-editor,z2586300277/three-cesium-examples&type=Date" width="200px" height="140px" /> |
 
 - 2025 为长久开源考虑，未来开源相关内容会陆续转移到 [开源组织](https://github.com/OpenThree) - OpenThree、[仓库链接](https://github.com/OpenThree/three-cesium-examples) 、 [预览地址](https://openthree.github.io/three-cesium-examples/)
 
 - github dev 分支实时预览 http://z2586300277.github.io/three-cesium-examples
 
 - vercel 部署预览 https://three-cesium-examples.vercel.app
-
-- 国内 gitee 仓库 https://gitee.com/zhang-jingguang/three-cesium-examples
 
 - 人生旅程中的 Web3D 知识记录, 复习回顾, 高效查阅, 资源共享, 为爱发电。(有好的仓库或作品分享一下🍀)
 
@@ -43,7 +41,11 @@
 
 - 可通过 config/links 文件修改 所有的链接和 logo, 替换成自己的官网或者链接地址。
 
-- 如在 https://threehub.cn  、 http://nicowebgl.cn/three-cesium-examples 部署。
+| 部署列表🍊 |
+| ------- |
+| https://threehub.cn        | 
+| http://cesiumhub.cn        |  
+| http://nicowebgl.cn/three-cesium-examples      |
 
 ### 🏫 解决方案 - 项目
 

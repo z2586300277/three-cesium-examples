@@ -48,9 +48,9 @@ export default [
                 image: FILE_HOST + 'images/dragonir.jpg'
             },
 
-            {   
+            {
                 id: 'ThreeJourney',
-                author:'AUTO',
+                author: 'AUTO',
                 name: 'ThreeJourney',
                 openUrl: 'https://journey.pmnd.rs/',
                 githubUrl: 'https://github.com/pmndrs/threejs-journey',
@@ -215,12 +215,12 @@ export default [
                 githubUrl: 'https://github.com/dgreenheck/threejs-procedural-planets',
                 image: HOST + 'threeExamples/openSource/fogEarth.jpg'
             },
-            {   
+            {
                 id: 'numberEarth',
                 name: '数字地球',
                 author: 'AUTO',
                 openUrl: 'https://jackgit.github.io/xplan/',
-                githubUrl:'https://github.com/JackGit/xplan',
+                githubUrl: 'https://github.com/JackGit/xplan',
                 image: HOST + 'threeExamples/openSource/numberEarth.jpg'
             },
             {
@@ -396,7 +396,7 @@ export default [
                 openUrl: 'https://alezen9.github.io/unshaken/',
                 image: HOST + 'threeExamples/openSource/small_island.jpg'
             },
-            {   
+            {
                 id: 'threejs-image-gallery',
                 name: '图片画廊',
                 author: 'AUTO',
@@ -420,13 +420,29 @@ export default [
                 githubUrl: 'https://github.com/mqnc/cheapwater',
                 image: HOST + 'threeExamples/openSource/cheapwater.jpg'
             },
-            {   
+            {
                 id: 'threeCSGMesh',
                 name: 'CSG网格',
                 author: 'AUTO',
                 githubUrl: 'https://github.com/manthrax/THREE-CSGMesh',
                 openUrl: 'https://manthrax.github.io/THREE-CSGMesh/demos/CSGDemo.html',
                 image: HOST + 'threeExamples/openSource/threeCSGMesh.jpg'
+            },
+            {
+                id: 'flyBy',
+                name: '飞行漫游',
+                author: 'AUTO',
+                githubUrl: 'https://github.com/jessehhydee/fly-by',
+                openUrl: 'https://hydeit.co/fly-by/',
+                image: HOST + 'threeExamples/openSource/flyBy.jpg'
+            },
+            {
+                id: 'musicParticle',
+                name: '音乐粒子',
+                author: 'AUTO',
+                githubUrl: 'https://github.com/najafmohammed/muon-music-visualizer',
+                openUrl: 'https://muon-vis.netlify.app/',
+                image: HOST + 'threeExamples/openSource/musicParticle.jpg'
             }
         ]
     },
@@ -457,6 +473,22 @@ export default [
                 openUrl: 'https://eriksom.github.io/threejs-octree/dist/example/',
                 githubUrl: 'https://github.com/ErikSom/threejs-octree',
                 image: HOST + 'threeExamples/physics/octreeDemo.jpg'
+            },
+            {
+                id: 'phy',
+                name: '小物理游戏',
+                author: 'AUTO',
+                openUrl: 'https://lo-th.github.io/phy/',
+                githubUrl: 'https://github.com/lo-th/phy',
+                image: HOST + 'threeExamples/openSource/phy.jpg'
+            },
+            {
+                id: '3dcity',
+                name: '3D城市',
+                author: 'AUTO',
+                githubUrl: 'https://github.com/lo-th/3d.city',
+                openUrl: 'https://lo-th.github.io/3d.city/index.html',
+                image: HOST + 'threeExamples/openSource/3dcity.jpg'
             }
         ]
 
@@ -518,6 +550,14 @@ export default [
                 githubUrl: 'https://github.com/mkkellogg/GaussianSplats3D',
                 openUrl: 'https://projects.markkellogg.org/threejs/demo_gaussian_splats_3d.php',
                 image: HOST + 'threeExamples/openSource/GaussianSplats3D.jpg'
+            },
+            {
+                id: 'three-viewport-gizmo',
+                name: '视口控制器',
+                author: 'AUTO',
+                githubUrl: 'https://github.com/Fennec-hub/three-viewport-gizmo',
+                openUrl: 'https://fennec-hub.github.io/three-viewport-gizmo/examples/orbit-controls',
+                image: HOST + 'threeExamples/openSource/three-viewport-gizmo.jpg'
             }
         ]
     },
@@ -540,6 +580,14 @@ export default [
                 githubUrl: 'https://github.com/iGaoWei/BigDataView',
                 openUrl: 'https://igaowei.github.io/BigDataView/',
                 image: HOST + 'threeExamples/openSource/bigScreen.jpg'
+            },
+            {
+                id: 'axydemo',
+                author: 'AUTO',
+                name: '可视化大屏与3D',
+                githubUrl: 'https://github.com/whanxueyu/demo-collection',
+                openUrl: 'https://axydemo.netlify.app/#/bigScreen',
+                image: HOST + 'threeExamples/openSource/axydemo.jpg'
             }
         ]
 

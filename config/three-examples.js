@@ -747,6 +747,30 @@ export default [
                 author: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/shader/oceanShader.js',
                 image: HOST + 'threeExamples/shader/oceanShader.jpg',
+            },
+            {
+                id: 'emitShader',
+                name: '发散着色器',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/shader/emitShader.js',
+                image: HOST + 'threeExamples/shader/emitShader.jpg',
+            },
+            {
+                id: 'ephemeralFlower',
+                name: '幻影花烟',
+                author: 'z2586300277',
+                referUrl: 'https://codepen.io/prisoner849/pen/LYmXKrr',
+                codeUrl: HOST + 'threeExamples/shader/ephemeralFlower.js',
+                image: HOST + 'threeExamples/shader/ephemeralFlower.jpg',
+            },
+            {
+                id: 'fishShader',
+                name: '鱼',
+                author: 'Threejs',
+                improver: 'z2586300277',
+                referUrl: 'https://codepen.io/prisoner849/pen/bGgQmrX',
+                codeUrl: HOST + 'threeExamples/shader/fishShader.js',
+                image: HOST + 'threeExamples/shader/fishShader.jpg',
             }
         ]
     },
@@ -1325,6 +1349,14 @@ export default [
                 codeUrl: HOST + 'threeExamples/application/model_base.js',
                 image: HOST + 'threeExamples/application/model_base.jpg',
             },
+            {
+                id: 'rainRoof',
+                name: '下雨效果',
+                author: 'AUTO',
+                referUrl: 'https://codepen.io/prisoner849/pen/yLWMLjK',
+                codeUrl: HOST + 'threeExamples/application/rainRoof.js',
+                image: HOST + 'threeExamples/application/rainRoof.jpg',
+            }
         ]
     },
     {
@@ -2095,6 +2127,14 @@ export default [
                 author: 'z2586300277',
                 openUrl: 'https://datav.aliyun.com/portal/school/atlas/area_selector',
                 image: HOST + 'threeExamples/tools/geojsonTool.jpg'
+            },
+            {   
+                id: 'TRELLIS',
+                name: '图片生成3D模型',
+                author: 'AUTO',
+                githubUrl: 'https://github.com/microsoft/TRELLIS',
+                openUrl: 'https://huggingface.co/spaces/JeffreyXiang/TRELLIS',
+                image: HOST + 'threeExamples/tools/TRELLIS.jpg'
             },
             {
                 id: 'scene_fase',
