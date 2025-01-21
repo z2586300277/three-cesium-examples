@@ -48,9 +48,9 @@ export default [
                 image: FILE_HOST + 'images/dragonir.jpg'
             },
 
-            {   
+            {
                 id: 'ThreeJourney',
-                author:'AUTO',
+                author: 'AUTO',
                 name: 'ThreeJourney',
                 openUrl: 'https://journey.pmnd.rs/',
                 githubUrl: 'https://github.com/pmndrs/threejs-journey',
@@ -215,12 +215,12 @@ export default [
                 githubUrl: 'https://github.com/dgreenheck/threejs-procedural-planets',
                 image: HOST + 'threeExamples/openSource/fogEarth.jpg'
             },
-            {   
+            {
                 id: 'numberEarth',
                 name: '数字地球',
                 author: 'AUTO',
                 openUrl: 'https://jackgit.github.io/xplan/',
-                githubUrl:'https://github.com/JackGit/xplan',
+                githubUrl: 'https://github.com/JackGit/xplan',
                 image: HOST + 'threeExamples/openSource/numberEarth.jpg'
             },
             {
@@ -396,7 +396,7 @@ export default [
                 openUrl: 'https://alezen9.github.io/unshaken/',
                 image: HOST + 'threeExamples/openSource/small_island.jpg'
             },
-            {   
+            {
                 id: 'threejs-image-gallery',
                 name: '图片画廊',
                 author: 'AUTO',
@@ -420,7 +420,7 @@ export default [
                 githubUrl: 'https://github.com/mqnc/cheapwater',
                 image: HOST + 'threeExamples/openSource/cheapwater.jpg'
             },
-            {   
+            {
                 id: 'threeCSGMesh',
                 name: 'CSG网格',
                 author: 'AUTO',
@@ -481,6 +481,14 @@ export default [
                 openUrl: 'https://lo-th.github.io/phy/',
                 githubUrl: 'https://github.com/lo-th/phy',
                 image: HOST + 'threeExamples/openSource/phy.jpg'
+            },
+            {
+                id: '3dcity',
+                name: '3D城市',
+                author: 'AUTO',
+                githubUrl: 'https://github.com/lo-th/3d.city',
+                openUrl: 'https://lo-th.github.io/3d.city/index.html',
+                image: HOST + 'threeExamples/openSource/3dcity.jpg'
             }
         ]
 
@@ -543,7 +551,7 @@ export default [
                 openUrl: 'https://projects.markkellogg.org/threejs/demo_gaussian_splats_3d.php',
                 image: HOST + 'threeExamples/openSource/GaussianSplats3D.jpg'
             },
-            {   
+            {
                 id: 'three-viewport-gizmo',
                 name: '视口控制器',
                 author: 'AUTO',

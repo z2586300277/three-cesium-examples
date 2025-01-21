@@ -66,7 +66,7 @@ export default [
                     }
                 ]
             },
-            
+
 
             {
                 id: '700stars',
@@ -1356,6 +1356,13 @@ export default [
                 referUrl: 'https://codepen.io/prisoner849/pen/yLWMLjK',
                 codeUrl: HOST + 'threeExamples/application/rainRoof.js',
                 image: HOST + 'threeExamples/application/rainRoof.jpg',
+            },
+            {
+                id: 'phy,ocean',
+                name: '具有物理效果的卡通海面',
+                author: 'nico',
+                codeUrl: HOST + 'threeExamples/application/cartoon_ocean.js',
+                image: HOST + 'threeExamples/application/cartoon_ocean.jpg',
             }
         ]
     },
@@ -2128,13 +2135,20 @@ export default [
                 openUrl: 'https://datav.aliyun.com/portal/school/atlas/area_selector',
                 image: HOST + 'threeExamples/tools/geojsonTool.jpg'
             },
-            {   
+            {
                 id: 'TRELLIS',
                 name: '图片生成3D模型',
                 author: 'AUTO',
                 githubUrl: 'https://github.com/microsoft/TRELLIS',
                 openUrl: 'https://huggingface.co/spaces/JeffreyXiang/TRELLIS',
                 image: HOST + 'threeExamples/tools/TRELLIS.jpg'
+            },
+            {
+                id: 'mixamo',
+                name: '制作人物动画',
+                author: 'z2586300277',
+                openUrl: 'https://www.mixamo.com/',
+                image: HOST + 'threeExamples/tools/mixamo.jpg'
             },
             {
                 id: 'scene_fase',
