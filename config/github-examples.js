@@ -4,6 +4,7 @@ export default [
     {
         pid: 'openSourceStation',
         name: '资源链接',
+        name_en: 'Resource Link',
         children: [
             {
                 id: 'codePen',
@@ -138,6 +139,7 @@ export default [
     {
         pid: 'advancedExamples',
         name: '高级案例',
+        name_en: 'Advanced Examples',
         children: [
             {
                 id: 'taohuating',
@@ -449,6 +451,7 @@ export default [
     {
         pid: 'physicsSource',
         name: '物理相关',
+        name_en: 'Physics Related',
         children: [
             {
                 id: 'Sketchbook',
@@ -496,6 +499,7 @@ export default [
     {
         pid: 'threejsSource',
         name: '扩展依赖',
+        name_en: 'Extension Dependency',
         children: [
             {
                 id: 'threejsExamples',
@@ -564,6 +568,7 @@ export default [
     {
         pid: 'ortherSource',
         name: '其他资源',
+        name_en: 'Other Resources',
         children: [
             {
                 id: 'loveCode',

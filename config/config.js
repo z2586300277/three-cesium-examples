@@ -28,6 +28,7 @@ window.THREE_CESIUM_NAVIGATION = [
     {
         name: "ThreeJS",
         label: "Three.js案例",
+        label_en: "Three JS",
         examples: threeExamples,
         inject: {
             importmap: {
@@ -46,6 +47,7 @@ window.THREE_CESIUM_NAVIGATION = [
     {
         name: "CesiumJS",
         label: "Cesium.js案例",
+        label_en: "Cesium JS",
         examples: cesiumExamples,
         inject: {
             link: [FILE_HOST + `js/cesium/style.css`],
@@ -60,11 +62,32 @@ window.THREE_CESIUM_NAVIGATION = [
     {
         name: "Github",
         label: "Github案例",
+        label_en: "Github",
         examples: githubExamples,
     }
 ];
 
 window.THREE_CESIUM_AUTHORS = threeCesiumAuthors; // 作者
+
+if (localStorage.getItem('langEn')==='true') {
+
+    console.log(localStorage.getItem('langEn'))
+
+    window.THREE_CESIUM_NAVIGATION.forEach(item => {
+
+        if (item.label_en) item.label = item.label_en
+
+        item.examples.forEach(item => {
+
+            if(item.name_en) item.name = item.name_en
+
+            if(item.group_en) item.group = item.group_en
+
+        })
+
+    })
+
+}
 
 /** 
  * inject 附加依赖注入方式 

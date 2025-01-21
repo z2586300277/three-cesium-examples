@@ -4,6 +4,7 @@ export default [
     {
         pid: 'layer',
         name: '在线地图',
+        name_en: 'Online Map',
         children: [
             {
                 id: 'defaultLayer',
@@ -155,6 +156,7 @@ export default [
     {
         pid: 'offline',
         name: '离线地图',
+        name_en: 'Offline Map',
         children: [
             {
                 id: 'offlineBlue',
@@ -232,6 +234,7 @@ export default [
     {
         pid: 'basic',
         name: '基础功能',
+        name_en: 'Basic Function',
         children: [
             {
                 id: 'autoRotate',
@@ -418,6 +421,7 @@ export default [
     {
         pid: 'expand',
         name: '扩展功能',
+        name_en: 'Expand Function',
         children: [
             {
                 id: 'cesiumAndThree',
@@ -551,6 +555,7 @@ export default [
     {
         pid: 'tools',
         name: '相关工具',
+        name_en: 'Tools',
         children: [
             {
                 id: 'mapDataConvert',
