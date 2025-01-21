@@ -4,6 +4,7 @@ export default [
     {
         pid: 'friendStation',
         name: '首页导航',
+        name_en: 'Home Navigation',
         children: [
 
             {
@@ -86,8 +87,10 @@ export default [
     {
         gid: 'effectGroup',
         group: '三维特效',
+        group_en: '3D Effects',
         pid: 'shader',
         name: '着色器',
+        name_en: 'Shader',
         children: [
             {
                 id: 'modelBlendShader',
@@ -778,6 +781,7 @@ export default [
         gid: 'effectGroup',
         pid: 'particle',
         name: '粒子',
+        name_en: 'Particle',
         children: [
             {
                 id: 'z2586300277',
@@ -945,6 +949,7 @@ export default [
     {
         pid: 'application',
         name: '应用场景',
+        name_en: 'Application',
         children: [
             {
                 id: 'z2586300277',
@@ -1369,6 +1374,7 @@ export default [
     {
         pid: 'animation',
         name: '动画效果',
+        name_en: 'Animation',
         children: [
             {
                 id: 'clipAnimation',
@@ -1391,6 +1397,7 @@ export default [
     {
         pid: 'physics',
         name: '物理应用',
+        name_en: 'Physics',
         children: [
             {
                 id: 'physicsMesh',
@@ -1419,6 +1426,7 @@ export default [
     {
         pid: 'expand',
         name: '扩展功能',
+        name_en: 'Expand',
         children: [
             {
                 id: 'loadTiles',
@@ -1508,6 +1516,7 @@ export default [
     {
         pid: 'effectComposer',
         name: '后期处理',
+        name_en: 'EffectComposer',
         children: [
             {
                 id: 'selectBloomPass',
@@ -1588,8 +1597,10 @@ export default [
     {
         gid: 'generalGroup',
         group: '常规案例',
+        group_en: 'General',
         pid: 'basic',
         name: '基础案例',
+        name_en: 'Basic',
         children: [
             {
                 id: 'modelAnimation',
@@ -1873,8 +1884,10 @@ export default [
     {
         gid: 'generalGroup',
         group: '常规案例',
+        group_en: 'General',
         pid: 'introduction',
         name: '入门案例',
+        name_en: 'Introduction',
         children: [
             {
                 id: "入门",
@@ -2067,6 +2080,7 @@ export default [
     {
         pid: 'tools',
         name: '相关工具',
+        name_en: 'Tools',
         children: [
             {
                 id: 'sketchfab_model',
@@ -2150,14 +2164,14 @@ export default [
                 openUrl: 'https://www.mixamo.com/',
                 image: HOST + 'threeExamples/tools/mixamo.jpg'
             },
-            {
-                id: 'scene_fase',
-                name: '场景快速调试工具',
-                author: 'nico',
-                openUrl: 'http://nicowebgl.cn/three_tool/',
-                image: HOST + 'threeExamples/tools/scene.jpg'
+            // {
+            //     id: 'scene_fase',
+            //     name: '场景快速调试工具',
+            //     author: 'nico',
+            //     openUrl: 'http://nicowebgl.cn/three_tool/',
+            //     image: HOST + 'threeExamples/tools/scene.jpg'
 
-            }
+            // }
         ]
     },
 
