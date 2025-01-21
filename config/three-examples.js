@@ -2144,6 +2144,13 @@ export default [
                 image: HOST + 'threeExamples/tools/TRELLIS.jpg'
             },
             {
+                id: 'mixamo',
+                name: '制作人物动画',
+                author: 'z2586300277',
+                openUrl: 'https://www.mixamo.com/',
+                image: HOST + 'threeExamples/tools/mixamo.jpg'
+            },
+            {
                 id: 'scene_fase',
                 name: '场景快速调试工具',
                 author: 'nico',
