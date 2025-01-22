@@ -71,8 +71,6 @@ window.THREE_CESIUM_AUTHORS = threeCesiumAuthors; // 作者
 
 if (localStorage.getItem('langEn')==='true') {
 
-    console.log(localStorage.getItem('langEn'))
-
     window.THREE_CESIUM_NAVIGATION.forEach(item => {
 
         if (item.label_en) item.label = item.label_en
@@ -82,6 +80,12 @@ if (localStorage.getItem('langEn')==='true') {
             if(item.name_en) item.name = item.name_en
 
             if(item.group_en) item.group = item.group_en
+
+            item.children?.forEach(item => {
+
+                if(item.name_en) item.name = item.name_en
+
+            })
 
         })
 

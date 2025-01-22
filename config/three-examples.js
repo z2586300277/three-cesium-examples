@@ -13,6 +13,7 @@ export default [
                 tip: 'Cesium2024年最新demos，200多个原生示例：自定义纹理、地形开挖、可视域分析、洪水淹没、缓冲分析、日照分析、方量分析、通透分析、剖面、单体化、视频融合、视频投射、雨雪雾、天空盒、场景出图、体积云、闪电、视锥体、雷达扫描、水波纹、动态扩散点、电子围栏、粒子效果、物理引擎、克里金、海流、大数据可视化、坐标转换、相机、飞行漫游、瓦片加载、xyz、tms、wms、wmts、天地图、高德、百度、wkt、shp、geojson、pbf、地形、entity、模型、海量数据、Primitive、gif、聚合、czml、字体图标、运动、3Dtiles、模型偏移、等等。。',
                 author: 'jiawanlong',
                 name: 'Cesium案例',
+                name_en: 'Cesium Examples',
                 openUrl: 'https://jiawanlong.github.io/examples/cesiumEx/examples.html',
                 githubUrl: 'https://github.com/jiawanlong/Cesium-Examples',
                 image: FILE_HOST + 'images/jiawanlong.jpg'
@@ -23,6 +24,7 @@ export default [
                 tag: '编辑器-#795cddba',
                 tip: '使用three.js开发的低代码组态易用的编辑器',
                 name: '低代码组态编辑器',
+                name_en: 'LowCode Editor',
                 author: 'z2586300277',
                 openUrl: 'https://z2586300277.github.io/three-editor/dist/#/editor',
                 githubUrl: 'https://github.com/z2586300277/three-editor',
@@ -39,6 +41,7 @@ export default [
                 id: 'fmc_car',
                 tag: '效果佳',
                 name: '麦克斯韦汽车',
+                name_en: 'FMC Car',
                 author: 'FFMMCC',
                 tip: '效果超级棒的 three.js实现麦克斯韦汽车展厅项目',
                 openUrl: 'https://g2657.github.io/examples-server/fmc_car/',
@@ -56,6 +59,7 @@ export default [
             {
                 id: 'thanksBibi',
                 name: '感谢来自BiBi的支持',
+                name_en: 'Thanks BiBi',
                 tag: '感谢BiBi-#ff69b4',
                 author: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/application/thanksBibi.js',
@@ -72,6 +76,7 @@ export default [
             {
                 id: '700stars',
                 name: 'tks-700stars留念',
+                name_en: '700stars Memory',
                 tag: '共筑,共享-rgb(198,0,0)',
                 tip: '一个专注于前端可视化的开源组织，三维可视化开发者抱团取暖，开源分享知识，接活盈利，让自己更有底气，加入请联系',
                 author: 'nico',
@@ -774,6 +779,14 @@ export default [
                 referUrl: 'https://codepen.io/prisoner849/pen/bGgQmrX',
                 codeUrl: HOST + 'threeExamples/shader/fishShader.js',
                 image: HOST + 'threeExamples/shader/fishShader.jpg',
+            },
+            {
+                id: 'energyBallShader',
+                name: '能量球',
+                name_en: 'Energy Ball',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/shader/energyBallShader.js',
+                image: HOST + 'threeExamples/shader/energyBallShader.jpg',
             }
         ]
     },
