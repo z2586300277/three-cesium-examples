@@ -10,8 +10,8 @@ export default [
         icon: HOST + 'files/author/z2586300277.png',
         links: [
             {
-                name: '📖博客',
-                url: 'https://blog.csdn.net/guang2586'
+                name: '🏠主页',
+                url: 'https://z2586300277.github.io/'   
             },
             {
                 name: '📺BiBi',
