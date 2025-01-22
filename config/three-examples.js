@@ -14,7 +14,7 @@ export default [
                 author: 'jiawanlong',
                 name: 'Cesium案例',
                 name_en: 'Cesium Examples',
-                openUrl: 'https://jiawanlong.github.io/examples/cesiumEx/examples.html',
+                openUrl: 'https://jiawanlong.github.io/Cesium-Examples/examples/cesiumEx/examples.html',
                 githubUrl: 'https://github.com/jiawanlong/Cesium-Examples',
                 image: FILE_HOST + 'images/jiawanlong.jpg'
             },

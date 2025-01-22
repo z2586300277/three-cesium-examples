@@ -191,6 +191,10 @@ export default [
         describe: '人生如逆旅，我亦是行人',
         links: [
             {
+                name: '🏠主页',
+                url: 'https://jiawanlong.github.io/'
+            },
+            {
                 name: '📺B站',
                 url: 'https://space.bilibili.com/269344644'
             }
