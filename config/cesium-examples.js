@@ -9,6 +9,7 @@ export default [
             {
                 id: 'defaultLayer',
                 name: '默认图层',
+                name_en: 'Default Layer',
                 author: 'z2586300277',
                 codeUrl: HOST + 'cesiumExamples/layer/defaultLayer.js',
                 image: HOST + 'cesiumExamples/layer/defaultLayer.jpg',
@@ -21,6 +22,7 @@ export default [
             {
                 id: 'coordLayer',
                 name: '坐标参考',
+                name_en: 'Coordinate',
                 author: 'giser2017',
                 codeUrl: HOST + 'cesiumExamples/layer/coordLayer.js',
                 image: HOST + 'cesiumExamples/layer/coord.jpg',
@@ -34,6 +36,7 @@ export default [
             {
                 id: 'baiduLayer',
                 name: '百度图层',
+                name_en: 'Baidu Layer',
                 author: 'z2586300277',
                 codeUrl: HOST + 'cesiumExamples/layer/baiduLayer.js',
                 image: HOST + 'cesiumExamples/layer/baiduLayer.jpg',
@@ -46,6 +49,7 @@ export default [
             {
                 id: 'arcgisLayer',
                 name: 'arcgis图层',
+                name_en: 'ArcGIS Layer',
                 author: 'z2586300277',
                 codeUrl: HOST + 'cesiumExamples/layer/arcgisLayer.js',
                 image: HOST + 'cesiumExamples/layer/arcgisLayer.jpg',
@@ -58,6 +62,7 @@ export default [
             {
                 id: 'gaodeLayer',
                 name: '高德图层',
+                name_en: 'Gaode Layer',
                 author: 'z2586300277',
                 codeUrl: HOST + 'cesiumExamples/layer/gaodeLayer.js',
                 image: HOST + 'cesiumExamples/layer/gaodeLayer.jpg',
@@ -70,6 +75,7 @@ export default [
             {
                 id: 'mapfilterLayer',
                 name: '地图滤镜',
+                name_en: 'Map Filter',
                 author: 'z2586300277',
                 codeUrl: HOST + 'cesiumExamples/layer/mapfilterLayer.js',
                 image: HOST + 'cesiumExamples/layer/mapfilterLayer.jpg',
@@ -82,6 +88,7 @@ export default [
             {
                 id: 'tiandituLayer',
                 name: '天地图',
+                name_en: 'Tianditu Layer',
                 author: 'z2586300277',
                 codeUrl: HOST + 'cesiumExamples/layer/tiandituLayer.js',
                 image: HOST + 'cesiumExamples/layer/tiandituLayer.jpg',
@@ -94,6 +101,7 @@ export default [
             {
                 id: 'xyz',
                 name: 'OGC- xyz服务',
+                name_en: 'OGC-XYZ',
                 author: 'jiawanlong',
                 codeUrl: HOST + 'cesiumExamples/layer/xyz.js',
                 image: HOST + 'cesiumExamples/layer/xyz.jpg',
@@ -106,6 +114,7 @@ export default [
             {
                 id: 'tms',
                 name: 'OGC- tms服务',
+                name_en: 'OGC-TMS',
                 author: 'jiawanlong',
                 codeUrl: HOST + 'cesiumExamples/layer/tms.js',
                 image: HOST + 'cesiumExamples/layer/tms.jpg',
@@ -118,6 +127,7 @@ export default [
             {
                 id: 'wms',
                 name: 'OGC- wms服务',
+                name_en: 'OGC- WMS',
                 author: 'jiawanlong',
                 codeUrl: HOST + 'cesiumExamples/layer/wms.js',
                 image: HOST + 'cesiumExamples/layer/wms.jpg',
@@ -130,6 +140,7 @@ export default [
             {
                 id: 'wmts',
                 name: 'OGC- wmts服务',
+                name_en: 'OGC- WMTS',
                 author: 'jiawanlong',
                 codeUrl: HOST + 'cesiumExamples/layer/wmts.js',
                 image: HOST + 'cesiumExamples/layer/wmts.jpg',
@@ -142,6 +153,7 @@ export default [
             {
                 id: 'terrainLayer',
                 name: '地形',
+                name_en: 'Terrain',
                 author: 'z2586300277',
                 codeUrl: HOST + 'cesiumExamples/layer/terrainLayer.js',
                 image: HOST + 'cesiumExamples/layer/terrainLayer.jpg',
@@ -161,6 +173,7 @@ export default [
             {
                 id: 'offlineBlue',
                 name: '蓝色',
+                name_en: 'Blue Map',
                 author: 'giser2017',
                 codeUrl: HOST + 'cesiumExamples/offline/blue.js',
                 image: HOST + 'cesiumExamples/offline/blue.jpg',
@@ -172,6 +185,7 @@ export default [
             }, {
                 id: 'day',
                 name: '夜间',
+                name_en: 'Night Map',
                 author: 'giser2017',
                 codeUrl: HOST + 'cesiumExamples/offline/day.js',
                 image: HOST + 'cesiumExamples/offline/day.jpg',
@@ -184,6 +198,7 @@ export default [
             , {
                 id: 'img',
                 name: '影像',
+                name_en: 'Image Map',
                 author: 'giser2017',
                 codeUrl: HOST + 'cesiumExamples/offline/img.js',
                 image: HOST + 'cesiumExamples/offline/img.jpg',
@@ -196,6 +211,7 @@ export default [
             , {
                 id: 'night',
                 name: '夜间',
+                name_en: 'Night Map',
                 author: 'jiawanlong',
                 codeUrl: HOST + 'cesiumExamples/offline/night.js',
                 image: HOST + 'cesiumExamples/offline/night.jpg',
@@ -208,6 +224,7 @@ export default [
             {
                 id: 'gaode',
                 name: '内网高德',
+                name_en: 'Intranet Gaode',
                 author: 'z2586300277',
                 codeUrl: HOST + 'cesiumExamples/offline/gaode.js',
                 image: HOST + 'cesiumExamples/offline/gaode.jpg',
@@ -220,6 +237,7 @@ export default [
             {
                 id: 'baiDu',
                 name: '内网百度',
+                name_en: 'Intranet Baidu',
                 author: 'z2586300277',
                 codeUrl: HOST + 'cesiumExamples/offline/baidu.js',
                 image: HOST + 'cesiumExamples/offline/baidu.jpg',
@@ -239,6 +257,7 @@ export default [
             {
                 id: 'autoRotate',
                 name: '自动旋转',
+                name_en: 'Auto Rotate',
                 author: 'z2586300277',
                 codeUrl: HOST + 'cesiumExamples/basic/autoRotate.js',
                 image: HOST + 'cesiumExamples/layer/defaultLayer.jpg',
@@ -251,6 +270,7 @@ export default [
             {
                 id: 'cesiumText',
                 name: '绘制文字',
+                name_en: 'Draw Text',
                 author: 'g2657',
                 codeUrl: HOST + 'cesiumExamples/basic/cesiumText.js',
                 image: HOST + 'cesiumExamples/layer/defaultLayer.jpg',
@@ -263,6 +283,7 @@ export default [
             {
                 id: 'cssElement',
                 name: 'css2D元素',
+                name_en: 'CSS2D Element',
                 author: 'z2586300277',
                 codeUrl: HOST + 'cesiumExamples/basic/cssElement.js',
                 image: HOST + 'cesiumExamples/basic/cssElement.jpg',
@@ -275,6 +296,7 @@ export default [
             {
                 id: 'clickEvent',
                 name: '点击事件',
+                name_en: 'Click Event',
                 author: 'z2586300277',
                 codeUrl: HOST + 'cesiumExamples/basic/clickEvent.js',
                 image: HOST + 'cesiumExamples/basic/clickEvent.jpg',
@@ -287,6 +309,7 @@ export default [
             {
                 id: 'geojsonFace',
                 name: 'geojson面',
+                name_en: 'GeoJSON Face',
                 author: 'z2586300277',
                 codeUrl: HOST + 'cesiumExamples/basic/geojsonFace.js',
                 image: HOST + 'cesiumExamples/basic/geojsonFace.jpg',
@@ -299,6 +322,7 @@ export default [
             {
                 id: 'multPoint',
                 name: 'cesium大量点',
+                name_en: 'Multiple Points',
                 author: 'z2586300277',
                 codeUrl: HOST + 'cesiumExamples/basic/multPoint.js',
                 image: HOST + 'cesiumExamples/basic/multPoint.jpg',
@@ -311,6 +335,7 @@ export default [
             {
                 id: 'multPointCluster',
                 name: 'cesium大量点聚合',
+                name_en: 'Points Cluster',
                 tag: '聚合',
                 author: 'z2586300277',
                 codeUrl: HOST + 'cesiumExamples/basic/multPointCluster.js',
@@ -327,6 +352,7 @@ export default [
             {
                 id: 'multFaceLine',
                 name: 'cesium大量面线',
+                name_en: 'Face & Line',
                 author: 'z2586300277',
                 codeUrl: HOST + 'cesiumExamples/basic/multFaceLine.js',
                 image: HOST + 'cesiumExamples/basic/multFaceLine.jpg',
@@ -339,6 +365,7 @@ export default [
             {
                 id: 'multCurve',
                 name: 'cesium大量曲线',
+                name_en: 'Multiple Curves',
                 author: 'z2586300277',
                 codeUrl: HOST + 'cesiumExamples/basic/multCurve.js',
                 image: HOST + 'cesiumExamples/basic/multCurve.jpg',
@@ -351,6 +378,7 @@ export default [
             {
                 id: 'multText',
                 name: 'cesium大量文字',
+                name_en: 'Multiple Texts',
                 author: 'z2586300277',
                 codeUrl: HOST + 'cesiumExamples/basic/multText.js',
                 image: HOST + 'cesiumExamples/basic/multText.jpg',
@@ -363,6 +391,7 @@ export default [
             {
                 id: 'multBox',
                 name: 'cesium大量立方体',
+                name_en: 'Multiple Cubes',
                 author: 'z2586300277',
                 codeUrl: HOST + 'cesiumExamples/basic/multBox.js',
                 image: HOST + 'cesiumExamples/basic/multBox.jpg',
@@ -375,6 +404,7 @@ export default [
             {
                 id: 'loadModel',
                 name: '加载模型',
+                name_en: 'Load Model',
                 author: 'z2586300277',
                 codeUrl: HOST + 'cesiumExamples/basic/loadModel.js',
                 image: HOST + 'cesiumExamples/basic/loadModel.jpg',
@@ -387,6 +417,7 @@ export default [
             {
                 id: 'tilesShader',
                 name: '智慧城市着色器',
+                name_en: 'SmartCity Shader',
                 author: 'z2586300277',
                 referUrl: 'https://blog.csdn.net/weixin_45412353/article/details/130598349',
                 codeUrl: HOST + 'cesiumExamples/basic/tilesShader.js',
@@ -400,6 +431,7 @@ export default [
             {
                 id: 'flyLine',
                 name: '流动飞线运动',
+                name_en: 'Flowing Line',
                 author: 'z2586300277',
                 codeUrl: HOST + 'cesiumExamples/basic/flyLine.js',
                 image: HOST + 'cesiumExamples/basic/flyLine.jpg',
@@ -412,6 +444,7 @@ export default [
             {
                 id: 'curvePipe',
                 name: '曲线管道',
+                name_en: 'Curve Pipe',
                 author: 'z2586300277',
                 codeUrl: HOST + 'cesiumExamples/basic/curvePipe.js',
                 image: HOST + 'cesiumExamples/basic/curvePipe.jpg',
@@ -426,6 +459,7 @@ export default [
             {
                 id: 'cesiumAndThree',
                 name: 'cesium融合three',
+                name_en: 'Cesium+Three',
                 author: 'z2586300277',
                 codeUrl: HOST + 'cesiumExamples/expand/cesiumAndThree.js',
                 image: HOST + 'cesiumExamples/expand/cesiumAndThree.jpg',
@@ -441,6 +475,7 @@ export default [
             {
                 id: 'echartsFlyLine',
                 name: 'echarts飞线',
+                name_en: 'EchartsFlyLine',
                 author: 'z2586300277',
                 codeUrl: HOST + 'cesiumExamples/expand/echartsFlyLine.js',
                 image: 'https://z2586300277.github.io/three-editor/src/codes/cesiumjs/basic/flyCharts.jpg',
@@ -456,6 +491,7 @@ export default [
             {
                 id: 'heatMap',
                 name: '热力图',
+                name_en: 'Heat Map',
                 author: 'z2586300277',
                 codeUrl: HOST + 'cesiumExamples/expand/heatMap.js',
                 image: 'https://z2586300277.github.io/three-editor/src/codes/cesiumjs/basic/heatMap.jpg',
@@ -468,6 +504,7 @@ export default [
             {
                 id: 'fire',
                 name: '粒子（火焰）',
+                name_en: 'Particle(Fire)',
                 author: 'jiawanlong',
                 codeUrl: HOST + 'cesiumExamples/expand/fire.js',
                 image: HOST + 'cesiumExamples/expand/fire.jpg',
@@ -480,6 +517,7 @@ export default [
             {
                 id: 'ripple',
                 name: '水波纹',
+                name_en: 'Ripple',
                 author: 'jiawanlong',
                 codeUrl: HOST + 'cesiumExamples/expand/ripple.js',
                 image: HOST + 'cesiumExamples/expand/ripple.jpg',
@@ -492,6 +530,7 @@ export default [
             {
                 id: 'snow',
                 name: '雪景',
+                name_en: 'Snow Scene',
                 author: '20Savage',
                 codeUrl: HOST + 'cesiumExamples/expand/snow.js',
                 image: HOST + 'cesiumExamples/expand/snow.jpg',
@@ -504,6 +543,7 @@ export default [
             {
                 id: 'rain',
                 name: '下雨',
+                name_en: 'Rain',
                 author: '20Savage',
                 codeUrl: HOST + 'cesiumExamples/expand/rain.js',
                 image: HOST + 'cesiumExamples/expand/rain.jpg',
@@ -516,6 +556,7 @@ export default [
             {
                 id: 'lensFlare',
                 name: '镜头光晕',
+                name_en: 'Lens Flare',
                 author: '20Savage',
                 codeUrl: HOST + 'cesiumExamples/expand/lensFlare.js',
                 image: HOST + 'cesiumExamples/expand/lensFlare.jpg',
@@ -528,6 +569,7 @@ export default [
             {
                 id: '3DheatMap',
                 name: '3D热力图',
+                name_en: '3D Heat Map',
                 author: '20Savage',
                 codeUrl: HOST + 'cesiumExamples/expand/3DheatMap.js',
                 image: HOST + 'cesiumExamples/expand/3DheatMap.jpg',
@@ -540,6 +582,7 @@ export default [
             {
                 id: 'gradienGeojsonFace',
                 name: '渐变行政区',
+                name_en: 'Gradient Area',
                 author: '20Savage',
                 codeUrl: HOST + 'cesiumExamples/expand/gradienGeojsonFace.js',
                 image: HOST + 'cesiumExamples/expand/gradienGeojsonFace.jpg',
@@ -560,6 +603,7 @@ export default [
             {
                 id: 'mapDataConvert',
                 name: '地图转换工具',
+                name_en: 'Map Convert',
                 author: 'giser2017',
                 openUrl: 'https://z2586300277.github.io/show-site/dgis/',
                 image: HOST + 'cesiumExamples/tools/mapDataConvert.jpg',
@@ -567,6 +611,7 @@ export default [
             {
                 id: 'layerDownload',
                 name: '地图下载器',
+                name_en: 'Map Downloader',
                 author: 'CrimsonHu',
                 openUrl: 'https://gitee.com/CrimsonHu/java_map_download',
                 image: HOST + 'cesiumExamples/tools/layerDownload.jpg',
