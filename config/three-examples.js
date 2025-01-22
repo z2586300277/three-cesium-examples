@@ -100,6 +100,7 @@ export default [
             {
                 id: 'modelBlendShader',
                 name: '模型混合着色器',
+                name_en: 'Model Blend',
                 author: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/shader/modelBlendShader.js',
                 image: HOST + 'threeExamples/shader/modelBlendShader.jpg',
@@ -112,6 +113,7 @@ export default [
             {
                 id: 'grassShader',
                 name: '草地着色器',
+                name_en: 'Grass Shader',
                 author: 'Siricee',
                 codeUrl: HOST + 'threeExamples/shader/grassShader.js',
                 image: HOST + 'threeExamples/shader/grassShader.jpg',
@@ -124,6 +126,7 @@ export default [
             {
                 id: 'textStarShader',
                 name: '点星感谢',
+                name_en: 'Text Star',
                 tag: '致谢',
                 author: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/shader/textStarShader.js',
@@ -132,6 +135,7 @@ export default [
             {
                 id: '2025Year',
                 name: '2025',
+                name_en: '2025 Year',
                 author: 'Threejs',
                 referUrl: 'https://codepen.io/prisoner849/pen/gbYgjom',
                 codeUrl: HOST + 'threeExamples/application/2025Year.js',
@@ -142,6 +146,7 @@ export default [
                 tag: '音乐',
                 tip: '将音乐可视化为动态效果',
                 name: '音乐可视化',
+                name_en: 'Audio visual',
                 author: 'flowers-10',
                 codeUrl: HOST + 'threeExamples/shader/audioSolutions.js',
                 image: HOST + 'threeExamples/shader/audioSolutions.jpg',
@@ -154,6 +159,7 @@ export default [
             {
                 id: 'cityBlendLight',
                 name: '城市混合扫光',
+                name_en: 'City Blend',
                 tag: '常用扫光',
                 author: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/shader/cityBlendLight.js',
@@ -162,6 +168,7 @@ export default [
             {
                 id: 'cityEffect',
                 name: '城市光效',
+                name_en: 'City Effect',
                 referUrl: 'https://quyinggang.github.io/three3d',
                 author: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/shader/cityEffect.js',
@@ -170,6 +177,7 @@ export default [
             {
                 id: 'planeScan',
                 name: '平面扫描',
+                name_en: 'Plane Scan',
                 author: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/shader/planeScan.js',
                 image: HOST + 'threeExamples/shader/planeScan.jpg',
@@ -177,6 +185,7 @@ export default [
             {
                 id: 'transparentGradient',
                 name: '透明渐变',
+                name_en: 'Trans Grad',
                 author: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/shader/transparentGradient.js',
                 image: HOST + 'threeExamples/shader/transparentGradient.jpg',
@@ -184,6 +193,7 @@ export default [
             {
                 id: 'fenceShader',
                 name: '围栏着色器',
+                name_en: 'Fence Shader',
                 author: 'flowers-10',
                 codeUrl: HOST + 'threeExamples/shader/fenceShader.js',
                 image: HOST + 'threeExamples/shader/fenceShader.jpg',
@@ -196,6 +206,7 @@ export default [
             {
                 id: 'raningSea',
                 name: '波涛海浪',
+                name_en: 'move Sea',
                 author: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/shader/raningSea.js',
                 image: HOST + 'threeExamples/shader/raningSea.jpg',
@@ -203,6 +214,7 @@ export default [
             {
                 id: 'fenceWall',
                 name: '围墙着色器',
+                name_en: 'Fence Wall',
                 author: 'yjsdszz',
                 codeUrl: HOST + 'threeExamples/shader/fenceWall.js',
                 image: HOST + 'threeExamples/shader/fenceWall.jpg',
@@ -215,6 +227,7 @@ export default [
             {
                 id: 'cityMoveLight',
                 name: '智慧城市扫光',
+                name_en: 'City Move',
                 author: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/shader/cityMoveLight.js',
                 image: HOST + 'threeExamples/shader/cityMoveLight.jpg',
@@ -227,6 +240,7 @@ export default [
             {
                 id: 'cityLight',
                 name: '城市光影',
+                name_en: 'City Light',
                 author: 'z2586300277',
                 referUrl: 'https://github.com/Fate-ui/WebglStudy',
                 codeUrl: HOST + 'threeExamples/shader/cityLight.js',
@@ -235,6 +249,7 @@ export default [
             {
                 id: 'audioDance',
                 name: '音乐舞动',
+                name_en: 'Audio Dance',
                 author: 'wuyifan0203',
                 codeUrl: HOST + 'threeExamples/shader/audioDance.js',
                 image: HOST + 'threeExamples/shader/audioDance.jpg',
@@ -242,6 +257,7 @@ export default [
             {
                 id: 'shaderSky',
                 name: '着色器天空',
+                name_en: 'Shader Sky',
                 author: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/shader/shaderSky.js',
                 image: HOST + 'threeExamples/shader/shaderSky.jpg',
@@ -254,6 +270,7 @@ export default [
             {
                 id: 'cityLine',
                 name: '城市线条',
+                name_en: 'City Line',
                 author: 'superzay',
                 codeUrl: HOST + 'threeExamples/shader/cityLine.js',
                 image: HOST + 'threeExamples/shader/cityLine.jpg',
@@ -266,6 +283,7 @@ export default [
             {
                 id: 'wallShader',
                 name: '扩散圆墙',
+                name_en: 'Wall Shader',
                 author: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/shader/wallShader.js',
                 image: HOST + 'threeExamples/shader/wallShader.jpg',
@@ -278,6 +296,7 @@ export default [
             {
                 id: 'radarShader',
                 name: '雷达着色器',
+                name_en: 'Radar Shader',
                 author: 'stonerao',
                 codeUrl: HOST + 'threeExamples/shader/radarShader.js',
                 image: HOST + 'threeExamples/shader/radarShader.jpg',
@@ -290,6 +309,7 @@ export default [
             {
                 id: 'candleShader',
                 name: '蜡烛',
+                name_en: 'Candle Shader',
                 author: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/shader/candleShader.js',
                 image: HOST + 'threeExamples/shader/candleShader.jpg',
@@ -297,6 +317,7 @@ export default [
             {
                 id: 'ringShader',
                 name: '环形着色器',
+                name_en: 'Ring Shader',
                 author: 'stonerao',
                 codeUrl: HOST + 'threeExamples/shader/ringShader.js',
                 image: HOST + 'threeExamples/shader/ringShader.jpg',
@@ -309,6 +330,7 @@ export default [
             {
                 id: 'smokeCircle',
                 name: '圆泡吸附',
+                name_en: 'Smoke Circle',
                 author: 'z2586300277',
                 referUrl: 'https://codepen.io/vcomics/pen/KBMyjE',
                 codeUrl: HOST + 'threeExamples/shader/smokeCircle.js',
@@ -317,6 +339,7 @@ export default [
             {
                 id: 'radarScan',
                 name: '雷达扫描',
+                name_en: 'Radar Scan',
                 author: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/shader/radarScan.js',
                 image: HOST + 'threeExamples/shader/radarScan.jpg',
@@ -324,6 +347,7 @@ export default [
             {
                 id: 'imageParticle',
                 name: '颗粒图像',
+                name_en: 'Image Part',
                 author: 'superzay',
                 codeUrl: HOST + 'threeExamples/shader/imageParticle.js',
                 image: HOST + 'threeExamples/shader/imageParticle.jpg',
@@ -336,6 +360,7 @@ export default [
             {
                 id: 'gaussianBlur',
                 name: '高斯模糊',
+                name_en: 'Gaussian Blur',
                 author: 'hafly',
                 codeUrl: HOST + 'threeExamples/shader/gaussianBlur.js',
                 image: HOST + 'threeExamples/shader/gaussianBlur.jpg',
@@ -348,6 +373,7 @@ export default [
             {
                 id: 'compassShader',
                 name: '罗盘',
+                name_en: 'Compass Shader',
                 author: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/shader/compassShader.js',
                 image: HOST + 'threeExamples/shader/compassShader.jpg',
@@ -355,6 +381,7 @@ export default [
             {
                 id: 'halfCircle',
                 name: '半圆',
+                name_en: 'Half Circle',
                 author: 'yiiiiiiqianyao',
                 codeUrl: HOST + 'threeExamples/shader/halfCircle.js',
                 image: HOST + 'threeExamples/shader/halfCircle.jpg',
@@ -367,6 +394,7 @@ export default [
             {
                 id: 'vortexShader',
                 name: '扭曲',
+                name_en: 'Vortex Shader',
                 author: 'hafly',
                 codeUrl: HOST + 'threeExamples/shader/vortexShader.js',
                 image: HOST + 'threeExamples/shader/vortexShader.jpg'
@@ -374,6 +402,7 @@ export default [
             {
                 id: 'ringsShader',
                 name: '环彩虹着色器',
+                name_en: 'Rings Shader',
                 author: 'stonerao',
                 codeUrl: HOST + 'threeExamples/shader/ringsShader.js',
                 image: HOST + 'threeExamples/shader/ringsShader.jpg',
@@ -381,6 +410,7 @@ export default [
             {
                 id: 'heatmapShader',
                 name: '热力图',
+                name_en: 'Heatmap Shader',
                 author: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/shader/heatmapShader.js',
                 image: HOST + 'threeExamples/shader/heatmapShader.jpg',
@@ -388,6 +418,7 @@ export default [
             {
                 id: 'videoShader',
                 name: '视频着色器',
+                name_en: 'Video Shader',
                 author: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/shader/videoShader.js',
                 image: HOST + 'threeExamples/shader/videoShader.jpg',
@@ -400,6 +431,7 @@ export default [
             {
                 id: 'steamWaveSun',
                 name: '蒸汽波太阳',
+                name_en: 'Steam Sun',
                 author: 'xzw199509',
                 codeUrl: HOST + 'threeExamples/shader/steamWaveSun.js',
                 image: HOST + 'threeExamples/shader/steamWaveSun.jpg',
@@ -412,6 +444,7 @@ export default [
             {
                 id: 'groundglass',
                 name: '毛玻璃',
+                name_en: 'Groundglass',
                 author: 'z2586300277',
                 referUrl: 'https://github.com/hafly',
                 codeUrl: HOST + 'threeExamples/shader/groundglass.js',
@@ -420,6 +453,7 @@ export default [
             {
                 id: 'infiniteGrid',
                 name: '无限网格',
+                name_en: 'Infinite Grid',
                 author: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/shader/infiniteGrid.js',
                 image: HOST + 'threeExamples/shader/infiniteGrid.jpg',
@@ -428,6 +462,7 @@ export default [
             {
                 id: 'cobwebBox',
                 name: '蛛网箱子',
+                name_en: 'Cobweb Box',
                 author: 'xzw199509',
                 codeUrl: HOST + 'threeExamples/shader/cobwebBox.js',
                 image: HOST + 'threeExamples/shader/cobwebBox.jpg',
@@ -440,6 +475,7 @@ export default [
             {
                 id: 'chinaFlag',
                 name: '中国旗帜',
+                name_en: 'China Flag',
                 author: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/shader/chinaFlag.js',
                 image: HOST + 'threeExamples/shader/chinaFlag.jpg',
@@ -447,6 +483,7 @@ export default [
             {
                 id: 'jumpHeart',
                 name: '跳动的心',
+                name_en: 'Jump Heart',
                 author: 'stonerao',
                 codeUrl: HOST + 'threeExamples/shader/jumpHeart.js',
                 image: HOST + 'threeExamples/shader/jumpHeart.jpg',
@@ -454,6 +491,7 @@ export default [
             {
                 id: 'rasterGrid',
                 name: '栅格网格',
+                name_en: 'Raster Grid',
                 author: 'yjsdszz',
                 codeUrl: HOST + 'threeExamples/shader/rasterGrid.js',
                 image: HOST + 'threeExamples/shader/rasterGrid.jpg',
@@ -466,6 +504,7 @@ export default [
             {
                 id: 'flowLight',
                 name: '流光',
+                name_en: 'Flow Light',
                 author: 'Fate-ui',
                 improver: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/shader/flowLight.js',
@@ -479,6 +518,7 @@ export default [
             {
                 id: 'grayShader',
                 name: '灰度',
+                name_en: 'Gray Shader',
                 author: 'z2586300277',
                 referUrl: 'https://github.com/hafly',
                 codeUrl: HOST + 'threeExamples/shader/grayShader.js',
@@ -487,6 +527,7 @@ export default [
             {
                 id: 'waveShader',
                 name: '图像波动',
+                name_en: 'Wave Shader',
                 author: 'gitee18247670551',
                 codeUrl: HOST + 'threeExamples/shader/waveShader.js',
                 image: HOST + 'threeExamples/shader/waveShader.jpg',
@@ -499,6 +540,7 @@ export default [
             {
                 id: 'dissolve',
                 name: '溶解',
+                name_en: 'Dissolve',
                 author: 'KallkaGo',
                 codeUrl: HOST + 'threeExamples/shader/dissolve.js',
                 image: FILE_HOST + 'images/dissolve/dissolve.png',
@@ -511,6 +553,7 @@ export default [
             {
                 id: 'changeShaderToy',
                 name: '切换ShaderToy',
+                name_en: 'shaderToy',
                 author: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/shader/changeShaderToy.js',
                 image: HOST + 'threeExamples/shader/changeShaderToy.jpg',
@@ -523,6 +566,7 @@ export default [
             {
                 id: "waterA",
                 name: "波浪效果",
+                name_en: "Water Effect",
                 author: "giser2017",
                 codeUrl: HOST + "threeExamples/shader/waterA.js",
                 image: HOST + "threeExamples/shader/waterA.jpg",
@@ -535,6 +579,7 @@ export default [
             {
                 id: 'reliefImage',
                 name: '浮雕图像',
+                name_en: 'Relief Image',
                 author: 'hafly',
                 codeUrl: HOST + 'threeExamples/shader/reliefImage.js',
                 image: HOST + 'threeExamples/shader/reliefImage.jpg',
@@ -542,6 +587,7 @@ export default [
             {
                 id: 'flowerShader',
                 name: '花',
+                name_en: 'Flower Shader',
                 referUrl: 'https://codepen.io/vcomics/pen/jeWpgX',
                 author: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/shader/flowerShader.js',
@@ -550,6 +596,7 @@ export default [
             {
                 id: 'dissolveAnimate',
                 name: '溶解动画',
+                name_en: 'Dissolve',
                 author: 'yiiiiiiqianyao',
                 codeUrl: HOST + 'threeExamples/shader/dissolveAnimate.js',
                 image: HOST + 'threeExamples/shader/dissolveAnimate.jpg',
@@ -562,6 +609,7 @@ export default [
             {
                 id: "imageShake",
                 name: "图片抖动",
+                name_en: "Image Shake",
                 author: "z2586300277",
                 codeUrl: HOST + "threeExamples/shader/imageShake.js",
                 image: HOST + "threeExamples/shader/imageShake.jpg",
@@ -574,6 +622,7 @@ export default [
             {
                 id: 'heartShader',
                 name: '心',
+                name_en: 'Heart Shader',
                 author: 'z2586300277',
                 referUrl: 'https://github.com/xiaolidan00/my-earth?tab=readme-ov-file',
                 codeUrl: HOST + 'threeExamples/shader/heartShader.js',
@@ -582,6 +631,7 @@ export default [
             {
                 id: "shaderBlock",
                 name: "方块着色器",
+                name_en: "Shader Block",
                 author: "z2586300277",
                 codeUrl: HOST + "threeExamples/shader/shaderBlock.js",
                 image: HOST + "threeExamples/shader/shaderBlock.jpg",
@@ -594,6 +644,7 @@ export default [
             {
                 id: "fireball",
                 name: "火球效果",
+                name_en: "Fireball",
                 author: "giser2017",
                 htmlUrl: HOST + "threeExamples/shader/fireball.html",
                 image: FILE_HOST + "images/four/fireball.png",
@@ -606,6 +657,7 @@ export default [
             {
                 id: 'blobShader',
                 name: '一团揉动',
+                name_en: 'Blob Shader',
                 referUrl: 'https://codepen.io/vcomics/pen/ZwNgvX',
                 author: 'z2586300277',
                 codeUrl: HOST + "threeExamples/shader/blobShader.js",
@@ -614,6 +666,7 @@ export default [
             {
                 id: "warnInfo",
                 name: "警告信息",
+                name_en: "Warn Info",
                 author: "yjsdszz",
                 codeUrl: HOST + "threeExamples/shader/warnInfo.js",
                 image: HOST + "threeExamples/shader/warnInfo.jpg",
@@ -626,6 +679,7 @@ export default [
             {
                 id: 'circleRotate',
                 name: '旋转的圆',
+                name_en: 'Circle Rotate',
                 author: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/shader/circleRotate.js',
                 image: HOST + 'threeExamples/shader/circleRotate.jpg',
@@ -633,6 +687,7 @@ export default [
             {
                 id: 'whiteCloud',
                 name: '白云',
+                name_en: 'White Cloud',
                 author: 'yjsdszz',
                 codeUrl: HOST + 'threeExamples/shader/whiteCloud.js',
                 image: HOST + 'threeExamples/shader/whiteCloud.jpg',
@@ -645,6 +700,7 @@ export default [
             {
                 id: 'waterSky',
                 name: '水天一色',
+                name_en: 'Water Sky',
                 author: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/shader/waterSky.js',
                 image: HOST + 'threeExamples/shader/waterSky.jpg',
@@ -657,6 +713,7 @@ export default [
             {
                 id: 'cloudShader',
                 name: '天空云',
+                name_en: 'Cloud Shader',
                 author: 'wuyifan0203',
                 codeUrl: HOST + 'threeExamples/shader/cloudShader.js',
                 image: HOST + 'threeExamples/shader/cloudShader.jpg',
@@ -664,6 +721,7 @@ export default [
             {
                 id: 'darkClouds',
                 name: '乌云',
+                name_en: 'Dark Clouds',
                 author: 'stonerao',
                 codeUrl: HOST + 'threeExamples/shader/darkClouds.js',
                 image: HOST + 'threeExamples/shader/darkClouds.jpg',
@@ -676,6 +734,7 @@ export default [
             {
                 id: 'cellShader',
                 name: '细胞',
+                name_en: 'Cell Shader',
                 author: 'stonerao',
                 codeUrl: HOST + 'threeExamples/shader/cellShader.js',
                 image: HOST + 'threeExamples/shader/cellShader.jpg',
@@ -683,6 +742,7 @@ export default [
             {
                 id: 'mushroom',
                 name: '蘑菇',
+                name_en: 'Mushroom',
                 author: 'bubinyang',
                 codeUrl: HOST + 'threeExamples/shader/mushroom.js',
                 image: HOST + 'threeExamples/shader/mushroom.jpg',
@@ -690,6 +750,7 @@ export default [
             {
                 id: 'mosaicShader',
                 name: '马赛克',
+                name_en: 'Mosaic Shader',
                 author: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/shader/mosaicShader.js',
                 image: HOST + 'threeExamples/shader/mosaicShader.jpg',
@@ -697,6 +758,7 @@ export default [
             {
                 id: 'shader_planet',
                 name: '着色器行星',
+                name_en: 'Shader Planet',
                 author: 'nico',
                 codeUrl: HOST + 'threeExamples/shader/shader_planet.js',
                 image: HOST + 'threeExamples/shader/shader_planet.jpg',
@@ -709,6 +771,7 @@ export default [
             {
                 id: 'contour',
                 name: '魔幻山体',
+                name_en: 'Contour',
                 author: 'nico',
                 codeUrl: HOST + 'threeExamples/shader/contour.js',
                 image: HOST + 'threeExamples/shader/contour.jpg',
@@ -716,6 +779,7 @@ export default [
             {
                 id: 'softLight',
                 name: '柔光',
+                name_en: 'Soft Light',
                 author: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/shader/softLight.js',
                 image: HOST + 'threeExamples/shader/softLight.jpg',
@@ -723,6 +787,7 @@ export default [
             {
                 id: 'earthScan',
                 name: '地球扫描',
+                name_en: 'Earth Scan',
                 author: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/shader/earthScan.js',
                 image: HOST + 'threeExamples/shader/earthScan.jpg',
@@ -731,6 +796,7 @@ export default [
             {
                 id: 'waveScan',
                 name: '波扫描',
+                name_en: 'Wave Scan',
                 author: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/shader/waveScan.js',
                 image: HOST + 'threeExamples/shader/waveScan.jpg',
@@ -738,6 +804,7 @@ export default [
             {
                 id: 'innerGlow',
                 name: '内发光',
+                name_en: 'Inner Glow',
                 author: 'quyinggang',
                 codeUrl: HOST + 'threeExamples/shader/innerGlow.js',
                 image: HOST + 'threeExamples/shader/innerGlow.jpg',
@@ -745,6 +812,7 @@ export default [
             {
                 id: 'fireShader',
                 name: '火焰',
+                name_en: 'Fire Shader',
                 author: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/shader/fireShader.js',
                 image: HOST + 'threeExamples/shader/fireShader.jpg',
@@ -752,6 +820,7 @@ export default [
             {
                 id: 'oceanShader',
                 name: '海面',
+                name_en: 'Ocean Shader',
                 author: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/shader/oceanShader.js',
                 image: HOST + 'threeExamples/shader/oceanShader.jpg',
@@ -759,6 +828,7 @@ export default [
             {
                 id: 'emitShader',
                 name: '发散着色器',
+                name_en: 'Emit Shader',
                 author: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/shader/emitShader.js',
                 image: HOST + 'threeExamples/shader/emitShader.jpg',
@@ -766,6 +836,7 @@ export default [
             {
                 id: 'ephemeralFlower',
                 name: '幻影花烟',
+                name_en: 'Flower Smoke',
                 author: 'z2586300277',
                 referUrl: 'https://codepen.io/prisoner849/pen/LYmXKrr',
                 codeUrl: HOST + 'threeExamples/shader/ephemeralFlower.js',
@@ -774,6 +845,7 @@ export default [
             {
                 id: 'fishShader',
                 name: '鱼',
+                name_en: 'Fish',
                 author: 'Threejs',
                 improver: 'z2586300277',
                 referUrl: 'https://codepen.io/prisoner849/pen/bGgQmrX',
@@ -799,6 +871,7 @@ export default [
             {
                 id: 'z2586300277',
                 name: '优雅永不过时',
+                name_en: 'Elegant Always',
                 author: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/particle/z2586300277.js',
                 image: HOST + 'threeExamples/particle/z2586300277.jpg',
@@ -806,6 +879,7 @@ export default [
             {
                 id: "RandomParticle",
                 name: "随机粒子效果",
+                name_en: "Random",
                 author: "giser2017",
                 htmlUrl: HOST + "threeExamples/particle/RandomParticle.html",
                 image: HOST + "threeExamples/particle/RandomParticle.jpg",
@@ -818,6 +892,7 @@ export default [
             {
                 id: "PlanetParticle",
                 name: "粒子效果的行星",
+                name_en: "Planet",
                 author: "giser2017",
                 htmlUrl: HOST + "threeExamples/particle/PlanetParticle.html",
                 image: HOST + "threeExamples/particle/PlanetParticle.jpg",
@@ -831,6 +906,7 @@ export default [
             {
                 id: "bubble",
                 name: "粒子泡泡",
+                name_en: "Bubble",
                 author: "huan_meng_hai_yan",
                 codeUrl: HOST + "threeExamples/particle/bubble.js",
                 image: FILE_HOST + "images/four/bubble.png",
@@ -844,6 +920,7 @@ export default [
             {
                 id: 'particleBlendShader',
                 name: '粒子混合着色器',
+                name_en: 'BlendShader',
                 tag: '混合着色',
                 author: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/particle/particleBlendShader.js',
@@ -853,6 +930,7 @@ export default [
             {
                 id: 'particleScattered',
                 name: '粒子聚散',
+                name_en: 'Scattered',
                 author: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/particle/particleScattered.js',
                 image: HOST + 'threeExamples/particle/particleScattered.jpg',
@@ -865,6 +943,7 @@ export default [
             {
                 id: "downSnow",
                 name: "下雪",
+                name_en: "Snow",
                 author: "yjsdszz",
                 codeUrl: HOST + "threeExamples/particle/downSnow.js",
                 image: HOST + "threeExamples/particle/downSnow.jpg",
@@ -877,6 +956,7 @@ export default [
             {
                 id: 'galaxyStar',
                 name: '星系',
+                name_en: 'Galaxy Star',
                 author: 'kavalcio',
                 codeUrl: HOST + 'threeExamples/particle/galaxyStar.js',
                 image: HOST + 'threeExamples/particle/galaxyStar.jpg',
@@ -889,6 +969,7 @@ export default [
             {
                 id: 'pointsEarth',
                 name: '粒子地球',
+                name_en: 'Points Earth',
                 author: 'giser2017',
                 codeUrl: HOST + 'threeExamples/particle/pointsEarth.js',
                 image: HOST + 'threeExamples/particle/pointsEarth.jpg',
@@ -901,6 +982,7 @@ export default [
             {
                 id: 'waveParticleShader',
                 name: '波浪粒子',
+                name_en: 'Wave',
                 author: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/particle/waveParticleShader.js',
                 image: HOST + 'threeExamples/particle/waveParticleShader.jpg',
@@ -908,6 +990,7 @@ export default [
             {
                 id: 'particleLine',
                 name: '粒子线条',
+                name_en: 'Line',
                 author: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/particle/particleLine.js',
                 image: HOST + 'threeExamples/particle/particleLine.jpg',
@@ -915,6 +998,7 @@ export default [
             {
                 id: 'sphereLine',
                 name: '球体线条',
+                name_en: 'Sphere Line',
                 author: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/particle/sphereLine.js',
                 image: HOST + 'threeExamples/particle/sphereLine.jpg',
@@ -923,6 +1007,7 @@ export default [
                 id: 'particleWire',
                 referUrl: 'https://mp.weixin.qq.com/s/R-WEoTG30DlqXvFfDgXQdg',
                 name: '粒子线',
+                name_en: 'Wire',
                 author: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/particle/particleWire.js',
                 image: HOST + 'threeExamples/particle/particleWire.jpg',
@@ -930,6 +1015,7 @@ export default [
             {
                 id: 'particleFire',
                 name: '粒子烟花',
+                name_en: 'Fire',
                 author: 'FFMMCC',
                 codeUrl: HOST + 'threeExamples/particle/particleFire.js',
                 image: HOST + 'threeExamples/particle/particleFire.jpg',
@@ -937,6 +1023,7 @@ export default [
             {
                 id: 'starrySky',
                 name: '粒子星空',
+                name_en: 'Starry Sky',
                 author: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/particle/starrySky.js',
                 image: HOST + 'threeExamples/particle/starrySky.jpg',
@@ -944,6 +1031,7 @@ export default [
             {
                 id: 'technologyParticle',
                 name: '科技粒子',
+                name_en: 'Technology',
                 author: 'FFMMCC',
                 codeUrl: HOST + 'threeExamples/particle/technologyParticle.js',
                 image: HOST + 'threeExamples/particle/technologyParticle.jpg',
@@ -952,6 +1040,7 @@ export default [
             {
                 id: 'textParticle',
                 name: '文字采集成粒子',
+                name_en: 'Text Particle',
                 tag: '文字粒子',
                 author: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/particle/textParticle.js',
@@ -967,6 +1056,7 @@ export default [
             {
                 id: 'z2586300277',
                 name: '优雅永不过时',
+                name_en: 'Elegant Always',
                 author: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/application/z2586300277.js',
                 image: HOST + 'threeExamples/application/z2586300277.jpg',
@@ -975,6 +1065,7 @@ export default [
             {
                 id: 'magicCircle',
                 name: '魔法阵',
+                name_en: 'Magic Circle',
                 author: 'gitee18247670551',
                 codeUrl: HOST + 'threeExamples/application/magicCircle.js',
                 image: HOST + 'threeExamples/application/magicCircle.jpg',
@@ -988,6 +1079,7 @@ export default [
             {
                 id: 'codeCloud',
                 name: '代码云',
+                name_en: 'Code Cloud',
                 author: 'yiiiiiiqianyao',
                 codeUrl: HOST + 'threeExamples/application/codeCloud.js',
                 image: HOST + 'threeExamples/application/codeCloud.jpg',
@@ -1000,6 +1092,7 @@ export default [
             {
                 id: 'ghostHouse',
                 name: '鬼屋',
+                name_en: 'Ghost House',
                 author: 'FFMMCC',
                 codeUrl: HOST + 'threeExamples/application/ghostHouse.js',
                 image: HOST + 'threeExamples/application/ghostHouse.jpg',
@@ -1007,6 +1100,7 @@ export default [
             {
                 id: 'flowLine',
                 name: '贴图飞线',
+                name_en: 'Flow Line',
                 author: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/application/flowLine.js',
                 image: HOST + 'threeExamples/application/flowLine.jpg',
@@ -1015,6 +1109,7 @@ export default [
                 id: 'pointLockControls',
                 tag: '漫游',
                 name: '第一人称漫游控制',
+                name_en: 'Person Move',
                 author: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/application/pointLockControls.js',
                 image: HOST + 'threeExamples/application/pointLockControls.jpg',
@@ -1022,6 +1117,7 @@ export default [
             {
                 id: 'flyLine',
                 name: '飞线效果',
+                name_en: 'Fly Line',
                 author: 'ecojust',
                 codeUrl: HOST + 'threeExamples/application/flyLine.js',
                 image: FILE_HOST + 'threeExamples/application/flyLine/colorful.jpg',
@@ -1034,6 +1130,7 @@ export default [
             {
                 id: 'pipeFlow',
                 name: '管道流动',
+                name_en: 'Pipe Flow',
                 author: 'gitee18247670551',
                 codeUrl: HOST + 'threeExamples/application/pipeFlow.js',
                 image: HOST + 'threeExamples/application/pipeFlow.jpg',
@@ -1046,6 +1143,7 @@ export default [
             {
                 id: 'videoModel',
                 name: '模型视频材质',
+                name_en: 'Video Model',
                 author: 'z2586300277',
                 referUrl: 'https://github.com/YCYTeam/YCY-TrainingCamp-S2/blob/main/src/day02_%E7%9B%B4%E6%92%AD%E4%BB%A3%E7%A0%81.js',
                 codeUrl: HOST + 'threeExamples/application/videoModel.js',
@@ -1054,6 +1152,7 @@ export default [
             {
                 id: 'spriteText',
                 name: '精灵文字',
+                name_en: 'Sprite Text',
                 author: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/application/spriteText.js',
                 image: HOST + 'threeExamples/application/spriteText.jpg',
@@ -1066,6 +1165,7 @@ export default [
             {
                 id: 'simple_collision',
                 name: '简单碰撞检测',
+                name_en: 'Simple Coll',
                 author: 'nico',
                 codeUrl: HOST + 'threeExamples/application/simpleCollision.js',
                 image: HOST + 'threeExamples/application/simple_coll.jpg',
@@ -1078,6 +1178,7 @@ export default [
             {
                 id: 'diffuseLine',
                 name: '发散飞线',
+                name_en: 'Diffuse Line',
                 author: 'stonerao',
                 codeUrl: HOST + 'threeExamples/application/diffuseLine.js',
                 image: HOST + 'threeExamples/application/diffuseLine.jpg',
@@ -1090,6 +1191,7 @@ export default [
             {
                 id: 'lampshade',
                 name: '灯罩',
+                name_en: 'Lampshade',
                 author: 'Fate-ui',
                 codeUrl: HOST + 'threeExamples/application/lampshade.js',
                 image: HOST + 'threeExamples/application/lampshade.jpg',
@@ -1097,6 +1199,7 @@ export default [
             {
                 id: 'smokeAir',
                 name: '烟雾效果',
+                name_en: 'Smoke Air',
                 author: 'yjsdszz',
                 codeUrl: HOST + 'threeExamples/application/smokeAir.js',
                 image: FILE_HOST + 'threeExamples/application/smokeAir.jpg',
@@ -1109,6 +1212,7 @@ export default [
             {
                 id: 'lightIcon',
                 name: '亮光标记',
+                name_en: 'Light Icon',
                 author: 'Fate-ui',
                 codeUrl: HOST + 'threeExamples/application/lightIcon.js',
                 image: HOST + 'threeExamples/application/lightIcon.jpg',
@@ -1116,6 +1220,7 @@ export default [
             {
                 id: 'topology',
                 name: '简单3d拓扑图',
+                name_en: '3D Topology',
                 author: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/application/topology.js',
                 image: HOST + 'threeExamples/application/topology.jpg',
@@ -1128,6 +1233,7 @@ export default [
             {
                 id: 'pieCharts',
                 name: '3D饼图',
+                name_en: '3D Pie',
                 author: 'superzay',
                 codeUrl: HOST + 'threeExamples/application/pieCharts.js',
                 image: HOST + 'threeExamples/application/pieCharts.jpg',
@@ -1140,6 +1246,7 @@ export default [
             {
                 id: 'drawFace',
                 name: '绘制面',
+                name_en: 'Draw Face',
                 author: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/application/drawFace.js',
                 image: HOST + 'threeExamples/application/drawFace.jpg',
@@ -1147,6 +1254,7 @@ export default [
             {
                 id: 'drawFace_improve',
                 name: '绘制面_内置点',
+                name_en: 'Draw Face',
                 author: 'nico',
                 codeUrl: HOST + 'threeExamples/application/draw_face_improve.js',
                 image: HOST + 'threeExamples/application/draw_face_improve.jpg',
@@ -1154,6 +1262,7 @@ export default [
             {
                 id: 'roadShader',
                 name: '道路流光',
+                name_en: 'Road Shader',
                 author: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/application/roadShader.js',
                 image: HOST + 'threeExamples/application/roadShader.jpg',
@@ -1162,6 +1271,7 @@ export default [
             {
                 id: 'model_navigation',
                 name: '模型导航',
+                name_en: 'Model Nav',
                 author: 'nico',
                 codeUrl: HOST + 'threeExamples/application/nav.js',
                 image: HOST + 'threeExamples/application/nav.jpg',
@@ -1183,6 +1293,7 @@ export default [
             {
                 id: 'terrain',
                 name: '程序化地形生成',
+                name_en: 'Terrain',
                 author: 'nico',
                 codeUrl: HOST + 'threeExamples/application/generate_terrain.js',
                 image: HOST + 'threeExamples/application/generate_terrain.jpg',
@@ -1195,6 +1306,7 @@ export default [
             {
                 id: 'lineMeasure',
                 name: '测量',
+                name_en: 'Line Measure',
                 author: 'yjsdszz',
                 codeUrl: HOST + 'threeExamples/application/lineMeasure.js',
                 image: HOST + 'threeExamples/application/lineMeasure.jpg',
@@ -1202,6 +1314,7 @@ export default [
             {
                 id: 'textSphere',
                 name: '球体文字',
+                name_en: 'Text Sphere',
                 author: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/application/textSphere.js',
                 image: HOST + 'threeExamples/application/textSphere.jpg',
@@ -1214,6 +1327,7 @@ export default [
             {
                 id: 'matrixOperation',
                 name: '矩阵操作',
+                name_en: 'Matrix Oper',
                 author: 'alwxkxk',
                 htmlUrl: HOST + 'threeExamples/application/matrixOperation.html',
                 image: HOST + 'threeExamples/application/matrixOperation.jpg',
@@ -1226,6 +1340,7 @@ export default [
             {
                 id: 'coffeeMug',
                 name: '咖啡',
+                name_en: 'Coffee Mug',
                 author: 'kavalcio',
                 codeUrl: HOST + 'threeExamples/application/coffeeMug.js',
                 image: HOST + 'threeExamples/application/coffeeMug.jpg',
@@ -1238,6 +1353,7 @@ export default [
             {
                 id: 'lightBar',
                 name: '光柱',
+                name_en: 'Light Bar',
                 author: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/application/lightBar.js',
                 image: HOST + 'threeExamples/application/lightBar.jpg',
@@ -1245,6 +1361,7 @@ export default [
             {
                 id: 'flowerRain',
                 name: '花瓣雨',
+                name_en: 'Flower Rain',
                 author: 'QuarkGluonPlasma',
                 codeUrl: HOST + 'threeExamples/application/flowerRain.js',
                 image: HOST + 'threeExamples/application/flowerRain.jpg',
@@ -1257,6 +1374,7 @@ export default [
             {
                 id: 'houseScene',
                 name: '第一人称房屋',
+                name_en: 'House Scene',
                 author: 'QuarkGluonPlasma',
                 codeUrl: HOST + 'threeExamples/application/houseScene.js',
                 image: HOST + 'threeExamples/application/houseScene.jpg',
@@ -1269,6 +1387,7 @@ export default [
             {
                 id: "3DCircle",
                 name: "扩散半球",
+                name_en: "3D Circle",
                 author: "giser2017",
                 codeUrl: HOST + "threeExamples/application/3DCircle.js",
                 image: FILE_HOST + "images/four/3DCircle.png",
@@ -1281,6 +1400,7 @@ export default [
             {
                 id: 'happyNewYear',
                 name: '新年快乐',
+                name_en: 'Happy Year',
                 author: 'yjsdszz',
                 codeUrl: HOST + 'threeExamples/application/happyNewYear.js',
                 image: HOST + 'threeExamples/application/happyNewYear.jpg',
@@ -1293,6 +1413,7 @@ export default [
             {
                 id: 'windMove',
                 name: '风吹动画',
+                name_en: 'Wind Move',
                 author: 'yjsdszz',
                 codeUrl: HOST + 'threeExamples/application/windMove.js',
                 image: HOST + 'threeExamples/application/windMove.jpg',
@@ -1305,6 +1426,7 @@ export default [
             {
                 id: 'gsapCollection',
                 name: '动画合集',
+                name_en: 'GSAP',
                 tag: '动画',
                 author: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/application/gsapCollection.js',
@@ -1313,6 +1435,7 @@ export default [
             {
                 id: 'customGrid',
                 name: '自定义网格',
+                name_en: 'Custom Grid',
                 author: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/application/customGrid.js',
                 image: HOST + 'threeExamples/application/customGrid.jpg',
@@ -1320,6 +1443,7 @@ export default [
             {
                 id: 'faceMesh',
                 name: '表情',
+                name_en: 'Face Mesh',
                 author: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/application/faceMesh.js',
                 image: HOST + 'threeExamples/application/faceMesh.jpg',
@@ -1327,6 +1451,7 @@ export default [
             {
                 id: 'isoline',
                 name: '等值线',
+                name_en: 'Isoline',
                 author: 'nico',
                 codeUrl: HOST + 'threeExamples/application/isoline.js',
                 image: HOST + 'threeExamples/application/isoline.jpg',
@@ -1335,6 +1460,7 @@ export default [
             {
                 id: 'flowTube',
                 name: '管道表面运动',
+                name_en: 'Flow Tube',
                 author: 'nico',
                 codeUrl: HOST + 'threeExamples/application/flowTube.js',
                 image: HOST + 'threeExamples/application/flowTube.png',
@@ -1342,6 +1468,7 @@ export default [
             {
                 id: 'videoEffect',
                 name: '视频碎片',
+                name_en: 'Video Effect',
                 author: 'quyinggang',
                 codeUrl: HOST + 'threeExamples/application/videoEffect.js',
                 image: HOST + 'threeExamples/application/videoEffect.jpg',
@@ -1349,6 +1476,7 @@ export default [
             {
                 id: 'punk',
                 name: '朋克风',
+                name_en: 'Style Punk',
                 author: 'nico',
                 codeUrl: HOST + 'threeExamples/application/punk.js',
                 image: HOST + 'threeExamples/application/punk.jpg',
@@ -1356,6 +1484,7 @@ export default [
             {
                 id: 'white model',
                 name: '随机城市白膜',
+                name_en: 'White Model',
                 author: 'nico',
                 codeUrl: HOST + 'threeExamples/application/white_model.js',
                 image: HOST + 'threeExamples/application/white_model.jpg',
@@ -1363,6 +1492,7 @@ export default [
             {
                 id: 'model_base',
                 name: '生成模型底座',
+                name_en: 'Model Base',
                 author: 'nico',
                 codeUrl: HOST + 'threeExamples/application/model_base.js',
                 image: HOST + 'threeExamples/application/model_base.jpg',
@@ -1370,6 +1500,7 @@ export default [
             {
                 id: 'rainRoof',
                 name: '下雨效果',
+                name_en: 'Rain Roof',
                 author: 'AUTO',
                 referUrl: 'https://codepen.io/prisoner849/pen/yLWMLjK',
                 codeUrl: HOST + 'threeExamples/application/rainRoof.js',
@@ -1378,6 +1509,7 @@ export default [
             {
                 id: 'phy,ocean',
                 name: '具有物理效果的卡通海面',
+                name_en: 'Cartoon Ocean',
                 author: 'nico',
                 codeUrl: HOST + 'threeExamples/application/cartoon_ocean.js',
                 image: HOST + 'threeExamples/application/cartoon_ocean.jpg',
@@ -1392,6 +1524,7 @@ export default [
             {
                 id: 'clipAnimation',
                 name: '裁剪动画',
+                name_en: 'Clip Animation',
                 author: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/animation/clipAnimation.js',
                 image: HOST + 'threeExamples/animation/clipAnimation.jpg',
@@ -1399,6 +1532,7 @@ export default [
             {
                 id: 'personAnimation',
                 name: '点击第三人称移动',
+                name_en: 'Person Move',
                 tag: '人物行走',
                 tip: '点击地面，人物会自动走到目标位置',
                 author: 'z2586300277',
@@ -1415,6 +1549,7 @@ export default [
             {
                 id: 'physicsMesh',
                 name: '物理cannon使用',
+                name_en: 'Physics Mesh',
                 author: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/physics/physicsMesh.js',
                 image: HOST + 'threeExamples/physics/physicsMesh.jpg',
@@ -1427,6 +1562,7 @@ export default [
             {
                 id: 'ammoPhysics',
                 name: '物理ammo使用',
+                name_en: 'Ammo Physics',
                 author: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/physics/ammoPhysics.js',
                 image: HOST + 'threeExamples/physics/ammoPhysics.jpg',
@@ -1444,6 +1580,7 @@ export default [
             {
                 id: 'loadTiles',
                 name: '加载3dtiles',
+                name_en: 'Load Tiles',
                 author: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/expand/loadTiles.js',
                 image: HOST + 'threeExamples/expand/loadTiles.jpg',
@@ -1457,6 +1594,7 @@ export default [
             {
                 id: 'map3d',
                 name: '3D地图',
+                name_en: 'Map 3D',
                 author: 'z2586300277',
                 codeUrl: 'https://g2657.github.io/examples-server/three/test/map3d.js',
                 image: 'https://g2657.github.io/examples-server/three/test/map3d.jpg',
@@ -1469,6 +1607,7 @@ export default [
             {
                 id: 'geoBorder',
                 name: '地理边界',
+                name_en: 'Geo Border',
                 author: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/expand/geoBorder.js',
                 image: HOST + 'threeExamples/expand/geoBorder.jpg',
@@ -1476,6 +1615,7 @@ export default [
             {
                 id: 'heatmap3D',
                 name: '3D热力图',
+                name_en: 'Heatmap 3D',
                 tag: '常用-#e1d100',
                 author: 'z2586300277',
                 referUrl: 'https://github.com/treasureMoment/heatmap-three.js',
@@ -1494,6 +1634,7 @@ export default [
             {
                 id: 'heatmapModel',
                 name: '模型热力图',
+                name_en: 'Heatmap Model',
                 author: 'z2586300277',
                 referUrl: 'https://github.com/CHENJIAMIAN/InterpolatedGradientMaterial',
                 codeUrl: HOST + 'threeExamples/expand/heatmapModel.js',
@@ -1502,6 +1643,7 @@ export default [
             {
                 id: 'modelBlendReflector',
                 name: '模型反射效果',
+                name_en: 'Model Blend',
                 tag: '模型反射--14',
                 author: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/expand/modelBlendReflector.js',
@@ -1510,6 +1652,7 @@ export default [
             {
                 id: 'blurReflect',
                 name: '模糊反射(drei转原生)',
+                name_en: 'Blur Reflect',
                 tag: '磨砂反射-#d265bb',
                 author: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/expand/blurReflect.js',
@@ -1519,6 +1662,7 @@ export default [
             {
                 id: 'multWindowScene',
                 name: '多浏览器窗口连接',
+                name_en: 'Mult Window',
                 author: 'z2586300277',
                 referUrl: 'https://github.com/bgstaal/multipleWindow3dScene',
                 codeUrl: HOST + 'threeExamples/expand/multWindowScene.js',
@@ -1534,6 +1678,7 @@ export default [
             {
                 id: 'selectBloomPass',
                 name: '辉光-postprocessing',
+                name_en: 'Select Bloom',
                 author: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/effectComposer/selectBloomPass.js',
                 image: HOST + 'threeExamples/effectComposer/selectBloomPass.jpg',
@@ -1546,6 +1691,7 @@ export default [
             {
                 id: 'customMaskPass',
                 name: '自定义遮罩通道',
+                name_en: 'Custom Mask',
                 author: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/effectComposer/customMaskPass.js',
                 image: HOST + 'threeExamples/effectComposer/customMaskPass.jpg',
@@ -1558,6 +1704,7 @@ export default [
             {
                 id: "uvTransformation",
                 name: "UV图像变换",
+                name_en: "UV Transform",
                 author: "giser2017",
                 codeUrl: HOST + 'threeExamples/effectComposer/uvTransformation.js',
                 image: FILE_HOST + "images/four/uvTransformation.png",
@@ -1570,6 +1717,7 @@ export default [
             {
                 id: 'afterimagePass',
                 name: '残影效果',
+                name_en: 'Afterimage',
                 author: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/effectComposer/afterimagePass.js',
                 image: HOST + 'threeExamples/effectComposer/afterimagePass.jpg',
@@ -1577,6 +1725,7 @@ export default [
             {
                 id: 'saturationPass',
                 name: '饱和度(自定义Pass)',
+                name_en: 'Saturation',
                 author: 'huan_meng_hai_yan',
                 codeUrl: HOST + 'threeExamples/effectComposer/saturationPass.js',
                 image: HOST + 'threeExamples/effectComposer/saturationPass.jpg',
@@ -1584,6 +1733,7 @@ export default [
             {
                 id: "EdgeBlurringEffect",
                 name: "边缘模糊效果",
+                name_en: "Edge Blur",
                 author: "giser2017",
                 codeUrl: HOST + 'threeExamples/effectComposer/EdgeBlurringEffect.js',
                 image: FILE_HOST + "images/four/EdgeBlurringEffect.png",
@@ -1596,6 +1746,7 @@ export default [
             {
                 id: 'threeSelectBloom',
                 name: '官方选择辉光简化版',
+                name_en: 'Three Bloom',
                 author: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/effectComposer/threeSelectBloom.js',
                 image: HOST + 'threeExamples/effectComposer/threeSelectBloom.jpg',
@@ -1618,6 +1769,7 @@ export default [
             {
                 id: 'modelAnimation',
                 name: '人物模型动画案例',
+                name_en: 'Model Animate',
                 author: 'abining',
                 codeUrl: HOST + 'threeExamples/basic/modelAnimation.js',
                 image: HOST + 'threeExamples/basic/modelAnimation.jpg',
@@ -1630,6 +1782,7 @@ export default [
             {
                 id: 'modelLoad',
                 name: 'gltf/fbx/obj模型加载',
+                name_en: 'Model Load',
                 author: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/basic/modelLoad.js',
                 image: HOST + 'threeExamples/basic/modelLoad.jpg',
@@ -1642,6 +1795,7 @@ export default [
             {
                 id: 'modelShadow',
                 name: '模型阴影',
+                name_en: 'Model Shadow',
                 author: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/basic/modelShadow.js',
                 image: HOST + 'threeExamples/basic/modelShadow.jpg',
@@ -1649,6 +1803,7 @@ export default [
             {
                 id: 'cameraAttribute',
                 name: '相机属性',
+                name_en: 'Camera',
                 author: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/basic/cameraAttribute.js',
                 image: HOST + 'threeExamples/basic/cameraAttribute.jpg',
@@ -1656,6 +1811,7 @@ export default [
             {
                 id: 'orbControls',
                 name: '轨道控制器',
+                name_en: 'Orbit Controls',
                 author: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/basic/orbControls.js',
                 image: HOST + 'threeExamples/basic/orbControls.jpg',
@@ -1663,6 +1819,7 @@ export default [
             {
                 id: 'createScene',
                 name: '创建场景',
+                name_en: 'Create Scene',
                 tag: '分布库-#f00',
                 tip: '使用分布式仓库, 开发案例, 可互相引用运行',
                 author: 'z2586300277',
@@ -1674,6 +1831,7 @@ export default [
             {
                 id: 'modelSky',
                 name: '模型天空',
+                name_en: 'Model Sky',
                 author: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/basic/modelSky.js',
                 image: HOST + 'threeExamples/basic/modelSky.jpg',
@@ -1681,6 +1839,7 @@ export default [
             {
                 id: 'sceneFog',
                 name: '场景雾化',
+                name_en: 'Scene Fog',
                 author: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/basic/sceneFog.js',
                 image: HOST + 'threeExamples/basic/sceneFog.jpg'
@@ -1688,6 +1847,7 @@ export default [
             {
                 id: 'gltfOptLoader',
                 name: 'Opt解压(su7 模型)',
+                name_en: 'GLTF Opt',
                 author: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/basic/gltfOptLoader.js',
                 image: HOST + 'threeExamples/basic/gltfOptLoader.jpg'
@@ -1695,6 +1855,7 @@ export default [
             {
                 id: 'loadingAnimate',
                 name: '加载动画',
+                name_en: 'Load Animate',
                 author: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/basic/loadingAnimate.js',
                 image: HOST + 'threeExamples/basic/loadingAnimate.jpg',
@@ -1702,6 +1863,7 @@ export default [
             {
                 id: 'outlinePass',
                 name: '轮廓光',
+                name_en: 'Outline Pass',
                 author: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/basic/outlinePass.js',
                 image: HOST + 'threeExamples/basic/outlinePass.jpg',
@@ -1714,6 +1876,7 @@ export default [
             {
                 id: 'screenCoord',
                 name: '三维转屏幕坐标',
+                name_en: 'Screen Coord',
                 author: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/basic/screenCoord.js',
                 image: HOST + 'threeExamples/basic/screenCoord.jpg'
@@ -1721,6 +1884,7 @@ export default [
             {
                 id: 'gradientTriangle',
                 name: '渐变三角形',
+                name_en: 'Triangle',
                 author: 'giser2017',
                 codeUrl: HOST + 'threeExamples/basic/gradientTriangle.js',
                 image: HOST + 'threeExamples/basic/gradientTriangle.jpg',
@@ -1733,6 +1897,7 @@ export default [
             {
                 id: 'modelUnpack',
                 name: '模型拆解动画',
+                name_en: 'Model Unpack',
                 tag: '拆解',
                 author: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/basic/modelUnpack.js',
@@ -1741,6 +1906,7 @@ export default [
             {
                 id: 'changeMaterial',
                 name: '材质修改动画',
+                name_en: 'ChangeMaterial',
                 author: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/basic/changeMaterial.js',
                 image: HOST + 'threeExamples/basic/changeMaterial.jpg',
@@ -1748,6 +1914,7 @@ export default [
             {
                 id: 'transformObject',
                 name: '拖拽控制',
+                name_en: 'Transform Obj',
                 author: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/basic/transformObject.js',
                 image: HOST + 'threeExamples/basic/transformObject.jpg',
@@ -1755,6 +1922,7 @@ export default [
             {
                 id: 'transformBox3',
                 name: '变换Box3',
+                name_en: 'Transform Box3',
                 author: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/basic/transformBox3.js',
                 image: HOST + 'threeExamples/basic/transformBox3.jpg',
@@ -1762,6 +1930,7 @@ export default [
             {
                 id: 'skyAndEnv',
                 name: '天空盒',
+                name_en: 'Sky And Env',
                 author: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/basic/skyAndEnv.js',
                 image: HOST + 'threeExamples/basic/skyAndEnv.jpg',
@@ -1774,6 +1943,7 @@ export default [
             {
                 id: 'modelAnimates',
                 name: '单/多模型动画',
+                name_en: 'Model Animates',
                 author: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/basic/modelAnimates.js',
                 image: HOST + 'threeExamples/basic/modelAnimates.jpg',
@@ -1786,6 +1956,7 @@ export default [
             {
                 id: 'gsapAnimate',
                 name: 'GSAP动画',
+                name_en: 'GSAP Animate',
                 author: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/basic/gsapAnimate.js',
                 image: HOST + 'threeExamples/basic/gsapAnimate.jpg',
@@ -1798,6 +1969,7 @@ export default [
             {
                 id: 'spriteTexture',
                 name: '精灵标签',
+                name_en: 'Sprite Text',
                 author: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/basic/spriteTexture.js',
                 image: HOST + 'threeExamples/basic/spriteTexture.jpg',
@@ -1805,6 +1977,7 @@ export default [
             {
                 id: 'modelView',
                 name: '模型视图',
+                name_en: 'Model View',
                 author: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/basic/modelView.js',
                 image: HOST + 'threeExamples/basic/modelView.jpg',
@@ -1812,6 +1985,7 @@ export default [
             {
                 id: 'cssElement',
                 name: 'CSS元素',
+                name_en: 'CSS Element',
                 tag: 'DOM',
                 author: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/basic/cssElement.js',
@@ -1825,6 +1999,7 @@ export default [
             {
                 id: 'domDisplay',
                 name: 'DOM遮挡',
+                name_en: 'DOM Display',
                 author: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/basic/domDisplay.js',
                 image: HOST + 'threeExamples/basic/domDisplay.jpg',
@@ -1833,6 +2008,7 @@ export default [
 
                 id: 'curveAnimate',
                 name: '曲线动画',
+                name_en: 'Curve Animate',
                 author: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/basic/curveAnimate.js',
                 image: HOST + 'threeExamples/basic/curveAnimate.jpg',
@@ -1845,6 +2021,7 @@ export default [
             {
                 id: 'transformAnimate',
                 name: 'Mesh变换动画',
+                name_en: 'Transform Gsap',
                 author: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/basic/transformAnimate.js',
                 image: HOST + 'threeExamples/basic/transformAnimate.jpg',
@@ -1857,6 +2034,7 @@ export default [
             {
                 id: 'screenShot',
                 name: '截图',
+                name_en: 'Screen Shot',
                 author: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/basic/screenShot.js',
                 image: HOST + 'threeExamples/basic/screenShot.jpg',
@@ -1869,6 +2047,7 @@ export default [
             {
                 id: 'skeletonBone',
                 name: '骨骼动画',
+                name_en: 'Skeleton Bone',
                 author: 'yjsdszz',
                 codeUrl: HOST + 'threeExamples/basic/skeletonBone.js',
                 image: FILE_HOST + 'threeExamples/basic/skeletonBone.jpg',
@@ -1881,6 +2060,7 @@ export default [
             {
                 id: 'viewHelper',
                 name: '视图辅助',
+                name_en: 'View Helper',
                 author: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/basic/viewHelper.js',
                 image: HOST + 'threeExamples/basic/viewHelper.jpg',
@@ -1888,6 +2068,7 @@ export default [
             {
                 id: 'renderTarget',
                 name: '渲染贴图物体',
+                name_en: 'Render Target',
                 author: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/basic/renderTarget.js',
                 image: HOST + 'threeExamples/basic/renderTarget.jpg',
@@ -1905,6 +2086,7 @@ export default [
             {
                 id: "入门",
                 name: "入门",
+                name_en: "Introduction",
                 author: "jiawanlong",
                 codeUrl: HOST + "threeExamples/basic/入门.js",
                 image: HOST + "threeExamples/basic/入门.png",
@@ -1917,6 +2099,7 @@ export default [
             {
                 id: "辅助线",
                 name: "辅助线",
+                name_en: "Helper Line",
                 author: "jiawanlong",
                 codeUrl: HOST + "threeExamples/basic/辅助线.js",
                 image: HOST + "threeExamples/basic/辅助线.png",
@@ -1929,6 +2112,7 @@ export default [
             {
                 id: "光线",
                 name: "光线",
+                name_en: "Light",
                 author: "jiawanlong",
                 codeUrl: HOST + "threeExamples/basic/光线.js",
                 image: HOST + "threeExamples/basic/光线.png",
@@ -1941,6 +2125,7 @@ export default [
             {
                 id: "相机控件",
                 name: "相机控件",
+                name_en: "Camera",
                 author: "jiawanlong",
                 codeUrl: HOST + "threeExamples/basic/相机控件.js",
                 image: HOST + "threeExamples/basic/相机控件.png",
@@ -1953,6 +2138,7 @@ export default [
             {
                 id: "动画",
                 name: "动画",
+                name_en: "Animation",
                 author: "jiawanlong",
                 codeUrl: HOST + "threeExamples/basic/动画.js",
                 image: HOST + "threeExamples/basic/动画.png",
@@ -1965,6 +2151,7 @@ export default [
             {
                 id: "全屏",
                 name: "全屏",
+                name_en: "Fullscreen",
                 author: "jiawanlong",
                 codeUrl: HOST + "threeExamples/basic/全屏.js",
                 image: HOST + "threeExamples/basic/全屏.png",
@@ -1977,6 +2164,7 @@ export default [
             {
                 id: "帧率",
                 name: "帧率",
+                name_en: "Frame Rate",
                 author: "jiawanlong",
                 codeUrl: HOST + "threeExamples/basic/帧率.js",
                 image: HOST + "threeExamples/basic/帧率.jpg",
@@ -1989,6 +2177,7 @@ export default [
             {
                 id: "阵列模型",
                 name: "阵列模型",
+                name_en: "Array Model",
                 author: "jiawanlong",
                 codeUrl: HOST + "threeExamples/basic/阵列模型.js",
                 image: HOST + "threeExamples/basic/阵列模型.jpg",
@@ -2001,6 +2190,7 @@ export default [
             {
                 id: "几何体",
                 name: "几何体",
+                name_en: "Geometry",
                 author: "jiawanlong",
                 codeUrl: HOST + "threeExamples/basic/几何体.js",
                 image: HOST + "threeExamples/basic/几何体.jpg",
@@ -2013,7 +2203,7 @@ export default [
             {
                 id: "点线",
                 name: "点、线",
-                name_en: "点、线",
+                name_en: "Points Lines",
                 author: "jiawanlong",
                 codeUrl: HOST + "threeExamples/basic/点线.js",
                 image: HOST + "threeExamples/basic/点、线.png",
@@ -2026,7 +2216,7 @@ export default [
             {
                 id: "网格",
                 name: "网格",
-                name_en: "网格",
+                name_en: "Grid",
                 author: "jiawanlong",
                 codeUrl: HOST + "threeExamples/basic/网格.js",
                 image: HOST + "threeExamples/basic/网格.png",
@@ -2039,7 +2229,7 @@ export default [
             {
                 id: "索引",
                 name: "索引",
-                name_en: "索引",
+                name_en: "Index",
                 author: "jiawanlong",
                 codeUrl: HOST + "threeExamples/basic/索引.js",
                 image: HOST + "threeExamples/basic/索引.png",
@@ -2052,7 +2242,7 @@ export default [
             {
                 id: "旋转缩放平移几何体",
                 name: "旋转、缩放、平移几何体",
-                name_en: "旋转、缩放、平移几何体",
+                name_en: "Transform",
                 author: "jiawanlong",
                 codeUrl: HOST + "threeExamples/basic/旋转、缩放、平移几何体.js",
                 image: HOST + "threeExamples/basic/旋转、缩放、平移几何体.jpg",
@@ -2065,7 +2255,7 @@ export default [
             {
                 id: "自带几何体顶点",
                 name: "自带几何体顶点",
-                name_en: "自带几何体顶点",
+                name_en: "Vertices",
                 author: "jiawanlong",
                 codeUrl: HOST + "threeExamples/basic/自带几何体顶点.js",
                 image: HOST + "threeExamples/basic/自带几何体顶点.png",
@@ -2078,7 +2268,7 @@ export default [
             {
                 id: "顶点颜色",
                 name: "顶点颜色",
-                name_en: "顶点颜色",
+                name_en: "Vertex Color",
                 author: "jiawanlong",
                 codeUrl: HOST + "threeExamples/basic/顶点颜色.js",
                 image: HOST + "threeExamples/basic/顶点颜色.jpg",
@@ -2098,6 +2288,7 @@ export default [
             {
                 id: 'sketchfab_model',
                 name: 'sketchfab免费模型',
+                name_en: 'Sketchfab',
                 author: 'z2586300277',
                 openUrl: 'https://sketchfab.com/',
                 image: HOST + 'threeExamples/tools/sketchfab.jpg'
@@ -2105,6 +2296,7 @@ export default [
             {
                 id: 'shaderToy',
                 name: '开源shader社区',
+                name_en: 'ShaderToy',
                 author: 'z2586300277',
                 openUrl: 'https://www.shadertoy.com/',
                 image: FILE_HOST + 'images/shaderToy.jpg'
@@ -2112,6 +2304,7 @@ export default [
             {
                 id: 'skyBox_image',
                 name: '免费hdr全景图资源',
+                name_en: 'Free HDR',
                 author: 'z2586300277',
                 openUrl: 'https://polyhaven.com/hdris/skies',
                 image: HOST + 'threeExamples/tools/skyBox_image.jpg'
@@ -2119,6 +2312,7 @@ export default [
             {
                 id: 'gltf_report',
                 name: 'gltf在线draco压缩工具',
+                name_en: 'GLTF Draco',
                 author: 'donmccurdy',
                 openUrl: 'https://gltf.report/',
                 image: HOST + 'threeExamples/tools/gltf_report.jpg'
@@ -2126,6 +2320,7 @@ export default [
             {
                 id: 'skyBox_Make',
                 name: 'hdr制作天空盒',
+                name_en: 'HDR Skybox',
                 author: 'matheowis',
                 openUrl: 'https://matheowis.github.io/HDRI-to-CubeMap/',
                 githubUrl: 'https://github.com/matheowis/HDRI-to-CubeMap',
@@ -2134,6 +2329,7 @@ export default [
             {
                 id: 'make_json_font',
                 name: '字体转Three使用json字体',
+                name_en: 'Font to JSON',
                 author: 'gero3',
                 openUrl: 'https://gero3.github.io/facetype.js/',
                 githubUrl: 'https://github.com/gero3/facetype.js',
@@ -2142,6 +2338,7 @@ export default [
             {
                 id: 'shaderWebgl',
                 name: 'Webgl直接可用Shader',
+                name_en: 'WebGL Shader',
                 author: 'mrdoob',
                 openUrl: 'https://glslsandbox.com/',
                 githubUrl: 'https://github.com/mrdoob/glsl-sandbox',
@@ -2150,6 +2347,7 @@ export default [
             {
                 id: 'shaderEditor',
                 name: 'Shader编辑器',
+                name_en: 'Shader Editor',
                 author: 'patriciogonzalezvivo',
                 openUrl: 'https://editor.thebookofshaders.com/',
                 githubUrl: 'https://github.com/patriciogonzalezvivo/glslEditor',
@@ -2158,6 +2356,7 @@ export default [
             {
                 id: 'geojsonTool',
                 name: 'geojson获取工具',
+                name_en: 'GeoJSON Tool',
                 author: 'z2586300277',
                 openUrl: 'https://datav.aliyun.com/portal/school/atlas/area_selector',
                 image: HOST + 'threeExamples/tools/geojsonTool.jpg'
@@ -2165,6 +2364,7 @@ export default [
             {
                 id: 'TRELLIS',
                 name: '图片生成3D模型',
+                name_en: 'Image to 3D',
                 author: 'AUTO',
                 githubUrl: 'https://github.com/microsoft/TRELLIS',
                 openUrl: 'https://huggingface.co/spaces/JeffreyXiang/TRELLIS',
@@ -2173,6 +2373,7 @@ export default [
             {
                 id: 'mixamo',
                 name: '制作人物动画',
+                name_en: 'Mixamo',
                 author: 'z2586300277',
                 openUrl: 'https://www.mixamo.com/',
                 image: HOST + 'threeExamples/tools/mixamo.jpg'

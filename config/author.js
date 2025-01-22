@@ -4,7 +4,7 @@ export default [
 
     {
         id: 'z2586300277',
-        name: '优雅永不过时',
+        name: localStorage.getItem('langEn') === 'true' ? 'Elegant' : '优雅永不过时',
         describe: '专注于三维可视化领域的前端工程师',
         github: 'https://github.com/z2586300277',
         icon: HOST + 'files/author/z2586300277.png',
@@ -24,10 +24,10 @@ export default [
         ]
     },
 
-    {   
-        id:'OpenThree',
-        name:'OpenThree',
-        describe:'一个专注于前端可视化的开源组织，三维可视化开发者抱团取暖，开源分享知识，接活盈利，让自己更有底气，加入请联系',
+    {
+        id: 'OpenThree',
+        name: 'OpenThree',
+        describe: '一个专注于前端可视化的开源组织，三维可视化开发者抱团取暖，开源分享知识，接活盈利，让自己更有底气，加入请联系',
         github: 'https://github.com/OpenThree',
         icon: HOST + 'files/site/logo.svg'
     },
@@ -146,7 +146,7 @@ export default [
 
     {
         id: 'huan_meng_hai_yan',
-        name: '幻梦丶海炎',
+        name: 'HuanMengHaiYan',
         describe: '一位热爱webgl的大佬，在各个webgl QQ群活跃，经常帮助人解决问题',
         github: 'https://github.com/HuanMengHaiYan',
         icon: HOST + 'files/author/huan_meng_hai_yan.jpg',
@@ -180,7 +180,7 @@ export default [
 
     {
         id: 'yjsdszz',
-        name: '听闻远方有你',
+        name: 'yjsdszz',
         github: 'https://gitee.com/yjsdszz',
         icon: HOST + 'files/site/logo.svg'
     },
@@ -205,7 +205,7 @@ export default [
 
     {
         id: 'ecojust',
-        name: '桔子桑',
+        name: 'ecojust',
         github: 'https://github.com/ecojust',
         icon: 'https://avatars.githubusercontent.com/u/30574854?v=4'
     },
@@ -224,14 +224,14 @@ export default [
 
     {
         id: 'alwxkxk',
-        name: '生子当如哈士奇',
+        name: 'alwxkxk',
         github: 'https://github.com/alwxkxk',
         icon: 'https://avatars.githubusercontent.com/u/16029024?v=4'
     },
 
     {
         id: 'bosombaby',
-        name: '知心宝贝',
+        name: 'bosombaby',
         github: 'https://github.com/bosombaby',
         icon: 'https://avatars.githubusercontent.com/u/80099933?v=4'
     },
@@ -252,7 +252,7 @@ export default [
 
     {
         id: 'sxguojf',
-        name: '老郭',
+        name: 'sxguojf',
         github: 'https://github.com/sxguojf',
         icon: 'https://avatars.githubusercontent.com/u/67039275?v=4'
 
@@ -281,14 +281,14 @@ export default [
 
     {
         id: 'superzay',
-        name: '赵艾阳',
+        name: 'superzay',
         github: 'https://gitee.com/superzay',
         icon: HOST + 'files/site/logo.svg'
     },
 
     {
         id: 'lpya',
-        name: '糊涂',
+        name: 'lpya',
         github: 'https://github.com/lpya',
         icon: 'https://avatars.githubusercontent.com/u/65885528?v=4'
     },
@@ -371,8 +371,8 @@ export default [
     },
 
     {
-        id:'simondevyoutube',
-        name:'simondevyoutube',
+        id: 'simondevyoutube',
+        name: 'simondevyoutube',
         github: 'https://github.com/simondevyoutube',
         icon: 'https://avatars.githubusercontent.com/u/57015305?v=4'
     },
@@ -392,8 +392,8 @@ export default [
     },
 
     {
-        id:'Pong-lei',
-        name:'Pong-lei',
+        id: 'Pong-lei',
+        name: 'Pong-lei',
         github: 'https://github.com/Pong-lei',
         icon: 'https://avatars.githubusercontent.com/u/57822607?v=4'
     },
@@ -421,10 +421,10 @@ export default [
     },
 
     {
-      id: '20Savage',
-      name: '20Savage',
-      github: 'https://github.com/zhengsixsix',
-      icon: 'https://avatars.githubusercontent.com/u/86777555?v=4',
+        id: '20Savage',
+        name: '20Savage',
+        github: 'https://github.com/zhengsixsix',
+        icon: 'https://avatars.githubusercontent.com/u/86777555?v=4',
     },
 
     {
@@ -449,22 +449,22 @@ export default [
                 url: 'https://space.bilibili.com/277443412'
             }
         ],
-        github:'https://gitee.com/fu-meichuan',
+        github: 'https://gitee.com/fu-meichuan',
         icon: HOST + 'files/author/FFMMCC.jpg'
     },
 
-    {   
-        id:'quyinggang',
-        name:'quyinggang',
-        github:'https://github.com/quyinggang',
-        icon:'https://avatars.githubusercontent.com/u/20634057?v=4'
+    {
+        id: 'quyinggang',
+        name: 'quyinggang',
+        github: 'https://github.com/quyinggang',
+        icon: 'https://avatars.githubusercontent.com/u/20634057?v=4'
     }
     ,
 
-    {   
-        id:'onekit-boss',
-        name:'Edison',
-        github:'https://gitee.com/onekit-boss',
-        icon:'https://foruda.gitee.com/avatar/1677828979213943210/121886_onekit_boss_1677828979.png!avatar200'
+    {
+        id: 'onekit-boss',
+        name: 'Edison',
+        github: 'https://gitee.com/onekit-boss',
+        icon: 'https://foruda.gitee.com/avatar/1677828979213943210/121886_onekit_boss_1677828979.png!avatar200'
     }
 ]
