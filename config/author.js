@@ -4,14 +4,14 @@ export default [
 
     {
         id: 'z2586300277',
-        name: localStorage.getItem('langEn') === 'true' ? 'Elegant' : '优雅永不过时',
+        name: TEXTS['elegant'],
         describe: '专注于三维可视化领域的前端工程师',
         github: 'https://github.com/z2586300277',
         icon: HOST + 'files/author/z2586300277.png',
         links: [
             {
                 name: '🏠主页',
-                url: 'https://z2586300277.github.io/'   
+                url: 'https://z2586300277.github.io/'
             },
             {
                 name: '📺BiBi',
