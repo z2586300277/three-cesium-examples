@@ -94,6 +94,16 @@ export default [
             },
 
             {
+                id: 'bulang_cesium',
+                author: 'AUTO',
+                name: 'Cesium案例',
+                name_en: 'Cesium Example',
+                openUrl: 'https://tingyuxuan2302.github.io/cesium-vue3-vite/',
+                githubUrl: 'https://github.com/tingyuxuan2302/cesium-vue3-vite',
+                image: HOST + 'threeExamples/openSource/bulang_cesium.jpg'
+            },
+
+            {
                 id: 'zhengjie9510',
                 author: 'zhengjie9510',
                 name: 'Cesium案例',
@@ -178,7 +188,7 @@ export default [
                 id: 'customEffect',
                 name: '自定义后期处理(r3f)',
                 name_en: 'Custom Effect',
-                tag: '后期处理',
+                tag: TEXTS.effect,
                 tip: '基于react-three-fiber 制作的自定义后期处理效果',
                 author: 'KallkaGo',
                 openUrl: 'https://z2586300277.github.io/show-site/customEffect/',
@@ -187,7 +197,7 @@ export default [
             },
             {
                 id: 'kallkago_su7',
-                tag: '热门-#5f9be3',
+                tag: TEXTS.hot + '-#5f9be3',
                 tip: 'SU7车展示案例，使用React+Three.js开发',
                 name: 'su7-R3f',
                 name_en: 'SU7-R3f',
@@ -198,7 +208,7 @@ export default [
             },
             {
                 id: 'z2586300277_3d_editor',
-                tag: '编辑器-#795cddba',
+                tag: TEXTS['编辑器'] + '-#795cddba',
                 tip: '使用three.js开发的低代码组态易用的编辑器',
                 name: '低代码组态编辑器',
                 name_en: 'LowCode Editor',
@@ -557,7 +567,7 @@ export default [
                 id: 'threejsExamples',
                 name: 'alien.js',
                 name_en: 'Alien.js',
-                tag: '众多效果',
+                tag: TEXTS['众多效果'],
                 author: 'AUTO',
                 tip: '基于three.js封装了大量的特效和组件',
                 openUrl: 'https://alien.js.org/examples/three/shader_fluid_distortion.html',

@@ -336,7 +336,7 @@ export default [
                 id: 'multPointCluster',
                 name: 'cesium大量点聚合',
                 name_en: 'Points Cluster',
-                tag: '聚合',
+                tag: TEXTS['聚合'],
                 author: 'z2586300277',
                 codeUrl: HOST + 'cesiumExamples/basic/multPointCluster.js',
                 image: 'https://z2586300277.github.io/three-editor/src/codes/cesiumjs/basic/multPointCluster.jpg',

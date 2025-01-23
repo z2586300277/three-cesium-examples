@@ -1,3 +1,4 @@
+import './lang.js'
 import cesiumExamples from "./cesium-examples.js";
 import threeExamples from "./three-examples.js";
 import githubExamples from "./github-examples.js";
@@ -69,30 +70,6 @@ window.THREE_CESIUM_NAVIGATION = [
 
 window.THREE_CESIUM_AUTHORS = threeCesiumAuthors; // 作者
 
-if (localStorage.getItem('langEn')==='true') {
-
-    window.THREE_CESIUM_NAVIGATION.forEach(item => {
-
-        if (item.label_en) item.label = item.label_en
-
-        item.examples.forEach(item => {
-
-            if(item.name_en) item.name = item.name_en
-
-            if(item.group_en) item.group = item.group_en
-
-            item.children?.forEach(item => {
-
-                if(item.name_en) item.name = item.name_en
-
-            })
-
-        })
-
-    })
-
-}
-
 /** 
  * inject 附加依赖注入方式 
  * 上述 为公共依赖注入
@@ -111,6 +88,28 @@ if (localStorage.getItem('langEn')==='true') {
     }
 */
 
+// 语言切换
+if (localStorage.getItem('langEn')==='true') {
+
+    window.THREE_CESIUM_NAVIGATION.forEach(item => {
+
+        item.label = item.label_en || item.label
+
+        item.examples.forEach(example => {
+
+            example.name = example.name_en || example.name
+
+            example.group = example.group_en || example.group
+
+            example.children?.forEach(child => (child.name = child.name_en || child.name))
+
+        })
+
+    })
+
+}
+
+// 设置 meta 信息
 function setMeta(query) {
 
     const navigation = window.THREE_CESIUM_NAVIGATION.find(item => item.name === query.navigation)
