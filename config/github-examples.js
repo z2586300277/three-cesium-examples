@@ -93,6 +93,16 @@ export default [
                 image: FILE_HOST + 'images/wangpengfei.jpg'
             },
 
+            {   
+                id: 'bulang_cesium',
+                author: 'AUTO',
+                name: 'Cesium案例',
+                name_en: 'Cesium Example',
+                openUrl: 'https://tingyuxuan2302.github.io/cesium-vue3-vite/',
+                githubUrl: 'https://github.com/tingyuxuan2302/cesium-vue3-vite',
+                image: HOST + 'threeExamples/openSource/bulang_cesium.jpg'
+            },
+
             {
                 id: 'zhengjie9510',
                 author: 'zhengjie9510',
