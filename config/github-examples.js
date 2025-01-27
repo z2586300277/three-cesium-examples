@@ -554,6 +554,15 @@ export default [
                 githubUrl: 'https://github.com/lo-th/3d.city',
                 openUrl: 'https://lo-th.github.io/3d.city/index.html',
                 image: HOST + 'threeExamples/openSource/3dcity.jpg'
+            },
+            {
+                id: 'driverCar',
+                name: '驾驶模拟',
+                name_en: 'Driver Car',
+                author: 'AUTO',
+                openUrl: 'https://mattbradley.github.io/dash/',
+                githubUrl: 'https://github.com/mattbradley/dash',
+                image: HOST + 'threeExamples/openSource/driverCar.jpg'
             }
         ]
 
