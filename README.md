@@ -86,6 +86,7 @@
 {
     id: '父级对应列表唯一id',
     name: '名称',
+    name_en: '英文名',
     tag: '标签名字-背景颜色-字体大小',
     tip: '提示信息',
     author: '作者id',
@@ -154,6 +155,7 @@
 {
 id: ' The unique id 'in the parent corresponding list,
 name: ' Name ',
+name_en: 'language English Name',
 tag: ' Tag Name - Background Color - Font Size ',
 tip: ' Prompt message ',
 author: ' Author ID ',
