@@ -2019,6 +2019,14 @@ export default [
                 }
             },
             {
+                id: 'cameraAnimate',
+                name: '相机动画',
+                name_en: 'Camera Animate',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/basic/cameraAnimate.js',
+                image: HOST + 'threeExamples/basic/cameraAnimate.jpg',
+            },
+            {
                 id: 'transformAnimate',
                 name: 'Mesh变换动画',
                 name_en: 'Transform Gsap',
