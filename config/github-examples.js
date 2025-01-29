@@ -339,6 +339,15 @@ export default [
                 image: FILE_HOST + 'images/fengji.jpg'
             },
             {
+                id: 'su7_replica',
+                name: 'SU7-Replica',
+                name_en: 'SU7 Replica',
+                author: 'AUTO',
+                openUrl:'https://su7-replica.netlify.app/',
+                githubUrl: 'https://github.com/alphardex/su7-replica',
+                image: HOST + 'threeExamples/openSource/su7_replica.jpg'
+            },
+            {
                 id: 'roaming',
                 author: 'AUTO',
                 name: '漫游模拟器',

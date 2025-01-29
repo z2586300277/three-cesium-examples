@@ -6,7 +6,7 @@ export default [
         id: 'z2586300277',
         name: TEXTS['elegant'],
         describe: '专注于三维可视化领域的前端工程师',
-        github: 'https://github.com/z2586300277',
+        github: 'https://z2586300277.github.io/',
         icon: HOST + 'files/author/z2586300277.png',
         links: [
             {
