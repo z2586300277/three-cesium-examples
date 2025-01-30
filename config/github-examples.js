@@ -511,6 +511,31 @@ export default [
                 githubUrl: 'https://github.com/najafmohammed/muon-music-visualizer',
                 openUrl: 'https://muon-vis.netlify.app/',
                 image: HOST + 'threeExamples/openSource/musicParticle.jpg'
+            },
+            {
+                id: 'driverCar',
+                name: '驾驶模拟',
+                name_en: 'Driver Car',
+                author: 'AUTO',
+                openUrl: 'https://mattbradley.github.io/dash/',
+                githubUrl: 'https://github.com/mattbradley/dash',
+                image: HOST + 'threeExamples/openSource/driverCar.jpg'
+            }
+        ]
+    },
+    {
+        pid: 'digitalTwin',
+        name: '数字孪生',
+        name_en: 'digitalTwin',
+        children: [
+            {
+                id: 'digitalFarm',
+                name: '智慧农场',
+                name_en: 'digitalFarm',
+                author: 'AUTO',
+                githubUrl: 'https://github.com/gyrate/digitalFarm',
+                openUrl: 'https://gyrate.github.io/digitalFarm/dist/index.html',
+                image: HOST + 'threeExamples/openSource/digitalFarm.jpg'
             }
         ]
     },
@@ -564,15 +589,6 @@ export default [
                 openUrl: 'https://lo-th.github.io/3d.city/index.html',
                 image: HOST + 'threeExamples/openSource/3dcity.jpg'
             },
-            {
-                id: 'driverCar',
-                name: '驾驶模拟',
-                name_en: 'Driver Car',
-                author: 'AUTO',
-                openUrl: 'https://mattbradley.github.io/dash/',
-                githubUrl: 'https://github.com/mattbradley/dash',
-                image: HOST + 'threeExamples/openSource/driverCar.jpg'
-            }
         ]
 
     },
@@ -688,3 +704,5 @@ export default [
 
     }
 ]
+
+// https://github.com/iTowns/itowns
