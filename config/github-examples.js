@@ -520,6 +520,16 @@ export default [
                 openUrl: 'https://mattbradley.github.io/dash/',
                 githubUrl: 'https://github.com/mattbradley/dash',
                 image: HOST + 'threeExamples/openSource/driverCar.jpg'
+            },
+            {
+                id: 'fire',
+                name: '烟花',
+                name_en: 'fire',
+                author: 'AUTO',
+                openUrl: 'https://z2586300277.github.io/show-site/fire/',
+                githubUrl: 'https://github.com/manthrax/atos',
+                downloadUrl: 'https://z2586300277.github.io/show-site/fire/fire.zip',
+                image: HOST + 'threeExamples/openSource/fire.jpg'
             }
         ]
     },
