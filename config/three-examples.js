@@ -1501,7 +1501,7 @@ export default [
                 id: 'rainRoof',
                 name: '下雨效果',
                 name_en: 'Rain Roof',
-                author: 'AUTO',
+                author: 'Threejs',
                 referUrl: 'https://codepen.io/prisoner849/pen/yLWMLjK',
                 codeUrl: HOST + 'threeExamples/application/rainRoof.js',
                 image: HOST + 'threeExamples/application/rainRoof.jpg',

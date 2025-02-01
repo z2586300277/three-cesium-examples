@@ -511,6 +511,41 @@ export default [
                 githubUrl: 'https://github.com/najafmohammed/muon-music-visualizer',
                 openUrl: 'https://muon-vis.netlify.app/',
                 image: HOST + 'threeExamples/openSource/musicParticle.jpg'
+            },
+            {
+                id: 'driverCar',
+                name: '驾驶模拟',
+                name_en: 'Driver Car',
+                author: 'AUTO',
+                openUrl: 'https://mattbradley.github.io/dash/',
+                githubUrl: 'https://github.com/mattbradley/dash',
+                image: HOST + 'threeExamples/openSource/driverCar.jpg'
+            },
+            {
+                id: 'fire',
+                name: '烟花',
+                name_en: 'fire',
+                author: 'AUTO',
+                openUrl: 'https://z2586300277.github.io/show-site/fire/',
+                githubUrl: 'https://github.com/manthrax/atos',
+                downloadUrl: 'https://z2586300277.github.io/show-site/fire/fire.zip',
+                image: HOST + 'threeExamples/openSource/fire.jpg'
+            }
+        ]
+    },
+    {
+        pid: 'digitalTwin',
+        name: '数字孪生',
+        name_en: 'digitalTwin',
+        children: [
+            {
+                id: 'digitalFarm',
+                name: '智慧农场',
+                name_en: 'digitalFarm',
+                author: 'AUTO',
+                githubUrl: 'https://github.com/gyrate/digitalFarm',
+                openUrl: 'https://gyrate.github.io/digitalFarm/dist/index.html',
+                image: HOST + 'threeExamples/openSource/digitalFarm.jpg'
             }
         ]
     },
@@ -564,15 +599,6 @@ export default [
                 openUrl: 'https://lo-th.github.io/3d.city/index.html',
                 image: HOST + 'threeExamples/openSource/3dcity.jpg'
             },
-            {
-                id: 'driverCar',
-                name: '驾驶模拟',
-                name_en: 'Driver Car',
-                author: 'AUTO',
-                openUrl: 'https://mattbradley.github.io/dash/',
-                githubUrl: 'https://github.com/mattbradley/dash',
-                image: HOST + 'threeExamples/openSource/driverCar.jpg'
-            }
         ]
 
     },
@@ -649,6 +675,22 @@ export default [
                 githubUrl: 'https://github.com/Fennec-hub/three-viewport-gizmo',
                 openUrl: 'https://fennec-hub.github.io/three-viewport-gizmo/examples/orbit-controls',
                 image: HOST + 'threeExamples/openSource/three-viewport-gizmo.jpg'
+            }
+        ]
+    },
+    {
+        pid: 'framework',
+        name: '相关框架',
+        name_en: 'Frame Work',
+        children: [
+            {
+                id: 'iTowns',
+                name: 'iTowns',
+                tag: 'Tiles',
+                author: 'AUTO',
+                githubUrl: 'https://github.com/iTowns/itowns',
+                openUrl: 'https://www.itowns-project.org/',
+                image: HOST + 'threeExamples/openSource/iTowns.jpg'
             }
         ]
     },
