@@ -400,7 +400,7 @@ export default [
                 name_en: 'VR Hall',
                 githubUrl: 'https://github.com/mtsee/vr-hall',
                 openUrl: 'http://test4.h5ds.com/',
-                image: HOST + 'files/site/logo.svg',
+                image: HOST + 'threeExamples/openSource/vr.jpg',
             },
             {
                 id: 'music_wobble',
