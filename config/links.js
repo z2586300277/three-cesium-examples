@@ -62,7 +62,7 @@ export default {
                 },
                 {
                     name: '⭐Join us',
-                    url: 'https://github.com/z2586300277/three-cesium-examples'
+                    url: 'https://github.com/OpenThree'
                 }
             ]
         },

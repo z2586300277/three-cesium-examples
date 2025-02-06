@@ -1045,6 +1045,15 @@ export default [
                 author: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/particle/textParticle.js',
                 image: HOST + 'threeExamples/particle/textParticle.jpg',
+            },
+            {
+                id: 'snowParticle',
+                name: '雪花',
+                name_en: 'Snow',
+                author: 'Threejs',
+                referUrl: 'https://codepen.io/prisoner849/pen/JjvQOXx',
+                codeUrl: HOST + 'threeExamples/particle/snowParticle.js',
+                image: HOST + 'threeExamples/particle/snowParticle.jpg',
             }
         ]
     },

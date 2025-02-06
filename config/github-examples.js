@@ -400,7 +400,7 @@ export default [
                 name_en: 'VR Hall',
                 githubUrl: 'https://github.com/mtsee/vr-hall',
                 openUrl: 'http://test4.h5ds.com/',
-                image: HOST + 'files/site/logo.svg',
+                image: HOST + 'threeExamples/openSource/vr.jpg',
             },
             {
                 id: 'music_wobble',
@@ -530,6 +530,15 @@ export default [
                 githubUrl: 'https://github.com/manthrax/atos',
                 downloadUrl: 'https://z2586300277.github.io/show-site/fire/fire.zip',
                 image: HOST + 'threeExamples/openSource/fire.jpg'
+            },
+            {
+                id: 'waterBall',
+                name: '水球',
+                name_en: 'Water Ball',
+                author: 'AUTO',
+                openUrl: 'https://waterball.netlify.app/',
+                githubUrl: 'https://github.com/matsuoka-601/waterball',
+                image: HOST + 'threeExamples/openSource/waterBall.jpg'
             }
         ]
     },
@@ -675,7 +684,7 @@ export default [
                 githubUrl: 'https://github.com/Fennec-hub/three-viewport-gizmo',
                 openUrl: 'https://fennec-hub.github.io/three-viewport-gizmo/examples/orbit-controls',
                 image: HOST + 'threeExamples/openSource/three-viewport-gizmo.jpg'
-            }
+            },
         ]
     },
     {
