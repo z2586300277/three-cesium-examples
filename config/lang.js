@@ -1,5 +1,14 @@
+let LANG_EN, local_langEn = localStorage.getItem('langEn')
 
-const LANG_EN = localStorage.getItem('langEn') === 'true'
+if (local_langEn === null) {
+
+    LANG_EN = !(navigator.language || navigator.userLanguage).startsWith("zh")
+
+    localStorage.setItem('langEn', LANG_EN)
+
+}
+
+else LANG_EN = local_langEn === 'true'
 
 window.TEXTS = Object.fromEntries(Object.entries({
 

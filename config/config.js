@@ -6,25 +6,24 @@ import threeCesiumAuthors from "./author.js";
 import threeCesiumLinks from "./links.js";
 import { HOST, FILE_HOST } from "./host.js";
 
-window.THREE_CESIUM_LINKS = threeCesiumLinks; // 链接
+window.THREE_CESIUM_LINKS = threeCesiumLinks // 链接
 
 window.HOST = HOST // 当前项目服务 host 地址, 注入到全局变量
 
 window.FILE_HOST = FILE_HOST // 文件资源服务器地址, 注入到全局变量
 
+/* 全局注入iframe 中可使用 GLOBAL_CONFIG.ElMessage 消息提示 可在内部使用 不影响代码逻辑 */
 window.GLOBAL_CONFIG = {
 
-    getLayerUrl: () => "https://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer", // cesium 图层配置
+    getLayerUrl: () => "https://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer", // cesium 图层源
 
     getFileUrl: (url) => FILE_HOST + url, // 例 threeExamples/shader/chinaFlag.js 文件中的图片资源引用
 
-    // ... 可任意增添方法 返回 boolean number string 的值
+    /*  ... 可任意增添方法 返回 boolean number string 的值 */
 
-} // 全局配置 此变量可以在 iframe 内嵌的 案例 js 页面代码中使用 
+}
 
-// GLOBAL_CONFIG.ElMessage 消息提示 可在内部使用 不影响代码逻辑
-
-// 依赖注入可使用 如 线上官网 或 cdn 或者本地路径
+/* 依赖注入可使用 如 线上官网 或 cdn 或者本地路径 */
 window.THREE_CESIUM_NAVIGATION = [
     {
         name: "ThreeJS",
@@ -66,9 +65,9 @@ window.THREE_CESIUM_NAVIGATION = [
         label_en: "Github",
         examples: githubExamples,
     }
-];
+]
 
-window.THREE_CESIUM_AUTHORS = threeCesiumAuthors; // 作者
+window.THREE_CESIUM_AUTHORS = threeCesiumAuthors // 作者
 
 /** 
  * inject 附加依赖注入方式 
@@ -88,14 +87,14 @@ window.THREE_CESIUM_AUTHORS = threeCesiumAuthors; // 作者
     }
 */
 
-// 语言切换
+/* 语言切换 */
 if (localStorage.getItem('langEn')==='true') {
 
     window.THREE_CESIUM_NAVIGATION.forEach(item => {
 
         item.label = item.label_en || item.label
 
-        item.examples.forEach(example => {
+        item.examples?.forEach(example => {
 
             example.name = example.name_en || example.name
 
@@ -109,7 +108,7 @@ if (localStorage.getItem('langEn')==='true') {
 
 }
 
-// 设置 meta 信息
+/* 设置 meta 信息 */
 function setMeta(query) {
 
     const navigation = window.THREE_CESIUM_NAVIGATION.find(item => item.name === query.navigation)
@@ -134,11 +133,9 @@ function setMeta(query) {
 
     if (meta.description) document.querySelector('meta[name="description"]').setAttribute('content', meta.description)
 
-    return example
-
 }
 
-// 提取hash url 传参
+/* 提取hash url 传参 */
 const href = window.location.href
 
 const params = href.split('?')[1]
