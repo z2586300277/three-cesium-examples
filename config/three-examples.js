@@ -859,6 +859,15 @@ export default [
                 author: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/shader/energyBallShader.js',
                 image: HOST + 'threeExamples/shader/energyBallShader.jpg',
+            },
+            {
+                id: 'girdFloor',
+                name: '网格地板',
+                name_en: 'Gird Floor',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/shader/girdFloor.js',
+                image: HOST + 'threeExamples/shader/girdFloor.jpg',
+                referUrl: 'https://github.com/amiradeu/shaders-jikken'
             }
         ]
     },

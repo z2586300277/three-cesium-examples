@@ -162,6 +162,57 @@ export default [
         ]
     },
     {
+        pid: 'editor',
+        name: '编辑器',
+        name_en: 'Editor',
+        children: [
+            {
+                id: 'shadowEditor',
+                name: 'Three编辑器',
+                name_en: 'ShadowEditor',
+                author: 'AUTO',
+                openUrl: 'https://tengge1.github.io/ShadowEditor-examples/',
+                githubUrl: 'https://github.com/tengge1/ShadowEditor',
+                image: HOST + 'threeExamples/openSource/shadowEditor.jpg'
+            },
+            {
+                id: 'visEditor',
+                name: 'vis-three编辑器',
+                name_en: 'Vis Editor',
+                author: 'AUTO',
+                githubUrl: 'https://github.com/vis-three/scene-editor',
+                openUrl: 'https://vis-three.github.io/scene-editor/',
+                image: HOST + 'threeExamples/openSource/visThree.jpg'
+            },
+            {
+                id: 'Astral3DEditor',
+                name: 'Astral3D编辑器',
+                name_en: 'Astral3D Editor',
+                author: 'AUTO',
+                githubUrl: 'https://github.com/mlt131220/Astral3DEditor',
+                openUrl: 'https://editor.astraljs.com/#/',
+                image: HOST + 'threeExamples/openSource/Astral3DEditor.jpg'
+            },
+            {
+                id: 'z2586300277_3d_editor',
+                tag: TEXTS['编辑器'] + '-#795cddba',
+                tip: '使用three.js开发的低代码组态易用的编辑器',
+                name: '低代码组态编辑器',
+                name_en: 'LowCode Editor',
+                author: 'z2586300277',
+                openUrl: 'https://z2586300277.github.io/three-editor/dist/#/editor',
+                githubUrl: 'https://github.com/z2586300277/three-editor',
+                image: FILE_HOST + 'images/editor.jpg',
+                links: [
+                    {
+                        name: '📖CSDN',
+                        url: 'https://blog.csdn.net/guang2586/article/details/142910241'
+                    }
+                ]
+            },
+        ]
+    },
+    {
         pid: 'advancedExamples',
         name: '高级案例',
         name_en: 'Advanced Examples',
@@ -205,23 +256,6 @@ export default [
                 openUrl: 'https://z2586300277.github.io/show-site/su7_demo/',
                 githubUrl: 'https://github.com/KallkaGo/su7-demo',
                 image: HOST + 'threeExamples/openSource/kallkago_su7.jpg'
-            },
-            {
-                id: 'z2586300277_3d_editor',
-                tag: TEXTS['编辑器'] + '-#795cddba',
-                tip: '使用three.js开发的低代码组态易用的编辑器',
-                name: '低代码组态编辑器',
-                name_en: 'LowCode Editor',
-                author: 'z2586300277',
-                openUrl: 'https://z2586300277.github.io/three-editor/dist/#/editor',
-                githubUrl: 'https://github.com/z2586300277/three-editor',
-                image: FILE_HOST + 'images/editor.jpg',
-                links: [
-                    {
-                        name: '📖CSDN',
-                        url: 'https://blog.csdn.net/guang2586/article/details/142910241'
-                    }
-                ]
             },
             {
                 id: '3dEarth',
