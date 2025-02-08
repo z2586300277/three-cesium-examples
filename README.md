@@ -35,7 +35,7 @@
 |     nico     |  🐧805879871   | 微:15230117323  |     [官网](http://nicowebgl.cn )  |   Three.js Cesium.js
 |  jiawanlong  | 微: trampjwl | 🐧 群 585667336 | [Cesium案例](https://jiawanlong.github.io) |  专注于Cesium.js领域
 |  Threelab |🐧2945853209 | - | [官网](http://points.threelab.cn) | 海量点云渲染引擎
-|  -  | - | - | - | -
+|  FFMMCC  | 微:fmc2055615840 | 🐧2055615840 | https://gitee.com/fu-meichuan | Web3D爱好者
 
 ## 📦 自行部署 - 助力企业
 
