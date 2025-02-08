@@ -149,6 +149,7 @@ dispanecment.ctx.fillRect(
   dispanecment.canvas.height
 );
 dispanecment.glowImage = new Image();
+dispanecment.glowImage.crossOrigin = "Anonymous";
 dispanecment.glowImage.src = "https://coderfmc.github.io/three.js-demo/glow.png";
 // dispanecment.glowImage.onload = function () {
 //   dispanecment.ctx.drawImage(dispanecment.glowImage, 20, 20, 32, 32);
