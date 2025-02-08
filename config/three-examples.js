@@ -1048,7 +1048,7 @@ export default [
             },
             {
                 id: 'particlesCursorAnimation',
-                name: '粒子悬浮动画',
+                name: 'CanvasTexture+粒子动画',
                 name_en: 'ParticlesCursorAnimation',
                 author: 'FFMMCC',
                 codeUrl: HOST + 'threeExamples/particle/particlesCursorAnimation.js',
