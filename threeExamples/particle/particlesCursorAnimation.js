@@ -130,6 +130,7 @@ const gltfLoader = new GLTFLoader();
  * Diplacement
  */
 const dispanecment = {};
+dispanecment.canvas = document.createElement("canvas");
 //2D Canvas
 dispanecment.canvas = document.createElement("canvas");
 // 这里应该和绘制图像中的粒子数目保持一致
@@ -272,7 +273,6 @@ const renderer = new THREE.WebGLRenderer({
 });
 renderer.setSize(sizes.width, sizes.height);
 renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
-document.getElementById("root").appendChild(renderer.domElement);
 renderer.setClearColor("#000011");
 box.appendChild(renderer.domElement);
 // Controls
