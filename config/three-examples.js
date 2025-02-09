@@ -1047,6 +1047,15 @@ export default [
                 improver: 'z2586300277',
             },
             {
+                id: 'particlesCursorAnimation',
+                name: '鼠标轨迹粒子',
+                name_en: 'ParticlesCursorAnimation',
+                author: 'FFMMCC',
+                codeUrl: HOST + 'threeExamples/particle/particlesCursorAnimation.js',
+                image: HOST + 'threeExamples/particle/particlesCursorAnimation.jpg',
+                improver: 'FFMMCC',
+            },
+            {
                 id: 'textParticle',
                 name: '文字采集成粒子',
                 name_en: 'Text Particle',
