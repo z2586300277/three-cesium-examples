@@ -193,28 +193,64 @@ setInterval(() => {
 render();
 
 // 文字
-
-const ele = ()=>{
+const ele = () => {
     const box = document.getElementById("box");
-    box.style.position = 'relative'
-    const div = document.createElement('div')
-    div.style.position ='absolute'
-    div.style.top ='0px'
-    div.style.width ='100%'
-    div.style.height ='100%'
-    div.style.display = 'grid'
-    div.style.placeItems = 'center'
+    box.style.position = 'relative';
+    const div = document.createElement('div');
+    div.style.position = 'absolute';
+    div.style.top = '0';
+    div.style.left = '0';
+    div.style.width = '100%';
+    div.style.height = '100%';
+    div.style.display = 'flex';
+    div.style.justifyContent = 'center';
+    div.style.alignItems = 'center';
     div.innerHTML = `
-        <div style="width:40%;height:35%;display:grid;place-items:center;position:relative;">
-            <div style="font-size:calc(45px);white-space: nowrap;text-shadow: 2px 3px 1px rgb(155,155,155);">共筑3D世界,共享3D世界</div>
-            <div style="font-size:calc(45px);white-space: nowrap;text-shadow: 2px 3px 1px rgb(155,155,155);">Build & Share 3D World Together</div>
-               <div style="position:absolute;right:0px;bottom:0px;">
-                    for 'three-cesium-examples' 700 stars
-                </div>
+        <div style="text-align: center; 
+                    width: 90%; 
+                    max-width: 800px;
+                    background: rgba(255, 255, 255, 0.1);
+                    backdrop-filter: blur(10px);
+                    padding: 2rem;
+                    border-radius: 20px;
+                    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);">
+            <div style="font-size: min(5vw, 45px); 
+                        margin-bottom: 1.5rem;
+                        white-space: nowrap;
+                        color: #2d3436;
+                        font-weight: bold;
+                        text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+                        transition: transform 0.3s;
+                        cursor: pointer;
+                        font-family: 'Microsoft YaHei', sans-serif;"
+                        onmouseover="this.style.transform='scale(1.05)'"
+                        onmouseout="this.style.transform='scale(1)'">
+                共筑3D世界,共享3D世界
             </div>
-
-    `
-    box.appendChild(div)
-}
+            <div style="font-size: min(5vw, 45px);
+                        margin-bottom: 1.5rem;
+                        white-space: nowrap;
+                        color: #2d3436;
+                        font-weight: bold;
+                        text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+                        transition: transform 0.3s;
+                        cursor: pointer;
+                        font-family: 'Arial', sans-serif;"
+                        onmouseover="this.style.transform='scale(1.05)'"
+                        onmouseout="this.style.transform='scale(1)'">
+                Build & Share 3D World Together
+            </div>
+            <div style="font-size: min(2vw, 16px);
+                        text-align: right;
+                        margin-top: 2rem;
+                        color:rgb(173, 233, 255);
+                        font-style: italic;
+                        letter-spacing: 1px;">
+                for three-cesium-examples 1000 stars ⭐
+            </div>
+        </div>
+    `;
+    box.appendChild(div);
+};
 
 ele()
