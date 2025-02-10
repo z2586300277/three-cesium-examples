@@ -75,8 +75,8 @@ export default [
 
             {
                 id: '700stars',
-                name: 'tks-700stars留念',
-                name_en: '700stars Memory',
+                name: '1000stars留念',
+                name_en: '1000stars',
                 tag: TEXTS['共享'] + '-rgb(198,0,0)',
                 tip: '一个专注于前端可视化的开源组织，三维可视化开发者抱团取暖，开源分享知识，接活盈利，让自己更有底气，加入请联系',
                 author: 'nico',

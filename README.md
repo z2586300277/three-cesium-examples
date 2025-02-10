@@ -2,6 +2,8 @@
 
 ## 国内TOP1 - 👋 - 分享知识 - ⭐ - 点星助力 - ⚡ - 防止断更(日更)
 
+#### Web3D相关的资源、仓库、链接 或 没有的效果案例，可使用 Issues 留言进行投稿✍。
+
 #### 注：方便开发者资源、代码，保存、共享、查阅📘。( 想要加入并管理仓库的开发者联系作者🍉 )
 
 | QQ 群 |           微信群            |              预览图                       | Stars           |
@@ -26,7 +28,7 @@
 
 ### 👋 联系(任意用户自行添加）
 
-<img src="https://contrib.rocks/image?repo=z2586300277/three-cesium-examples&type=Date&8" />
+<img src="https://contrib.rocks/image?repo=z2586300277/three-cesium-examples&type=Date&10" />
 
 |     作者     |   联系方式   |    联系方式     |             链接             |          描述
 | :----------: | :----------: | :-------------: | :------------------------: | :------------------------: |
@@ -154,26 +156,26 @@
 ```js
 //HOST automatically retrieves the current domain name/IP to prevent invalid resource references in different deployment environments
 {
-id: ' The unique id 'in the parent corresponding list,
-name: ' Name ',
-name_en: 'language English Name',
-tag: ' Tag Name - Background Color - Font Size ',
-tip: ' Prompt message ',
-author: ' Author ID ',
-imporver: 'imporver id',
-referUrl: ' Case reference source address',//if not available, do not configure
-Links: [{url: 'Connect', name: ' Name '}]//Configure link referURL to not display
-image: HOST + 'threeExamples/basic/test.jpg', //  Corresponding window diagram
-CodeURL: HOST+'threExamples/basic/test. js',//js module format Most case forms
-HtmlURL: HOST+'threExamples/test/test. html '//HTML online format such as three case=>particle=>random particle particle planet
-openUrl: ' Preview the external link URL '// Choose between openURL and codeURL, as seen in the case of Taohua Pavilion Su7
-downloadUrl: ' Attached download URL ',//such as Three.js=>Advanced Case=>Peach Blossom Pavilion
-githubUrl: ' URL 'with GitHub repository attached,//e.g. Three.js=>Open source works=>su7
-meta: {
-    title: ' The title of this case website is',
-    keywords: ' Search engine keywords',
-    description: ' This case page describes'
-}
+    id: ' The unique id 'in the parent corresponding list,
+    name: ' Name ',
+    name_en: 'language English Name',
+    tag: ' Tag Name - Background Color - Font Size ',
+    tip: ' Prompt message ',
+    author: ' Author ID ',
+    imporver: 'imporver id',
+    referUrl: ' Case reference source address',//if not available, do not configure
+    Links: [{url: 'Connect', name: ' Name '}]//Configure link referURL to not display
+    image: HOST + 'threeExamples/basic/test.jpg', //  Corresponding window diagram
+    CodeURL: HOST+'threExamples/basic/test. js',//js module format Most case forms
+    HtmlURL: HOST+'threExamples/test/test. html '//HTML online format such as three case=>particle=>random particle particle planet
+    openUrl: ' Preview the external link URL '// Choose between openURL and codeURL, as seen in the case of Taohua Pavilion Su7
+    downloadUrl: ' Attached download URL ',//such as Three.js=>Advanced Case=>Peach Blossom Pavilion
+    githubUrl: ' URL 'with GitHub repository attached,//e.g. Three.js=>Open source works=>su7
+    meta: {
+        title: ' The title of this case website is',
+        keywords: ' Search engine keywords',
+        description: ' This case page describes'
+    }
 }
 ```
 ##  🏠  Build your own distributed storage warehouse

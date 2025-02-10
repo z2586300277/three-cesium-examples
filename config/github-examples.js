@@ -719,6 +719,16 @@ export default [
                 openUrl: 'https://fennec-hub.github.io/three-viewport-gizmo/examples/orbit-controls',
                 image: HOST + 'threeExamples/openSource/three-viewport-gizmo.jpg'
             },
+            {
+                id: 'cadViewer',
+                name: 'CAD查看器',
+                name_en: 'CAD Viewer',
+                author: 'AUTO',
+                referUrl: 'https://www.npmjs.com/package/three-cad-viewer',
+                openUrl: 'https://bernhard-42.github.io/three-cad-viewer/example.html',
+                githubUrl: 'https://github.com/bernhard-42/three-cad-viewer',
+                image: HOST + 'threeExamples/openSource/cadViewer.jpg'
+            }
         ]
     },
     {

@@ -24,7 +24,7 @@ window.TEXTS = Object.fromEntries(Object.entries({
 
     '效果佳': { zh: '效果佳', en: 'Great' },
 
-    '感谢BiBi': { zh: '感谢BiBi', en: 'ThankBi' },
+    '感谢BiBi': { zh: '感谢BiBi', en: 'For BiBi' },
 
     '共享': { zh: '共筑,共享', en: 'Share' },
 
