@@ -158,6 +158,14 @@ export default [
                 openUrl: 'https://boytchev.github.io/etudes/',
                 githubUrl: 'https://github.com/boytchev/etudes',
                 image: HOST + 'threeExamples/openSource/etudes.jpg'
+            },
+            {
+                id:'genuary',
+                author: 'AUTO',
+                name: 'Genuary 2022',
+                githubUrl: 'https://github.com/spite/genuary-2022',
+                openUrl: 'https://spite.github.io/genuary-2022/',
+                image: HOST + 'threeExamples/openSource/genuary.jpg'
             }
         ]
     },
