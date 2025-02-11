@@ -752,6 +752,15 @@ export default [
                 githubUrl: 'https://github.com/iTowns/itowns',
                 openUrl: 'https://www.itowns-project.org/',
                 image: HOST + 'threeExamples/openSource/iTowns.jpg'
+            },
+            {
+                id: 'tvtJs',
+                name: 'vue-tres框架',
+                name_en: 'Vue Tres Frame',
+                author: 'AUTO',
+                githubUrl: 'https://github.com/hawk86104/three-vue-tres',
+                openUrl: 'https://hawk86104.github.io',
+                image: HOST + 'threeExamples/openSource/tvtJs.jpg'
             }
         ]
     },
