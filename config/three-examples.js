@@ -1072,6 +1072,14 @@ export default [
                 referUrl: 'https://codepen.io/prisoner849/pen/JjvQOXx',
                 codeUrl: HOST + 'threeExamples/particle/snowParticle.js',
                 image: HOST + 'threeExamples/particle/snowParticle.jpg',
+            },
+            {
+                id: 'imgParticle',
+                name: '图片粒子',
+                name_en: 'Image Particle',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/particle/imgParticle.js',
+                image: HOST + 'threeExamples/particle/imgParticle.jpg',
             }
         ]
     },
@@ -2419,7 +2427,7 @@ export default [
             //     author: 'nico',
             //     openUrl: 'http://nicowebgl.cn/three_tool/',
             //     image: HOST + 'threeExamples/tools/scene.jpg'
-
+            // https://gltf-viewer.donmccurdy.com/
             // }
         ]
     },
