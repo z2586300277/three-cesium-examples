@@ -49,26 +49,9 @@ export default {
                 },
             ]
         },
-        {
-            name: '🍃github',
-            children: [
-                {
-                    name: '📦Three',
-                    url: 'https://github.com/mrdoob/three.js'
-                },
-                {
-                    name: '🌐Cesium',
-                    url: 'https://github.com/CesiumGS/cesium'
-                },
-                {
-                    name: '⭐Join us',
-                    url: 'https://github.com/OpenThree'
-                }
-            ]
-        },
 
         {
-            name: '🌿OpenThree',
+            name: '🍃OpenThree',
             url: 'https://openthree.github.io/three-cesium-links/'
         }
         
