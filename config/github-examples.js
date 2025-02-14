@@ -2,14 +2,15 @@ import { HOST, FILE_HOST } from "./host.js";
 
 export default [
     {
-        pid: 'openSourceStation',
-        name: '资源链接',
-        name_en: 'Resource Link',
+        pid: 'topNavigation',
+        name: '精选导航',
+        name_en: 'Top Navigation',
         children: [
             {
                 id: 'codePen',
                 name: 'CodePen 社区',
                 name_en: 'CodePen',
+                tag: TEXTS['推荐'] + '-#5f9be3',
                 tip: '国外包含大量在线运行的前端案例社区',
                 author: 'Threejs',
                 openUrl: 'https://codepen.io/search/pens?q=three+js',
@@ -29,11 +30,18 @@ export default [
                 id: 'tympanus',
                 name: 'Codrops 社区',
                 name_en: 'Codrops',
+                tag: TEXTS['推荐'],
                 author: 'Threejs',
                 openUrl: 'https://tympanus.net/codrops/demos/?tag=three-js',
                 image: FILE_HOST + 'images/tympanus.jpg'
             },
-
+        ]
+    },
+    {
+        pid: 'openSourceStation',
+        name: '资源链接',
+        name_en: 'Resource Link',
+        children: [
             {
                 id: 'sketchThree',
                 author: 'AUTO',
@@ -221,38 +229,83 @@ export default [
         ]
     },
     {
-        pid: 'advancedExamples',
-        name: '高级案例',
-        name_en: 'Advanced Examples',
+        pid: 'threeMap',
+        name: '三维地图',
+        name_en: 'Three Map',
         children: [
             {
-                id: 'taohuating',
-                name: '桃花亭',
-                name_en: 'TaoHuaTing',
-                author: 'huan_meng_hai_yan',
-                openUrl: 'https://z2586300277.github.io/show-site/TaoHuaTing',
-                downloadUrl: 'https://z2586300277.github.io/show-site/TaoHuaTing/TaoHuaTing.zip',
-                image: HOST + 'threeExamples/openSource/taohuating.jpg'
+                id: '3dGeoMap',
+                name: '3D地图',
+                name_en: '3D GeoMap',
+                author: 'xiaogua-bushigua',
+                githubUrl: 'https://github.com/xiaogua-bushigua/3d-geoMap',
+                openUrl: 'https://z2586300277.github.io/show-site/3dGeoMap',
+                image: FILE_HOST + 'images/3dGeoMap.jpg',
+                links: [
+                    {
+                        name: '📺B站',
+                        url: 'https://www.bilibili.com/video/BV1ku4y1X7wU/'
+                    }
+                ]
+            },
+        ]
+    },
+    {
+        pid: 'threeCar',
+        name: '汽车相关',
+        name_en: 'Car Related',
+        children: [
+            {
+                id: 'su7peng',
+                name: 'SU7-Vue3',
+                name_en: 'SU7_Vue3',
+                author: 'Pong-lei',
+                openUrl: 'https://g2657.github.io/examples-server/su7_2/',
+                githubUrl: 'https://github.com/Pong-lei/su7_imitate',
+                image: HOST + 'threeExamples/openSource/su7peng.jpg'
             },
             {
-                id: 'ziTengHua',
-                name: '紫藤花',
-                name_en: 'ZiTengHua',
-                author: 'huan_meng_hai_yan',
-                openUrl: 'https://g2657.github.io/examples-server/ziTenghua/',
-                downloadUrl: 'https://g2657.github.io/examples-server/ziTenghua/ziTenghua.zip',
-                image: HOST + 'threeExamples/openSource/ziTengHua.jpg'
+                id: 'su7_three',
+                name: '原生su7',
+                name_en: 'SU7_vanilla',
+                author: 'ASouthernCat',
+                openUrl: 'https://z2586300277.github.io/show-site/su7_car/',
+                githubUrl: 'https://github.com/ASouthernCat/Porsche911-carshow-threejs',
+                image: HOST + 'threeExamples/openSource/su7_three.jpg',
+                links: [
+                    {
+                        name: '📺BiBi',
+                        url: 'https://www.bilibili.com/video/BV1JH4y1N7pT'
+                    }
+                ]
             },
             {
-                id: 'customEffect',
-                name: '自定义后期处理(r3f)',
-                name_en: 'Custom Effect',
-                tag: TEXTS.effect,
-                tip: '基于react-three-fiber 制作的自定义后期处理效果',
-                author: 'KallkaGo',
-                openUrl: 'https://z2586300277.github.io/show-site/customEffect/',
-                githubUrl: 'https://github.com/KallkaGo/CustomEffect',
-                image: 'https://z2586300277.github.io/show-site/customEffect/customEffect.jpg'
+                id: 'su7_replica',
+                name: 'SU7-Replica',
+                name_en: 'SU7 Replica',
+                author: 'AUTO',
+                openUrl:'https://su7-replica.netlify.app/',
+                githubUrl: 'https://github.com/alphardex/su7-replica',
+                image: HOST + 'threeExamples/openSource/su7_replica.jpg'
+            },
+            {
+                id: 'blanderCar',
+                author: 'ASouthernCat',
+                name: '硬核小车',
+                name_en: 'Blender Car',
+                githubUrl: 'https://github.com/ASouthernCat/simple-muscle-car',
+                openUrl: 'https://g2657.github.io/examples-server/blender_car/',
+                image: HOST + 'threeExamples/openSource/blenderCar.jpg',
+                links: [
+                    {
+                        name: '预览(vercel)',
+                        url: 'https://simple-muscle-car.vercel.app/'
+                    },
+                    {
+                        name: '📺BiBi',
+                        url: 'https://www.bilibili.com/video/BV1AcSUY3Ez2'
+                    }
+                ]
             },
             {
                 id: 'kallkago_su7',
@@ -265,6 +318,13 @@ export default [
                 githubUrl: 'https://github.com/KallkaGo/su7-demo',
                 image: HOST + 'threeExamples/openSource/kallkago_su7.jpg'
             },
+        ]
+    },
+    {
+        pid: 'threeEarth',
+        name: '三维地球',
+        name_en: 'Three Earth',
+        children: [
             {
                 id: '3dEarth',
                 name: '3D地球',
@@ -301,6 +361,77 @@ export default [
                 githubUrl: 'https://github.com/JackGit/xplan',
                 image: HOST + 'threeExamples/openSource/numberEarth.jpg'
             },
+        ]
+
+    },
+    {
+        pid: 'digitalTwin',
+        name: '数字孪生',
+        name_en: 'digitalTwin',
+        children: [
+            {
+                id: 'digitalFarm',
+                name: '智慧农场',
+                name_en: 'digitalFarm',
+                author: 'AUTO',
+                githubUrl: 'https://github.com/gyrate/digitalFarm',
+                openUrl: 'https://gyrate.github.io/digitalFarm/dist/index.html',
+                image: HOST + 'threeExamples/openSource/digitalFarm.jpg'
+            },
+            {
+                id: 'StationMonitor',
+                name: '站点监控',
+                name_en: 'Station Monitor',
+                author: 'AUTO',
+                openUrl: 'https://fengtianxi001.github.io/MF-StationMonitor/',
+                githubUrl: 'https://github.com/fengtianxi001/MF-StationMonitor',
+                image: HOST + 'threeExamples/openSource/StationMonitor.jpg'
+            },
+            {
+                id: 'feng_ji',
+                name: '风机',
+                name_en: 'Wind Turbine',
+                author: 'AUTO',
+                openUrl: 'https://fengtianxi001.github.io/MF-TurbineMonitor',
+                githubUrl: 'https://github.com/fengtianxi001/MF-TurbineMonitor',
+                image: FILE_HOST + 'images/fengji.jpg'
+            },
+        ]
+    },
+    {
+        pid: 'advancedExamples',
+        name: '高级案例',
+        name_en: 'Advanced Examples',
+        children: [
+            {
+                id: 'taohuating',
+                name: '桃花亭',
+                name_en: 'TaoHuaTing',
+                author: 'huan_meng_hai_yan',
+                openUrl: 'https://z2586300277.github.io/show-site/TaoHuaTing',
+                downloadUrl: 'https://z2586300277.github.io/show-site/TaoHuaTing/TaoHuaTing.zip',
+                image: HOST + 'threeExamples/openSource/taohuating.jpg'
+            },
+            {
+                id: 'ziTengHua',
+                name: '紫藤花',
+                name_en: 'ZiTengHua',
+                author: 'huan_meng_hai_yan',
+                openUrl: 'https://g2657.github.io/examples-server/ziTenghua/',
+                downloadUrl: 'https://g2657.github.io/examples-server/ziTenghua/ziTenghua.zip',
+                image: HOST + 'threeExamples/openSource/ziTengHua.jpg'
+            },
+            {
+                id: 'customEffect',
+                name: '自定义后期处理(r3f)',
+                name_en: 'Custom Effect',
+                tag: TEXTS.effect,
+                tip: '基于react-three-fiber 制作的自定义后期处理效果',
+                author: 'KallkaGo',
+                openUrl: 'https://z2586300277.github.io/show-site/customEffect/',
+                githubUrl: 'https://github.com/KallkaGo/CustomEffect',
+                image: 'https://z2586300277.github.io/show-site/customEffect/customEffect.jpg'
+            },
             {
                 id: '3dPointsModel',
                 name: '3D点云模型',
@@ -332,63 +463,7 @@ export default [
                 downloadUrl: 'https://g2657.github.io/examples-server/smartCity/smartCity.zip',
                 image: HOST + 'threeExamples/openSource/smartCity.jpg'
             },
-            {
-                id: '3dGeoMap',
-                name: '3D地图',
-                name_en: '3D GeoMap',
-                author: 'xiaogua-bushigua',
-                githubUrl: 'https://github.com/xiaogua-bushigua/3d-geoMap',
-                openUrl: 'https://z2586300277.github.io/show-site/3dGeoMap',
-                image: FILE_HOST + 'images/3dGeoMap.jpg',
-                links: [
-                    {
-                        name: '📺B站',
-                        url: 'https://www.bilibili.com/video/BV1ku4y1X7wU/'
-                    }
-                ]
-            },
-            {
-                id: 'su7peng',
-                name: 'SU7-Vue3',
-                name_en: 'SU7_Vue3',
-                author: 'Pong-lei',
-                openUrl: 'https://g2657.github.io/examples-server/su7_2/',
-                githubUrl: 'https://github.com/Pong-lei/su7_imitate',
-                image: HOST + 'threeExamples/openSource/su7peng.jpg'
-            },
-            {
-                id: 'su7_three',
-                name: '原生su7',
-                name_en: 'SU7_vanilla',
-                author: 'ASouthernCat',
-                openUrl: 'https://z2586300277.github.io/show-site/su7_car/',
-                githubUrl: 'https://github.com/ASouthernCat/Porsche911-carshow-threejs',
-                image: HOST + 'threeExamples/openSource/su7_three.jpg',
-                links: [
-                    {
-                        name: '📺BiBi',
-                        url: 'https://www.bilibili.com/video/BV1JH4y1N7pT'
-                    }
-                ]
-            },
-            {
-                id: 'feng_ji',
-                name: '风机',
-                name_en: 'Wind Turbine',
-                author: 'AUTO',
-                openUrl: 'https://fengtianxi001.github.io/MF-TurbineMonitor',
-                githubUrl: 'https://github.com/fengtianxi001/MF-TurbineMonitor',
-                image: FILE_HOST + 'images/fengji.jpg'
-            },
-            {
-                id: 'su7_replica',
-                name: 'SU7-Replica',
-                name_en: 'SU7 Replica',
-                author: 'AUTO',
-                openUrl:'https://su7-replica.netlify.app/',
-                githubUrl: 'https://github.com/alphardex/su7-replica',
-                image: HOST + 'threeExamples/openSource/su7_replica.jpg'
-            },
+         
             {
                 id: 'roaming',
                 author: 'AUTO',
@@ -472,25 +547,7 @@ export default [
                 openUrl: 'http://www.nicowebgl.cn/annotations/',
                 image: HOST + 'threeExamples/openSource/unrealstyle.jpg'
             },
-            {
-                id: 'blanderCar',
-                author: 'ASouthernCat',
-                name: '硬核小车',
-                name_en: 'Blender Car',
-                githubUrl: 'https://github.com/ASouthernCat/simple-muscle-car',
-                openUrl: 'https://g2657.github.io/examples-server/blender_car/',
-                image: HOST + 'threeExamples/openSource/blenderCar.jpg',
-                links: [
-                    {
-                        name: '预览(vercel)',
-                        url: 'https://simple-muscle-car.vercel.app/'
-                    },
-                    {
-                        name: '📺BiBi',
-                        url: 'https://www.bilibili.com/video/BV1AcSUY3Ez2'
-                    }
-                ]
-            },
+
             {
                 id: 'small_island',
                 author: 'AUTO',
@@ -581,31 +638,6 @@ export default [
                 openUrl: 'https://waterball.netlify.app/',
                 githubUrl: 'https://github.com/matsuoka-601/waterball',
                 image: HOST + 'threeExamples/openSource/waterBall.jpg'
-            }
-        ]
-    },
-    {
-        pid: 'digitalTwin',
-        name: '数字孪生',
-        name_en: 'digitalTwin',
-        children: [
-            {
-                id: 'digitalFarm',
-                name: '智慧农场',
-                name_en: 'digitalFarm',
-                author: 'AUTO',
-                githubUrl: 'https://github.com/gyrate/digitalFarm',
-                openUrl: 'https://gyrate.github.io/digitalFarm/dist/index.html',
-                image: HOST + 'threeExamples/openSource/digitalFarm.jpg'
-            },
-            {
-                id: 'StationMonitor',
-                name: '站点监控',
-                name_en: 'Station Monitor',
-                author: 'AUTO',
-                openUrl: 'https://fengtianxi001.github.io/MF-StationMonitor/',
-                githubUrl: 'https://github.com/fengtianxi001/MF-StationMonitor',
-                image: HOST + 'threeExamples/openSource/StationMonitor.jpg'
             }
         ]
     },
