@@ -597,6 +597,15 @@ export default [
                 githubUrl: 'https://github.com/gyrate/digitalFarm',
                 openUrl: 'https://gyrate.github.io/digitalFarm/dist/index.html',
                 image: HOST + 'threeExamples/openSource/digitalFarm.jpg'
+            },
+            {
+                id: 'StationMonitor',
+                name: '站点监控',
+                name_en: 'Station Monitor',
+                author: 'AUTO',
+                openUrl: 'https://fengtianxi001.github.io/MF-StationMonitor/',
+                githubUrl: 'https://github.com/fengtianxi001/MF-StationMonitor',
+                image: HOST + 'threeExamples/openSource/StationMonitor.jpg'
             }
         ]
     },

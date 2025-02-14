@@ -1,4 +1,4 @@
-import './lang.js'
+import './lang.js';
 import cesiumExamples from "./cesium-examples.js";
 import threeExamples from "./three-examples.js";
 import githubExamples from "./github-examples.js";
@@ -27,7 +27,7 @@ window.GLOBAL_CONFIG = {
 window.THREE_CESIUM_NAVIGATION = [
     {
         name: "ThreeJS",
-        label: "Three.js案例",
+        label: "Three js案例",
         label_en: "Three JS",
         examples: threeExamples,
         inject: {
@@ -36,7 +36,7 @@ window.THREE_CESIUM_NAVIGATION = [
                 "three/addons/": "https://threejs.org/examples/jsm/",
                 "three/examples/jsm/": "https://threejs.org/examples/jsm/",
                 "gsap": FILE_HOST + "js/gsap/index.js",
-                "animejs/": FILE_HOST + "js/animejs/", // HOST + "js/anime.es.js",
+                "animejs/": FILE_HOST + "js/animejs/",
                 "dat.gui": HOST + "js/dat.gui.module.js",
                 "postprocessing": HOST + "js/postprocessing.js",
                 "tweakpane": HOST + "js/tweakpane.min.js",
@@ -46,7 +46,7 @@ window.THREE_CESIUM_NAVIGATION = [
     },
     {
         name: "CesiumJS",
-        label: "Cesium.js案例",
+        label: "Cesium js案例",
         label_en: "Cesium JS",
         examples: cesiumExamples,
         inject: {
@@ -81,8 +81,8 @@ window.THREE_CESIUM_AUTHORS = threeCesiumAuthors // 作者
         "link": ["/test.css"],
         "src": [HOST+"js/echarts.min.js"],
         "importmap":{
-        "3d-tiles-renderer": "https://z2586300277.github.io/3d-file-server/js/3dTilesRenderer/index.js",
-        "three.path":"https://z2586300277.github.io/3d-file-server/js/three.path.module.js"
+            "3d-tiles-renderer": "https://z2586300277.github.io/3d-file-server/js/3dTilesRenderer/index.js",
+            "three.path":"https://z2586300277.github.io/3d-file-server/js/three.path.module.js"
         }
     }
 */
@@ -157,34 +157,32 @@ if (params) {
 }
 
 /* 
-🌹🍀🍎💰📱🌙🍁🍂🍃🌷💎🔪🔫🏀⚽⚡👄👍🔥 
-😀😁😂😃😄😅😆😉😊😋😎😍😘😗😙😚☺
-😇😐😑 😶😏😣😥😮😯😪😫😴😌😛😜😝😒
-😓😔😕😲😷😖😞 😟😤😢😭😦😧😨😬😰😱😳
-😵😡😠😈👿👹👺💀👻 👽👦👧👨👩👴👵👶👱👮
-👲👳👷👸💂🎅👰👼 💆💇🙍🙎🙅🙆💁🙋🙇🙌🙏
-👤👥🚶🏃👯💃👫👬👭💏💑 👪💪👈👉☝👆👇✌
-✋👌👍👎✊👊👋👏👐✍👣👀👂👃👅👄💋 👓👔
-👕👖👗👘👙👚👛👜👝🎒💼👞👟👠👡👢👑👒🎩
-🎓💄💅💍🌂 🙈🙉🙊🐵🐒🐶🐕🐩🐺🐱😺😸😹😻
-😼😽🙀😿😾🐈 🐯🐅🐆🐴🐎🐮🐂🐃🐄🐷🐖🐗🐽🐏
-🐑🐐🐪🐫🐘🐭 🐁🐀🐹🐰🐇🐻🐨🐼🐾🐔🐓🐣🐤🐥
-🐦🐧🐸🐊🐢🐍🐲🐉🐳 🐋🐬🐟🐠🐡🐙🐚🐌🐛🐜🐝🐞🦋💐
-🌸💮🌹🌺🌻🌼🌷🌱🌲 🌳🌴🌵🌾🌿🍀🍁🍂🍃🌍🌎🌏🌐🌑
-🌒🌓🌔🌕🌖🌗🌘🌙🌚 🌛🌜☀🌝🌞⭐🌟🌠☁⛅☔⚡❄🔥💧🌊💩🍇🍈
-🍉🍊🍋🍌🍍🍎🍏 🍐🍑🍒🍓🍅🍆🌽🍄🌰🍞🍖🍗🍔🍟🍕🍳🍲🍱🍘🍙🍚
-🍛🍜 🍝🍠🍢🍣🍤🍥🍡🍦🍧🍨🍩🍪🎂🍰🍫🍬🍭🍮🍯🍼☕🍵🍶🍷🍸🍹🍺
-🍻🍴 🎪🎭🎨🎰🚣🛀🎫🏆⚽⚾🏀🏈🏉🎾🎱🎳⛳🎣🎽🎿🏂🏄🏇🏊🚴🚵 🎯🎮🎲🎷
-🎸🎺🎻🎬👾🌋🗻🏠🏡🏢🏣🏤🏥🏦🏨🏩🏪🏫🏬🏭🏯 🏰💒🗼🗽⛪⛲🌁🌃🌆🌇🌉🌌🎠
-🎡🎢🚂🚃🚄🚅🚆🚇🚈🚉🚊🚝🚞🚋🚌 🚍🚎🚏🚐🚑🚒🚓🚔🚕🚖🚗🚘🚚🚛🚜🚲⛽🚨🚥🚦
-🚧⚓⛵🚤🚢✈💺🚁 🚟🚠🚡🚀🎑🗿🛂🛃🛄🛅💌💎🔪💈🚪🚽🚿🛁⌛⏳⌚⏰🎈🎉🎊🎎🎏🎐
-🎀 🎁📯📻📱📲☎📞📟📠🔋🔌💻💽💾💿📀🎥📺📷📹📼🔍🔎🔬🔭📡💡🔦 🏮📔📕📖📗📘📙📚
-📓📃📜📄📰📑🔖💰💴💵💶💷💸💳✉📧📨📩 📤📥📦📫📪📬📭📮✏✒📝📁📂📅📆📇📈📉📊📋📌
-📍📎📏📐✂ 🔒🔓🔏🔐🔑🔨🔫🔧🔩🔗💉💊🚬🔮🚩🎌💦💨💣☠♠♥♦♣🀄🎴 🔇🔈🔉🔊📢📣💤💢💬💭
-♨🌀🔔🔕✡✝🔯📛🔰🔱⭕✅☑ ✔✖❌❎➕➖➗➰➿〽✳✴❇‼⁉❓❔❕❗©®™🎦🔅🔆💯🔠🔡🔢🔣 🔤🅰🆎
-🅱🆑🆒🆓ℹ🆔Ⓜ🆕🆖🅾🆗🅿 🆘🆙🆚🈁🈂🈷🈶🈯🉐🈹🈚🈲🉑🈸🈴🈳㊗㊙🈺🈵 ▪▫◻◼◽◾⬛⬜🔶🔷🔸
-🔹🔺🔻💠🔲🔳⚪⚫🔴🔵 ♈♉♊♋♌♍♎♏♐♑♒♓⛎💘❤💓💔💕💖💗💙💚💛💜💝💞 💟❣🌿🚧💒
-☎📟💽 ⬆↗➡↘⬇↙⬅↖↕↔↩↪⤴⤵🔃🔄🔙🔚🔛🔜🔝🔀🔁🔂 ▶⏩◀⏪
-🔼⏫🔽⏬📱📶📳📴♻🏧🚮🚰♿🚹🚺🚻🚼🚾⚠🚸
-⛔🚫🚳🚭🚯🚱🚷🔞
+🌹🍀🍎💰📱🌙🍁🍂🍃🌷💎🔪🔫🏀⚽⚡👄👍🔥😀😁😂😃😄😅😆😉😊😋
+😎😍😘😗😙😚☺😇😐😑😶😏😣😥😮😯😪😫😴😌😛😜😝😒😓😔😕😲
+😷😖😞😟😤😢😭😦😧😨😬😰😱😳😵😡😠😈👿👹👺💀👻👽👦👧👨👩
+👴👵👶👱👮👲👳👷👸💂🎅👰👼💆💇🙍🙎🙅🙆💁🙋🙇🙌🙏👤👥🚶🏃
+👯💃👫👬👭💏💑👪💪👈👉☝👆👇✌✋👌👍👎✊👊👋👏👐✍👣👀👂👃
+👅👄💋👓👔👕👖👗👘👙👚👛👜👝🎒💼👞👟👠👡👢👑👒🎩🎓💄💅💍
+🌂🙈🙉🙊🐵🐒🐶🐕🐩🐺🐱😺😸😹😻😼😽🙀😿😾🐈🐯🐅🐆🐴🐎🐮🐂
+🐃🐄🐷🐖🐗🐽🐏🐑🐐🐪🐫🐘🐭🐁🐀🐹🐰🐇🐻🐨🐼🐾🐔🐓🐣🐤🐥
+🐦🐧🐸🐊🐢🐍🐲🐉🐳🐋🐬🐟🐠🐡🐙🐚🐌🐛🐜🐝🐞🦋💐🌸💮🌹🌺
+🌻🌼🌷🌱🌲🌳🌴🌵🌾🌿🍀🍁🍂🍃🌍🌎🌏🌐🌑🌒🌓🌔🌕🌖🌗🌘🌙
+🌚🌛🌜☀🌝🌞⭐🌟🌠☁⛅☔⚡❄🔥💧🌊💩🍇🍈🍉🍊🍋🍌🍍🍎🍏🍐🍑
+🍒🍓🍅🍆🌽🍄🌰🍞🍖🍗🍔🍟🍕🍳🍲🍱🍘🍙🍚🍛🍜🍝🍠🍢🍣🍤🍥
+🍡🍦🍧🍨🍩🍪🎂🍰🍫🍬🍭🍮🍯🍼☕🍵🍶🍷🍸🍹🍺🍻🍴🎪🎭🎨🎰
+🚣🛀🎫🏆⚽⚾🏀🏈🏉🎾🎱🎳⛳🎣🎽🎿🏂🏄🏇🏊🚴🚵🎯🎮🎲🎷🎸
+🎺🎻🎬👾🌋🗻🏠🏡🏢🏣🏤🏥🏦🏨🏩🏪🏫🏬🏭🏯🏰💒🗼🗽⛪⛲🌁
+🌃🌆🌇🌉🌌🎠🎡🎢🚂🚃🚄🚅🚆🚇🚈🚉🚊🚝🚞🚋🚌🚍🚎🚏🚐🚑🚒
+🚓🚔🚕🚖🚗🚘🚚🚛🚜🚲⛽🚨🚥🚦🚧⚓⛵🚤🚢✈💺🚁🚟🚠🚡🚀🎑🗿
+🛂🛃🛄🛅💌💎🔪💈🚪🚽🚿🛁⌛⏳⌚⏰🎈🎉🎊🎎🎏🎐🎀🎁📯📻📱📲
+☎📞📟📠🔋🔌💻💽💾💿📀🎥📺📷📹📼🔍🔎🔬🔭📡💡🔦🏮📔📕📖📗
+📘📙📚📓📃📜📄📰📑🔖💰💴💵💶💷💸💳✉📧📨📩📤📥📦📫📪📬📭
+📮✏✒📝📁📂📅📆📇📈📉📊📋📌📍📎📏📐✂🔒🔓🔏🔐🔑🔨🔫🔧🔩
+🔗💉💊🚬🔮🚩🎌💦💨💣☠♠♥♦♣🀄🎴🔇🔈🔉🔊📢📣💤💢💬💭♨🌀
+🔔🔕✡✝🔯📛🔰🔱⭕✅☑✔✖❌❎➕➖➗➰➿〽✳✴❇‼⁉❓❔❕❗©®™🎦🔅
+🔆💯🔠🔡🔢🔣🔤🅰🆎🅱🆑🆒🆓ℹ🆔Ⓜ🆕🆖🅾🆗🅿🆘🆙🆚🈁🈂🈷
+🈶🈯🉐🈹🈚🈲🉑🈸🈴🈳㊗㊙🈺🈵▪▫◻◼◽◾⬛⬜🔶🔷🔸🔹🔺🔻💠
+🔲🔳⚪⚫🔴🔵♈♉♊♋♌♍♎♏♐♑♒♓⛎💘❤💓💔💕💖💗💙💚💛💜💝
+💞💟❣🌿🚧💒☎📟💽⬆↗➡↘⬇↙⬅↖↕↔↩↪⤴⤵🔃🔄🔙🔚🔛🔜🔝🔀
+🔁🔂▶⏩◀⏪🔼⏫🔽⏬📱📶📳📴♻🏧🚮🚰♿🚹🚺🚻🚼🚾⚠🚸⛔🚫🚳
 */

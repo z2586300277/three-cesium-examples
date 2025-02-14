@@ -4,7 +4,7 @@
 
 #### Web3D相关的资源、仓库、链接 或 没有的效果案例，可使用 Issues 留言进行投稿✍。
 
-#### 注：方便开发者资源、代码，保存、共享、查阅📘。( 想要加入并管理仓库的开发者联系作者🍉 )
+#### 注：方便开发者资源展示、保存、共享、查阅📘。( 想要加入并管理仓库的开发者联系作者🍉 )
 
 | QQ 群 |           微信群            |              预览图                       | Stars           |
 | :---------------:| :---------------: | :---------: | :--------- |
@@ -18,9 +18,9 @@
 
 - 人生旅程中的 Web3D 知识记录, 复习回顾, 高效查阅, 资源共享, 为爱发电。(有好的仓库或作品分享一下🍀)
 
-- 由于接收到了各平台同学点赞鼎力支持, 本仓库未来每天都会更新案例, 可以点个 watch 获取最新动态🐸。
+- 由于接收到了各平台同学点赞鼎力支持, 仓库每日更新。(点个 watch 获取最新动态🐸)
 
-- 关注 git histroy, 记录人生的每一天, 待到20年以后, 人生美好的回忆, 热爱学习的朋友可 follow me🍏。
+- 关注 git histroy, 记录人生的每一天, 开发者人生历史的足迹。(点个 follow 跟随作者足迹🍏)
 
 - 源码内存约10M，运行框架和在线调试源于 作者名下的 three-editor库 - [链接](https://z2586300277.github.io/three-editor/dist/#/example)。
 
@@ -72,12 +72,13 @@
 
 3. 在 config 目录下 找到 threeExamples 录入案例信息, 内部的资源指向与你的 js 和 image 资源路径对应
 
-4. 注: 为保证轻量化 案例展示图片资源使用 - https://yasuo.xunjiepdf.com/img/ _(自定义压缩至 4k 以内)_
+4. 注: 为保证轻量化 案例展示图片资源使用 - https://yasuo.xunjiepdf.com/img/ _(自定义压缩至 10k 以内)_
 
 5. 涉及其他依赖 js,可将 module.js 放到 js 目录 如 dat.gui,gasp ,注入方式 config/config.js 可见
 
 6. 音视频模型存储等一些可以公用的资源 files 文件夹下,涉及文件资源尽量引用外部 url,保证仓库轻量化
 
+- assets => ui 运行框架 不需要修改
 - config => js 注入和配置案例 等所有案例配置目录
 - files 音视频模型存储等一些可以公用的资源, 尽量不要上传文件资源, 使用 外部 url 地址访问
 - js => dat.gui gsap 等等一些依赖存放处,尽量可使用 如 cdn 线上 js 引入
@@ -112,17 +113,17 @@
 
 ## 🏠 搭建自己的分布式存储仓库
 
-- 架构设计是以请求资源形式访问代码,所以如 codeUrl image, 等资源信息不局限于存储在 本仓库中，例如存储在你自己的服务器，然后 url 访问到你的资源地址即可。
+- 架构设计是以请求资源形式访问代码,所以如 codeUrl image， 等资源信息不局限于存储在 本仓库中，例如存储在你自己的服务器，然后 url 访问到你的资源地址即可，类似于请求接口数据。
 
 - 然后在此仓库仅配置 案例信息即可, 可参考 three 案例 => 扩展功能 => 3D 地图 案例的配置
 
-- 注 由于 github 访问限制 http 会被自动禁止, 建议 也搭建自己得 github page ,使用 github 充当自己的资源服务器。
+- 因github 访问限制 http 会被自动禁止, 建议搭建自己的 github page ,使用 github 充当自己的资源服务器。
 
 - 如：我的一些分布式资源存储在 https://github.com/z2586300277/3d-file-server 仓库下 —— 访问服务: https://z2586300277.github.io/3d-file-server/
 
-- github page 搭建 => 创建仓库 => 页面流程 => setting => pages => Build and deployment => source (depoly from a branch) => branch 选择对应分支
+- github page 搭建 => 创建仓库 => 进入管理页面 => setting => pages => Build and deployment => source (depoly from a branch) => branch 选择对应分支 => save 即可
 
-- 注： github page 搭建完成后 直接访问如 https://xxxx.github.io/xxxx/ 目录下的资源文件无法显示是正常现象, 代码中可正常获取
+- 注： github page 搭建完成后 浏览器直接访问如 https://xxxx.github.io/xxxx/ 目录404整行现象，路径精确到文件后访问可正常
 
 - 参考访问案例 如 cesium 案例 => 离线地图 => 内网高德
 
@@ -145,7 +146,7 @@
 1. Creators can enter their developer information in config/author.js, and then the ID associated with the submitted case will display the author information.
 2. Place the case js in the folder cesiumExamples/threeEmples in the directory, such as ThreeEmples/basic, and put testjs in it, test.jpg,  Or directory test [test. js, test. jpg]
 3. Find ThreeEmples in the config directory and enter the case information. The internal resources point to the paths corresponding to your JS and image resources
-4. Note: To ensure the use of lightweight case display image resources- https://yasuo.xunjiepdf.com/img/ _(Custom compression to within 4k)_
+4. Note: To ensure the use of lightweight case display image resources- https://yasuo.xunjiepdf.com/img/ _(Custom compression to within 10k)_
 5. If it involves other dependent JS, you can place module.js in the JS directory such as dat.gui, gasp , The injection method config/config.js is visible
 6. Store audio and video models and other resources that can be shared in the files folder. Whenever possible, reference external URLs for file resources to ensure a lightweight warehouse
 - Config=>JS injection and configuration case, all case configuration directories

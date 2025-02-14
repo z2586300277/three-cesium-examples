@@ -888,6 +888,7 @@ export default [
             {
                 id: "RandomParticle",
                 name: "随机粒子效果",
+                tag: 'HTML',
                 name_en: "Random",
                 author: "giser2017",
                 htmlUrl: HOST + "threeExamples/particle/RandomParticle.html",
@@ -901,6 +902,7 @@ export default [
             {
                 id: "PlanetParticle",
                 name: "粒子效果的行星",
+                tag: 'HTML',
                 name_en: "Planet",
                 author: "giser2017",
                 htmlUrl: HOST + "threeExamples/particle/PlanetParticle.html",
@@ -1080,6 +1082,15 @@ export default [
                 author: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/particle/imgParticle.js',
                 image: HOST + 'threeExamples/particle/imgParticle.jpg',
+            },
+            {
+                id: 'fireParticles',
+                name: '粒子火焰',
+                name_en: 'Fire Particles',
+                author: 'z2586300277',
+                referUrl: 'https://codepen.io/dlch/pen/eWXgyo',
+                codeUrl: HOST + 'threeExamples/particle/fireParticles.js',
+                image: HOST + 'threeExamples/particle/fireParticles.jpg',
             }
         ]
     },
