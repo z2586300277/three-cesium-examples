@@ -1082,6 +1082,15 @@ export default [
                 author: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/particle/imgParticle.js',
                 image: HOST + 'threeExamples/particle/imgParticle.jpg',
+            },
+            {
+                id: 'fireParticles',
+                name: '粒子火焰',
+                name_en: 'Fire Particles',
+                author: 'z2586300277',
+                referUrl: 'https://codepen.io/dlch/pen/eWXgyo',
+                codeUrl: HOST + 'threeExamples/particle/fireParticles.js',
+                image: HOST + 'threeExamples/particle/fireParticles.jpg',
             }
         ]
     },
