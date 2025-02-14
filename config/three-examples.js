@@ -55,7 +55,6 @@ export default [
                 ]
             },
 
-
             {
                 id: 'thanksBibi',
                 name: '感谢来自BiBi的支持',

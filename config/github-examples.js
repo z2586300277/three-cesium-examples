@@ -248,6 +248,15 @@ export default [
                     }
                 ]
             },
+            {
+                id: 'editorMap',
+                name: '编辑器地图',
+                name_en: 'Editor Map',
+                author: 'z2586300277',
+                htmlUrl: HOST + 'threeExamples/other/editorMap.html',
+                githubUrl: 'https://github.com/z2586300277/three-editor',
+                image: HOST + 'threeExamples/other/editorMap.jpg',
+            }
         ]
     },
     {
