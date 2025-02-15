@@ -647,6 +647,15 @@ export default [
                 openUrl: 'https://waterball.netlify.app/',
                 githubUrl: 'https://github.com/matsuoka-601/waterball',
                 image: HOST + 'threeExamples/openSource/waterBall.jpg'
+            },
+            {
+                id: '3dAssests',
+                name: '3D资源库',
+                name_en: '3D Assests',
+                author: 'AUTO',
+                openUrl: 'https://boytchev.github.io/3d-assets/',
+                githubUrl: 'https://github.com/boytchev/3d-assets',
+                image: HOST + 'threeExamples/openSource/3dAssests.jpg'
             }
         ]
     },
