@@ -874,7 +874,7 @@ export default [
                 name_en: 'Hologram',
                 author: 'FFMMCC',
                 codeUrl: HOST + 'threeExamples/shader/hologram.js',
-                image: HOST + 'threeExamples/shader/hologram.jpg',
+                image: 'https://coderfmc.github.io/three.js-demo/全息投影.png',
                 improver: 'FFMMCC',
                 referUrl: 'https://gitee.com/fu-meichuan/three.js-journey/tree/master/30Hologram'
             }
