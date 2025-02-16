@@ -867,6 +867,16 @@ export default [
                 codeUrl: HOST + 'threeExamples/shader/girdFloor.js',
                 image: HOST + 'threeExamples/shader/girdFloor.jpg',
                 referUrl: 'https://github.com/amiradeu/shaders-jikken'
+            },
+            {
+                id: 'hologram',
+                name: '全息投影',
+                name_en: 'Hologram',
+                author: 'FFMMCC',
+                codeUrl: HOST + 'threeExamples/shader/hologram.js',
+                image: HOST + 'threeExamples/shader/hologram.jpg',
+                improver: 'FFMMCC',
+                referUrl: 'https://gitee.com/fu-meichuan/three.js-journey/tree/master/30Hologram'
             }
         ]
     },
