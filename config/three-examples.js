@@ -1568,7 +1568,18 @@ export default [
                 author: 'nico',
                 codeUrl: HOST + 'threeExamples/application/cartoon_ocean.js',
                 image: HOST + 'threeExamples/application/cartoon_ocean.jpg',
+            },
+            {
+                id: 'redRose',
+                name: '红玫瑰',
+                name_en: 'Red Rose',
+                author: 'FFMMCC',
+                codeUrl: HOST + 'threeExamples/shader/redRose.js',
+                image: 'https://coderfmc.github.io/three.js-demo/redRouse.gif',
+                improver: 'FFMMCC',
+                referUrl: 'https://gitee.com/fu-meichuan/three.js-journey/tree/master/47.redRose'
             }
+            
         ]
     },
     {
