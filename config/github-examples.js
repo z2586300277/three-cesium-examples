@@ -795,6 +795,15 @@ export default [
                 openUrl: 'https://bernhard-42.github.io/three-cad-viewer/example.html',
                 githubUrl: 'https://github.com/bernhard-42/three-cad-viewer',
                 image: HOST + 'threeExamples/openSource/cadViewer.jpg'
+            },
+            {
+                id: 'threeText',
+                name: 'three文本渲染',
+                name_en: 'Three Text',
+                author: 'AUTO',
+                githubUrl: 'https://github.com/protectwise/troika/tree/main/packages/troika-three-text',
+                openUrl: 'https://troika-examples.netlify.app/#text',
+                image: HOST + 'threeExamples/openSource/threeText.jpg'
             }
         ]
     },
