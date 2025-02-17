@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Three Editor</title>
+<style>
+    body {
+        margin: 0;
+        padding: 1px;
+        box-sizing: border-box;
+        background-color: #1f1f1f;
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+    }
+    #box {
+        width: 100%;
+        height: 100%;
+    }
+</style>
+</head>
+<body>
+<div id="box"></div>
+<script type="module">
+import { ThreeEditor } from 'https://z2586300277.github.io/three-editor/dist/js/index.js'
+
+// 获取参数
+const sceneParams = await fetch('https://z2586300277.github.io/three-editor/dist/files/editorJson/地图.json').then(res => res.json())
+
+// 初始化场景系列操作
+const threeEditor = new ThreeEditor(document.getElementById('box'), { sceneParams })
+
+// 窗口大小变化
+window.onresize = () => threeEditor.renderSceneResize() 
+
+</script>
+</body>
+</html>

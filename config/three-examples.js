@@ -55,7 +55,6 @@ export default [
                 ]
             },
 
-
             {
                 id: 'thanksBibi',
                 name: '感谢来自BiBi的支持',
@@ -868,6 +867,16 @@ export default [
                 codeUrl: HOST + 'threeExamples/shader/girdFloor.js',
                 image: HOST + 'threeExamples/shader/girdFloor.jpg',
                 referUrl: 'https://github.com/amiradeu/shaders-jikken'
+            },
+            {
+                id: 'hologram',
+                name: '全息投影',
+                name_en: 'Hologram',
+                author: 'FFMMCC',
+                codeUrl: HOST + 'threeExamples/shader/hologram.js',
+                image: 'https://coderfmc.github.io/three.js-demo/全息投影.png',
+                improver: 'FFMMCC',
+                referUrl: 'https://gitee.com/fu-meichuan/three.js-journey/tree/master/30Hologram'
             }
         ]
     },
@@ -1559,7 +1568,18 @@ export default [
                 author: 'nico',
                 codeUrl: HOST + 'threeExamples/application/cartoon_ocean.js',
                 image: HOST + 'threeExamples/application/cartoon_ocean.jpg',
+            },
+            {
+                id: 'redRose',
+                name: '红玫瑰',
+                name_en: 'Red Rose',
+                author: 'FFMMCC',
+                codeUrl: HOST + 'threeExamples/shader/redRose.js',
+                image: 'https://coderfmc.github.io/three.js-demo/redRouse.gif',
+                improver: 'FFMMCC',
+                referUrl: 'https://gitee.com/fu-meichuan/three.js-journey/tree/master/47.redRose'
             }
+            
         ]
     },
     {

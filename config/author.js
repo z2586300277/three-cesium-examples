@@ -98,6 +98,10 @@ export default [
             {
                 name: '📙博客',
                 url: 'https://blog.csdn.net/m0_68324632?type=blog'
+            },
+            {   
+                name: '📗文档',
+                url: 'https://flowers-10.github.io/three-auto/'
             }
         ]
     },
@@ -127,7 +131,7 @@ export default [
         id: 'nico',
         name: 'nico',
         describe: 'webgl知无不尽，canvas尽无不知，rust似水中月，wasm似镜中花，线性代数就在脚下，而shader路遥且长',
-        github: 'https://nicowebgl.cn/portfolio/index.html',
+        github: 'https://nicowebgl.cn/nicowebgl/',
         icon: 'https://avatars.githubusercontent.com/u/56536031?v=4',
         links: [
             {
@@ -197,6 +201,10 @@ export default [
             {
                 name: '📺B站',
                 url: 'https://space.bilibili.com/269344644'
+            },
+            {
+                name: '🍃打赏',
+                url: 'https://jiawanlong.github.io/ds.jpg'
             }
         ],
         github: 'https://github.com/jiawanlong',

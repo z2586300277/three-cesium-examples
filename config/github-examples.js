@@ -2,14 +2,15 @@ import { HOST, FILE_HOST } from "./host.js";
 
 export default [
     {
-        pid: 'openSourceStation',
-        name: '资源链接',
-        name_en: 'Resource Link',
+        pid: 'topNavigation',
+        name: '精选导航',
+        name_en: 'Top Navigation',
         children: [
             {
                 id: 'codePen',
                 name: 'CodePen 社区',
                 name_en: 'CodePen',
+                tag: TEXTS['推荐'] + '-#5f9be3',
                 tip: '国外包含大量在线运行的前端案例社区',
                 author: 'Threejs',
                 openUrl: 'https://codepen.io/search/pens?q=three+js',
@@ -29,11 +30,18 @@ export default [
                 id: 'tympanus',
                 name: 'Codrops 社区',
                 name_en: 'Codrops',
+                tag: TEXTS['推荐'],
                 author: 'Threejs',
                 openUrl: 'https://tympanus.net/codrops/demos/?tag=three-js',
                 image: FILE_HOST + 'images/tympanus.jpg'
             },
-
+        ]
+    },
+    {
+        pid: 'openSourceStation',
+        name: '资源链接',
+        name_en: 'Resource Link',
+        children: [
             {
                 id: 'sketchThree',
                 author: 'AUTO',
@@ -195,11 +203,20 @@ export default [
             {
                 id: 'Astral3DEditor',
                 name: 'Astral3D编辑器',
-                name_en: 'Astral3D Editor',
+                name_en: 'Astral3DEditor',
                 author: 'AUTO',
                 githubUrl: 'https://github.com/mlt131220/Astral3DEditor',
                 openUrl: 'https://editor.astraljs.com/#/',
                 image: HOST + 'threeExamples/openSource/Astral3DEditor.jpg'
+            },
+            {
+                id: 'buildingEditor',
+                name: '建筑编辑器(fiber)',
+                name_en: 'BuildingEditor',
+                author: 'AUTO',
+                githubUrl: 'https://github.com/krystiandzirba/Rust-Base-Builder',
+                openUrl: 'https://krystiandzirba.github.io/Rust-Base-Builder/',
+                image: HOST + 'threeExamples/openSource/buildingEditor.jpg'
             },
             {
                 id: 'z2586300277_3d_editor',
@@ -217,6 +234,185 @@ export default [
                         url: 'https://blog.csdn.net/guang2586/article/details/142910241'
                     }
                 ]
+            },
+        ]
+    },
+    {
+        pid: 'threeMap',
+        name: '三维地图',
+        name_en: 'Three Map',
+        children: [
+            {
+                id: '3dGeoMap',
+                name: '3D地图',
+                name_en: '3D GeoMap',
+                author: 'xiaogua-bushigua',
+                githubUrl: 'https://github.com/xiaogua-bushigua/3d-geoMap',
+                openUrl: 'https://z2586300277.github.io/show-site/3dGeoMap',
+                image: FILE_HOST + 'images/3dGeoMap.jpg',
+                links: [
+                    {
+                        name: '📺B站',
+                        url: 'https://www.bilibili.com/video/BV1ku4y1X7wU/'
+                    }
+                ]
+            },
+            {
+                id: 'editorMap',
+                name: '编辑器地图',
+                name_en: 'Editor Map',
+                author: 'z2586300277',
+                htmlUrl: HOST + 'threeExamples/other/editorMap.html',
+                githubUrl: 'https://github.com/z2586300277/three-editor',
+                image: HOST + 'threeExamples/other/editorMap.jpg',
+            }
+        ]
+    },
+    {
+        pid: 'threeCar',
+        name: '汽车相关',
+        name_en: 'Car Related',
+        children: [
+            {
+                id: 'su7peng',
+                name: 'SU7-Vue3',
+                name_en: 'SU7_Vue3',
+                author: 'Pong-lei',
+                openUrl: 'https://g2657.github.io/examples-server/su7_2/',
+                githubUrl: 'https://github.com/Pong-lei/su7_imitate',
+                image: HOST + 'threeExamples/openSource/su7peng.jpg'
+            },
+            {
+                id: 'su7_three',
+                name: '原生su7',
+                name_en: 'SU7_vanilla',
+                author: 'ASouthernCat',
+                openUrl: 'https://z2586300277.github.io/show-site/su7_car/',
+                githubUrl: 'https://github.com/ASouthernCat/Porsche911-carshow-threejs',
+                image: HOST + 'threeExamples/openSource/su7_three.jpg',
+                links: [
+                    {
+                        name: '📺BiBi',
+                        url: 'https://www.bilibili.com/video/BV1JH4y1N7pT'
+                    }
+                ]
+            },
+            {
+                id: 'su7_replica',
+                name: 'SU7-Replica',
+                name_en: 'SU7 Replica',
+                author: 'AUTO',
+                openUrl:'https://su7-replica.netlify.app/',
+                githubUrl: 'https://github.com/alphardex/su7-replica',
+                image: HOST + 'threeExamples/openSource/su7_replica.jpg'
+            },
+            {
+                id: 'blanderCar',
+                author: 'ASouthernCat',
+                name: '硬核小车',
+                name_en: 'Blender Car',
+                githubUrl: 'https://github.com/ASouthernCat/simple-muscle-car',
+                openUrl: 'https://g2657.github.io/examples-server/blender_car/',
+                image: HOST + 'threeExamples/openSource/blenderCar.jpg',
+                links: [
+                    {
+                        name: '预览(vercel)',
+                        url: 'https://simple-muscle-car.vercel.app/'
+                    },
+                    {
+                        name: '📺BiBi',
+                        url: 'https://www.bilibili.com/video/BV1AcSUY3Ez2'
+                    }
+                ]
+            },
+            {
+                id: 'kallkago_su7',
+                tag: TEXTS.hot + '-#5f9be3',
+                tip: 'SU7车展示案例，使用React+Three.js开发',
+                name: 'su7-R3f',
+                name_en: 'SU7-R3f',
+                author: 'KallkaGo',
+                openUrl: 'https://z2586300277.github.io/show-site/su7_demo/',
+                githubUrl: 'https://github.com/KallkaGo/su7-demo',
+                image: HOST + 'threeExamples/openSource/kallkago_su7.jpg'
+            },
+        ]
+    },
+    {
+        pid: 'threeEarth',
+        name: '三维地球',
+        name_en: 'Three Earth',
+        children: [
+            {
+                id: '3dEarth',
+                name: '3D地球',
+                name_en: '3D Earth',
+                author: 'RainManGO',
+                openUrl: 'https://z2586300277.github.io/show-site/3dEarth/',
+                githubUrl: 'https://github.com/RainManGO/3d-earth',
+                image: FILE_HOST + 'images/3dEarth.png'
+            },
+            {
+                id: '3dEarth2',
+                name: '虚幻地球',
+                name_en: 'Unreal Earth',
+                author: 'GhostCatcg',
+                openUrl: 'https://z2586300277.github.io/show-site/3dEarth2/',
+                githubUrl: 'https://github.com/GhostCatcg/3d-earth',
+                image: HOST + 'threeExamples/openSource/3dEarth2.jpg'
+            },
+            {
+                id: 'fogEarth',
+                name: '雾地球',
+                name_en: 'Fog Earth',
+                author: 'AUTO',
+                openUrl: 'https://dgreenheck.github.io/threejs-procedural-planets/',
+                githubUrl: 'https://github.com/dgreenheck/threejs-procedural-planets',
+                image: HOST + 'threeExamples/openSource/fogEarth.jpg'
+            },
+            {
+                id: 'numberEarth',
+                name: '数字地球',
+                name_en: 'Number Earth',
+                author: 'AUTO',
+                openUrl: 'https://jackgit.github.io/xplan/',
+                githubUrl: 'https://github.com/JackGit/xplan',
+                image: HOST + 'threeExamples/openSource/numberEarth.jpg'
+            },
+        ]
+
+    },
+    {
+        pid: 'digitalTwin',
+        name: '数字孪生',
+        name_en: 'digitalTwin',
+        children: [
+            {
+                id: 'digitalFarm',
+                name: '智慧农场',
+                name_en: 'digitalFarm',
+                author: 'AUTO',
+                githubUrl: 'https://github.com/gyrate/digitalFarm',
+                openUrl: 'https://gyrate.github.io/digitalFarm/dist/index.html',
+                image: HOST + 'threeExamples/openSource/digitalFarm.jpg'
+            },
+            {
+                id: 'StationMonitor',
+                name: '站点监控',
+                name_en: 'Station Monitor',
+                author: 'AUTO',
+                openUrl: 'https://fengtianxi001.github.io/MF-StationMonitor/',
+                githubUrl: 'https://github.com/fengtianxi001/MF-StationMonitor',
+                image: HOST + 'threeExamples/openSource/StationMonitor.jpg'
+            },
+            {
+                id: 'feng_ji',
+                name: '风机',
+                name_en: 'Wind Turbine',
+                author: 'AUTO',
+                openUrl: 'https://fengtianxi001.github.io/MF-TurbineMonitor',
+                githubUrl: 'https://github.com/fengtianxi001/MF-TurbineMonitor',
+                image: FILE_HOST + 'images/fengji.jpg'
             },
         ]
     },
@@ -255,53 +451,6 @@ export default [
                 image: 'https://z2586300277.github.io/show-site/customEffect/customEffect.jpg'
             },
             {
-                id: 'kallkago_su7',
-                tag: TEXTS.hot + '-#5f9be3',
-                tip: 'SU7车展示案例，使用React+Three.js开发',
-                name: 'su7-R3f',
-                name_en: 'SU7-R3f',
-                author: 'KallkaGo',
-                openUrl: 'https://z2586300277.github.io/show-site/su7_demo/',
-                githubUrl: 'https://github.com/KallkaGo/su7-demo',
-                image: HOST + 'threeExamples/openSource/kallkago_su7.jpg'
-            },
-            {
-                id: '3dEarth',
-                name: '3D地球',
-                name_en: '3D Earth',
-                author: 'RainManGO',
-                openUrl: 'https://z2586300277.github.io/show-site/3dEarth/',
-                githubUrl: 'https://github.com/RainManGO/3d-earth',
-                image: FILE_HOST + 'images/3dEarth.png'
-            },
-            {
-                id: '3dEarth2',
-                name: '虚幻地球',
-                name_en: 'Unreal Earth',
-                author: 'GhostCatcg',
-                openUrl: 'https://z2586300277.github.io/show-site/3dEarth2/',
-                githubUrl: 'https://github.com/GhostCatcg/3d-earth',
-                image: HOST + 'threeExamples/openSource/3dEarth2.jpg'
-            },
-            {
-                id: 'fogEarth',
-                name: '雾地球',
-                name_en: 'Fog Earth',
-                author: 'AUTO',
-                openUrl: 'https://dgreenheck.github.io/threejs-procedural-planets/',
-                githubUrl: 'https://github.com/dgreenheck/threejs-procedural-planets',
-                image: HOST + 'threeExamples/openSource/fogEarth.jpg'
-            },
-            {
-                id: 'numberEarth',
-                name: '数字地球',
-                name_en: 'Number Earth',
-                author: 'AUTO',
-                openUrl: 'https://jackgit.github.io/xplan/',
-                githubUrl: 'https://github.com/JackGit/xplan',
-                image: HOST + 'threeExamples/openSource/numberEarth.jpg'
-            },
-            {
                 id: '3dPointsModel',
                 name: '3D点云模型',
                 name_en: '3DPoints Model',
@@ -332,63 +481,7 @@ export default [
                 downloadUrl: 'https://g2657.github.io/examples-server/smartCity/smartCity.zip',
                 image: HOST + 'threeExamples/openSource/smartCity.jpg'
             },
-            {
-                id: '3dGeoMap',
-                name: '3D地图',
-                name_en: '3D GeoMap',
-                author: 'xiaogua-bushigua',
-                githubUrl: 'https://github.com/xiaogua-bushigua/3d-geoMap',
-                openUrl: 'https://z2586300277.github.io/show-site/3dGeoMap',
-                image: FILE_HOST + 'images/3dGeoMap.jpg',
-                links: [
-                    {
-                        name: '📺B站',
-                        url: 'https://www.bilibili.com/video/BV1ku4y1X7wU/'
-                    }
-                ]
-            },
-            {
-                id: 'su7peng',
-                name: 'SU7-Vue3',
-                name_en: 'SU7_Vue3',
-                author: 'Pong-lei',
-                openUrl: 'https://g2657.github.io/examples-server/su7_2/',
-                githubUrl: 'https://github.com/Pong-lei/su7_imitate',
-                image: HOST + 'threeExamples/openSource/su7peng.jpg'
-            },
-            {
-                id: 'su7_three',
-                name: '原生su7',
-                name_en: 'SU7_vanilla',
-                author: 'ASouthernCat',
-                openUrl: 'https://z2586300277.github.io/show-site/su7_car/',
-                githubUrl: 'https://github.com/ASouthernCat/Porsche911-carshow-threejs',
-                image: HOST + 'threeExamples/openSource/su7_three.jpg',
-                links: [
-                    {
-                        name: '📺BiBi',
-                        url: 'https://www.bilibili.com/video/BV1JH4y1N7pT'
-                    }
-                ]
-            },
-            {
-                id: 'feng_ji',
-                name: '风机',
-                name_en: 'Wind Turbine',
-                author: 'AUTO',
-                openUrl: 'https://fengtianxi001.github.io/MF-TurbineMonitor',
-                githubUrl: 'https://github.com/fengtianxi001/MF-TurbineMonitor',
-                image: FILE_HOST + 'images/fengji.jpg'
-            },
-            {
-                id: 'su7_replica',
-                name: 'SU7-Replica',
-                name_en: 'SU7 Replica',
-                author: 'AUTO',
-                openUrl:'https://su7-replica.netlify.app/',
-                githubUrl: 'https://github.com/alphardex/su7-replica',
-                image: HOST + 'threeExamples/openSource/su7_replica.jpg'
-            },
+         
             {
                 id: 'roaming',
                 author: 'AUTO',
@@ -472,25 +565,7 @@ export default [
                 openUrl: 'http://www.nicowebgl.cn/annotations/',
                 image: HOST + 'threeExamples/openSource/unrealstyle.jpg'
             },
-            {
-                id: 'blanderCar',
-                author: 'ASouthernCat',
-                name: '硬核小车',
-                name_en: 'Blender Car',
-                githubUrl: 'https://github.com/ASouthernCat/simple-muscle-car',
-                openUrl: 'https://g2657.github.io/examples-server/blender_car/',
-                image: HOST + 'threeExamples/openSource/blenderCar.jpg',
-                links: [
-                    {
-                        name: '预览(vercel)',
-                        url: 'https://simple-muscle-car.vercel.app/'
-                    },
-                    {
-                        name: '📺BiBi',
-                        url: 'https://www.bilibili.com/video/BV1AcSUY3Ez2'
-                    }
-                ]
-            },
+
             {
                 id: 'small_island',
                 author: 'AUTO',
@@ -581,31 +656,15 @@ export default [
                 openUrl: 'https://waterball.netlify.app/',
                 githubUrl: 'https://github.com/matsuoka-601/waterball',
                 image: HOST + 'threeExamples/openSource/waterBall.jpg'
-            }
-        ]
-    },
-    {
-        pid: 'digitalTwin',
-        name: '数字孪生',
-        name_en: 'digitalTwin',
-        children: [
-            {
-                id: 'digitalFarm',
-                name: '智慧农场',
-                name_en: 'digitalFarm',
-                author: 'AUTO',
-                githubUrl: 'https://github.com/gyrate/digitalFarm',
-                openUrl: 'https://gyrate.github.io/digitalFarm/dist/index.html',
-                image: HOST + 'threeExamples/openSource/digitalFarm.jpg'
             },
             {
-                id: 'StationMonitor',
-                name: '站点监控',
-                name_en: 'Station Monitor',
+                id: '3dAssests',
+                name: '3D资源库',
+                name_en: '3D Assests',
                 author: 'AUTO',
-                openUrl: 'https://fengtianxi001.github.io/MF-StationMonitor/',
-                githubUrl: 'https://github.com/fengtianxi001/MF-StationMonitor',
-                image: HOST + 'threeExamples/openSource/StationMonitor.jpg'
+                openUrl: 'https://boytchev.github.io/3d-assets/',
+                githubUrl: 'https://github.com/boytchev/3d-assets',
+                image: HOST + 'threeExamples/openSource/3dAssests.jpg'
             }
         ]
     },
@@ -745,6 +804,15 @@ export default [
                 openUrl: 'https://bernhard-42.github.io/three-cad-viewer/example.html',
                 githubUrl: 'https://github.com/bernhard-42/three-cad-viewer',
                 image: HOST + 'threeExamples/openSource/cadViewer.jpg'
+            },
+            {
+                id: 'threeText',
+                name: 'three文本渲染',
+                name_en: 'Three Text',
+                author: 'AUTO',
+                githubUrl: 'https://github.com/protectwise/troika/tree/main/packages/troika-three-text',
+                openUrl: 'https://troika-examples.netlify.app/#text',
+                image: HOST + 'threeExamples/openSource/threeText.jpg'
             }
         ]
     },
