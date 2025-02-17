@@ -203,11 +203,20 @@ export default [
             {
                 id: 'Astral3DEditor',
                 name: 'Astral3D编辑器',
-                name_en: 'Astral3D Editor',
+                name_en: 'Astral3DEditor',
                 author: 'AUTO',
                 githubUrl: 'https://github.com/mlt131220/Astral3DEditor',
                 openUrl: 'https://editor.astraljs.com/#/',
                 image: HOST + 'threeExamples/openSource/Astral3DEditor.jpg'
+            },
+            {
+                id: 'buildingEditor',
+                name: '建筑编辑器(fiber)',
+                name_en: 'BuildingEditor',
+                author: 'AUTO',
+                githubUrl: 'https://github.com/krystiandzirba/Rust-Base-Builder',
+                openUrl: 'https://krystiandzirba.github.io/Rust-Base-Builder/',
+                image: HOST + 'threeExamples/openSource/buildingEditor.jpg'
             },
             {
                 id: 'z2586300277_3d_editor',
