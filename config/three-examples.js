@@ -1518,6 +1518,7 @@ export default [
                 author: 'nico',
                 codeUrl: HOST + 'threeExamples/application/isoline.js',
                 image: HOST + 'threeExamples/application/isoline.jpg',
+                referUrl: 'https://codepen.io/boytchev/full/gOQQRLd'
             },
 
             {
