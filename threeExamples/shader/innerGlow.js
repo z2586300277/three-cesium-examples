@@ -88,38 +88,39 @@ scene.add(sphere)
 
 
 const vertexShader1 = `
-    varying vec2 vUV;
+  varying vec2 vUV;
 
-    void main() {
-    vUV = uv;
-        gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0);
-    }
+  void main() {
+  vUV = uv;
+    gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0);
+  }
   `
 const fragmentShader1 = `
-    uniform vec3 uColor;
+  uniform vec3 uColor;
 
-    varying vec2 vUV;
+  varying vec2 vUV;
 
-    float glow(vec2 coord, float radius, float intensity) {
-      return pow(radius / length(coord), intensity);
-    }
+  float glow(vec2 coord, float radius, float intensity) {
+    return pow(radius / length(coord), intensity);
+  }
 
-    void main() {
-      float ratio = glow(vUV - vec2(0.5), 0.1, 3.0);
-      gl_FragColor = vec4(uColor * ratio, 1.0);
-    }
+  void main() {
+    float ratio = glow(vUV - vec2(0.5), 0.1, 3.0);
+    gl_FragColor = vec4(uColor * ratio, ratio);
+  }
 
   `
 const material1 = new THREE.ShaderMaterial({
-    uniforms: {
-        uColor: { value: new THREE.Color(0x00ffff) }
-    },
-    vertexShader: vertexShader1,
-    fragmentShader: fragmentShader1,
-    transparent: true
+  uniforms: {
+    uColor: { value: new THREE.Color(0x00ffff) }
+  },
+  vertexShader: vertexShader1,
+  fragmentShader: fragmentShader1,
+  depthWrite: false,
+  transparent: true
 })
 
-const plane = new THREE.Mesh(new THREE.PlaneGeometry(1, 1), material1)
+const plane = new THREE.Mesh(new THREE.PlaneGeometry(2, 2), material1)
 
 plane.position.set(1, 0, 1)
 
