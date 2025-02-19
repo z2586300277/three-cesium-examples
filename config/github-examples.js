@@ -451,6 +451,15 @@ export default [
                 image: 'https://z2586300277.github.io/show-site/customEffect/customEffect.jpg'
             },
             {
+                id: '3dAssests',
+                name: '3D资源库',
+                name_en: '3D Assests',
+                author: 'AUTO',
+                openUrl: 'https://boytchev.github.io/3d-assets/',
+                githubUrl: 'https://github.com/boytchev/3d-assets',
+                image: HOST + 'threeExamples/openSource/3dAssests.jpg'
+            },
+            {
                 id: '3dPointsModel',
                 name: '3D点云模型',
                 name_en: '3DPoints Model',
@@ -493,32 +502,15 @@ export default [
             },
 
             {
-                id: 'lonlat23',
-                author: 'nico',
-                name: '经纬度路线运动(车流模拟)',
-                name_en: 'Lonlat move',
-                openUrl: 'http://nicowebgl.cn/d3_geo/',
-                image: HOST + 'threeExamples/openSource/lonlat23.jpg'
+                id: 'dissovles',
+                author: 'AUTO',
+                name: '溶解效果',
+                name_en: 'Dissovles',
+                openUrl: 'https://z2586300277.github.io/show-site/dissolve/',
+                githubUrl: 'https://github.com/JatinChopra/Dissolve-Effect',
+                image: HOST + 'threeExamples/openSource/dissolves.jpg'
             },
 
-            {
-                id: 'change',
-                author: 'nico',
-                name: '二三位联动-物理实验',
-                name_en: 'charts sync',
-                githubUrl: 'https://github.com/Nicolas-zn/distance_sign',
-                openUrl: 'http://nicowebgl.cn/distance_sign/',
-                image: HOST + 'threeExamples/openSource/distance_sign.jpg'
-            },
-            {
-                id: 'draw,roam',
-                author: 'nico',
-                name: '绘线漫游',
-                name_en: 'Draw Roam',
-                githubUrl: 'https://github.com/Nicolas-zn/path',
-                openUrl: 'http://nicowebgl.cn/path/',
-                image: HOST + 'threeExamples/openSource/roam.jpg'
-            },
             {
                 id: 'realWater',
                 author: 'AUTO',
@@ -546,24 +538,6 @@ export default [
                 openUrl: 'https://z2586300277.github.io/show-site/music_wobble',
                 downloadUrl: 'https://z2586300277.github.io/show-site/music_wobble/source.zip',
                 image: HOST + 'threeExamples/openSource/music_wobble.jpg',
-            },
-            {
-                id: 'area,pixijs,webgl',
-                author: 'nico',
-                name: '场景导航（免模型）',
-                name_en: 'Scene Nav',
-                githubUrl: 'https://github.com/Nicolas-zn/my_code/blob/main/src/code/interactive_image.vue',
-                openUrl: 'http://nicowebgl.cn/portfolio/#/interactive_image',
-                image: HOST + 'threeExamples/openSource/area.jpg'
-            },
-            {
-                id: 'unreal',
-                author: 'nico',
-                name: 'unreal风格场景标注',
-                name_en: 'Unreal Style',
-                githubUrl: 'https://github.com/Nicolas-zn/annotations',
-                openUrl: 'http://www.nicowebgl.cn/annotations/',
-                image: HOST + 'threeExamples/openSource/unrealstyle.jpg'
             },
 
             {
@@ -657,15 +631,52 @@ export default [
                 githubUrl: 'https://github.com/matsuoka-601/waterball',
                 image: HOST + 'threeExamples/openSource/waterBall.jpg'
             },
+
             {
-                id: '3dAssests',
-                name: '3D资源库',
-                name_en: '3D Assests',
-                author: 'AUTO',
-                openUrl: 'https://boytchev.github.io/3d-assets/',
-                githubUrl: 'https://github.com/boytchev/3d-assets',
-                image: HOST + 'threeExamples/openSource/3dAssests.jpg'
-            }
+                id: 'change',
+                author: 'nico',
+                name: '二三位联动-物理实验',
+                name_en: 'charts sync',
+                githubUrl: 'https://github.com/Nicolas-zn/distance_sign',
+                openUrl: 'http://nicowebgl.cn/distance_sign/',
+                image: HOST + 'threeExamples/openSource/distance_sign.jpg'
+            },
+            {
+                id: 'lonlat23',
+                author: 'nico',
+                name: '经纬度路线运动(车流模拟)',
+                name_en: 'Lonlat move',
+                openUrl: 'http://nicowebgl.cn/d3_geo/',
+                image: HOST + 'threeExamples/openSource/lonlat23.jpg'
+            },
+            {
+                id: 'draw,roam',
+                author: 'nico',
+                name: '绘线漫游',
+                name_en: 'Draw Roam',
+                githubUrl: 'https://github.com/Nicolas-zn/path',
+                openUrl: 'http://nicowebgl.cn/path/',
+                image: HOST + 'threeExamples/openSource/roam.jpg'
+            },
+            {
+                id: 'area,pixijs,webgl',
+                author: 'nico',
+                name: '场景导航（免模型）',
+                name_en: 'Scene Nav',
+                githubUrl: 'https://github.com/Nicolas-zn/my_code/blob/main/src/code/interactive_image.vue',
+                openUrl: 'http://nicowebgl.cn/portfolio/#/interactive_image',
+                image: HOST + 'threeExamples/openSource/area.jpg'
+            },
+            {
+                id: 'unreal',
+                author: 'nico',
+                name: 'unreal风格场景标注',
+                name_en: 'Unreal Style',
+                githubUrl: 'https://github.com/Nicolas-zn/annotations',
+                openUrl: 'http://www.nicowebgl.cn/annotations/',
+                image: HOST + 'threeExamples/openSource/unrealstyle.jpg'
+            },
+        
         ]
     },
     {

@@ -182,6 +182,14 @@ export default [
                 image: HOST + 'threeExamples/shader/planeScan.jpg',
             },
             {
+                id: 'circleWave',
+                name: '圆波扫光',
+                name_en: 'Circle Wave',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/shader/circleWave.js',
+                image: HOST + 'threeExamples/shader/circleWave.jpg',
+            },
+            {
                 id: 'transparentGradient',
                 name: '透明渐变',
                 name_en: 'Trans Grad',
