@@ -143,6 +143,7 @@ function render() {
     renderer.render(scene, camera);
 }
 
+//reference Paul https://codepen.io/prisoner849/pen/XPVGLp
 function getFlameMaterial(isFrontSide) {
     let side = isFrontSide ? THREE.FrontSide : THREE.BackSide;
     return new THREE.ShaderMaterial({

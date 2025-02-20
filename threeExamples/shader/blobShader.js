@@ -10,7 +10,7 @@ var Theme = {
   darker: 0x000000
 };
 
-
+// reference https://codepen.io/vcomics/pen/ZwNgvX
 var scene, camera, renderer, mat;
 var _width, _height;
 var _primitive;

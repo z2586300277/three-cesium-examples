@@ -1,7 +1,7 @@
 import * as THREE from "three"
 import * as BufferGeometryUtils from "three/examples/jsm/utils/BufferGeometryUtils.js";
 import {OrbitControls} from "three/examples/jsm/controls/OrbitControls.js";
-
+// refer https://codepen.io/prisoner849/pen/bGgQmrX
 let simpleNoise = `
 float N (vec2 st) { // https://thebookofshaders.com/10/
     return fract( sin( dot( st.xy, vec2(12.9898,78.233 ) ) ) *  43758.5453123);

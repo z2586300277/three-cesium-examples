@@ -50,7 +50,7 @@ isoTexture.wrapT = THREE.RepeatWrapping;
 
 
 // some terrain with simlex noise
-
+// reference https://codepen.io/boytchev/full/gOQQRLd
 var geometry = new THREE.PlaneGeometry(6, 4, 150, 100),
     pos = geometry.getAttribute('position'),
     uv = geometry.getAttribute('uv'),

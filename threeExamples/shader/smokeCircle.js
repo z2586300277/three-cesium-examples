@@ -1,6 +1,7 @@
 import * as THREE from 'three';
 import gsap from 'gsap';
 
+// reference Victor Vergara https://codepen.io/vcomics/pen/KBMyjE
 window.addEventListener('load', init, false);
 function init() {
   createWorld();
