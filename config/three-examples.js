@@ -908,7 +908,8 @@ export default [
                 name: "随机粒子效果",
                 tag: 'HTML',
                 name_en: "Random",
-                author: "giser2017",
+                author: "Threejs",
+                referUrl: 'https://codepen.io/prisoner849/pen/ExpLBEO',
                 htmlUrl: HOST + "threeExamples/particle/RandomParticle.html",
                 image: HOST + "threeExamples/particle/RandomParticle.jpg",
                 meta: {
@@ -922,7 +923,7 @@ export default [
                 name: "粒子效果的行星",
                 tag: 'HTML',
                 name_en: "Planet",
-                author: "giser2017",
+                author: "Threejs",
                 htmlUrl: HOST + "threeExamples/particle/PlanetParticle.html",
                 image: HOST + "threeExamples/particle/PlanetParticle.jpg",
                 meta: {
@@ -1466,6 +1467,7 @@ export default [
                 name: '新年快乐',
                 name_en: 'Happy Year',
                 author: 'yjsdszz',
+                referUrl: 'https://codepen.io/prisoner849/pen/OJqLMKN',
                 codeUrl: HOST + 'threeExamples/application/happyNewYear.js',
                 image: HOST + 'threeExamples/application/happyNewYear.jpg',
                 meta: {
