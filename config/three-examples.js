@@ -320,6 +320,7 @@ export default [
                 author: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/shader/candleShader.js',
                 image: HOST + 'threeExamples/shader/candleShader.jpg',
+                referUrl: 'https://codepen.io/prisoner849/pen/XPVGLp'
             },
             {
                 id: 'ringShader',
@@ -1613,6 +1614,14 @@ export default [
                 author: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/animation/personAnimation.js',
                 image: HOST + 'threeExamples/animation/personAnimation.jpg',
+            },
+            {
+                id: 'personThirdMove',
+                name: '第三人称移动',
+                name_en: 'Third Move',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/animation/personThirdMove.js',
+                image: HOST + 'threeExamples/animation/personThirdMove.jpg'
             }
         ]
     },

@@ -36,7 +36,7 @@ let rotations = `
   }
 `;
 
-
+// reference paul https://codepen.io/prisoner849/pen/gbYgjom
 class Postprocessing extends EffectComposer{
   constructor(){
     super(renderer, new THREE.WebGLRenderTarget(innerWidth, innerHeight, {samples: 1}));

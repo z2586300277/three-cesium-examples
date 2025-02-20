@@ -2,6 +2,7 @@ import * as THREE from "three";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls.js";
 import { GUI } from "three/examples/jsm/libs/lil-gui.module.min.js"
 
+// reference https://codepen.io/prisoner849/pen/LYmXKrr
 let noise = `
 //	Simplex 4D Noise 
 //	by Ian McEwan, Ashima Arts
