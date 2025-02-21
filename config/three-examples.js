@@ -215,6 +215,7 @@ export default [
                 name: '波涛海浪',
                 name_en: 'move Sea',
                 author: 'z2586300277',
+                referUrl: 'https://codepen.io/aderaaij/pen/XWpMONO',
                 codeUrl: HOST + 'threeExamples/shader/raningSea.js',
                 image: HOST + 'threeExamples/shader/raningSea.jpg',
             },

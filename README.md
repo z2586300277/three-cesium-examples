@@ -1,6 +1,6 @@
 # 💎 原生 Three 和 Cesium 案例 - 为爱发电 - 只做开源 -
 
-## 国内TOP1 - 👋 - 分享知识 - ⭐ - 点星助力 - ⚡ - 防止断更(日更)
+## 国内TOP1 - 👋 - 分享知识 - ⭐ - 点星助力 - ⚡ - 防止断更
 
 #### Web3D相关的资源、仓库、链接 或 没有的效果案例，可使用 Issues 留言进行投稿✍。
 
@@ -12,7 +12,9 @@
 | :---------------:| :---------------: | :---------: | :--------- |
 | <img src="https://z2586300277.github.io/3d-file-server/images/QQ.png" height="140px" /> | <img src="https://z2586300277.github.io/3d-file-server/images/wechat.jpg" height="140px" /> | <img src="https://z2586300277.github.io/3d-file-server/images/threeCesiumExamples.jpg" width="200px" height="140px" /> | <img src="https://api.star-history.com/svg?repos=z2586300277/three-editor,z2586300277/three-cesium-examples&type=Date" width="200px" height="140px" /> |
 
-- 2025 为长久开源考虑，未来开源相关内容会陆续转移到 [开源组织](https://github.com/OpenThree) - OpenThree、[仓库链接](https://github.com/OpenThree/three-cesium-examples) 、 [预览地址](https://openthree.github.io/three-cesium-examples/)
+- 2025 拥抱未来，学习webgpu，分享永不停止，从零打造webgpu案例库 https://openthree.github.io/webgpu
+
+- 为长久开源考虑，未来开源相关内容会陆续转移到 [开源组织](https://github.com/OpenThree) - OpenThree、[仓库链接](https://github.com/OpenThree/three-cesium-examples) 、 [预览地址](https://openthree.github.io/three-cesium-examples/)
 
 - github dev 分支实时预览 http://z2586300277.github.io/three-cesium-examples
 
