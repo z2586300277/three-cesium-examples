@@ -2,6 +2,7 @@ import * as THREE from "three";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls.js";
 import * as dat from "dat.gui";
 
+// refer https://codepen.io/aderaaij/pen/XWpMONO
 const vertexShader = ` #include <fog_pars_vertex>
 
 uniform float uTime;

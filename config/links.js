@@ -10,6 +10,12 @@ export default {
         footLink: HOST
     },
     links: [
+
+        {
+            name: '🔥WebGPU',
+            url: 'https://openthree.github.io/webgpu'
+        },
+        
         {
             name: '📦Three',
             children: [
