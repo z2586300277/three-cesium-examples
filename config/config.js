@@ -23,6 +23,29 @@ window.GLOBAL_CONFIG = {
 
 }
 
+/* 注入 HTML */
+window.HTML_TEMPLATE = 
+`<style>
+    body {
+        margin: 0;
+        padding: 1px;
+        box-sizing: border-box;
+        background-color: #1f1f1f;
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+    }
+    #box {
+        width: 100%;
+        height: 100%;
+    }
+</style>
+</head>
+<body>
+<div id="box"></div>`
+
 /* 依赖注入可使用 如 线上官网 或 cdn 或者本地路径 */
 window.THREE_CESIUM_NAVIGATION = [
     {
