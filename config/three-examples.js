@@ -654,7 +654,7 @@ export default [
                 id: "fireball",
                 name: "火球效果",
                 name_en: "Fireball",
-                author: "giser2017",
+                improver: "giser2017",
                 htmlUrl: HOST + "threeExamples/shader/fireball.html",
                 image: FILE_HOST + "images/four/fireball.png",
                 meta: {
@@ -1001,7 +1001,7 @@ export default [
                 id: 'pointsEarth',
                 name: '粒子地球',
                 name_en: 'Points Earth',
-                author: 'giser2017',
+                improver: 'giser2017',
                 codeUrl: HOST + 'threeExamples/particle/pointsEarth.js',
                 image: HOST + 'threeExamples/particle/pointsEarth.jpg',
                 meta: {
@@ -1329,7 +1329,7 @@ export default [
                 id: 'roadShader',
                 name: '道路流光',
                 name_en: 'Road Shader',
-                author: 'z2586300277',
+                improver: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/application/roadShader.js',
                 image: HOST + 'threeExamples/application/roadShader.jpg',
                 referUrl: 'https://juejin.cn/post/7386485874300223514'
@@ -1793,7 +1793,7 @@ export default [
                 id: "uvTransformation",
                 name: "UV图像变换",
                 name_en: "UV Transform",
-                author: "giser2017",
+                improver: "giser2017",
                 codeUrl: HOST + 'threeExamples/effectComposer/uvTransformation.js',
                 image: FILE_HOST + "images/four/uvTransformation.png",
                 meta: {

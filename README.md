@@ -26,7 +26,7 @@
 
 - 关注 git histroy, 记录人生的每一天, 开发者人生历史的足迹。(点个 follow 跟随作者足迹🍏)
 
-- 源码内存约10M，运行框架和在线调试源于 作者名下的 three-editor库 - [链接](https://z2586300277.github.io/three-editor/dist/#/example)。
+- 源码内存约10M，运行框架(Vue)和在线调试源于 作者名下的 three-editor库 - [链接](https://z2586300277.github.io/three-editor/dist/#/example)。
 
 -  注: 留下链接，便于企业寻求专业的技术或人员支持，个人开发者承接项目、资源售卖，交流支持🐋。
 
