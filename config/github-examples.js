@@ -612,6 +612,14 @@ export default [
                 githubUrl: 'https://github.com/mattbradley/dash',
                 image: HOST + 'threeExamples/openSource/driverCar.jpg'
             },
+            {   
+                id: '3d-portfolio',
+                name: '3D Portfolio',
+                author: 'AUTO',
+                githubUrl: 'https://github.com/TomasGonzalez/3d-portfolio',
+                openUrl: 'https://tomasgonzalez.github.io/3d-portfolio/',
+                image: HOST + 'threeExamples/openSource/3d-portfolio.jpg'
+            },
             {
                 id: 'fire',
                 name: '烟花',

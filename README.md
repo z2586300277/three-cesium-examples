@@ -12,7 +12,7 @@
 | :---------------:| :---------------: | :---------: | :--------- |
 | <img src="https://z2586300277.github.io/3d-file-server/images/QQ.png" height="140px" /> | <img src="https://z2586300277.github.io/3d-file-server/images/wechat.jpg" height="140px" /> | <img src="https://z2586300277.github.io/3d-file-server/images/threeCesiumExamples.jpg" width="200px" height="140px" /> | <img src="https://api.star-history.com/svg?repos=z2586300277/three-editor,z2586300277/three-cesium-examples&type=Date" width="200px" height="140px" /> |
 
-- 2025 拥抱未来，学习webgpu，分享永不停止，从零打造webgpu案例库 https://openthree.github.io/webgpu
+- 2025 拥抱未来，学习webgpu，分享永不停止，从零打造webgpu案例库 - [仓库链接](https://openthree.github.io/webgpu)
 
 - 为长久开源考虑，未来开源相关内容会陆续转移到 [开源组织](https://github.com/OpenThree) - OpenThree、[仓库链接](https://github.com/OpenThree/three-cesium-examples) 、 [预览地址](https://openthree.github.io/three-cesium-examples/)
 
@@ -26,7 +26,7 @@
 
 - 关注 git histroy, 记录人生的每一天, 开发者人生历史的足迹。(点个 follow 跟随作者足迹🍏)
 
-- 源码内存约10M，运行框架和在线调试源于 作者名下的 three-editor库 - [链接](https://z2586300277.github.io/three-editor/dist/#/example)。
+- 源码内存约10M，运行框架(Vue)和在线调试源于 作者名下的 three-editor库 - [链接](https://z2586300277.github.io/three-editor/dist/#/example)。
 
 -  注: 留下链接，便于企业寻求专业的技术或人员支持，个人开发者承接项目、资源售卖，交流支持🐋。
 
