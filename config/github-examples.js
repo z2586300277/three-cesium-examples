@@ -641,6 +641,16 @@ export default [
             },
 
             {
+                id: 'waterShader',
+                name: '水效果',
+                name_en: 'Water Shader',
+                author: 'AUTO',
+                githubUrl: 'https://github.com/dgreenheck/threejs-water-shader',
+                openUrl: 'https://dgreenheck.github.io/threejs-water-shader/',
+                image: HOST + 'threeExamples/openSource/threejs-water-shader.jpg'
+            },
+
+            {
                 id: 'change',
                 author: 'nico',
                 name: '二三位联动-物理实验',
