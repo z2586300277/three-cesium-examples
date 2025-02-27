@@ -1635,6 +1635,14 @@ export default [
                 author: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/animation/personThirdMove.js',
                 image: HOST + 'threeExamples/animation/personThirdMove.jpg'
+            },
+            {
+                id: 'personFirstMove',
+                name: '第一人称移动',
+                name_en: 'First Move',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/animation/personFirstMove.js',
+                image: HOST + 'threeExamples/animation/personFirstMove.jpg'
             }
         ]
     },
