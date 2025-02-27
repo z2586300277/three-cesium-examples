@@ -668,7 +668,7 @@ export default [
                 name: '一团揉动',
                 name_en: 'Blob Shader',
                 referUrl: 'https://codepen.io/vcomics/pen/ZwNgvX',
-                author: 'z2586300277',
+                improver: 'z2586300277',
                 codeUrl: HOST + "threeExamples/shader/blobShader.js",
                 image: HOST + "threeExamples/shader/blobShader.jpg",
             },
@@ -710,7 +710,7 @@ export default [
                 id: 'waterSky',
                 name: '水天一色',
                 name_en: 'Water Sky',
-                author: 'z2586300277',
+                improver: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/shader/waterSky.js',
                 image: HOST + 'threeExamples/shader/waterSky.jpg',
                 meta: {
@@ -781,7 +781,7 @@ export default [
                 id: 'contour',
                 name: '魔幻山体',
                 name_en: 'Contour',
-                author: 'nico',
+                improver: 'nico',
                 codeUrl: HOST + 'threeExamples/shader/contour.js',
                 image: HOST + 'threeExamples/shader/contour.jpg',
             },
@@ -1111,6 +1111,15 @@ export default [
                 referUrl: 'https://codepen.io/dlch/pen/eWXgyo',
                 codeUrl: HOST + 'threeExamples/particle/fireParticles.js',
                 image: HOST + 'threeExamples/particle/fireParticles.jpg',
+            },
+            {
+                id: 'realFire',
+                name: '真实火焰',
+                name_en: 'Real Fire',
+                tip: '使用claude 3.7 sonnect 帮助实现',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/particle/realFire.js',
+                image: HOST + 'threeExamples/particle/realFire.jpg'
             }
         ]
     },
@@ -1626,6 +1635,14 @@ export default [
                 author: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/animation/personThirdMove.js',
                 image: HOST + 'threeExamples/animation/personThirdMove.jpg'
+            },
+            {
+                id: 'personFirstMove',
+                name: '第一人称移动',
+                name_en: 'First Move',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/animation/personFirstMove.js',
+                image: HOST + 'threeExamples/animation/personFirstMove.jpg'
             }
         ]
     },
