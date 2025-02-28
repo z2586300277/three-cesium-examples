@@ -1601,7 +1601,20 @@ export default [
                 image: 'https://coderfmc.github.io/three.js-demo/redRouse.gif',
                 improver: 'FFMMCC',
                 referUrl: 'https://gitee.com/fu-meichuan/three.js-journey/tree/master/47.redRose'
-            }
+            },
+
+            {
+                id: 'samplexWave',
+                name: '采样波',
+                tag: 'Ai Create',
+                tip: 'use Claude 3.7 sonnect Thinking Preivew in vscode github copilot generate all code',
+                name_en: 'Samplex Wave',
+                author: 'z2586300277',
+                improver: 'z2586300277',
+                referUrl: 'https://codepen.io/calmound/pen/gbOPXER',
+                codeUrl: HOST + 'threeExamples/application/samplexWave.js',
+                image: HOST + 'threeExamples/application/samplexWave.jpg',
+            },
             
         ]
     },
