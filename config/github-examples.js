@@ -559,6 +559,15 @@ export default [
                 image: HOST + 'threeExamples/openSource/threejs-image-gallery.jpg'
             },
             {
+                id: 'ezTree',
+                name: '树',
+                name_en: 'Tree',
+                author: 'AUTO',
+                openUrl: 'https://www.eztree.dev/',
+                githubUrl: 'https://github.com/dgreenheck/ez-tree',
+                image: HOST + 'threeExamples/openSource/ezTree.jpg'
+            },
+            {
                 id: 'noise_gird',
                 name: '噪声网格',
                 name_en: 'Noise Grid',
