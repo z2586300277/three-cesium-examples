@@ -18,7 +18,7 @@ export default [
                 url: 'https://space.bilibili.com/245165721'
             },
             {
-                name: '🍃打赏',
+                name: '💰打赏',
                 url: 'https://z2586300277.github.io/three-editor/dist/wx_pay.jpg'
             }
         ]
@@ -203,7 +203,7 @@ export default [
                 url: 'https://space.bilibili.com/269344644'
             },
             {
-                name: '🍃打赏',
+                name: '💰打赏',
                 url: 'https://jiawanlong.github.io/ds.jpg'
             }
         ],
