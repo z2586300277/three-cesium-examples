@@ -4,29 +4,27 @@
 
 #### Web3D相关的资源、仓库、链接 或 没有的效果案例，可使用 Issues 留言进行投稿✍。
 
-#### 方便开发者资源展示、保存、共享、查阅📘。( 想要加入并管理仓库的开发者联系作者🍉 )
-
-- 注：尽量不要提交超过200k的文件，image 控制压缩到 10k，在线压缩 - [链接](https://yasuo.xunjiepdf.com/img/ )
+#### 3D开发者记录、查阅、共享、让更多人看到自己、结识人脉📘。(有意愿加入管理仓库的请联系作者🍉)
 
 | QQ 群 |           微信群            |              预览图                       | Stars           |
 | :---------------:| :---------------: | :---------: | :--------- |
 | <img src="https://z2586300277.github.io/3d-file-server/images/QQ.png" height="140px" /> | <img src="https://z2586300277.github.io/3d-file-server/images/wechat.jpg" height="140px" /> | <img src="https://z2586300277.github.io/3d-file-server/images/threeCesiumExamples.jpg" width="200px" height="140px" /> | <img src="https://api.star-history.com/svg?repos=z2586300277/three-editor,z2586300277/three-cesium-examples&type=Date" width="200px" height="140px" /> |
 
-- 2025 拥抱未来，学习webgpu，分享永不停止，从零打造webgpu案例库 - [仓库链接](https://openthree.github.io/webgpu)
-
-- 为长久开源考虑，未来开源相关内容会陆续转移到 [开源组织](https://github.com/OpenThree) - OpenThree、[仓库链接](https://github.com/OpenThree/three-cesium-examples) 、 [预览地址](https://openthree.github.io/three-cesium-examples/)
-
 - github dev 分支实时预览 http://z2586300277.github.io/three-cesium-examples
 
-- vercel 部署预览 https://three-cesium-examples.vercel.app
+- 由于此仓库关注和浏览的人很多且活跃, 仓库会经常更新。(点个 watch 获取最新动态🐸)
 
-- 人生旅程中的 Web3D 知识记录, 复习回顾, 高效查阅, 资源共享, 为爱发电。(有好的仓库或作品分享一下🍀)
+- 关注 git histroy, 记录人生的每一天, 开发者人生历史的足迹。(点个 follow 监视作者🍏)
 
-- 由于接收到了各平台同学点赞鼎力支持, 仓库每日更新。(点个 watch 获取最新动态🐸)
-
-- 关注 git histroy, 记录人生的每一天, 开发者人生历史的足迹。(点个 follow 跟随作者足迹🍏)
+- 人生旅程中的 Web3D 知识记录, 复习回顾, 高效查阅, 资源共享, 为爱发电。(fork 一下提交自己作品🍀)
 
 - 源码内存约10M，运行框架(Vue)和在线调试源于 作者名下的 three-editor库 - [链接](https://z2586300277.github.io/three-editor/dist/#/example)。
+
+- 注：尽量不要提交超过200k的文件，image 控制压缩到 10k，在线压缩 - [链接](https://yasuo.xunjiepdf.com/img/ )
+
+- 2025 拥抱未来，学习webgpu，分享永不停止，从零打造webgpu案例库 - [仓库链接](https://openthree.github.io/webgpu)
+
+- 为长久开源考虑，未来开源相关内容会陆续转移到 [开源组织](https://github.com/OpenThree) - OpenThree、[仓库链接](https://github.com/OpenThree/three-cesium-examples) 、 [预览地址](https://openthree.github.io/three-cesium-links)
 
 -  注: 留下链接，便于企业寻求专业的技术或人员支持，个人开发者承接项目、资源售卖，交流支持🐋。
 
@@ -48,7 +46,7 @@
 
 #### ✋ 如果这些里面有案例帮助了您，有意的话您可以提交您的作品，让爱传递给更多开发者
 
-#### 👏 加入仓库的开发者，可自行创建自己的分支，或者在 dev 分支直接开发
+#### 👏 加入管理仓库的开发者，可自行创建自己的分支，或者在 dev 分支直接开发
 
 #### 📑 fork 仓库开发 - 增加用户信息 - 提交代码 - 合并到 dev
 
