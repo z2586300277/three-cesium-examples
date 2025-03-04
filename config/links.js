@@ -11,10 +11,10 @@ export default {
     },
     links: [
 
-        {
-            name: '🔥WebGPU',
-            url: 'https://openthree.github.io/webgpu'
-        },
+        // {
+        //     name: '🔥WebGPU',
+        //     url: 'https://openthree.github.io/webgpu'
+        // },
         
         {
             name: '📦Three',

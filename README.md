@@ -1,4 +1,4 @@
-# 💎 原生 Three 和 Cesium 案例 - 为爱发电 - 只做开源 -
+# 💎 Three.js 和 Cesium.js 案例 - 为爱发电 - 只做开源 -
 
 ## 国内TOP1 - 👋 - 分享知识 - ⭐ - 点星助力 - ⚡ - 更新到死
 
@@ -10,6 +10,8 @@
 | :---------------:| :---------------: | :---------: | :--------- |
 | <img src="https://z2586300277.github.io/3d-file-server/images/QQ.png" height="140px" /> | <img src="https://z2586300277.github.io/3d-file-server/images/wechat.jpg" height="140px" /> | <img src="https://z2586300277.github.io/3d-file-server/images/threeCesiumExamples.jpg" width="200px" height="140px" /> | <img src="https://api.star-history.com/svg?repos=z2586300277/three-editor,z2586300277/three-cesium-examples&type=Date" width="200px" height="140px" /> |
 
+- 2025 拥抱未来，分享永不停止 - [开源组织](https://openthree.github.io/three-cesium-links)，从零打造WebGPU开源案例 - [链接](https://openthree.github.io/webgpu)
+
 - github dev 分支实时预览 http://z2586300277.github.io/three-cesium-examples
 
 - 由于此仓库关注和浏览的人很多且活跃, 仓库会经常更新。(点个 watch 获取最新动态🐸)
@@ -18,15 +20,11 @@
 
 - 人生旅程中的 Web3D 知识记录, 复习回顾, 高效查阅, 资源共享, 为爱发电。(fork 一下提交自己作品🍀)
 
-- 源码内存约10M，运行框架(Vue)和在线调试源于 作者名下的 three-editor库 - [链接](https://z2586300277.github.io/three-editor/dist/#/example)。
+- 源码内存约10M，运行框架(Vue)和在线调试源于 作者名下的 three-editor库 - [链接](https://z2586300277.github.io/three-editor/dist/#/example)
 
-- 注：尽量不要提交超过200k的文件，image 控制压缩到 10k，在线压缩 - [链接](https://yasuo.xunjiepdf.com/img/ )
+- 注：尽量不要提交超过200k的文件，image 控制压缩到 10k，在线压缩 - [链接](https://yasuo.xunjiepdf.com/img/)
 
-- 2025 拥抱未来，学习webgpu，分享永不停止，从零打造webgpu案例库 - [仓库链接](https://openthree.github.io/webgpu)
-
-- 为长久开源考虑，未来开源相关内容会陆续转移到 [开源组织](https://github.com/OpenThree) - OpenThree、[仓库链接](https://github.com/OpenThree/three-cesium-examples) 、 [预览地址](https://openthree.github.io/three-cesium-links)
-
--  注: 留下链接，便于企业寻求专业的技术或人员支持，个人开发者承接项目、资源售卖，交流支持🐋。
+- 留下链接，便于企业寻求专业的技术或人员支持，个人开发者承接项目、资源售卖，交流支持🐋。
 
 ### 👋 联系(任意用户自行添加）
 
