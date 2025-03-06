@@ -860,6 +860,14 @@ export default [
                 openUrl: 'https://marcofugaro.github.io/three-projected-material/',
                 githubUrl: 'https://github.com/marcofugaro/three-projected-material',
                 image: HOST + 'threeExamples/openSource/textureProject.jpg'
+            },
+            {
+                id: 'threeGeospatial',
+                name: '地理空间',
+                name_en: 'Geospatial',
+                githubUrl: 'https://github.com/takram-design-engineering/three-geospatial',
+                openUrl: 'https://takram-design-engineering.github.io/three-geospatial/',
+                image: HOST + 'threeExamples/openSource/threeGeospatial.jpg'
             }
         ]
     },
