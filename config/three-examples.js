@@ -1615,6 +1615,15 @@ export default [
                 codeUrl: HOST + 'threeExamples/application/samplexWave.js',
                 image: HOST + 'threeExamples/application/samplexWave.jpg',
             },
+
+            {
+                id: 'tweenFire',
+                name: '精灵火花',
+                name_en: 'Tween Fire',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/application/tweenFire.js',
+                image: HOST + 'threeExamples/application/tweenFire.jpg',
+            }
             
         ]
     },
