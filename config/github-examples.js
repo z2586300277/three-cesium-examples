@@ -179,8 +179,8 @@ export default [
     },
     {
         pid: 'editor',
-        name: '编辑器',
-        name_en: 'Editor',
+        name: '三维编辑',
+        name_en: 'Three Editor',
         children: [
             {
                 id: 'shadowEditor',
@@ -851,6 +851,23 @@ export default [
                 githubUrl: 'https://github.com/protectwise/troika/tree/main/packages/troika-three-text',
                 openUrl: 'https://troika-examples.netlify.app/#text',
                 image: HOST + 'threeExamples/openSource/threeText.jpg'
+            },
+            {
+                id: 'textureProject',
+                name: '纹理投影',
+                name_en: 'Texture Project',
+                author: 'AUTO',
+                openUrl: 'https://marcofugaro.github.io/three-projected-material/',
+                githubUrl: 'https://github.com/marcofugaro/three-projected-material',
+                image: HOST + 'threeExamples/openSource/textureProject.jpg'
+            },
+            {
+                id: 'threeGeospatial',
+                name: '地理空间',
+                name_en: 'Geospatial',
+                githubUrl: 'https://github.com/takram-design-engineering/three-geospatial',
+                openUrl: 'https://takram-design-engineering.github.io/three-geospatial/',
+                image: HOST + 'threeExamples/openSource/threeGeospatial.jpg'
             }
         ]
     },

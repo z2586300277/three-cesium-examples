@@ -887,6 +887,15 @@ export default [
                 image: 'https://coderfmc.github.io/three.js-demo/全息投影.png',
                 improver: 'FFMMCC',
                 referUrl: 'https://gitee.com/fu-meichuan/three.js-journey/tree/master/30Hologram'
+            },
+            {
+                id: 'smoke',
+                name: '燃烧烟雾',
+                name_en: 'Smoke',
+                author: 'z2586300277',
+                improver: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/shader/smoke.js',
+                image: HOST + 'threeExamples/shader/smoke.jpg',
             }
         ]
     },
@@ -1615,6 +1624,15 @@ export default [
                 codeUrl: HOST + 'threeExamples/application/samplexWave.js',
                 image: HOST + 'threeExamples/application/samplexWave.jpg',
             },
+
+            {
+                id: 'tweenFire',
+                name: '精灵火花',
+                name_en: 'Tween Fire',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/application/tweenFire.js',
+                image: HOST + 'threeExamples/application/tweenFire.jpg',
+            }
             
         ]
     },
