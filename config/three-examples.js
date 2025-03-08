@@ -114,6 +114,7 @@ export default [
                 name: '草地着色器',
                 name_en: 'Grass Shader',
                 author: 'Siricee',
+                improver: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/shader/grassShader.js',
                 image: HOST + 'threeExamples/shader/grassShader.jpg',
                 meta: {
@@ -136,6 +137,7 @@ export default [
                 name: '2025',
                 name_en: '2025 Year',
                 author: 'Threejs',
+                improver: 'z2586300277',
                 referUrl: 'https://codepen.io/prisoner849/pen/gbYgjom',
                 codeUrl: HOST + 'threeExamples/application/2025Year.js',
                 image: HOST + 'threeExamples/application/2025Year.jpg',
@@ -223,7 +225,7 @@ export default [
                 id: 'fenceWall',
                 name: '围墙着色器',
                 name_en: 'Fence Wall',
-                author: 'yjsdszz',
+                improver: 'yjsdszz',
                 codeUrl: HOST + 'threeExamples/shader/fenceWall.js',
                 image: HOST + 'threeExamples/shader/fenceWall.jpg',
                 meta: {
@@ -306,6 +308,7 @@ export default [
                 name: '雷达着色器',
                 name_en: 'Radar Shader',
                 author: 'stonerao',
+                improver: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/shader/radarShader.js',
                 image: HOST + 'threeExamples/shader/radarShader.jpg',
                 meta: {
@@ -328,6 +331,7 @@ export default [
                 name: '环形着色器',
                 name_en: 'Ring Shader',
                 author: 'stonerao',
+                improver: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/shader/ringShader.js',
                 image: HOST + 'threeExamples/shader/ringShader.jpg',
                 meta: {
@@ -371,6 +375,7 @@ export default [
                 name: '高斯模糊',
                 name_en: 'Gaussian Blur',
                 author: 'hafly',
+                improver: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/shader/gaussianBlur.js',
                 image: HOST + 'threeExamples/shader/gaussianBlur.jpg',
                 meta: {
@@ -392,6 +397,7 @@ export default [
                 name: '半圆',
                 name_en: 'Half Circle',
                 author: 'yiiiiiiqianyao',
+                improver: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/shader/halfCircle.js',
                 image: HOST + 'threeExamples/shader/halfCircle.jpg',
                 meta: {
@@ -405,6 +411,7 @@ export default [
                 name: '扭曲',
                 name_en: 'Vortex Shader',
                 author: 'hafly',
+                improver: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/shader/vortexShader.js',
                 image: HOST + 'threeExamples/shader/vortexShader.jpg'
             },
@@ -413,6 +420,7 @@ export default [
                 name: '环彩虹着色器',
                 name_en: 'Rings Shader',
                 author: 'stonerao',
+                improver: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/shader/ringsShader.js',
                 image: HOST + 'threeExamples/shader/ringsShader.jpg',
             },
@@ -502,6 +510,7 @@ export default [
                 name: '栅格网格',
                 name_en: 'Raster Grid',
                 author: 'yjsdszz',
+                improver: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/shader/rasterGrid.js',
                 image: HOST + 'threeExamples/shader/rasterGrid.jpg',
                 meta: {
@@ -815,6 +824,7 @@ export default [
                 name: '内发光',
                 name_en: 'Inner Glow',
                 author: 'quyinggang',
+                improver: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/shader/innerGlow.js',
                 image: HOST + 'threeExamples/shader/innerGlow.jpg',
             },
@@ -984,7 +994,7 @@ export default [
                 id: "downSnow",
                 name: "下雪",
                 name_en: "Snow",
-                author: "yjsdszz",
+                improver: "yjsdszz",
                 codeUrl: HOST + "threeExamples/particle/downSnow.js",
                 image: HOST + "threeExamples/particle/downSnow.jpg",
                 meta: {
@@ -1039,7 +1049,7 @@ export default [
                 id: 'sphereLine',
                 name: '球体线条',
                 name_en: 'Sphere Line',
-                author: 'z2586300277',
+                improver: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/particle/sphereLine.js',
                 image: HOST + 'threeExamples/particle/sphereLine.jpg',
             },
@@ -1870,7 +1880,7 @@ export default [
                 id: "EdgeBlurringEffect",
                 name: "边缘模糊效果",
                 name_en: "Edge Blur",
-                author: "giser2017",
+                improver: "giser2017",
                 codeUrl: HOST + 'threeExamples/effectComposer/EdgeBlurringEffect.js',
                 image: FILE_HOST + "images/four/EdgeBlurringEffect.png",
                 meta: {
