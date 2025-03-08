@@ -660,6 +660,16 @@ export default [
             },
 
             {
+                id: 'threejs-caustics',
+                name: '水波纹',
+                name_en: 'Caustics',
+                author: 'AUTO',
+                githubUrl: 'https://github.com/martinRenou/threejs-caustics',
+                openUrl: 'https://martinRenou.github.io/threejs-caustics/',
+                image: HOST + 'threeExamples/openSource/threejs-caustics.jpg'
+            },
+
+            {
                 id: 'change',
                 author: 'nico',
                 name: '二三位联动-物理实验',
