@@ -174,6 +174,15 @@ export default [
                 githubUrl: 'https://github.com/spite/genuary-2022',
                 openUrl: 'https://spite.github.io/genuary-2022/',
                 image: HOST + 'threeExamples/openSource/genuary.jpg'
+            },
+            {
+                id: 'threeLab',
+                author: 'AUTO',
+                name: 'ThreeLab',
+                name_en: 'ThreeLab',
+                githubUrl: 'https://github.com/lo-th/three.lab',
+                openUrl: 'https://lo-th.github.io/three.lab/examples/#webgl_gpgpu_water',
+                image: HOST + 'threeExamples/openSource/threelab.jpg'
             }
         ]
     },
