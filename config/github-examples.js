@@ -174,6 +174,15 @@ export default [
                 githubUrl: 'https://github.com/spite/genuary-2022',
                 openUrl: 'https://spite.github.io/genuary-2022/',
                 image: HOST + 'threeExamples/openSource/genuary.jpg'
+            },
+            {
+                id: 'threeLab',
+                author: 'AUTO',
+                name: 'ThreeLab',
+                name_en: 'ThreeLab',
+                githubUrl: 'https://github.com/lo-th/three.lab',
+                openUrl: 'https://lo-th.github.io/three.lab/examples/#webgl_gpgpu_water',
+                image: HOST + 'threeExamples/openSource/threelab.jpg'
             }
         ]
     },
@@ -657,6 +666,16 @@ export default [
                 githubUrl: 'https://github.com/dgreenheck/threejs-water-shader',
                 openUrl: 'https://dgreenheck.github.io/threejs-water-shader/',
                 image: HOST + 'threeExamples/openSource/threejs-water-shader.jpg'
+            },
+
+            {
+                id: 'threejs-caustics',
+                name: '水波纹',
+                name_en: 'Caustics',
+                author: 'AUTO',
+                githubUrl: 'https://github.com/martinRenou/threejs-caustics',
+                openUrl: 'https://martinRenou.github.io/threejs-caustics/',
+                image: HOST + 'threeExamples/openSource/threejs-caustics.jpg'
             },
 
             {
