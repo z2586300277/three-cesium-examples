@@ -85,7 +85,7 @@ function createPixelData() {
       tick();
     };
     
-    image.src = "https://img1.baidu.com/it/u=232967222,3421933282&fm=253&app=120&size=w931&n=0&f=JPEG&fmt=auto?sec=1722704400&t=2a6198148cf952fc93d92962d5d83d2e";
+    image.src = HOST + 'files/author/z2586300277.png'
   }
 
   function createPaticles() {

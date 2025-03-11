@@ -97,18 +97,15 @@ export default [
         name_en: 'Shader',
         children: [
             {
-                id: 'modelBlendShader',
-                name: '模型混合着色器',
-                name_en: 'Model Blend',
+                id: 'cityEffect',
+                name: '城市光效',
+                name_en: 'City Effect',
+                referUrl: 'https://quyinggang.github.io/three3d',
                 author: 'z2586300277',
-                codeUrl: HOST + 'threeExamples/shader/modelBlendShader.js',
-                image: HOST + 'threeExamples/shader/modelBlendShader.jpg',
-                meta: {
-                    title: '模型混合着色器',
-                    keywords: 'three.js,模型混合着色器',
-                    description: '使用three.js模型混合着色器'
-                }
+                codeUrl: HOST + 'threeExamples/shader/cityEffect.js',
+                image: HOST + 'threeExamples/shader/cityEffect.jpg',
             },
+          
             {
                 id: 'grassShader',
                 name: '草地着色器',
@@ -166,15 +163,7 @@ export default [
                 codeUrl: HOST + 'threeExamples/shader/cityBlendLight.js',
                 image: HOST + 'threeExamples/shader/cityBlendLight.jpg',
             },
-            {
-                id: 'cityEffect',
-                name: '城市光效',
-                name_en: 'City Effect',
-                referUrl: 'https://quyinggang.github.io/three3d',
-                author: 'z2586300277',
-                codeUrl: HOST + 'threeExamples/shader/cityEffect.js',
-                image: HOST + 'threeExamples/shader/cityEffect.jpg',
-            },
+        
             {
                 id: 'planeScan',
                 name: '平面扫描',
@@ -210,6 +199,19 @@ export default [
                     title: '围栏着色器',
                     keywords: 'three.js,围栏着色器',
                     description: '使用three.js围栏着色器'
+                }
+            },
+            {
+                id: 'modelBlendShader',
+                name: '模型混合着色器',
+                name_en: 'Model Blend',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/shader/modelBlendShader.js',
+                image: HOST + 'threeExamples/shader/modelBlendShader.jpg',
+                meta: {
+                    title: '模型混合着色器',
+                    keywords: 'three.js,模型混合着色器',
+                    description: '使用three.js模型混合着色器'
                 }
             },
             {
