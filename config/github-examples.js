@@ -599,6 +599,12 @@ export default [
                 name: 'CSG网格',
                 name_en: 'CSG Mesh',
                 author: 'AUTO',
+                links: [
+                    {
+                        name: 'npm',
+                        url: 'https://www.npmjs.com/package/three-csg-ts'
+                    }
+                ],
                 githubUrl: 'https://github.com/manthrax/THREE-CSGMesh',
                 openUrl: 'https://manthrax.github.io/THREE-CSGMesh/demos/CSGDemo.html',
                 image: HOST + 'threeExamples/openSource/threeCSGMesh.jpg'
