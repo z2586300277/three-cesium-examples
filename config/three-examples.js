@@ -97,18 +97,15 @@ export default [
         name_en: 'Shader',
         children: [
             {
-                id: 'modelBlendShader',
-                name: '模型混合着色器',
-                name_en: 'Model Blend',
+                id: 'cityEffect',
+                name: '城市光效',
+                name_en: 'City Effect',
+                referUrl: 'https://quyinggang.github.io/three3d',
                 author: 'z2586300277',
-                codeUrl: HOST + 'threeExamples/shader/modelBlendShader.js',
-                image: HOST + 'threeExamples/shader/modelBlendShader.jpg',
-                meta: {
-                    title: '模型混合着色器',
-                    keywords: 'three.js,模型混合着色器',
-                    description: '使用three.js模型混合着色器'
-                }
+                codeUrl: HOST + 'threeExamples/shader/cityEffect.js',
+                image: HOST + 'threeExamples/shader/cityEffect.jpg',
             },
+          
             {
                 id: 'grassShader',
                 name: '草地着色器',
@@ -167,21 +164,20 @@ export default [
                 image: HOST + 'threeExamples/shader/cityBlendLight.jpg',
             },
             {
-                id: 'cityEffect',
-                name: '城市光效',
-                name_en: 'City Effect',
-                referUrl: 'https://quyinggang.github.io/three3d',
+                id: 'oceanShader',
+                name: '海面',
+                name_en: 'Ocean Shader',
                 author: 'z2586300277',
-                codeUrl: HOST + 'threeExamples/shader/cityEffect.js',
-                image: HOST + 'threeExamples/shader/cityEffect.jpg',
+                codeUrl: HOST + 'threeExamples/shader/oceanShader.js',
+                image: HOST + 'threeExamples/shader/oceanShader.jpg',
             },
             {
-                id: 'planeScan',
-                name: '平面扫描',
-                name_en: 'Plane Scan',
+                id: 'chinaFlag',
+                name: '中国旗帜',
+                name_en: 'China Flag',
                 author: 'z2586300277',
-                codeUrl: HOST + 'threeExamples/shader/planeScan.js',
-                image: HOST + 'threeExamples/shader/planeScan.jpg',
+                codeUrl: HOST + 'threeExamples/shader/chinaFlag.js',
+                image: HOST + 'threeExamples/shader/chinaFlag.jpg',
             },
             {
                 id: 'circleWave',
@@ -190,6 +186,20 @@ export default [
                 author: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/shader/circleWave.js',
                 image: HOST + 'threeExamples/shader/circleWave.jpg',
+            },
+           
+            {
+                id: 'fenceWall',
+                name: '围墙着色器',
+                name_en: 'Fence Wall',
+                improver: 'yjsdszz',
+                codeUrl: HOST + 'threeExamples/shader/fenceWall.js',
+                image: HOST + 'threeExamples/shader/fenceWall.jpg',
+                meta: {
+                    title: '围墙着色器',
+                    keywords: 'three.js,围墙着色器',
+                    description: '使用three.js围墙着色器'
+                }
             },
             {
                 id: 'transparentGradient',
@@ -213,6 +223,19 @@ export default [
                 }
             },
             {
+                id: 'modelBlendShader',
+                name: '模型混合着色器',
+                name_en: 'Model Blend',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/shader/modelBlendShader.js',
+                image: HOST + 'threeExamples/shader/modelBlendShader.jpg',
+                meta: {
+                    title: '模型混合着色器',
+                    keywords: 'three.js,模型混合着色器',
+                    description: '使用three.js模型混合着色器'
+                }
+            },
+            {
                 id: 'raningSea',
                 name: '波涛海浪',
                 name_en: 'move Sea',
@@ -222,16 +245,16 @@ export default [
                 image: HOST + 'threeExamples/shader/raningSea.jpg',
             },
             {
-                id: 'fenceWall',
-                name: '围墙着色器',
-                name_en: 'Fence Wall',
-                improver: 'yjsdszz',
-                codeUrl: HOST + 'threeExamples/shader/fenceWall.js',
-                image: HOST + 'threeExamples/shader/fenceWall.jpg',
+                id: "warnInfo",
+                name: "警告信息",
+                name_en: "Warn Info",
+                author: "yjsdszz",
+                codeUrl: HOST + "threeExamples/shader/warnInfo.js",
+                image: HOST + "threeExamples/shader/warnInfo.jpg",
                 meta: {
-                    title: '围墙着色器',
-                    keywords: 'three.js,围墙着色器',
-                    description: '使用three.js围墙着色器'
+                    title: "警告信息",
+                    keywords: "three.js,警告信息",
+                    description: "使用three.js 制作警告信息"
                 }
             },
             {
@@ -276,6 +299,14 @@ export default [
                     keywords: 'three.js,着色器天空',
                     description: '使用three.js着色器天空'
                 }
+            },
+            {
+                id: 'planeScan',
+                name: '平面扫描',
+                name_en: 'Plane Scan',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/shader/planeScan.js',
+                image: HOST + 'threeExamples/shader/planeScan.jpg',
             },
             {
                 id: 'cityLine',
@@ -489,14 +520,7 @@ export default [
                     description: '使用three.js蛛网箱子'
                 }
             },
-            {
-                id: 'chinaFlag',
-                name: '中国旗帜',
-                name_en: 'China Flag',
-                author: 'z2586300277',
-                codeUrl: HOST + 'threeExamples/shader/chinaFlag.js',
-                image: HOST + 'threeExamples/shader/chinaFlag.jpg',
-            },
+
             {
                 id: 'jumpHeart',
                 name: '跳动的心',
@@ -681,19 +705,7 @@ export default [
                 codeUrl: HOST + "threeExamples/shader/blobShader.js",
                 image: HOST + "threeExamples/shader/blobShader.jpg",
             },
-            {
-                id: "warnInfo",
-                name: "警告信息",
-                name_en: "Warn Info",
-                author: "yjsdszz",
-                codeUrl: HOST + "threeExamples/shader/warnInfo.js",
-                image: HOST + "threeExamples/shader/warnInfo.jpg",
-                meta: {
-                    title: "警告信息",
-                    keywords: "three.js,警告信息",
-                    description: "使用three.js 制作警告信息"
-                }
-            },
+
             {
                 id: 'circleRotate',
                 name: '旋转的圆',
@@ -836,14 +848,7 @@ export default [
                 codeUrl: HOST + 'threeExamples/shader/fireShader.js',
                 image: HOST + 'threeExamples/shader/fireShader.jpg',
             },
-            {
-                id: 'oceanShader',
-                name: '海面',
-                name_en: 'Ocean Shader',
-                author: 'z2586300277',
-                codeUrl: HOST + 'threeExamples/shader/oceanShader.js',
-                image: HOST + 'threeExamples/shader/oceanShader.jpg',
-            },
+
             {
                 id: 'emitShader',
                 name: '发散着色器',
