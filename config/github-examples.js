@@ -244,6 +244,15 @@ export default [
                     }
                 ]
             },
+            {
+                id: 'chili3d',
+                name: 'Chili3D-CAD',
+                name_en: 'Chili3D-CAD',
+                author: 'AUTO',
+                openUrl: 'https://chili3d.com/',
+                githubUrl: 'https://github.com/xiangechen/chili3d',
+                image: HOST + 'threeExamples/openSource/chili3d.jpg'
+            }
         ]
     },
     {
