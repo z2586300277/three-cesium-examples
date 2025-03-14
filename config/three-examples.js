@@ -184,6 +184,7 @@ export default [
                 name: '圆波扫光',
                 name_en: 'Circle Wave',
                 author: 'z2586300277',
+                referUrl: 'https://shadertoy-playground.netlify.app/entries/#circle-wave',
                 codeUrl: HOST + 'threeExamples/shader/circleWave.js',
                 image: HOST + 'threeExamples/shader/circleWave.jpg',
             },
