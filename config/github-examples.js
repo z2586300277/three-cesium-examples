@@ -35,6 +35,26 @@ export default [
                 openUrl: 'https://tympanus.net/codrops/demos/?tag=three-js',
                 image: FILE_HOST + 'images/tympanus.jpg'
             },
+
+            {
+                id: 'reactThreeFiber',
+                name: 'R3F官方案例',
+                tag: 'React',
+                name_en: 'React Three',
+                openUrl: 'https://r3f.docs.pmnd.rs/getting-started/examples#showcase',
+                githubUrl: 'https://github.com/pmndrs/react-three-fiber',
+                image: HOST + 'threeExamples/openSource/reactThree.jpg'
+            },
+
+            {
+                id: 'tres',
+                name: 'Tres官方案例',
+                tag: 'Vue',
+                name_en: 'Tres',
+                openUrl: 'https://lab.tresjs.org/',
+                githubUrl: 'https://github.com/Tresjs',
+                image: HOST + 'threeExamples/openSource/tres.jpg'
+            }
         ]
     },
     {
