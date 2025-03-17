@@ -922,6 +922,13 @@ export default [
                 githubUrl: 'https://github.com/takram-design-engineering/three-geospatial',
                 openUrl: 'https://takram-design-engineering.github.io/three-geospatial/',
                 image: HOST + 'threeExamples/openSource/threeGeospatial.jpg'
+            },
+            {
+                id: 'maptalks_three',
+                githubUrl: 'https://github.com/maptalks/maptalks.three',
+                openUrl: 'https://maptalks.org/maptalks.three/docs/dist/',
+                name: 'maptalks_three',
+                image: HOST + 'threeExamples/openSource/maptalks_three.jpg'
             }
         ]
     },
