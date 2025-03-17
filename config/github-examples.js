@@ -35,6 +35,26 @@ export default [
                 openUrl: 'https://tympanus.net/codrops/demos/?tag=three-js',
                 image: FILE_HOST + 'images/tympanus.jpg'
             },
+
+            {
+                id: 'reactThreeFiber',
+                name: 'R3F官方案例',
+                tag: 'React',
+                name_en: 'React Three',
+                openUrl: 'https://r3f.docs.pmnd.rs/getting-started/examples#showcase',
+                githubUrl: 'https://github.com/pmndrs/react-three-fiber',
+                image: HOST + 'threeExamples/openSource/reactThree.jpg'
+            },
+
+            {
+                id: 'tres',
+                name: 'Tres官方案例',
+                tag: 'Vue',
+                name_en: 'Tres',
+                openUrl: 'https://lab.tresjs.org/',
+                githubUrl: 'https://github.com/Tresjs',
+                image: HOST + 'threeExamples/openSource/tres.jpg'
+            }
         ]
     },
     {
@@ -902,6 +922,13 @@ export default [
                 githubUrl: 'https://github.com/takram-design-engineering/three-geospatial',
                 openUrl: 'https://takram-design-engineering.github.io/three-geospatial/',
                 image: HOST + 'threeExamples/openSource/threeGeospatial.jpg'
+            },
+            {
+                id: 'maptalks_three',
+                githubUrl: 'https://github.com/maptalks/maptalks.three',
+                openUrl: 'https://maptalks.org/maptalks.three/docs/dist/',
+                name: 'maptalks_three',
+                image: HOST + 'threeExamples/openSource/maptalks_three.jpg'
             }
         ]
     },
