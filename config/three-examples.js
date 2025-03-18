@@ -8,6 +8,17 @@ export default [
         children: [
 
             {
+                id: 'officialExamples',
+                tag: TEXTS['官方'],
+                name: '官方示例 - 优化版',
+                name_en: 'Official',
+                improver: 'z2586300277',
+                referUrl: 'https://threejs.org/examples/#webgl_animation_keyframes',
+                openUrl: 'https://openthree.github.io/three-official-examples',
+                image: HOST + 'threeExamples/openSource/official.jpg'
+            },
+
+            {
                 id: 'jiawanlong',
                 tag: TEXTS['推荐'],
                 tip: 'Cesium2024年最新demos，200多个原生示例：自定义纹理、地形开挖、可视域分析、洪水淹没、缓冲分析、日照分析、方量分析、通透分析、剖面、单体化、视频融合、视频投射、雨雪雾、天空盒、场景出图、体积云、闪电、视锥体、雷达扫描、水波纹、动态扩散点、电子围栏、粒子效果、物理引擎、克里金、海流、大数据可视化、坐标转换、相机、飞行漫游、瓦片加载、xyz、tms、wms、wmts、天地图、高德、百度、wkt、shp、geojson、pbf、地形、entity、模型、海量数据、Primitive、gif、聚合、czml、字体图标、运动、3Dtiles、模型偏移、等等。。',
@@ -69,20 +80,6 @@ export default [
                         url: 'https://www.bilibili.com/video/BV1HumBYMEa1'
                     }
                 ]
-            },
-
-
-            {
-                id: '700stars',
-                name: '1000stars留念',
-                name_en: '1000stars',
-                tag: TEXTS['共享'] + '-rgb(198,0,0)',
-                tip: '一个专注于前端可视化的开源组织，三维可视化开发者抱团取暖，开源分享知识，接活盈利，让自己更有底气，加入请联系',
-                author: 'nico',
-                improver: 'OpenThree',
-                githubUrl: 'https://github.com/OpenThree',
-                codeUrl: HOST + 'threeExamples/application/700stars.js',
-                image: HOST + 'threeExamples/application/700stars.jpg',
             }
 
         ]
@@ -121,15 +118,6 @@ export default [
                 }
             },
             {
-                id: 'textStarShader',
-                name: '点星感谢',
-                name_en: 'Text Star',
-                tag: TEXTS['致谢'],
-                author: 'z2586300277',
-                codeUrl: HOST + 'threeExamples/shader/textStarShader.js',
-                image: HOST + 'threeExamples/shader/textStarShader.jpg',
-            },
-            {
                 id: '2025Year',
                 name: '2025',
                 name_en: '2025 Year',
@@ -153,6 +141,18 @@ export default [
                     keywords: 'three.js,音乐可视化',
                     description: '使用three.js音乐可视化'
                 }
+            },
+            {
+                id: '700stars',
+                name: '1000stars留念',
+                name_en: '1000stars',
+                tag: TEXTS['共享'] + '-rgb(198,0,0)',
+                tip: '一个专注于前端可视化的开源组织，三维可视化开发者抱团取暖，开源分享知识，接活盈利，让自己更有底气，加入请联系',
+                author: 'nico',
+                improver: 'OpenThree',
+                githubUrl: 'https://github.com/OpenThree',
+                codeUrl: HOST + 'threeExamples/application/700stars.js',
+                image: HOST + 'threeExamples/application/700stars.jpg',
             },
             {
                 id: 'cityBlendLight',
@@ -224,19 +224,6 @@ export default [
                 }
             },
             {
-                id: 'modelBlendShader',
-                name: '模型混合着色器',
-                name_en: 'Model Blend',
-                author: 'z2586300277',
-                codeUrl: HOST + 'threeExamples/shader/modelBlendShader.js',
-                image: HOST + 'threeExamples/shader/modelBlendShader.jpg',
-                meta: {
-                    title: '模型混合着色器',
-                    keywords: 'three.js,模型混合着色器',
-                    description: '使用three.js模型混合着色器'
-                }
-            },
-            {
                 id: 'raningSea',
                 name: '波涛海浪',
                 name_en: 'move Sea',
@@ -257,6 +244,15 @@ export default [
                     keywords: "three.js,警告信息",
                     description: "使用three.js 制作警告信息"
                 }
+            },
+            {
+                id: 'textStarShader',
+                name: '点星感谢',
+                name_en: 'Text Star',
+                tag: TEXTS['致谢'],
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/shader/textStarShader.js',
+                image: HOST + 'threeExamples/shader/textStarShader.jpg',
             },
             {
                 id: 'cityMoveLight',
@@ -299,6 +295,19 @@ export default [
                     title: '着色器天空',
                     keywords: 'three.js,着色器天空',
                     description: '使用three.js着色器天空'
+                }
+            },
+            {
+                id: 'modelBlendShader',
+                name: '模型混合着色器',
+                name_en: 'Model Blend',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/shader/modelBlendShader.js',
+                image: HOST + 'threeExamples/shader/modelBlendShader.jpg',
+                meta: {
+                    title: '模型混合着色器',
+                    keywords: 'three.js,模型混合着色器',
+                    description: '使用three.js模型混合着色器'
                 }
             },
             {

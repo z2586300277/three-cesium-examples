@@ -12,6 +12,8 @@ else LANG_EN = local_langEn === 'true'
 
 window.TEXTS = Object.fromEntries(Object.entries({
 
+    '官方': { zh: '官方', en: 'Official' },
+
     elegant: { zh: '优雅永不过时', en: 'Elegant' },
 
     '推荐': { zh: '推荐', en: 'HOT' },
