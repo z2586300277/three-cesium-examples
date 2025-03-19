@@ -954,6 +954,14 @@ export default [
                 githubUrl: 'https://github.com/hawk86104/three-vue-tres',
                 openUrl: 'https://hawk86104.github.io',
                 image: HOST + 'threeExamples/openSource/tvtJs.jpg'
+            },
+            {
+                id: 'kokomijs',
+                name: 'kokomi.js',
+                author: 'AUTO',
+                githubUrl: 'https://github.com/alphardex/kokomi.js',
+                openUrl: 'https://kokomi-js.netlify.app/',
+                image: HOST + 'threeExamples/openSource/kokomi.jpg'
             }
         ]
     },
