@@ -962,6 +962,14 @@ export default [
                 githubUrl: 'https://github.com/alphardex/kokomi.js',
                 openUrl: 'https://kokomi-js.netlify.app/',
                 image: HOST + 'threeExamples/openSource/kokomi.jpg'
+            },
+            {
+                id: 'troisjs',
+                openUrl: 'https://troisjs.github.io/',
+                githubUrl: 'https://github.com/troisjs/trois',
+                author: 'AUTO',
+                name: 'trois.js',
+                image: HOST + 'threeExamples/openSource/trois.jpg',
             }
         ]
     },
