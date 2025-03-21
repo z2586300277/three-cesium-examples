@@ -1004,6 +1004,15 @@ export default [
                 githubUrl: 'https://github.com/whanxueyu/demo-collection',
                 openUrl: 'https://axydemo.netlify.app/#/bigScreen',
                 image: HOST + 'threeExamples/openSource/axydemo.jpg'
+            },
+            {   
+                id: 'visualization-collection',
+                name: '可视化效果集合',
+                name_en: 'Visualization',
+                author: 'AUTO',
+                openUrl: 'http://hepengwei.cn',
+                githubUrl: 'https://github.com/hepengwei/visualization-collection',
+                image: HOST + 'threeExamples/openSource/visualization.jpg'
             }
         ]
 
