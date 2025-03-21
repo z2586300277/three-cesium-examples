@@ -9,7 +9,7 @@ export default [
 
             {
                 id: 'officialExamples',
-                tag: TEXTS['官方'],
+                tag: TEXTS['官方'] + '-rgb(157 46 37)',
                 name: '官方示例 - 优化版',
                 name_en: 'Official',
                 improver: 'z2586300277',
@@ -50,7 +50,7 @@ export default [
 
             {
                 id: 'fmc_car',
-                tag: TEXTS['效果佳'],
+                tag: TEXTS['效果佳'] + '-#2539a1',
                 name: '麦克斯韦汽车',
                 name_en: 'FMC Car',
                 author: 'FFMMCC',

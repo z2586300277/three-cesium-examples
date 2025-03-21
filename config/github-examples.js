@@ -954,6 +954,22 @@ export default [
                 githubUrl: 'https://github.com/hawk86104/three-vue-tres',
                 openUrl: 'https://hawk86104.github.io',
                 image: HOST + 'threeExamples/openSource/tvtJs.jpg'
+            },
+            {
+                id: 'kokomijs',
+                name: 'kokomi.js',
+                author: 'AUTO',
+                githubUrl: 'https://github.com/alphardex/kokomi.js',
+                openUrl: 'https://kokomi-js.netlify.app/',
+                image: HOST + 'threeExamples/openSource/kokomi.jpg'
+            },
+            {
+                id: 'troisjs',
+                openUrl: 'https://troisjs.github.io/',
+                githubUrl: 'https://github.com/troisjs/trois',
+                author: 'AUTO',
+                name: 'trois.js',
+                image: HOST + 'threeExamples/openSource/trois.jpg',
             }
         ]
     },
@@ -988,6 +1004,15 @@ export default [
                 githubUrl: 'https://github.com/whanxueyu/demo-collection',
                 openUrl: 'https://axydemo.netlify.app/#/bigScreen',
                 image: HOST + 'threeExamples/openSource/axydemo.jpg'
+            },
+            {   
+                id: 'visualization-collection',
+                name: '可视化效果集合',
+                name_en: 'Visualization',
+                author: 'AUTO',
+                openUrl: 'http://hepengwei.cn',
+                githubUrl: 'https://github.com/hepengwei/visualization-collection',
+                image: HOST + 'threeExamples/openSource/visualization.jpg'
             }
         ]
 
