@@ -1154,6 +1154,14 @@ export default [
                 author: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/particle/realFire.js',
                 image: HOST + 'threeExamples/particle/realFire.jpg'
+            },
+            {
+                id: 'globeParticle',
+                name: '地球粒子',
+                name_en: 'Globe Particle',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/particle/globeParticle.js',
+                image: HOST + 'threeExamples/particle/globeParticle.jpg',
             }
         ]
     },
