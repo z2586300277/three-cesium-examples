@@ -15,6 +15,7 @@ export default [
                 improver: 'z2586300277',
                 referUrl: 'https://threejs.org/examples/#webgl_animation_keyframes',
                 openUrl: 'https://openthree.github.io/three-official-examples',
+                githubUrl: 'https://github.com/OpenThree/three-official-examples',
                 image: HOST + 'threeExamples/openSource/official.jpg'
             },
 
