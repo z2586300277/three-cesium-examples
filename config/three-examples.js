@@ -1666,6 +1666,14 @@ export default [
                 author: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/application/tweenFire.js',
                 image: HOST + 'threeExamples/application/tweenFire.jpg',
+            },
+            {
+                id: 'driving',
+                name: '无限行驶',
+                name_en: 'Driving',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/application/drivingCar.js',
+                image: HOST + 'threeExamples/application/drivingCar.jpg'
             }
             
         ]
