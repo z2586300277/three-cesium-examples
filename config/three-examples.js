@@ -15,6 +15,7 @@ export default [
                 improver: 'z2586300277',
                 referUrl: 'https://threejs.org/examples/#webgl_animation_keyframes',
                 openUrl: 'https://openthree.github.io/three-official-examples',
+                githubUrl: 'https://github.com/OpenThree/three-official-examples',
                 image: HOST + 'threeExamples/openSource/official.jpg'
             },
 
@@ -323,6 +324,7 @@ export default [
                 name: '城市线条',
                 name_en: 'City Line',
                 author: 'superzay',
+                improver: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/shader/cityLine.js',
                 image: HOST + 'threeExamples/shader/cityLine.jpg',
                 meta: {
@@ -536,6 +538,7 @@ export default [
                 name: '跳动的心',
                 name_en: 'Jump Heart',
                 author: 'stonerao',
+                improver: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/shader/jumpHeart.js',
                 image: HOST + 'threeExamples/shader/jumpHeart.jpg',
             },
@@ -1154,6 +1157,14 @@ export default [
                 author: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/particle/realFire.js',
                 image: HOST + 'threeExamples/particle/realFire.jpg'
+            },
+            {
+                id: 'globeParticle',
+                name: '地球粒子',
+                name_en: 'Globe Particle',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/particle/globeParticle.js',
+                image: HOST + 'threeExamples/particle/globeParticle.jpg',
             }
         ]
     },
@@ -1657,6 +1668,14 @@ export default [
                 author: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/application/tweenFire.js',
                 image: HOST + 'threeExamples/application/tweenFire.jpg',
+            },
+            {
+                id: 'driving',
+                name: '无限行驶',
+                name_en: 'Driving',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/application/drivingCar.js',
+                image: HOST + 'threeExamples/application/drivingCar.jpg'
             }
             
         ]
