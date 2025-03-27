@@ -28,7 +28,7 @@ export default [
         id: 'OpenThree',
         name: 'OpenThree',
         describe: '一个专注于前端可视化的开源组织，三维可视化开发者抱团取暖，开源分享知识，接活盈利，让自己更有底气，加入请联系',
-        github: 'https://github.com/OpenThree',
+        github: 'https://openthree.github.io/three-cesium-links',
         icon: HOST + 'files/site/logo.svg'
     },
 

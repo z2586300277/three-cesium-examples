@@ -34,12 +34,12 @@
 
 |     作者     |   联系方式   |    联系方式     |             链接             |          描述
 | :----------: | :----------: | :-------------: | :------------------------: | :------------------------: |
-| 优雅永不过时 | 🐧2586300277 | 微:z2586300277  |  [开源组织](https://github.com/OpenThree) |  Web3D 为爱发电
-|     ThreeX     |  🐧383612104   | 微:web-gpu  |     [官网](https://three-x.cn)      |   致力于Three.js小程序
-|     nico     |  🐧805879871   | 微:15230117323  |     [官网](http://nicowebgl.cn )  |   Three.js Cesium.js
-|  jiawanlong  | 微: trampjwl | 🐧 群 585667336 | [Cesium案例](https://jiawanlong.github.io) |  专注于Cesium.js领域
-|  Threelab |🐧2945853209 | - | [官网](http://points.threelab.cn) | 海量点云渲染引擎
+| 优雅永不过时 | 🐧2586300277 | 微:z2586300277  |  [主页](https://z2586300277.github.io) |  Web3D 为爱发电
+|  贾宛龙  | 微: trampjwl | 🐧 群 585667336 | [Cesium社区](https://jiawanlong.github.io) |  专注于Cesium.js领域
+|     Nico     |  🐧805879871   | 微:15230117323  |     [官网](http://nicowebgl.cn )  |   Three.js Cesium.js
 |  FFMMCC  | 微:fmc2055615840 | 🐧2055615840 | [主页](https://gitee.com/fu-meichuan) | Web3D爱好者
+|     ThreeX     |  🐧383612104   | 微:web-gpu  |     [官网](https://three-x.cn)      |   致力于Three.js小程序
+|  Threelab |🐧2945853209 | - | [官网](http://points.threelab.cn) | 海量点云渲染引擎
 | - | - | - | - | - |
 
 ## 🌳 创作

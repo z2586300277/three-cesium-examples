@@ -324,6 +324,7 @@ export default [
                 name: '城市线条',
                 name_en: 'City Line',
                 author: 'superzay',
+                improver: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/shader/cityLine.js',
                 image: HOST + 'threeExamples/shader/cityLine.jpg',
                 meta: {
@@ -537,6 +538,7 @@ export default [
                 name: '跳动的心',
                 name_en: 'Jump Heart',
                 author: 'stonerao',
+                improver: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/shader/jumpHeart.js',
                 image: HOST + 'threeExamples/shader/jumpHeart.jpg',
             },
