@@ -225,6 +225,14 @@ export default [
                 }
             },
             {
+                id: 'loveShader',
+                name: '爱心',
+                name_en: 'Love Shader',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/shader/loveShader.js',
+                image: HOST + 'threeExamples/shader/loveShader.jpg',
+            },
+            {
                 id: 'raningSea',
                 name: '波涛海浪',
                 name_en: 'move Sea',
