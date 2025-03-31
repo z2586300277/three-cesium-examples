@@ -429,6 +429,15 @@ export default [
                 }
             },
             {
+                id: 'smartCity',
+                name: '智慧城市光',
+                name_en: 'SmartCity Light',
+                improver: 'z2586300277',
+                referUrl: 'https://blog.csdn.net/dagedezhiyin/article/details/146590778',
+                codeUrl: HOST + 'cesiumExamples/basic/smartCity.js',
+                image: HOST + 'cesiumExamples/basic/smartCity.jpg',
+            },
+            {
                 id: 'flyLine',
                 name: '流动飞线运动',
                 name_en: 'Flowing Line',
