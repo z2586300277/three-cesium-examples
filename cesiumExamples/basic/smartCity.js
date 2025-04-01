@@ -100,7 +100,7 @@ function setViewerTheme(viewer, options = {}) {
 
 }
 
-const palaceTileset = await Cesium.Cesium3DTileset.fromUrl('http://guangfu/3dtiles/whiteModel/tileset.json')
+const palaceTileset = await Cesium.Cesium3DTileset.fromUrl('https://guangfus:663/3dtiles/whiteModel/tileset.json')
 
 viewer.scene.primitives.add(palaceTileset)
 
@@ -227,4 +227,4 @@ palaceTileset.customShader = new Cesium.CustomShader({
         }`,
 });
 
-GLOBAL_CONFIG.ElMessage('请自行修改3dtiles 城市白膜瓦片url替换成自己的，此案例调用为作者本地的广州城市白膜')
+GLOBAL_CONFIG.ElMessage('请自行修改为自己的城市白膜url，代码103行，此案例调用为作者本地的广州城市白膜')
