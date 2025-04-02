@@ -970,6 +970,15 @@ export default [
                 author: 'AUTO',
                 name: 'trois.js',
                 image: HOST + 'threeExamples/openSource/trois.jpg',
+            },
+            {   
+                id: 'vueCesium',
+                name: 'vue-cesium',
+                name_en: 'Vue Cesium',
+                author: 'AUTO',
+                openUrl: 'https://zouyaoji.top/vue-cesium',
+                githubUrl: 'https://github.com/zouyaoji/vue-cesium',
+                image: HOST + 'threeExamples/openSource/vueCesium.jpg'
             }
         ]
     },
