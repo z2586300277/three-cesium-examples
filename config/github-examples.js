@@ -272,6 +272,15 @@ export default [
                 openUrl: 'https://chili3d.com/',
                 githubUrl: 'https://github.com/xiangechen/chili3d',
                 image: HOST + 'threeExamples/openSource/chili3d.jpg'
+            },
+            {
+                id: '3dmodelEdit',
+                name: '3D模型编辑器',
+                name_en: '3D Model Edit',
+                author: 'AUTO',
+                openUrl: 'https://three3d-0gte3eg619c78ffd-1301256746.tcloudbaseapp.com/threejs-3dmodel-edit/',
+                githubUrl: 'https://github.com/zhangbo126/threejs-3dmodel-edit',
+                image: HOST + 'threeExamples/openSource/3dmodelEdit.jpg'
             }
         ]
     },
