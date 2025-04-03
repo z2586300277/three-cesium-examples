@@ -38,6 +38,7 @@ export default [
                 name: '低代码组态编辑器',
                 name_en: 'LowCode Editor',
                 author: 'z2586300277',
+                referUrl: 'https://github.com/z2586300277/three-editor-cores',
                 openUrl: 'https://z2586300277.github.io/three-editor/dist/#/editor',
                 githubUrl: 'https://github.com/z2586300277/three-editor',
                 image: FILE_HOST + 'images/editor.jpg',
