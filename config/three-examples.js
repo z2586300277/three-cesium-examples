@@ -58,7 +58,7 @@ export default [
                 author: 'FFMMCC',
                 tip: '效果超级棒的 three.js实现麦克斯韦汽车展厅项目',
                 openUrl: 'https://g2657.github.io/examples-server/fmc_car/',
-                githubUrl: 'https://gitee.com/fu-meichuan/fmc-personal-blog',
+                githubUrl: 'https://coderfmc.github.io/three.js-demo/fmc-web-3d/',
                 image: FILE_HOST + 'images/fmc_car.jpg',
                 links: [
                     {
