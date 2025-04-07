@@ -457,7 +457,8 @@ export default [
                 url: 'https://space.bilibili.com/277443412'
             }
         ],
-        github: 'https://gitee.com/fu-meichuan',
+        // github: 'https://gitee.com/fu-meichuan',
+        github: 'https://coderfmc.github.io/three.js-demo/fmc-web-3d/',
         icon: HOST + 'files/author/FFMMCC.jpg'
     },
 
