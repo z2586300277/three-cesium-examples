@@ -38,6 +38,7 @@ export default [
                 name: '低代码组态编辑器',
                 name_en: 'LowCode Editor',
                 author: 'z2586300277',
+                referUrl: 'https://github.com/z2586300277/three-editor-cores',
                 openUrl: 'https://z2586300277.github.io/three-editor/dist/#/editor',
                 githubUrl: 'https://github.com/z2586300277/three-editor',
                 image: FILE_HOST + 'images/editor.jpg',
@@ -57,7 +58,7 @@ export default [
                 author: 'FFMMCC',
                 tip: '效果超级棒的 three.js实现麦克斯韦汽车展厅项目',
                 openUrl: 'https://g2657.github.io/examples-server/fmc_car/',
-                githubUrl: 'https://gitee.com/fu-meichuan/fmc-personal-blog',
+                githubUrl: 'https://coderfmc.github.io/three.js-demo/fmc-web-3d/',
                 image: FILE_HOST + 'images/fmc_car.jpg',
                 links: [
                     {
@@ -223,6 +224,14 @@ export default [
                     keywords: 'three.js,围栏着色器',
                     description: '使用three.js围栏着色器'
                 }
+            },
+            {
+                id: 'loveShader',
+                name: '爱心',
+                name_en: 'Love Shader',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/shader/loveShader.js',
+                image: HOST + 'threeExamples/shader/loveShader.jpg',
             },
             {
                 id: 'raningSea',

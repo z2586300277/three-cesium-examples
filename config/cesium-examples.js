@@ -162,6 +162,15 @@ export default [
                     keywords: 'cesium.js,地形',
                     description: 'cesium 地形'
                 }
+            },
+            {
+                id: 'skyBox',
+                name: '天空盒',
+                name_en: 'Sky Box',
+                author: 'z2586300277',
+                referUrl: 'https://blog.csdn.net/qq_54653738/article/details/129796889',
+                codeUrl: HOST + 'cesiumExamples/basic/skyBox.js',
+                image: HOST + 'cesiumExamples/basic/skyBox.jpg',
             }
         ]
     },
@@ -427,6 +436,15 @@ export default [
                     keywords: 'cesium.js,智慧城市着色器',
                     description: 'cesium 智慧城市着色器'
                 }
+            },
+            {
+                id: 'smartCity',
+                name: '智慧城市光',
+                name_en: 'SmartCity Light',
+                improver: 'z2586300277',
+                referUrl: 'https://blog.csdn.net/dagedezhiyin/article/details/146590778',
+                codeUrl: HOST + 'cesiumExamples/basic/smartCity.js',
+                image: HOST + 'cesiumExamples/basic/smartCity.jpg',
             },
             {
                 id: 'flyLine',
