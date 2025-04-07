@@ -162,6 +162,15 @@ export default [
                     keywords: 'cesium.js,地形',
                     description: 'cesium 地形'
                 }
+            },
+            {
+                id: 'skyBox',
+                name: '天空盒',
+                name_en: 'Sky Box',
+                author: 'z2586300277',
+                referUrl: 'https://blog.csdn.net/qq_54653738/article/details/129796889',
+                codeUrl: HOST + 'cesiumExamples/basic/skyBox.js',
+                image: HOST + 'cesiumExamples/basic/skyBox.jpg',
             }
         ]
     },
