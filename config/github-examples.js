@@ -938,6 +938,14 @@ export default [
                 openUrl: 'https://maptalks.org/maptalks.three/docs/dist/',
                 name: 'maptalks_three',
                 image: HOST + 'threeExamples/openSource/maptalks_three.jpg'
+            },
+            {
+                id: 'Photons',
+                name: 'Photons',
+                author: 'AUTO',
+                openUrl: 'https://projects.markkellogg.org/threejs/demo_particle_system.php',
+                githubUrl: 'https://github.com/mkkellogg/Photons2',
+                image: HOST + 'threeExamples/openSource/Photons.jpg'
             }
         ]
     },

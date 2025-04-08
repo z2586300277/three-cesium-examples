@@ -2121,6 +2121,7 @@ export default [
                 name: '天空盒',
                 name_en: 'Sky And Env',
                 author: 'z2586300277',
+                downloadUrl: 'https://pan.quark.cn/s/541e8eaea026',
                 codeUrl: HOST + 'threeExamples/basic/skyAndEnv.js',
                 image: HOST + 'threeExamples/basic/skyAndEnv.jpg',
                 meta: {
