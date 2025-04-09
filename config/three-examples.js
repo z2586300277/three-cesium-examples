@@ -933,6 +933,15 @@ export default [
                 improver: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/shader/smoke.js',
                 image: HOST + 'threeExamples/shader/smoke.jpg',
+            },
+            {
+                id: 'fireMaterial',
+                name: '火焰材质',
+                name_en: 'Fire Material',
+                improver: 'z2586300277',
+                referUrl: 'https://codesandbox.io/p/sandbox/3878x',
+                codeUrl: HOST + 'threeExamples/shader/fireMaterial.js',
+                image: HOST + 'threeExamples/shader/fireMaterial.jpg',
             }
         ]
     },

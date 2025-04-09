@@ -19,7 +19,7 @@ export default [
             },
             {
                 name: '💰打赏',
-                url: 'https://z2586300277.github.io/three-editor/dist/wx_pay.jpg'
+                url: 'https://z2586300277.github.io/3d-file-server/images/wx_star.png'
             }
         ]
     },
