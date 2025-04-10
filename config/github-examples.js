@@ -461,6 +461,15 @@ export default [
                 githubUrl: 'https://github.com/fengtianxi001/MF-TurbineMonitor',
                 image: FILE_HOST + 'images/fengji.jpg'
             },
+            {
+                id: 'numberFram',
+                name: '数字农场',
+                name_en: 'Number Fram',
+                author: 'FFMMCC',
+                githubUrl: 'https://gitee.com/fu-meichuan/digital-farmland',
+                openUrl: 'https://coderfmc.github.io/three.js-demo/digital-farmland/#/carbon-neutral-bigscreen',
+                image: 'https://coderfmc.github.io/three.js-demo/fmc-web-3d/img/智慧农田.png'
+            }
         ]
     },
     {
@@ -938,6 +947,14 @@ export default [
                 openUrl: 'https://maptalks.org/maptalks.three/docs/dist/',
                 name: 'maptalks_three',
                 image: HOST + 'threeExamples/openSource/maptalks_three.jpg'
+            },
+            {
+                id: 'Photons',
+                name: 'Photons',
+                author: 'AUTO',
+                openUrl: 'https://projects.markkellogg.org/threejs/demo_particle_system.php',
+                githubUrl: 'https://github.com/mkkellogg/Photons2',
+                image: HOST + 'threeExamples/openSource/Photons.jpg'
             }
         ]
     },

@@ -19,7 +19,7 @@ export default [
             },
             {
                 name: '💰打赏',
-                url: 'https://z2586300277.github.io/three-editor/dist/wx_pay.jpg'
+                url: 'https://z2586300277.github.io/3d-file-server/images/wx_star.png'
             }
         ]
     },
@@ -455,9 +455,12 @@ export default [
             {
                 name: '📺B站',
                 url: 'https://space.bilibili.com/277443412'
+            },
+            {
+                name: '⛪gitee',
+                url : 'https://gitee.com/fu-meichuan'
             }
         ],
-        // github: 'https://gitee.com/fu-meichuan',
         github: 'https://coderfmc.github.io/three.js-demo/fmc-web-3d/',
         icon: HOST + 'files/author/FFMMCC.jpg'
     },

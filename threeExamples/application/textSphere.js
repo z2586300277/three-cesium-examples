@@ -111,11 +111,11 @@ for (let i = 0; i < totalCount; i += 3) {
         font,
         size: 0.1 /* 字体大小 */,
         depth: 0.001 /* 文本厚度 */,
-        curveSegments: 12 /* 曲线点数 (5降低优化性能) */,
-        bevelEnabled: false /* 是否开启斜角 */,
-        bevelThickness: 0.01 /* 斜角深度 */,
-        bevelSize: 0.01 /* 斜角与原始文本轮廓之间的延伸距离 */,
-        bevelSegments: 3 /* 斜角的分段数 (3降低优化性能) */,
+        curveSegments: 1 /* 曲线点数 (5降低优化性能) */,
+        bevelEnabled: true /* 是否开启斜角 */,
+        bevelThickness: 0.001 /* 斜角深度 */,
+        bevelSize: 0.001 /* 斜角与原始文本轮廓之间的延伸距离 */,
+        bevelSegments: 1 /* 斜角的分段数 (3降低优化性能) */,
         bevelOffset: 0 /* 斜角偏移 */,
     });
 
