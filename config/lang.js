@@ -58,6 +58,10 @@ window.TEXTS = Object.fromEntries(Object.entries({
 
     '聚合': { zh: '聚合', en: 'Aggregate' },
 
+    'skybox': { zh: '天空盒', en: 'Skybox' },
+
+    'smartCity': { zh: '智慧城市', en: 'SmartCity' },
+
 }).map(
 
     ([key, value]) => [key, LANG_EN ? value.en : value.zh])

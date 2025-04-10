@@ -426,7 +426,7 @@ export default [
             {
                 id: 'tilesShader',
                 name: '智慧城市着色器',
-                name_en: 'SmartCity Shader',
+                name_en: 'SmartCity',
                 author: 'z2586300277',
                 referUrl: 'https://blog.csdn.net/weixin_45412353/article/details/130598349',
                 codeUrl: HOST + 'cesiumExamples/basic/tilesShader.js',
@@ -440,7 +440,8 @@ export default [
             {
                 id: 'smartCity',
                 name: '智慧城市光',
-                name_en: 'SmartCity Light',
+                name_en: 'City Light',
+                tag: TEXTS['smartCity'],
                 improver: 'z2586300277',
                 referUrl: 'https://blog.csdn.net/dagedezhiyin/article/details/146590778',
                 codeUrl: HOST + 'cesiumExamples/basic/smartCity.js',

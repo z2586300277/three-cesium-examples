@@ -99,6 +99,7 @@ export default [
                 id: 'cityEffect',
                 name: '城市光效',
                 name_en: 'City Effect',
+                tag: TEXTS['smartCity'],
                 referUrl: 'https://quyinggang.github.io/three3d',
                 author: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/shader/cityEffect.js',
@@ -1999,6 +2000,21 @@ export default [
                 image: HOST + 'threeExamples/basic/modelShadow.jpg',
             },
             {
+                id: 'skyAndEnv',
+                name: '天空盒',
+                name_en: 'Sky And Env',
+                tag: TEXTS['skybox'] + '-#d265bb',
+                author: 'z2586300277',
+                downloadUrl: 'https://pan.quark.cn/s/541e8eaea026',
+                codeUrl: HOST + 'threeExamples/basic/skyAndEnv.js',
+                image: HOST + 'threeExamples/basic/skyAndEnv.jpg',
+                meta: {
+                    title: '天空盒',
+                    keywords: 'three.js,天空盒',
+                    description: '使用three.js天空盒'
+                }
+            },
+            {
                 id: 'cameraAttribute',
                 name: '相机属性',
                 name_en: 'Camera',
@@ -2124,20 +2140,6 @@ export default [
                 author: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/basic/transformBox3.js',
                 image: HOST + 'threeExamples/basic/transformBox3.jpg',
-            },
-            {
-                id: 'skyAndEnv',
-                name: '天空盒',
-                name_en: 'Sky And Env',
-                author: 'z2586300277',
-                downloadUrl: 'https://pan.quark.cn/s/541e8eaea026',
-                codeUrl: HOST + 'threeExamples/basic/skyAndEnv.js',
-                image: HOST + 'threeExamples/basic/skyAndEnv.jpg',
-                meta: {
-                    title: '天空盒',
-                    keywords: 'three.js,天空盒',
-                    description: '使用three.js天空盒'
-                }
             },
             {
                 id: 'modelAnimates',
