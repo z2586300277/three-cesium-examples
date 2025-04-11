@@ -1695,6 +1695,15 @@ export default [
                 author: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/application/drivingCar.js',
                 image: HOST + 'threeExamples/application/drivingCar.jpg'
+            },
+            {
+                id: 'modelHeatmap',
+                name: '模型热力图',
+                name_en: 'Model Heatmap',
+                author: 'z2586300277',
+                referUrl: 'https://z2586300277.github.io/three-cesium-examples/#/codeMirror?navigation=ThreeJS&classify=shader&id=heatmapShader',
+                codeUrl: HOST + 'threeExamples/application/modelHeatmap.js',
+                image: HOST + 'threeExamples/application/modelHeatmap.jpg',
             }
             
         ]
