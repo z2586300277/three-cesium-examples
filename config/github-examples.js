@@ -730,6 +730,16 @@ export default [
                 openUrl: 'https://martinRenou.github.io/threejs-caustics/',
                 image: HOST + 'threeExamples/openSource/threejs-caustics.jpg'
             },
+            {   
+                id: 'autopilot',
+                name: '自动驾驶',
+                name_en: 'Autopilot',
+                author: 'AUTO',
+                referUrl: 'https://juejin.cn/column/7338674902280650779',
+                openUrl: 'https://z2586300277.github.io/show-site/autopilot/',
+                githubUrl: 'https://github.com/GitHubJackson/autopilot',
+                image: HOST + 'threeExamples/openSource/autopilot.jpg' 
+            },
 
             {
                 id: 'change',
