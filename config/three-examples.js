@@ -1704,6 +1704,14 @@ export default [
                 referUrl: 'https://z2586300277.github.io/three-cesium-examples/#/codeMirror?navigation=ThreeJS&classify=shader&id=heatmapShader',
                 codeUrl: HOST + 'threeExamples/application/modelHeatmap.js',
                 image: HOST + 'threeExamples/application/modelHeatmap.jpg',
+            },
+            {
+                id: 'geometryMerge',
+                name: '几何合并',
+                name_en: 'Geometry Merge',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/application/geometryMerge.js',
+                image: HOST + 'threeExamples/application/geometryMerge.jpg',
             }
             
         ]
