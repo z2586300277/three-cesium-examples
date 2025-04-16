@@ -62,6 +62,8 @@ window.TEXTS = Object.fromEntries(Object.entries({
 
     'smartCity': { zh: '智慧城市', en: 'SmartCity' },
 
+    'Support': { zh: '打赏支持', en: 'Sponsor' },
+
 }).map(
 
     ([key, value]) => [key, LANG_EN ? value.en : value.zh])
