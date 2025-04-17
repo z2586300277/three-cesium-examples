@@ -949,7 +949,6 @@ export default [
                 name: 'WiFi',
                 name_en: 'WiFi Shader',
                 improver: 'z2586300277',
-                referUrl: 'https://codepen.io/prisoner849/pen/LYmXKrr',
                 codeUrl: HOST + 'threeExamples/shader/wifiShader.js',
                 image: HOST + 'threeExamples/shader/wifiShader.jpg',
             }

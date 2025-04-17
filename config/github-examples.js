@@ -312,6 +312,14 @@ export default [
                 htmlUrl: HOST + 'threeExamples/other/editorMap.html',
                 githubUrl: 'https://github.com/z2586300277/three-editor',
                 image: HOST + 'threeExamples/other/editorMap.jpg',
+            },
+            {
+                id: 'levelMap',
+                name: '分级地图',
+                name_en: 'Level Map',
+                author: 'z2586300277',
+                openUrl: 'https://z2586300277.github.io/show-site/geoMap',
+                image: HOST + 'threeExamples/other/levelMap.jpg',
             }
         ]
     },
