@@ -312,6 +312,23 @@ export default [
                 htmlUrl: HOST + 'threeExamples/other/editorMap.html',
                 githubUrl: 'https://github.com/z2586300277/three-editor',
                 image: HOST + 'threeExamples/other/editorMap.jpg',
+            },
+            {
+                id: 'levelMap',
+                name: '分级地图',
+                name_en: 'Level Map',
+                author: 'z2586300277',
+                openUrl: 'https://z2586300277.github.io/show-site/geoMap',
+                image: HOST + 'threeExamples/other/levelMap.jpg',
+            },
+            {   
+                id: 'geoArea',
+                name: '地理区域',
+                name_en: 'Geo Area',
+                author: 'AUTO',
+                openUrl: 'https://z2586300277.github.io/show-site/geoArea/',
+                githubUrl: 'https://github.com/Pakeyeo/temp-map',
+                image: HOST + 'threeExamples/openSource/geoArea.jpg',
             }
         ]
     },
@@ -729,6 +746,16 @@ export default [
                 githubUrl: 'https://github.com/martinRenou/threejs-caustics',
                 openUrl: 'https://martinRenou.github.io/threejs-caustics/',
                 image: HOST + 'threeExamples/openSource/threejs-caustics.jpg'
+            },
+            {   
+                id: 'autopilot',
+                name: '自动驾驶',
+                name_en: 'Autopilot',
+                author: 'AUTO',
+                referUrl: 'https://juejin.cn/column/7338674902280650779',
+                openUrl: 'https://z2586300277.github.io/show-site/autopilot/',
+                githubUrl: 'https://github.com/GitHubJackson/autopilot',
+                image: HOST + 'threeExamples/openSource/autopilot.jpg' 
             },
 
             {

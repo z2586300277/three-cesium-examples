@@ -33,6 +33,14 @@ export default [
     },
 
     {
+        id: 'Support',
+        name: TEXTS['Support'],
+        describe: '开源不易，有意愿打赏支持',
+        github: 'https://z2586300277.github.io/3d-file-server/images/wx_star.png',
+        icon: HOST + 'files/author/support.png'
+    },
+
+    {
         id: 'Threejs',
         name: 'Threejs',
         github: 'https://threejs.org/',
