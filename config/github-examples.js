@@ -320,6 +320,15 @@ export default [
                 author: 'z2586300277',
                 openUrl: 'https://z2586300277.github.io/show-site/geoMap',
                 image: HOST + 'threeExamples/other/levelMap.jpg',
+            },
+            {   
+                id: 'geoArea',
+                name: '地理区域',
+                name_en: 'Geo Area',
+                author: 'AUTO',
+                openUrl: 'https://z2586300277.github.io/show-site/geoArea/',
+                githubUrl: 'https://github.com/Pakeyeo/temp-map',
+                image: HOST + 'threeExamples/openSource/geoArea.jpg',
             }
         ]
     },
