@@ -188,7 +188,7 @@ export default [
                 image: HOST + 'threeExamples/openSource/etudes.jpg'
             },
             {
-                id:'genuary',
+                id: 'genuary',
                 author: 'AUTO',
                 name: 'Genuary 2022',
                 githubUrl: 'https://github.com/spite/genuary-2022',
@@ -239,14 +239,27 @@ export default [
                 image: HOST + 'threeExamples/openSource/Astral3DEditor.jpg'
             },
             {
-                id: 'buildingEditor',
-                name: '建筑编辑器(fiber)',
-                name_en: 'BuildingEditor',
+                id: 'next3dEditor',
+                name: 'Next3D编辑器',
+                name_en: 'Next3D Editor',
+                tag: 'Babylon',
                 author: 'AUTO',
-                githubUrl: 'https://github.com/krystiandzirba/Rust-Base-Builder',
-                openUrl: 'https://krystiandzirba.github.io/Rust-Base-Builder/',
-                image: HOST + 'threeExamples/openSource/buildingEditor.jpg'
+                links: [
+                    {
+                        name: '🏡官网',
+                        url: 'http://babylonjsx.cn/home.html'
+                    },
+                    {
+                        url: 'https://www.bilibili.com/video/BV1FGRfYGEAF',
+                        name: '📺B站'
+                    }
+                ],
+                openUrl: 'http://babylonjsx.cn/index.html?id=0064#/editor',
+                referUrl: 'http://babylonjsx.cn/Next3DExample.html#postprocess_msaa',
+                githubUrl: 'https://github.com/blueRaining/Next3D',
+                image: HOST + 'threeExamples/other/next3dEditor.jpg'
             },
+
             {
                 id: 'z2586300277_3d_editor',
                 tag: TEXTS['编辑器'] + '-#795cddba',
@@ -263,6 +276,15 @@ export default [
                         url: 'https://blog.csdn.net/guang2586/article/details/142910241'
                     }
                 ]
+            },
+            {
+                id: 'buildingEditor',
+                name: '建筑编辑器(fiber)',
+                name_en: 'BuildingEditor',
+                author: 'AUTO',
+                githubUrl: 'https://github.com/krystiandzirba/Rust-Base-Builder',
+                openUrl: 'https://krystiandzirba.github.io/Rust-Base-Builder/',
+                image: HOST + 'threeExamples/openSource/buildingEditor.jpg'
             },
             {
                 id: 'chili3d',
@@ -321,7 +343,7 @@ export default [
                 openUrl: 'https://z2586300277.github.io/show-site/geoMap',
                 image: HOST + 'threeExamples/other/levelMap.jpg',
             },
-            {   
+            {
                 id: 'geoArea',
                 name: '地理区域',
                 name_en: 'Geo Area',
@@ -366,7 +388,7 @@ export default [
                 name: 'SU7-Replica',
                 name_en: 'SU7 Replica',
                 author: 'AUTO',
-                openUrl:'https://su7-replica.netlify.app/',
+                openUrl: 'https://su7-replica.netlify.app/',
                 githubUrl: 'https://github.com/alphardex/su7-replica',
                 image: HOST + 'threeExamples/openSource/su7_replica.jpg'
             },
@@ -563,7 +585,7 @@ export default [
                 downloadUrl: 'https://g2657.github.io/examples-server/smartCity/smartCity.zip',
                 image: HOST + 'threeExamples/openSource/smartCity.jpg'
             },
-         
+
             {
                 id: 'roaming',
                 author: 'AUTO',
@@ -700,7 +722,7 @@ export default [
                 githubUrl: 'https://github.com/mattbradley/dash',
                 image: HOST + 'threeExamples/openSource/driverCar.jpg'
             },
-            {   
+            {
                 id: '3d-portfolio',
                 name: '3D Portfolio',
                 author: 'AUTO',
@@ -747,7 +769,7 @@ export default [
                 openUrl: 'https://martinRenou.github.io/threejs-caustics/',
                 image: HOST + 'threeExamples/openSource/threejs-caustics.jpg'
             },
-            {   
+            {
                 id: 'autopilot',
                 name: '自动驾驶',
                 name_en: 'Autopilot',
@@ -755,7 +777,7 @@ export default [
                 referUrl: 'https://juejin.cn/column/7338674902280650779',
                 openUrl: 'https://z2586300277.github.io/show-site/autopilot/',
                 githubUrl: 'https://github.com/GitHubJackson/autopilot',
-                image: HOST + 'threeExamples/openSource/autopilot.jpg' 
+                image: HOST + 'threeExamples/openSource/autopilot.jpg'
             },
 
             {
@@ -802,7 +824,7 @@ export default [
                 openUrl: 'http://www.nicowebgl.cn/annotations/',
                 image: HOST + 'threeExamples/openSource/unrealstyle.jpg'
             },
-        
+
         ]
     },
     {
@@ -1024,7 +1046,7 @@ export default [
                 name: 'trois.js',
                 image: HOST + 'threeExamples/openSource/trois.jpg',
             },
-            {   
+            {
                 id: 'vueCesium',
                 name: 'vue-cesium',
                 name_en: 'Vue Cesium',
@@ -1067,7 +1089,7 @@ export default [
                 openUrl: 'https://axydemo.netlify.app/#/bigScreen',
                 image: HOST + 'threeExamples/openSource/axydemo.jpg'
             },
-            {   
+            {
                 id: 'visualization-collection',
                 name: '可视化效果集合',
                 name_en: 'Visualization',
