@@ -303,6 +303,16 @@ export default [
                 openUrl: 'https://three3d-0gte3eg619c78ffd-1301256746.tcloudbaseapp.com/threejs-3dmodel-edit/',
                 githubUrl: 'https://github.com/zhangbo126/threejs-3dmodel-edit',
                 image: HOST + 'threeExamples/openSource/3dmodelEdit.jpg'
+            },
+            {
+                id: 'pipeEditor',
+                name: 'Pipe编辑器',
+                author: 'AUTO',
+                name_en: 'Pipe Editor',
+                openUrl: 'https://editor.threepipe.org/',
+                githubUrl: 'https://github.com/repalash/threepipe',
+                referUrl: 'https://threepipe.org/',
+                image: HOST + 'threeExamples/openSource/pipeEditor.jpg'
             }
         ]
     },
