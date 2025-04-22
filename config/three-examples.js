@@ -2306,6 +2306,14 @@ export default [
                 author: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/basic/renderTarget.js',
                 image: HOST + 'threeExamples/basic/renderTarget.jpg',
+            },
+            {
+                id: 'sceneScissor',
+                name: '场景剪切-后处理',
+                name_en: 'Scene Scissor',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/basic/sceneScissor.js',
+                image: HOST + 'threeExamples/basic/sceneScissor.jpg',
             }
         ]
     },
