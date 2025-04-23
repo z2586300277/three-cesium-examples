@@ -1014,6 +1014,16 @@ export default [
                 openUrl: 'https://projects.markkellogg.org/threejs/demo_particle_system.php',
                 githubUrl: 'https://github.com/mkkellogg/Photons2',
                 image: HOST + 'threeExamples/openSource/Photons.jpg'
+            },
+            {
+                id: 'threeQuarks',
+                name: 'three-quarks',
+                name_en: 'Three Quarks',
+                author: 'AUTO',
+                referUrl: 'https://www.npmjs.com/package/three.quarks',
+                opneUrl: 'https://forrestsun.com/three.quarks/',
+                githubUrl: 'https://github.com/Alchemist0823/three.quarks',
+                image: HOST + 'threeExamples/openSource/threeQuarks.jpg'
             }
         ]
     },
