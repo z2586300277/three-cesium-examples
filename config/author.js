@@ -107,7 +107,7 @@ export default [
                 name: '📙博客',
                 url: 'https://blog.csdn.net/m0_68324632?type=blog'
             },
-            {   
+            {
                 name: '📗文档',
                 url: 'https://flowers-10.github.io/three-auto/'
             }
@@ -466,7 +466,7 @@ export default [
             },
             {
                 name: '⛪gitee',
-                url : 'https://gitee.com/fu-meichuan'
+                url: 'https://gitee.com/fu-meichuan'
             }
         ],
         github: 'https://coderfmc.github.io/three.js-demo/fmc-web-3d/',

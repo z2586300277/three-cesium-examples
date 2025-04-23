@@ -20,7 +20,7 @@ export default {
         //     name: '🔥WebGPU',
         //     url: 'https://openthree.github.io/webgpu'
         // },
-        
+
         {
             name: '📦Three',
             children: [
@@ -38,7 +38,7 @@ export default {
                 },
             ]
         },
-        
+
         {
             name: '🌐Cesium',
             children: [
@@ -65,6 +65,6 @@ export default {
             name: '🍃OpenThree',
             url: 'https://openthree.github.io/three-cesium-links/'
         }
-        
+
     ]
 }

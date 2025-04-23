@@ -24,7 +24,7 @@ window.GLOBAL_CONFIG = {
 }
 
 /* 注入 HTML */
-window.HTML_TEMPLATE = 
+window.HTML_TEMPLATE =
 `<style>
     body {
         margin: 0;
@@ -111,7 +111,7 @@ window.THREE_CESIUM_AUTHORS = threeCesiumAuthors // 作者
 */
 
 /* 语言切换 */
-if (localStorage.getItem('langEn')==='true') {
+if (localStorage.getItem('langEn') === 'true') {
 
     window.THREE_CESIUM_NAVIGATION.forEach(item => {
 

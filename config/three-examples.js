@@ -7,6 +7,8 @@ export default [
         name_en: 'Home Navigation',
         children: [
 
+            // { id: 'test', name: '测试', codeUrl: HOST + 'threeExamples/other/test.js' },
+
             {
                 id: 'officialExamples',
                 tag: TEXTS['官方'] + '-rgb(157 46 37)',
@@ -105,7 +107,7 @@ export default [
                 codeUrl: HOST + 'threeExamples/shader/cityEffect.js',
                 image: HOST + 'threeExamples/shader/cityEffect.jpg',
             },
-          
+
             {
                 id: 'grassShader',
                 name: '草地着色器',
@@ -191,7 +193,7 @@ export default [
                 codeUrl: HOST + 'threeExamples/shader/circleWave.js',
                 image: HOST + 'threeExamples/shader/circleWave.jpg',
             },
-           
+
             {
                 id: 'fenceWall',
                 name: '围墙着色器',
@@ -1721,7 +1723,7 @@ export default [
                 codeUrl: HOST + 'threeExamples/application/geometryMerge.js',
                 image: HOST + 'threeExamples/application/geometryMerge.jpg',
             }
-            
+
         ]
     },
     {
