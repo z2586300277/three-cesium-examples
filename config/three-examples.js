@@ -1809,8 +1809,10 @@ export default [
                 name_en: 'Load Tiles',
                 author: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/expand/loadTiles.js',
+                referUrl: 'https://www.npmjs.com/package/3d-tiles-renderer',
+                githubUrl: 'https://github.com/NASA-AMMOS/3DTilesRendererJS',
                 image: HOST + 'threeExamples/expand/loadTiles.jpg',
-                inject: { "importmap": { "3d-tiles-renderer": FILE_HOST + "js/3dTilesRenderer/index.js" } },
+                inject: { "importmap": { "3d-tiles-renderer": FILE_HOST + "js/3dTilesRenderer@0.4.8/index.js" } },
                 meta: {
                     title: 'three加载3dtiles',
                     keywords: 'three.js,3dtiles',
