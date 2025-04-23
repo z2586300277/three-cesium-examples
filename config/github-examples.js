@@ -741,6 +741,43 @@ export default [
                 image: HOST + 'threeExamples/openSource/3d-portfolio.jpg'
             },
             {
+                id: '3dcity',
+                name: '3D城市',
+                name_en: '3D City',
+                author: 'AUTO',
+                githubUrl: 'https://github.com/lo-th/3d.city',
+                openUrl: 'https://lo-th.github.io/3d.city/index.html',
+                image: HOST + 'threeExamples/openSource/3dcity.jpg'
+            },
+            {
+                id: 'Sketchbook',
+                author: 'AUTO',
+                name: '飞车',
+                name_en: 'flying car',
+                githubUrl: 'https://github.com/swift502/Sketchbook',
+                openUrl: 'https://jblaha.art/sketchbook/0.4/',
+                image: HOST + 'threeExamples/openSource/sketchbook.jpg'
+            },
+
+            {
+                id: 'octreeDemo',
+                name: '八叉树',
+                name_en: 'Octree',
+                author: 'AUTO',
+                openUrl: 'https://eriksom.github.io/threejs-octree/dist/example/',
+                githubUrl: 'https://github.com/ErikSom/threejs-octree',
+                image: HOST + 'threeExamples/physics/octreeDemo.jpg'
+            },
+            {
+                id: 'phy',
+                name: '小物理游戏',
+                name_en: 'Physics Game',
+                author: 'AUTO',
+                openUrl: 'https://lo-th.github.io/phy/',
+                githubUrl: 'https://github.com/lo-th/phy',
+                image: HOST + 'threeExamples/openSource/phy.jpg'
+            },
+            {
                 id: 'fire',
                 name: '烟花',
                 name_en: 'fire',
@@ -838,62 +875,12 @@ export default [
         ]
     },
     {
-        pid: 'physicsSource',
-        name: '物理相关',
-        name_en: 'Physics Related',
-        children: [
-            {
-                id: 'Sketchbook',
-                author: 'AUTO',
-                name: '飞车',
-                name_en: 'flying car',
-                githubUrl: 'https://github.com/swift502/Sketchbook',
-                openUrl: 'https://jblaha.art/sketchbook/0.4/',
-                image: HOST + 'threeExamples/openSource/sketchbook.jpg'
-            },
-            {
-                id: 'threeForce',
-                name: '力导向图',
-                name_en: 'Force Graph',
-                author: 'vasturiano',
-                openUrl: 'https://vasturiano.github.io/3d-force-graph/example/large-graph/',
-                githubUrl: 'https://github.com/vasturiano/3d-force-graph',
-                image: HOST + 'threeExamples/physics/threeForce.jpg',
-            },
-            {
-                id: 'octreeDemo',
-                name: '八叉树',
-                name_en: 'Octree',
-                author: 'AUTO',
-                openUrl: 'https://eriksom.github.io/threejs-octree/dist/example/',
-                githubUrl: 'https://github.com/ErikSom/threejs-octree',
-                image: HOST + 'threeExamples/physics/octreeDemo.jpg'
-            },
-            {
-                id: 'phy',
-                name: '小物理游戏',
-                name_en: 'Physics Game',
-                author: 'AUTO',
-                openUrl: 'https://lo-th.github.io/phy/',
-                githubUrl: 'https://github.com/lo-th/phy',
-                image: HOST + 'threeExamples/openSource/phy.jpg'
-            },
-            {
-                id: '3dcity',
-                name: '3D城市',
-                name_en: '3D City',
-                author: 'AUTO',
-                githubUrl: 'https://github.com/lo-th/3d.city',
-                openUrl: 'https://lo-th.github.io/3d.city/index.html',
-                image: HOST + 'threeExamples/openSource/3dcity.jpg'
-            },
-        ]
-
-    },
-    {
         pid: 'threejsSource',
         name: '扩展依赖',
         name_en: 'Extension Dependency',
+        gid: 'ecologyExpand',
+        group: '生态扩展',
+        group_en: 'Ecology Expand',
         children: [
             {
                 id: 'threejsExamples',
@@ -1024,13 +1011,25 @@ export default [
                 opneUrl: 'https://forrestsun.com/three.quarks/',
                 githubUrl: 'https://github.com/Alchemist0823/three.quarks',
                 image: HOST + 'threeExamples/openSource/threeQuarks.jpg'
-            }
+            },
+            {
+                id: 'threeForce',
+                name: '力导向图',
+                name_en: 'Force Graph',
+                author: 'vasturiano',
+                openUrl: 'https://vasturiano.github.io/3d-force-graph/example/large-graph/',
+                githubUrl: 'https://github.com/vasturiano/3d-force-graph',
+                image: HOST + 'threeExamples/physics/threeForce.jpg',
+            },
         ]
     },
     {
         pid: 'framework',
         name: '相关框架',
         name_en: 'Frame Work',
+        gid: 'ecologyExpand',
+        group: '生态扩展',
+        group_en: 'Ecology Expand',
         children: [
             {
                 id: 'iTowns',
@@ -1125,7 +1124,6 @@ export default [
 
 /* 可能在未来上线的一些链接资源记录 - 筛选
 http://mapbs.com/
-https://github.com/Alchemist0823/three.quarks
 https://threepipe.org/
 https://github.com/hululuuuuu/GlobeStream3D
 */

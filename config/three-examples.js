@@ -7,7 +7,7 @@ export default [
         name_en: 'Home Navigation',
         children: [
 
-            // { id: 'test', name: '测试', codeUrl: HOST + 'threeExamples/other/test.js' },
+            // { id: 'test', name: '测试', codeUrl: HOST + 'threeExamples/other/test.js' }, // 本地开发调试模板用例 不更改提交
 
             {
                 id: 'officialExamples',
@@ -2625,10 +2625,8 @@ export default [
             // {
             //     id: 'scene_fase',
             //     name: '场景快速调试工具',
-            //     author: 'nico',
-            //     openUrl: 'http://nicowebgl.cn/three_tool/',
             //     image: HOST + 'threeExamples/tools/scene.jpg'
-            // https://gltf-viewer.donmccurdy.com/
+            //     https://gltf-viewer.donmccurdy.com/
             // }
         ]
     },
