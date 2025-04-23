@@ -100,6 +100,7 @@ window.THREE_CESIUM_AUTHORS = threeCesiumAuthors // 作者
  * link 样式引入 列表
  * importmap 映射引入 列表
  * 配置单个 案例信息的 inject 属性
+ * 引用可使用 https://www.jsdelivr.com/ cdn 或者 https://unpkg.com/ 进行外部依赖
     {  
         "link": ["/test.css"],
         "src": [HOST+"js/echarts.min.js"],
