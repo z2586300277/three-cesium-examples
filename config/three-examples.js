@@ -1194,6 +1194,14 @@ export default [
                 author: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/particle/globeParticle.js',
                 image: HOST + 'threeExamples/particle/globeParticle.jpg',
+            },
+            {
+                id: 'spreadPartile',
+                name: '发散粒子',
+                name_en: 'Spread Partile',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/particle/spreadPartile.js',
+                image: HOST + 'threeExamples/particle/spreadPartile.jpg',
             }
         ]
     },
