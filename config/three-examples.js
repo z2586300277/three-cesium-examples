@@ -7,6 +7,8 @@ export default [
         name_en: 'Home Navigation',
         children: [
 
+            // { id: 'test', name: '测试', codeUrl: HOST + 'threeExamples/other/test.js' }, // 本地开发调试模板用例 不更改提交
+
             {
                 id: 'officialExamples',
                 tag: TEXTS['官方'] + '-rgb(157 46 37)',
@@ -105,7 +107,7 @@ export default [
                 codeUrl: HOST + 'threeExamples/shader/cityEffect.js',
                 image: HOST + 'threeExamples/shader/cityEffect.jpg',
             },
-          
+
             {
                 id: 'grassShader',
                 name: '草地着色器',
@@ -191,7 +193,7 @@ export default [
                 codeUrl: HOST + 'threeExamples/shader/circleWave.js',
                 image: HOST + 'threeExamples/shader/circleWave.jpg',
             },
-           
+
             {
                 id: 'fenceWall',
                 name: '围墙着色器',
@@ -1192,6 +1194,14 @@ export default [
                 author: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/particle/globeParticle.js',
                 image: HOST + 'threeExamples/particle/globeParticle.jpg',
+            },
+            {
+                id: 'spreadPartile',
+                name: '发散粒子',
+                name_en: 'Spread Partile',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/particle/spreadPartile.js',
+                image: HOST + 'threeExamples/particle/spreadPartile.jpg',
             }
         ]
     },
@@ -1721,7 +1731,7 @@ export default [
                 codeUrl: HOST + 'threeExamples/application/geometryMerge.js',
                 image: HOST + 'threeExamples/application/geometryMerge.jpg',
             }
-            
+
         ]
     },
     {
@@ -1807,8 +1817,10 @@ export default [
                 name_en: 'Load Tiles',
                 author: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/expand/loadTiles.js',
+                referUrl: 'https://www.npmjs.com/package/3d-tiles-renderer',
+                githubUrl: 'https://github.com/NASA-AMMOS/3DTilesRendererJS',
                 image: HOST + 'threeExamples/expand/loadTiles.jpg',
-                inject: { "importmap": { "3d-tiles-renderer": FILE_HOST + "js/3dTilesRenderer/index.js" } },
+                inject: { "importmap": { "3d-tiles-renderer": FILE_HOST + "js/3dTilesRenderer@0.4.8/index.js" } },
                 meta: {
                     title: 'three加载3dtiles',
                     keywords: 'three.js,3dtiles',
@@ -2306,6 +2318,14 @@ export default [
                 author: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/basic/renderTarget.js',
                 image: HOST + 'threeExamples/basic/renderTarget.jpg',
+            },
+            {
+                id: 'sceneScissor',
+                name: '场景剪切-后处理',
+                name_en: 'Scene Scissor',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/basic/sceneScissor.js',
+                image: HOST + 'threeExamples/basic/sceneScissor.jpg',
             }
         ]
     },
@@ -2615,10 +2635,8 @@ export default [
             // {
             //     id: 'scene_fase',
             //     name: '场景快速调试工具',
-            //     author: 'nico',
-            //     openUrl: 'http://nicowebgl.cn/three_tool/',
             //     image: HOST + 'threeExamples/tools/scene.jpg'
-            // https://gltf-viewer.donmccurdy.com/
+            //     https://gltf-viewer.donmccurdy.com/
             // }
         ]
     },

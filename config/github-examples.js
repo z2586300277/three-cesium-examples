@@ -5,6 +5,7 @@ export default [
         pid: 'topNavigation',
         name: '精选导航',
         name_en: 'Top Navigation',
+        order: 0,
         children: [
             {
                 id: 'codePen',
@@ -61,6 +62,7 @@ export default [
         pid: 'openSourceStation',
         name: '资源链接',
         name_en: 'Resource Link',
+        order: 10,
         children: [
             {
                 id: 'sketchThree',
@@ -188,7 +190,7 @@ export default [
                 image: HOST + 'threeExamples/openSource/etudes.jpg'
             },
             {
-                id:'genuary',
+                id: 'genuary',
                 author: 'AUTO',
                 name: 'Genuary 2022',
                 githubUrl: 'https://github.com/spite/genuary-2022',
@@ -210,6 +212,7 @@ export default [
         pid: 'editor',
         name: '三维编辑',
         name_en: 'Three Editor',
+        order: 20,
         children: [
             {
                 id: 'shadowEditor',
@@ -239,14 +242,27 @@ export default [
                 image: HOST + 'threeExamples/openSource/Astral3DEditor.jpg'
             },
             {
-                id: 'buildingEditor',
-                name: '建筑编辑器(fiber)',
-                name_en: 'BuildingEditor',
+                id: 'next3dEditor',
+                name: 'Next3D编辑器',
+                name_en: 'Next3D Editor',
+                tag: 'Babylon',
                 author: 'AUTO',
-                githubUrl: 'https://github.com/krystiandzirba/Rust-Base-Builder',
-                openUrl: 'https://krystiandzirba.github.io/Rust-Base-Builder/',
-                image: HOST + 'threeExamples/openSource/buildingEditor.jpg'
+                links: [
+                    {
+                        name: '🏡官网',
+                        url: 'http://babylonjsx.cn/home.html'
+                    },
+                    {
+                        url: 'https://www.bilibili.com/video/BV1FGRfYGEAF',
+                        name: '📺B站'
+                    }
+                ],
+                openUrl: 'http://babylonjsx.cn/index.html?id=0064#/editor',
+                referUrl: 'http://babylonjsx.cn/Next3DExample.html#postprocess_msaa',
+                githubUrl: 'https://github.com/blueRaining/Next3D',
+                image: HOST + 'threeExamples/other/next3dEditor.jpg'
             },
+
             {
                 id: 'z2586300277_3d_editor',
                 tag: TEXTS['编辑器'] + '-#795cddba',
@@ -265,6 +281,15 @@ export default [
                 ]
             },
             {
+                id: 'buildingEditor',
+                name: '建筑编辑器(fiber)',
+                name_en: 'BuildingEditor',
+                author: 'AUTO',
+                githubUrl: 'https://github.com/krystiandzirba/Rust-Base-Builder',
+                openUrl: 'https://krystiandzirba.github.io/Rust-Base-Builder/',
+                image: HOST + 'threeExamples/openSource/buildingEditor.jpg'
+            },
+            {
                 id: 'chili3d',
                 name: 'Chili3D-CAD',
                 name_en: 'Chili3D-CAD',
@@ -281,6 +306,16 @@ export default [
                 openUrl: 'https://three3d-0gte3eg619c78ffd-1301256746.tcloudbaseapp.com/threejs-3dmodel-edit/',
                 githubUrl: 'https://github.com/zhangbo126/threejs-3dmodel-edit',
                 image: HOST + 'threeExamples/openSource/3dmodelEdit.jpg'
+            },
+            {
+                id: 'pipeEditor',
+                name: 'Pipe编辑器',
+                author: 'AUTO',
+                name_en: 'Pipe Editor',
+                openUrl: 'https://editor.threepipe.org/',
+                githubUrl: 'https://github.com/repalash/threepipe',
+                referUrl: 'https://threepipe.org/',
+                image: HOST + 'threeExamples/openSource/pipeEditor.jpg'
             }
         ]
     },
@@ -288,6 +323,10 @@ export default [
         pid: 'threeMap',
         name: '三维地图',
         name_en: 'Three Map',
+        gid: 'commonSeries',
+        group: '常用系列',
+        group_en: 'Common Series',
+        order: 30,
         children: [
             {
                 id: '3dGeoMap',
@@ -321,7 +360,7 @@ export default [
                 openUrl: 'https://z2586300277.github.io/show-site/geoMap',
                 image: HOST + 'threeExamples/other/levelMap.jpg',
             },
-            {   
+            {
                 id: 'geoArea',
                 name: '地理区域',
                 name_en: 'Geo Area',
@@ -336,6 +375,10 @@ export default [
         pid: 'threeCar',
         name: '汽车相关',
         name_en: 'Car Related',
+        gid: 'commonSeries',
+        group: '常用系列',
+        group_en: 'Common Series',
+        order: 30,
         children: [
             {
                 id: 'su7peng',
@@ -366,7 +409,7 @@ export default [
                 name: 'SU7-Replica',
                 name_en: 'SU7 Replica',
                 author: 'AUTO',
-                openUrl:'https://su7-replica.netlify.app/',
+                openUrl: 'https://su7-replica.netlify.app/',
                 githubUrl: 'https://github.com/alphardex/su7-replica',
                 image: HOST + 'threeExamples/openSource/su7_replica.jpg'
             },
@@ -406,6 +449,10 @@ export default [
         pid: 'threeEarth',
         name: '三维地球',
         name_en: 'Three Earth',
+        gid: 'commonSeries',
+        group: '常用系列',
+        group_en: 'Common Series',
+        order: 30,
         children: [
             {
                 id: '3dEarth',
@@ -450,6 +497,7 @@ export default [
         pid: 'digitalTwin',
         name: '数字孪生',
         name_en: 'digitalTwin',
+        order: 40,
         children: [
             {
                 id: 'digitalFarm',
@@ -493,6 +541,7 @@ export default [
         pid: 'advancedExamples',
         name: '高级案例',
         name_en: 'Advanced Examples',
+        order: 50,
         children: [
             {
                 id: 'taohuating',
@@ -563,7 +612,7 @@ export default [
                 downloadUrl: 'https://g2657.github.io/examples-server/smartCity/smartCity.zip',
                 image: HOST + 'threeExamples/openSource/smartCity.jpg'
             },
-         
+
             {
                 id: 'roaming',
                 author: 'AUTO',
@@ -700,13 +749,50 @@ export default [
                 githubUrl: 'https://github.com/mattbradley/dash',
                 image: HOST + 'threeExamples/openSource/driverCar.jpg'
             },
-            {   
+            {
                 id: '3d-portfolio',
                 name: '3D Portfolio',
                 author: 'AUTO',
                 githubUrl: 'https://github.com/TomasGonzalez/3d-portfolio',
                 openUrl: 'https://tomasgonzalez.github.io/3d-portfolio/',
                 image: HOST + 'threeExamples/openSource/3d-portfolio.jpg'
+            },
+            {
+                id: '3dcity',
+                name: '3D城市',
+                name_en: '3D City',
+                author: 'AUTO',
+                githubUrl: 'https://github.com/lo-th/3d.city',
+                openUrl: 'https://lo-th.github.io/3d.city/index.html',
+                image: HOST + 'threeExamples/openSource/3dcity.jpg'
+            },
+            {
+                id: 'Sketchbook',
+                author: 'AUTO',
+                name: '飞车',
+                name_en: 'flying car',
+                githubUrl: 'https://github.com/swift502/Sketchbook',
+                openUrl: 'https://jblaha.art/sketchbook/0.4/',
+                image: HOST + 'threeExamples/openSource/sketchbook.jpg'
+            },
+
+            {
+                id: 'octreeDemo',
+                name: '八叉树',
+                name_en: 'Octree',
+                author: 'AUTO',
+                openUrl: 'https://eriksom.github.io/threejs-octree/dist/example/',
+                githubUrl: 'https://github.com/ErikSom/threejs-octree',
+                image: HOST + 'threeExamples/physics/octreeDemo.jpg'
+            },
+            {
+                id: 'phy',
+                name: '小物理游戏',
+                name_en: 'Physics Game',
+                author: 'AUTO',
+                openUrl: 'https://lo-th.github.io/phy/',
+                githubUrl: 'https://github.com/lo-th/phy',
+                image: HOST + 'threeExamples/openSource/phy.jpg'
             },
             {
                 id: 'fire',
@@ -747,7 +833,7 @@ export default [
                 openUrl: 'https://martinRenou.github.io/threejs-caustics/',
                 image: HOST + 'threeExamples/openSource/threejs-caustics.jpg'
             },
-            {   
+            {
                 id: 'autopilot',
                 name: '自动驾驶',
                 name_en: 'Autopilot',
@@ -755,7 +841,7 @@ export default [
                 referUrl: 'https://juejin.cn/column/7338674902280650779',
                 openUrl: 'https://z2586300277.github.io/show-site/autopilot/',
                 githubUrl: 'https://github.com/GitHubJackson/autopilot',
-                image: HOST + 'threeExamples/openSource/autopilot.jpg' 
+                image: HOST + 'threeExamples/openSource/autopilot.jpg'
             },
 
             {
@@ -802,66 +888,17 @@ export default [
                 openUrl: 'http://www.nicowebgl.cn/annotations/',
                 image: HOST + 'threeExamples/openSource/unrealstyle.jpg'
             },
-        
-        ]
-    },
-    {
-        pid: 'physicsSource',
-        name: '物理相关',
-        name_en: 'Physics Related',
-        children: [
-            {
-                id: 'Sketchbook',
-                author: 'AUTO',
-                name: '飞车',
-                name_en: 'flying car',
-                githubUrl: 'https://github.com/swift502/Sketchbook',
-                openUrl: 'https://jblaha.art/sketchbook/0.4/',
-                image: HOST + 'threeExamples/openSource/sketchbook.jpg'
-            },
-            {
-                id: 'threeForce',
-                name: '力导向图',
-                name_en: 'Force Graph',
-                author: 'vasturiano',
-                openUrl: 'https://vasturiano.github.io/3d-force-graph/example/large-graph/',
-                githubUrl: 'https://github.com/vasturiano/3d-force-graph',
-                image: HOST + 'threeExamples/physics/threeForce.jpg',
-            },
-            {
-                id: 'octreeDemo',
-                name: '八叉树',
-                name_en: 'Octree',
-                author: 'AUTO',
-                openUrl: 'https://eriksom.github.io/threejs-octree/dist/example/',
-                githubUrl: 'https://github.com/ErikSom/threejs-octree',
-                image: HOST + 'threeExamples/physics/octreeDemo.jpg'
-            },
-            {
-                id: 'phy',
-                name: '小物理游戏',
-                name_en: 'Physics Game',
-                author: 'AUTO',
-                openUrl: 'https://lo-th.github.io/phy/',
-                githubUrl: 'https://github.com/lo-th/phy',
-                image: HOST + 'threeExamples/openSource/phy.jpg'
-            },
-            {
-                id: '3dcity',
-                name: '3D城市',
-                name_en: '3D City',
-                author: 'AUTO',
-                githubUrl: 'https://github.com/lo-th/3d.city',
-                openUrl: 'https://lo-th.github.io/3d.city/index.html',
-                image: HOST + 'threeExamples/openSource/3dcity.jpg'
-            },
-        ]
 
+        ]
     },
     {
         pid: 'threejsSource',
         name: '扩展依赖',
         name_en: 'Extension Dependency',
+        gid: 'ecologyExpand',
+        group: '生态扩展',
+        group_en: 'Ecology Expand',
+        order: 60,
         children: [
             {
                 id: 'threejsExamples',
@@ -982,13 +1019,36 @@ export default [
                 openUrl: 'https://projects.markkellogg.org/threejs/demo_particle_system.php',
                 githubUrl: 'https://github.com/mkkellogg/Photons2',
                 image: HOST + 'threeExamples/openSource/Photons.jpg'
-            }
+            },
+            {
+                id: 'threeQuarks',
+                name: 'three-quarks',
+                name_en: 'Three Quarks',
+                author: 'AUTO',
+                referUrl: 'https://www.npmjs.com/package/three.quarks',
+                openUrl: 'https://forrestsun.com/three.quarks/',
+                githubUrl: 'https://github.com/Alchemist0823/three.quarks',
+                image: HOST + 'threeExamples/openSource/threeQuarks.jpg'
+            },
+            {
+                id: 'threeForce',
+                name: '力导向图',
+                name_en: 'Force Graph',
+                author: 'vasturiano',
+                openUrl: 'https://vasturiano.github.io/3d-force-graph/example/large-graph/',
+                githubUrl: 'https://github.com/vasturiano/3d-force-graph',
+                image: HOST + 'threeExamples/physics/threeForce.jpg',
+            },
         ]
     },
     {
         pid: 'framework',
         name: '相关框架',
         name_en: 'Frame Work',
+        gid: 'ecologyExpand',
+        group: '生态扩展',
+        group_en: 'Ecology Expand',
+        order: 60,
         children: [
             {
                 id: 'iTowns',
@@ -1024,7 +1084,7 @@ export default [
                 name: 'trois.js',
                 image: HOST + 'threeExamples/openSource/trois.jpg',
             },
-            {   
+            {
                 id: 'vueCesium',
                 name: 'vue-cesium',
                 name_en: 'Vue Cesium',
@@ -1039,6 +1099,7 @@ export default [
         pid: 'ortherSource',
         name: '其他资源',
         name_en: 'Other Resources',
+        order: 70,
         children: [
             {
                 id: 'loveCode',
@@ -1067,7 +1128,7 @@ export default [
                 openUrl: 'https://axydemo.netlify.app/#/bigScreen',
                 image: HOST + 'threeExamples/openSource/axydemo.jpg'
             },
-            {   
+            {
                 id: 'visualization-collection',
                 name: '可视化效果集合',
                 name_en: 'Visualization',
@@ -1079,4 +1140,10 @@ export default [
         ]
 
     }
-]
+].sort((a, b) => (a.order ?? 100) - (b.order ?? 100))
+
+/* 可能在未来上线的一些链接资源记录 - 筛选
+http://mapbs.com/
+https://threepipe.org/
+https://github.com/hululuuuuu/GlobeStream3D
+*/

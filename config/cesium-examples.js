@@ -97,7 +97,7 @@ export default [
                     keywords: 'cesium.js,天地图',
                     description: 'cesium 天地图'
                 }
-            }, 
+            },
             {
                 id: 'xyz',
                 name: 'OGC- xyz服务',
@@ -611,7 +611,7 @@ export default [
                     description: 'cesium 结合 渐变行政区'
                 }
             },
-            
+
         ]
     },
     {

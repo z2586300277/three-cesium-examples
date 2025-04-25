@@ -24,7 +24,7 @@ window.GLOBAL_CONFIG = {
 }
 
 /* 注入 HTML */
-window.HTML_TEMPLATE = 
+window.HTML_TEMPLATE =
 `<style>
     body {
         margin: 0;
@@ -100,6 +100,7 @@ window.THREE_CESIUM_AUTHORS = threeCesiumAuthors // 作者
  * link 样式引入 列表
  * importmap 映射引入 列表
  * 配置单个 案例信息的 inject 属性
+ * 引用可使用 https://www.jsdelivr.com/ cdn 或者 https://unpkg.com/ 进行外部依赖
     {  
         "link": ["/test.css"],
         "src": [HOST+"js/echarts.min.js"],
@@ -111,7 +112,7 @@ window.THREE_CESIUM_AUTHORS = threeCesiumAuthors // 作者
 */
 
 /* 语言切换 */
-if (localStorage.getItem('langEn')==='true') {
+if (localStorage.getItem('langEn') === 'true') {
 
     window.THREE_CESIUM_NAVIGATION.forEach(item => {
 
