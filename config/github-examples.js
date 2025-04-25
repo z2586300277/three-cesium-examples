@@ -5,6 +5,7 @@ export default [
         pid: 'topNavigation',
         name: '精选导航',
         name_en: 'Top Navigation',
+        order: 0,
         children: [
             {
                 id: 'codePen',
@@ -61,6 +62,7 @@ export default [
         pid: 'openSourceStation',
         name: '资源链接',
         name_en: 'Resource Link',
+        order: 10,
         children: [
             {
                 id: 'sketchThree',
@@ -210,6 +212,7 @@ export default [
         pid: 'editor',
         name: '三维编辑',
         name_en: 'Three Editor',
+        order: 20,
         children: [
             {
                 id: 'shadowEditor',
@@ -320,6 +323,10 @@ export default [
         pid: 'threeMap',
         name: '三维地图',
         name_en: 'Three Map',
+        gid: 'commonSeries',
+        group: '常用系列',
+        group_en: 'Common Series',
+        order: 30,
         children: [
             {
                 id: '3dGeoMap',
@@ -368,6 +375,10 @@ export default [
         pid: 'threeCar',
         name: '汽车相关',
         name_en: 'Car Related',
+        gid: 'commonSeries',
+        group: '常用系列',
+        group_en: 'Common Series',
+        order: 30,
         children: [
             {
                 id: 'su7peng',
@@ -438,6 +449,10 @@ export default [
         pid: 'threeEarth',
         name: '三维地球',
         name_en: 'Three Earth',
+        gid: 'commonSeries',
+        group: '常用系列',
+        group_en: 'Common Series',
+        order: 30,
         children: [
             {
                 id: '3dEarth',
@@ -482,6 +497,7 @@ export default [
         pid: 'digitalTwin',
         name: '数字孪生',
         name_en: 'digitalTwin',
+        order: 40,
         children: [
             {
                 id: 'digitalFarm',
@@ -525,6 +541,7 @@ export default [
         pid: 'advancedExamples',
         name: '高级案例',
         name_en: 'Advanced Examples',
+        order: 50,
         children: [
             {
                 id: 'taohuating',
@@ -881,6 +898,7 @@ export default [
         gid: 'ecologyExpand',
         group: '生态扩展',
         group_en: 'Ecology Expand',
+        order: 60,
         children: [
             {
                 id: 'threejsExamples',
@@ -1030,6 +1048,7 @@ export default [
         gid: 'ecologyExpand',
         group: '生态扩展',
         group_en: 'Ecology Expand',
+        order: 60,
         children: [
             {
                 id: 'iTowns',
@@ -1080,6 +1099,7 @@ export default [
         pid: 'ortherSource',
         name: '其他资源',
         name_en: 'Other Resources',
+        order: 70,
         children: [
             {
                 id: 'loveCode',
@@ -1120,7 +1140,7 @@ export default [
         ]
 
     }
-]
+].sort((a, b) => (a.order ?? 100) - (b.order ?? 100))
 
 /* 可能在未来上线的一些链接资源记录 - 筛选
 http://mapbs.com/
