@@ -775,6 +775,14 @@ export default [
                 openUrl: 'https://jblaha.art/sketchbook/0.4/',
                 image: HOST + 'threeExamples/openSource/sketchbook.jpg'
             },
+            {
+                id: 'snakeGame',
+                name: '贪吃蛇',
+                name_en: 'Snake Game',
+                openUrl: 'https://z2586300277.github.io/show-site/snake/',
+                githubUrl: 'https://github.com/rock-biter/three-snake-live',
+                image: HOST + 'threeExamples/openSource/snakeGame.jpg'
+            },
 
             {
                 id: 'octreeDemo',
