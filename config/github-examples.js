@@ -902,7 +902,7 @@ export default [
     {
         pid: 'threejsSource',
         name: '扩展依赖',
-        name_en: 'Extension Dependency',
+        name_en: 'Dependency',
         gid: 'ecologyExpand',
         group: '生态扩展',
         group_en: 'Ecology Expand',
