@@ -61,7 +61,7 @@ window.THREE_CESIUM_NAVIGATION = [
                 "gsap": FILE_HOST + "js/gsap/index.js",
                 "animejs/": FILE_HOST + "js/animejs/",
                 "dat.gui": HOST + "js/dat.gui.module.js",
-                "postprocessing": HOST + "js/postprocessing.js",
+                "postprocessing": "https://cdn.jsdelivr.net/npm/postprocessing@6.37.3/+esm",
                 "tweakpane": HOST + "js/tweakpane.min.js",
                 "@tweenjs/tween.js": HOST + "js/tween.esm.js"
             }
