@@ -58,10 +58,10 @@ window.THREE_CESIUM_NAVIGATION = [
                 "three": "https://threejs.org/build/three.module.min.js",
                 "three/addons/": "https://threejs.org/examples/jsm/",
                 "three/examples/jsm/": "https://threejs.org/examples/jsm/",
-                "gsap": FILE_HOST + "js/gsap/index.js",
-                "animejs/": FILE_HOST + "js/animejs/",
+                "gsap": FILE_HOST + "js/gsap/index.js", // https://cdn.jsdelivr.net/npm/gsap/+esm gsap最新版
+                "animejs/": "https://cdn.jsdelivr.net/npm/animate.js/+esm",
                 "dat.gui": HOST + "js/dat.gui.module.js",
-                "postprocessing": "https://cdn.jsdelivr.net/npm/postprocessing@6.37.3/+esm",
+                "postprocessing": "https://cdn.jsdelivr.net/npm/postprocessing/+esm",
                 "tweakpane": HOST + "js/tweakpane.min.js",
                 "@tweenjs/tween.js": HOST + "js/tween.esm.js"
             }
