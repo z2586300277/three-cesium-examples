@@ -851,6 +851,15 @@ export default [
                 githubUrl: 'https://github.com/GitHubJackson/autopilot',
                 image: HOST + 'threeExamples/openSource/autopilot.jpg'
             },
+            {
+                id: 'steve245270533Gallery',
+                name: '3D画廊',
+                name_en: '3D Gallery',
+                author: 'AUTO',
+                openUrl: 'https://steve245270533.github.io/gallery/',
+                githubUrl: 'https://github.com/Steve245270533/gallery',
+                image: HOST + 'threeExamples/openSource/steve245270533Gallery.jpg'
+            },
 
             {
                 id: 'change',
