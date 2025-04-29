@@ -775,6 +775,14 @@ export default [
                 openUrl: 'https://jblaha.art/sketchbook/0.4/',
                 image: HOST + 'threeExamples/openSource/sketchbook.jpg'
             },
+            {
+                id: 'snakeGame',
+                name: '贪吃蛇',
+                name_en: 'Snake Game',
+                openUrl: 'https://z2586300277.github.io/show-site/snake/',
+                githubUrl: 'https://github.com/rock-biter/three-snake-live',
+                image: HOST + 'threeExamples/openSource/snakeGame.jpg'
+            },
 
             {
                 id: 'octreeDemo',
@@ -843,6 +851,15 @@ export default [
                 githubUrl: 'https://github.com/GitHubJackson/autopilot',
                 image: HOST + 'threeExamples/openSource/autopilot.jpg'
             },
+            {
+                id: 'steve245270533Gallery',
+                name: '3D画廊',
+                name_en: '3D Gallery',
+                author: 'AUTO',
+                openUrl: 'https://steve245270533.github.io/gallery/',
+                githubUrl: 'https://github.com/Steve245270533/gallery',
+                image: HOST + 'threeExamples/openSource/steve245270533Gallery.jpg'
+            },
 
             {
                 id: 'change',
@@ -894,7 +911,7 @@ export default [
     {
         pid: 'threejsSource',
         name: '扩展依赖',
-        name_en: 'Extension Dependency',
+        name_en: 'Dependency',
         gid: 'ecologyExpand',
         group: '生态扩展',
         group_en: 'Ecology Expand',

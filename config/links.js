@@ -64,6 +64,11 @@ export default {
         {
             name: '🍃OpenThree',
             url: 'https://openthree.github.io/three-cesium-links/'
+        },
+
+        {
+            name: '🏪3D Market',
+            url: 'https://openthree.github.io/market/'
         }
 
     ]
