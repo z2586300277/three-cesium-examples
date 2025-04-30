@@ -8,7 +8,7 @@
 
 | QQ 群 |           微信群            |              预览图                       | Stars           |
 | :---------------:| :---------------: | :---------: | :--------- |
-| <img src="https://z2586300277.github.io/3d-file-server/images/QQ.png" height="140px" /> | <img src="https://z2586300277.github.io/3d-file-server/images/wechat.jpg" height="140px" /> | <img src="https://z2586300277.github.io/3d-file-server/images/threeCesiumExamples.jpg" width="200px" height="140px" /> | <img src="https://api.star-history.com/svg?repos=z2586300277/three-editor,z2586300277/three-cesium-examples&type=Date" width="200px" height="140px" /> |
+| <img src="https://z2586300277.github.io/3d-file-server/images/QQ.png" height="140px" /> | <img src="https://z2586300277.github.io/3d-file-server/images/nico.jpg" height="140px" /> | <img src="https://z2586300277.github.io/3d-file-server/images/threeCesiumExamples.jpg" width="200px" height="140px" /> | <img src="https://api.star-history.com/svg?repos=z2586300277/three-editor,z2586300277/three-cesium-examples&type=Date" width="200px" height="140px" /> |
 
 - 2025 拥抱未来，分享永不停止 - [开源组织](https://openthree.github.io/three-cesium-links)，从零打造WebGPU开源案例 - [链接](https://openthree.github.io/webgpu)
 
