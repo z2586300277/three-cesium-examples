@@ -1202,6 +1202,14 @@ export default [
                 author: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/particle/spreadPartile.js',
                 image: HOST + 'threeExamples/particle/spreadPartile.jpg',
+            },
+            {
+                id: 'waterLeakage',
+                name: '水流粒子',
+                name_en: 'Water Leakage',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/particle/waterLeakage.js',
+                image: HOST + 'threeExamples/particle/waterLeakage.jpg',
             }
         ]
     },
