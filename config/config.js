@@ -62,7 +62,7 @@ window.THREE_CESIUM_NAVIGATION = [
                 "animejs/": "https://cdn.jsdelivr.net/npm/animate.js/+esm",
                 "dat.gui": HOST + "js/dat.gui.module.js",
                 "postprocessing": "https://cdn.jsdelivr.net/npm/postprocessing/+esm",
-                "tweakpane": HOST + "js/tweakpane.min.js",
+                "tweakpane": "https://cdn.jsdelivr.net/npm/tweakpane/+esm",
                 "@tweenjs/tween.js": HOST + "js/tween.esm.js"
             }
         }
