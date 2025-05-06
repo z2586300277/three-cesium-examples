@@ -52,7 +52,7 @@
 
 #### 🌿 分布式仓库开发模式 https://github.com/z2586300277/three-cesium-examples-self
 
-- 运行框架 启动服务端口指向 index.html 即可 如 nginx apache node.js liveServer 等只要可启动服务即可
+- 运行框架 - 确保联网(three、gsap等依赖引入) - 服务端口指向index.html 如nginx apache liveServer等
 
 1. 创作者可以在 config/author.js 录入你的开发者信息,然后你提交的案例关联上 id 就会展示作者信息。
 
