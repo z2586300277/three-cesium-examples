@@ -8,7 +8,7 @@
 
 | QQ 群 |           微信群            |              预览图                       | Stars           |
 | :---------------:| :---------------: | :---------: | :--------- |
-| <img src="https://z2586300277.github.io/3d-file-server/images/QQ.png" height="140px" /> | <img src="https://z2586300277.github.io/3d-file-server/images/wechat.jpg" height="140px" /> | <img src="https://z2586300277.github.io/3d-file-server/images/threeCesiumExamples.jpg" width="200px" height="140px" /> | <img src="https://api.star-history.com/svg?repos=z2586300277/three-editor,z2586300277/three-cesium-examples&type=Date" width="200px" height="140px" /> |
+| <img src="https://z2586300277.github.io/3d-file-server/images/QQ.png" height="140px" /> | <img src="https://z2586300277.github.io/3d-file-server/images/nico.jpg" height="140px" /> | <img src="https://z2586300277.github.io/3d-file-server/images/threeCesiumExamples.jpg" width="200px" height="140px" /> | <img src="https://api.star-history.com/svg?repos=z2586300277/three-editor,z2586300277/three-cesium-examples&type=Date" width="200px" height="140px" /> |
 
 - 2025 拥抱未来，分享永不停止 - [开源组织](https://openthree.github.io/three-cesium-links)，从零打造WebGPU开源案例 - [链接](https://openthree.github.io/webgpu)
 
@@ -52,7 +52,7 @@
 
 #### 🌿 分布式仓库开发模式 https://github.com/z2586300277/three-cesium-examples-self
 
-- 运行框架 启动服务端口指向 index.html 即可 如 nginx apache node.js liveServer 等只要可启动服务即可
+- 运行框架 - 确保联网(three、gsap等依赖引入) - 服务端口指向index.html 如nginx apache liveServer等
 
 1. 创作者可以在 config/author.js 录入你的开发者信息,然后你提交的案例关联上 id 就会展示作者信息。
 
