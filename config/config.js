@@ -64,7 +64,7 @@ window.THREE_CESIUM_NAVIGATION = [
                 "postprocessing": "https://cdn.jsdelivr.net/npm/postprocessing/+esm",
                 "tweakpane": "https://cdn.jsdelivr.net/npm/tweakpane/+esm",
                 "@tweenjs/tween.js": HOST + "js/tween.esm.js",
-                "echarts": "https://cdn.jsdelivr.net/npm/echarts/+esm"
+                "echarts": "https://cdn.jsdelivr.net/npm/echarts/dist/echarts.esm.min.js"
             }
         }
     },

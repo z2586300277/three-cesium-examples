@@ -1911,6 +1911,15 @@ export default [
                 referUrl: 'https://github.com/bgstaal/multipleWindow3dScene',
                 codeUrl: HOST + 'threeExamples/expand/multWindowScene.js',
                 image: HOST + 'threeExamples/expand/multWindowScene.jpg',
+            },
+            {
+                id: 'combineEcharts',
+                name: 'Echarts结合',
+                name_en: 'Combine Echarts',
+                author: 'z2586300277',
+                referUrl: 'https://echarts.apache.org/',
+                codeUrl: HOST + 'threeExamples/expand/combineEcharts.js',
+                image: HOST + 'threeExamples/expand/combineEcharts.jpg',
             }
         ]
     },
