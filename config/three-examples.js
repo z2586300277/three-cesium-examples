@@ -1599,6 +1599,15 @@ export default [
                 image: HOST + 'threeExamples/application/gsapCollection.jpg'
             },
             {
+                id: 'imageMove',
+                name: '图片移动',
+                name_en: 'Image Move',
+                referUrl: 'https://codepen.io/smcnally000/pen/eYqXWyJ',
+                improver: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/application/imageMove.js',
+                image: HOST + 'threeExamples/application/imageMove.jpg',
+            },
+            {
                 id: 'customGrid',
                 name: '自定义网格',
                 name_en: 'Custom Grid',
