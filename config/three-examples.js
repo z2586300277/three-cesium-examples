@@ -1757,6 +1757,15 @@ export default [
         name_en: 'Animation',
         children: [
             {
+                id: 'animejsBasic',
+                name: 'animejs使用',
+                name_en: 'Animejs Basic',
+                author: 'z2586300277',
+                referUrl: 'https://www.npmjs.com/package/animejs',
+                codeUrl: HOST + 'threeExamples/animation/animejsBasic.js',
+                image: HOST + 'threeExamples/animation/animejsBasic.jpg',
+            },
+            {
                 id: 'clipAnimation',
                 name: '裁剪动画',
                 name_en: 'Clip Animation',
