@@ -1056,6 +1056,15 @@ export default [
                 githubUrl: 'https://github.com/vasturiano/3d-force-graph',
                 image: HOST + 'threeExamples/physics/threeForce.jpg',
             },
+            {
+                id:'GlobeStream3D',
+                name: '3D地球',
+                name_en: 'Globe Stream3D',
+                author: 'AUTO',
+                githubUrl: 'https://github.com/hululuuuuu/GlobeStream3D',
+                openUrl: 'https://globestream3d.netlify.app/',
+                image: HOST + 'threeExamples/openSource/GlobeStream3D.jpg'
+            }
         ]
     },
     {
