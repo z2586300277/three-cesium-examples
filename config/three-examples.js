@@ -1599,6 +1599,15 @@ export default [
                 image: HOST + 'threeExamples/application/gsapCollection.jpg'
             },
             {
+                id: 'imageMove',
+                name: '图片移动',
+                name_en: 'Image Move',
+                referUrl: 'https://codepen.io/smcnally000/pen/eYqXWyJ',
+                improver: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/application/imageMove.js',
+                image: HOST + 'threeExamples/application/imageMove.jpg',
+            },
+            {
                 id: 'customGrid',
                 name: '自定义网格',
                 name_en: 'Custom Grid',
@@ -1747,6 +1756,15 @@ export default [
         name: '动画效果',
         name_en: 'Animation',
         children: [
+            {
+                id: 'animejsBasic',
+                name: 'animejs使用',
+                name_en: 'Animejs Basic',
+                author: 'z2586300277',
+                referUrl: 'https://www.npmjs.com/package/animejs',
+                codeUrl: HOST + 'threeExamples/animation/animejsBasic.js',
+                image: HOST + 'threeExamples/animation/animejsBasic.jpg',
+            },
             {
                 id: 'clipAnimation',
                 name: '裁剪动画',
@@ -1911,6 +1929,15 @@ export default [
                 referUrl: 'https://github.com/bgstaal/multipleWindow3dScene',
                 codeUrl: HOST + 'threeExamples/expand/multWindowScene.js',
                 image: HOST + 'threeExamples/expand/multWindowScene.jpg',
+            },
+            {
+                id: 'combineEcharts',
+                name: 'Echarts结合',
+                name_en: 'Combine Echarts',
+                author: 'z2586300277',
+                referUrl: 'https://echarts.apache.org/',
+                codeUrl: HOST + 'threeExamples/expand/combineEcharts.js',
+                image: HOST + 'threeExamples/expand/combineEcharts.jpg',
             }
         ]
     },
@@ -2640,12 +2667,15 @@ export default [
                 openUrl: 'https://www.mixamo.com/',
                 image: HOST + 'threeExamples/tools/mixamo.jpg'
             },
-            // {
-            //     id: 'scene_fase',
-            //     name: '场景快速调试工具',
-            //     image: HOST + 'threeExamples/tools/scene.jpg'
-            //     https://gltf-viewer.donmccurdy.com/
-            // }
+            {
+                id: 'gltf_viewer',
+                name: 'gltf模型查看器',
+                name_en: 'GLTF Viewer',
+                author: 'AUTO',
+                githubUrl: 'https://github.com/donmccurdy/three-gltf-viewer',
+                openUrl: 'https://gltf-viewer.donmccurdy.com/',
+                image: HOST + 'threeExamples/tools/gltf_viewer.jpg'
+            }
         ]
     },
 
