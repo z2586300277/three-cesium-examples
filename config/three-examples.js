@@ -2667,12 +2667,15 @@ export default [
                 openUrl: 'https://www.mixamo.com/',
                 image: HOST + 'threeExamples/tools/mixamo.jpg'
             },
-            // {
-            //     id: 'scene_fase',
-            //     name: '场景快速调试工具',
-            //     image: HOST + 'threeExamples/tools/scene.jpg'
-            //     https://gltf-viewer.donmccurdy.com/
-            // }
+            {
+                id: 'gltf_viewer',
+                name: 'gltf模型查看器',
+                name_en: 'GLTF Viewer',
+                author: 'AUTO',
+                githubUrl: 'https://github.com/donmccurdy/three-gltf-viewer',
+                openUrl: 'https://gltf-viewer.donmccurdy.com/',
+                image: HOST + 'threeExamples/tools/gltf_viewer.jpg'
+            }
         ]
     },
 
