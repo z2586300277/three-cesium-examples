@@ -316,6 +316,15 @@ export default [
                 githubUrl: 'https://github.com/repalash/threepipe',
                 referUrl: 'https://threepipe.org/',
                 image: HOST + 'threeExamples/openSource/pipeEditor.jpg'
+            },
+            {   
+                id: 'thebrowserlab',
+                name: 'R3F编辑器',
+                name_en: 'ReactThree Editor',
+                author: 'AUTO',
+                openUrl: 'https://thebrowserlab.com/',
+                githubUrl: 'https://github.com/icurtis1/thebrowserlab',
+                image: HOST + 'threeExamples/openSource/thebrowserlab.jpg'
             }
         ]
     },
