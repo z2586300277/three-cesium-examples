@@ -812,6 +812,15 @@ export default [
                 image: HOST + 'threeExamples/openSource/phy.jpg'
             },
             {
+                id: 'CollisionRoaming',
+                name: '八叉树碰撞漫游',
+                name_en: 'Collision Roaming',
+                author: 'AUTO',
+                openUrl: 'https://z2586300277.github.io/show-site/octreeMap/',
+                githubUrl: 'https://github.com/Aizener/three-template',
+                image: HOST + 'threeExamples/openSource/CollisionRoaming.jpg'
+            },
+            {
                 id: 'fire',
                 name: '烟花',
                 name_en: 'fire',
