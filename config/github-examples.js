@@ -317,7 +317,7 @@ export default [
                 referUrl: 'https://threepipe.org/',
                 image: HOST + 'threeExamples/openSource/pipeEditor.jpg'
             },
-            {   
+            {
                 id: 'thebrowserlab',
                 name: 'R3F编辑器',
                 name_en: 'ReactThree Editor',
@@ -1075,7 +1075,7 @@ export default [
                 image: HOST + 'threeExamples/physics/threeForce.jpg',
             },
             {
-                id:'GlobeStream3D',
+                id: 'GlobeStream3D',
                 name: '3D地球',
                 name_en: 'Globe Stream3D',
                 author: 'AUTO',
