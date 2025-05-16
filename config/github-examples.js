@@ -362,6 +362,16 @@ export default [
                 image: HOST + 'threeExamples/other/editorMap.jpg',
             },
             {
+                id: 'editCoresMap',
+                name: '编辑器内核地图',
+                name_en: 'Editor Map',
+                author: 'z2586300277',
+                openUrl: 'https://z2586300277.github.io/threejs-editor/apply.html#/codeMirror?navigation=ThreeJS&classify=Basic&id=chartsMap',
+                referUrl: 'https://z2586300277.github.io/threejs-editor/#/editor',
+                githubUrl: 'https://github.com/z2586300277/threejs-editor',
+                image: 'https://z2586300277.github.io/threejs-editor/demos/chartMap.png',
+            },
+            {
                 id: 'levelMap',
                 name: '分级地图',
                 name_en: 'Level Map',
