@@ -2369,6 +2369,14 @@ export default [
                 author: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/basic/sceneScissor.js',
                 image: HOST + 'threeExamples/basic/sceneScissor.jpg',
+            },
+            {
+                id: 'localModel',
+                name: '本地模型加载',
+                name_en: 'Local Model',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/basic/localModel.js',
+                image: HOST + 'threeExamples/basic/localModel.jpg',
             }
         ]
     },
