@@ -237,6 +237,14 @@ export default [
                 image: HOST + 'threeExamples/shader/loveShader.jpg',
             },
             {
+                id: 'cityMixShader',
+                name: '城市混合Shader',
+                name_en: 'CityMixShader',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/shader/cityMixShader.js',
+                image: HOST + 'threeExamples/shader/cityMixShader.jpg',
+            },
+            {
                 id: 'raningSea',
                 name: '波涛海浪',
                 name_en: 'move Sea',
