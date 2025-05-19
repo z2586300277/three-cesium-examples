@@ -1,12 +1,13 @@
 import * as THREE from 'three'
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js'
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js'
+import { DRACOLoader } from 'three/examples/jsm/loaders/DRACOLoader.js'
 
 const box = document.getElementById('box')
 
 const scene = new THREE.Scene()
 
-const camera = new THREE.PerspectiveCamera(50, box.clientWidth / box.clientHeight, 0.1, 1000)
+const camera = new THREE.PerspectiveCamera(50, box.clientWidth / box.clientHeight, 0.1, 10000000)
 
 camera.position.set(10, 10, 10)
 
@@ -56,33 +57,33 @@ const input = document.createElement('input')
 input.type = 'file'
 input.accept = '.glb'
 Object.assign(input.style, {
-    position: 'absolute',
-    top: '30px',
-    left: '100px',
-    zIndex: 9999
+  position: 'absolute',
+  top: '30px',
+  left: '100px',
+  zIndex: 9999
 })
 input.onchange = (e) => {
-    const file = e.target.files[0]
-    const url = URL.createObjectURL(file)
-        new GLTFLoader().load(url, (gltf) => {
-        gltf.scene.traverse((child) => {
-            if(child?.material) child.material.envMap = textureCube
-        })
-        scene.add(gltf.scene)
-
-        // 主视图
-        const box3 = new THREE.Box3().setFromObject(gltf.scene)
-        const center = box3.getCenter(new THREE.Vector3())
-        const size = box3.getSize(new THREE.Vector3())
-        const maxDim = Math.max(size.x, size.y, size.z)
-        const fov = camera.fov * (Math.PI / 180)
-        const distance = (maxDim / 2) / Math.tan(fov / 2)
-        camera.position.set(center.x, center.y, center.z + distance + size.z / 2)
-        camera.lookAt(center)
-        controls.target.copy(center)
-        controls.update()
-
+  const file = e.target.files[0]
+  const url = URL.createObjectURL(file)
+  new GLTFLoader().setDRACOLoader(new DRACOLoader().setDecoderPath(FILE_HOST + 'js/three/draco/')).load(url, (gltf) => {
+    gltf.scene.traverse((child) => {
+      if (child?.material) child.material.envMap = textureCube
     })
-    URL.revokeObjectURL(url)
+    scene.add(gltf.scene)
+
+    // 主视图
+    const box3 = new THREE.Box3().setFromObject(gltf.scene)
+    const center = box3.getCenter(new THREE.Vector3())
+    const size = box3.getSize(new THREE.Vector3())
+    const maxDim = Math.max(size.x, size.y, size.z)
+    const fov = camera.fov * (Math.PI / 180)
+    const distance = (maxDim / 2) / Math.tan(fov / 2)
+    camera.position.set(center.x, center.y, center.z + distance + size.z / 2)
+    camera.lookAt(center)
+    controls.target.copy(center)
+    controls.update()
+
+  })
+  URL.revokeObjectURL(url)
 }
 document.body.appendChild(input)
