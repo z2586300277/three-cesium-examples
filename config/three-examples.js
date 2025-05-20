@@ -2377,6 +2377,14 @@ export default [
                 author: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/basic/localModel.js',
                 image: HOST + 'threeExamples/basic/localModel.jpg',
+            },
+            {
+                id: 'useIndexDB',
+                name: 'IndexedDB使用',
+                name_en: 'Use IndexDB',
+                author: 'z2586300277',
+                htmlUrl: HOST + 'threeExamples/basic/useIndexDB.html',
+                image: HOST + 'threeExamples/basic/useIndexDB.jpg',
             }
         ]
     },
