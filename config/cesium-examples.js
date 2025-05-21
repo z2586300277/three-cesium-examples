@@ -467,6 +467,15 @@ export default [
                 author: 'z2586300277',
                 codeUrl: HOST + 'cesiumExamples/basic/curvePipe.js',
                 image: HOST + 'cesiumExamples/basic/curvePipe.jpg',
+            },
+            {
+                id: 'routeNavigation',
+                name: '路线导航',
+                name_en: 'Route Nav',
+                tag: TEXTS['漫游'],
+                author: 'z2586300277',
+                codeUrl: HOST + 'cesiumExamples/basic/routeNavigation.js',
+                image: HOST + 'cesiumExamples/basic/routeNavigation.jpg',
             }
         ]
     },
