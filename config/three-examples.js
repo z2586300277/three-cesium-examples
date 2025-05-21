@@ -237,6 +237,14 @@ export default [
                 image: HOST + 'threeExamples/shader/loveShader.jpg',
             },
             {
+                id: 'cityMixShader',
+                name: '城市混合Shader',
+                name_en: 'CityMixShader',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/shader/cityMixShader.js',
+                image: HOST + 'threeExamples/shader/cityMixShader.jpg',
+            },
+            {
                 id: 'raningSea',
                 name: '波涛海浪',
                 name_en: 'move Sea',
@@ -2361,6 +2369,22 @@ export default [
                 author: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/basic/sceneScissor.js',
                 image: HOST + 'threeExamples/basic/sceneScissor.jpg',
+            },
+            {
+                id: 'localModel',
+                name: '本地模型加载',
+                name_en: 'Local Model',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/basic/localModel.js',
+                image: HOST + 'threeExamples/basic/localModel.jpg',
+            },
+            {
+                id: 'useIndexDB',
+                name: 'IndexedDB使用',
+                name_en: 'Use IndexDB',
+                author: 'z2586300277',
+                htmlUrl: HOST + 'threeExamples/basic/useIndexDB.html',
+                image: HOST + 'threeExamples/basic/useIndexDB.jpg',
             }
         ]
     },

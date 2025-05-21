@@ -316,6 +316,15 @@ export default [
                 githubUrl: 'https://github.com/repalash/threepipe',
                 referUrl: 'https://threepipe.org/',
                 image: HOST + 'threeExamples/openSource/pipeEditor.jpg'
+            },
+            {
+                id: 'thebrowserlab',
+                name: 'R3F编辑器',
+                name_en: 'ReactThree Editor',
+                author: 'AUTO',
+                openUrl: 'https://thebrowserlab.com/',
+                githubUrl: 'https://github.com/icurtis1/thebrowserlab',
+                image: HOST + 'threeExamples/openSource/thebrowserlab.jpg'
             }
         ]
     },
@@ -351,6 +360,16 @@ export default [
                 htmlUrl: HOST + 'threeExamples/other/editorMap.html',
                 githubUrl: 'https://github.com/z2586300277/three-editor',
                 image: HOST + 'threeExamples/other/editorMap.jpg',
+            },
+            {
+                id: 'editCoresMap',
+                name: '编辑器内核地图',
+                name_en: 'Editor Map',
+                author: 'z2586300277',
+                openUrl: 'https://z2586300277.github.io/threejs-editor/apply.html#/codeMirror?navigation=ThreeJS&classify=Basic&id=chartsMap',
+                referUrl: 'https://z2586300277.github.io/threejs-editor/#/editor',
+                githubUrl: 'https://github.com/z2586300277/threejs-editor',
+                image: 'https://z2586300277.github.io/threejs-editor/demos/chartMap.png',
             },
             {
                 id: 'levelMap',
@@ -803,6 +822,15 @@ export default [
                 image: HOST + 'threeExamples/openSource/phy.jpg'
             },
             {
+                id: 'CollisionRoaming',
+                name: '八叉树碰撞漫游',
+                name_en: 'Collision Roaming',
+                author: 'AUTO',
+                openUrl: 'https://z2586300277.github.io/show-site/octreeMap/',
+                githubUrl: 'https://github.com/Aizener/three-template',
+                image: HOST + 'threeExamples/openSource/CollisionRoaming.jpg'
+            },
+            {
                 id: 'fire',
                 name: '烟花',
                 name_en: 'fire',
@@ -1057,7 +1085,7 @@ export default [
                 image: HOST + 'threeExamples/physics/threeForce.jpg',
             },
             {
-                id:'GlobeStream3D',
+                id: 'GlobeStream3D',
                 name: '3D地球',
                 name_en: 'Globe Stream3D',
                 author: 'AUTO',
