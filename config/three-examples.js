@@ -1713,7 +1713,6 @@ export default [
             {
                 id: 'samplexWave',
                 name: '采样波',
-                tag: 'Ai Create',
                 tip: 'use Claude 3.7 sonnect Thinking Preivew in vscode github copilot generate all code',
                 name_en: 'Samplex Wave',
                 author: 'z2586300277',

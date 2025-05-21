@@ -76,7 +76,8 @@ viewer.entities.add({
 // 添加无人机
 const entity = viewer.entities.add({
     position: Cesium.Cartesian3.fromDegrees(list[0].longitude, list[0].latitude, 7),
-    model: { uri: FILE_HOST + '/models/uav.glb' }
+    model: { uri: FILE_HOST + '/models/uav.glb' },
+    viewFrom: new Cesium.Cartesian3(0, -20, 10) // 设置第三人称视角偏移（后方20米，上方10米）
 })
 viewer.trackedEntity = entity // 设置相机跟随飞机
 
