@@ -2033,6 +2033,14 @@ export default [
                     keywords: 'three.js,官方选择辉光简化版',
                     description: '使用three.js官方选择辉光简化版'
                 }
+            },
+            {
+                id: 'deferredLighting',
+                name: '延迟光照',
+                name_en: 'Deferred Lighting',
+                author: 'ZackFair5185034',
+                codeUrl: HOST + 'threeExamples/effectComposer/deferredLighting.js',
+                image: HOST + 'threeExamples/effectComposer/deferredLighting.webp',
             }
         ]
     },
