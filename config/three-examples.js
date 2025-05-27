@@ -245,6 +245,14 @@ export default [
                 image: HOST + 'threeExamples/shader/cityMixShader.jpg',
             },
             {
+                id: 'threeLogo',
+                name: 'three.js Logo',
+                name_en: 'Three Logo',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/shader/threeLogo.js',
+                image: HOST + 'threeExamples/shader/threeLogo.jpg',
+            },
+            {
                 id: 'raningSea',
                 name: '波涛海浪',
                 name_en: 'move Sea',

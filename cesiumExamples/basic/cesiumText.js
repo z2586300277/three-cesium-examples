@@ -8,7 +8,7 @@ const viewer = new Cesium.Viewer(DOM, {
 
     baseLayerPicker: false,//是否显示图层选择器，右上角图层选择按钮
 
-    baseLayer: Cesium.ImageryLayer.fromProviderAsync(Cesium.ArcGisMapServerImageryProvider.fromUrl('https://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer')),
+    baseLayer: Cesium.ImageryLayer.fromProviderAsync(Cesium.ArcGisMapServerImageryProvider.fromUrl(GLOBAL_CONFIG.getLayerUrl())),
 
     fullscreenButton: false,//是否显示全屏按钮，右下角全屏选择按钮
 

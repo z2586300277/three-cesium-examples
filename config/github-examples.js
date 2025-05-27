@@ -205,6 +205,15 @@ export default [
                 githubUrl: 'https://github.com/lo-th/three.lab',
                 openUrl: 'https://lo-th.github.io/three.lab/examples/#webgl_gpgpu_water',
                 image: HOST + 'threeExamples/openSource/threelab.jpg'
+            },
+            {
+                id: 'threejsProject',
+                name: 'three_project',
+                name_en: 'Three Project',
+                author: 'AUTO',
+                openUrl: 'https://syncopika.github.io/threejs-projects/',
+                githubUrl: 'https://github.com/syncopika/threejs-projects',
+                image: HOST + 'threeExamples/openSource/threejsProject.jpg'
             }
         ]
     },
