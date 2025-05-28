@@ -471,6 +471,15 @@ export default [
                 githubUrl: 'https://github.com/KallkaGo/su7-demo',
                 image: HOST + 'threeExamples/openSource/kallkago_su7.jpg'
             },
+            {
+                id: 'car911Show',
+                name: '911车展示',
+                name_en: 'Car 911 Show',
+                author: 'AUTO',
+                openUrl: 'https://totorozuo.github.io/3d-car-showcase/',
+                githubUrl: 'https://github.com/TotoroZuo/3d-car-showcase',
+                image: HOST + 'threeExamples/openSource/car911Show.jpg',
+            }
         ]
     },
     {
@@ -1208,5 +1217,4 @@ export default [
 /* 可能在未来上线的一些链接资源记录 - 筛选
 http://mapbs.com/
 https://threepipe.org/
-https://github.com/hululuuuuu/GlobeStream3D
 */
