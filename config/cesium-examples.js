@@ -6,6 +6,9 @@ export default [
         name: '在线地图',
         name_en: 'Online Map',
         children: [
+
+            // { id: 'test', name: '测试', codeUrl: HOST + 'cesiumExamples/tools/test.js' }, // 测试用例
+
             {
                 id: 'defaultLayer',
                 name: '默认图层',
@@ -476,6 +479,14 @@ export default [
                 author: 'z2586300277',
                 codeUrl: HOST + 'cesiumExamples/basic/routeNavigation.js',
                 image: HOST + 'cesiumExamples/basic/routeNavigation.jpg',
+            },
+            {
+                id: 'transportLine',
+                name: '交通线路',
+                name_en: 'Transport Line',
+                author: 'z2586300277',
+                codeUrl: HOST + 'cesiumExamples/expand/transportLine.js',
+                image: HOST + 'cesiumExamples/expand/transportLine.jpg',
             }
         ]
     },

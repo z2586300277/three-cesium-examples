@@ -9,7 +9,7 @@ import { GUI } from "three/addons/libs/lil-gui.module.min.js"
 const gui=new GUI()
 const bloomParams = {
     exposure: 1,
-    bloomStrength: 1.5,
+    bloomStrength: 0.01,
     bloomThreshold: 0,
     bloomRadius: 0.5
 };
@@ -39,10 +39,11 @@ const controls = new OrbitControls(camera, renderer.domElement);
 controls.enableDamping = true;
 
 const lightGroup = new THREE.Group();
-const geometry = new THREE.BoxGeometry( 1, 1, 1 );
-const material = new THREE.MeshBasicMaterial( {color: 0x00ff00} );
-const cube = new THREE.Mesh( geometry, material );
-scene.add(cube);
+const geometry = new THREE.PlaneGeometry( 10000, 10000);
+const material = new THREE.MeshBasicMaterial( {color: 0xcccccc} );
+const plane = new THREE.Mesh( geometry, material );
+plane.rotation.x = -Math.PI/2;
+scene.add(plane);
 // 加载模型 fbx  未使用预览图模型 使用仓库已有的模型,最终效果与外部预览图不一致
 new FBXLoader().load(HOST + '/files/model/city.FBX', (object3d) => {
     object3d.scale.multiplyScalar(0.1)
@@ -234,7 +235,7 @@ function initPostprocessing(renderTargetWidth, renderTargetHeight) {
 
     // 添加GUI控制
     const bloomFolder = gui.addFolder('Bloom Effect');
-    bloomFolder.add(bloomParams, 'bloomStrength', 0, 5).name('强度').onChange(updateBloom);
+    bloomFolder.add(bloomParams, 'bloomStrength', 0, 1).name('强度').onChange(updateBloom);
     bloomFolder.add(bloomParams, 'bloomRadius', 0, 1).name('半径').onChange(updateBloom);
     bloomFolder.add(bloomParams, 'bloomThreshold', 0, 1).name('阈值').onChange(updateBloom);
     bloomFolder.open();
