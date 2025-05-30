@@ -43,7 +43,7 @@ const list = [
     [121.47901177358922, 29.791479635806983, 19.655729311572056]
 ]
 
-const cartesianPoints = list.map(item => Cesium.Cartesian3.fromDegrees([item[0]], [item[1]], item[2] + 3))
+const cartesianPoints = list.map(item => Cesium.Cartesian3.fromDegrees(item[0], item[1], item[2] + 3))
 
 // CatmullRomSpline 插值
 const catmullRomSpline = new Cesium.CatmullRomSpline({

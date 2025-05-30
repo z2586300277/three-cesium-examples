@@ -902,7 +902,7 @@ export default [
                 id: 'ephemeralFlower',
                 name: '幻影花烟',
                 name_en: 'Flower Smoke',
-                author: 'z2586300277',
+                improver: 'z2586300277',
                 referUrl: 'https://codepen.io/prisoner849/pen/LYmXKrr',
                 codeUrl: HOST + 'threeExamples/shader/ephemeralFlower.js',
                 image: HOST + 'threeExamples/shader/ephemeralFlower.jpg',
