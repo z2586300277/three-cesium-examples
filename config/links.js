@@ -12,7 +12,7 @@ export default {
     links: [
 
         {
-            name: '🏠Official',
+            name: '🏠' + TEXTS['officials'],
             url: 'https://openthree.github.io/three-official-examples'
         },
 
@@ -62,12 +62,12 @@ export default {
         },
 
         {
-            name: '🍃OpenThree',
+            name: '🍃' + TEXTS['openThree'],
             url: 'https://openthree.github.io/three-cesium-links/'
         },
 
         {
-            name: '🏪3D Market',
+            name: '🏪3D' + TEXTS['market'],
             url: 'https://openthree.github.io/market/'
         }
 

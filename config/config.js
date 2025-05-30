@@ -46,8 +46,12 @@ window.HTML_TEMPLATE =
 <body>
 <div id="box"></div>`
 
-/* 清空控制台 */
-window.IFRAME_RUN_CALL = () => console.clear()
+/* iframe执行回调 */
+window.IFRAME_RUN_CALL = () => {
+
+    // console.clear()
+
+}
 
 /* 依赖注入可使用 如 线上官网 或 cdn 或者本地路径 */
 window.THREE_CESIUM_NAVIGATION = [

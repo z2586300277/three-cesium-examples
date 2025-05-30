@@ -12,7 +12,11 @@ else LANG_EN = local_langEn === 'true'
 
 window.TEXTS = Object.fromEntries(Object.entries({
 
+    openThree: { zh: '开源三维', en: 'OpenThree' },
+
     '官方': { zh: '官方', en: 'Official' },
+
+    officials: { zh: '官方示例', en: 'Official' },
 
     elegant: { zh: '优雅永不过时', en: 'Elegant' },
 
@@ -65,6 +69,10 @@ window.TEXTS = Object.fromEntries(Object.entries({
     'Support': { zh: '打赏支持', en: 'Sponsor' },
 
     'Star' : { zh: '点星助力', en: 'Star' },
+
+    download : { zh: '下载', en: 'Download' },
+
+    'market': { zh: '市场', en: 'Market' },
 
 }).map(
 
