@@ -1279,6 +1279,14 @@ export default [
                 image: HOST + 'threeExamples/application/ghostHouse.jpg',
             },
             {
+                id: 'canvasTexture',
+                name: 'Canvas贴图',
+                name_en: 'Canvas Texture',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/application/canvasTexture.js',
+                image: HOST + 'threeExamples/application/canvasTexture.jpg',
+            },
+            {
                 id: 'flowLine',
                 name: '贴图飞线',
                 name_en: 'Flow Line',
