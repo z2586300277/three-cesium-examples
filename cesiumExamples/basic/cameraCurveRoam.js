@@ -102,10 +102,12 @@ function animate() {
 
     // 计算当前位置和下一位置
     const currentPos = catmullRomSpline.evaluate(flyControls.position);
-    const nextPos = catmullRomSpline.evaluate(Math.min(flyControls.position + 0.001, 1));
+    const nextT = flyControls.position + 0.01 >= 1 ? 0.01 : flyControls.position + 0.01;
+    const nextPos = catmullRomSpline.evaluate(nextT);
 
     // 设置相机朝向
     const direction = Cesium.Cartesian3.subtract(nextPos, currentPos, new Cesium.Cartesian3())
+    if (Cesium.Cartesian3.magnitude(direction) < 0.01) return requestAnimationFrame(animate);
     Cesium.Cartesian3.normalize(direction, direction)
 
     // 计算上方向(地球表面法向量)
