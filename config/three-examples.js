@@ -2703,7 +2703,10 @@ export default [
                 name_en: 'Image to 3D',
                 author: 'AUTO',
                 githubUrl: 'https://github.com/microsoft/TRELLIS',
-                openUrl: 'https://huggingface.co/spaces/JeffreyXiang/TRELLIS',
+                openUrl: 'https://microsoft.github.io/TRELLIS/',
+                links: [
+                    { name: 'hyper3d', url: 'https://hyper3d.ai/' }
+                ],
                 image: HOST + 'threeExamples/tools/TRELLIS.jpg'
             },
             {
