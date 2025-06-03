@@ -481,6 +481,14 @@ export default [
                 image: HOST + 'cesiumExamples/basic/routeNavigation.jpg',
             },
             {
+                id: 'cameraCurveRoam',
+                name: '曲线漫游',
+                name_en: 'Curve Roam',
+                author: 'z2586300277',
+                codeUrl: HOST + 'cesiumExamples/basic/cameraCurveRoam.js',
+                image: HOST + 'cesiumExamples/basic/cameraCurveRoam.jpg',
+            },
+            {
                 id: 'transportLine',
                 name: '交通线路',
                 name_en: 'Transport Line',
