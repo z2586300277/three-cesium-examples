@@ -575,6 +575,58 @@ export default [
         ]
     },
     {
+        pid: 'gameExamples',
+        name: '游戏案例',
+        name_en: 'Game Examples',
+        order: 45,
+        children: [
+            {
+                id: 'snakeGame',
+                name: '贪吃蛇',
+                name_en: 'Snake Game',
+                openUrl: 'https://z2586300277.github.io/show-site/snake/',
+                githubUrl: 'https://github.com/rock-biter/three-snake-live',
+                image: HOST + 'threeExamples/openSource/snakeGame.jpg'
+            },
+            {
+                id: 'Sketchbook',
+                author: 'AUTO',
+                name: '飞车',
+                name_en: 'flying car',
+                githubUrl: 'https://github.com/swift502/Sketchbook',
+                openUrl: 'https://jblaha.art/sketchbook/0.4/',
+                image: HOST + 'threeExamples/openSource/sketchbook.jpg'
+            },
+            {
+                id: 'flyBy',
+                name: '飞行漫游',
+                name_en: 'Fly By',
+                author: 'AUTO',
+                githubUrl: 'https://github.com/jessehhydee/fly-by',
+                openUrl: 'https://hydeit.co/fly-by/',
+                image: HOST + 'threeExamples/openSource/flyBy.jpg'
+            },
+            {
+                id: '3dcity',
+                name: '3D城市',
+                name_en: '3D City',
+                author: 'AUTO',
+                githubUrl: 'https://github.com/lo-th/3d.city',
+                openUrl: 'https://lo-th.github.io/3d.city/index.html',
+                image: HOST + 'threeExamples/openSource/3dcity.jpg'
+            },
+            {
+                id: 'phy',
+                name: '小物理游戏',
+                name_en: 'Physics Game',
+                author: 'AUTO',
+                openUrl: 'https://lo-th.github.io/phy/',
+                githubUrl: 'https://github.com/lo-th/phy',
+                image: HOST + 'threeExamples/openSource/phy.jpg'
+            },
+        ]
+    },
+    {
         pid: 'advancedExamples',
         name: '高级案例',
         name_en: 'Advanced Examples',
@@ -760,15 +812,6 @@ export default [
                 image: HOST + 'threeExamples/openSource/threeCSGMesh.jpg'
             },
             {
-                id: 'flyBy',
-                name: '飞行漫游',
-                name_en: 'Fly By',
-                author: 'AUTO',
-                githubUrl: 'https://github.com/jessehhydee/fly-by',
-                openUrl: 'https://hydeit.co/fly-by/',
-                image: HOST + 'threeExamples/openSource/flyBy.jpg'
-            },
-            {
                 id: 'musicParticle',
                 name: '音乐粒子',
                 name_en: 'Music Particle',
@@ -794,32 +837,6 @@ export default [
                 openUrl: 'https://tomasgonzalez.github.io/3d-portfolio/',
                 image: HOST + 'threeExamples/openSource/3d-portfolio.jpg'
             },
-            {
-                id: '3dcity',
-                name: '3D城市',
-                name_en: '3D City',
-                author: 'AUTO',
-                githubUrl: 'https://github.com/lo-th/3d.city',
-                openUrl: 'https://lo-th.github.io/3d.city/index.html',
-                image: HOST + 'threeExamples/openSource/3dcity.jpg'
-            },
-            {
-                id: 'Sketchbook',
-                author: 'AUTO',
-                name: '飞车',
-                name_en: 'flying car',
-                githubUrl: 'https://github.com/swift502/Sketchbook',
-                openUrl: 'https://jblaha.art/sketchbook/0.4/',
-                image: HOST + 'threeExamples/openSource/sketchbook.jpg'
-            },
-            {
-                id: 'snakeGame',
-                name: '贪吃蛇',
-                name_en: 'Snake Game',
-                openUrl: 'https://z2586300277.github.io/show-site/snake/',
-                githubUrl: 'https://github.com/rock-biter/three-snake-live',
-                image: HOST + 'threeExamples/openSource/snakeGame.jpg'
-            },
 
             {
                 id: 'octreeDemo',
@@ -829,15 +846,6 @@ export default [
                 openUrl: 'https://eriksom.github.io/threejs-octree/dist/example/',
                 githubUrl: 'https://github.com/ErikSom/threejs-octree',
                 image: HOST + 'threeExamples/physics/octreeDemo.jpg'
-            },
-            {
-                id: 'phy',
-                name: '小物理游戏',
-                name_en: 'Physics Game',
-                author: 'AUTO',
-                openUrl: 'https://lo-th.github.io/phy/',
-                githubUrl: 'https://github.com/lo-th/phy',
-                image: HOST + 'threeExamples/openSource/phy.jpg'
             },
             {
                 id: 'CollisionRoaming',
@@ -1217,4 +1225,5 @@ export default [
 /* 可能在未来上线的一些链接资源记录 - 筛选
 http://mapbs.com/
 https://threepipe.org/
+https://github.com/hexianWeb/CrossRoad
 */
