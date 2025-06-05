@@ -199,7 +199,7 @@ export default [
 
     {
         id: 'jiawanlong',
-        name: 'jiawanlong',
+        name: TEXTS['jiawanlong'],
         describe: '人生如逆旅，我亦是行人',
         links: [
             {

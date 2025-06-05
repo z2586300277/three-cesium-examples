@@ -67,7 +67,7 @@
 6. 音视频模型存储等一些可以公用的资源 files 文件夹下,涉及文件资源尽量引用外部 url,保证仓库轻量化
 
 - assets => ui 运行框架 不需要修改
-- config => js 注入和配置案例 等所有案例配置目录
+- config => 配置项[host:主机, links:链接, author:作者信息, lang:语言, config:注入运行]
 - files 音视频模型存储等一些可以公用的资源, 尽量不要上传文件资源, 使用 外部 url 地址访问
 - js => dat.gui gsap 等等一些依赖存放处,尽量可使用 如 cdn 线上 js 引入
 - threeExamples three.js 案例代码目录
@@ -160,7 +160,7 @@
 6. Store audio and video models and other resources that can be shared in the files folder. Whenever possible, reference external URLs for file resources to ensure a lightweight warehouse
 
 - Assets=>UI runtime framework does not require modification
-- Config=>JS injection and configuration case, all case configuration directories
+- Config=>Configuration options [host: host, links: links, author: author information, lang: language, config: injection run]
 - Files, audio and video model storage, and other resources that can be shared should be avoided as much as possible, and external URL addresses should be used to access them
 - Js=>dat.gui gsap and other dependency repositories, try to use online js such as CDN to introduce them as much as possible
 - ThreeEamples Three.js Case Code Catalog
