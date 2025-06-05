@@ -27,7 +27,7 @@ scene.add(axesHelper);
 // 初始化纹理加载（添加错误处理）
 const textureLoader = new THREE.TextureLoader();
 let texture = textureLoader.load(
-    "files/images/circle.png",
+    HOST + "files/images/circle.png",
     undefined,
     undefined,
     (err) => {
