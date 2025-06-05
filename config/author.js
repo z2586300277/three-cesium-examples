@@ -478,8 +478,7 @@ export default [
         name: 'quyinggang',
         github: 'https://github.com/quyinggang',
         icon: 'https://avatars.githubusercontent.com/u/20634057?v=4'
-    }
-    ,
+    },
 
     {
         id: 'onekit-boss',
@@ -487,10 +486,19 @@ export default [
         github: 'https://gitee.com/onekit-boss',
         icon: 'https://foruda.gitee.com/avatar/1677828979213943210/121886_onekit_boss_1677828979.png!avatar200'
     },
+
     {
         id: 'ZackFair5185034',
         name: 'ZackFair5185034',
         github: 'https://github.com/ZackFair5185034',
         icon: 'https://avatars.githubusercontent.com/u/49800338?v=4'
     },
+
+    {
+        id: 'chenzhijie1',
+        name: 'chenzhijie1',
+        github: 'https://github.com/chenzhijie1',
+        icon: 'https://avatars.githubusercontent.com/u/37795020?v=4'
+    },
+
 ]

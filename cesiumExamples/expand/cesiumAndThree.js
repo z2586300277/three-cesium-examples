@@ -30,13 +30,21 @@ initThree(threeBox,initCesium(cesiumBox))
 // 初始化Cesium
 function initCesium() {
 
-    const viewer = new Cesium.Viewer(cesiumBox, { baseLayerPicker: false, baseLayer: false, infoBox: false })
+    const viewer = new Cesium.Viewer(cesiumBox, { 
+        baseLayerPicker: false, 
+        imageryProvider: false, // 替换 baseLayer: false
+        infoBox: false 
+    })
 
     viewer.imageryLayers.addImageryProvider(
 
         new Cesium.WebMapTileServiceImageryProvider({
 
-            url: "https://t0.tianditu.gov.cn/img_w/wmts?tk=c4e3a9d54b4a79e885fff9da0fca712a&service=wmts&request=GetTile&version=1.0.0&LAYER=img&tileMatrixSet=w&TileMatrix={TileMatrix}&TileRow={TileRow}&TileCol={TileCol}&style=default&format=tiles",
+            url: "https://t0.tianditu.gov.cn/img_w/wmts?tk=c4e3a9d54b4a79e885fff9da0fca712a",
+            layer: "img",
+            style: "default",
+            format: "tiles",
+            tileMatrixSetID: "w"
 
         })
 

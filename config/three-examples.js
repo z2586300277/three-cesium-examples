@@ -2613,6 +2613,19 @@ export default [
                     keywords: "three.js,顶点颜色",
                     description: "使用three.js顶点颜色"
                 }
+            },
+            {
+                id: "扩散圈",
+                name: "扩散圈",
+                name_en: "Diffusion circle",
+                author: "chenzhijie1",
+                codeUrl: HOST + "threeExamples/basic/扩散圈.js",
+                image: HOST + "threeExamples/basic/扩散圈.png",
+                meta: {
+                    title: "扩散圈",
+                    keywords: "three.js,扩散圈",
+                    description: "使用three.扩散圈"
+                }
             }
         ]
     },

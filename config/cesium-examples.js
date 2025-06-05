@@ -639,6 +639,15 @@ export default [
                     description: 'cesium 结合 渐变行政区'
                 }
             },
+            {
+                id: 'cesiumShadertoy',
+                name: '使用Shadertoy',
+                name_en: 'Use Shadertoy',
+                improver: 'z2586300277',
+                referUrl: 'https://zhuanlan.zhihu.com/p/1905523047424856981',
+                codeUrl: HOST + 'cesiumExamples/expand/cesiumShadertoy.js',
+                image: HOST + 'cesiumExamples/expand/cesiumShadertoy.jpg',
+            }
 
         ]
     },
