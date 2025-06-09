@@ -174,7 +174,15 @@ export default [
                 referUrl: 'https://blog.csdn.net/qq_54653738/article/details/129796889',
                 codeUrl: HOST + 'cesiumExamples/basic/skyBox.js',
                 image: HOST + 'cesiumExamples/basic/skyBox.jpg',
-            }
+            },
+            {
+                id: 'gaodeTrans',
+                name: '高德纠偏',
+                name_en: 'Gaode Transform',
+                author: 'z2586300277',
+                codeUrl: HOST + 'cesiumExamples/layer/gaodeTrans.js',
+                image: HOST + 'cesiumExamples/layer/gaodeTrans.jpg',
+            },
         ]
     },
     {

@@ -914,6 +914,15 @@ export default [
                 githubUrl: 'https://github.com/Steve245270533/gallery',
                 image: HOST + 'threeExamples/openSource/steve245270533Gallery.jpg'
             },
+            {
+                id:'fullik',
+                name: '逆动力学',
+                name_en: 'Fullik',
+                author: 'AUTO',
+                openUrl: 'https://lo-th.github.io/fullik/',
+                githubUrl: 'https://github.com/lo-th/fullik',
+                image: HOST + 'threeExamples/openSource/fullik.jpg'
+            },
 
             {
                 id: 'change',
