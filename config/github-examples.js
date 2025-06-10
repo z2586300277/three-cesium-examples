@@ -950,15 +950,15 @@ export default [
                 openUrl: 'http://nicowebgl.cn/path/',
                 image: HOST + 'threeExamples/openSource/roam.jpg'
             },
-            {
-                id: 'area,pixijs,webgl',
-                author: 'nico',
-                name: '场景导航（免模型）',
-                name_en: 'Scene Nav',
-                githubUrl: 'https://github.com/Nicolas-zn/my_code/blob/main/src/code/interactive_image.vue',
-                openUrl: 'http://nicowebgl.cn/portfolio/#/interactive_image',
-                image: HOST + 'threeExamples/openSource/area.jpg'
-            },
+            // {
+            //     id: 'area,pixijs,webgl',
+            //     author: 'nico',
+            //     name: '场景导航（免模型）',
+            //     name_en: 'Scene Nav',
+            //     githubUrl: 'https://github.com/Nicolas-zn/my_code/blob/main/src/code/interactive_image.vue',
+            //     openUrl: 'http://nicowebgl.cn/portfolio/#/interactive_image',
+            //     image: HOST + 'threeExamples/openSource/area.jpg'
+            // },
             {
                 id: 'unreal',
                 author: 'nico',
@@ -1235,4 +1235,5 @@ export default [
 http://mapbs.com/
 https://threepipe.org/
 https://github.com/hexianWeb/CrossRoad
+https://xiaolidan00.github.io/my-earth/
 */
