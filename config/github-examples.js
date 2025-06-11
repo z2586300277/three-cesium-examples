@@ -214,6 +214,15 @@ export default [
                 openUrl: 'https://syncopika.github.io/threejs-projects/',
                 githubUrl: 'https://github.com/syncopika/threejs-projects',
                 image: HOST + 'threeExamples/openSource/threejsProject.jpg'
+            },
+            {   
+                id: 'xiaolidan00',
+                name: '三维案例',
+                name_en: 'Three Examples',
+                author: 'AUTO',
+                githubUrl: 'https://github.com/xiaolidan00/my-earth',
+                openUrl: 'https://xiaolidan00.github.io/my-earth',
+                image: HOST + 'threeExamples/openSource/xiaolidan00.jpg',
             }
         ]
     },
