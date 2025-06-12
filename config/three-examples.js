@@ -15,7 +15,7 @@ export default [
                 name: '官方示例 - 优化版',
                 name_en: 'Official',
                 improver: 'z2586300277',
-                referUrl: 'https://threejs.org/examples/#webgl_animation_keyframes',
+                referUrl: 'https://openthree.github.io/three-offical-run/examples/',
                 openUrl: 'https://openthree.github.io/three-official-examples',
                 githubUrl: 'https://github.com/OpenThree/three-official-examples',
                 image: HOST + 'threeExamples/openSource/official.jpg'
