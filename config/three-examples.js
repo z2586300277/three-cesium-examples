@@ -2718,7 +2718,8 @@ export default [
                 githubUrl: 'https://github.com/microsoft/TRELLIS',
                 openUrl: 'https://microsoft.github.io/TRELLIS/',
                 links: [
-                    { name: 'hyper3d', url: 'https://hyper3d.ai/' }
+                    { name: 'hyper3d', url: 'https://hyper3d.ai/' },
+                    { name: 'tripo3d', url: 'https://studio.tripo3d.ai/'}
                 ],
                 image: HOST + 'threeExamples/tools/TRELLIS.jpg'
             },
