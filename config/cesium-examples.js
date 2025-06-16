@@ -495,7 +495,7 @@ export default [
     },
     {
         gid: 'cesiumEffect',
-        id: 'advancedEffect',
+        pid: 'advancedEffect',
         name: '高级特效',
         name_en: 'Advanced Effect',
         children: [

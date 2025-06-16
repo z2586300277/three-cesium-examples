@@ -84,7 +84,7 @@ window.THREE_CESIUM_NAVIGATION = [
             link: [FILE_HOST + `js/cesium/style.css`],
             src: [],
             importmap: {
-                "cesium": "https://cdn.jsdelivr.net/npm/cesium/+esm", // FILE_HOST + "js/cesium/Cesium.js"
+                "cesium": FILE_HOST + "js/cesium/Cesium.js", // https://cdn.jsdelivr.net/npm/cesium/+esm
                 "dat.gui": HOST + "js/dat.gui.module.js"
             },
             jsHeader: `window.CESIUM_BASE_URL = "${FILE_HOST}js/cesium"`
