@@ -583,6 +583,15 @@ export default [
                 }
             },
             {
+                id: 'radar',
+                name: '雷达扫描',
+                name_en: 'Radar Scan',
+                author: 'z2586300277',
+                codeUrl: HOST + 'cesiumExamples/effect/radar.js',
+                image: HOST + 'cesiumExamples/effect/radar.jpg',
+                referUrl: 'https://mp.weixin.qq.com/s/uez-PeH3fkVxAcoyBeUc9w'
+            },
+            {
                 id: 'snow',
                 name: '雪景',
                 name_en: 'Snow Scene',

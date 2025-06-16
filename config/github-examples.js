@@ -214,6 +214,15 @@ export default [
                 openUrl: 'https://syncopika.github.io/threejs-projects/',
                 githubUrl: 'https://github.com/syncopika/threejs-projects',
                 image: HOST + 'threeExamples/openSource/threejsProject.jpg'
+            },
+            {   
+                id: 'xiaolidan00',
+                name: '三维案例',
+                name_en: 'Three Examples',
+                author: 'AUTO',
+                githubUrl: 'https://github.com/xiaolidan00/my-earth',
+                openUrl: 'https://xiaolidan00.github.io/my-earth',
+                image: HOST + 'threeExamples/openSource/xiaolidan00.jpg',
             }
         ]
     },
@@ -950,15 +959,15 @@ export default [
                 openUrl: 'http://nicowebgl.cn/path/',
                 image: HOST + 'threeExamples/openSource/roam.jpg'
             },
-            {
-                id: 'area,pixijs,webgl',
-                author: 'nico',
-                name: '场景导航（免模型）',
-                name_en: 'Scene Nav',
-                githubUrl: 'https://github.com/Nicolas-zn/my_code/blob/main/src/code/interactive_image.vue',
-                openUrl: 'http://nicowebgl.cn/portfolio/#/interactive_image',
-                image: HOST + 'threeExamples/openSource/area.jpg'
-            },
+            // {
+            //     id: 'area,pixijs,webgl',
+            //     author: 'nico',
+            //     name: '场景导航（免模型）',
+            //     name_en: 'Scene Nav',
+            //     githubUrl: 'https://github.com/Nicolas-zn/my_code/blob/main/src/code/interactive_image.vue',
+            //     openUrl: 'http://nicowebgl.cn/portfolio/#/interactive_image',
+            //     image: HOST + 'threeExamples/openSource/area.jpg'
+            // },
             {
                 id: 'unreal',
                 author: 'nico',

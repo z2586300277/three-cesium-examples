@@ -15,7 +15,7 @@ export default [
                 name: '官方示例 - 优化版',
                 name_en: 'Official',
                 improver: 'z2586300277',
-                referUrl: 'https://threejs.org/examples/#webgl_animation_keyframes',
+                referUrl: 'https://openthree.github.io/three-offical-run/examples/',
                 openUrl: 'https://openthree.github.io/three-official-examples',
                 githubUrl: 'https://github.com/OpenThree/three-official-examples',
                 image: HOST + 'threeExamples/openSource/official.jpg'
@@ -2718,7 +2718,8 @@ export default [
                 githubUrl: 'https://github.com/microsoft/TRELLIS',
                 openUrl: 'https://microsoft.github.io/TRELLIS/',
                 links: [
-                    { name: 'hyper3d', url: 'https://hyper3d.ai/' }
+                    { name: 'hyper3d', url: 'https://hyper3d.ai/' },
+                    { name: 'tripo3d', url: 'https://studio.tripo3d.ai/'}
                 ],
                 image: HOST + 'threeExamples/tools/TRELLIS.jpg'
             },
