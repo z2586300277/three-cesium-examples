@@ -1244,5 +1244,4 @@ export default [
 http://mapbs.com/
 https://threepipe.org/
 https://github.com/hexianWeb/CrossRoad
-https://xiaolidan00.github.io/my-earth/
 */
