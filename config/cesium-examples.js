@@ -166,23 +166,7 @@ export default [
                     description: 'cesium 地形'
                 }
             },
-            {
-                id: 'skyBox',
-                name: '天空盒',
-                name_en: 'Sky Box',
-                author: 'z2586300277',
-                referUrl: 'https://blog.csdn.net/qq_54653738/article/details/129796889',
-                codeUrl: HOST + 'cesiumExamples/basic/skyBox.js',
-                image: HOST + 'cesiumExamples/basic/skyBox.jpg',
-            },
-            {
-                id: 'gaodeTrans',
-                name: '高德纠偏',
-                name_en: 'Gaode Transform',
-                author: 'z2586300277',
-                codeUrl: HOST + 'cesiumExamples/layer/gaodeTrans.js',
-                image: HOST + 'cesiumExamples/layer/gaodeTrans.jpg',
-            },
+
         ]
     },
     {
@@ -242,6 +226,19 @@ export default [
                 }
             },
             {
+                id: 'baiDu',
+                name: '内网百度',
+                name_en: 'Intranet Baidu',
+                author: 'z2586300277',
+                codeUrl: HOST + 'cesiumExamples/offline/baidu.js',
+                image: HOST + 'cesiumExamples/offline/baidu.jpg',
+                meta: {
+                    title: '内网百度',
+                    keywords: 'cesium.js,内网百度',
+                    description: '内网百度'
+                }
+            },
+            {
                 id: 'gaode',
                 name: '内网高德',
                 name_en: 'Intranet Gaode',
@@ -255,17 +252,12 @@ export default [
                 }
             },
             {
-                id: 'baiDu',
-                name: '内网百度',
-                name_en: 'Intranet Baidu',
+                id: 'gaodeTrans',
+                name: '高德纠偏',
+                name_en: 'Gaode Transform',
                 author: 'z2586300277',
-                codeUrl: HOST + 'cesiumExamples/offline/baidu.js',
-                image: HOST + 'cesiumExamples/offline/baidu.jpg',
-                meta: {
-                    title: '内网百度',
-                    keywords: 'cesium.js,内网百度',
-                    description: '内网百度'
-                }
+                codeUrl: HOST + 'cesiumExamples/layer/gaodeTrans.js',
+                image: HOST + 'cesiumExamples/layer/gaodeTrans.jpg',
             }
         ]
     },
@@ -325,6 +317,15 @@ export default [
                     keywords: 'cesium.js,点击事件',
                     description: 'cesium 点击事件'
                 }
+            },
+            {
+                id: 'skyBox',
+                name: '天空盒',
+                name_en: 'Sky Box',
+                author: 'z2586300277',
+                referUrl: 'https://blog.csdn.net/qq_54653738/article/details/129796889',
+                codeUrl: HOST + 'cesiumExamples/basic/skyBox.js',
+                image: HOST + 'cesiumExamples/basic/skyBox.jpg',
             },
             {
                 id: 'geojsonFace',
@@ -434,6 +435,109 @@ export default [
                     description: 'cesium 加载模型'
                 }
             },
+
+
+        ]
+    },
+    {
+        gid: 'cesiumEffect',
+        group: '场景效果',
+        group_en: 'Scene Effects',
+        pid: 'singleEffect',
+        name: '单一效果',
+        name_en: 'Single Effect',
+        children: [
+            {
+                id: 'fire',
+                name: '粒子（火焰）',
+                name_en: 'Particle(Fire)',
+                author: 'jiawanlong',
+                codeUrl: HOST + 'cesiumExamples/expand/fire.js',
+                image: HOST + 'cesiumExamples/expand/fire.jpg',
+                meta: {
+                    title: '粒子（火焰）',
+                    keywords: '粒子',
+                    description: '粒子（火焰）'
+                }
+            },
+            {
+                id: 'ripple',
+                name: '水波纹',
+                name_en: 'Ripple',
+                author: 'jiawanlong',
+                codeUrl: HOST + 'cesiumExamples/expand/ripple.js',
+                image: HOST + 'cesiumExamples/expand/ripple.jpg',
+                meta: {
+                    title: '水波纹',
+                    keywords: '水波纹',
+                    description: '水波纹'
+                }
+            },
+            {
+                id: 'radar',
+                name: '雷达扫描',
+                name_en: 'Radar Scan',
+                author: 'z2586300277',
+                codeUrl: HOST + 'cesiumExamples/effect/radar.js',
+                image: HOST + 'cesiumExamples/effect/radar.jpg',
+                referUrl: 'https://mp.weixin.qq.com/s/uez-PeH3fkVxAcoyBeUc9w'
+            },
+            {
+                id: 'cesiumShadertoy',
+                name: '使用Shadertoy',
+                name_en: 'Use Shadertoy',
+                improver: 'z2586300277',
+                referUrl: 'https://zhuanlan.zhihu.com/p/1905523047424856981',
+                codeUrl: HOST + 'cesiumExamples/expand/cesiumShadertoy.js',
+                image: HOST + 'cesiumExamples/expand/cesiumShadertoy.jpg',
+            }
+        ]
+    },
+    {
+        gid: 'cesiumEffect',
+        id: 'advancedEffect',
+        name: '高级特效',
+        name_en: 'Advanced Effect',
+        children: [
+            {
+                id: 'snow',
+                name: '雪景',
+                name_en: 'Snow Scene',
+                author: '20Savage',
+                codeUrl: HOST + 'cesiumExamples/expand/snow.js',
+                image: HOST + 'cesiumExamples/expand/snow.jpg',
+                meta: {
+                    title: '雪景',
+                    keywords: '雪景，模型积雪',
+                    description: '雪景，模型积雪'
+                }
+            },
+            {
+                id: 'rain',
+                name: '下雨',
+                name_en: 'Rain',
+                author: '20Savage',
+                codeUrl: HOST + 'cesiumExamples/expand/rain.js',
+                image: HOST + 'cesiumExamples/expand/rain.jpg',
+                meta: {
+                    title: '雨景',
+                    keywords: '雨景，雨滴效果',
+                    description: '雨景，雨滴效果'
+                }
+            },
+            {
+                id: 'lensFlare',
+                name: '镜头光晕',
+                name_en: 'Lens Flare',
+                author: '20Savage',
+                codeUrl: HOST + 'cesiumExamples/expand/lensFlare.js',
+                image: HOST + 'cesiumExamples/expand/lensFlare.jpg',
+                meta: {
+                    title: '镜头光晕',
+                    keywords: '镜头光晕，太阳效果',
+                    description: '镜头光晕，太阳效果'
+                }
+            },
             {
                 id: 'tilesShader',
                 name: '智慧城市着色器',
@@ -458,6 +562,13 @@ export default [
                 codeUrl: HOST + 'cesiumExamples/basic/smartCity.js',
                 image: HOST + 'cesiumExamples/basic/smartCity.jpg',
             },
+        ]
+    },
+    {
+        pid: 'applyExample',
+        name: '应用相关',
+        name_en: 'Application Example',
+        children: [
             {
                 id: 'flyLine',
                 name: '流动飞线运动',
@@ -497,13 +608,18 @@ export default [
                 image: HOST + 'cesiumExamples/basic/cameraCurveRoam.jpg',
             },
             {
-                id: 'transportLine',
-                name: '交通线路',
-                name_en: 'Transport Line',
-                author: 'z2586300277',
-                codeUrl: HOST + 'cesiumExamples/expand/transportLine.js',
-                image: HOST + 'cesiumExamples/expand/transportLine.jpg',
-            }
+                id: 'gradienGeojsonFace',
+                name: '渐变行政区',
+                name_en: 'Gradient Area',
+                author: '20Savage',
+                codeUrl: HOST + 'cesiumExamples/expand/gradienGeojsonFace.js',
+                image: HOST + 'cesiumExamples/expand/gradienGeojsonFace.jpg',
+                meta: {
+                    title: '渐变行政区',
+                    keywords: 'cesium.js,渐变行政区',
+                    description: 'cesium 结合 渐变行政区'
+                }
+            },
         ]
     },
     {
@@ -556,80 +672,7 @@ export default [
                     description: 'cesium 结合 热力图'
                 }
             },
-            {
-                id: 'fire',
-                name: '粒子（火焰）',
-                name_en: 'Particle(Fire)',
-                author: 'jiawanlong',
-                codeUrl: HOST + 'cesiumExamples/expand/fire.js',
-                image: HOST + 'cesiumExamples/expand/fire.jpg',
-                meta: {
-                    title: '粒子（火焰）',
-                    keywords: '粒子',
-                    description: '粒子（火焰）'
-                }
-            },
-            {
-                id: 'ripple',
-                name: '水波纹',
-                name_en: 'Ripple',
-                author: 'jiawanlong',
-                codeUrl: HOST + 'cesiumExamples/expand/ripple.js',
-                image: HOST + 'cesiumExamples/expand/ripple.jpg',
-                meta: {
-                    title: '水波纹',
-                    keywords: '水波纹',
-                    description: '水波纹'
-                }
-            },
-            {
-                id: 'radar',
-                name: '雷达扫描',
-                name_en: 'Radar Scan',
-                author: 'z2586300277',
-                codeUrl: HOST + 'cesiumExamples/effect/radar.js',
-                image: HOST + 'cesiumExamples/effect/radar.jpg',
-                referUrl: 'https://mp.weixin.qq.com/s/uez-PeH3fkVxAcoyBeUc9w'
-            },
-            {
-                id: 'snow',
-                name: '雪景',
-                name_en: 'Snow Scene',
-                author: '20Savage',
-                codeUrl: HOST + 'cesiumExamples/expand/snow.js',
-                image: HOST + 'cesiumExamples/expand/snow.jpg',
-                meta: {
-                    title: '雪景',
-                    keywords: '雪景，模型积雪',
-                    description: '雪景，模型积雪'
-                }
-            },
-            {
-                id: 'rain',
-                name: '下雨',
-                name_en: 'Rain',
-                author: '20Savage',
-                codeUrl: HOST + 'cesiumExamples/expand/rain.js',
-                image: HOST + 'cesiumExamples/expand/rain.jpg',
-                meta: {
-                    title: '雨景',
-                    keywords: '雨景，雨滴效果',
-                    description: '雨景，雨滴效果'
-                }
-            },
-            {
-                id: 'lensFlare',
-                name: '镜头光晕',
-                name_en: 'Lens Flare',
-                author: '20Savage',
-                codeUrl: HOST + 'cesiumExamples/expand/lensFlare.js',
-                image: HOST + 'cesiumExamples/expand/lensFlare.jpg',
-                meta: {
-                    title: '镜头光晕',
-                    keywords: '镜头光晕，太阳效果',
-                    description: '镜头光晕，太阳效果'
-                }
-            },
+
             {
                 id: '3DheatMap',
                 name: '3D热力图',
@@ -644,26 +687,12 @@ export default [
                 }
             },
             {
-                id: 'gradienGeojsonFace',
-                name: '渐变行政区',
-                name_en: 'Gradient Area',
-                author: '20Savage',
-                codeUrl: HOST + 'cesiumExamples/expand/gradienGeojsonFace.js',
-                image: HOST + 'cesiumExamples/expand/gradienGeojsonFace.jpg',
-                meta: {
-                    title: '渐变行政区',
-                    keywords: 'cesium.js,渐变行政区',
-                    description: 'cesium 结合 渐变行政区'
-                }
-            },
-            {
-                id: 'cesiumShadertoy',
-                name: '使用Shadertoy',
-                name_en: 'Use Shadertoy',
-                improver: 'z2586300277',
-                referUrl: 'https://zhuanlan.zhihu.com/p/1905523047424856981',
-                codeUrl: HOST + 'cesiumExamples/expand/cesiumShadertoy.js',
-                image: HOST + 'cesiumExamples/expand/cesiumShadertoy.jpg',
+                id: 'transportLine',
+                name: '交通线路',
+                name_en: 'Transport Line',
+                author: 'z2586300277',
+                codeUrl: HOST + 'cesiumExamples/expand/transportLine.js',
+                image: HOST + 'cesiumExamples/expand/transportLine.jpg',
             }
 
         ]
