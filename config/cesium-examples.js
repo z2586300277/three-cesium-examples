@@ -267,6 +267,14 @@ export default [
         name_en: 'Basic Function',
         children: [
             {
+                id: 'switchView',
+                name: '视角切换',
+                name_en: 'Switch View',
+                author: 'z2586300277',
+                codeUrl: HOST + 'cesiumExamples/basic/switchView.js',
+                image: HOST + 'cesiumExamples/basic/switchView.jpg',
+            },
+            {
                 id: 'autoRotate',
                 name: '自动旋转',
                 name_en: 'Auto Rotate',
