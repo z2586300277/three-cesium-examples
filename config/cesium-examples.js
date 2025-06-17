@@ -490,6 +490,15 @@ export default [
                 referUrl: 'https://zhuanlan.zhihu.com/p/1905523047424856981',
                 codeUrl: HOST + 'cesiumExamples/expand/cesiumShadertoy.js',
                 image: HOST + 'cesiumExamples/expand/cesiumShadertoy.jpg',
+            },
+            {
+                id: 'radarEmission',
+                name: '雷达探测',
+                name_en: 'Radar Emission',
+                author: 'z2586300277',
+                referUrl: 'https://mp.weixin.qq.com/s/CX0TvC7O_NEoCzik686DTg',
+                codeUrl: HOST + 'cesiumExamples/effect/radarEmission.js',
+                image: HOST + 'cesiumExamples/effect/radarEmission.jpg',
             }
         ]
     },
