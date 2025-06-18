@@ -166,23 +166,7 @@ export default [
                     description: 'cesium 地形'
                 }
             },
-            {
-                id: 'skyBox',
-                name: '天空盒',
-                name_en: 'Sky Box',
-                author: 'z2586300277',
-                referUrl: 'https://blog.csdn.net/qq_54653738/article/details/129796889',
-                codeUrl: HOST + 'cesiumExamples/basic/skyBox.js',
-                image: HOST + 'cesiumExamples/basic/skyBox.jpg',
-            },
-            {
-                id: 'gaodeTrans',
-                name: '高德纠偏',
-                name_en: 'Gaode Transform',
-                author: 'z2586300277',
-                codeUrl: HOST + 'cesiumExamples/layer/gaodeTrans.js',
-                image: HOST + 'cesiumExamples/layer/gaodeTrans.jpg',
-            },
+
         ]
     },
     {
@@ -242,6 +226,19 @@ export default [
                 }
             },
             {
+                id: 'baiDu',
+                name: '内网百度',
+                name_en: 'Intranet Baidu',
+                author: 'z2586300277',
+                codeUrl: HOST + 'cesiumExamples/offline/baidu.js',
+                image: HOST + 'cesiumExamples/offline/baidu.jpg',
+                meta: {
+                    title: '内网百度',
+                    keywords: 'cesium.js,内网百度',
+                    description: '内网百度'
+                }
+            },
+            {
                 id: 'gaode',
                 name: '内网高德',
                 name_en: 'Intranet Gaode',
@@ -255,17 +252,12 @@ export default [
                 }
             },
             {
-                id: 'baiDu',
-                name: '内网百度',
-                name_en: 'Intranet Baidu',
+                id: 'gaodeTrans',
+                name: '高德纠偏',
+                name_en: 'Gaode Transform',
                 author: 'z2586300277',
-                codeUrl: HOST + 'cesiumExamples/offline/baidu.js',
-                image: HOST + 'cesiumExamples/offline/baidu.jpg',
-                meta: {
-                    title: '内网百度',
-                    keywords: 'cesium.js,内网百度',
-                    description: '内网百度'
-                }
+                codeUrl: HOST + 'cesiumExamples/layer/gaodeTrans.js',
+                image: HOST + 'cesiumExamples/layer/gaodeTrans.jpg',
             }
         ]
     },
@@ -274,6 +266,14 @@ export default [
         name: '基础功能',
         name_en: 'Basic Function',
         children: [
+            {
+                id: 'switchView',
+                name: '视角切换',
+                name_en: 'Switch View',
+                author: 'z2586300277',
+                codeUrl: HOST + 'cesiumExamples/basic/switchView.js',
+                image: HOST + 'cesiumExamples/basic/switchView.jpg',
+            },
             {
                 id: 'autoRotate',
                 name: '自动旋转',
@@ -325,6 +325,15 @@ export default [
                     keywords: 'cesium.js,点击事件',
                     description: 'cesium 点击事件'
                 }
+            },
+            {
+                id: 'skyBox',
+                name: '天空盒',
+                name_en: 'Sky Box',
+                author: 'z2586300277',
+                referUrl: 'https://blog.csdn.net/qq_54653738/article/details/129796889',
+                codeUrl: HOST + 'cesiumExamples/basic/skyBox.js',
+                image: HOST + 'cesiumExamples/basic/skyBox.jpg',
             },
             {
                 id: 'geojsonFace',
@@ -434,128 +443,18 @@ export default [
                     description: 'cesium 加载模型'
                 }
             },
-            {
-                id: 'tilesShader',
-                name: '智慧城市着色器',
-                name_en: 'SmartCity',
-                author: 'z2586300277',
-                referUrl: 'https://blog.csdn.net/weixin_45412353/article/details/130598349',
-                codeUrl: HOST + 'cesiumExamples/basic/tilesShader.js',
-                image: HOST + 'cesiumExamples/basic/tilesShader.jpg',
-                meta: {
-                    title: '智慧城市着色器',
-                    keywords: 'cesium.js,智慧城市着色器',
-                    description: 'cesium 智慧城市着色器'
-                }
-            },
-            {
-                id: 'smartCity',
-                name: '智慧城市光',
-                name_en: 'City Light',
-                tag: TEXTS['smartCity'],
-                improver: 'z2586300277',
-                referUrl: 'https://blog.csdn.net/dagedezhiyin/article/details/146590778',
-                codeUrl: HOST + 'cesiumExamples/basic/smartCity.js',
-                image: HOST + 'cesiumExamples/basic/smartCity.jpg',
-            },
-            {
-                id: 'flyLine',
-                name: '流动飞线运动',
-                name_en: 'Flowing Line',
-                author: 'z2586300277',
-                codeUrl: HOST + 'cesiumExamples/basic/flyLine.js',
-                image: HOST + 'cesiumExamples/basic/flyLine.jpg',
-                meta: {
-                    title: '流动飞线运动',
-                    keywords: 'cesium.js,流动飞线运动',
-                    description: 'cesium 流动飞线运动'
-                }
-            },
-            {
-                id: 'curvePipe',
-                name: '曲线管道',
-                name_en: 'Curve Pipe',
-                author: 'z2586300277',
-                codeUrl: HOST + 'cesiumExamples/basic/curvePipe.js',
-                image: HOST + 'cesiumExamples/basic/curvePipe.jpg',
-            },
-            {
-                id: 'routeNavigation',
-                name: '路线导航',
-                name_en: 'Route Nav',
-                tag: TEXTS['漫游'],
-                author: 'z2586300277',
-                codeUrl: HOST + 'cesiumExamples/basic/routeNavigation.js',
-                image: HOST + 'cesiumExamples/basic/routeNavigation.jpg',
-            },
-            {
-                id: 'cameraCurveRoam',
-                name: '曲线漫游',
-                name_en: 'Curve Roam',
-                author: 'z2586300277',
-                codeUrl: HOST + 'cesiumExamples/basic/cameraCurveRoam.js',
-                image: HOST + 'cesiumExamples/basic/cameraCurveRoam.jpg',
-            },
-            {
-                id: 'transportLine',
-                name: '交通线路',
-                name_en: 'Transport Line',
-                author: 'z2586300277',
-                codeUrl: HOST + 'cesiumExamples/expand/transportLine.js',
-                image: HOST + 'cesiumExamples/expand/transportLine.jpg',
-            }
+
+
         ]
     },
     {
-        pid: 'expand',
-        name: '扩展功能',
-        name_en: 'Expand Function',
+        gid: 'cesiumEffect',
+        group: '场景效果',
+        group_en: 'Scene Effects',
+        pid: 'singleEffect',
+        name: '单一效果',
+        name_en: 'Single Effect',
         children: [
-            {
-                id: 'cesiumAndThree',
-                name: 'cesium融合three',
-                name_en: 'Cesium+Three',
-                author: 'z2586300277',
-                codeUrl: HOST + 'cesiumExamples/expand/cesiumAndThree.js',
-                image: HOST + 'cesiumExamples/expand/cesiumAndThree.jpg',
-                inject: {
-                    importmap: { three: FILE_HOST + "js/three/three.module.min.js" }
-                },
-                meta: {
-                    title: 'cesium融合three',
-                    keywords: 'cesium融合three,场景,融合',
-                    description: '使用three.js创建3D场景，cesium创建2D场景，融合在一起'
-                }
-            },
-            {
-                id: 'echartsFlyLine',
-                name: 'echarts飞线',
-                name_en: 'EchartsFlyLine',
-                author: 'z2586300277',
-                codeUrl: HOST + 'cesiumExamples/expand/echartsFlyLine.js',
-                image: 'https://z2586300277.github.io/three-editor/src/codes/cesiumjs/basic/flyCharts.jpg',
-                inject: {
-                    src: [FILE_HOST + "js/echarts490.min.js"]
-                },
-                meta: {
-                    title: 'echarts飞线',
-                    keywords: 'cesium.js,echarts飞线',
-                    description: 'cesium 结合 echarts 创建美丽的动态流动飞线'
-                }
-            },
-            {
-                id: 'heatMap',
-                name: '热力图',
-                name_en: 'Heat Map',
-                author: 'z2586300277',
-                codeUrl: HOST + 'cesiumExamples/expand/heatMap.js',
-                image: 'https://z2586300277.github.io/three-editor/src/codes/cesiumjs/basic/heatMap.jpg',
-                meta: {
-                    title: '热力图',
-                    keywords: 'cesium.js,热力图',
-                    description: 'cesium 结合 热力图'
-                }
-            },
             {
                 id: 'fire',
                 name: '粒子（火焰）',
@@ -591,6 +490,41 @@ export default [
                 image: HOST + 'cesiumExamples/effect/radar.jpg',
                 referUrl: 'https://mp.weixin.qq.com/s/uez-PeH3fkVxAcoyBeUc9w'
             },
+            {
+                id: 'cesiumShadertoy',
+                name: '使用Shadertoy',
+                name_en: 'Use Shadertoy',
+                improver: 'z2586300277',
+                referUrl: 'https://zhuanlan.zhihu.com/p/1905523047424856981',
+                codeUrl: HOST + 'cesiumExamples/expand/cesiumShadertoy.js',
+                image: HOST + 'cesiumExamples/expand/cesiumShadertoy.jpg',
+            },
+            {
+                id: 'radarEmission',
+                name: '雷达探测',
+                name_en: 'Radar Emission',
+                author: 'z2586300277',
+                referUrl: 'https://mp.weixin.qq.com/s/CX0TvC7O_NEoCzik686DTg',
+                codeUrl: HOST + 'cesiumExamples/effect/radarEmission.js',
+                image: HOST + 'cesiumExamples/effect/radarEmission.jpg',
+            },
+            {
+                id: 'dynamicWall',
+                name: '动态围墙',
+                name_en: 'Dynamic Wall',
+                improver: 'z2586300277',
+                referUrl: 'https://juejin.cn/post/7431590701496533030',
+                codeUrl: HOST + 'cesiumExamples/effect/dynamicWall.js',
+                image: HOST + 'cesiumExamples/effect/dynamicWall.jpg',
+            },
+        ]
+    },
+    {
+        gid: 'cesiumEffect',
+        pid: 'advancedEffect',
+        name: '高级特效',
+        name_en: 'Advanced Effect',
+        children: [
             {
                 id: 'snow',
                 name: '雪景',
@@ -631,17 +565,73 @@ export default [
                 }
             },
             {
-                id: '3DheatMap',
-                name: '3D热力图',
-                name_en: '3D Heat Map',
-                author: '20Savage',
-                codeUrl: HOST + 'cesiumExamples/expand/3DheatMap.js',
-                image: HOST + 'cesiumExamples/expand/3DheatMap.jpg',
+                id: 'tilesShader',
+                name: '智慧城市着色器',
+                name_en: 'SmartCity',
+                author: 'z2586300277',
+                referUrl: 'https://blog.csdn.net/weixin_45412353/article/details/130598349',
+                codeUrl: HOST + 'cesiumExamples/basic/tilesShader.js',
+                image: HOST + 'cesiumExamples/basic/tilesShader.jpg',
                 meta: {
-                    title: '3D热力图',
-                    keywords: 'cesium.js,3D热力图',
-                    description: 'cesium 结合 3D热力图'
+                    title: '智慧城市着色器',
+                    keywords: 'cesium.js,智慧城市着色器',
+                    description: 'cesium 智慧城市着色器'
                 }
+            },
+            {
+                id: 'smartCity',
+                name: '智慧城市光',
+                name_en: 'City Light',
+                tag: TEXTS['smartCity'],
+                improver: 'z2586300277',
+                referUrl: 'https://blog.csdn.net/dagedezhiyin/article/details/146590778',
+                codeUrl: HOST + 'cesiumExamples/basic/smartCity.js',
+                image: HOST + 'cesiumExamples/basic/smartCity.jpg',
+            },
+        ]
+    },
+    {
+        pid: 'applyExample',
+        name: '应用相关',
+        name_en: 'Application Example',
+        children: [
+            {
+                id: 'flyLine',
+                name: '流动飞线运动',
+                name_en: 'Flowing Line',
+                author: 'z2586300277',
+                codeUrl: HOST + 'cesiumExamples/basic/flyLine.js',
+                image: HOST + 'cesiumExamples/basic/flyLine.jpg',
+                meta: {
+                    title: '流动飞线运动',
+                    keywords: 'cesium.js,流动飞线运动',
+                    description: 'cesium 流动飞线运动'
+                }
+            },
+            {
+                id: 'curvePipe',
+                name: '曲线管道',
+                name_en: 'Curve Pipe',
+                author: 'z2586300277',
+                codeUrl: HOST + 'cesiumExamples/basic/curvePipe.js',
+                image: HOST + 'cesiumExamples/basic/curvePipe.jpg',
+            },
+            {
+                id: 'routeNavigation',
+                name: '路线导航',
+                name_en: 'Route Nav',
+                tag: TEXTS['漫游'],
+                author: 'z2586300277',
+                codeUrl: HOST + 'cesiumExamples/basic/routeNavigation.js',
+                image: HOST + 'cesiumExamples/basic/routeNavigation.jpg',
+            },
+            {
+                id: 'cameraCurveRoam',
+                name: '曲线漫游',
+                name_en: 'Curve Roam',
+                author: 'z2586300277',
+                codeUrl: HOST + 'cesiumExamples/basic/cameraCurveRoam.js',
+                image: HOST + 'cesiumExamples/basic/cameraCurveRoam.jpg',
             },
             {
                 id: 'gradienGeojsonFace',
@@ -656,14 +646,94 @@ export default [
                     description: 'cesium 结合 渐变行政区'
                 }
             },
+        ]
+    },
+    {
+        pid: 'expand',
+        name: '扩展功能',
+        name_en: 'Expand Function',
+        children: [
             {
-                id: 'cesiumShadertoy',
-                name: '使用Shadertoy',
-                name_en: 'Use Shadertoy',
-                improver: 'z2586300277',
-                referUrl: 'https://zhuanlan.zhihu.com/p/1905523047424856981',
-                codeUrl: HOST + 'cesiumExamples/expand/cesiumShadertoy.js',
-                image: HOST + 'cesiumExamples/expand/cesiumShadertoy.jpg',
+                id: 'cesiumAndThree',
+                name: 'cesium融合three',
+                name_en: 'Cesium+Three',
+                author: 'z2586300277',
+                codeUrl: HOST + 'cesiumExamples/expand/cesiumAndThree.js',
+                image: HOST + 'cesiumExamples/expand/cesiumAndThree.jpg',
+                inject: {
+                    importmap: { three: FILE_HOST + "js/three/three.module.min.js" }
+                },
+                meta: {
+                    title: 'cesium融合three',
+                    keywords: 'cesium融合three,场景,融合',
+                    description: '使用three.js创建3D场景，cesium创建2D场景，融合在一起'
+                }
+            },
+            {
+                id: 'cesiumSwitch',
+                name: 'Cesium Three切换',
+                name_en: 'Cesium Switch',
+                author: 'z2586300277',
+                codeUrl: HOST + 'cesiumExamples/expand/cesiumSwitch.js',
+                image: HOST + 'cesiumExamples/expand/cesiumSwitch.jpg',
+                inject: {
+                    importmap: {
+                        "three": "https://threejs.org/build/three.module.min.js",
+                        "three/examples/jsm/": "https://threejs.org/examples/jsm/",
+                        "gsap": "https://cdn.jsdelivr.net/npm/gsap/+esm",
+                    }
+                }
+            },
+            {
+                id: 'echartsFlyLine',
+                name: 'echarts飞线',
+                name_en: 'EchartsFlyLine',
+                author: 'z2586300277',
+                codeUrl: HOST + 'cesiumExamples/expand/echartsFlyLine.js',
+                image: 'https://z2586300277.github.io/three-editor/src/codes/cesiumjs/basic/flyCharts.jpg',
+                inject: {
+                    src: [FILE_HOST + "js/echarts490.min.js"]
+                },
+                meta: {
+                    title: 'echarts飞线',
+                    keywords: 'cesium.js,echarts飞线',
+                    description: 'cesium 结合 echarts 创建美丽的动态流动飞线'
+                }
+            },
+            {
+                id: 'heatMap',
+                name: '热力图',
+                name_en: 'Heat Map',
+                author: 'z2586300277',
+                codeUrl: HOST + 'cesiumExamples/expand/heatMap.js',
+                image: 'https://z2586300277.github.io/three-editor/src/codes/cesiumjs/basic/heatMap.jpg',
+                meta: {
+                    title: '热力图',
+                    keywords: 'cesium.js,热力图',
+                    description: 'cesium 结合 热力图'
+                }
+            },
+
+            {
+                id: '3DheatMap',
+                name: '3D热力图',
+                name_en: '3D Heat Map',
+                author: '20Savage',
+                codeUrl: HOST + 'cesiumExamples/expand/3DheatMap.js',
+                image: HOST + 'cesiumExamples/expand/3DheatMap.jpg',
+                meta: {
+                    title: '3D热力图',
+                    keywords: 'cesium.js,3D热力图',
+                    description: 'cesium 结合 3D热力图'
+                }
+            },
+            {
+                id: 'transportLine',
+                name: '交通线路',
+                name_en: 'Transport Line',
+                author: 'z2586300277',
+                codeUrl: HOST + 'cesiumExamples/expand/transportLine.js',
+                image: HOST + 'cesiumExamples/expand/transportLine.jpg',
             }
 
         ]
