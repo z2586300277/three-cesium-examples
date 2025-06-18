@@ -507,7 +507,16 @@ export default [
                 referUrl: 'https://mp.weixin.qq.com/s/CX0TvC7O_NEoCzik686DTg',
                 codeUrl: HOST + 'cesiumExamples/effect/radarEmission.js',
                 image: HOST + 'cesiumExamples/effect/radarEmission.jpg',
-            }
+            },
+            {
+                id: 'dynamicWall',
+                name: '动态围墙',
+                name_en:  'Dynamic Wall',
+                improver: 'z2586300277',
+                referUrl: 'https://juejin.cn/post/7431590701496533030',
+                codeUrl: HOST + 'cesiumExamples/effect/dynamicWall.js',
+                image: HOST + 'cesiumExamples/effect/dynamicWall.jpg',
+            },
         ]
     },
     {
