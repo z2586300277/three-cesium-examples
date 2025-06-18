@@ -511,7 +511,7 @@ export default [
             {
                 id: 'dynamicWall',
                 name: '动态围墙',
-                name_en:  'Dynamic Wall',
+                name_en: 'Dynamic Wall',
                 improver: 'z2586300277',
                 referUrl: 'https://juejin.cn/post/7431590701496533030',
                 codeUrl: HOST + 'cesiumExamples/effect/dynamicWall.js',
@@ -667,6 +667,21 @@ export default [
                     title: 'cesium融合three',
                     keywords: 'cesium融合three,场景,融合',
                     description: '使用three.js创建3D场景，cesium创建2D场景，融合在一起'
+                }
+            },
+            {
+                id: 'cesiumSwitch',
+                name: 'Cesium Three切换',
+                name_en: 'Cesium Switch',
+                author: 'z2586300277',
+                codeUrl: HOST + 'cesiumExamples/expand/cesiumSwitch.js',
+                image: HOST + 'cesiumExamples/expand/cesiumSwitch.jpg',
+                inject: {
+                    importmap: {
+                        "three": "https://threejs.org/build/three.module.min.js",
+                        "three/examples/jsm/": "https://threejs.org/examples/jsm/",
+                        "gsap": "https://cdn.jsdelivr.net/npm/gsap/+esm",
+                    }
                 }
             },
             {
