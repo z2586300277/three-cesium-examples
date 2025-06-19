@@ -7,7 +7,10 @@ export default {
         url: 'https://threejs.org/',
         logo: HOST + 'files/site/logo.svg',
         footName: '- Home',
-        footLink: HOST
+        footLink: HOST,
+        links: [
+            { name: '🐘elegant', url: 'https://z2586300277.github.io' }
+        ]
     },
     links: [
 
