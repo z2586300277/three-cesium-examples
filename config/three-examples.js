@@ -245,6 +245,16 @@ export default [
                 image: HOST + 'threeExamples/shader/cityMixShader.jpg',
             },
             {
+                id: 'tachnologyFloor',
+                name: '科技风地面',
+                name_en: 'TachnologyFloor',
+                author: 'flowers-10',
+                improver: 'z2586300277',
+                referUrl: 'https://three-auto.vercel.app/?tab=floor',
+                codeUrl: HOST + 'threeExamples/shader/tachnologyFloor.js',
+                image: HOST + 'threeExamples/shader/tachnologyFloor.jpg',
+            },
+            {
                 id: 'threeLogo',
                 name: 'three.js Logo',
                 name_en: 'Three Logo',
