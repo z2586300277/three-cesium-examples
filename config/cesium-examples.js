@@ -658,6 +658,7 @@ export default [
                 name: 'cesium融合three',
                 name_en: 'Cesium+Three',
                 author: 'z2586300277',
+                tag: TEXTS['融合'],
                 codeUrl: HOST + 'cesiumExamples/expand/cesiumAndThree.js',
                 image: HOST + 'cesiumExamples/expand/cesiumAndThree.jpg',
                 inject: {
@@ -674,6 +675,7 @@ export default [
                 name: 'Cesium Three切换',
                 name_en: 'Cesium Switch',
                 author: 'z2586300277',
+                tag: TEXTS['融合'],
                 codeUrl: HOST + 'cesiumExamples/expand/cesiumSwitch.js',
                 image: HOST + 'cesiumExamples/expand/cesiumSwitch.jpg',
                 inject: {
