@@ -250,6 +250,7 @@ export default [
                 name_en: 'TachnologyFloor',
                 author: 'flowers-10',
                 improver: 'z2586300277',
+                tag: TEXTS['tech'],
                 referUrl: 'https://three-auto.vercel.app/?tab=floor',
                 codeUrl: HOST + 'threeExamples/shader/tachnologyFloor.js',
                 image: HOST + 'threeExamples/shader/tachnologyFloor.jpg',
@@ -1155,6 +1156,7 @@ export default [
                 id: 'technologyParticle',
                 name: '科技粒子',
                 name_en: 'Technology',
+                tag: TEXTS['tech'],
                 author: 'FFMMCC',
                 codeUrl: HOST + 'threeExamples/particle/technologyParticle.js',
                 image: HOST + 'threeExamples/particle/technologyParticle.jpg',
@@ -2729,7 +2731,7 @@ export default [
                 openUrl: 'https://microsoft.github.io/TRELLIS/',
                 links: [
                     { name: 'hyper3d', url: 'https://hyper3d.ai/' },
-                    { name: 'tripo3d', url: 'https://studio.tripo3d.ai/'}
+                    { name: 'tripo3d', url: 'https://studio.tripo3d.ai/' }
                 ],
                 image: HOST + 'threeExamples/tools/TRELLIS.jpg'
             },

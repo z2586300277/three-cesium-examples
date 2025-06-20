@@ -68,13 +68,17 @@ window.TEXTS = Object.fromEntries(Object.entries({
 
     'Support': { zh: '打赏支持', en: 'Sponsor' },
 
-    'Star' : { zh: '点星助力', en: 'Star' },
+    'Star': { zh: '点星助力', en: 'Star' },
 
-    download : { zh: '下载', en: 'Download' },
+    download: { zh: '下载', en: 'Download' },
 
     'market': { zh: '市场', en: 'Market' },
 
     'jiawanlong': { zh: '贾宛龙', en: 'jiawanlong' },
+
+    '融合': { zh: '融合', en: 'Fusion' },
+
+    tech: { zh: '科技风', en: 'Tech' },
 
 }).map(
 
