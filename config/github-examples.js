@@ -215,7 +215,7 @@ export default [
                 githubUrl: 'https://github.com/syncopika/threejs-projects',
                 image: HOST + 'threeExamples/openSource/threejsProject.jpg'
             },
-            {   
+            {
                 id: 'xiaolidan00',
                 name: '三维案例',
                 name_en: 'Three Examples',
@@ -924,7 +924,7 @@ export default [
                 image: HOST + 'threeExamples/openSource/steve245270533Gallery.jpg'
             },
             {
-                id:'fullik',
+                id: 'fullik',
                 name: '逆动力学',
                 name_en: 'Fullik',
                 author: 'AUTO',
@@ -1244,4 +1244,5 @@ export default [
 http://mapbs.com/
 https://threepipe.org/
 https://github.com/hexianWeb/CrossRoad
+http://jasonsturges.com/three-low-poly/
 */
