@@ -555,6 +555,15 @@ export default [
                 image: HOST + 'threeExamples/openSource/digitalFarm.jpg'
             },
             {
+                id: 'digitalTraffic',
+                name: '数字交通',
+                name_en: 'Digital Traffic',
+                author: 'AUTO',
+                githubUrl: 'https://github.com/gyrate/digitalTraffic',
+                openUrl: 'https://gyrate.github.io/digitalTraffic/dist/index.html#/index',
+                image: HOST + 'threeExamples/openSource/digitalTraffic.jpg'
+            },
+            {
                 id: 'StationMonitor',
                 name: '站点监控',
                 name_en: 'Station Monitor',
