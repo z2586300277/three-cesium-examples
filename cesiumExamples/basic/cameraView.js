@@ -37,7 +37,6 @@ const saveView = () => ({
     up: camera.upWC,  // 上方向
     frustum: {
         fov: camera.frustum.fov, // 视场角
-        aspectRatio: camera.frustum.aspectRatio, // 纵横比
         near: camera.frustum.near, // 近裁剪面距离
         far: camera.frustum.far // 远裁剪面距离
     },
@@ -46,22 +45,22 @@ const saveView = () => ({
     roll: camera.roll, // 翻滚角 只读
 })
 
-function loadView(data) {
-    if (data) {
+function loadView(view) {
+    if (view) {
         Math.random() > 0.5 ? viewer.camera.flyTo({
-            destination: Cesium.Cartesian3.fromDegrees(data.positionDegrees.longitude, data.positionDegrees.latitude
-                , data.positionDegrees.height),
+            destination: Cesium.Cartesian3.fromDegrees(view.positionDegrees.longitude, view.positionDegrees.latitude
+                , view.positionDegrees.height),
             orientation: {
-                heading: data.heading,
-                pitch: data.pitch,
-                roll: data.roll
+                heading: view.heading,
+                pitch: view.pitch,
+                roll: view.roll
             }
         }) : camera.setView({
-            destination: data.position,
+            destination: view.position,
             orientation: {
-                heading: data.heading,
-                pitch: data.pitch,
-                roll: data.roll
+                heading: view.heading,
+                pitch: view.pitch,
+                roll: view.roll
             }
         })
     } else {
@@ -71,38 +70,68 @@ function loadView(data) {
 
 const camera = viewer.camera // 获取相机对象
 
-let data = sessionStorage.getItem('TCE_savedView')
-if (data) {
+let storage = JSON.parse(sessionStorage.getItem('TCE_savedView'))
+if (!storage) storage = {
+    url: FILE_HOST + '/examples/coffeeMug/coffeeMug.glb', // FILE_HOST + '/examples/coffeeMug/coffeeMug.glb'
+    view: null
+}
 
-    data = JSON.parse(data)
+if (storage.view) {
+    const { view } = storage
+    camera.positionWC.x = view.position.x // 设置相机位置
+    camera.positionWC.y = view.position.y
+    camera.positionWC.z = view.position.z
+    camera.directionWC.x = view.direction.x // 设置相机方向
+    camera.directionWC.y = view.direction.y
+    camera.directionWC.z = view.direction.z
+    camera.upWC.x = view.up.x // 设置相机上方向
+    camera.upWC.y = view.up.y
+    camera.upWC.z = view.up.z
+    camera.frustum.fov = view.frustum.fov // 设置视场角
+    camera.frustum.near = view.frustum.near // 设置近裁剪面距离
+    camera.frustum.far = view.frustum.far // 设置远裁剪面距离
 
-    camera.positionWC.x = data.position.x // 设置相机位置
-    camera.positionWC.y = data.position.y
-    camera.positionWC.z = data.position.z
-    camera.directionWC.x = data.direction.x // 设置相机方向
-    camera.directionWC.y = data.direction.y
-    camera.directionWC.z = data.direction.z
-    camera.upWC.x = data.up.x // 设置相机上方向
-    camera.upWC.y = data.up.y
-    camera.upWC.z = data.up.z
-    camera.frustum.fov = data.frustum.fov // 设置视场角
-    camera.frustum.aspectRatio = data.frustum.aspectRatio // 设置纵横比
-    camera.frustum.near = data.frustum.near // 设置近裁剪面距离
-    camera.frustum.far = data.frustum.far // 设置远裁剪面距离
-
+    if (storage.url) {
+        Cesium.Model.fromGltfAsync({
+            url: storage.url,
+            minimumPixelSize: 128,
+            maximumScale: 200,
+            modelMatrix: Cesium.Transforms.eastNorthUpToFixedFrame(Cesium.Cartesian3.fromDegrees(139.767052, 35.681167, 0)),
+        }).then(model => {
+            viewer.scene.primitives.add(model)
+        })
+    }
 }
 
 
 gui.add({
     '保存视角': () => {
-        const savedView = saveView()
-        sessionStorage.setItem('TCE_savedView', JSON.stringify(savedView))
+        storage.view = saveView()
+        sessionStorage.setItem('TCE_savedView', JSON.stringify(storage))
         alert('视角已保存')
     }
 }, '保存视角')
 
 gui.add({
     '恢复保存视角': () => {
-        loadView(JSON.parse(sessionStorage.getItem('TCE_savedView')))
+        const s = JSON.parse(sessionStorage.getItem('TCE_savedView'))
+        if (s && s.view) loadView(s.view)
+        else alert('没有保存的视角数据')
     }
 }, '恢复保存视角')
+
+
+gui.add(storage, 'url')
+gui.add({
+    '加载模型': () => {
+        Cesium.Model.fromGltfAsync({
+            url: storage.url,
+            minimumPixelSize: 128,
+            maximumScale: 200,
+            modelMatrix: Cesium.Transforms.eastNorthUpToFixedFrame(Cesium.Cartesian3.fromDegrees(139.767052, 35.681167, 0)),
+        }).then(model => {
+            viewer.scene.primitives.add(model)
+            viewer.camera.flyTo({ destination: Cesium.Cartesian3.fromDegrees(139.767052, 35.681167, 500) })
+        })
+    }
+}, '加载模型')
