@@ -7,12 +7,15 @@ export default {
         url: 'https://threejs.org/',
         logo: HOST + 'files/site/logo.svg',
         footName: '- Home',
-        footLink: HOST
+        footLink: HOST,
+        links: [
+            { name: '🐘elegant', url: 'https://z2586300277.github.io' }
+        ]
     },
     links: [
 
         {
-            name: '🏠Official',
+            name: '🏠' + TEXTS['officials'],
             url: 'https://openthree.github.io/three-official-examples'
         },
 
@@ -62,12 +65,12 @@ export default {
         },
 
         {
-            name: '🍃OpenThree',
+            name: '🍃' + TEXTS['openThree'],
             url: 'https://openthree.github.io/three-cesium-links/'
         },
 
         {
-            name: '🏪3D Market',
+            name: '🏪3D' + TEXTS['market'],
             url: 'https://openthree.github.io/market/'
         }
 

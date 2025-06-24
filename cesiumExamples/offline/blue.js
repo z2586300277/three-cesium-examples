@@ -20,5 +20,7 @@ const viewer = new Cesium.Viewer(box, {
 
 let imagelayer = new Cesium.SingleTileImageryProvider({
     url: FILE_HOST + "images/offlineLayer/world_b.jpg",
+    tileWidth: 256,
+    tileHeight: 256,
 });
 viewer.imageryLayers.addImageryProvider(imagelayer);

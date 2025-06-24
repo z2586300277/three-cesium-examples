@@ -48,3 +48,5 @@ viewer.scene.skyBox.show = false
 viewer.scene.backgroundColor = new Cesium.Color(0.0, 0.0, 0.0, 0.0)
 
 viewer._cesiumWidget._creditContainer.style.display = "none"
+
+console.log(Cesium.VERSION)

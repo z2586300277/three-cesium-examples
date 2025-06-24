@@ -89,12 +89,12 @@ let init_scene = () => {
     controls = new OrbitControls(camera, renderer.domElement);
     controls.target.set(0, vHeight, 0);
     controls.update();
-    controls.minPolarAngle = Math.PI * 0.4;
-    controls.maxPolarAngle = Math.PI * 0.5;
-    controls.minDistance = 10;
-    controls.maxDistance = 20;
+    // controls.minPolarAngle = Math.PI * 0.4;
+    // controls.maxPolarAngle = Math.PI * 0.5;
+    // controls.minDistance = 10;
+    // controls.maxDistance = 20;
     controls.enableDamping = true;
-    controls.enablePan = false;
+    // controls.enablePan = false;
     let light = new DirectionalLight(0xffffff, 0.25);
     light.position.setScalar(1);
     scene.add(light, new AmbientLight(0xffffff, 0.75));

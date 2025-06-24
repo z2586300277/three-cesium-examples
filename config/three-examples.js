@@ -15,7 +15,7 @@ export default [
                 name: '官方示例 - 优化版',
                 name_en: 'Official',
                 improver: 'z2586300277',
-                referUrl: 'https://threejs.org/examples/#webgl_animation_keyframes',
+                referUrl: 'https://openthree.github.io/three-offical-run/examples/',
                 openUrl: 'https://openthree.github.io/three-official-examples',
                 githubUrl: 'https://github.com/OpenThree/three-official-examples',
                 image: HOST + 'threeExamples/openSource/official.jpg'
@@ -243,6 +243,17 @@ export default [
                 author: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/shader/cityMixShader.js',
                 image: HOST + 'threeExamples/shader/cityMixShader.jpg',
+            },
+            {
+                id: 'tachnologyFloor',
+                name: '科技风地面',
+                name_en: 'TachnologyFloor',
+                author: 'flowers-10',
+                improver: 'z2586300277',
+                tag: TEXTS['tech'],
+                referUrl: 'https://three-auto.vercel.app/?tab=floor',
+                codeUrl: HOST + 'threeExamples/shader/tachnologyFloor.js',
+                image: HOST + 'threeExamples/shader/tachnologyFloor.jpg',
             },
             {
                 id: 'threeLogo',
@@ -902,7 +913,7 @@ export default [
                 id: 'ephemeralFlower',
                 name: '幻影花烟',
                 name_en: 'Flower Smoke',
-                author: 'z2586300277',
+                improver: 'z2586300277',
                 referUrl: 'https://codepen.io/prisoner849/pen/LYmXKrr',
                 codeUrl: HOST + 'threeExamples/shader/ephemeralFlower.js',
                 image: HOST + 'threeExamples/shader/ephemeralFlower.jpg',
@@ -1145,6 +1156,7 @@ export default [
                 id: 'technologyParticle',
                 name: '科技粒子',
                 name_en: 'Technology',
+                tag: TEXTS['tech'],
                 author: 'FFMMCC',
                 codeUrl: HOST + 'threeExamples/particle/technologyParticle.js',
                 image: HOST + 'threeExamples/particle/technologyParticle.jpg',
@@ -1277,6 +1289,14 @@ export default [
                 author: 'FFMMCC',
                 codeUrl: HOST + 'threeExamples/application/ghostHouse.js',
                 image: HOST + 'threeExamples/application/ghostHouse.jpg',
+            },
+            {
+                id: 'canvasTexture',
+                name: 'Canvas贴图',
+                name_en: 'Canvas Texture',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/application/canvasTexture.js',
+                image: HOST + 'threeExamples/application/canvasTexture.jpg',
             },
             {
                 id: 'flowLine',
@@ -2614,6 +2634,19 @@ export default [
                     keywords: "three.js,顶点颜色",
                     description: "使用three.js顶点颜色"
                 }
+            },
+            {
+                id: "扩散圈",
+                name: "扩散圈",
+                name_en: "Diffusion circle",
+                author: "chenzhijie1",
+                codeUrl: HOST + "threeExamples/basic/扩散圈.js",
+                image: HOST + "threeExamples/basic/扩散圈.png",
+                meta: {
+                    title: "扩散圈",
+                    keywords: "three.js,扩散圈",
+                    description: "使用three.扩散圈"
+                }
             }
         ]
     },
@@ -2704,7 +2737,11 @@ export default [
                 name_en: 'Image to 3D',
                 author: 'AUTO',
                 githubUrl: 'https://github.com/microsoft/TRELLIS',
-                openUrl: 'https://huggingface.co/spaces/JeffreyXiang/TRELLIS',
+                openUrl: 'https://microsoft.github.io/TRELLIS/',
+                links: [
+                    { name: 'hyper3d', url: 'https://hyper3d.ai/' },
+                    { name: 'tripo3d', url: 'https://studio.tripo3d.ai/' }
+                ],
                 image: HOST + 'threeExamples/tools/TRELLIS.jpg'
             },
             {

@@ -16,21 +16,21 @@
 
 - 国内访问 https://threehub.cn ，可下滑至 📦 自行部署 - 助力企业 查看其他部署站点🏫。
 
-- 由于此仓库关注和浏览的人很多且活跃, 仓库会经常更新。(点个 watch 获取最新动态🐸)
+- 由于此仓库关注和浏览的人很多且活跃, 仓库会每日更新。(点个 watch 获取最新动态🐸)
 
 - 关注 git histroy, 记录人生的每一天, 开发者人生历史的足迹。(点个 follow 监视作者🍏)
 
 - 人生旅程中的 Web3D 知识记录, 复习回顾, 高效查阅, 资源共享, 为爱发电。(fork 一下提交自己作品🍀)
 
-- 源码内存约10M，运行框架(Vue)和在线调试源于 作者名下的 three-editor库 - [链接](https://z2586300277.github.io/three-editor/dist/#/example)
+- 源码内存约10M，在线调试框架(Vue)源于 作者名下的 three-editor库 - [链接](https://z2586300277.github.io/three-editor/dist/#/example)
 
 - 注：尽量不要提交超过200k的文件，image 控制压缩到 10k，在线压缩 - [链接](https://yasuo.xunjiepdf.com/img/)
 
 - 留下链接，便于企业寻求专业的技术或人员支持，个人开发者承接项目、资源售卖，交流支持🐋。
 
-### 👋 欢迎联系 (任意用户自行添加）
+### 👋 欢迎加入 (用户自行添加联系）
 
-<img src="https://contrib.rocks/image?repo=z2586300277/three-cesium-examples&type=Date&51" />
+<img src="https://contrib.rocks/image?repo=z2586300277/three-cesium-examples&type=Date&46" />
 
 |     作者     |   联系方式   |    联系方式     |             链接             |          描述
 | :----------: | :----------: | :-------------: | :------------------------: | :------------------------: |
@@ -67,7 +67,7 @@
 6. 音视频模型存储等一些可以公用的资源 files 文件夹下,涉及文件资源尽量引用外部 url,保证仓库轻量化
 
 - assets => ui 运行框架 不需要修改
-- config => js 注入和配置案例 等所有案例配置目录
+- config => 配置项[host:主机, links:链接, author:作者信息, lang:语言, config:注入运行]
 - files 音视频模型存储等一些可以公用的资源, 尽量不要上传文件资源, 使用 外部 url 地址访问
 - js => dat.gui gsap 等等一些依赖存放处,尽量可使用 如 cdn 线上 js 引入
 - threeExamples three.js 案例代码目录
@@ -160,7 +160,7 @@
 6. Store audio and video models and other resources that can be shared in the files folder. Whenever possible, reference external URLs for file resources to ensure a lightweight warehouse
 
 - Assets=>UI runtime framework does not require modification
-- Config=>JS injection and configuration case, all case configuration directories
+- Config=>Configuration options [host: host, links: links, author: author information, lang: language, config: injection run]
 - Files, audio and video model storage, and other resources that can be shared should be avoided as much as possible, and external URL addresses should be used to access them
 - Js=>dat.gui gsap and other dependency repositories, try to use online js such as CDN to introduce them as much as possible
 - ThreeEamples Three.js Case Code Catalog

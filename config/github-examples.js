@@ -214,6 +214,15 @@ export default [
                 openUrl: 'https://syncopika.github.io/threejs-projects/',
                 githubUrl: 'https://github.com/syncopika/threejs-projects',
                 image: HOST + 'threeExamples/openSource/threejsProject.jpg'
+            },
+            {
+                id: 'xiaolidan00',
+                name: '三维案例',
+                name_en: 'Three Examples',
+                author: 'AUTO',
+                githubUrl: 'https://github.com/xiaolidan00/my-earth',
+                openUrl: 'https://xiaolidan00.github.io/my-earth',
+                image: HOST + 'threeExamples/openSource/xiaolidan00.jpg',
             }
         ]
     },
@@ -471,6 +480,15 @@ export default [
                 githubUrl: 'https://github.com/KallkaGo/su7-demo',
                 image: HOST + 'threeExamples/openSource/kallkago_su7.jpg'
             },
+            {
+                id: 'car911Show',
+                name: '911车展示',
+                name_en: 'Car 911 Show',
+                author: 'AUTO',
+                openUrl: 'https://totorozuo.github.io/3d-car-showcase/',
+                githubUrl: 'https://github.com/TotoroZuo/3d-car-showcase',
+                image: HOST + 'threeExamples/openSource/car911Show.jpg',
+            }
         ]
     },
     {
@@ -537,6 +555,15 @@ export default [
                 image: HOST + 'threeExamples/openSource/digitalFarm.jpg'
             },
             {
+                id: 'digitalTraffic',
+                name: '数字交通',
+                name_en: 'Digital Traffic',
+                author: 'AUTO',
+                githubUrl: 'https://github.com/gyrate/digitalTraffic',
+                openUrl: 'https://gyrate.github.io/digitalTraffic/dist/index.html#/index',
+                image: HOST + 'threeExamples/openSource/digitalTraffic.jpg'
+            },
+            {
                 id: 'StationMonitor',
                 name: '站点监控',
                 name_en: 'Station Monitor',
@@ -563,6 +590,58 @@ export default [
                 openUrl: 'https://coderfmc.github.io/three.js-demo/digital-farmland/#/carbon-neutral-bigscreen',
                 image: 'https://coderfmc.github.io/three.js-demo/fmc-web-3d/img/智慧农田.png'
             }
+        ]
+    },
+    {
+        pid: 'gameExamples',
+        name: '游戏案例',
+        name_en: 'Game Examples',
+        order: 45,
+        children: [
+            {
+                id: 'snakeGame',
+                name: '贪吃蛇',
+                name_en: 'Snake Game',
+                openUrl: 'https://z2586300277.github.io/show-site/snake/',
+                githubUrl: 'https://github.com/rock-biter/three-snake-live',
+                image: HOST + 'threeExamples/openSource/snakeGame.jpg'
+            },
+            {
+                id: 'Sketchbook',
+                author: 'AUTO',
+                name: '飞车',
+                name_en: 'flying car',
+                githubUrl: 'https://github.com/swift502/Sketchbook',
+                openUrl: 'https://jblaha.art/sketchbook/0.4/',
+                image: HOST + 'threeExamples/openSource/sketchbook.jpg'
+            },
+            {
+                id: 'flyBy',
+                name: '飞行漫游',
+                name_en: 'Fly By',
+                author: 'AUTO',
+                githubUrl: 'https://github.com/jessehhydee/fly-by',
+                openUrl: 'https://hydeit.co/fly-by/',
+                image: HOST + 'threeExamples/openSource/flyBy.jpg'
+            },
+            {
+                id: '3dcity',
+                name: '3D城市',
+                name_en: '3D City',
+                author: 'AUTO',
+                githubUrl: 'https://github.com/lo-th/3d.city',
+                openUrl: 'https://lo-th.github.io/3d.city/index.html',
+                image: HOST + 'threeExamples/openSource/3dcity.jpg'
+            },
+            {
+                id: 'phy',
+                name: '小物理游戏',
+                name_en: 'Physics Game',
+                author: 'AUTO',
+                openUrl: 'https://lo-th.github.io/phy/',
+                githubUrl: 'https://github.com/lo-th/phy',
+                image: HOST + 'threeExamples/openSource/phy.jpg'
+            },
         ]
     },
     {
@@ -751,15 +830,6 @@ export default [
                 image: HOST + 'threeExamples/openSource/threeCSGMesh.jpg'
             },
             {
-                id: 'flyBy',
-                name: '飞行漫游',
-                name_en: 'Fly By',
-                author: 'AUTO',
-                githubUrl: 'https://github.com/jessehhydee/fly-by',
-                openUrl: 'https://hydeit.co/fly-by/',
-                image: HOST + 'threeExamples/openSource/flyBy.jpg'
-            },
-            {
                 id: 'musicParticle',
                 name: '音乐粒子',
                 name_en: 'Music Particle',
@@ -785,32 +855,6 @@ export default [
                 openUrl: 'https://tomasgonzalez.github.io/3d-portfolio/',
                 image: HOST + 'threeExamples/openSource/3d-portfolio.jpg'
             },
-            {
-                id: '3dcity',
-                name: '3D城市',
-                name_en: '3D City',
-                author: 'AUTO',
-                githubUrl: 'https://github.com/lo-th/3d.city',
-                openUrl: 'https://lo-th.github.io/3d.city/index.html',
-                image: HOST + 'threeExamples/openSource/3dcity.jpg'
-            },
-            {
-                id: 'Sketchbook',
-                author: 'AUTO',
-                name: '飞车',
-                name_en: 'flying car',
-                githubUrl: 'https://github.com/swift502/Sketchbook',
-                openUrl: 'https://jblaha.art/sketchbook/0.4/',
-                image: HOST + 'threeExamples/openSource/sketchbook.jpg'
-            },
-            {
-                id: 'snakeGame',
-                name: '贪吃蛇',
-                name_en: 'Snake Game',
-                openUrl: 'https://z2586300277.github.io/show-site/snake/',
-                githubUrl: 'https://github.com/rock-biter/three-snake-live',
-                image: HOST + 'threeExamples/openSource/snakeGame.jpg'
-            },
 
             {
                 id: 'octreeDemo',
@@ -820,15 +864,6 @@ export default [
                 openUrl: 'https://eriksom.github.io/threejs-octree/dist/example/',
                 githubUrl: 'https://github.com/ErikSom/threejs-octree',
                 image: HOST + 'threeExamples/physics/octreeDemo.jpg'
-            },
-            {
-                id: 'phy',
-                name: '小物理游戏',
-                name_en: 'Physics Game',
-                author: 'AUTO',
-                openUrl: 'https://lo-th.github.io/phy/',
-                githubUrl: 'https://github.com/lo-th/phy',
-                image: HOST + 'threeExamples/openSource/phy.jpg'
             },
             {
                 id: 'CollisionRoaming',
@@ -897,6 +932,15 @@ export default [
                 githubUrl: 'https://github.com/Steve245270533/gallery',
                 image: HOST + 'threeExamples/openSource/steve245270533Gallery.jpg'
             },
+            {
+                id: 'fullik',
+                name: '逆动力学',
+                name_en: 'Fullik',
+                author: 'AUTO',
+                openUrl: 'https://lo-th.github.io/fullik/',
+                githubUrl: 'https://github.com/lo-th/fullik',
+                image: HOST + 'threeExamples/openSource/fullik.jpg'
+            },
 
             {
                 id: 'change',
@@ -924,15 +968,15 @@ export default [
                 openUrl: 'http://nicowebgl.cn/path/',
                 image: HOST + 'threeExamples/openSource/roam.jpg'
             },
-            {
-                id: 'area,pixijs,webgl',
-                author: 'nico',
-                name: '场景导航（免模型）',
-                name_en: 'Scene Nav',
-                githubUrl: 'https://github.com/Nicolas-zn/my_code/blob/main/src/code/interactive_image.vue',
-                openUrl: 'http://nicowebgl.cn/portfolio/#/interactive_image',
-                image: HOST + 'threeExamples/openSource/area.jpg'
-            },
+            // {
+            //     id: 'area,pixijs,webgl',
+            //     author: 'nico',
+            //     name: '场景导航（免模型）',
+            //     name_en: 'Scene Nav',
+            //     githubUrl: 'https://github.com/Nicolas-zn/my_code/blob/main/src/code/interactive_image.vue',
+            //     openUrl: 'http://nicowebgl.cn/portfolio/#/interactive_image',
+            //     image: HOST + 'threeExamples/openSource/area.jpg'
+            // },
             {
                 id: 'unreal',
                 author: 'nico',
@@ -1208,5 +1252,6 @@ export default [
 /* 可能在未来上线的一些链接资源记录 - 筛选
 http://mapbs.com/
 https://threepipe.org/
-https://github.com/hululuuuuu/GlobeStream3D
+https://github.com/hexianWeb/CrossRoad
+http://jasonsturges.com/three-low-poly/
 */
