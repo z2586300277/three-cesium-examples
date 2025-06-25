@@ -488,6 +488,15 @@ export default [
                 openUrl: 'https://totorozuo.github.io/3d-car-showcase/',
                 githubUrl: 'https://github.com/TotoroZuo/3d-car-showcase',
                 image: HOST + 'threeExamples/openSource/car911Show.jpg',
+            },
+            {
+                id: 'paintCar',
+                name: '汽车911',
+                name_en: 'Car Paint',
+                author: 'AUTO',
+                openUrl: 'https://faraz-portfolio.github.io/demo-2025-car-paint/',
+                githubUrl: 'https://github.com/Faraz-Portfolio/demo-2025-car-paint',
+                image: HOST + 'threeExamples/openSource/paintCar.jpg',
             }
         ]
     },
