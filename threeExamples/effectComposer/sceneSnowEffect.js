@@ -4,10 +4,36 @@ import {GLTFLoader} from "three/examples/jsm/loaders/GLTFLoader.js";
 import {OrbitControls} from 'three/examples/jsm/controls/OrbitControls.js'
 import {DRACOLoader} from "three/examples/jsm/loaders/DRACOLoader.js";
 import {GUI} from "three/addons/libs/lil-gui.module.min.js"
-import SPE  from 'https://cdn.jsdelivr.net/npm/shader-particle-engine@1.0.6/+esm'
-const gui = new GUI()
-debugger
 console.log('Three.js 版本:', THREE.REVISION);
+const gui = new GUI()
+const size = { width: window.innerWidth, height: window.innerHeight, maxX: 20, minX: -20, maxY: 20, minY: 0, maxZ: 20, minZ: -20 }
+const vertices = []
+const offset = []
+let particleCount=1000
+const geometry = new THREE.BufferGeometry()
+for (let i = 0; i < particleCount; i++) {
+    const x = 1000 * (Math.random() - 0.5)
+    const y = 600 * Math.random()
+    const z = 1000 * (Math.random() - 0.5)
+
+    vertices.push(x, y, z)
+    offset.push(Math.random() - 0.5, 0, Math.random() - 0.5)
+}
+geometry.setAttribute('position', new THREE.Float32BufferAttribute(vertices, 3))
+/**纹理*/
+const texture = new THREE.TextureLoader().load(HOST + 'files/images/snow.png')
+const pointMesh = new THREE.Points(
+    geometry,
+    new THREE.PointsMaterial({
+        size: 5,
+        depthTest: true,
+        map: texture,
+        transparent: true,
+        blending: THREE.AdditiveBlending,
+        opacity: 0.8,
+        sizeAttenuation: true
+    })
+)
 // 创建一个控制对象
 const params = {
     snowEnabled: true,  // 默认值为true
@@ -31,6 +57,8 @@ folder.add(params, "snowAmount", 0, 1, 0.01).name('雪量').onChange((value) => 
 // 初始化场景、相机、渲染器
 const scene = new THREE.Scene();
 const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 10000);
+camera.position.set(0, 100, 300); // 明确设置相机初始位置
+camera.lookAt(0, 0, 0); // 看向场景中心
 scene.add(camera);
 const renderer = new THREE.WebGLRenderer({
     antialias: true,
@@ -44,6 +72,7 @@ document.body.appendChild(renderer.domElement);
 
 const ambientLight = new THREE.AmbientLight('#fff', 2);
 scene.add(ambientLight);
+scene.add(pointMesh);
 // 添加性能监控
 const stats = new Stats();
 document.body.appendChild(stats.dom);
@@ -54,12 +83,12 @@ controls.enableDamping = true;
 
 const gltfLoader = new GLTFLoader()
 const dracoLoader = new DRACOLoader()
-dracoLoader.setDecoderPath(HOST+'js/draco/')
+dracoLoader.setDecoderPath(FILE_HOST + 'js/three/draco/')
 gltfLoader.setDRACOLoader(dracoLoader)
 //加载模型
 gltfLoader.load("https://axidake.oss-cn-chengdu.aliyuncs.com/public-res/model/index.gltf", (gltf) => {
-    scene.add(gltf.s)
-    scene.add(particleGroup.mesh);
+    gltf.scene.scale.set(10, 10, 10);
+    scene.add(gltf.scene)
     animate()
 }, (event) => {
     const percentComplete = (event.loaded / event.total * 100).toFixed(2);
@@ -73,50 +102,29 @@ gltfLoader.load("https://axidake.oss-cn-chengdu.aliyuncs.com/public-res/model/in
 initPostprocessing(window.innerWidth, window.innerHeight)
 
 
-const clock = new THREE.Clock()
+function updatePoints(){
+    for (let i = 1; i < vertices.length; i += 3) {
+        vertices[i] -= 0.5
+        vertices[i - 1] -= offset[i - 1]
+        vertices[i + 1] -= offset[i + 1]
+        if (vertices[i] < 0) {
+            vertices[i] = 600
+        }
 
+        if (vertices[i - 1] < size.minX || vertices[i - 1] > size.maxX) {
+            offset[i - 1] = -offset[i - 1]
+        }
 
-const texture = new THREE.TextureLoader().load('images/snow.png')
-// 2. 创建粒子组
-const particleGroup = new SPE.Group({
-    texture: {
-        value: texture
-    },
-    maxParticleCount: 3000, // 最大粒子数量
-    blending: NormalBlending,
-    depthTest: true,
-    depthWrite: false
-})
-const emitter = new SPE.Emitter({
-    type: SPE.distributions.BOX,
-    particleCount: 1000,
-    maxAge: {value: 10, spread: 2},
-    position: {
-        value: new Vector3(0, 30, 0),
-        spread: new Vector3(100, 0, 100),
-        radius: 1
-    },
-    velocity: {
-        value: new Vector3(0, -2, 0),
-        spread: new Vector3(3, 1, 3),
-        distribution: SPE.distributions.SPHERE
-    },
-    size: {
-        value: [1, 5],
-        randomise: true
-    },
-    acceleration: {
-        value: new Vector3(Math.sin(clock.getElapsedTime() * 0.5) * 0.3, -1, 0),
-        spread: new Vector3(0.5, 0, 0.5)
+        if (vertices[i + 1] < size.minZ || vertices[i + 1] > size.maxZ) {
+            offset[i + 1] = -offset[i + 1]
+        }
     }
-})
-// 4. 添加到场景
-particleGroup.addEmitter(emitter)
-// 手动预热：提前运行多次更新
-for (let i = 0; i < 60 * 30; i++) {
-    // 模拟3秒（假设60FPS）
-    particleGroup.tick(1 / 60)
+
+    pointMesh.geometry.setAttribute('position', new THREE.Float32BufferAttribute(vertices, 3))
 }
+
+
+
 
 
 // 动画渲染
@@ -124,8 +132,8 @@ function animate() {
     requestAnimationFrame(animate)
 
     if (params.snowEnabled) {
-        particleGroup.tick(clock.getDelta())
-        particleGroup.mesh.visible = true
+        pointMesh.visible=true
+        updatePoints()
         scene.overrideMaterial = null
         //写入原场景渲染图
         renderer.setRenderTarget(postprocessing.difusse)
@@ -137,7 +145,7 @@ function animate() {
         renderer.setRenderTarget(null)
         renderer.render(postprocessing.scene, postprocessing.camera);
     } else {
-        particleGroup.mesh.visible = false
+        pointMesh.visible=false
         scene.overrideMaterial = null
         renderer.setRenderTarget(null)
         renderer.render(scene, camera)
@@ -148,7 +156,11 @@ function animate() {
 
 animate();
 
-
+/**
+ * 核心逻辑,备注:对场景中部分透明物体渲染存在错误,需要额外处理,这里主要是提供思路
+ * @param renderTargetWidth
+ * @param renderTargetHeight
+ */
 function initPostprocessing(renderTargetWidth, renderTargetHeight) {
     postprocessing.scene = new THREE.Scene();
     postprocessing.camera = new THREE.OrthographicCamera(-1, 1, 1, -1, 0, 1);
