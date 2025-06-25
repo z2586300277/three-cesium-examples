@@ -16,19 +16,19 @@
 
 - 国内访问 https://threehub.cn ，可下滑至 📦 自行部署 - 助力企业 查看其他部署站点🏫。
 
-- 由于此仓库关注和浏览的人很多且活跃, 仓库会经常更新。(点个 watch 获取最新动态🐸)
+- 由于此仓库关注和浏览的人很多且活跃, 仓库会每日更新。(点个 watch 获取最新动态🐸)
 
 - 关注 git histroy, 记录人生的每一天, 开发者人生历史的足迹。(点个 follow 监视作者🍏)
 
 - 人生旅程中的 Web3D 知识记录, 复习回顾, 高效查阅, 资源共享, 为爱发电。(fork 一下提交自己作品🍀)
 
-- 源码内存约10M，运行框架(Vue)和在线调试源于 作者名下的 three-editor库 - [链接](https://z2586300277.github.io/three-editor/dist/#/example)
+- 源码内存约10M，在线调试框架(Vue)源于 作者名下的 three-editor库 - [链接](https://z2586300277.github.io/three-editor/dist/#/example)
 
 - 注：尽量不要提交超过200k的文件，image 控制压缩到 10k，在线压缩 - [链接](https://yasuo.xunjiepdf.com/img/)
 
 - 留下链接，便于企业寻求专业的技术或人员支持，个人开发者承接项目、资源售卖，交流支持🐋。
 
-### 👋 欢迎联系 (任意用户自行添加）
+### 👋 欢迎加入 (用户自行添加联系）
 
 <img src="https://contrib.rocks/image?repo=z2586300277/three-cesium-examples&type=Date&46" />
 

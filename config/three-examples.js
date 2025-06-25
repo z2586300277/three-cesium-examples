@@ -2069,6 +2069,14 @@ export default [
                 author: 'ZackFair5185034',
                 codeUrl: HOST + 'threeExamples/effectComposer/deferredLighting.js',
                 image: HOST + 'threeExamples/effectComposer/deferredLighting.webp',
+            },
+            {
+                id: 'sceneSnowEffect',
+                name: '场景雪',
+                name_en: 'sceneSnowEffect',
+                author: 'ZackFair5185034',
+                codeUrl: HOST + 'threeExamples/effectComposer/sceneSnowEffect.js',
+                image: HOST + 'threeExamples/effectComposer/sceneSnowEffect.webp',
             }
         ]
     },

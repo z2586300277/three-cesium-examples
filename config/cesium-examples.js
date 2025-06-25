@@ -275,6 +275,14 @@ export default [
                 image: HOST + 'cesiumExamples/basic/switchView.jpg',
             },
             {
+                id: 'cameraView',
+                name: '记录视角',
+                name_en: 'Camera View',
+                author: 'z2586300277',
+                codeUrl: HOST + 'cesiumExamples/basic/cameraView.js',
+                image: HOST + 'cesiumExamples/layer/defaultLayer.jpg',
+            },
+            {
                 id: 'autoRotate',
                 name: '自动旋转',
                 name_en: 'Auto Rotate',

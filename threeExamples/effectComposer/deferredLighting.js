@@ -81,12 +81,10 @@ function animate() {
     scene.overrideMaterial = null
     //写入原场景渲染图
     renderer.setRenderTarget(postprocessing.texture1)
-    renderer.clear()
     renderer.render(scene, camera)
     //将定点数据 法相数据存入通道
     scene.overrideMaterial = postprocessing.gBufferPass
     renderer.setRenderTarget(postprocessing.gBuffer)
-    renderer.clear()
     renderer.render(scene, camera)
     renderer.setRenderTarget(null)
     renderer.render(postprocessing.scene, postprocessing.camera);

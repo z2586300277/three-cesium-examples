@@ -215,7 +215,7 @@ export default [
                 githubUrl: 'https://github.com/syncopika/threejs-projects',
                 image: HOST + 'threeExamples/openSource/threejsProject.jpg'
             },
-            {   
+            {
                 id: 'xiaolidan00',
                 name: '三维案例',
                 name_en: 'Three Examples',
@@ -488,6 +488,15 @@ export default [
                 openUrl: 'https://totorozuo.github.io/3d-car-showcase/',
                 githubUrl: 'https://github.com/TotoroZuo/3d-car-showcase',
                 image: HOST + 'threeExamples/openSource/car911Show.jpg',
+            },
+            {
+                id: 'paintCar',
+                name: '汽车911',
+                name_en: 'Car Paint',
+                author: 'AUTO',
+                openUrl: 'https://faraz-portfolio.github.io/demo-2025-car-paint/',
+                githubUrl: 'https://github.com/Faraz-Portfolio/demo-2025-car-paint',
+                image: HOST + 'threeExamples/openSource/paintCar.jpg',
             }
         ]
     },
@@ -553,6 +562,15 @@ export default [
                 githubUrl: 'https://github.com/gyrate/digitalFarm',
                 openUrl: 'https://gyrate.github.io/digitalFarm/dist/index.html',
                 image: HOST + 'threeExamples/openSource/digitalFarm.jpg'
+            },
+            {
+                id: 'digitalTraffic',
+                name: '数字交通',
+                name_en: 'Digital Traffic',
+                author: 'AUTO',
+                githubUrl: 'https://github.com/gyrate/digitalTraffic',
+                openUrl: 'https://gyrate.github.io/digitalTraffic/dist/index.html#/index',
+                image: HOST + 'threeExamples/openSource/digitalTraffic.jpg'
             },
             {
                 id: 'StationMonitor',
@@ -924,7 +942,7 @@ export default [
                 image: HOST + 'threeExamples/openSource/steve245270533Gallery.jpg'
             },
             {
-                id:'fullik',
+                id: 'fullik',
                 name: '逆动力学',
                 name_en: 'Fullik',
                 author: 'AUTO',
@@ -1244,4 +1262,5 @@ export default [
 http://mapbs.com/
 https://threepipe.org/
 https://github.com/hexianWeb/CrossRoad
+http://jasonsturges.com/three-low-poly/
 */
