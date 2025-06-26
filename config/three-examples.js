@@ -1782,6 +1782,14 @@ export default [
                 author: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/application/geometryMerge.js',
                 image: HOST + 'threeExamples/application/geometryMerge.jpg',
+            },
+            {
+                id: 'Volumetric Heatmap',
+                name: '3d热力图-体积版',
+                name_en: 'volumeHeatmap',
+                author: 'ZackFair5185034',
+                codeUrl: HOST + 'threeExamples/application/volumeHeatmap.js',
+                image: HOST + 'threeExamples/application/volumeHeatmap.webp',
             }
 
         ]
@@ -2078,6 +2086,7 @@ export default [
                 codeUrl: HOST + 'threeExamples/effectComposer/sceneSnowEffect.js',
                 image: HOST + 'threeExamples/effectComposer/sceneSnowEffect.webp',
             }
+
         ]
     },
     {
