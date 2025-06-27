@@ -1,4 +1,4 @@
-import * as GaussianSplats3D from 'https://cdn.jsdelivr.net/npm/@mkkellogg/gaussian-splats-3d@0.4.7/+esm'
+import * as GaussianSplats3D from '@mkkellogg/gaussian-splats-3d'
 
 
 /**

@@ -80,6 +80,8 @@ window.TEXTS = Object.fromEntries(Object.entries({
 
     tech: { zh: '科技风', en: 'Tech' },
 
+    volume: { zh: '体渲染', en: 'Volume' },
+
 }).map(
 
     ([key, value]) => [key, LANG_EN ? value.en : value.zh])

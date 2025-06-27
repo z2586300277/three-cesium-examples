@@ -1795,6 +1795,7 @@ export default [
                 id: 'Volumetric Heatmap',
                 name: '3d热力图-体积版',
                 name_en: 'volumeHeatmap',
+                tag: TEXTS['volume'],
                 author: 'ZackFair5185034',
                 codeUrl: HOST + 'threeExamples/application/volumeHeatmap.js',
                 image: HOST + 'threeExamples/application/volumeHeatmap.webp',
@@ -1998,6 +1999,11 @@ export default [
                 author: 'ZackFair5185034',
                 codeUrl: HOST + 'threeExamples/expand/gaussianSplats3D.js',
                 image: HOST + 'threeExamples/expand/gaussianSplats3D.webp',
+                inject: {
+                    importmap: {
+                        '@mkkellogg/gaussian-splats-3d': 'https://cdn.jsdelivr.net/npm/@mkkellogg/gaussian-splats-3d@0.4.7/+esm'
+                    }
+                }
             }
         ]
     },
