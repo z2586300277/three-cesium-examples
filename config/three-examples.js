@@ -980,6 +980,15 @@ export default [
                 improver: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/shader/wifiShader.js',
                 image: HOST + 'threeExamples/shader/wifiShader.jpg',
+            },
+            {
+                id: 'buildGradient',
+                name: '建筑渐变',
+                name_en: 'Building Gradient',
+                tag: TEXTS['smartCity'],
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/shader/buildGradient.js',
+                image: HOST + 'threeExamples/shader/buildGradient.jpg',
             }
         ]
     },
