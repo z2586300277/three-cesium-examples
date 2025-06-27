@@ -1342,6 +1342,14 @@ export default [
                 }
             },
             {
+                id: 'buildingLine',
+                name: '建筑线条',
+                name_en: 'Building Line',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/application/buildingLine.js',
+                image: HOST + 'threeExamples/application/buildingLine.jpg',
+            },
+            {
                 id: 'videoModel',
                 name: '模型视频材质',
                 name_en: 'Video Model',
