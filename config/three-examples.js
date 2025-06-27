@@ -1981,6 +1981,15 @@ export default [
                 referUrl: 'https://echarts.apache.org/',
                 codeUrl: HOST + 'threeExamples/expand/combineEcharts.js',
                 image: HOST + 'threeExamples/expand/combineEcharts.jpg',
+            },
+            {
+                id: 'gaussianSplats3D',
+                name: '高斯溅射',
+                name_en: 'gaussianSplats3D',
+                referUrl: 'https://projects.markkellogg.org/threejs/demo_gaussian_splats_3d.php',
+                author: 'ZackFair5185034',
+                codeUrl: HOST + 'threeExamples/expand/gaussianSplats3D.js',
+                image: HOST + 'threeExamples/expand/gaussianSplats3D.webp',
             }
         ]
     },
