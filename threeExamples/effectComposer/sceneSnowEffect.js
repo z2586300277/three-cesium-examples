@@ -89,7 +89,6 @@ gltfLoader.setDRACOLoader(dracoLoader)
 gltfLoader.load("https://axidake.oss-cn-chengdu.aliyuncs.com/public-res/model/index.gltf", (gltf) => {
     gltf.scene.scale.set(10, 10, 10);
     scene.add(gltf.scene)
-    animate()
 }, (event) => {
     const percentComplete = (event.loaded / event.total * 100).toFixed(2);
     console.log(`模型加载进度: ${percentComplete}%`);
@@ -342,5 +341,4 @@ function onWindowResize() {
     camera.aspect = window.innerWidth / window.innerHeight;
     camera.updateProjectionMatrix();
     renderer.setSize(window.innerWidth, window.innerHeight);
-    composer.setSize(window.innerWidth, window.innerHeight);
 }

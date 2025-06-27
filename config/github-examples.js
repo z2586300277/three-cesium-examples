@@ -950,6 +950,15 @@ export default [
                 githubUrl: 'https://github.com/lo-th/fullik',
                 image: HOST + 'threeExamples/openSource/fullik.jpg'
             },
+            {   
+                id: 'rain_puddle',
+                name: '雨水积水效果',
+                name_en: 'Rain Puddle Effect',
+                author: 'AUTO',
+                githubUrl: 'https://github.com/Faraz-Portfolio/demo-2023-rain-puddle',
+                openUrl: 'https://faraz-portfolio.github.io/demo-2023-rain-puddle/',
+                image: HOST + 'threeExamples/openSource/rain_puddle.jpg'
+            },
 
             {
                 id: 'change',

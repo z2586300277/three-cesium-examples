@@ -1342,6 +1342,14 @@ export default [
                 }
             },
             {
+                id: 'buildingLine',
+                name: '建筑线条',
+                name_en: 'Building Line',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/application/buildingLine.js',
+                image: HOST + 'threeExamples/application/buildingLine.jpg',
+            },
+            {
                 id: 'videoModel',
                 name: '模型视频材质',
                 name_en: 'Video Model',
@@ -1782,6 +1790,15 @@ export default [
                 author: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/application/geometryMerge.js',
                 image: HOST + 'threeExamples/application/geometryMerge.jpg',
+            },
+            {
+                id: 'Volumetric Heatmap',
+                name: '3d热力图-体积版',
+                name_en: 'volumeHeatmap',
+                tag: TEXTS['volume'],
+                author: 'ZackFair5185034',
+                codeUrl: HOST + 'threeExamples/application/volumeHeatmap.js',
+                image: HOST + 'threeExamples/application/volumeHeatmap.webp',
             }
 
         ]
@@ -1973,6 +1990,20 @@ export default [
                 referUrl: 'https://echarts.apache.org/',
                 codeUrl: HOST + 'threeExamples/expand/combineEcharts.js',
                 image: HOST + 'threeExamples/expand/combineEcharts.jpg',
+            },
+            {
+                id: 'gaussianSplats3D',
+                name: '高斯溅射',
+                name_en: 'gaussianSplats3D',
+                referUrl: 'https://projects.markkellogg.org/threejs/demo_gaussian_splats_3d.php',
+                author: 'ZackFair5185034',
+                codeUrl: HOST + 'threeExamples/expand/gaussianSplats3D.js',
+                image: HOST + 'threeExamples/expand/gaussianSplats3D.webp',
+                inject: {
+                    importmap: {
+                        '@mkkellogg/gaussian-splats-3d': 'https://cdn.jsdelivr.net/npm/@mkkellogg/gaussian-splats-3d@0.4.7/+esm'
+                    }
+                }
             }
         ]
     },
@@ -2078,6 +2109,7 @@ export default [
                 codeUrl: HOST + 'threeExamples/effectComposer/sceneSnowEffect.js',
                 image: HOST + 'threeExamples/effectComposer/sceneSnowEffect.webp',
             }
+
         ]
     },
     {
