@@ -10,6 +10,7 @@ camera.position.set(1, 1, 1)
 
 const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true , logarithmicDepthBuffer: true })
 renderer.setSize(box.clientWidth, box.clientHeight)
+renderer.setPixelRatio(window.devicePixelRatio)
 box.appendChild(renderer.domElement)
 
 new OrbitControls(camera, renderer.domElement)

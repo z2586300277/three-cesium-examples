@@ -12,6 +12,8 @@ camera.position.set(10, 10, 10)
 
 const renderer = new THREE.WebGLRenderer()
 
+renderer.setPixelRatio(window.devicePixelRatio * 1.5)
+
 renderer.setSize(box.clientWidth, box.clientHeight)
 
 new OrbitControls(camera, renderer.domElement)
@@ -38,11 +40,11 @@ const uniforms = {
 
     circleWidth: { value: 300 },
 
-    diff: { value: new THREE.Color(0.2, 0.2, 0.2) },
+    diff: { value: new THREE.Color(1., 1., 1.) },
 
-    color: { value: new THREE.Color(0.0, 0.0, 1.0) },
+    color: { value: new THREE.Color('#8f95ff') },
 
-    opacity: { value: 0.3 },
+    opacity: { value: 0.6 },
 
     center: { value: new THREE.Vector3(0, 0, 0) }
 
@@ -51,6 +53,8 @@ const uniforms = {
 const material = new THREE.ShaderMaterial({
 
     uniforms,
+
+    transparent: true,
 
     vertexShader: `
         varying vec2 vUv;
@@ -79,9 +83,9 @@ const material = new THREE.ShaderMaterial({
             if(dis < (innerCircleWidth + circleWidth) && dis > innerCircleWidth) {
                 float r = (dis - innerCircleWidth) / circleWidth;
             
-                gl_FragColor = mix(vec4(diff, 0.1), vec4(color, opacity), r);
+                gl_FragColor = mix(vec4(diff, opacity), vec4(color, opacity), r);
             }else {
-                gl_FragColor = vec4(diff, 0.1);
+                gl_FragColor = vec4(diff, opacity);
             }
         }
     `

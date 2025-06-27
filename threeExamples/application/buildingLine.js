@@ -15,6 +15,8 @@ camera.position.set(1, 1, 1)
 
 const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true })
 
+renderer.setPixelRatio(window.devicePixelRatio * 1.3)
+
 renderer.setSize(box.clientWidth, box.clientHeight)
 
 box.appendChild(renderer.domElement)

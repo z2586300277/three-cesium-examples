@@ -14,7 +14,7 @@ const camera = new THREE.PerspectiveCamera(45, size.width / size.height, 0.1, 10
 camera.position.set(5, 5, 5)
 const renderer = new THREE.WebGLRenderer({ antialias: true, logarithmicDepthBuffer: true })
 renderer.setSize(size.width, size.height)
-renderer.setPixelRatio(window.devicePixelRatio * 1.2)
+renderer.setPixelRatio(window.devicePixelRatio * 1.5)
 document.body.appendChild(renderer.domElement)
 new OrbitControls(camera, renderer.domElement)
 renderer.setAnimationLoop(() =>  renderer.render(scene, camera))
