@@ -968,6 +968,15 @@ export default [
                 githubUrl: 'https://github.com/FarazzShaikh/three-shader-baker',
                 image: HOST + 'threeExamples/openSource/three-shader-baker.jpg'
             },
+            {
+                id: 'Terrain',
+                name: '地形生成',
+                name_en: 'Terrain',
+                author: 'AUTO',
+                githubUrl: 'https://github.com/IceCreamYou/THREE.Terrain',
+                openUrl: 'https://icecreamyou.github.io/THREE.Terrain/',
+                image: HOST + 'threeExamples/openSource/Terrain.jpg'
+            },
 
             {
                 id: 'change',
