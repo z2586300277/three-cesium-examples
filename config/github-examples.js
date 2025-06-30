@@ -959,6 +959,24 @@ export default [
                 openUrl: 'https://faraz-portfolio.github.io/demo-2023-rain-puddle/',
                 image: HOST + 'threeExamples/openSource/rain_puddle.jpg'
             },
+            {   
+                id: 'three-shader-baker',
+                name: '着色器烘焙',
+                name_en: 'Shader Baker',
+                author: 'AUTO',
+                openUrl: 'https://farazzshaikh.github.io/three-shader-baker/',
+                githubUrl: 'https://github.com/FarazzShaikh/three-shader-baker',
+                image: HOST + 'threeExamples/openSource/three-shader-baker.jpg'
+            },
+            {
+                id: 'Terrain',
+                name: '地形生成',
+                name_en: 'Terrain',
+                author: 'AUTO',
+                githubUrl: 'https://github.com/IceCreamYou/THREE.Terrain',
+                openUrl: 'https://icecreamyou.github.io/THREE.Terrain/',
+                image: HOST + 'threeExamples/openSource/Terrain.jpg'
+            },
 
             {
                 id: 'change',
