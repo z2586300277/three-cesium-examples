@@ -25,7 +25,7 @@ window.GLOBAL_CONFIG = {
 
 /* 注入 HTML */
 window.HTML_TEMPLATE =
-`<style>
+    `<style>
     body {
         margin: 0;
         padding: 1px;
@@ -188,14 +188,18 @@ if (params) {
 
 }
 
+/*  开发环境 */
+const isLocal = [/localhost/, /127.0.0.1/, /192.168/].some(reg => reg.test(window.location.hostname))
+const domain = isLocal ? './' : 'https://z2586300277.github.io/three-cesium-examples/'
+
 const HTML_link = document.createElement('link')
 HTML_link.rel = 'stylesheet'
-HTML_link.href = './assets/three-cesium-examples.css'
+HTML_link.href = domain + 'assets/three-cesium-examples.css'
 document.head.appendChild(HTML_link)
 
 const HTML_script = document.createElement('script')
 HTML_script.type = 'module'
-HTML_script.src = './assets/three-cesium-examples.js'
+HTML_script.src = domain + 'assets/three-cesium-examples.js'
 document.body.appendChild(HTML_script)
 
 /* 
