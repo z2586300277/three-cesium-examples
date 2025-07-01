@@ -545,6 +545,15 @@ export default [
                 githubUrl: 'https://github.com/JackGit/xplan',
                 image: HOST + 'threeExamples/openSource/numberEarth.jpg'
             },
+            {   
+                id: 'geoGlobe',
+                name: '地理球体',
+                name_en: 'Geo Globe',
+                author: 'AUTO',
+                openUrl: 'https://gkjohnson.github.io/three-geojson/example/bundle/globe.html',
+                githubUrl: 'https://github.com/gkjohnson/three-geojson',
+                image: HOST + 'threeExamples/openSource/geoGlobe.jpg'
+            }
         ]
 
     },
