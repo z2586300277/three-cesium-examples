@@ -950,7 +950,7 @@ export default [
                 githubUrl: 'https://github.com/lo-th/fullik',
                 image: HOST + 'threeExamples/openSource/fullik.jpg'
             },
-            {   
+            {
                 id: 'rain_puddle',
                 name: '雨水积水效果',
                 name_en: 'Rain Puddle Effect',
@@ -959,7 +959,7 @@ export default [
                 openUrl: 'https://faraz-portfolio.github.io/demo-2023-rain-puddle/',
                 image: HOST + 'threeExamples/openSource/rain_puddle.jpg'
             },
-            {   
+            {
                 id: 'three-shader-baker',
                 name: '着色器烘焙',
                 name_en: 'Shader Baker',
@@ -976,6 +976,15 @@ export default [
                 githubUrl: 'https://github.com/IceCreamYou/THREE.Terrain',
                 openUrl: 'https://icecreamyou.github.io/THREE.Terrain/',
                 image: HOST + 'threeExamples/openSource/Terrain.jpg'
+            },
+            {
+                id: 'roomDesigner',
+                name: '3D房间设计器',
+                name_en: '3D Room Designer',
+                author: 'AUTO',
+                githubUrl: 'https://github.com/CodeHole7/threejs-3d-room-designer',
+                openUrl: 'https://threejs-room-configurator.netlify.app/',
+                image: HOST + 'threeExamples/openSource/roomDesigner.jpg'
             },
 
             {
