@@ -223,6 +223,15 @@ export default [
                 githubUrl: 'https://github.com/xiaolidan00/my-earth',
                 openUrl: 'https://xiaolidan00.github.io/my-earth',
                 image: HOST + 'threeExamples/openSource/xiaolidan00.jpg',
+            },
+            {
+                id: 'farazzshaikh',
+                name: '3D 作品集',
+                name_en: '3D Portfolio',
+                author: 'AUTO',
+                githubUrl: 'https://github.com/Faraz-Portfolio/',
+                openUrl: 'https://farazzshaikh.com/demos',
+                image: HOST + 'threeExamples/openSource/farazzshaikh.jpg',
             }
         ]
     },
@@ -545,7 +554,7 @@ export default [
                 githubUrl: 'https://github.com/JackGit/xplan',
                 image: HOST + 'threeExamples/openSource/numberEarth.jpg'
             },
-            {   
+            {
                 id: 'geoGlobe',
                 name: '地理球体',
                 name_en: 'Geo Globe',
