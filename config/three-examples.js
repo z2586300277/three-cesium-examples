@@ -1727,6 +1727,14 @@ export default [
                 image: HOST + 'threeExamples/application/model_base.jpg',
             },
             {
+                id: 'videoFloor',
+                name: '视频地板',
+                name_en: 'Video Floor',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/application/videoFloor.js',
+                image: HOST + 'threeExamples/application/videoFloor.jpg',
+            },
+            {
                 id: 'rainRoof',
                 name: '下雨效果',
                 name_en: 'Rain Roof',
