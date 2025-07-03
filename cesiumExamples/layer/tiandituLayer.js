@@ -32,7 +32,9 @@ const viewer = new Cesium.Viewer(box, {
 
     contextOptions: { webgl: { alpha: true } },
 
-    skyBox: new Cesium.SkyBox({ show: false })
+    skyBox: new Cesium.SkyBox({ show: false }),
+
+    requestRenderMode: true, // 是否开启请求渲染模式
 
 })
 
@@ -45,7 +47,7 @@ viewer.scene.skyBox.show = false
 viewer.scene.backgroundColor = new Cesium.Color(0.0, 0.0, 0.0, 0.0)
 
 viewer._cesiumWidget._creditContainer.style.display = "none"
- 
+
 // 天地图影像图层
 viewer.imageryLayers.addImageryProvider(
 
@@ -73,6 +75,25 @@ viewer.imageryLayers.addImageryProvider(
         url: "https://t0.tianditu.gov.cn/cva_w/wmts?tk=c4e3a9d54b4a79e885fff9da0fca712a&service=wmts&request=GetTile&version=1.0.0&LAYER=cva&tileMatrixSet=w&TileMatrix={TileMatrix}&TileRow={TileRow}&TileCol={TileCol}&style=default&format=tiles",
 
         layer: "tdtAnnoLayer",
+
+        style: "default",
+
+        format: "image/jpeg",
+
+        tileMatrixSetID: "GoogleMapsCompatible"
+
+    })
+
+)
+
+// 天地图境界线
+viewer.imageryLayers.addImageryProvider(
+
+    new Cesium.WebMapTileServiceImageryProvider({
+
+        url: "https://t0.tianditu.gov.cn/ibo_w/wmts?tk=c4e3a9d54b4a79e885fff9da0fca712a&service=wmts&request=GetTile&version=1.0.0&LAYER=ibo&tileMatrixSet=w&TileMatrix={TileMatrix}&TileRow={TileRow}&TileCol={TileCol}&style=default&format=tiles",
+
+        layer: "tdtBoundaryLayer",
 
         style: "default",
 

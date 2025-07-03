@@ -45,6 +45,10 @@ export default [
                 githubUrl: 'https://github.com/z2586300277/three-editor',
                 image: FILE_HOST + 'images/editor.jpg',
                 links: [
+                    {   
+                        name: '🍏' + TEXTS['编辑器'],
+                        url: 'https://z2586300277.github.io/threejs-editor'
+                    },
                     {
                         name: '📖CSDN',
                         url: 'https://blog.csdn.net/guang2586/article/details/142910241'
@@ -1727,6 +1731,14 @@ export default [
                 image: HOST + 'threeExamples/application/model_base.jpg',
             },
             {
+                id: 'videoFloor',
+                name: '视频地板',
+                name_en: 'Video Floor',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/application/videoFloor.js',
+                image: HOST + 'threeExamples/application/videoFloor.jpg',
+            },
+            {
                 id: 'rainRoof',
                 name: '下雨效果',
                 name_en: 'Rain Roof',
@@ -2011,6 +2023,21 @@ export default [
                 inject: {
                     importmap: {
                         '@mkkellogg/gaussian-splats-3d': 'https://cdn.jsdelivr.net/npm/@mkkellogg/gaussian-splats-3d@0.4.7/+esm'
+                    }
+                }
+            },
+            {
+                id: 'tilesMap',
+                name: '瓦片地图',
+                name_en: 'Tiles Map',
+                author: 'z2586300277',
+                referUrl: 'https://sxguojf.github.io/three-tile-doc/',
+                codeUrl: HOST + 'threeExamples/expand/tilesMap.js',
+                image: HOST + 'threeExamples/expand/tilesMap.jpg',
+                inject: {
+                    importmap: {
+                        "three-tile": "https://cdn.jsdelivr.net/npm/three-tile@0.11.6/dist/index.js",
+                        "three-tile/plugin" : "https://cdn.jsdelivr.net/npm/three-tile@0.11.6/dist/plugin/index.js"
                     }
                 }
             }
