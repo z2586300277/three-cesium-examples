@@ -265,7 +265,7 @@ export default [
                 name_en: 'Astral3DEditor',
                 author: 'AUTO',
                 githubUrl: 'https://github.com/mlt131220/Astral3DEditor',
-                openUrl: 'https://editor.astraljs.com/#/',
+                openUrl: 'https://editor.astraljs.com',
                 image: HOST + 'threeExamples/openSource/Astral3DEditor.jpg'
             },
             {

@@ -45,6 +45,10 @@ export default [
                 githubUrl: 'https://github.com/z2586300277/three-editor',
                 image: FILE_HOST + 'images/editor.jpg',
                 links: [
+                    {   
+                        name: '🍏' + TEXTS['编辑器'],
+                        url: 'https://z2586300277.github.io/threejs-editor'
+                    },
                     {
                         name: '📖CSDN',
                         url: 'https://blog.csdn.net/guang2586/article/details/142910241'
