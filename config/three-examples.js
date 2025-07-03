@@ -2025,6 +2025,21 @@ export default [
                         '@mkkellogg/gaussian-splats-3d': 'https://cdn.jsdelivr.net/npm/@mkkellogg/gaussian-splats-3d@0.4.7/+esm'
                     }
                 }
+            },
+            {
+                id: 'tilesMap',
+                name: '瓦片地图',
+                name_en: 'Tiles Map',
+                author: 'z2586300277',
+                referUrl: 'https://sxguojf.github.io/three-tile-doc/',
+                codeUrl: HOST + 'threeExamples/expand/tilesMap.js',
+                image: HOST + 'threeExamples/expand/tilesMap.jpg',
+                inject: {
+                    importmap: {
+                        "three-tile": "https://cdn.jsdelivr.net/npm/three-tile@0.11.6/dist/index.js",
+                        "three-tile/plugin" : "https://cdn.jsdelivr.net/npm/three-tile@0.11.6/dist/plugin/index.js"
+                    }
+                }
             }
         ]
     },
