@@ -8,7 +8,7 @@ const scene = new THREE.Scene()
 
 const camera = new THREE.PerspectiveCamera(50, box.clientWidth / box.clientHeight, 0.1, 1000)
 
-camera.position.set(0, 1, 2)
+camera.position.set(1, 1, 1)
 
 const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true, logarithmicDepthBuffer: true })
 

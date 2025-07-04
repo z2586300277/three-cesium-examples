@@ -74,7 +74,7 @@ loader.load(
 )
 
 // 裁剪面
-const plane = new THREE.Plane(new THREE.Vector3(0, 0, 1), -2)
+const plane = new THREE.Plane(new THREE.Vector3(0, 0, 1), 0)
 
 renderer.clippingPlanes = [plane]
 

@@ -45,7 +45,7 @@ export default [
                 githubUrl: 'https://github.com/z2586300277/three-editor',
                 image: FILE_HOST + 'images/editor.jpg',
                 links: [
-                    {   
+                    {
                         name: '🍏' + TEXTS['编辑器'],
                         url: 'https://z2586300277.github.io/threejs-editor'
                     },
@@ -1320,15 +1320,6 @@ export default [
                 image: HOST + 'threeExamples/application/flowLine.jpg',
             },
             {
-                id: 'pointLockControls',
-                tag: TEXTS['漫游'],
-                name: '第一人称漫游控制',
-                name_en: 'Person Move',
-                author: 'z2586300277',
-                codeUrl: HOST + 'threeExamples/application/pointLockControls.js',
-                image: HOST + 'threeExamples/application/pointLockControls.jpg',
-            },
-            {
                 id: 'flyLine',
                 name: '飞线效果',
                 name_en: 'Fly Line',
@@ -1847,6 +1838,15 @@ export default [
                 image: HOST + 'threeExamples/animation/clipAnimation.jpg',
             },
             {
+                id: 'pointLockControls',
+                tag: TEXTS['漫游'],
+                name: '第一人称漫游控制',
+                name_en: 'Person Move',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/application/pointLockControls.js',
+                image: HOST + 'threeExamples/application/pointLockControls.jpg',
+            },
+            {
                 id: 'personAnimation',
                 name: '点击第三人称移动',
                 name_en: 'Person Move',
@@ -1865,13 +1865,35 @@ export default [
                 image: HOST + 'threeExamples/animation/personThirdMove.jpg'
             },
             {
+                id: 'modelUnpack',
+                name: '模型拆解动画',
+                name_en: 'Model Unpack',
+                tag: TEXTS['拆解'],
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/basic/modelUnpack.js',
+                image: HOST + 'threeExamples/basic/modelUnpack.jpg',
+            },
+            {
                 id: 'personFirstMove',
                 name: '第一人称移动',
                 name_en: 'First Move',
                 author: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/animation/personFirstMove.js',
                 image: HOST + 'threeExamples/animation/personFirstMove.jpg'
-            }
+            },
+            {
+                id: 'curveAnimate',
+                name: '曲线动画',
+                name_en: 'Curve Animate',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/basic/curveAnimate.js',
+                image: HOST + 'threeExamples/basic/curveAnimate.jpg',
+                meta: {
+                    title: '曲线动画',
+                    keywords: 'three.js,曲线动画',
+                    description: '使用three.js曲线动画'
+                }
+            },
         ]
     },
     {
@@ -1985,16 +2007,6 @@ export default [
                 image: HOST + 'threeExamples/expand/modelBlendReflector.jpg',
             },
             {
-                id: 'blurReflect',
-                name: '模糊反射(drei转原生)',
-                name_en: 'Blur Reflect',
-                tag: TEXTS['磨砂反射'] + '-#d265bb',
-                author: 'z2586300277',
-                codeUrl: HOST + 'threeExamples/expand/blurReflect.js',
-                image: HOST + 'threeExamples/expand/blurReflect.jpg',
-                referUrl: 'https://codesandbox.io/p/sandbox/bfplr'
-            },
-            {
                 id: 'multWindowScene',
                 name: '多浏览器窗口连接',
                 name_en: 'Mult Window',
@@ -2037,7 +2049,7 @@ export default [
                 inject: {
                     importmap: {
                         "three-tile": "https://cdn.jsdelivr.net/npm/three-tile@0.11.6/dist/index.js",
-                        "three-tile/plugin" : "https://cdn.jsdelivr.net/npm/three-tile@0.11.6/dist/plugin/index.js"
+                        "three-tile/plugin": "https://cdn.jsdelivr.net/npm/three-tile@0.11.6/dist/plugin/index.js"
                     }
                 }
             }
@@ -2094,6 +2106,16 @@ export default [
                 author: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/effectComposer/afterimagePass.js',
                 image: HOST + 'threeExamples/effectComposer/afterimagePass.jpg',
+            },
+            {
+                id: 'blurReflect',
+                name: '模糊反射(drei转原生)',
+                name_en: 'Blur Reflect',
+                tag: TEXTS['磨砂反射'] + '-#d265bb',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/expand/blurReflect.js',
+                image: HOST + 'threeExamples/expand/blurReflect.jpg',
+                referUrl: 'https://codesandbox.io/p/sandbox/bfplr'
             },
             {
                 id: 'saturationPass',
@@ -2300,13 +2322,17 @@ export default [
                 }
             },
             {
-                id: 'modelUnpack',
-                name: '模型拆解动画',
-                name_en: 'Model Unpack',
-                tag: TEXTS['拆解'],
-                author: 'z2586300277',
-                codeUrl: HOST + 'threeExamples/basic/modelUnpack.js',
-                image: HOST + 'threeExamples/basic/modelUnpack.jpg',
+                id: "扩散圈",
+                name: "扩散圈",
+                name_en: "Diffusion circle",
+                author: "chenzhijie1",
+                codeUrl: HOST + "threeExamples/basic/扩散圈.js",
+                image: HOST + "threeExamples/basic/扩散圈.png",
+                meta: {
+                    title: "扩散圈",
+                    keywords: "three.js,扩散圈",
+                    description: "使用three.扩散圈"
+                }
             },
             {
                 id: 'changeMaterial',
@@ -2395,20 +2421,6 @@ export default [
                 author: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/basic/domDisplay.js',
                 image: HOST + 'threeExamples/basic/domDisplay.jpg',
-            },
-            {
-
-                id: 'curveAnimate',
-                name: '曲线动画',
-                name_en: 'Curve Animate',
-                author: 'z2586300277',
-                codeUrl: HOST + 'threeExamples/basic/curveAnimate.js',
-                image: HOST + 'threeExamples/basic/curveAnimate.jpg',
-                meta: {
-                    title: '曲线动画',
-                    keywords: 'three.js,曲线动画',
-                    description: '使用three.js曲线动画'
-                }
             },
             {
                 id: 'cameraAnimate',
@@ -2702,19 +2714,6 @@ export default [
                     description: "使用three.js顶点颜色"
                 }
             },
-            {
-                id: "扩散圈",
-                name: "扩散圈",
-                name_en: "Diffusion circle",
-                author: "chenzhijie1",
-                codeUrl: HOST + "threeExamples/basic/扩散圈.js",
-                image: HOST + "threeExamples/basic/扩散圈.png",
-                meta: {
-                    title: "扩散圈",
-                    keywords: "three.js,扩散圈",
-                    description: "使用three.扩散圈"
-                }
-            }
         ]
     },
     {
