@@ -16,4 +16,4 @@ const HTML_script = document.createElement('script')
 HTML_script.type = 'module'
 HTML_script.src = domain + '/three-cesium-examples.js'
 
-document.head.appendChild(HTML_script)
+document.body.appendChild(HTML_script)

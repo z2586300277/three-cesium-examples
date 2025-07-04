@@ -1219,7 +1219,7 @@ export default [
                 links: [
                     { name: 'threeBox-plugin', url: 'https://github.com/jscastro76/threebox' }
                 ],
-                image: HOST + 'threeExamples/plugins/threeMapBox.jpg'
+                image: HOST + 'threeExamples/plugins/threeMapbox.jpg'
             }
         ]
     },
