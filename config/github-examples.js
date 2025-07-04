@@ -1208,6 +1208,18 @@ export default [
                 githubUrl: 'https://github.com/hululuuuuu/GlobeStream3D',
                 openUrl: 'https://globestream3d.netlify.app/',
                 image: HOST + 'threeExamples/openSource/GlobeStream3D.jpg'
+            },
+            {
+                id: 'threeMapBox',
+                name: 'MapBox Three',
+                name_en: 'MapBox Three',
+                author: 'AUTO',
+                openUrl: 'https://ethan-zf.github.io/mapbox-bloom-effect-sample/example/index.html',
+                githubUrl: 'https://github.com/ethan-zf/mapbox-bloom-effect-sample',
+                links: [
+                    { name: 'threeBox-plugin', url: 'https://github.com/jscastro76/threebox' }
+                ],
+                image: HOST + 'threeExamples/plugins/threeMapBox.jpg'
             }
         ]
     },
