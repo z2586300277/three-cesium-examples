@@ -1572,6 +1572,14 @@ export default [
                 image: HOST + 'threeExamples/application/lightBar.jpg',
             },
             {
+                id: 'gridFloor',
+                name: '贴图网格地面',
+                name_en: 'Grid Floor',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/application/gridFloor.js',
+                image: HOST + 'threeExamples/application/gridFloor.jpg',
+            },
+            {
                 id: 'flowerRain',
                 name: '花瓣雨',
                 name_en: 'Flower Rain',
