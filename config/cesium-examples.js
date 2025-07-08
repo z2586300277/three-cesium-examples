@@ -654,6 +654,14 @@ export default [
                     description: 'cesium 结合 渐变行政区'
                 }
             },
+            {
+                id: 'instanceRender',
+                name: '实例化渲染',
+                name_en: 'Instance Render',
+                codeUrl: HOST + 'cesiumExamples/application/instanceRender.js',
+                image: HOST + 'cesiumExamples/application/instanceRender.jpg',
+                referUrl: 'https://zhuanlan.zhihu.com/p/13972758537'
+            }
         ]
     },
     {
