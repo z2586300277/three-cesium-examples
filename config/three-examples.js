@@ -1671,6 +1671,15 @@ export default [
                 image: HOST + 'threeExamples/application/faceMesh.jpg',
             },
             {
+                id: 'sportFence',
+                name: '流动围栏',
+                name_en: 'Sport Fence',
+                author: 'z2586300277',
+                referUrl: 'https://blog.csdn.net/yunbabac/article/details/135481603',
+                codeUrl: HOST + 'threeExamples/application/sportFence.js',
+                image: HOST + 'threeExamples/application/sportFence.jpg',
+            },
+            {
                 id: 'isoline',
                 name: '等值线',
                 name_en: 'Isoline',
@@ -1719,6 +1728,14 @@ export default [
                 author: 'nico',
                 codeUrl: HOST + 'threeExamples/application/model_base.js',
                 image: HOST + 'threeExamples/application/model_base.jpg',
+            },
+            {
+                id: 'coneMesh',
+                name: '圆锥网格',
+                name_en: 'Cone Mesh',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/application/coneMesh.js',
+                image: HOST + 'threeExamples/application/coneMesh.jpg',
             },
             {
                 id: 'videoFloor',
