@@ -1220,6 +1220,15 @@ export default [
                     { name: 'threeBox-plugin', url: 'https://github.com/jscastro76/threebox' }
                 ],
                 image: HOST + 'threeExamples/plugins/threeMapbox.jpg'
+            },
+            {
+                id: 'gaodeMapThree',
+                name: '高德结合Three.js',
+                name_en: 'Gaode Map Three',
+                author: 'AUTO',
+                openUrl: 'https://lbs.amap.com/demo/javascript-api-v2/example/selflayer/glcustom-layer',
+                githubUrl: 'https://github.com/AMap-Web/amap-three',
+                image: HOST + 'threeExamples/plugins/gaodeMapThree.jpg'
             }
         ]
     },

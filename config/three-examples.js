@@ -1646,15 +1646,6 @@ export default [
                 }
             },
             {
-                id: 'gsapCollection',
-                name: '动画合集',
-                name_en: 'GSAP',
-                tag: 'GSAP',
-                improver: 'z2586300277',
-                codeUrl: HOST + 'threeExamples/application/gsapCollection.js',
-                image: HOST + 'threeExamples/application/gsapCollection.jpg'
-            },
-            {
                 id: 'imageMove',
                 name: '图片移动',
                 name_en: 'Image Move',
@@ -1838,6 +1829,15 @@ export default [
                 image: HOST + 'threeExamples/animation/animejsBasic.jpg',
             },
             {
+                id: 'gsapCollection',
+                name: '动画合集',
+                name_en: 'GSAP',
+                tag: 'GSAP',
+                improver: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/application/gsapCollection.js',
+                image: HOST + 'threeExamples/application/gsapCollection.jpg'
+            },
+            {
                 id: 'clipAnimation',
                 name: '裁剪动画',
                 name_en: 'Clip Animation',
@@ -1890,6 +1890,19 @@ export default [
                 image: HOST + 'threeExamples/animation/personFirstMove.jpg'
             },
             {
+                id: 'transformAnimate',
+                name: 'Mesh变换动画',
+                name_en: 'Transform Gsap',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/basic/transformAnimate.js',
+                image: HOST + 'threeExamples/basic/transformAnimate.jpg',
+                meta: {
+                    title: '变换动画',
+                    keywords: 'three.js,变换动画',
+                    description: '使用three.js变换动画'
+                }
+            },
+            {
                 id: 'curveAnimate',
                 name: '曲线动画',
                 name_en: 'Curve Animate',
@@ -1940,6 +1953,22 @@ export default [
         name: '扩展功能',
         name_en: 'Expand',
         children: [
+            {
+                id: 'localModel',
+                name: '本地模型加载',
+                name_en: 'Local Model',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/basic/localModel.js',
+                image: HOST + 'threeExamples/basic/localModel.jpg',
+            },
+            {
+                id: 'useIndexDB',
+                name: 'IndexedDB使用',
+                name_en: 'Use IndexDB',
+                author: 'z2586300277',
+                htmlUrl: HOST + 'threeExamples/basic/useIndexDB.html',
+                image: HOST + 'threeExamples/basic/useIndexDB.jpg',
+            },
             {
                 id: 'loadTiles',
                 name: '加载3dtiles',
@@ -2439,19 +2468,6 @@ export default [
                 image: HOST + 'threeExamples/basic/cameraAnimate.jpg',
             },
             {
-                id: 'transformAnimate',
-                name: 'Mesh变换动画',
-                name_en: 'Transform Gsap',
-                author: 'z2586300277',
-                codeUrl: HOST + 'threeExamples/basic/transformAnimate.js',
-                image: HOST + 'threeExamples/basic/transformAnimate.jpg',
-                meta: {
-                    title: '变换动画',
-                    keywords: 'three.js,变换动画',
-                    description: '使用three.js变换动画'
-                }
-            },
-            {
                 id: 'screenShot',
                 name: '截图',
                 name_en: 'Screen Shot',
@@ -2501,22 +2517,6 @@ export default [
                 codeUrl: HOST + 'threeExamples/basic/sceneScissor.js',
                 image: HOST + 'threeExamples/basic/sceneScissor.jpg',
             },
-            {
-                id: 'localModel',
-                name: '本地模型加载',
-                name_en: 'Local Model',
-                author: 'z2586300277',
-                codeUrl: HOST + 'threeExamples/basic/localModel.js',
-                image: HOST + 'threeExamples/basic/localModel.jpg',
-            },
-            {
-                id: 'useIndexDB',
-                name: 'IndexedDB使用',
-                name_en: 'Use IndexDB',
-                author: 'z2586300277',
-                htmlUrl: HOST + 'threeExamples/basic/useIndexDB.html',
-                image: HOST + 'threeExamples/basic/useIndexDB.jpg',
-            }
         ]
     },
     {
