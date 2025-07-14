@@ -1706,6 +1706,14 @@ export default [
                 image: HOST + 'threeExamples/application/videoEffect.jpg',
             },
             {
+                id: 'drawFence',
+                name: '绘制围栏',
+                name_en: 'Draw Fence',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/application/drawFence.js',
+                image: HOST + 'threeExamples/application/drawFence.jpg',
+            },
+            {
                 id: 'punk',
                 name: '朋克风',
                 name_en: 'Style Punk',
