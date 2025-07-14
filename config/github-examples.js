@@ -669,6 +669,15 @@ export default [
                 githubUrl: 'https://github.com/lo-th/phy',
                 image: HOST + 'threeExamples/openSource/phy.jpg'
             },
+            {   
+                id: 'threejsZombieshooter',
+                name: '僵尸射击游戏',
+                name_en: 'Zombie Shooter',
+                author: 'AUTO',
+                githubUrl: 'https://github.com/RohanVashisht1234/threejs-zombieshooter-game',
+                openUrl: 'https://www.zombiestrike.monster/',
+                image: HOST + 'threeExamples/openSource/threejsZombieshooter.jpg',
+            }
         ]
     },
     {
