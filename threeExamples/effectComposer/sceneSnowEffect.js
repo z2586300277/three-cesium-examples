@@ -85,8 +85,8 @@ const gltfLoader = new GLTFLoader()
 const dracoLoader = new DRACOLoader()
 dracoLoader.setDecoderPath(FILE_HOST + 'js/three/draco/')
 gltfLoader.setDRACOLoader(dracoLoader)
-//加载模型
-gltfLoader.load("https://axidake.oss-cn-chengdu.aliyuncs.com/public-res/model/index.gltf", (gltf) => {
+//加载模型 使用私有对象存储带宽较低耐心等待一下
+gltfLoader.load("http://app.foxicle.xyz:9000/public-bucket/model/city/index.gltf", (gltf) => {
     gltf.scene.scale.set(10, 10, 10);
     scene.add(gltf.scene)
 }, (event) => {
