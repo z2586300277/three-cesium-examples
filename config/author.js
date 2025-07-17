@@ -42,7 +42,7 @@ export default [
 
     {
         id: 'Threejs',
-        name: 'Threejs',
+        name: 'Three JS',
         github: 'https://threejs.org/',
         icon: HOST + 'files/site/logo.svg'
     },
