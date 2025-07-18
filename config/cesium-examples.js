@@ -525,6 +525,14 @@ export default [
                 codeUrl: HOST + 'cesiumExamples/effect/dynamicWall.js',
                 image: HOST + 'cesiumExamples/effect/dynamicWall.jpg',
             },
+            {
+                id: 'smokeEffect',
+                name: '烟雾效果',
+                name_en: 'Smoke Effect',
+                author: 'jiawanlong',
+                codeUrl: HOST + 'cesiumExamples/effect/smokeEffect.js',
+                image: HOST + 'cesiumExamples/effect/smokeEffect.jpg',  
+            }
         ]
     },
     {
