@@ -14,6 +14,7 @@ export default [
                 tag: TEXTS['官方'] + '-rgb(157 46 37)',
                 name: '官方示例 - 优化版',
                 name_en: 'Official',
+                tip: 'Three.js官方案例100%在线最新同步，UI重置，案例分类，可在线调试预览，更加舒适高效的查阅和学习',
                 improver: 'z2586300277',
                 referUrl: 'https://openthree.github.io/three-offical-run/examples/',
                 openUrl: 'https://openthree.github.io/three-official-examples',
