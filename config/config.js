@@ -46,11 +46,7 @@ window.HTML_TEMPLATE =
 <div id="box"></div>`
 
 /* iframe执行回调 */
-window.IFRAME_RUN_CALL = () => {
-
-    // console.clear()
-
-}
+window.IFRAME_RUN_CALL = () => { }
 
 /* 依赖注入可使用 如 线上官网 或 cdn 或者本地路径 */
 window.THREE_CESIUM_NAVIGATION = [
@@ -100,15 +96,14 @@ window.THREE_CESIUM_NAVIGATION = [
 window.THREE_CESIUM_AUTHORS = threeCesiumAuthors // 作者
 
 /** 
- * inject 附加依赖注入方式, 以上为公共依赖注入
+ * inject 附加依赖注入方式, 以上为公共依赖注入, 附加配置如下
  * 单个的案例配置额外的依赖注入参考 threeExamples => expand => loadTiles.js, cesiumExamples => expand => echartsFlyLine.js
- * src 形式引入, link 样式引入, importmap 映射引入
  * 配置单个案例信息的 inject 属性 可使用 https://www.jsdelivr.com/ cdn 或者 https://unpkg.com/ 进行外部依赖
-    {  
-        "link": ["/test.css"],
-        "src": [HOST+"js/echarts.min.js"],
-        "importmap":{ "3d-tiles-renderer": "https://z2586300277.github.io/3d-file-server/js/3dTilesRenderer/index.js" }
-    }
+ * {  
+ *    "link": ["/test.css"],
+ *    "src": [HOST+"js/echarts.min.js"],
+ *    "importmap":{ "3d-tiles-renderer": "https://z2586300277.github.io/3d-file-server/js/3dTilesRenderer/index.js" }
+ * }
 */
 
 /* 语言切换 */
