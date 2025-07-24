@@ -1238,6 +1238,15 @@ export default [
                 openUrl: 'https://lbs.amap.com/demo/javascript-api-v2/example/selflayer/glcustom-layer',
                 githubUrl: 'https://github.com/AMap-Web/amap-three',
                 image: HOST + 'threeExamples/plugins/gaodeMapThree.jpg'
+            },
+            {
+                id: 'vrThree',
+                name: 'Three VR应用',
+                name_en: 'Three VR',
+                author: 'AUTO',
+                githubUrl: 'https://github.com/felixmariotto/three-mesh-ui',
+                openUrl: 'https://felixmariotto.github.io/three-mesh-ui/#border',
+                image: HOST + 'threeExamples/openSource/vrThree.jpg'
             }
         ]
     },
@@ -1347,4 +1356,5 @@ http://mapbs.com/
 https://threepipe.org/
 https://github.com/hexianWeb/CrossRoad
 http://jasonsturges.com/three-low-poly/
+http://idflood.github.io/ThreeNodes.js/index_optimized.html
 */
