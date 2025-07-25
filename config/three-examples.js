@@ -1656,6 +1656,14 @@ export default [
                 image: HOST + 'threeExamples/application/imageMove.jpg',
             },
             {
+                id: 'vrVideo',
+                name: 'VR 全景视频',
+                name_en: 'VR Video',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/application/vrVideo.js',
+                image: HOST + 'threeExamples/application/vrVideo.jpg',
+            },
+            {
                 id: 'customGrid',
                 name: '自定义网格',
                 name_en: 'Custom Grid',
