@@ -2551,6 +2551,14 @@ export default [
                 codeUrl: HOST + 'threeExamples/basic/sceneScissor.js',
                 image: HOST + 'threeExamples/basic/sceneScissor.jpg',
             },
+            {
+                id: 'multOutlinePass',
+                name: '多轮廓光',
+                name_en: 'Mult Outline Pass',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/basic/multOutlinePass.js',
+                image: HOST + 'threeExamples/basic/multOutlinePass.jpg',
+            }
         ]
     },
     {
