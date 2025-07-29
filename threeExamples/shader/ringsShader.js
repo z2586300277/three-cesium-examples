@@ -4,7 +4,7 @@ import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js'
 const box = document.getElementById('box')
 const scene = new THREE.Scene()
 const camera = new THREE.PerspectiveCamera(75, box.clientWidth / box.clientHeight, 0.1, 1000)
-camera.position.set(0, 10, 10)
+camera.position.set(0, 0, 10)
 const renderer = new THREE.WebGLRenderer()
 renderer.setSize(box.clientWidth, box.clientHeight)
 box.appendChild(renderer.domElement)
