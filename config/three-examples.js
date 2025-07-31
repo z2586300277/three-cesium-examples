@@ -2558,6 +2558,14 @@ export default [
                 author: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/basic/multOutlinePass.js',
                 image: HOST + 'threeExamples/basic/multOutlinePass.jpg',
+            },
+            {
+                id: 'effectComposer',
+                name: '渲染器配置',
+                name_en: 'Effect Composer',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/basic/effectComposer.js',
+                image: HOST + 'threeExamples/basic/effectComposer.jpg',
             }
         ]
     },
