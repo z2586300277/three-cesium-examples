@@ -16,8 +16,8 @@ const viewer = new GaussianSplats3D.Viewer({
     'initialCameraPosition': [-1, -4, 6],
     'initialCameraLookAt': [0, 4, 0]
 });
-//使用私有对象存储带宽较低耐心等待一下
-viewer.addSplatScene('http://app.foxicle.xyz:9000/public-bucket/model/3dgs/garden.ksplat', {
+//使用私有对象存储带宽较低耐心等待一下 http://app.foxicle.xyz:9000/public-bucket/model/3dgs/garden.ksplat
+viewer.addSplatScene(FILE_HOST + 'other/deskFlower.ksplat', {
     'splatAlphaRemovalThreshold': 5,
     'showLoadingUI': true,
     'position': [0, 1, 0],

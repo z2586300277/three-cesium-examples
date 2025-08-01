@@ -41,14 +41,14 @@ export default [
                 name: '低代码组态编辑器',
                 name_en: 'LowCode Editor',
                 author: 'z2586300277',
-                referUrl: 'https://github.com/z2586300277/three-editor-cores',
+                referUrl: 'https://z2586300277.github.io/threejs-editor',
                 openUrl: 'https://z2586300277.github.io/three-editor/dist/#/editor',
                 githubUrl: 'https://github.com/z2586300277/three-editor',
                 image: FILE_HOST + 'images/editor.jpg',
                 links: [
                     {
-                        name: '🍏' + TEXTS['编辑器'],
-                        url: 'https://z2586300277.github.io/threejs-editor'
+                        name: '🌟' + TEXTS['cores'],
+                        url: 'https://github.com/z2586300277/three-editor-cores'
                     },
                     {
                         name: '📖CSDN',
@@ -1656,6 +1656,14 @@ export default [
                 image: HOST + 'threeExamples/application/imageMove.jpg',
             },
             {
+                id: 'vrVideo',
+                name: 'VR 全景视频',
+                name_en: 'VR Video',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/application/vrVideo.js',
+                image: HOST + 'threeExamples/application/vrVideo.jpg',
+            },
+            {
                 id: 'customGrid',
                 name: '自定义网格',
                 name_en: 'Custom Grid',
@@ -2543,6 +2551,22 @@ export default [
                 codeUrl: HOST + 'threeExamples/basic/sceneScissor.js',
                 image: HOST + 'threeExamples/basic/sceneScissor.jpg',
             },
+            {
+                id: 'multOutlinePass',
+                name: '多轮廓光',
+                name_en: 'Mult Outline Pass',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/basic/multOutlinePass.js',
+                image: HOST + 'threeExamples/basic/multOutlinePass.jpg',
+            },
+            {
+                id: 'effectComposer',
+                name: '渲染器配置',
+                name_en: 'Effect Composer',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/basic/effectComposer.js',
+                image: HOST + 'threeExamples/basic/effectComposer.jpg',
+            }
         ]
     },
     {
