@@ -82,6 +82,8 @@ window.TEXTS = Object.fromEntries(Object.entries({
 
     volume: { zh: '体渲染', en: 'Volume' },
 
+    cores: { zh: '核心', en: 'Cores' },
+
 }).map(
 
     ([key, value]) => [key, LANG_EN ? value.en : value.zh])
