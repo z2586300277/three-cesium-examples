@@ -1301,6 +1301,15 @@ export default [
                 openUrl: 'https://zouyaoji.top/vue-cesium',
                 githubUrl: 'https://github.com/zouyaoji/vue-cesium',
                 image: HOST + 'threeExamples/openSource/vueCesium.jpg'
+            },
+            {
+                id: 'cesiumExtends',
+                name: 'cesium扩展',
+                name_en: 'Cesium Extends',
+                author: 'AUTO',
+                openUrl: 'https://extends.opendde.com/',
+                githubUrl: 'https://github.com/hongfaqiu/cesium-extends',
+                image: HOST + 'threeExamples/openSource/cesiumExtends.jpg'
             }
         ]
     },
