@@ -1310,6 +1310,14 @@ export default [
                 openUrl: 'https://extends.opendde.com/',
                 githubUrl: 'https://github.com/hongfaqiu/cesium-extends',
                 image: HOST + 'threeExamples/openSource/cesiumExtends.jpg'
+            },
+            {
+                id: 'mbs',
+                name: '图界 mbs',
+                name_en: 'Mapbs 3D',
+                openUrl: 'http://mapbs.com/#/example',
+                githubUrl: 'https://github.com/mapbs/mbs.js',
+                image: HOST + 'threeExamples/openSource/mbs.jpg'
             }
         ]
     },
@@ -1361,7 +1369,6 @@ export default [
 ].sort((a, b) => (a.order ?? 100) - (b.order ?? 100))
 
 /* 可能在未来上线的一些链接资源记录 - 筛选
-http://mapbs.com/
 https://threepipe.org/
 https://github.com/hexianWeb/CrossRoad
 http://jasonsturges.com/three-low-poly/
