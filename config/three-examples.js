@@ -472,6 +472,15 @@ export default [
                 }
             },
             {
+                id: 'gridShader',
+                name: '网格着色器',
+                name_en: 'Grid Shader',
+                author: 'z2586300277',
+                referUrl: 'https://shad3rs.vercel.app/shaders/grid',
+                codeUrl: HOST + 'threeExamples/shader/gridShader.js',
+                image: HOST + 'threeExamples/shader/gridShader.jpg'
+            },
+            {
                 id: 'compassShader',
                 name: '罗盘',
                 name_en: 'Compass Shader',
@@ -510,14 +519,6 @@ export default [
                 improver: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/shader/ringsShader.js',
                 image: HOST + 'threeExamples/shader/ringsShader.jpg',
-            },
-            {
-                id: 'heatmapShader',
-                name: '热力图',
-                name_en: 'Heatmap Shader',
-                author: 'z2586300277',
-                codeUrl: HOST + 'threeExamples/shader/heatmapShader.js',
-                image: HOST + 'threeExamples/shader/heatmapShader.jpg',
             },
             {
                 id: 'videoShader',
@@ -1836,15 +1837,6 @@ export default [
                 codeUrl: HOST + 'threeExamples/application/geometryMerge.js',
                 image: HOST + 'threeExamples/application/geometryMerge.jpg',
             },
-            {
-                id: 'Volumetric Heatmap',
-                name: '3d热力图-体积版',
-                name_en: 'volumeHeatmap',
-                tag: TEXTS['volume'],
-                author: 'ZackFair5185034',
-                codeUrl: HOST + 'threeExamples/application/volumeHeatmap.js',
-                image: HOST + 'threeExamples/application/volumeHeatmap.webp',
-            }
 
         ]
     },
@@ -2060,6 +2052,14 @@ export default [
                 }
             },
             {
+                id: 'heatmapShader',
+                name: '热力图',
+                name_en: 'Heatmap Shader',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/shader/heatmapShader.js',
+                image: HOST + 'threeExamples/shader/heatmapShader.jpg',
+            },
+            {
                 id: 'heatmapModel',
                 name: '模型热力图',
                 name_en: 'Heatmap Model',
@@ -2067,6 +2067,15 @@ export default [
                 referUrl: 'https://github.com/CHENJIAMIAN/InterpolatedGradientMaterial',
                 codeUrl: HOST + 'threeExamples/expand/heatmapModel.js',
                 image: HOST + 'threeExamples/expand/heatmapModel.jpg',
+            },
+            {
+                id: 'Volumetric Heatmap',
+                name: '3d热力图-体积版',
+                name_en: 'volumeHeatmap',
+                tag: TEXTS['volume'],
+                author: 'ZackFair5185034',
+                codeUrl: HOST + 'threeExamples/application/volumeHeatmap.js',
+                image: HOST + 'threeExamples/application/volumeHeatmap.webp',
             },
             {
                 id: 'modelBlendReflector',
