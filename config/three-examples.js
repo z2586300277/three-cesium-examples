@@ -472,6 +472,15 @@ export default [
                 }
             },
             {
+                id: 'gridShader',
+                name: '网格着色器',
+                name_en: 'Grid Shader',
+                author: 'z2586300277',
+                referUrl: 'https://shad3rs.vercel.app/shaders/grid',
+                codeUrl: HOST + 'threeExamples/shader/gridShader.js',
+                image: HOST + 'threeExamples/shader/gridShader.jpg'
+            },
+            {
                 id: 'compassShader',
                 name: '罗盘',
                 name_en: 'Compass Shader',
