@@ -669,6 +669,15 @@ export default [
                 codeUrl: HOST + 'cesiumExamples/application/instanceRender.js',
                 image: HOST + 'cesiumExamples/application/instanceRender.jpg',
                 referUrl: 'https://zhuanlan.zhihu.com/p/13972758537'
+            },
+            {
+                id: 'globeMap',
+                name: '地球贴图',
+                name_en: 'Globe Map',
+                author: 'z2586300277',
+                referUrl: 'https://mp.weixin.qq.com/s/E0CUUV-AccwqGgcI2UCa3A',
+                codeUrl: HOST + 'cesiumExamples/application/globeMap.js',
+                image: HOST + 'cesiumExamples/application/globeMap.jpg',
             }
         ]
     },
