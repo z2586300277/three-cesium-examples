@@ -2575,6 +2575,14 @@ export default [
                 author: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/basic/effectComposer.js',
                 image: HOST + 'threeExamples/basic/effectComposer.jpg',
+            },
+            {
+                id: 'modelExport',
+                name: '模型导出',
+                name_en: 'Model Export',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/basic/modelExport.js',
+                image: HOST + 'threeExamples/basic/modelExport.jpg',
             }
         ]
     },
