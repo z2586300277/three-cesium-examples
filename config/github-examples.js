@@ -669,7 +669,7 @@ export default [
                 githubUrl: 'https://github.com/lo-th/phy',
                 image: HOST + 'threeExamples/openSource/phy.jpg'
             },
-            {   
+            {
                 id: 'threejsZombieshooter',
                 name: '僵尸射击游戏',
                 name_en: 'Zombie Shooter',
@@ -1217,6 +1217,15 @@ export default [
                 githubUrl: 'https://github.com/hululuuuuu/GlobeStream3D',
                 openUrl: 'https://globestream3d.netlify.app/',
                 image: HOST + 'threeExamples/openSource/GlobeStream3D.jpg'
+            },
+            {
+                id: 'three-pinata',
+                name: '碎裂',
+                name_en: 'Three Pinata',
+                author: 'AUTO',
+                openUrl: 'https://dgreenheck.github.io/three-pinata/',
+                githubUrl: 'https://github.com/dgreenheck/three-pinata',
+                image: HOST + 'threeExamples/openSource/three-pinata.jpg'
             },
             {
                 id: 'threeMapBox',

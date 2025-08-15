@@ -995,6 +995,15 @@ export default [
                 author: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/shader/buildGradient.js',
                 image: HOST + 'threeExamples/shader/buildGradient.jpg',
+            },
+            {
+                id: 'iceFloor',
+                name: '冰面',
+                name_en: 'Ice Floor',
+                author: 'z2586300277',
+                referUrl: 'https://github.com/rock-biter/ice-trails',
+                codeUrl: HOST + 'threeExamples/shader/iceFloor.js',
+                image: HOST + 'threeExamples/shader/iceFloor.jpg',
             }
         ]
     },
@@ -2575,6 +2584,14 @@ export default [
                 author: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/basic/effectComposer.js',
                 image: HOST + 'threeExamples/basic/effectComposer.jpg',
+            },
+            {
+                id: 'modelExport',
+                name: '模型导出',
+                name_en: 'Model Export',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/basic/modelExport.js',
+                image: HOST + 'threeExamples/basic/modelExport.jpg',
             }
         ]
     },
