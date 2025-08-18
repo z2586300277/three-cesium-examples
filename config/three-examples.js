@@ -1741,6 +1741,14 @@ export default [
                 image: HOST + 'threeExamples/application/punk.jpg',
             },
             {
+                id: 'radarScan',
+                name: '雷达扫描',
+                name_en: 'Radar Scan',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/application/radarScan.js',
+                image: HOST + 'threeExamples/application/radarScan.jpg',
+            },
+            {
                 id: 'white model',
                 name: '随机城市白膜',
                 name_en: 'White Model',

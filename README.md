@@ -174,12 +174,27 @@
 5. If it involves other dependent JS, you can place module.js in the JS directory such as dat.gui, gasp , The injection method config/config.js is visible
 6. Store audio and video models and other resources that can be shared in the files folder. Whenever possible, reference external URLs for file resources to ensure a lightweight warehouse
 
-- Assets=>UI runtime framework does not require modification
-- Config=>Configuration options [host: host, links: links, author: author information, lang: language, config: injection run]
-- Files, audio and video model storage, and other resources that can be shared should be avoided as much as possible, and external URL addresses should be used to access them
-- Js=>dat.gui gsap and other dependency repositories, try to use online js such as CDN to introduce them as much as possible
-- ThreeEamples Three.js Case Code Catalog
-- CesiumExamples cesium case code directory
+```
+Directory Structure  
+├── assets/             # Runtime framework  
+├── threeExamples/      # Three.js example code directory  
+├── cesiumExamples/     # Cesium example code directory  
+├── js/                 # Third-party JS dependencies  
+├── files/              # Models, images, and other resources  
+├── config/             # Configuration files  
+│   ├── site            # Website configuration  
+│   ├── host            # Host configuration  
+│   ├── links           # Navigation links  
+│   ├── lang            # Language configuration  
+│   ├── author          # Author information  
+│   ├── three-examples  # Three.js example configuration  
+│   ├── cesium-example  # Cesium example configuration  
+│   └── config          # Main configuration  
+├── .gitignore          # Git ignore file  
+├── index.html          # Entry page  
+├── LICENSE             # Open source license  
+└── README.md           # Project documentation  
+```
 
 ```js
 //HOST automatically retrieves the current domain name/IP to prevent invalid resource references in different deployment environments
