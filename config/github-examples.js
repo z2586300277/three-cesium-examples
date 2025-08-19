@@ -99,8 +99,8 @@ export default [
                 author: 'wuyifan0203',
                 name: 'Three源码案例',
                 name_en: 'Three Source',
-                openUrl: 'https://wuyifan0203.github.io/threejs-demo',
-                githubUrl: 'https://github.com/wuyifan0203/threejs-demo',
+                openUrl: 'https://avan0203.github.io/threejs-demo/',
+                githubUrl: 'https://github.com/Avan0203/threejs-demo',
                 image: FILE_HOST + 'images/wuyifan0203.jpg'
             },
             {
@@ -1247,6 +1247,14 @@ export default [
                 openUrl: 'https://lbs.amap.com/demo/javascript-api-v2/example/selflayer/glcustom-layer',
                 githubUrl: 'https://github.com/AMap-Web/amap-three',
                 image: HOST + 'threeExamples/plugins/gaodeMapThree.jpg'
+            },
+            {
+                id: 'qgisThree',
+                name: 'QGIS Three',
+                author: 'AUTO',
+                openUrl: 'https://minorua.github.io/Qgis2threejs/docs/',
+                githubUrl: 'https://github.com/minorua/Qgis2threejs',
+                image: HOST + 'threeExamples/plugins/qgisThree.jpg'
             },
             {
                 id: 'vrThree',

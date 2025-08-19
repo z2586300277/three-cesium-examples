@@ -66,12 +66,27 @@
 
 6. 音视频模型存储等一些可以公用的资源 files 文件夹下,涉及文件资源尽量引用外部 url,保证仓库轻量化
 
-- assets => ui 运行框架 不需要修改
-- config => 配置项[host:主机, links:链接, author:作者信息, lang:语言, config:注入运行]
-- files 音视频模型存储等一些可以公用的资源, 尽量不要上传文件资源, 使用 外部 url 地址访问
-- js => dat.gui gsap 等等一些依赖存放处,尽量可使用 如 cdn 线上 js 引入
-- threeExamples three.js 案例代码目录
-- cesiumExamples cesium 案例代码目录
+```
+目录结构
+├── assets/             # 运行框架
+├── threeExamples/      # three.js 案例代码目录
+├── cesiumExamples/     # cesium 案例代码目录
+├── js/                 # 第三方js依赖存放处
+├── files/              # 模型、图片等资源
+├── config/             # 配置项
+│   ├── site            # 网站配置
+│   ├── host            # 主机配置
+│   ├── links           # 导航链接
+│   ├── lang            # 语言配置
+│   ├── author          # 作者信息
+│   ├── three-examples  # three 案例配置
+│   ├── cesium-example  # cesium 案例配置
+│   └── config          # 总配置
+├── .gitignore          # git 忽略文件
+├── index.html          # 入口页面
+├── LICENSE             # 开源协议
+└── README.md           # 项目说明
+```
 
 ```js
 // HOST 自动获取 当前域名/ip 防止部署环境不同 资源引用失效
@@ -159,12 +174,27 @@
 5. If it involves other dependent JS, you can place module.js in the JS directory such as dat.gui, gasp , The injection method config/config.js is visible
 6. Store audio and video models and other resources that can be shared in the files folder. Whenever possible, reference external URLs for file resources to ensure a lightweight warehouse
 
-- Assets=>UI runtime framework does not require modification
-- Config=>Configuration options [host: host, links: links, author: author information, lang: language, config: injection run]
-- Files, audio and video model storage, and other resources that can be shared should be avoided as much as possible, and external URL addresses should be used to access them
-- Js=>dat.gui gsap and other dependency repositories, try to use online js such as CDN to introduce them as much as possible
-- ThreeEamples Three.js Case Code Catalog
-- CesiumExamples cesium case code directory
+```
+Directory Structure  
+├── assets/             # Runtime framework  
+├── threeExamples/      # Three.js example code directory  
+├── cesiumExamples/     # Cesium example code directory  
+├── js/                 # Third-party JS dependencies  
+├── files/              # Models, images, and other resources  
+├── config/             # Configuration files  
+│   ├── site            # Website configuration  
+│   ├── host            # Host configuration  
+│   ├── links           # Navigation links  
+│   ├── lang            # Language configuration  
+│   ├── author          # Author information  
+│   ├── three-examples  # Three.js example configuration  
+│   ├── cesium-example  # Cesium example configuration  
+│   └── config          # Main configuration  
+├── .gitignore          # Git ignore file  
+├── index.html          # Entry page  
+├── LICENSE             # Open source license  
+└── README.md           # Project documentation  
+```
 
 ```js
 //HOST automatically retrieves the current domain name/IP to prevent invalid resource references in different deployment environments
