@@ -1249,6 +1249,14 @@ export default [
                 image: HOST + 'threeExamples/plugins/gaodeMapThree.jpg'
             },
             {
+                id: 'qgisThree',
+                name: 'QGIS Three',
+                author: 'AUTO',
+                openUrl: 'https://minorua.github.io/Qgis2threejs/docs/',
+                githubUrl: 'https://github.com/minorua/Qgis2threejs',
+                image: HOST + 'threeExamples/plugins/qgisThree.jpg'
+            },
+            {
                 id: 'vrThree',
                 name: 'Three VR应用',
                 name_en: 'Three VR',
