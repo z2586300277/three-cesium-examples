@@ -255,7 +255,7 @@ export default [
     {
         id: 'wuyifan0203',
         name: 'wuyifan0203',
-        github: 'https://github.com/wuyifan0203',
+        github: 'https://github.com/Avan0203',
         icon: 'https://avatars.githubusercontent.com/u/58818101?v=4'
     },
 

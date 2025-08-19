@@ -99,8 +99,8 @@ export default [
                 author: 'wuyifan0203',
                 name: 'Three源码案例',
                 name_en: 'Three Source',
-                openUrl: 'https://wuyifan0203.github.io/threejs-demo',
-                githubUrl: 'https://github.com/wuyifan0203/threejs-demo',
+                openUrl: 'https://avan0203.github.io/threejs-demo/',
+                githubUrl: 'https://github.com/Avan0203/threejs-demo',
                 image: FILE_HOST + 'images/wuyifan0203.jpg'
             },
             {
