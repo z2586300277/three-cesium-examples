@@ -595,6 +595,15 @@ export default [
                 }
             },
             {
+                id: 'cityLight',
+                name: '城市光影',
+                name_en: 'City Light',
+                tag: TEXTS['smartCity'],
+                author: 'z2586300277',
+                codeUrl: HOST + 'cesiumExamples/expand/cityLight.js',
+                image: HOST + 'cesiumExamples/expand/cityLight.jpg',
+            },
+            {
                 id: 'smartCity',
                 name: '智慧城市光',
                 name_en: 'City Light',
