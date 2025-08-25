@@ -451,8 +451,19 @@ export default [
                     description: 'cesium 加载模型'
                 }
             },
-
-
+            {
+                id: 'drawLine.js',
+                name: '绘制线段',
+                name_en: 'Draw drawLine',
+                author: 'a19971040448',
+                codeUrl: HOST + 'cesiumExamples/basic/drawLine.js',
+                image: HOST + 'cesiumExamples/basic/drawLine.png',
+                meta: {
+                    title: '绘制线段',
+                    keywords: 'cesium.js,绘制线段',
+                    description: 'cesium 绘制线段'
+                }
+            },
         ]
     },
     {
