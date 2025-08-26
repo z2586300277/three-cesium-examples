@@ -464,6 +464,19 @@ export default [
                     description: 'cesium 绘制线段'
                 }
             },
+            {
+                id: 'keyboardRoam.js',
+                name: '键盘漫游',
+                name_en: 'KeyboardRoam',
+                author: 'a19971040448',
+                codeUrl: HOST + 'cesiumExamples/basic/keyboardRoam.js',
+                image: HOST + 'cesiumExamples/basic/keyboardRoam.jpg',
+                meta: {
+                    title: '键盘漫游',
+                    keywords: 'cesium.js,键盘漫游',
+                    description: 'cesium 键盘漫游'
+                }
+            },
         ]
     },
     {
