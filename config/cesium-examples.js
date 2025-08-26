@@ -451,8 +451,19 @@ export default [
                     description: 'cesium 加载模型'
                 }
             },
-
-
+            {
+                id: 'drawLine.js',
+                name: '绘制线段',
+                name_en: 'Draw drawLine',
+                author: 'a19971040448',
+                codeUrl: HOST + 'cesiumExamples/basic/drawLine.js',
+                image: HOST + 'cesiumExamples/basic/drawLine.jpg',
+                meta: {
+                    title: '绘制线段',
+                    keywords: 'cesium.js,绘制线段',
+                    description: 'cesium 绘制线段'
+                }
+            },
         ]
     },
     {
@@ -593,6 +604,15 @@ export default [
                     keywords: 'cesium.js,智慧城市着色器',
                     description: 'cesium 智慧城市着色器'
                 }
+            },
+            {
+                id: 'cityLight',
+                name: '城市光影',
+                name_en: 'City Light',
+                tag: TEXTS['smartCity'],
+                author: 'z2586300277',
+                codeUrl: HOST + 'cesiumExamples/expand/cityLight.js',
+                image: HOST + 'cesiumExamples/expand/cityLight.jpg',
             },
             {
                 id: 'smartCity',

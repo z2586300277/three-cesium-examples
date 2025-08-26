@@ -2562,6 +2562,14 @@ export default [
                 image: HOST + 'threeExamples/basic/viewHelper.jpg',
             },
             {
+                id: 'renderFrame',
+                name: '帧率控制',
+                name_en: 'Render Frame',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/basic/renderFrame.js',
+                image: HOST + 'threeExamples/basic/renderFrame.jpg',
+            },
+            {
                 id: 'renderTarget',
                 name: '渲染贴图物体',
                 name_en: 'Render Target',
