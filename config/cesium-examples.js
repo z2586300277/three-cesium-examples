@@ -457,7 +457,7 @@ export default [
                 name_en: 'Draw drawLine',
                 author: 'a19971040448',
                 codeUrl: HOST + 'cesiumExamples/basic/drawLine.js',
-                image: HOST + 'cesiumExamples/basic/drawLine.png',
+                image: HOST + 'cesiumExamples/basic/drawLine.jpg',
                 meta: {
                     title: '绘制线段',
                     keywords: 'cesium.js,绘制线段',
