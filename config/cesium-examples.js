@@ -466,15 +466,15 @@ export default [
             },
             {
                 id: 'keyboardRoam.js',
-                name: '键盘漫游',
+                name: '键盘控制相机',
                 name_en: 'KeyboardRoam',
                 author: 'a19971040448',
                 codeUrl: HOST + 'cesiumExamples/basic/keyboardRoam.js',
                 image: HOST + 'cesiumExamples/basic/keyboardRoam.jpg',
                 meta: {
-                    title: '键盘漫游',
-                    keywords: 'cesium.js,键盘漫游',
-                    description: 'cesium 键盘漫游'
+                    title: '键盘控制相机',
+                    keywords: 'cesium.js,键盘控制相机',
+                    description: 'cesium 键盘控制相机'
                 }
             },
         ]
