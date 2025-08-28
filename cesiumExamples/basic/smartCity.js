@@ -100,7 +100,7 @@ function setViewerTheme(viewer, options = {}) {
 
 }
 
-const palaceTileset = await Cesium.Cesium3DTileset.fromUrl('https://guangfus:663/3dtiles/whiteModel/tileset.json')
+const palaceTileset = await Cesium.Cesium3DTileset.fromUrl('https://g2657.github.io/gz-city/tileset.json')
 
 viewer.scene.primitives.add(palaceTileset)
 

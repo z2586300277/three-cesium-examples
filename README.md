@@ -30,7 +30,7 @@
 
 ### 👋 欢迎加入 (用户自行添加联系）
 
-<img src="https://contrib.rocks/image?repo=z2586300277/three-cesium-examples&type=Date&88" />
+<img src="https://contrib.rocks/image?repo=z2586300277/three-cesium-examples&type=Date&78" />
 
 |     作者     |   联系方式   |    联系方式     |             链接             |          描述
 | :----------: | :----------: | :-------------: | :------------------------: | :------------------------: |
