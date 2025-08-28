@@ -18,24 +18,24 @@ const viewer = new Cesium.Viewer(box, {
 
 })
 
-const tileset = await Cesium.Cesium3DTileset.fromUrl(FILE_HOST + '3dtiles/minWhiteModel/tileset.json')
+const tileset = await Cesium.Cesium3DTileset.fromUrl(`https://g2657.github.io/gz-city/tileset.json`)
 
 viewer.scene.primitives.add(tileset)
 
-viewer.camera.viewBoundingSphere(tileset.boundingSphere, new Cesium.HeadingPitchRange(0, -0.5, 0))
+viewer.camera.viewBoundingSphere(tileset.boundingSphere, new Cesium.HeadingPitchRange(0, -0.1, tileset.boundingSphere.radius * 0.5))
 
 class SweepShader extends Cesium.CustomShader {
 
     constructor(opt = {}) {
-        const { sweepColor = new Cesium.Color.fromCssColorString('blue'),
+        const { sweepColor = new Cesium.Color.fromCssColorString('green'),
             mixColor1 = new Cesium.Color.fromCssColorString('red'),
-            mixColor2 = new Cesium.Color.fromCssColorString('green')
+            mixColor2 = new Cesium.Color.fromCssColorString('white')
         } = opt;
 
         super({
             vertexShaderText: `void vertexMain(VertexInput vsInput, inout czm_modelVertexOutput vsOutput) {
                 // 注意这里的uv，详情看本系列第一篇文章
-                v_uv = vec2(vsInput.attributes.positionMC.x / 80., vsInput.attributes.positionMC.y / 250.);
+                v_uv = vec2(vsInput.attributes.positionMC.z / 80., vsInput.attributes.positionMC.z / 250.);
               }`,
             fragmentShaderText: `float random(vec2 st) {
 

@@ -40,7 +40,7 @@ const video = document.createElement('video')
 
 video.crossOrigin = 'anonymous' // 跨域
 
-video.src = 'http://vjs.zencdn.net/v/oceans.mp4'
+video.src = 'https://z2586300277.github.io/3d-file-server/video/test.mp4'
 
 video.loop = true // 循环播放
 
