@@ -30,10 +30,10 @@ const primitive = viewer.scene.primitives.add(new Cesium.Primitive({
             fabric: {
                 type: "Image",
                 uniforms: {
-                    image: FILE_HOST + 'images/channels/wangge.png',
-                    alpha: 0.8,
-                    repeat: new Cesium.Cartesian2(4.0, 4.0),
-                    color: new Cesium.Color('#3cb4ffff'),
+                    image: FILE_HOST + 'images/map/earth_clouds.png',
+                    alpha: 0.5,
+                    // repeat: new Cesium.Cartesian2(4.0, 4.0),
+                    // color: Cesium.Color.YELLOW,
                 },
                 components: {
                     alpha: "texture(image, fract(materialInput.st * repeat)).r * alpha",

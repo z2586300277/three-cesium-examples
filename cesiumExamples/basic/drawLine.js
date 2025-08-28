@@ -82,7 +82,6 @@ const viewer = new Cesium.Viewer(box, {
     infoBox: false,             // 是否显示信息框   
 });
 
-// 设置相机初始位置
 viewer.camera.flyTo({
     duration: 2,
     destination: Cesium.Cartesian3.fromDegrees(116.4074, 39.9042, 10000),
@@ -96,7 +95,6 @@ viewer.camera.flyTo({
 // 隐藏Cesium Logo
 viewer._cesiumWidget._creditContainer.style.display = "none";
 
-// ==================== 实体管理区域 ====================
 /** 
  * 存储线实体
  * @type {Array<Cesium.Entity>}
@@ -121,7 +119,6 @@ let drawLinePositions = [];
  */
 let distanceLabelEntity = null;
 
-// ==================== GUI控制区域 ====================
 /** 
  * 创建GUI控制面板
  * @type {dat.GUI}
@@ -134,6 +131,7 @@ const gui = new GUI();
  */
 let globalHandler = new Cesium.ScreenSpaceEventHandler(viewer.scene.canvas);
 
+// ==================== 功能操作区域 ====================
 /** 
  * 定义图形绘制操作对象
  * @namespace obj
@@ -145,26 +143,20 @@ const obj = {
      * @memberof obj
      */
     '绘制线': () => {
-        // clearLineEntities();
+        clearLineEntities();
         initLineDrawing();
-    }
-};
-
-// 添加清除操作
-const clearObj = {
+    },
     '清除线': () => {
         clearLineEntities();
     }
 };
 
 // 将操作对象添加到GUI控制面板
-gui.add(obj, '绘制线');
-gui.add(clearObj, '清除线');
+for (const key in obj) gui.add(obj, key)
 
 // ==================== 实体管理区域 ====================
 /**
  * 清除线实体
- * 移除所有已创建的线实体、点实体和距离标签
  */
 function clearLineEntities() {
     lineEntities.forEach(entity => {
@@ -195,7 +187,6 @@ function clearLineEntities() {
 // ==================== 图形绘制区域 ====================
 /**
  * 初始化绘制线功能
- * 注册鼠标事件处理器，实现线段绘制功能
  */
 function initLineDrawing() {
     // 清除之前可能注册的事件
@@ -372,15 +363,6 @@ function updateRealTimeDistance(point1, point2) {
         });
     }
 }
-
-/**
- * 创建自定义标签图片
- * 使用Canvas绘制带背景色的标签
- * @param {string} text - 标签文字
- * @param {string} bgColor - 背景颜色
- * @param {string} fontColor - 字体颜色
- * @returns {string} dataURL格式的图片
- */
 function customLabel(text, bgColor, fontColor) {
     // 创建一个canvas元素，用于绘制圆形背景和文字
     let canvas = document.createElement('canvas');
@@ -391,15 +373,15 @@ function customLabel(text, bgColor, fontColor) {
     canvas.width = textWidth + 20; // 在文本长度之外加上一些额外的空间
     canvas.height = 20; // 设置一个合适的高度
 
-    // 开始绘制圆角矩形背景
+    // 开始绘制圆形背景
     ctx.beginPath();
     ctx.roundRect(0, 0, canvas.width, canvas.height, 10); // 圆角半径为10像素
-    ctx.fillStyle = bgColor; // 设置填充颜色
-    ctx.fill(); // 填充背景
+    ctx.fillStyle = bgColor; // 设置填充颜色为半透明的蓝色
+    ctx.fill(); // 使用fill方法填充圆形
 
     // 开始绘制文字
     ctx.font = '12px sans-serif';
-    ctx.fillStyle = fontColor; // 设置文字颜色
+    ctx.fillStyle = fontColor; // 设置文字颜色为黑色
     ctx.textAlign = 'center';
     ctx.textBaseline = 'middle';
     ctx.fillText(text, canvas.width / 2, canvas.height / 2); // 在中间位置绘制文字

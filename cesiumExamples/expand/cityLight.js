@@ -19,7 +19,8 @@ const viewer = new Cesium.Viewer(box, {
 
 })
 
-const tileset = await Cesium.Cesium3DTileset.fromUrl('https://guangfus:663/3dtiles/whiteModel/tileset.json')
+// https://guangfus:663/3dtiles/whiteModel/tileset.json
+const tileset = await Cesium.Cesium3DTileset.fromUrl('https://g2657.github.io/gz-city/tileset.json')
 
 viewer.scene.primitives.add(tileset)
 
@@ -32,7 +33,9 @@ const uniforms = {
     u_mix_color1: { value: Cesium.Color.fromBytes(9, 9, 14, 255), type: Cesium.UniformType.VEC3 },
     u_mix_color2: { value: Cesium.Color.fromBytes(0, 128, 255, 255), type: Cesium.UniformType.VEC3 },
     u_sweep_width: { value: 0.03, type: Cesium.UniformType.FLOAT },
-    u_time: { value: 0, type: Cesium.UniformType.FLOAT }
+    u_time: { value: 0, type: Cesium.UniformType.FLOAT },
+    u_model_height: { value: 100, type: Cesium.UniformType.FLOAT },
+    u_height_offset: { value: 0.0, type: Cesium.UniformType.FLOAT }
 }
 
 const gui = new dat.GUI()
@@ -62,17 +65,23 @@ gui.addColor({ mixColor2: '#0080ff' }, 'mixColor2').onChange(v => {
 gui.add({ sweepWidth: 0.2 }, 'sweepWidth', 0.05, 1.0).onChange(v => {
     uniforms.u_sweep_width.value = v
 })
+gui.add({ modelHeight: 100 }, 'modelHeight', 10, 1000).name('模型高度').onChange(v =>  uniforms.u_model_height.value = v)
+gui.add({ heightOffset: 0.0 }, 'heightOffset', -50, 50).name('高度偏移').onChange(v => uniforms.u_height_offset.value = v)
 
 const shader = new Cesium.CustomShader({
     vertexShaderText: `void vertexMain(VertexInput vsInput, inout czm_modelVertexOutput vsOutput) {
-            v_uv = vec2(vsInput.attributes.positionMC.z / 80., vsInput.attributes.positionMC.z / 250.);
+            float adjustedZ = vsInput.attributes.positionMC.z + u_height_offset;
+            float normalizedHeight = clamp(adjustedZ / u_model_height, 0.0, 1.0);
+            float enhancedHeight = sqrt(normalizedHeight);
+            v_uv = vec2(enhancedHeight, enhancedHeight);
         }`,
     fragmentShaderText: `float random(vec2 st) {
             return fract(sin(dot(st.xy, vec2(12.9898, 78.233))) * 43758.5453123);
         }
         
         void fragmentMain(FragmentInput fsInput, inout czm_modelMaterial material) {
-            vec3 originColor = mix(u_mix_color1, u_mix_color2, v_uv.y);
+            float gradientFactor = smoothstep(0.0, 1.0, v_uv.y);
+            vec3 originColor = mix(u_mix_color1, u_mix_color2, gradientFactor);
             float t = fract(u_time * 2.) * 2.;
             vec2 absUv = abs(v_uv - t);
             
