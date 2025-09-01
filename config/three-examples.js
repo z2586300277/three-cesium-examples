@@ -1854,6 +1854,14 @@ export default [
                 codeUrl: HOST + 'threeExamples/application/geometryMerge.js',
                 image: HOST + 'threeExamples/application/geometryMerge.jpg',
             },
+            {
+                id: 'measurement',
+                name: '测量',
+                name_en: 'Measurement',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/application/measurement.js',
+                image: HOST + 'threeExamples/application/measurement.jpg',
+            }
 
         ]
     },
