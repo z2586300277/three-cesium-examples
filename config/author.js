@@ -500,11 +500,17 @@ export default [
         github: 'https://github.com/chenzhijie1',
         icon: 'https://avatars.githubusercontent.com/u/37795020?v=4'
     },
-        {
+    {
         id: 'a19971040448',
         name: '你们瞎搞',
         github: 'https://blog.csdn.net/qq_48273925/category_12865431.html',
         icon: HOST + 'files/author/nmxg.jpg'
     },
+    {
+        id: 'brunosimon',
+        name: 'brunosimon',
+        github: 'https://github.com/brunosimon',
+        icon: 'https://avatars.githubusercontent.com/u/5439991?v=4'
+    }
 
 ]

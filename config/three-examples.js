@@ -1105,7 +1105,8 @@ export default [
                 id: 'galaxyStar',
                 name: '星系',
                 name_en: 'Galaxy Star',
-                author: 'kavalcio',
+                author: 'brunosimon',
+                improver: 'kavalcio',
                 codeUrl: HOST + 'threeExamples/particle/galaxyStar.js',
                 image: HOST + 'threeExamples/particle/galaxyStar.jpg',
                 meta: {
@@ -1310,7 +1311,8 @@ export default [
                 id: 'ghostHouse',
                 name: '鬼屋',
                 name_en: 'Ghost House',
-                author: 'FFMMCC',
+                improver: 'FFMMCC',
+                author: 'brunosimon',
                 codeUrl: HOST + 'threeExamples/application/ghostHouse.js',
                 image: HOST + 'threeExamples/application/ghostHouse.jpg',
             },
@@ -1566,6 +1568,7 @@ export default [
                 name: '咖啡',
                 name_en: 'Coffee Mug',
                 improver: 'kavalcio',
+                author: 'brunosimon',
                 codeUrl: HOST + 'threeExamples/application/coffeeMug.js',
                 image: HOST + 'threeExamples/application/coffeeMug.jpg',
                 meta: {
