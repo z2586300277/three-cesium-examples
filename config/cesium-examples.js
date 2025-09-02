@@ -452,7 +452,7 @@ export default [
                 }
             },
             {
-                id: 'drawLine.js',
+                id: 'drawLine',
                 name: '绘制线段',
                 name_en: 'Draw drawLine',
                 author: 'a19971040448',
@@ -465,7 +465,7 @@ export default [
                 }
             },
             {
-                id: 'keyboardRoam.js',
+                id: 'keyboardRoam',
                 name: '键盘控制相机',
                 name_en: 'KeyboardRoam',
                 author: 'a19971040448',
@@ -475,6 +475,19 @@ export default [
                     title: '键盘控制相机',
                     keywords: 'cesium.js,键盘控制相机',
                     description: 'cesium 键盘控制相机'
+                }
+            },
+            {
+                id: 'controlModel',
+                name: '键盘控制飞行',
+                name_en: 'controlModel',
+                author: 'a19971040448',
+                codeUrl: HOST + 'cesiumExamples/basic/controlModel.js',
+                image: HOST + 'cesiumExamples/basic/controlModel.jpg',
+                meta: {
+                    title: '键盘控制飞行',
+                    keywords: 'cesium.js,键盘控制飞行',
+                    description: 'cesium 键盘控制飞行'
                 }
             },
         ]
@@ -555,7 +568,20 @@ export default [
                 name_en: 'Smoke Effect',
                 author: 'jiawanlong',
                 codeUrl: HOST + 'cesiumExamples/effect/smokeEffect.js',
-                image: HOST + 'cesiumExamples/effect/smokeEffect.jpg',  
+                image: HOST + 'cesiumExamples/effect/smokeEffect.jpg',
+            },
+            {
+                id: 'dynamicWallSimple',
+                name: '动态围墙(简易版)',
+                name_en: 'dynamicWall Simple',
+                author: 'a19971040448',
+                codeUrl: HOST + 'cesiumExamples/effect/dynamicWallSimple.js',
+                image: HOST + 'cesiumExamples/effect/dynamicWallSimple.jpg',
+                meta: {
+                    title: '动态围墙(简易版)',
+                    keywords: '动态围墙(简易版)',
+                    description: '动态围墙(简易版)'
+                }
             }
         ]
     },

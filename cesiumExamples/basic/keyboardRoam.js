@@ -116,8 +116,8 @@ const keyboardRoamObj = {
 地球自转控制 (方向键):
   ↑ : 地球向北自转
   ↓ : 地球向南自转
-  ← : 地球向东自转
-  → : 地球向西自转
+  ← : 地球向西自转
+  → : 地球向东自转
     `;
     alert(instructions);
   }
@@ -307,9 +307,9 @@ function getFlagFromKeyboard(k) {
     case "ArrowDown":
       return "arrowDown";     // 方向键下
     case "ArrowLeft":
-      return "arrowLeft";     // 方向键左
+      return "arrowRight";     // 方向键左
     case "ArrowRight":
-      return "arrowRight";    // 方向键右
+      return "arrowLeft";    // 方向键右
     // 未匹配的按键
     default:
       return undefined;
