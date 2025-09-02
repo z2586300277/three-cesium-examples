@@ -1,5 +1,4 @@
 import { FILE_HOST, HOST } from "./host.js";
-
 export default [
     {
         pid: 'layer',
@@ -477,19 +476,6 @@ export default [
                     description: 'cesium 键盘控制相机'
                 }
             },
-            {
-                id: 'controlModel',
-                name: '键盘控制飞行',
-                name_en: 'controlModel',
-                author: 'a19971040448',
-                codeUrl: HOST + 'cesiumExamples/basic/controlModel.js',
-                image: HOST + 'cesiumExamples/basic/controlModel.jpg',
-                meta: {
-                    title: '键盘控制飞行',
-                    keywords: 'cesium.js,键盘控制飞行',
-                    description: 'cesium 键盘控制飞行'
-                }
-            },
         ]
     },
     {
@@ -582,7 +568,20 @@ export default [
                     keywords: '动态围墙(简易版)',
                     description: '动态围墙(简易版)'
                 }
-            }
+            },
+            {
+                id: 'gradientWall',
+                name: '渐变色墙体',
+                name_en: 'Gradient Wall',
+                author: 'a19971040448',
+                codeUrl: HOST + 'cesiumExamples/effect/gradientWall.js',
+                image: HOST + 'cesiumExamples/effect/gradientWall.jpg',
+                meta: {
+                    title: '渐变色墙体',
+                    keywords: '渐变色墙体',
+                    description: '渐变色墙体'
+                }
+            },
         ]
     },
     {
@@ -737,7 +736,20 @@ export default [
                 referUrl: 'https://mp.weixin.qq.com/s/E0CUUV-AccwqGgcI2UCa3A',
                 codeUrl: HOST + 'cesiumExamples/application/globeMap.js',
                 image: HOST + 'cesiumExamples/application/globeMap.jpg',
-            }
+            },
+            {
+                id: 'controlModel',
+                name: '键盘控制飞行',
+                name_en: 'controlModel',
+                author: 'a19971040448',
+                codeUrl: HOST + 'cesiumExamples/application/controlModel.js',
+                image: HOST + 'cesiumExamples/application/controlModel.jpg',
+                meta: {
+                    title: '键盘控制飞行',
+                    keywords: 'cesium.js,键盘控制飞行',
+                    description: 'cesium 键盘控制飞行'
+                }
+            },
         ]
     },
     {
@@ -828,8 +840,7 @@ export default [
                 author: 'z2586300277',
                 codeUrl: HOST + 'cesiumExamples/expand/transportLine.js',
                 image: HOST + 'cesiumExamples/expand/transportLine.jpg',
-            }
-
+            },
         ]
     },
     {
