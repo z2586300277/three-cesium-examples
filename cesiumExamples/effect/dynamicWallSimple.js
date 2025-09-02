@@ -103,7 +103,7 @@ function addWalls(positionLonLat, height) {
                     // 围墙颜色设置为橙红色
                     color: new Cesium.Color.fromCssColorString("rgba(238, 85, 34, 1)"),
                     // 流动效果使用的纹理图片路径
-                    image: "../../files/images/colors.png",
+                    image: HOST + "files/images/colors.png",
                     // 动画流动速度
                     speed: 3,
                     // 纹理重复次数
