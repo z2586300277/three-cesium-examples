@@ -232,6 +232,15 @@ export default [
                 githubUrl: 'https://github.com/Faraz-Portfolio/',
                 openUrl: 'https://farazzshaikh.com/demos',
                 image: HOST + 'threeExamples/openSource/farazzshaikh.jpg',
+            },
+            {
+                id: 'yuka',
+                name: 'Three学习',
+                name_en: 'Yuka Examples',
+                author: 'AUTO',
+                githubUrl: 'https://github.com/Mugen87/yuka',
+                openUrl: 'https://mugen87.github.io/yuka/examples/',
+                image: HOST + 'threeExamples/openSource/yuka.jpg',
             }
         ]
     },
