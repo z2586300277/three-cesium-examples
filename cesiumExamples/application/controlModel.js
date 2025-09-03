@@ -197,7 +197,7 @@ function startFirstRoam(parameter) {
         // 使用primitive方式加载模型 - 修复 Cesium.Model.fromGltf 错误
         // 异步加载GLTF模型文件，并应用上面计算的变换矩阵
         Cesium.Model.fromGltfAsync({
-            url: '../../files/model/Cesium_Air.glb',
+            url: HOST + 'files/model/Cesium_Air.glb',
         }).then(model => {
             // 将加载完成的模型添加到场景中
             firstModel = viewer.scene.primitives.add(model);
