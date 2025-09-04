@@ -1058,22 +1058,13 @@ export default [
                 openUrl: 'http://nicowebgl.cn/path/',
                 image: HOST + 'threeExamples/openSource/roam.jpg'
             },
-            // {
-            //     id: 'area,pixijs,webgl',
-            //     author: 'nico',
-            //     name: '场景导航（免模型）',
-            //     name_en: 'Scene Nav',
-            //     githubUrl: 'https://github.com/Nicolas-zn/my_code/blob/main/src/code/interactive_image.vue',
-            //     openUrl: 'http://nicowebgl.cn/portfolio/#/interactive_image',
-            //     image: HOST + 'threeExamples/openSource/area.jpg'
-            // },
             {
                 id: 'unreal',
                 author: 'nico',
                 name: 'unreal风格场景标注',
                 name_en: 'Unreal Style',
                 githubUrl: 'https://github.com/Nicolas-zn/annotations',
-                openUrl: 'http://www.nicowebgl.cn/annotations/',
+                openUrl: 'http://nicowebgl.cn/annotations/',
                 image: HOST + 'threeExamples/openSource/unrealstyle.jpg'
             },
 
