@@ -864,7 +864,20 @@ export default [
                 author: 'CrimsonHu',
                 openUrl: 'https://gitee.com/CrimsonHu/java_map_download',
                 image: HOST + 'cesiumExamples/tools/layerDownload.jpg',
-            }
+            },
+            {
+                id: 'computerNewPoint',
+                name: '计算新坐标',
+                name_en: 'computerNewPoint',
+                author: 'a19971040448',
+                codeUrl: HOST + 'cesiumExamples/tools/computerNewPoint.js',
+                image: HOST + 'cesiumExamples/tools/computerNewPoint.jpg',
+                meta: {
+                    title: '计算新坐标',
+                    keywords: 'cesium.js,计算新坐标',
+                    description: 'cesium 计算新坐标'
+                }
+            },
         ],
     }
 ]
