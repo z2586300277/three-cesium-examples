@@ -515,6 +515,15 @@ export default [
                 openUrl: 'https://faraz-portfolio.github.io/demo-2025-car-paint/',
                 githubUrl: 'https://github.com/Faraz-Portfolio/demo-2025-car-paint',
                 image: HOST + 'threeExamples/openSource/paintCar.jpg',
+            },
+            {
+                id: 'carShowReact',
+                name: '汽车展示',
+                name_en: 'Car Show(React)',
+                author: 'AUTO',
+                openUrl: 'https://nik-car-show.netlify.app/',
+                githubUrl: 'https://github.com/n1k02/three-js-projects',
+                image: HOST + 'threeExamples/openSource/carShowReact.jpg',
             }
         ]
     },
