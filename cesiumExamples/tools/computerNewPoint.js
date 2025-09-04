@@ -29,17 +29,9 @@ const obj = {
    * @function
    * @memberof obj
    */
-  '绘制原始点': setupInteractiveDrawing,
-
-  /** 
-   * 重置功能 - 清除所有绘制的点
-   * @function
-   * @memberof obj
-   */
-  '重置': () => {
-    viewer.entities.removeAll();
-    entitys = []; // 清空实体数组
-  }
+  '绘制原始点': () => {
+    setupInteractiveDrawing()
+  },
 };
 
 // 创建GUI控制面板并添加操作按钮
@@ -92,11 +84,13 @@ let globalHandler = null;
  * 遵循事件管理规范，确保不会重复注册事件
  */
 function setupInteractiveDrawing() {
+  viewer.entities.removeAll();
+  entitys = []; // 清空实体数组
   // 遵循事件管理规范：在注册新事件前清除旧事件避免重复注册
   if (globalHandler) {
     globalHandler.destroy();
+    globalHandler = null;
   }
-
   // 创建屏幕空间事件处理器
   globalHandler = new Cesium.ScreenSpaceEventHandler(viewer.canvas);
 

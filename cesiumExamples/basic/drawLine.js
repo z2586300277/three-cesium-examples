@@ -129,7 +129,7 @@ const gui = new GUI();
  * 全局事件处理器
  * @type {Cesium.ScreenSpaceEventHandler}
  */
-let globalHandler = new Cesium.ScreenSpaceEventHandler(viewer.scene.canvas);
+let globalHandler = null;
 
 // ==================== 功能操作区域 ====================
 /** 
@@ -146,9 +146,6 @@ const obj = {
         clearLineEntities();
         initLineDrawing();
     },
-    '清除线': () => {
-        clearLineEntities();
-    }
 };
 
 // 将操作对象添加到GUI控制面板
@@ -177,11 +174,11 @@ function clearLineEntities() {
         viewer.entities.remove(distanceLabelEntity);
         distanceLabelEntity = null;
     }
-
-    // 清除所有事件处理器
-    globalHandler.removeInputAction(Cesium.ScreenSpaceEventType.LEFT_CLICK);
-    globalHandler.removeInputAction(Cesium.ScreenSpaceEventType.RIGHT_CLICK);
-    globalHandler.removeInputAction(Cesium.ScreenSpaceEventType.MOUSE_MOVE);
+    // 遵循事件管理规范：在注册新事件前清除旧事件避免重复注册
+    if (globalHandler) {
+        globalHandler.destroy();
+        globalHandler = null
+    }
 }
 
 // ==================== 图形绘制区域 ====================
@@ -189,10 +186,8 @@ function clearLineEntities() {
  * 初始化绘制线功能
  */
 function initLineDrawing() {
-    // 清除之前可能注册的事件
-    globalHandler.removeInputAction(Cesium.ScreenSpaceEventType.LEFT_CLICK);
-    globalHandler.removeInputAction(Cesium.ScreenSpaceEventType.RIGHT_CLICK);
-    globalHandler.removeInputAction(Cesium.ScreenSpaceEventType.MOUSE_MOVE);
+    // 创建屏幕空间事件处理器
+    globalHandler = new Cesium.ScreenSpaceEventHandler(viewer.canvas);
 
     // 注册鼠标左键点击事件
     globalHandler.setInputAction(function (movement) {
@@ -264,9 +259,11 @@ function initLineDrawing() {
             distanceLabelEntity = null;
         }
         drawLinePositions = []
-        globalHandler.removeInputAction(Cesium.ScreenSpaceEventType.MOUSE_MOVE);
-        globalHandler.removeInputAction(Cesium.ScreenSpaceEventType.LEFT_CLICK);
-        console.log('线段绘制完成');
+        // 遵循事件管理规范：在注册新事件前清除旧事件避免重复注册
+        if (globalHandler) {
+            globalHandler.destroy();
+            globalHandler = null
+        }
     }, Cesium.ScreenSpaceEventType.RIGHT_CLICK);
 
     // 注册鼠标移动事件，用于实时绘制临时线条

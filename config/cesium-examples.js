@@ -878,6 +878,19 @@ export default [
                     description: 'cesium 计算新坐标'
                 }
             },
+            {
+                id: 'computerAngle',
+                name: '计算方位角',
+                name_en: 'computerAngle',
+                author: 'a19971040448',
+                codeUrl: HOST + 'cesiumExamples/tools/computerAngle.js',
+                image: HOST + 'cesiumExamples/tools/computerAngle.jpg',
+                meta: {
+                    title: '计算方位角',
+                    keywords: 'cesium.js,计算方位角',
+                    description: 'cesium 计算方位角'
+                }
+            }
         ],
     }
 ]
