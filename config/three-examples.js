@@ -1864,6 +1864,15 @@ export default [
                 author: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/application/measurement.js',
                 image: HOST + 'threeExamples/application/measurement.jpg',
+            },
+            {
+                id: 'gsapTimeLine',
+                name: '时间轴动画',
+                name_en: 'Gsap TimeLine',
+                tag: 'GSAP',
+                improver: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/application/gsapTimeLine.js',
+                image: HOST + 'threeExamples/application/gsapTimeLine.jpg'
             }
 
         ]
