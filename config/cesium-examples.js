@@ -477,6 +477,19 @@ export default [
                     description: 'cesium 键盘控制相机'
                 }
             },
+            {
+                id: 'officialPointCluster',
+                name: '官方点聚合',
+                name_en: 'Official Points Cluster',
+                author: 'a19971040448',
+                codeUrl: HOST + 'cesiumExamples/basic/officialPointCluster.js',
+                image: HOST + 'cesiumExamples/basic/officialPointCluster.jpg',
+                meta: {
+                    title: '官方点聚合',
+                    keywords: 'cesium.js,官方点聚合',
+                    description: '使用Cesium官方EntityCluster实现的点聚合功能'
+                }
+            },
         ]
     },
     {
