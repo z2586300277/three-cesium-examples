@@ -866,7 +866,7 @@ export default [
                 id: 'mapDataConvert',
                 name: '地图转换工具',
                 name_en: 'Map Convert',
-                author: 'giser2017',
+                author: 'Cesiumjs',
                 openUrl: 'https://z2586300277.github.io/show-site/dgis/',
                 image: HOST + 'cesiumExamples/tools/mapDataConvert.jpg',
             },

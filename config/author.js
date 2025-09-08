@@ -31,6 +31,12 @@ export default [
         github: 'https://openthree.github.io/three-cesium-links',
         icon: HOST + 'files/site/logo.svg'
     },
+    {
+        id: 'Cesiumjs',
+        name: 'Cesium JS',
+        github: 'https://cesium.com/',
+        icon: HOST + 'files/author/cesium.jpg'
+    },
 
     {
         id: 'Support',
