@@ -232,6 +232,15 @@ export default [
                 githubUrl: 'https://github.com/Faraz-Portfolio/',
                 openUrl: 'https://farazzshaikh.com/demos',
                 image: HOST + 'threeExamples/openSource/farazzshaikh.jpg',
+            },
+            {
+                id: 'yuka',
+                name: 'Three学习',
+                name_en: 'Yuka Examples',
+                author: 'AUTO',
+                githubUrl: 'https://github.com/Mugen87/yuka',
+                openUrl: 'https://mugen87.github.io/yuka/examples/',
+                image: HOST + 'threeExamples/openSource/yuka.jpg',
             }
         ]
     },
@@ -506,6 +515,15 @@ export default [
                 openUrl: 'https://faraz-portfolio.github.io/demo-2025-car-paint/',
                 githubUrl: 'https://github.com/Faraz-Portfolio/demo-2025-car-paint',
                 image: HOST + 'threeExamples/openSource/paintCar.jpg',
+            },
+            {
+                id: 'carShowReact',
+                name: '汽车展示',
+                name_en: 'Car Show(React)',
+                author: 'AUTO',
+                openUrl: 'https://nik-car-show.netlify.app/',
+                githubUrl: 'https://github.com/n1k02/three-js-projects',
+                image: HOST + 'threeExamples/openSource/carShowReact.jpg',
             }
         ]
     },
@@ -1040,22 +1058,13 @@ export default [
                 openUrl: 'http://nicowebgl.cn/path/',
                 image: HOST + 'threeExamples/openSource/roam.jpg'
             },
-            // {
-            //     id: 'area,pixijs,webgl',
-            //     author: 'nico',
-            //     name: '场景导航（免模型）',
-            //     name_en: 'Scene Nav',
-            //     githubUrl: 'https://github.com/Nicolas-zn/my_code/blob/main/src/code/interactive_image.vue',
-            //     openUrl: 'http://nicowebgl.cn/portfolio/#/interactive_image',
-            //     image: HOST + 'threeExamples/openSource/area.jpg'
-            // },
             {
                 id: 'unreal',
                 author: 'nico',
                 name: 'unreal风格场景标注',
                 name_en: 'Unreal Style',
                 githubUrl: 'https://github.com/Nicolas-zn/annotations',
-                openUrl: 'http://www.nicowebgl.cn/annotations/',
+                openUrl: 'http://nicowebgl.cn/annotations/',
                 image: HOST + 'threeExamples/openSource/unrealstyle.jpg'
             },
 

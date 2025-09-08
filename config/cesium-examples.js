@@ -478,16 +478,16 @@ export default [
                 }
             },
             {
-                id: 'controlModel',
-                name: '键盘控制飞行',
-                name_en: 'controlModel',
+                id: 'officialPointCluster',
+                name: '官方点聚合',
+                name_en: 'Official Points Cluster',
                 author: 'a19971040448',
-                codeUrl: HOST + 'cesiumExamples/basic/controlModel.js',
-                image: HOST + 'cesiumExamples/basic/controlModel.jpg',
+                codeUrl: HOST + 'cesiumExamples/basic/officialPointCluster.js',
+                image: HOST + 'cesiumExamples/basic/officialPointCluster.jpg',
                 meta: {
-                    title: '键盘控制飞行',
-                    keywords: 'cesium.js,键盘控制飞行',
-                    description: 'cesium 键盘控制飞行'
+                    title: '官方点聚合',
+                    keywords: 'cesium.js,官方点聚合',
+                    description: '使用Cesium官方EntityCluster实现的点聚合功能'
                 }
             },
         ]
@@ -582,7 +582,20 @@ export default [
                     keywords: '动态围墙(简易版)',
                     description: '动态围墙(简易版)'
                 }
-            }
+            },
+            {
+                id: 'gradientWall',
+                name: '渐变色墙体',
+                name_en: 'Gradient Wall',
+                author: 'a19971040448',
+                codeUrl: HOST + 'cesiumExamples/effect/gradientWall.js',
+                image: HOST + 'cesiumExamples/effect/gradientWall.jpg',
+                meta: {
+                    title: '渐变色墙体',
+                    keywords: '渐变色墙体',
+                    description: '渐变色墙体'
+                }
+            },
         ]
     },
     {
@@ -737,7 +750,20 @@ export default [
                 referUrl: 'https://mp.weixin.qq.com/s/E0CUUV-AccwqGgcI2UCa3A',
                 codeUrl: HOST + 'cesiumExamples/application/globeMap.js',
                 image: HOST + 'cesiumExamples/application/globeMap.jpg',
-            }
+            },
+            {
+                id: 'controlModel',
+                name: '键盘控制飞行',
+                name_en: 'controlModel',
+                author: 'a19971040448',
+                codeUrl: HOST + 'cesiumExamples/application/controlModel.js',
+                image: HOST + 'cesiumExamples/application/controlModel.jpg',
+                meta: {
+                    title: '键盘控制飞行',
+                    keywords: 'cesium.js,键盘控制飞行',
+                    description: 'cesium 键盘控制飞行'
+                }
+            },
         ]
     },
     {
@@ -828,8 +854,7 @@ export default [
                 author: 'z2586300277',
                 codeUrl: HOST + 'cesiumExamples/expand/transportLine.js',
                 image: HOST + 'cesiumExamples/expand/transportLine.jpg',
-            }
-
+            },
         ]
     },
     {
@@ -841,7 +866,7 @@ export default [
                 id: 'mapDataConvert',
                 name: '地图转换工具',
                 name_en: 'Map Convert',
-                author: 'giser2017',
+                author: 'Cesiumjs',
                 openUrl: 'https://z2586300277.github.io/show-site/dgis/',
                 image: HOST + 'cesiumExamples/tools/mapDataConvert.jpg',
             },
@@ -852,6 +877,32 @@ export default [
                 author: 'CrimsonHu',
                 openUrl: 'https://gitee.com/CrimsonHu/java_map_download',
                 image: HOST + 'cesiumExamples/tools/layerDownload.jpg',
+            },
+            {
+                id: 'computerNewPoint',
+                name: '计算新坐标',
+                name_en: 'computerNewPoint',
+                author: 'a19971040448',
+                codeUrl: HOST + 'cesiumExamples/tools/computerNewPoint.js',
+                image: HOST + 'cesiumExamples/tools/computerNewPoint.jpg',
+                meta: {
+                    title: '计算新坐标',
+                    keywords: 'cesium.js,计算新坐标',
+                    description: 'cesium 计算新坐标'
+                }
+            },
+            {
+                id: 'computerAngle',
+                name: '计算方位角',
+                name_en: 'computerAngle',
+                author: 'a19971040448',
+                codeUrl: HOST + 'cesiumExamples/tools/computerAngle.js',
+                image: HOST + 'cesiumExamples/tools/computerAngle.jpg',
+                meta: {
+                    title: '计算方位角',
+                    keywords: 'cesium.js,计算方位角',
+                    description: 'cesium 计算方位角'
+                }
             }
         ],
     }

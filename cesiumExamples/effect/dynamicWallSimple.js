@@ -24,12 +24,12 @@ viewer.scene.globe.depthTestAgainstTerrain = true
 // 隐藏Cesium Logo
 viewer._cesiumWidget._creditContainer.style.display = "none";
 // 定义围墙的经纬度坐标和高度数据
-// 格式为 [经度, 纬度, 高度]
 const positions = [
-    [115.6434, 28.76762, 1],
-    [115.6432, 28.76762, 1],
-    [115.6432, 28.76756, 1],
-    [115.6434, 28.76756, 1],
+    115.6434, 28.76762,
+    115.6432, 28.76762,
+    115.6432, 28.76756,
+    115.6434, 28.76756,
+    115.6434, 28.76762,
 ]
 
 // 设置相机视角，定位到围墙位置
@@ -45,28 +45,14 @@ viewer.camera.setView({
         roll: 0
     }
 })
-
+// 调用函数创建动态围墙
+addWalls(positions, 10)
 /**
  * 创建动态围墙效果
- * @param {Array<Array<number>>} positionLonLat - 围墙顶点的经纬度坐标数组，每个元素为[经度, 纬度, 高度]
+ * @param {Array<Array<number>>} positionLonLat - 围墙顶点的经纬度坐标数组
  * @param {number} height - 围墙的高度
  */
 function addWalls(positionLonLat, height) {
-    // 存储经纬度坐标的数组（用于转换为笛卡尔坐标）
-    const tempArr = []
-    // 存储高度值的数组
-    const tempHeights = []
-
-    // 遍历坐标数据，分离经纬度和高度信息
-    positionLonLat.forEach((coordinate) => {
-        // 提取经度和纬度，添加到坐标数组
-        tempArr.push(coordinate[0], coordinate[1])
-        // 提取高度，添加到高度数组
-        tempHeights.push(coordinate[2])
-    })
-
-    // 添加起始点坐标，闭合围墙
-    tempArr.push(positionLonLat[0][0], positionLonLat[0][1])
 
     // 自定义着色器代码，实现动态流动效果
     const mySource = `
@@ -81,16 +67,15 @@ function addWalls(positionLonLat, height) {
             return material;
         }
     `
-
     // 创建围墙几何体实例
     const wallInstance = new Cesium.GeometryInstance({
         geometry: new Cesium.WallGeometry({
             // 将经纬度坐标数组转换为笛卡尔坐标
-            positions: Cesium.Cartesian3.fromDegreesArray(tempArr),
+            positions: Cesium.Cartesian3.fromDegreesArray(positionLonLat),
             // 围墙顶部高度数组，所有顶点使用相同的最大高度值
-            maximumHeights: new Array(tempArr.length / 2).fill(Math.max(...tempHeights) + height),
+            maximumHeights: new Array(positionLonLat.length / 2).fill(height),
             // 围墙底部高度数组，所有顶点使用相同的最小高度值
-            minimumHeights: new Array(tempArr.length / 2).fill(Math.min(...tempHeights)),
+            minimumHeights: new Array(positionLonLat.length / 2).fill(0),
         }),
     })
 
@@ -128,6 +113,3 @@ function addWalls(positionLonLat, height) {
     // 将围墙添加到场景中
     viewer.scene.primitives.add(primitive)
 }
-
-// 调用函数创建动态围墙
-addWalls(positions, 10)
