@@ -596,6 +596,19 @@ export default [
                     description: '渐变色墙体'
                 }
             },
+            {
+                id: 'postProcessStage',
+                name: 'cesium后期处理',
+                name_en: 'postProcessStage',
+                author: 'a19971040448',
+                codeUrl: HOST + 'cesiumExamples/effect/postProcessStage.js',
+                image: HOST + 'cesiumExamples/effect/postProcessStage.jpg',
+                meta: {
+                    title: '后期处理',
+                    keywords: '后期处理',
+                    description: '后期处理'
+                }
+            },
         ]
     },
     {
