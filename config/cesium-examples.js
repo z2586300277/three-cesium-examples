@@ -490,6 +490,18 @@ export default [
                     description: '使用Cesium官方EntityCluster实现的点聚合功能'
                 }
             },
+            {
+                id: 'drawDivElement',
+                name: 'div元素绘制',
+                name_en: 'drawDivElement',
+                author: 'a19971040448',
+                codeUrl: HOST + 'cesiumExamples/basic/drawDivElement.js',
+                image: HOST + 'cesiumExamples/basic/drawDivElement.jpg',
+                meta: {
+                    title: 'div元素绘制',
+                    keywords: 'cesium.js,div元素绘制',
+                }
+            },
         ]
     },
     {
