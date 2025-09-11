@@ -789,6 +789,19 @@ export default [
                     description: 'cesium 键盘控制飞行'
                 }
             },
+            {
+                id: 'cssElementTrack',
+                name: 'div随轨迹运动',
+                name_en: 'cssElementTrack',
+                author: 'a19971040448',
+                codeUrl: HOST + 'cesiumExamples/application/cssElementTrack.js',
+                image: HOST + 'cesiumExamples/application/cssElementTrack.jpg',
+                meta: {
+                    title: 'div随轨迹运动',
+                    keywords: 'cesium.js,div随轨迹运动',
+                    description: 'cesium div随轨迹运动'
+                }
+            },
         ]
     },
     {
