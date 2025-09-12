@@ -1,11 +1,11 @@
 import * as Cesium from 'cesium'
 const box = document.getElementById('box')
 const viewer = new Cesium.Viewer(box, {
-    animation: true, // 启用动画器件
+    animation: false, // 启用动画器件
     baseLayerPicker: false, // 是否显示图层选择器，右上角图层选择按钮
     baseLayer: Cesium.ImageryLayer.fromProviderAsync(Cesium.ArcGisMapServerImageryProvider.fromUrl(GLOBAL_CONFIG.getLayerUrl())),
     fullscreenButton: false, // 是否显示全屏按钮，右下角全屏选择按钮
-    timeline: true, // 是否显示时间轴    
+    timeline: false, // 是否显示时间轴    
     infoBox: false, // 是否显示信息框   
 })
 // 隐藏Cesium Logo
@@ -18,7 +18,7 @@ viewer.scene.globe.depthTestAgainstTerrain = false
  */
 viewer.camera.flyTo({
     destination: Cesium.Cartesian3.fromDegrees(118, 37, 1000), // 目标位置
-    duration: 1  // 飞行时间（秒）
+    duration: 0  // 飞行时间（秒）
 })
 // ==================== 弹窗元素创建区域 ====================
 const trackInfoElement = document.createElement('div')
