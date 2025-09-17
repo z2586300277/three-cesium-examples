@@ -490,6 +490,18 @@ export default [
                     description: '使用Cesium官方EntityCluster实现的点聚合功能'
                 }
             },
+            {
+                id: 'drawDivElement',
+                name: 'div元素绘制',
+                name_en: 'drawDivElement',
+                author: 'a19971040448',
+                codeUrl: HOST + 'cesiumExamples/basic/drawDivElement.js',
+                image: HOST + 'cesiumExamples/basic/drawDivElement.jpg',
+                meta: {
+                    title: 'div元素绘制',
+                    keywords: 'cesium.js,div元素绘制',
+                }
+            },
         ]
     },
     {
@@ -539,6 +551,7 @@ export default [
                 id: 'cesiumShadertoy',
                 name: '使用Shadertoy',
                 name_en: 'Use Shadertoy',
+                author: 'Cesiumjs',
                 improver: 'z2586300277',
                 referUrl: 'https://zhuanlan.zhihu.com/p/1905523047424856981',
                 codeUrl: HOST + 'cesiumExamples/expand/cesiumShadertoy.js',
@@ -557,6 +570,7 @@ export default [
                 id: 'dynamicWall',
                 name: '动态围墙',
                 name_en: 'Dynamic Wall',
+                author: 'Cesiumjs',
                 improver: 'z2586300277',
                 referUrl: 'https://juejin.cn/post/7431590701496533030',
                 codeUrl: HOST + 'cesiumExamples/effect/dynamicWall.js',
@@ -594,6 +608,19 @@ export default [
                     title: '渐变色墙体',
                     keywords: '渐变色墙体',
                     description: '渐变色墙体'
+                }
+            },
+            {
+                id: 'postProcessStage',
+                name: 'cesium后期处理',
+                name_en: 'postProcessStage',
+                author: 'a19971040448',
+                codeUrl: HOST + 'cesiumExamples/effect/postProcessStage.js',
+                image: HOST + 'cesiumExamples/effect/postProcessStage.jpg',
+                meta: {
+                    title: '后期处理',
+                    keywords: '后期处理',
+                    description: '后期处理'
                 }
             },
         ]
@@ -671,6 +698,7 @@ export default [
                 name: '智慧城市光',
                 name_en: 'City Light',
                 tag: TEXTS['smartCity'],
+                author: 'Cesiumjs',
                 improver: 'z2586300277',
                 referUrl: 'https://blog.csdn.net/dagedezhiyin/article/details/146590778',
                 codeUrl: HOST + 'cesiumExamples/basic/smartCity.js',
@@ -762,6 +790,19 @@ export default [
                     title: '键盘控制飞行',
                     keywords: 'cesium.js,键盘控制飞行',
                     description: 'cesium 键盘控制飞行'
+                }
+            },
+            {
+                id: 'cssElementTrack',
+                name: 'div随轨迹运动',
+                name_en: 'cssElementTrack',
+                author: 'a19971040448',
+                codeUrl: HOST + 'cesiumExamples/application/cssElementTrack.js',
+                image: HOST + 'cesiumExamples/application/cssElementTrack.jpg',
+                meta: {
+                    title: 'div随轨迹运动',
+                    keywords: 'cesium.js,div随轨迹运动',
+                    description: 'cesium div随轨迹运动'
                 }
             },
         ]

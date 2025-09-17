@@ -2169,6 +2169,20 @@ export default [
                         "three-tile/plugin": "https://cdn.jsdelivr.net/npm/three-tile@0.11.6/dist/plugin/index.js"
                     }
                 }
+            },
+            {
+                id: 'd3Svg',
+                name: 'D3 svg与Three',
+                name_en: 'D3 SVG Three',
+                author: 'z2586300277',
+                referUrl: 'https://d3js.org/',
+                codeUrl: HOST + 'threeExamples/expand/d3Svg.js',
+                image: HOST + 'threeExamples/expand/d3Svg.jpg',
+                inject: {
+                    importmap: {
+                        "d3": "https://cdn.jsdelivr.net/npm/d3/+esm"
+                    }
+                }
             }
         ]
     },

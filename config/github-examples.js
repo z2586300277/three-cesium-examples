@@ -947,7 +947,15 @@ export default [
                 githubUrl: 'https://github.com/matsuoka-601/waterball',
                 image: HOST + 'threeExamples/openSource/waterBall.jpg'
             },
-
+            {   
+                id: 'sky-cloud-3d',
+                name: '天空云',
+                name_en: 'Sky Cloud',
+                author: 'AUTO',
+                githubUrl: 'https://github.com/xiaxiangfeng/sky-cloud-3d',
+                openUrl: 'https://home.annibao.top/sky-cloud-3d/threejs-sky-clouds.html',
+                image: HOST + 'threeExamples/openSource/sky-cloud-3d.jpg'                
+            },
             {
                 id: 'waterShader',
                 name: '水效果',
