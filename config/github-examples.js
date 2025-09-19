@@ -1281,6 +1281,15 @@ export default [
                 githubUrl: 'https://github.com/felixmariotto/three-mesh-ui',
                 openUrl: 'https://felixmariotto.github.io/three-mesh-ui/#border',
                 image: HOST + 'threeExamples/openSource/vrThree.jpg'
+            },
+            {   
+                id: 'mesh-modifiers',
+                name: '网格变形',
+                name_en: 'Mesh Modifiers',
+                author: 'AUTO',
+                githubUrl: 'https://github.com/drawcall/threejs-mesh-modifiers',
+                openUrl: 'https://drawcall.github.io/threejs-mesh-modifiers/',
+                image: HOST + 'threeExamples/openSource/mesh-modifiers.jpg'
             }
         ]
     },
