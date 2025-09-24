@@ -695,6 +695,15 @@ export default [
                 githubUrl: 'https://github.com/RohanVashisht1234/threejs-zombieshooter-game',
                 openUrl: 'https://www.zombiestrike.monster/',
                 image: HOST + 'threeExamples/openSource/threejsZombieshooter.jpg',
+            },
+            {
+                id: 'CrossRoad',
+                name: '过马路',
+                name_en: 'Cross Road',
+                author: 'AUTO',
+                githubUrl: 'https://github.com/hexianWeb/CrossRoad',
+                openUrl: 'https://cross-road-eight.vercel.app/',
+                image: 'https://github.com/hexianWeb/CrossRoad/raw/main/cover2.png',
             }
         ]
     },
@@ -1413,7 +1422,6 @@ export default [
 
 /* 可能在未来上线的一些链接资源记录 - 筛选
 https://threepipe.org/
-https://github.com/hexianWeb/CrossRoad
 http://jasonsturges.com/three-low-poly/
 http://idflood.github.io/ThreeNodes.js/index_optimized.html
 */
