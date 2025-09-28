@@ -17,7 +17,7 @@ const viewer = new Cesium.Viewer(box, {
     // 禁用图层选择器（右上角图层选择按钮）
     baseLayerPicker: false,
     // 设置基础影像图层为ArcGIS影像服务
-    baseLayer: Cesium.ImageryLayer.fromProviderAsync(Cesium.ArcGisMapServerImageryProvider.fromUrl('https://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer')),
+    baseLayer: Cesium.ImageryLayer.fromProviderAsync(Cesium.ArcGisMapServerImageryProvider.fromUrl('https://server.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer')),
     // 禁用全屏按钮（右下角全屏选择按钮）
     fullscreenButton: false,
     // 禁用时间轴控件

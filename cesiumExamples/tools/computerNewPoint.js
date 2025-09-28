@@ -47,7 +47,7 @@ const viewer = new Cesium.Viewer(box, {
   animation: false,              // 不显示动画控件
   baseLayerPicker: false,        // 不显示图层选择器
   baseLayer: Cesium.ImageryLayer.fromProviderAsync(
-    Cesium.ArcGisMapServerImageryProvider.fromUrl('https://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer')
+    Cesium.ArcGisMapServerImageryProvider.fromUrl('https://server.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer')
   ),                             // 设置基础影像图层
   fullscreenButton: false,       // 不显示全屏按钮
   timeline: false,               // 不显示时间线

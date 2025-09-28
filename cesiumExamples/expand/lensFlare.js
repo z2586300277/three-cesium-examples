@@ -9,7 +9,7 @@ const initViewer = async () => {
     depthTestAgainstTerrain: true,
     baseLayer: Cesium.ImageryLayer.fromProviderAsync(
       Cesium.ArcGisMapServerImageryProvider.fromUrl(
-        "https://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer"
+        "https://server.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer"
       )
     ),
     dynamicAtmosphereLightingFromSun: false,

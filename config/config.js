@@ -16,7 +16,8 @@ window.FILE_HOST = FILE_HOST // 文件资源服务器地址, 注入到iframe内�
 /* 全局注入iframe不影响代码 => GLOBAL_CONFIG.ElMessage 消息提示;  可任意增加方法返回 boolean number string 的值 */
 window.GLOBAL_CONFIG = {
 
-    getLayerUrl: () => "https://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer", // cesium 图层源
+    //cesium 图层源 https://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer 
+    getLayerUrl: () => "https://server.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer",
 
     getFileUrl: (url) => FILE_HOST + url, // 例 threeExamples/shader/chinaFlag.js 文件中的图片资源引用
 

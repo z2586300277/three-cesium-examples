@@ -4,7 +4,7 @@ const viewer = new Cesium.Viewer(document.getElementById('box'), {
     animation: false,
     baseLayerPicker: false,
     baseLayer: Cesium.ImageryLayer.fromProviderAsync(
-        Cesium.ArcGisMapServerImageryProvider.fromUrl('https://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer')
+        Cesium.ArcGisMapServerImageryProvider.fromUrl('https://server.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer')
     ),
     fullscreenButton: false,
     timeline: false,
