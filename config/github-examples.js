@@ -704,6 +704,15 @@ export default [
                 githubUrl: 'https://github.com/hexianWeb/CrossRoad',
                 openUrl: 'https://cross-road-eight.vercel.app/',
                 image: 'https://github.com/hexianWeb/CrossRoad/raw/main/cover2.png',
+            },
+            {
+                id: 'cubeCity',
+                name: '方块城市',
+                name_en: 'Cube City',
+                author: 'AUTO',
+                openUrl: 'https://cube-city.vercel.app/',
+                githubUrl: 'https://github.com/hexianWeb/CubeCity',
+                image: 'https://raw.githubusercontent.com/hexianWeb/CubeCity/refs/heads/big-simcity/README/游玩时动图.gif',
             }
         ]
     },
