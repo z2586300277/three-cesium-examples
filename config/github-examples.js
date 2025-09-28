@@ -695,6 +695,24 @@ export default [
                 githubUrl: 'https://github.com/RohanVashisht1234/threejs-zombieshooter-game',
                 openUrl: 'https://www.zombiestrike.monster/',
                 image: HOST + 'threeExamples/openSource/threejsZombieshooter.jpg',
+            },
+            {
+                id: 'CrossRoad',
+                name: '过马路',
+                name_en: 'Cross Road',
+                author: 'AUTO',
+                githubUrl: 'https://github.com/hexianWeb/CrossRoad',
+                openUrl: 'https://cross-road-eight.vercel.app/',
+                image: 'https://github.com/hexianWeb/CrossRoad/raw/main/cover2.png',
+            },
+            {
+                id: 'cubeCity',
+                name: '方块城市',
+                name_en: 'Cube City',
+                author: 'AUTO',
+                openUrl: 'https://cube-city.vercel.app/',
+                githubUrl: 'https://github.com/hexianWeb/CubeCity',
+                image: 'https://raw.githubusercontent.com/hexianWeb/CubeCity/refs/heads/big-simcity/README/游玩时动图.gif',
             }
         ]
     },
@@ -1281,6 +1299,15 @@ export default [
                 githubUrl: 'https://github.com/felixmariotto/three-mesh-ui',
                 openUrl: 'https://felixmariotto.github.io/three-mesh-ui/#border',
                 image: HOST + 'threeExamples/openSource/vrThree.jpg'
+            },
+            {   
+                id: 'mesh-modifiers',
+                name: '网格变形',
+                name_en: 'Mesh Modifiers',
+                author: 'AUTO',
+                githubUrl: 'https://github.com/drawcall/threejs-mesh-modifiers',
+                openUrl: 'https://drawcall.github.io/threejs-mesh-modifiers/',
+                image: HOST + 'threeExamples/openSource/mesh-modifiers.jpg'
             }
         ]
     },
@@ -1404,7 +1431,6 @@ export default [
 
 /* 可能在未来上线的一些链接资源记录 - 筛选
 https://threepipe.org/
-https://github.com/hexianWeb/CrossRoad
 http://jasonsturges.com/three-low-poly/
 http://idflood.github.io/ThreeNodes.js/index_optimized.html
 */
