@@ -522,6 +522,6 @@ export default [
         id: 'TomCrum-wdm', 
         name: 'TomCrum-wdm',       
         github: 'https://github.com/TomCrum-wdm',       
-        icon: 'https://avatars.githubusercontent.com/u/TomCrum-wdm?v=4'   
+        icon: 'https://avatars.githubusercontent.com/u/232365789?v=4'   
     },
 ]
