@@ -611,6 +611,14 @@ export default [
                 }
             },
             {
+                id: 'waterMaterial',
+                name: '水波材质',
+                name_en: 'Water Material',
+                author: 'z2586300277',
+                codeUrl: HOST + 'cesiumExamples/expand/waterMaterial.js',
+                image: HOST + 'cesiumExamples/expand/waterMaterial.jpg',
+            },
+            {
                 id: 'postProcessStage',
                 name: 'cesium后期处理',
                 name_en: 'postProcessStage',

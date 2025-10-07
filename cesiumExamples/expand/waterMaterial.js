@@ -19,7 +19,7 @@ const viewer = new Cesium.Viewer(box, {
 })
 
 // 添加水波纹效果
-const positions = [-109.080842, 45.002073, -105.91517, 45.002073, -104.058488, 44.996596, -104.053011, 43.069758, -107.314,43.069758, -109.080842, 45.002073]; // 示例坐标数组
+const positions = [-109.080842, 45.002073, -105.91517, 45.002073 , -104.058488, 46.996596]; // 示例坐标数组
 const index = 1; // 示例索引
 
 const primitives = new Cesium.Primitive({
@@ -52,11 +52,11 @@ viewer.scene.primitives.add(primitives);
 
 // 定位到水波纹位置
 viewer.camera.flyTo({
-    destination: Cesium.Cartesian3.fromDegrees(-106.0, 44.5, 100000), // 设置相机位置
+    destination: Cesium.Cartesian3.fromDegrees(-106.0, 44.5, 120000), // 提升高度可以看清水面效果
     orientation: {
-        heading: Cesium.Math.toRadians(0), // 水平旋转角度
-        pitch: Cesium.Math.toRadians(-90), // 垂直旋转角度
-        roll: 0 // 侧翻角度
+        heading: Cesium.Math.toRadians(0),
+        pitch: Cesium.Math.toRadians(-45), // 斜视角度更容易看出波纹
+        roll: 0
     },
-    duration: 1 // 飞行持续时间，单位为秒
+    duration: 1
 });
