@@ -517,6 +517,11 @@ export default [
         name: 'brunosimon',
         github: 'https://github.com/brunosimon',
         icon: 'https://avatars.githubusercontent.com/u/5439991?v=4'
-    }
-
+    },
+    { 
+        id: 'TomCrum-wdm', 
+        name: 'TomCrum-wdm',       
+        github: 'https://github.com/TomCrum-wdm',       
+        icon: 'https://avatars.githubusercontent.com/u/232365789?v=4'   
+    },
 ]

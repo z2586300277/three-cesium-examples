@@ -18,7 +18,7 @@ const viewer = new Cesium.Viewer(box, {
 
 })
 
-const url = 'https://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer'
+const url = 'https://server.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer'
  
 const layer = Cesium.ImageryLayer.fromProviderAsync(
 

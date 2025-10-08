@@ -1873,6 +1873,14 @@ export default [
                 improver: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/application/gsapTimeLine.js',
                 image: HOST + 'threeExamples/application/gsapTimeLine.jpg'
+            },
+            {
+                id: 'snake3D',
+                name: '3D贪吃蛇',
+                name_en: 'Snake 3D',
+                author: 'TomCrum-wdm',
+                htmlUrl: HOST + 'threeExamples/application/snake3D.html',
+                image: HOST + 'threeExamples/application/snake3D.jpg',
             }
 
         ]
