@@ -713,6 +713,15 @@ export default [
                 openUrl: 'https://cube-city.vercel.app/',
                 githubUrl: 'https://github.com/hexianWeb/CubeCity',
                 image: 'https://raw.githubusercontent.com/hexianWeb/CubeCity/refs/heads/big-simcity/README/游玩时动图.gif',
+            },
+            {
+                id: 'room3d',
+                name: '3D房间',
+                name_en: 'Room 3D',
+                author: 'AUTO',
+                githubUrl: 'https://github.com/brunosimon/my-room-in-3d/',
+                openUrl: 'https://my-room-in-3d.vercel.app/',
+                image: HOST + 'threeExamples/openSource/room3d.jpg',
             }
         ]
     },
