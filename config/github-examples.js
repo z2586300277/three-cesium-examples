@@ -580,6 +580,15 @@ export default [
                 openUrl: 'https://gkjohnson.github.io/three-geojson/example/bundle/globe.html',
                 githubUrl: 'https://github.com/gkjohnson/three-geojson',
                 image: HOST + 'threeExamples/openSource/geoGlobe.jpg'
+            },
+            {
+                id: 'flightsTracker',
+                name: '航班追踪',
+                name_en: 'Flights Tracker',
+                author: 'AUTO',
+                openUrl: 'https://jeantimex.github.io/flights-tracker/',
+                githubUrl: 'https://github.com/jeantimex/flights-tracker',
+                image: HOST + 'threeExamples/openSource/flightsTracker.jpg'
             }
         ]
 
