@@ -983,14 +983,14 @@ export default [
                 githubUrl: 'https://github.com/matsuoka-601/waterball',
                 image: HOST + 'threeExamples/openSource/waterBall.jpg'
             },
-            {   
+            {
                 id: 'sky-cloud-3d',
                 name: '天空云',
                 name_en: 'Sky Cloud',
                 author: 'AUTO',
                 githubUrl: 'https://github.com/xiaxiangfeng/sky-cloud-3d',
                 openUrl: 'https://home.annibao.top/sky-cloud-3d/threejs-sky-clouds.html',
-                image: HOST + 'threeExamples/openSource/sky-cloud-3d.jpg'                
+                image: HOST + 'threeExamples/openSource/sky-cloud-3d.jpg'
             },
             {
                 id: 'waterShader',
@@ -1065,6 +1065,15 @@ export default [
                 githubUrl: 'https://github.com/IceCreamYou/THREE.Terrain',
                 openUrl: 'https://icecreamyou.github.io/THREE.Terrain/',
                 image: HOST + 'threeExamples/openSource/Terrain.jpg'
+            },
+            {
+                id: 'FluffyGrass',
+                name: '草地',
+                name_en: 'Fluffy Grass',
+                author: 'AUTO',
+                githubUrl: 'https://github.com/thebenezer/FluffyGrass',
+                openUrl: 'https://fluffygrass.vercel.app/',
+                image: HOST + 'threeExamples/openSource/FluffyGrass.jpg'
             },
             {
                 id: 'roomDesigner',
@@ -1318,7 +1327,7 @@ export default [
                 openUrl: 'https://felixmariotto.github.io/three-mesh-ui/#border',
                 image: HOST + 'threeExamples/openSource/vrThree.jpg'
             },
-            {   
+            {
                 id: 'mesh-modifiers',
                 name: '网格变形',
                 name_en: 'Mesh Modifiers',
