@@ -1881,6 +1881,15 @@ export default [
                 author: 'TomCrum-wdm',
                 htmlUrl: HOST + 'threeExamples/application/snake3D.html',
                 image: HOST + 'threeExamples/application/snake3D.jpg',
+            },
+            {
+                id: 'modelBorder',
+                name: '模型边框',
+                name_en: 'Model Border',
+                author: 'z2586300277',
+                referUrl: 'https://codepen.io/boytchev/pen/YPXJgLd',
+                codeUrl: HOST + 'threeExamples/application/modelBorder.js',
+                image: HOST + 'threeExamples/application/modelBorder.jpg'
             }
 
         ]

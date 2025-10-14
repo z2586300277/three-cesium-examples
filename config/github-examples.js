@@ -580,6 +580,15 @@ export default [
                 openUrl: 'https://gkjohnson.github.io/three-geojson/example/bundle/globe.html',
                 githubUrl: 'https://github.com/gkjohnson/three-geojson',
                 image: HOST + 'threeExamples/openSource/geoGlobe.jpg'
+            },
+            {
+                id: 'flightsTracker',
+                name: '航班追踪',
+                name_en: 'Flights Tracker',
+                author: 'AUTO',
+                openUrl: 'https://jeantimex.github.io/flights-tracker/',
+                githubUrl: 'https://github.com/jeantimex/flights-tracker',
+                image: HOST + 'threeExamples/openSource/flightsTracker.jpg'
             }
         ]
 
@@ -713,6 +722,15 @@ export default [
                 openUrl: 'https://cube-city.vercel.app/',
                 githubUrl: 'https://github.com/hexianWeb/CubeCity',
                 image: 'https://raw.githubusercontent.com/hexianWeb/CubeCity/refs/heads/big-simcity/README/游玩时动图.gif',
+            },
+            {
+                id: 'room3d',
+                name: '3D房间',
+                name_en: 'Room 3D',
+                author: 'AUTO',
+                githubUrl: 'https://github.com/brunosimon/my-room-in-3d/',
+                openUrl: 'https://my-room-in-3d.vercel.app/',
+                image: HOST + 'threeExamples/openSource/room3d.jpg',
             }
         ]
     },
@@ -965,14 +983,14 @@ export default [
                 githubUrl: 'https://github.com/matsuoka-601/waterball',
                 image: HOST + 'threeExamples/openSource/waterBall.jpg'
             },
-            {   
+            {
                 id: 'sky-cloud-3d',
                 name: '天空云',
                 name_en: 'Sky Cloud',
                 author: 'AUTO',
                 githubUrl: 'https://github.com/xiaxiangfeng/sky-cloud-3d',
                 openUrl: 'https://home.annibao.top/sky-cloud-3d/threejs-sky-clouds.html',
-                image: HOST + 'threeExamples/openSource/sky-cloud-3d.jpg'                
+                image: HOST + 'threeExamples/openSource/sky-cloud-3d.jpg'
             },
             {
                 id: 'waterShader',
@@ -1047,6 +1065,15 @@ export default [
                 githubUrl: 'https://github.com/IceCreamYou/THREE.Terrain',
                 openUrl: 'https://icecreamyou.github.io/THREE.Terrain/',
                 image: HOST + 'threeExamples/openSource/Terrain.jpg'
+            },
+            {
+                id: 'FluffyGrass',
+                name: '草地',
+                name_en: 'Fluffy Grass',
+                author: 'AUTO',
+                githubUrl: 'https://github.com/thebenezer/FluffyGrass',
+                openUrl: 'https://fluffygrass.vercel.app/',
+                image: HOST + 'threeExamples/openSource/FluffyGrass.jpg'
             },
             {
                 id: 'roomDesigner',
@@ -1300,7 +1327,7 @@ export default [
                 openUrl: 'https://felixmariotto.github.io/three-mesh-ui/#border',
                 image: HOST + 'threeExamples/openSource/vrThree.jpg'
             },
-            {   
+            {
                 id: 'mesh-modifiers',
                 name: '网格变形',
                 name_en: 'Mesh Modifiers',
