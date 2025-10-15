@@ -1335,6 +1335,15 @@ export default [
                 githubUrl: 'https://github.com/drawcall/threejs-mesh-modifiers',
                 openUrl: 'https://drawcall.github.io/threejs-mesh-modifiers/',
                 image: HOST + 'threeExamples/openSource/mesh-modifiers.jpg'
+            },
+            {
+                id: 'three-raymarcher',
+                name: '光线行进',
+                name_en: 'Ray Marcher',
+                author: 'AUTO',
+                githubUrl: 'https://github.com/danielesteban/three-raymarcher',
+                openUrl: 'https://danielesteban.github.io/three-raymarcher/animation.html',
+                image: HOST + 'threeExamples/openSource/three-raymarcher.jpg'
             }
         ]
     },
