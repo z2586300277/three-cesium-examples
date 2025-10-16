@@ -52,7 +52,7 @@ export default [
                 name: 'Tres官方案例',
                 tag: 'Vue',
                 name_en: 'Tres',
-                openUrl: 'https://lab.tresjs.org/',
+                openUrl: 'https://tresjs.org/showcase',
                 githubUrl: 'https://github.com/Tresjs',
                 image: HOST + 'threeExamples/openSource/tres.jpg'
             }
