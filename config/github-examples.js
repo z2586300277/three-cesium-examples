@@ -1075,6 +1075,15 @@ export default [
                 openUrl: 'https://fluffygrass.vercel.app/',
                 image: HOST + 'threeExamples/openSource/FluffyGrass.jpg'
             },
+            {   
+                id: 'X-Ray-Visualizer-Threejs',
+                name: 'X光视觉',
+                name_en: 'X-Ray Visualizer',
+                author: 'AUTO',
+                openUrl: 'https://x-ray-visualizer-threejs-yh19.vercel.app/',
+                githubUrl: 'https://github.com/J0SUKE/X-Ray-Visualizer-Threejs',
+                image: HOST + 'threeExamples/openSource/X-Ray-Visualizer-Threejs.jpg'
+            },
             {
                 id: 'roomDesigner',
                 name: '3D房间设计器',
