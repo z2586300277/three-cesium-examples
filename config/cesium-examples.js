@@ -952,7 +952,20 @@ export default [
                     keywords: 'cesium.js,计算方位角',
                     description: 'cesium 计算方位角'
                 }
-            }
+            },
+            {
+                id: 'Draw and export geojson',
+                name: '绘制图形并导出geojson',
+                name_en: 'Draw and export geojson',
+                author: 'a19971040448',
+                codeUrl: HOST + 'cesiumExamples/tools/DrawAndExportGeojson.js',
+                image: HOST + 'cesiumExamples/tools/DrawAndExportGeojson.jpg',
+                meta: {
+                    title: '绘制图形并导出geojson',
+                    keywords: 'cesium.js,绘制图形并导出geojson',
+                    description: 'cesium 绘制图形并导出geojson'
+                }
+            },
         ],
     }
 ]
