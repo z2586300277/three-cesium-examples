@@ -1075,7 +1075,7 @@ export default [
                 openUrl: 'https://fluffygrass.vercel.app/',
                 image: HOST + 'threeExamples/openSource/FluffyGrass.jpg'
             },
-            {   
+            {
                 id: 'X-Ray-Visualizer-Threejs',
                 name: 'X光视觉',
                 name_en: 'X-Ray Visualizer',
@@ -1083,6 +1083,15 @@ export default [
                 openUrl: 'https://x-ray-visualizer-threejs-yh19.vercel.app/',
                 githubUrl: 'https://github.com/J0SUKE/X-Ray-Visualizer-Threejs',
                 image: HOST + 'threeExamples/openSource/X-Ray-Visualizer-Threejs.jpg'
+            },
+            {
+                id: 'interactive-shield',
+                name: '交互式护盾',
+                name_en: 'Interactive Shield',
+                author: 'AUTO',
+                githubUrl: 'https://github.com/bhushan6/interactive-shield',
+                openUrl: 'https://interactive-shield.vercel.app/',
+                image: HOST + 'threeExamples/openSource/interactive-shield.jpg'
             },
             {
                 id: 'roomDesigner',
