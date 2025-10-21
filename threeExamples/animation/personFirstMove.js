@@ -140,12 +140,262 @@ const directionalLight = new THREE.DirectionalLight(0xffffff, 0.8);
 directionalLight.position.set(5, 10, 5);
 scene.add(directionalLight);
 
-// 天空盒和网格
-scene.background = new THREE.CubeTextureLoader().load(
-  [0, 1, 2, 3, 4, 5].map(k => FILE_HOST + 'files/sky/skyBox0/' + (k + 1) + '.png')
-);
+// 移除天空盒，添加体积云和太阳效果
+// 添加网格和环境光
 scene.add(new THREE.GridHelper(100, 40));
-scene.add(new THREE.AmbientLight(0xffffff, 0.5))
+scene.add(new THREE.AmbientLight(0xffffff, 0.5));
+
+// 创建体积云着色器
+const createVolumetricClouds = () => {
+  const cloudVertexShader = `
+    varying vec3 vWorldPosition;
+    varying vec3 vNormal;
+    
+    void main() {
+      vec4 worldPosition = modelMatrix * vec4(position, 1.0);
+      vWorldPosition = worldPosition.xyz;
+      vNormal = normalize(normalMatrix * normal);
+      gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0);
+    }
+  `;
+  
+  const cloudFragmentShader = `
+    uniform float time;
+    uniform vec3 cloudColor;
+    uniform vec3 skyColor;
+    
+    varying vec3 vWorldPosition;
+    varying vec3 vNormal;
+    
+    // 3D噪声函数
+    vec3 mod289(vec3 x) { return x - floor(x * (1.0 / 289.0)) * 289.0; }
+    vec4 mod289(vec4 x) { return x - floor(x * (1.0 / 289.0)) * 289.0; }
+    vec4 permute(vec4 x) { return mod289(((x*34.0)+1.0)*x); }
+    vec4 taylorInvSqrt(vec4 r) { return 1.79284291400159 - 0.85373472095314 * r; }
+    
+    float snoise(vec3 v) {
+      const vec2 C = vec2(1.0/6.0, 1.0/3.0);
+      const vec4 D = vec4(0.0, 0.5, 1.0, 2.0);
+      
+      vec3 i  = floor(v + dot(v, C.yyy));
+      vec3 x0 = v - i + dot(i, C.xxx);
+      
+      vec3 g = step(x0.yzx, x0.xyz);
+      vec3 l = 1.0 - g;
+      vec3 i1 = min(g.xyz, l.zxy);
+      vec3 i2 = max(g.xyz, l.zxy);
+      
+      vec3 x1 = x0 - i1 + C.xxx;
+      vec3 x2 = x0 - i2 + C.yyy;
+      vec3 x3 = x0 - D.yyy;
+      
+      i = mod289(i);
+      vec4 p = permute(permute(permute(
+                i.z + vec4(0.0, i1.z, i2.z, 1.0))
+              + i.y + vec4(0.0, i1.y, i2.y, 1.0))
+              + i.x + vec4(0.0, i1.x, i2.x, 1.0));
+      
+      float n_ = 0.142857142857;
+      vec3 ns = n_ * D.wyz - D.xzx;
+      
+      vec4 j = p - 49.0 * floor(p * ns.z * ns.z);
+      
+      vec4 x_ = floor(j * ns.z);
+      vec4 y_ = floor(j - 7.0 * x_);
+      
+      vec4 x = x_ *ns.x + ns.yyyy;
+      vec4 y = y_ *ns.x + ns.yyyy;
+      vec4 h = 1.0 - abs(x) - abs(y);
+      
+      vec4 b0 = vec4(x.xy, y.xy);
+      vec4 b1 = vec4(x.zw, y.zw);
+      
+      vec4 s0 = floor(b0)*2.0 + 1.0;
+      vec4 s1 = floor(b1)*2.0 + 1.0;
+      vec4 sh = -step(h, vec4(0.0));
+      
+      vec4 a0 = b0.xzyw + s0.xzyw*sh.xxyy;
+      vec4 a1 = b1.xzyw + s1.xzyw*sh.zzww;
+      
+      vec3 p0 = vec3(a0.xy, h.x);
+      vec3 p1 = vec3(a0.zw, h.y);
+      vec3 p2 = vec3(a1.xy, h.z);
+      vec3 p3 = vec3(a1.zw, h.w);
+      
+      vec4 norm = taylorInvSqrt(vec4(dot(p0,p0), dot(p1,p1), dot(p2,p2), dot(p3,p3)));
+      p0 *= norm.x;
+      p1 *= norm.y;
+      p2 *= norm.z;
+      p3 *= norm.w;
+      
+      vec4 m = max(0.6 - vec4(dot(x0,x0), dot(x1,x1), dot(x2,x2), dot(x3,x3)), 0.0);
+      m = m * m;
+      return 42.0 * dot(m*m, vec4(dot(p0,x0), dot(p1,x1), dot(p2,x2), dot(p3,x3)));
+    }
+    
+    // 分形布朗运动 - 创建多层噪声
+    float fbm(vec3 p) {
+      float value = 0.0;
+      float amplitude = 0.5;
+      float frequency = 1.0;
+      
+      for(int i = 0; i < 5; i++) {
+        value += amplitude * snoise(p * frequency);
+        frequency *= 2.0;
+        amplitude *= 0.5;
+      }
+      
+      return value;
+    }
+    
+    void main() {
+      // 使用时间创建运动效果
+      vec3 pos = vWorldPosition * 0.001;
+      pos.x += time * 0.01;
+      pos.z += time * 0.005;
+      
+      // 创建多层云效果
+      float noise1 = fbm(pos * 2.0);
+      float noise2 = fbm(pos * 4.0 + vec3(time * 0.02));
+      float cloudDensity = noise1 * 0.7 + noise2 * 0.3;
+      
+      // 创建云层形状
+      cloudDensity = smoothstep(0.2, 0.6, cloudDensity);
+      
+      // 根据高度调整云密度
+      float heightFactor = smoothstep(-0.3, 0.5, normalize(vWorldPosition).y);
+      cloudDensity *= heightFactor;
+      
+      // 混合云和天空颜色
+      vec3 color = mix(skyColor, cloudColor, cloudDensity);
+      
+      // 添加一些变化
+      float brightness = 1.0 + noise2 * 0.2;
+      color *= brightness;
+      
+      gl_FragColor = vec4(color, 1.0);
+    }
+  `;
+  
+  const cloudUniforms = {
+    time: { value: 0 },
+    cloudColor: { value: new THREE.Color(0xffffff) },
+    skyColor: { value: new THREE.Color(0x87ceeb) }
+  };
+  
+  const cloudGeometry = new THREE.SphereGeometry(500, 64, 64);
+  const cloudMaterial = new THREE.ShaderMaterial({
+    uniforms: cloudUniforms,
+    vertexShader: cloudVertexShader,
+    fragmentShader: cloudFragmentShader,
+    side: THREE.BackSide,
+    depthWrite: false
+  });
+  
+  return new THREE.Mesh(cloudGeometry, cloudMaterial);
+};
+
+// 创建太阳着色器
+const createSun = () => {
+  const sunVertexShader = `
+    varying vec2 vUv;
+    varying vec3 vPosition;
+    
+    void main() {
+      vUv = uv;
+      vPosition = position;
+      gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0);
+    }
+  `;
+  
+  const sunFragmentShader = `
+    uniform float time;
+    uniform vec3 sunColor;
+    uniform vec3 coronaColor;
+    
+    varying vec2 vUv;
+    varying vec3 vPosition;
+    
+    // 简单的噪声函数
+    float hash(vec2 p) {
+      return fract(sin(dot(p, vec2(127.1, 311.7))) * 43758.5453);
+    }
+    
+    float noise(vec2 p) {
+      vec2 i = floor(p);
+      vec2 f = fract(p);
+      f = f * f * (3.0 - 2.0 * f);
+      
+      float a = hash(i);
+      float b = hash(i + vec2(1.0, 0.0));
+      float c = hash(i + vec2(0.0, 1.0));
+      float d = hash(i + vec2(1.0, 1.0));
+      
+      return mix(mix(a, b, f.x), mix(c, d, f.x), f.y);
+    }
+    
+    void main() {
+      vec2 uv = vUv - 0.5;
+      float dist = length(uv);
+      
+      // 太阳主体
+      float sun = smoothstep(0.5, 0.45, dist);
+      
+      // 添加动态光晕效果
+      float corona = smoothstep(0.6, 0.3, dist);
+      float coronaNoise = noise(vUv * 10.0 + time * 0.5);
+      corona *= 0.5 + coronaNoise * 0.5;
+      
+      // 添加太阳表面纹理
+      float surface = noise(vUv * 20.0 + time * 0.3);
+      surface *= noise(vUv * 15.0 - time * 0.2);
+      
+      // 组合效果
+      vec3 finalColor = sunColor * sun;
+      finalColor += coronaColor * corona * 0.5;
+      finalColor += sunColor * surface * sun * 0.3;
+      
+      // 发光效果
+      float glow = smoothstep(0.7, 0.0, dist);
+      finalColor += coronaColor * glow * 0.3;
+      
+      float alpha = sun + corona * 0.5 + glow * 0.2;
+      
+      gl_FragColor = vec4(finalColor, alpha);
+    }
+  `;
+  
+  const sunUniforms = {
+    time: { value: 0 },
+    sunColor: { value: new THREE.Color(0xffdd44) },
+    coronaColor: { value: new THREE.Color(0xffaa00) }
+  };
+  
+  const sunGeometry = new THREE.PlaneGeometry(80, 80);
+  const sunMaterial = new THREE.ShaderMaterial({
+    uniforms: sunUniforms,
+    vertexShader: sunVertexShader,
+    fragmentShader: sunFragmentShader,
+    transparent: true,
+    blending: THREE.AdditiveBlending,
+    depthWrite: false
+  });
+  
+  const sun = new THREE.Mesh(sunGeometry, sunMaterial);
+  sun.position.set(200, 150, -300);
+  sun.lookAt(0, 0, 0);
+  
+  return sun;
+};
+
+// 添加体积云和太阳到场景
+const volumetricClouds = createVolumetricClouds();
+const sun = createSun();
+scene.add(volumetricClouds);
+scene.add(sun);
+
+// 存储引用以便动画更新
+const cloudSystem = { clouds: volumetricClouds, sun: sun };
 
 // 游戏状态
 const state = {
@@ -416,9 +666,20 @@ function update() {
 }
 
 // 动画循环
+const clock = new THREE.Clock();
 function animate() {
   requestAnimationFrame(animate);
   update();
+  
+  // 更新云和太阳的时间uniform以创建运动效果
+  const elapsedTime = clock.getElapsedTime();
+  if (cloudSystem.clouds.material.uniforms) {
+    cloudSystem.clouds.material.uniforms.time.value = elapsedTime;
+  }
+  if (cloudSystem.sun.material.uniforms) {
+    cloudSystem.sun.material.uniforms.time.value = elapsedTime;
+  }
+  
   renderer.render(scene, camera);
 }
 animate();
