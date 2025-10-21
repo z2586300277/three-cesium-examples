@@ -16,6 +16,8 @@ document.body.appendChild(renderer.domElement);
 
 // 加载模型 fbx
 let cityModel;
+const collidableObjects = []; // 存储所有可碰撞对象
+
 new FBXLoader().load(HOST + '/files/model/city.FBX', (object3d) => {
     object3d.scale.multiplyScalar(0.01)
     object3d.position.set(0, -1, 0)
@@ -26,9 +28,109 @@ new FBXLoader().load(HOST + '/files/model/city.FBX', (object3d) => {
     object3d.traverse((child) => {
         if (child.isMesh) {
             child.geometry.computeBoundsTree();
+            collidableObjects.push(child);
         }
     });
 })
+
+// 添加装饰模型用于美化场景和测试碰撞
+// 添加汽车模型
+new GLTFLoader().load(FILE_HOST + 'files/model/car.glb', (gltf) => {
+    const car = gltf.scene;
+    car.scale.multiplyScalar(2);
+    car.position.set(10, 0, 5);
+    car.rotation.y = Math.PI / 4;
+    scene.add(car);
+    
+    // 为汽车添加碰撞检测
+    car.traverse((child) => {
+        if (child.isMesh) {
+            child.geometry.computeBoundsTree();
+            collidableObjects.push(child);
+        }
+    });
+});
+
+// 添加飞机模型
+new GLTFLoader().load(FILE_HOST + 'files/model/Cesium_Air.glb', (gltf) => {
+    const plane = gltf.scene;
+    plane.scale.multiplyScalar(3);
+    plane.position.set(-15, 0, -10);
+    plane.rotation.y = -Math.PI / 6;
+    scene.add(plane);
+    
+    // 为飞机添加碰撞检测
+    plane.traverse((child) => {
+        if (child.isMesh) {
+            child.geometry.computeBoundsTree();
+            collidableObjects.push(child);
+        }
+    });
+});
+
+// 添加船模型
+new GLTFLoader().load(FILE_HOST + 'files/model/ship_2.glb', (gltf) => {
+    const ship = gltf.scene;
+    ship.scale.multiplyScalar(2);
+    ship.position.set(5, 0, -15);
+    ship.rotation.y = Math.PI / 2;
+    scene.add(ship);
+    
+    // 为船添加碰撞检测
+    ship.traverse((child) => {
+        if (child.isMesh) {
+            child.geometry.computeBoundsTree();
+            collidableObjects.push(child);
+        }
+    });
+});
+
+// 添加优雅模型
+new GLTFLoader().load(FILE_HOST + 'files/model/elegant.glb', (gltf) => {
+    const elegant = gltf.scene;
+    elegant.scale.multiplyScalar(2);
+    elegant.position.set(-8, 0, 10);
+    elegant.rotation.y = -Math.PI / 3;
+    scene.add(elegant);
+    
+    // 为模型添加碰撞检测
+    elegant.traverse((child) => {
+        if (child.isMesh) {
+            child.geometry.computeBoundsTree();
+            collidableObjects.push(child);
+        }
+    });
+});
+
+// 添加一些简单的几何体作为障碍物测试碰撞
+// 立方体障碍物
+const cubeGeometry = new THREE.BoxGeometry(2, 2, 2);
+const cubeMaterial = new THREE.MeshStandardMaterial({ color: 0x00ff00 });
+const cube1 = new THREE.Mesh(cubeGeometry, cubeMaterial);
+cube1.position.set(0, 1, 10);
+cube1.geometry.computeBoundsTree();
+scene.add(cube1);
+collidableObjects.push(cube1);
+
+const cube2 = new THREE.Mesh(cubeGeometry, cubeMaterial);
+cube2.position.set(-10, 1, 0);
+cube2.geometry.computeBoundsTree();
+scene.add(cube2);
+collidableObjects.push(cube2);
+
+// 圆柱体障碍物
+const cylinderGeometry = new THREE.CylinderGeometry(1, 1, 3, 16);
+const cylinderMaterial = new THREE.MeshStandardMaterial({ color: 0xff0000 });
+const cylinder = new THREE.Mesh(cylinderGeometry, cylinderMaterial);
+cylinder.position.set(15, 1.5, -5);
+cylinder.geometry.computeBoundsTree();
+scene.add(cylinder);
+collidableObjects.push(cylinder);
+
+// 添加方向光以更好地显示模型
+const directionalLight = new THREE.DirectionalLight(0xffffff, 0.8);
+directionalLight.position.set(5, 10, 5);
+scene.add(directionalLight);
 
 // 天空盒和网格
 scene.background = new THREE.CubeTextureLoader().load(
@@ -128,9 +230,9 @@ document.addEventListener('keyup', ({ key }) => {
   if (k in state.keys) state.keys[k] = false;
 });
 
-// 碰撞检测函数
+// 改进的碰撞检测函数
 function checkCollision(position, velocity) {
-  if (!cityModel) return { collided: false, correction: new THREE.Vector3() };
+  if (collidableObjects.length === 0) return { collided: false, correction: new THREE.Vector3() };
   
   const correction = new THREE.Vector3();
   const radius = state.physics.collisionRadius;
@@ -143,21 +245,16 @@ function checkCollision(position, velocity) {
     new THREE.Vector3(0, height * 0.8, 0)    // 上部
   ];
   
-  // 8个方向进行射线检测
-  const directions = [
-    new THREE.Vector3(1, 0, 0),
-    new THREE.Vector3(-1, 0, 0),
-    new THREE.Vector3(0, 0, 1),
-    new THREE.Vector3(0, 0, -1),
-    new THREE.Vector3(0.707, 0, 0.707),
-    new THREE.Vector3(-0.707, 0, 0.707),
-    new THREE.Vector3(0.707, 0, -0.707),
-    new THREE.Vector3(-0.707, 0, -0.707)
-  ];
+  // 16个方向进行射线检测，提高碰撞检测精度
+  const directions = [];
+  for (let i = 0; i < 16; i++) {
+    const angle = (i / 16) * Math.PI * 2;
+    directions.push(new THREE.Vector3(Math.cos(angle), 0, Math.sin(angle)));
+  }
   
   const raycaster = new THREE.Raycaster();
   raycaster.near = 0;
-  raycaster.far = radius;
+  raycaster.far = radius * 1.2; // 稍微增加检测范围
   
   let collisionDetected = false;
   
@@ -168,41 +265,30 @@ function checkCollision(position, velocity) {
     directions.forEach(dir => {
       raycaster.set(checkPos, dir);
       
-      const intersects = [];
-      cityModel.traverse((child) => {
-        if (child.isMesh && child.geometry.boundsTree) {
-          const results = raycaster.intersectObject(child, false);
-          intersects.push(...results);
-        }
-      });
+      // 检测所有可碰撞对象
+      const intersects = raycaster.intersectObjects(collidableObjects, false);
       
       if (intersects.length > 0) {
         const hit = intersects[0];
         if (hit.distance < radius) {
           collisionDetected = true;
-          // 计算推出向量，使用距离的平方来增加靠近时的推力
+          // 计算推出向量，平滑处理
           const pushDistance = radius - hit.distance;
-          const pushForce = pushDistance / radius; // 0-1之间
-          correction.add(dir.clone().multiplyScalar(-pushForce * 0.1));
+          const pushForce = Math.pow(pushDistance / radius, 2); // 使用平方使推力更平滑
+          correction.add(dir.clone().multiplyScalar(-pushForce * 0.15));
         }
       }
     });
   });
   
-  // 地面检测
+  // 地面检测 - 改进以支持多个对象
   raycaster.set(
     position.clone().add(new THREE.Vector3(0, 0.5, 0)),
     new THREE.Vector3(0, -1, 0)
   );
-  raycaster.far = 1.0;
+  raycaster.far = 1.5;
   
-  const groundIntersects = [];
-  cityModel.traverse((child) => {
-    if (child.isMesh && child.geometry.boundsTree) {
-      const results = raycaster.intersectObject(child, false);
-      groundIntersects.push(...results);
-    }
-  });
+  const groundIntersects = raycaster.intersectObjects(collidableObjects, false);
   
   if (groundIntersects.length > 0) {
     const groundHit = groundIntersects[0];
@@ -251,24 +337,51 @@ function update() {
   const oldPosition = character.position.clone();
   
   // 尝试应用水平移动
-  character.position.x += dx;
-  character.position.z += dz;
+  const newPosX = character.position.x + dx;
+  const newPosZ = character.position.z + dz;
+  
+  // 先尝试完整移动
+  character.position.x = newPosX;
+  character.position.z = newPosZ;
   
   // 检测碰撞
   const collision = checkCollision(character.position, state.physics.velocity);
   
   if (collision.collided) {
-    // 应用碰撞修正，使用阻尼防止抖动
-    collision.correction.multiplyScalar(state.physics.collisionDamping);
-    character.position.add(collision.correction);
+    // 应用碰撞修正
+    const correctionLength = collision.correction.length();
     
-    // 如果修正量很大，说明穿模严重，回退到旧位置
-    if (collision.correction.length() > 0.2) {
-      character.position.x = oldPosition.x;
-      character.position.z = oldPosition.z;
-      // 清除水平速度分量，防止持续推进
-      state.physics.velocity.x = 0;
-      state.physics.velocity.z = 0;
+    if (correctionLength > 0.3) {
+      // 如果修正量很大，回退到旧位置并尝试滑动
+      character.position.copy(oldPosition);
+      
+      // 尝试只在 X 方向移动
+      character.position.x = newPosX;
+      const collisionX = checkCollision(character.position, state.physics.velocity);
+      
+      if (collisionX.collided && collisionX.correction.length() > 0.2) {
+        // X方向碰撞，回退X
+        character.position.x = oldPosition.x;
+      } else if (collisionX.collided) {
+        // 轻微碰撞，应用修正
+        character.position.add(collisionX.correction.multiplyScalar(state.physics.collisionDamping));
+      }
+      
+      // 尝试只在 Z 方向移动
+      character.position.z = newPosZ;
+      const collisionZ = checkCollision(character.position, state.physics.velocity);
+      
+      if (collisionZ.collided && collisionZ.correction.length() > 0.2) {
+        // Z方向碰撞，回退Z
+        character.position.z = oldPosition.z;
+      } else if (collisionZ.collided) {
+        // 轻微碰撞，应用修正
+        character.position.add(collisionZ.correction.multiplyScalar(state.physics.collisionDamping));
+      }
+    } else {
+      // 如果修正量较小，直接应用平滑修正
+      collision.correction.multiplyScalar(state.physics.collisionDamping);
+      character.position.add(collision.correction);
     }
   }
   
@@ -342,4 +455,4 @@ function setupGUI() {
 }
 
 // 显示操作提示
-GLOBAL_CONFIG.ElMessage('WASD移动，鼠标视角，空格跳跃，Shift加速');
+GLOBAL_CONFIG.ElMessage('WASD移动，鼠标视角，空格跳跃，Shift加速。场景中添加了多个模型用于测试碰撞系统！');
