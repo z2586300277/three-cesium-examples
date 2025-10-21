@@ -480,7 +480,7 @@ const createSun = () => {
     coronaColor: { value: new THREE.Color(0xffaa00) }
   };
   
-  const sunGeometry = new THREE.PlaneGeometry(80, 80);
+  const sunGeometry = new THREE.CircleGeometry(40, 64);
   const sunMaterial = new THREE.ShaderMaterial({
     uniforms: sunUniforms,
     vertexShader: sunVertexShader,
