@@ -14,9 +14,106 @@ const renderer = new THREE.WebGLRenderer({ antialias: true });
 renderer.setSize(window.innerWidth, window.innerHeight);
 document.body.appendChild(renderer.domElement);
 
+// 创建赛博朋克着色器材质
+function createCyberpunkMaterial(originalColor) {
+  const cyberpunkVertexShader = `
+    varying vec3 vPosition;
+    varying vec3 vNormal;
+    varying vec2 vUv;
+    
+    void main() {
+      vPosition = position;
+      vNormal = normalize(normalMatrix * normal);
+      vUv = uv;
+      gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0);
+    }
+  `;
+  
+  const cyberpunkFragmentShader = `
+    uniform vec3 baseColor;
+    uniform float time;
+    uniform vec3 neonColor1;
+    uniform vec3 neonColor2;
+    
+    varying vec3 vPosition;
+    varying vec3 vNormal;
+    varying vec2 vUv;
+    
+    // 简单噪声函数
+    float hash(vec2 p) {
+      return fract(sin(dot(p, vec2(127.1, 311.7))) * 43758.5453);
+    }
+    
+    float noise(vec2 p) {
+      vec2 i = floor(p);
+      vec2 f = fract(p);
+      f = f * f * (3.0 - 2.0 * f);
+      
+      float a = hash(i);
+      float b = hash(i + vec2(1.0, 0.0));
+      float c = hash(i + vec2(0.0, 1.0));
+      float d = hash(i + vec2(1.0, 1.0));
+      
+      return mix(mix(a, b, f.x), mix(c, d, f.x), f.y);
+    }
+    
+    void main() {
+      // 基础颜色
+      vec3 color = baseColor;
+      
+      // 扫描线效果
+      float scanline = sin(vPosition.y * 50.0 + time * 2.0) * 0.5 + 0.5;
+      scanline = smoothstep(0.3, 0.7, scanline);
+      
+      // 霓虹灯光效果 - 基于高度和位置
+      float heightGlow = smoothstep(-0.5, 2.0, vPosition.y);
+      float neonPulse = sin(time * 3.0 + vPosition.y * 2.0) * 0.5 + 0.5;
+      
+      // 网格线效果
+      float gridX = abs(fract(vPosition.x * 2.0) - 0.5);
+      float gridZ = abs(fract(vPosition.z * 2.0) - 0.5);
+      float grid = smoothstep(0.48, 0.5, max(gridX, gridZ));
+      
+      // 随机霓虹灯闪烁
+      float flicker = noise(vec2(vPosition.x, vPosition.z) * 0.5 + time * 0.5);
+      flicker = step(0.7, flicker);
+      
+      // 边缘发光（Fresnel效果）
+      vec3 viewDir = normalize(cameraPosition - vPosition);
+      float fresnel = pow(1.0 - abs(dot(viewDir, vNormal)), 3.0);
+      
+      // 混合霓虹灯颜色
+      vec3 neonColor = mix(neonColor1, neonColor2, neonPulse);
+      
+      // 应用效果
+      color = mix(color, neonColor, heightGlow * 0.3);
+      color += neonColor * scanline * 0.2;
+      color += neonColor * grid * flicker * 0.5;
+      color += neonColor * fresnel * 0.4;
+      
+      // 增加对比度和饱和度
+      color = pow(color, vec3(1.2));
+      
+      gl_FragColor = vec4(color, 1.0);
+    }
+  `;
+  
+  return new THREE.ShaderMaterial({
+    uniforms: {
+      baseColor: { value: originalColor },
+      time: { value: 0 },
+      neonColor1: { value: new THREE.Color(0x00ffff) }, // 青色霓虹
+      neonColor2: { value: new THREE.Color(0xff00ff) }  // 品红色霓虹
+    },
+    vertexShader: cyberpunkVertexShader,
+    fragmentShader: cyberpunkFragmentShader
+  });
+}
+
 // 加载模型 fbx
 let cityModel;
 const collidableObjects = []; // 存储所有可碰撞对象
+const cyberpunkMaterials = []; // 存储赛博朋克材质以便更新
 
 new FBXLoader().load(HOST + '/files/model/city.FBX', (object3d) => {
     object3d.scale.multiplyScalar(0.01)
@@ -24,21 +121,19 @@ new FBXLoader().load(HOST + '/files/model/city.FBX', (object3d) => {
     scene.add(object3d)
     cityModel = object3d;
     
-    // 为所有网格生成 BVH 用于碰撞检测，并移除贴图
+    // 为所有网格生成 BVH 用于碰撞检测，并应用赛博朋克着色器
     object3d.traverse((child) => {
         if (child.isMesh) {
             child.geometry.computeBoundsTree = computeBoundsTree;
             child.geometry.computeBoundsTree();
             collidableObjects.push(child);
             
-            // 移除贴图，使用纯色材质
+            // 应用赛博朋克着色器
             if (child.material) {
-                const originalColor = child.material.color ? child.material.color.clone() : new THREE.Color(0xcccccc);
-                child.material = new THREE.MeshStandardMaterial({
-                    color: originalColor,
-                    roughness: 0.8,
-                    metalness: 0.2
-                });
+                const originalColor = child.material.color ? child.material.color.clone() : new THREE.Color(0x666666);
+                const cyberpunkMat = createCyberpunkMaterial(originalColor);
+                child.material = cyberpunkMat;
+                cyberpunkMaterials.push(cyberpunkMat);
             }
         }
     });
@@ -704,7 +799,7 @@ const state = {
   
   // 喷气背包参数
   jetpack: {
-    enabled: false,         // 是否启用喷气背包
+    enabled: true,          // 是否启用喷气背包 - 默认启用
     fuel: 100,              // 燃料量（0-100）
     maxFuel: 100,           // 最大燃料
     fuelConsumption: 0.5,   // 燃料消耗速度
@@ -718,6 +813,15 @@ const state = {
   // 相机参数
   camera: {
     height: 0.7
+  },
+  
+  // 眩晕效果参数
+  dizziness: {
+    active: false,          // 是否处于眩晕状态
+    intensity: 0,           // 眩晕强度
+    duration: 0,            // 眩晕持续时间
+    shakeOffset: { x: 0, y: 0 },  // 相机抖动偏移
+    lastCollisionTime: 0    // 上次碰撞时间
   }
 };
 
@@ -964,8 +1068,19 @@ function update() {
   const collision = checkCollision(character.position, state.physics.velocity);
   
   if (collision.collided) {
-    // 应用碰撞修正
+    // 触发眩晕效果（如果碰撞强度足够大）
     const correctionLength = collision.correction.length();
+    const currentTime = Date.now();
+    
+    // 只有在移动中且碰撞强度较大时才触发眩晕
+    if (correctionLength > 0.2 && (currentTime - state.dizziness.lastCollisionTime) > 1000) {
+      state.dizziness.active = true;
+      state.dizziness.intensity = Math.min(correctionLength * 2, 1.0);
+      state.dizziness.duration = 1000; // 持续1秒
+      state.dizziness.lastCollisionTime = currentTime;
+    }
+    
+    // 应用碰撞修正
     
     if (correctionLength > 0.3) {
       // 如果修正量很大，回退到旧位置并尝试滑动
@@ -1017,9 +1132,36 @@ function update() {
   // 更新喷气背包粒子
   updateJetpackParticles();
   
-  // 更新相机
+  // 更新眩晕效果
+  if (state.dizziness.active) {
+    const currentTime = Date.now();
+    const elapsed = currentTime - state.dizziness.lastCollisionTime;
+    
+    if (elapsed < state.dizziness.duration) {
+      // 计算衰减的眩晕强度
+      const progress = elapsed / state.dizziness.duration;
+      const currentIntensity = state.dizziness.intensity * (1 - progress);
+      
+      // 生成相机抖动
+      const shakeSpeed = 20;
+      state.dizziness.shakeOffset.x = Math.sin(elapsed * shakeSpeed * 0.001) * currentIntensity * 0.05;
+      state.dizziness.shakeOffset.y = Math.cos(elapsed * shakeSpeed * 0.0015) * currentIntensity * 0.03;
+    } else {
+      // 眩晕结束
+      state.dizziness.active = false;
+      state.dizziness.shakeOffset.x = 0;
+      state.dizziness.shakeOffset.y = 0;
+    }
+  }
+  
+  // 更新相机（应用眩晕抖动）
   const cameraRotation = new THREE.Quaternion().setFromEuler(
-    new THREE.Euler(state.view.pitch, state.view.yaw, 0, 'YXZ')
+    new THREE.Euler(
+      state.view.pitch + state.dizziness.shakeOffset.y, 
+      state.view.yaw + state.dizziness.shakeOffset.x, 
+      0, 
+      'YXZ'
+    )
   );
   
   camera.position.copy(character.position).add(new THREE.Vector3(0, state.camera.height, 0));
@@ -1041,6 +1183,13 @@ function animate() {
     cloudSystem.sun.material.uniforms.time.value = elapsedTime;
   }
   
+  // 更新赛博朋克材质的时间
+  cyberpunkMaterials.forEach(material => {
+    if (material.uniforms && material.uniforms.time) {
+      material.uniforms.time.value = elapsedTime;
+    }
+  });
+  
   renderer.render(scene, camera);
 }
 animate();
@@ -1054,49 +1203,124 @@ window.addEventListener('resize', () => {
 
 // GUI控制面板
 function setupGUI() {
-  const gui = new GUI({ width: 250 }).close();
+  const gui = new GUI({ width: 280 });
+  
+  // 应用科技风格样式
+  const style = document.createElement('style');
+  style.textContent = `
+    .lil-gui {
+      --background-color: rgba(10, 20, 30, 0.92) !important;
+      --widget-color: rgba(0, 255, 255, 0.15) !important;
+      --focus-color: rgba(0, 255, 255, 0.4) !important;
+      --hover-color: rgba(0, 255, 255, 0.25) !important;
+      --font-family: 'Courier New', monospace !important;
+      --text-color: rgba(0, 255, 255, 0.9) !important;
+      --title-background-color: rgba(0, 100, 100, 0.3) !important;
+      --title-text-color: rgba(0, 255, 255, 1) !important;
+      --widget-height: 24px !important;
+      border: 2px solid rgba(0, 255, 255, 0.5) !important;
+      border-radius: 8px !important;
+      box-shadow: 0 0 20px rgba(0, 255, 255, 0.3), inset 0 0 20px rgba(0, 255, 255, 0.05) !important;
+    }
+    
+    .lil-gui .title {
+      background: linear-gradient(90deg, rgba(0, 255, 255, 0.2), rgba(255, 0, 255, 0.2)) !important;
+      border-bottom: 1px solid rgba(0, 255, 255, 0.5) !important;
+      text-shadow: 0 0 5px rgba(0, 255, 255, 0.8) !important;
+      font-weight: bold !important;
+      letter-spacing: 1px !important;
+    }
+    
+    .lil-gui .lil-gui {
+      border: 1px solid rgba(0, 255, 255, 0.3) !important;
+      border-left: 2px solid rgba(0, 255, 255, 0.5) !important;
+      box-shadow: none !important;
+    }
+    
+    .lil-gui input[type="text"],
+    .lil-gui input[type="number"] {
+      background: rgba(0, 50, 50, 0.3) !important;
+      border: 1px solid rgba(0, 255, 255, 0.3) !important;
+      color: rgba(0, 255, 255, 1) !important;
+      text-shadow: 0 0 3px rgba(0, 255, 255, 0.5) !important;
+    }
+    
+    .lil-gui input[type="range"] {
+      --slider-color: rgba(0, 255, 255, 0.5) !important;
+    }
+    
+    .lil-gui .controller .name {
+      color: rgba(0, 255, 255, 0.85) !important;
+      text-shadow: 0 0 3px rgba(0, 255, 255, 0.3) !important;
+    }
+    
+    .lil-gui button {
+      background: linear-gradient(135deg, rgba(0, 255, 255, 0.2), rgba(255, 0, 255, 0.2)) !important;
+      border: 1px solid rgba(0, 255, 255, 0.5) !important;
+      color: rgba(0, 255, 255, 1) !important;
+      text-shadow: 0 0 5px rgba(0, 255, 255, 0.8) !important;
+      transition: all 0.3s !important;
+    }
+    
+    .lil-gui button:hover {
+      background: linear-gradient(135deg, rgba(0, 255, 255, 0.4), rgba(255, 0, 255, 0.4)) !important;
+      box-shadow: 0 0 10px rgba(0, 255, 255, 0.5) !important;
+    }
+    
+    .lil-gui .controller.boolean .widget {
+      background: rgba(0, 50, 50, 0.3) !important;
+      border: 1px solid rgba(0, 255, 255, 0.5) !important;
+    }
+    
+    .lil-gui .controller.boolean.hasValue .widget {
+      background: rgba(0, 255, 255, 0.3) !important;
+      box-shadow: 0 0 10px rgba(0, 255, 255, 0.5) !important;
+    }
+  `;
+  document.head.appendChild(style);
   
   // 喷气背包设置
-  const jetpackFolder = gui.addFolder('喷气背包设置');
-  jetpackFolder.add(state.jetpack, 'enabled').name('启用喷气背包')
+  const jetpackFolder = gui.addFolder('🚀 喷气背包系统');
+  jetpackFolder.add(state.jetpack, 'enabled').name('● 系统启用')
     .onChange((value) => {
       if (!value) {
         state.jetpack.active = false;
       }
     });
-  jetpackFolder.add(state.jetpack, 'fuel', 0, 100).name('燃料量').listen();
-  jetpackFolder.add(state.jetpack, 'fuelConsumption', 0.1, 2.0, 0.1).name('燃料消耗');
-  jetpackFolder.add(state.jetpack, 'fuelRecharge', 0.1, 1.0, 0.1).name('燃料恢复');
-  jetpackFolder.add(state.jetpack, 'thrustForce', 0.05, 0.3, 0.01).name('推力');
-  jetpackFolder.add(state.jetpack, 'maxSpeed', 0.1, 0.5, 0.05).name('最大速度');
+  jetpackFolder.add(state.jetpack, 'fuel', 0, 100).name('▰ 燃料量').listen();
+  jetpackFolder.add(state.jetpack, 'fuelConsumption', 0.1, 2.0, 0.1).name('⚡ 燃料消耗');
+  jetpackFolder.add(state.jetpack, 'fuelRecharge', 0.1, 1.0, 0.1).name('🔋 燃料恢复');
+  jetpackFolder.add(state.jetpack, 'thrustForce', 0.05, 0.3, 0.01).name('💨 推力大小');
+  jetpackFolder.add(state.jetpack, 'maxSpeed', 0.1, 0.5, 0.05).name('⚡ 最大速度');
+  jetpackFolder.open();
   
   // 相机设置
-  const cameraFolder = gui.addFolder('相机设置');
-  cameraFolder.add(state.camera, 'height', 0.2, 2.0, 0.05).name('相机高度');
-  cameraFolder.add(camera, 'fov', 60, 120, 1).name('视野角度')
+  const cameraFolder = gui.addFolder('📷 视角控制');
+  cameraFolder.add(state.camera, 'height', 0.2, 2.0, 0.05).name('↕ 相机高度');
+  cameraFolder.add(camera, 'fov', 60, 120, 1).name('👁 视野角度')
     .onChange(() => camera.updateProjectionMatrix());
   
   // 控制设置
-  const controlFolder = gui.addFolder('控制设置');
-  controlFolder.add(state.view, 'mouseSensitivity', 0.0005, 0.005, 0.0001).name('鼠标灵敏度');
-  controlFolder.add(state.view, 'pitchLimit', 0, Math.PI/2, 0.05).name('视角限制');
+  const controlFolder = gui.addFolder('🎮 控制参数');
+  controlFolder.add(state.view, 'mouseSensitivity', 0.0005, 0.005, 0.0001).name('🖱 鼠标灵敏度');
+  controlFolder.add(state.view, 'pitchLimit', 0, Math.PI/2, 0.05).name('↕ 视角限制');
   
   // 移动设置
-  const moveFolder = gui.addFolder('移动设置');
-  moveFolder.add(state.physics, 'speed', 0.05, 0.3, 0.01).name('移动速度');
-  moveFolder.add(state.physics, 'sprintMultiplier', 1.2, 3.0, 0.1).name('冲刺倍率');
-  moveFolder.add(state.physics, 'jumpForce', 0.1, 0.5, 0.01).name('跳跃高度');
-  moveFolder.add(state.physics, 'gravity', 0.005, 0.03, 0.001).name('重力');
+  const moveFolder = gui.addFolder('🏃 移动系统');
+  moveFolder.add(state.physics, 'speed', 0.05, 0.3, 0.01).name('→ 移动速度');
+  moveFolder.add(state.physics, 'sprintMultiplier', 1.2, 3.0, 0.1).name('⚡ 冲刺倍率');
+  moveFolder.add(state.physics, 'jumpForce', 0.1, 0.5, 0.01).name('↑ 跳跃高度');
+  moveFolder.add(state.physics, 'gravity', 0.005, 0.03, 0.001).name('↓ 重力大小');
   
   // 碰撞设置
-  const collisionFolder = gui.addFolder('碰撞设置');
-  collisionFolder.add(state.physics, 'collisionRadius', 0.1, 1.5, 0.1).name('碰撞半径');
-  collisionFolder.add(state.physics, 'collisionHeight', 0.5, 3.0, 0.1).name('碰撞高度');
-  collisionFolder.add(state.physics, 'collisionDamping', 0.1, 1.0, 0.05).name('碰撞阻尼');
+  const collisionFolder = gui.addFolder('💥 碰撞检测');
+  collisionFolder.add(state.physics, 'collisionRadius', 0.1, 1.5, 0.1).name('◯ 碰撞半径');
+  collisionFolder.add(state.physics, 'collisionHeight', 0.5, 3.0, 0.1).name('↕ 碰撞高度');
+  collisionFolder.add(state.physics, 'collisionDamping', 0.1, 1.0, 0.05).name('⚡ 碰撞阻尼');
   
-  gui.domElement.style.cssText = 'position:absolute;top:0;right:0;';
+  gui.domElement.style.cssText = 'position:absolute;top:10px;right:10px;';
   return gui;
 }
 
 // 显示操作提示
-GLOBAL_CONFIG.ElMessage('WASD移动，鼠标视角，空格跳跃/喷气飞行，Shift加速。在GUI中启用喷气背包后，长按空格可以飞行！');
+GLOBAL_CONFIG.ElMessage('🚀 WASD移动，鼠标视角，空格喷气飞行，Shift加速。喷气背包已启用！赛博朋克城市等你探索！碰撞会触发眩晕效果。');
