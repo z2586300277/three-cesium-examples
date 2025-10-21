@@ -572,6 +572,110 @@ scene.add(rimLight);
 // 存储引用以便动画更新
 const cloudSystem = { clouds: volumetricClouds, sun: sun };
 
+// 创建喷气背包粒子系统
+function createJetpackParticles() {
+  const particleCount = 100;
+  const geometry = new THREE.BufferGeometry();
+  
+  const positions = new Float32Array(particleCount * 3);
+  const velocities = new Float32Array(particleCount * 3);
+  const lifetimes = new Float32Array(particleCount);
+  const sizes = new Float32Array(particleCount);
+  
+  for (let i = 0; i < particleCount; i++) {
+    positions[i * 3] = 0;
+    positions[i * 3 + 1] = 0;
+    positions[i * 3 + 2] = 0;
+    
+    velocities[i * 3] = 0;
+    velocities[i * 3 + 1] = 0;
+    velocities[i * 3 + 2] = 0;
+    
+    lifetimes[i] = 0;
+    sizes[i] = Math.random() * 0.15 + 0.05;
+  }
+  
+  geometry.setAttribute('position', new THREE.BufferAttribute(positions, 3));
+  geometry.setAttribute('velocity', new THREE.BufferAttribute(velocities, 3));
+  geometry.setAttribute('lifetime', new THREE.BufferAttribute(lifetimes, 1));
+  geometry.setAttribute('size', new THREE.BufferAttribute(sizes, 1));
+  
+  const material = new THREE.PointsMaterial({
+    color: 0xff6600,
+    size: 0.2,
+    transparent: true,
+    opacity: 0.8,
+    blending: THREE.AdditiveBlending,
+    depthWrite: false
+  });
+  
+  const particles = new THREE.Points(geometry, material);
+  particles.visible = false;
+  
+  return particles;
+}
+
+// 更新喷气背包粒子系统
+function updateJetpackParticles() {
+  if (!jetpackParticles || !character) return;
+  
+  const isJetpackActive = state.jetpack.active && state.jetpack.fuel > 0;
+  jetpackParticles.visible = isJetpackActive;
+  
+  if (!isJetpackActive) return;
+  
+  const positions = jetpackParticles.geometry.attributes.position.array;
+  const velocities = jetpackParticles.geometry.attributes.velocity.array;
+  const lifetimes = jetpackParticles.geometry.attributes.lifetime.array;
+  const sizes = jetpackParticles.geometry.attributes.size.array;
+  
+  for (let i = 0; i < positions.length / 3; i++) {
+    const idx = i * 3;
+    
+    if (lifetimes[i] <= 0) {
+      // 重置粒子
+      const angle = Math.random() * Math.PI * 2;
+      const spread = 0.15;
+      
+      // 从角色背后发射
+      const offset = new THREE.Vector3(
+        Math.cos(angle) * spread,
+        -0.2,
+        Math.sin(angle) * spread
+      );
+      
+      // 转换到角色坐标系
+      offset.applyQuaternion(character.quaternion);
+      
+      positions[idx] = character.position.x + offset.x;
+      positions[idx + 1] = character.position.y + offset.y;
+      positions[idx + 2] = character.position.z + offset.z;
+      
+      // 向下和向外的速度
+      velocities[idx] = (Math.random() - 0.5) * 0.02;
+      velocities[idx + 1] = -(Math.random() * 0.08 + 0.1);
+      velocities[idx + 2] = (Math.random() - 0.5) * 0.02;
+      
+      lifetimes[i] = Math.random() * 0.5 + 0.3;
+    } else {
+      // 更新粒子位置
+      positions[idx] += velocities[idx];
+      positions[idx + 1] += velocities[idx + 1];
+      positions[idx + 2] += velocities[idx + 2];
+      
+      // 应用重力
+      velocities[idx + 1] -= 0.003;
+      
+      // 减少生命值
+      lifetimes[i] -= 0.016;
+    }
+  }
+  
+  jetpackParticles.geometry.attributes.position.needsUpdate = true;
+  jetpackParticles.geometry.attributes.velocity.needsUpdate = true;
+  jetpackParticles.geometry.attributes.lifetime.needsUpdate = true;
+}
+
 // 游戏状态
 const state = {
   // 输入控制
@@ -598,6 +702,19 @@ const state = {
     collisionDamping: 0.8   // 碰撞阻尼，防止抖动
   },
   
+  // 喷气背包参数
+  jetpack: {
+    enabled: false,         // 是否启用喷气背包
+    fuel: 100,              // 燃料量（0-100）
+    maxFuel: 100,           // 最大燃料
+    fuelConsumption: 0.5,   // 燃料消耗速度
+    fuelRecharge: 0.3,      // 燃料恢复速度（在地面时）
+    thrustForce: 0.15,      // 推力
+    maxSpeed: 0.3,          // 最大飞行速度
+    active: false,          // 当前是否正在使用
+    cooldown: false         // 冷却中
+  },
+  
   // 相机参数
   camera: {
     height: 0.7
@@ -606,25 +723,19 @@ const state = {
 
 // 加载角色模型
 let character;
+let jetpackParticles; // 喷气背包粒子系统
 new GLTFLoader().load(FILE_HOST + "files/model/Fox.glb", (gltf) => {
   character = gltf.scene;
   scene.add(character);
   character.scale.multiplyScalar(0.01);
   character.rotation.y = Math.PI; // 修正朝向
   
-  // 移除所有模型上的贴图，使用纯色材质
-  character.traverse((child) => {
-    if (child.isMesh && child.material) {
-      // 保存原始颜色
-      const originalColor = child.material.color ? child.material.color.clone() : new THREE.Color(0xcccccc);
-      // 创建新的无贴图材质
-      child.material = new THREE.MeshStandardMaterial({
-        color: originalColor,
-        roughness: 0.8,
-        metalness: 0.2
-      });
-    }
-  });
+  // 保留玩家原有贴图，不做任何修改
+  // character.traverse((child) => {
+  //   if (child.isMesh && child.material) {
+  //     // 玩家保留原始材质和贴图
+  //   }
+  // });
   
   // 设置动画
   const mixer = new THREE.AnimationMixer(character);
@@ -632,6 +743,10 @@ new GLTFLoader().load(FILE_HOST + "files/model/Fox.glb", (gltf) => {
   const clock = new THREE.Clock();
   character.mixerUpdate = () => mixer.update(clock.getDelta());
   action.play();
+  
+  // 创建喷气背包粒子系统
+  jetpackParticles = createJetpackParticles();
+  scene.add(jetpackParticles);
   
   // 初始化GUI控制面板
   setupGUI();
@@ -662,8 +777,14 @@ document.addEventListener('keydown', ({ key }) => {
     case 's': state.keys.s = true; break;
     case 'd': state.keys.d = true; break;
     case ' ': 
-      state.keys.space = true; 
-      if (!state.physics.airborne) {
+      state.keys.space = true;
+      
+      // 喷气背包逻辑
+      if (state.jetpack.enabled && state.jetpack.fuel > 0 && !state.jetpack.cooldown) {
+        state.jetpack.active = true;
+      } 
+      // 普通跳跃（喷气背包未启用或燃料不足时）
+      else if (!state.physics.airborne && !state.jetpack.enabled) {
         state.physics.velocity.y = state.physics.jumpForce;
         state.physics.airborne = true;
       }
@@ -674,7 +795,12 @@ document.addEventListener('keydown', ({ key }) => {
 
 document.addEventListener('keyup', ({ key }) => {
   const k = key.toLowerCase();
-  if (k in state.keys) state.keys[k] = false;
+  if (k === ' ') {
+    state.keys.space = false;
+    state.jetpack.active = false; // 停止喷气背包
+  } else if (k in state.keys) {
+    state.keys[k] = false;
+  }
 });
 
 // 改进的碰撞检测函数
@@ -752,6 +878,32 @@ function checkCollision(position, velocity) {
 function update() {
   if (!character) return;
 
+  // 喷气背包燃料管理
+  if (state.jetpack.enabled) {
+    if (state.jetpack.active && state.jetpack.fuel > 0) {
+      // 消耗燃料
+      state.jetpack.fuel -= state.jetpack.fuelConsumption;
+      if (state.jetpack.fuel < 0) state.jetpack.fuel = 0;
+      
+      // 如果燃料耗尽，停用喷气背包并进入冷却
+      if (state.jetpack.fuel <= 0) {
+        state.jetpack.active = false;
+        state.jetpack.cooldown = true;
+      }
+    } else if (!state.jetpack.active && !state.physics.airborne) {
+      // 在地面时恢复燃料
+      state.jetpack.fuel += state.jetpack.fuelRecharge;
+      if (state.jetpack.fuel > state.jetpack.maxFuel) {
+        state.jetpack.fuel = state.jetpack.maxFuel;
+      }
+      
+      // 燃料恢复到一定程度后解除冷却
+      if (state.jetpack.fuel >= 20) {
+        state.jetpack.cooldown = false;
+      }
+    }
+  }
+
   // 计算移动方向和速度
   const moveSpeed = state.keys.shift ? 
     state.physics.speed * state.physics.sprintMultiplier : 
@@ -775,9 +927,26 @@ function update() {
   const dx = (moveX * Math.cos(rotation) + moveZ * Math.sin(rotation)) * moveSpeed;
   const dz = (moveZ * Math.cos(rotation) - moveX * Math.sin(rotation)) * moveSpeed;
   
-  // 应用重力和垂直运动
-  if (state.physics.airborne) {
-    state.physics.velocity.y -= state.physics.gravity;
+  // 喷气背包推力
+  if (state.jetpack.active && state.jetpack.fuel > 0) {
+    // 向上推力
+    state.physics.velocity.y += state.jetpack.thrustForce;
+    
+    // 限制最大上升速度
+    if (state.physics.velocity.y > state.jetpack.maxSpeed) {
+      state.physics.velocity.y = state.jetpack.maxSpeed;
+    }
+    
+    // 飞行时的空气阻力
+    state.physics.velocity.y *= 0.95;
+    
+    // 标记为空中
+    state.physics.airborne = true;
+  } else {
+    // 应用重力和垂直运动
+    if (state.physics.airborne) {
+      state.physics.velocity.y -= state.physics.gravity;
+    }
   }
   
   // 保存旧位置
@@ -845,6 +1014,9 @@ function update() {
   // 更新动画
   character.mixerUpdate();
   
+  // 更新喷气背包粒子
+  updateJetpackParticles();
+  
   // 更新相机
   const cameraRotation = new THREE.Quaternion().setFromEuler(
     new THREE.Euler(state.view.pitch, state.view.yaw, 0, 'YXZ')
@@ -884,6 +1056,20 @@ window.addEventListener('resize', () => {
 function setupGUI() {
   const gui = new GUI({ width: 250 }).close();
   
+  // 喷气背包设置
+  const jetpackFolder = gui.addFolder('喷气背包设置');
+  jetpackFolder.add(state.jetpack, 'enabled').name('启用喷气背包')
+    .onChange((value) => {
+      if (!value) {
+        state.jetpack.active = false;
+      }
+    });
+  jetpackFolder.add(state.jetpack, 'fuel', 0, 100).name('燃料量').listen();
+  jetpackFolder.add(state.jetpack, 'fuelConsumption', 0.1, 2.0, 0.1).name('燃料消耗');
+  jetpackFolder.add(state.jetpack, 'fuelRecharge', 0.1, 1.0, 0.1).name('燃料恢复');
+  jetpackFolder.add(state.jetpack, 'thrustForce', 0.05, 0.3, 0.01).name('推力');
+  jetpackFolder.add(state.jetpack, 'maxSpeed', 0.1, 0.5, 0.05).name('最大速度');
+  
   // 相机设置
   const cameraFolder = gui.addFolder('相机设置');
   cameraFolder.add(state.camera, 'height', 0.2, 2.0, 0.05).name('相机高度');
@@ -913,4 +1099,4 @@ function setupGUI() {
 }
 
 // 显示操作提示
-GLOBAL_CONFIG.ElMessage('WASD移动，鼠标视角，空格跳跃，Shift加速。场景中添加了多个模型用于测试碰撞系统！');
+GLOBAL_CONFIG.ElMessage('WASD移动，鼠标视角，空格跳跃/喷气飞行，Shift加速。在GUI中启用喷气背包后，长按空格可以飞行！');
