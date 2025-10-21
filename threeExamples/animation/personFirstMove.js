@@ -95,8 +95,8 @@ document.addEventListener('mousemove', (event) => {
   if (document.pointerLockElement !== document.body) return;
   
   // 水平和垂直旋转
-  state.view.yaw += event.movementX * state.view.mouseSensitivity;
-  state.view.pitch += event.movementY * state.view.mouseSensitivity;
+  state.view.yaw -= event.movementX * state.view.mouseSensitivity;
+  state.view.pitch -= event.movementY * state.view.mouseSensitivity;
   
   // 限制垂直视角
   state.view.pitch = Math.max(-state.view.pitchLimit, Math.min(state.view.pitchLimit, state.view.pitch));
