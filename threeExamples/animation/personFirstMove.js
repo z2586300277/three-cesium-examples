@@ -135,15 +135,25 @@ cylinder.geometry.computeBoundsTree();
 scene.add(cylinder);
 collidableObjects.push(cylinder);
 
-// 添加方向光以更好地显示模型
-const directionalLight = new THREE.DirectionalLight(0xffffff, 0.8);
-directionalLight.position.set(5, 10, 5);
+// 添加方向光以更好地显示模型 - 模拟太阳光
+const directionalLight = new THREE.DirectionalLight(0xfff4e6, 1.2);
+directionalLight.position.set(200, 150, -300); // 与太阳位置对齐
+directionalLight.castShadow = true;
 scene.add(directionalLight);
+
+// 添加半球光实现全局光照效果
+const hemisphereLight = new THREE.HemisphereLight(
+  0x87ceeb, // 天空颜色
+  0x8b7355, // 地面颜色
+  0.6
+);
+scene.add(hemisphereLight);
 
 // 移除天空盒，添加体积云和太阳效果
 // 添加网格和环境光
 scene.add(new THREE.GridHelper(100, 40));
-scene.add(new THREE.AmbientLight(0xffffff, 0.5));
+// 降低环境光强度，让全局光照更明显
+scene.add(new THREE.AmbientLight(0xffffff, 0.3));
 
 // 创建体积云着色器
 const createVolumetricClouds = () => {
@@ -163,6 +173,7 @@ const createVolumetricClouds = () => {
     uniform float time;
     uniform vec3 cloudColor;
     uniform vec3 skyColor;
+    uniform vec3 sunPosition;
     
     varying vec3 vWorldPosition;
     varying vec3 vNormal;
@@ -248,6 +259,21 @@ const createVolumetricClouds = () => {
       return value;
     }
     
+    // Rayleigh散射 - 大气散射效果
+    vec3 rayleighScattering(vec3 viewDir, vec3 sunDir) {
+      float cosTheta = dot(viewDir, sunDir);
+      float rayleighPhase = 0.75 * (1.0 + cosTheta * cosTheta);
+      return vec3(0.23, 0.56, 1.0) * rayleighPhase;
+    }
+    
+    // Mie散射 - 云层光散射
+    float mieScattering(vec3 viewDir, vec3 sunDir) {
+      float cosTheta = dot(viewDir, sunDir);
+      float g = 0.76; // 各向异性参数
+      float g2 = g * g;
+      return (1.0 - g2) / (4.0 * 3.14159 * pow(1.0 + g2 - 2.0 * g * cosTheta, 1.5));
+    }
+    
     void main() {
       // 使用时间创建运动效果
       vec3 pos = vWorldPosition * 0.001;
@@ -262,16 +288,55 @@ const createVolumetricClouds = () => {
       // 创建云层形状
       cloudDensity = smoothstep(0.2, 0.6, cloudDensity);
       
-      // 根据高度调整云密度
-      float heightFactor = smoothstep(-0.3, 0.5, normalize(vWorldPosition).y);
+      // 归一化视角方向和太阳方向
+      vec3 viewDir = normalize(vWorldPosition);
+      vec3 sunDir = normalize(sunPosition);
+      
+      // 根据高度调整云密度和颜色
+      float heightFactor = smoothstep(-0.3, 0.5, viewDir.y);
       cloudDensity *= heightFactor;
       
-      // 混合云和天空颜色
-      vec3 color = mix(skyColor, cloudColor, cloudDensity);
+      // 计算大气散射
+      vec3 rayleigh = rayleighScattering(viewDir, sunDir);
+      float mie = mieScattering(viewDir, sunDir);
       
-      // 添加一些变化
-      float brightness = 1.0 + noise2 * 0.2;
+      // 天空渐变 - 从地平线到天顶
+      vec3 horizonColor = vec3(0.8, 0.85, 1.0);
+      vec3 zenithColor = vec3(0.3, 0.5, 0.9);
+      vec3 baseSkyColor = mix(horizonColor, zenithColor, smoothstep(0.0, 0.5, viewDir.y));
+      
+      // 应用Rayleigh散射到天空颜色
+      vec3 skyColorWithScattering = baseSkyColor + rayleigh * 0.3;
+      
+      // 太阳光照对云的影响
+      float sunInfluence = max(dot(viewDir, sunDir), 0.0);
+      sunInfluence = pow(sunInfluence, 4.0);
+      
+      // 云层光散射效果
+      float cloudScattering = mie * sunInfluence;
+      
+      // 环境光遮蔽 - 云层密度越高，遮蔽越强
+      float ambientOcclusion = 1.0 - cloudDensity * 0.5;
+      
+      // 云层颜色受光照影响
+      vec3 illuminatedCloudColor = cloudColor;
+      illuminatedCloudColor += vec3(1.0, 0.9, 0.7) * sunInfluence * 0.6; // 太阳光色调
+      illuminatedCloudColor += vec3(1.0, 0.8, 0.5) * cloudScattering * 2.0; // 散射光
+      illuminatedCloudColor *= ambientOcclusion; // 应用环境光遮蔽
+      
+      // 混合云和天空颜色
+      vec3 color = mix(skyColorWithScattering, illuminatedCloudColor, cloudDensity);
+      
+      // 添加高度相关的色调变化
+      float horizonGlow = pow(1.0 - abs(viewDir.y), 3.0);
+      color += vec3(1.0, 0.7, 0.4) * horizonGlow * 0.2;
+      
+      // 添加动态亮度变化
+      float brightness = 1.0 + noise2 * 0.15;
       color *= brightness;
+      
+      // 增强对比度和饱和度
+      color = pow(color, vec3(1.1));
       
       gl_FragColor = vec4(color, 1.0);
     }
@@ -280,7 +345,8 @@ const createVolumetricClouds = () => {
   const cloudUniforms = {
     time: { value: 0 },
     cloudColor: { value: new THREE.Color(0xffffff) },
-    skyColor: { value: new THREE.Color(0x87ceeb) }
+    skyColor: { value: new THREE.Color(0x87ceeb) },
+    sunPosition: { value: new THREE.Vector3(200, 150, -300) }
   };
   
   const cloudGeometry = new THREE.SphereGeometry(500, 64, 64);
@@ -334,32 +400,75 @@ const createSun = () => {
       return mix(mix(a, b, f.x), mix(c, d, f.x), f.y);
     }
     
+    // 分形噪声用于更复杂的纹理
+    float fbm(vec2 p) {
+      float value = 0.0;
+      float amplitude = 0.5;
+      for(int i = 0; i < 4; i++) {
+        value += amplitude * noise(p);
+        p *= 2.0;
+        amplitude *= 0.5;
+      }
+      return value;
+    }
+    
     void main() {
       vec2 uv = vUv - 0.5;
       float dist = length(uv);
       
-      // 太阳主体
-      float sun = smoothstep(0.5, 0.45, dist);
+      // 太阳主体 - 更清晰的边缘
+      float sun = smoothstep(0.52, 0.44, dist);
       
-      // 添加动态光晕效果
-      float corona = smoothstep(0.6, 0.3, dist);
-      float coronaNoise = noise(vUv * 10.0 + time * 0.5);
-      corona *= 0.5 + coronaNoise * 0.5;
+      // 多层光晕效果 - 模拟太阳大气层
+      float corona1 = smoothstep(0.65, 0.3, dist);
+      float corona2 = smoothstep(0.75, 0.4, dist);
+      float corona3 = smoothstep(0.85, 0.5, dist);
       
-      // 添加太阳表面纹理
-      float surface = noise(vUv * 20.0 + time * 0.3);
-      surface *= noise(vUv * 15.0 - time * 0.2);
+      // 添加动态噪声到光晕
+      float coronaNoise1 = fbm(vUv * 8.0 + time * 0.3);
+      float coronaNoise2 = fbm(vUv * 12.0 - time * 0.2);
+      corona1 *= 0.4 + coronaNoise1 * 0.6;
+      corona2 *= 0.3 + coronaNoise2 * 0.7;
       
-      // 组合效果
-      vec3 finalColor = sunColor * sun;
-      finalColor += coronaColor * corona * 0.5;
-      finalColor += sunColor * surface * sun * 0.3;
+      // 太阳表面纹理 - 模拟太阳耀斑和色斑
+      float surface1 = fbm(vUv * 18.0 + time * 0.25);
+      float surface2 = fbm(vUv * 25.0 - time * 0.15);
+      float surfaceDetail = surface1 * surface2;
       
-      // 发光效果
-      float glow = smoothstep(0.7, 0.0, dist);
-      finalColor += coronaColor * glow * 0.3;
+      // 径向光芒效果
+      float angle = atan(uv.y, uv.x);
+      float rays = sin(angle * 12.0 + time * 2.0) * 0.5 + 0.5;
+      rays *= smoothstep(0.7, 0.2, dist) * smoothstep(0.0, 0.3, dist);
       
-      float alpha = sun + corona * 0.5 + glow * 0.2;
+      // 组合核心太阳颜色
+      vec3 coreColor = sunColor * (1.2 + surfaceDetail * 0.3);
+      vec3 finalColor = coreColor * sun;
+      
+      // 添加光晕层次
+      finalColor += coronaColor * corona1 * 0.8;
+      finalColor += mix(coronaColor, sunColor, 0.5) * corona2 * 0.5;
+      finalColor += vec3(1.0, 0.85, 0.6) * corona3 * 0.3;
+      
+      // 添加表面细节
+      finalColor += coreColor * surfaceDetail * sun * 0.4;
+      
+      // 添加径向光芒
+      finalColor += vec3(1.0, 0.9, 0.6) * rays * 0.5;
+      
+      // 外层柔和发光
+      float outerGlow = smoothstep(0.9, 0.0, dist);
+      finalColor += coronaColor * outerGlow * 0.25;
+      
+      // 增强中心亮度 - 模拟高动态范围
+      float centerBrightness = smoothstep(0.5, 0.0, dist);
+      finalColor += sunColor * centerBrightness * 0.8;
+      
+      // 计算最终透明度
+      float alpha = sun + corona1 * 0.6 + corona2 * 0.4 + corona3 * 0.3 + outerGlow * 0.2 + rays * 0.3;
+      alpha = min(alpha, 1.0);
+      
+      // 增强整体亮度和色彩饱和度
+      finalColor *= 1.3;
       
       gl_FragColor = vec4(finalColor, alpha);
     }
@@ -393,6 +502,22 @@ const volumetricClouds = createVolumetricClouds();
 const sun = createSun();
 scene.add(volumetricClouds);
 scene.add(sun);
+
+// 添加补光 - 模拟全局光照的反射光
+// 从地面反射的暖色调补光
+const fillLight1 = new THREE.PointLight(0xffaa77, 0.4, 50);
+fillLight1.position.set(0, 2, 0);
+scene.add(fillLight1);
+
+// 来自天空的冷色调补光
+const fillLight2 = new THREE.PointLight(0x88ccff, 0.3, 40);
+fillLight2.position.set(-10, 15, 10);
+scene.add(fillLight2);
+
+// 边缘光 - 增强模型轮廓
+const rimLight = new THREE.PointLight(0xffffff, 0.5, 60);
+rimLight.position.set(20, 10, -20);
+scene.add(rimLight);
 
 // 存储引用以便动画更新
 const cloudSystem = { clouds: volumetricClouds, sun: sun };
