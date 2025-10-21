@@ -2,7 +2,7 @@ import * as THREE from 'three';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
 import { GUI } from 'three/examples/jsm/libs/lil-gui.module.min.js';
 import { FBXLoader } from 'three/examples/jsm/loaders/FBXLoader.js';
-import { MeshBVH, acceleratedRaycast } from 'three-mesh-bvh';
+import { MeshBVH, acceleratedRaycast, computeBoundsTree } from 'three-mesh-bvh';
 
 // 启用 BVH 加速光线投射
 THREE.Mesh.prototype.raycast = acceleratedRaycast;
@@ -27,6 +27,7 @@ new FBXLoader().load(HOST + '/files/model/city.FBX', (object3d) => {
     // 为所有网格生成 BVH 用于碰撞检测
     object3d.traverse((child) => {
         if (child.isMesh) {
+            child.geometry.computeBoundsTree = computeBoundsTree;
             child.geometry.computeBoundsTree();
             collidableObjects.push(child);
         }
@@ -45,6 +46,7 @@ new GLTFLoader().load(FILE_HOST + 'files/model/car.glb', (gltf) => {
     // 为汽车添加碰撞检测
     car.traverse((child) => {
         if (child.isMesh) {
+            child.geometry.computeBoundsTree = computeBoundsTree;
             child.geometry.computeBoundsTree();
             collidableObjects.push(child);
         }
@@ -62,6 +64,7 @@ new GLTFLoader().load(FILE_HOST + 'files/model/Cesium_Air.glb', (gltf) => {
     // 为飞机添加碰撞检测
     plane.traverse((child) => {
         if (child.isMesh) {
+            child.geometry.computeBoundsTree = computeBoundsTree;
             child.geometry.computeBoundsTree();
             collidableObjects.push(child);
         }
@@ -79,6 +82,7 @@ new GLTFLoader().load(FILE_HOST + 'files/model/ship_2.glb', (gltf) => {
     // 为船添加碰撞检测
     ship.traverse((child) => {
         if (child.isMesh) {
+            child.geometry.computeBoundsTree = computeBoundsTree;
             child.geometry.computeBoundsTree();
             collidableObjects.push(child);
         }
@@ -96,6 +100,7 @@ new GLTFLoader().load(FILE_HOST + 'files/model/elegant.glb', (gltf) => {
     // 为模型添加碰撞检测
     elegant.traverse((child) => {
         if (child.isMesh) {
+            child.geometry.computeBoundsTree = computeBoundsTree;
             child.geometry.computeBoundsTree();
             collidableObjects.push(child);
         }
@@ -108,12 +113,14 @@ const cubeGeometry = new THREE.BoxGeometry(2, 2, 2);
 const cubeMaterial = new THREE.MeshStandardMaterial({ color: 0x00ff00 });
 const cube1 = new THREE.Mesh(cubeGeometry, cubeMaterial);
 cube1.position.set(0, 1, 10);
+cube1.geometry.computeBoundsTree = computeBoundsTree;
 cube1.geometry.computeBoundsTree();
 scene.add(cube1);
 collidableObjects.push(cube1);
 
 const cube2 = new THREE.Mesh(cubeGeometry, cubeMaterial);
 cube2.position.set(-10, 1, 0);
+cube2.geometry.computeBoundsTree = computeBoundsTree;
 cube2.geometry.computeBoundsTree();
 scene.add(cube2);
 collidableObjects.push(cube2);
@@ -123,6 +130,7 @@ const cylinderGeometry = new THREE.CylinderGeometry(1, 1, 3, 16);
 const cylinderMaterial = new THREE.MeshStandardMaterial({ color: 0xff0000 });
 const cylinder = new THREE.Mesh(cylinderGeometry, cylinderMaterial);
 cylinder.position.set(15, 1.5, -5);
+cylinder.geometry.computeBoundsTree = computeBoundsTree;
 cylinder.geometry.computeBoundsTree();
 scene.add(cylinder);
 collidableObjects.push(cylinder);
