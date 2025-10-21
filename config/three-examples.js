@@ -1890,6 +1890,14 @@ export default [
                 referUrl: 'https://codepen.io/boytchev/pen/YPXJgLd',
                 codeUrl: HOST + 'threeExamples/application/modelBorder.js',
                 image: HOST + 'threeExamples/application/modelBorder.jpg'
+            },
+            {
+                id: 'modelParticle',
+                name: '模型粒子化',
+                name_en: 'Model Particle',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/application/modelParticle.js',
+                image: HOST + 'threeExamples/application/modelParticle.jpg'
             }
 
         ]

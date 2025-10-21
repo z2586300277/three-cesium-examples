@@ -52,7 +52,7 @@ export default [
                 name: 'Tres官方案例',
                 tag: 'Vue',
                 name_en: 'Tres',
-                openUrl: 'https://lab.tresjs.org/',
+                openUrl: 'https://tresjs.org/showcase',
                 githubUrl: 'https://github.com/Tresjs',
                 image: HOST + 'threeExamples/openSource/tres.jpg'
             }
@@ -1076,6 +1076,24 @@ export default [
                 image: HOST + 'threeExamples/openSource/FluffyGrass.jpg'
             },
             {
+                id: 'X-Ray-Visualizer-Threejs',
+                name: 'X光视觉',
+                name_en: 'X-Ray Visualizer',
+                author: 'AUTO',
+                openUrl: 'https://x-ray-visualizer-threejs-yh19.vercel.app/',
+                githubUrl: 'https://github.com/J0SUKE/X-Ray-Visualizer-Threejs',
+                image: HOST + 'threeExamples/openSource/X-Ray-Visualizer-Threejs.jpg'
+            },
+            {
+                id: 'interactive-shield',
+                name: '交互式护盾',
+                name_en: 'Interactive Shield',
+                author: 'AUTO',
+                githubUrl: 'https://github.com/bhushan6/interactive-shield',
+                openUrl: 'https://interactive-shield.vercel.app/',
+                image: HOST + 'threeExamples/openSource/interactive-shield.jpg'
+            },
+            {
                 id: 'roomDesigner',
                 name: '3D房间设计器',
                 name_en: '3D Room Designer',
@@ -1335,6 +1353,15 @@ export default [
                 githubUrl: 'https://github.com/drawcall/threejs-mesh-modifiers',
                 openUrl: 'https://drawcall.github.io/threejs-mesh-modifiers/',
                 image: HOST + 'threeExamples/openSource/mesh-modifiers.jpg'
+            },
+            {
+                id: 'three-raymarcher',
+                name: '光线行进',
+                name_en: 'Ray Marcher',
+                author: 'AUTO',
+                githubUrl: 'https://github.com/danielesteban/three-raymarcher',
+                openUrl: 'https://danielesteban.github.io/three-raymarcher/animation.html',
+                image: HOST + 'threeExamples/openSource/three-raymarcher.jpg'
             }
         ]
     },
