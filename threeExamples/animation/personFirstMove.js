@@ -24,12 +24,22 @@ new FBXLoader().load(HOST + '/files/model/city.FBX', (object3d) => {
     scene.add(object3d)
     cityModel = object3d;
     
-    // 为所有网格生成 BVH 用于碰撞检测
+    // 为所有网格生成 BVH 用于碰撞检测，并移除贴图
     object3d.traverse((child) => {
         if (child.isMesh) {
             child.geometry.computeBoundsTree = computeBoundsTree;
             child.geometry.computeBoundsTree();
             collidableObjects.push(child);
+            
+            // 移除贴图，使用纯色材质
+            if (child.material) {
+                const originalColor = child.material.color ? child.material.color.clone() : new THREE.Color(0xcccccc);
+                child.material = new THREE.MeshStandardMaterial({
+                    color: originalColor,
+                    roughness: 0.8,
+                    metalness: 0.2
+                });
+            }
         }
     });
 })
@@ -43,12 +53,22 @@ new GLTFLoader().load(FILE_HOST + 'files/model/car.glb', (gltf) => {
     car.rotation.y = Math.PI / 4;
     scene.add(car);
     
-    // 为汽车添加碰撞检测
+    // 为汽车添加碰撞检测，并移除贴图
     car.traverse((child) => {
         if (child.isMesh) {
             child.geometry.computeBoundsTree = computeBoundsTree;
             child.geometry.computeBoundsTree();
             collidableObjects.push(child);
+            
+            // 移除贴图，使用纯色材质
+            if (child.material) {
+                const originalColor = child.material.color ? child.material.color.clone() : new THREE.Color(0xcccccc);
+                child.material = new THREE.MeshStandardMaterial({
+                    color: originalColor,
+                    roughness: 0.8,
+                    metalness: 0.2
+                });
+            }
         }
     });
 });
@@ -61,12 +81,22 @@ new GLTFLoader().load(FILE_HOST + 'files/model/Cesium_Air.glb', (gltf) => {
     plane.rotation.y = -Math.PI / 6;
     scene.add(plane);
     
-    // 为飞机添加碰撞检测
+    // 为飞机添加碰撞检测，并移除贴图
     plane.traverse((child) => {
         if (child.isMesh) {
             child.geometry.computeBoundsTree = computeBoundsTree;
             child.geometry.computeBoundsTree();
             collidableObjects.push(child);
+            
+            // 移除贴图，使用纯色材质
+            if (child.material) {
+                const originalColor = child.material.color ? child.material.color.clone() : new THREE.Color(0xcccccc);
+                child.material = new THREE.MeshStandardMaterial({
+                    color: originalColor,
+                    roughness: 0.8,
+                    metalness: 0.2
+                });
+            }
         }
     });
 });
@@ -79,12 +109,22 @@ new GLTFLoader().load(FILE_HOST + 'files/model/ship_2.glb', (gltf) => {
     ship.rotation.y = Math.PI / 2;
     scene.add(ship);
     
-    // 为船添加碰撞检测
+    // 为船添加碰撞检测，并移除贴图
     ship.traverse((child) => {
         if (child.isMesh) {
             child.geometry.computeBoundsTree = computeBoundsTree;
             child.geometry.computeBoundsTree();
             collidableObjects.push(child);
+            
+            // 移除贴图，使用纯色材质
+            if (child.material) {
+                const originalColor = child.material.color ? child.material.color.clone() : new THREE.Color(0xcccccc);
+                child.material = new THREE.MeshStandardMaterial({
+                    color: originalColor,
+                    roughness: 0.8,
+                    metalness: 0.2
+                });
+            }
         }
     });
 });
@@ -97,12 +137,22 @@ new GLTFLoader().load(FILE_HOST + 'files/model/elegant.glb', (gltf) => {
     elegant.rotation.y = -Math.PI / 3;
     scene.add(elegant);
     
-    // 为模型添加碰撞检测
+    // 为模型添加碰撞检测，并移除贴图
     elegant.traverse((child) => {
         if (child.isMesh) {
             child.geometry.computeBoundsTree = computeBoundsTree;
             child.geometry.computeBoundsTree();
             collidableObjects.push(child);
+            
+            // 移除贴图，使用纯色材质
+            if (child.material) {
+                const originalColor = child.material.color ? child.material.color.clone() : new THREE.Color(0xcccccc);
+                child.material = new THREE.MeshStandardMaterial({
+                    color: originalColor,
+                    roughness: 0.8,
+                    metalness: 0.2
+                });
+            }
         }
     });
 });
@@ -561,6 +611,20 @@ new GLTFLoader().load(FILE_HOST + "files/model/Fox.glb", (gltf) => {
   scene.add(character);
   character.scale.multiplyScalar(0.01);
   character.rotation.y = Math.PI; // 修正朝向
+  
+  // 移除所有模型上的贴图，使用纯色材质
+  character.traverse((child) => {
+    if (child.isMesh && child.material) {
+      // 保存原始颜色
+      const originalColor = child.material.color ? child.material.color.clone() : new THREE.Color(0xcccccc);
+      // 创建新的无贴图材质
+      child.material = new THREE.MeshStandardMaterial({
+        color: originalColor,
+        roughness: 0.8,
+        metalness: 0.2
+      });
+    }
+  });
   
   // 设置动画
   const mixer = new THREE.AnimationMixer(character);
