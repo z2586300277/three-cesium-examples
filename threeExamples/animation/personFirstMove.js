@@ -2,6 +2,10 @@ import * as THREE from 'three';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
 import { GUI } from 'three/examples/jsm/libs/lil-gui.module.min.js';
 import { FBXLoader } from 'three/examples/jsm/loaders/FBXLoader.js';
+import { MeshBVH, acceleratedRaycast } from 'three-mesh-bvh';
+
+// 启用 BVH 加速光线投射
+THREE.Mesh.prototype.raycast = acceleratedRaycast;
 
 // 初始化场景、相机和渲染器
 const scene = new THREE.Scene();
@@ -11,10 +15,19 @@ renderer.setSize(window.innerWidth, window.innerHeight);
 document.body.appendChild(renderer.domElement);
 
 // 加载模型 fbx
+let cityModel;
 new FBXLoader().load(HOST + '/files/model/city.FBX', (object3d) => {
     object3d.scale.multiplyScalar(0.01)
     object3d.position.set(0, -1, 0)
     scene.add(object3d)
+    cityModel = object3d;
+    
+    // 为所有网格生成 BVH 用于碰撞检测
+    object3d.traverse((child) => {
+        if (child.isMesh) {
+            child.geometry.computeBoundsTree();
+        }
+    });
 })
 
 // 天空盒和网格
@@ -44,7 +57,10 @@ const state = {
     sprintMultiplier: 1.8,
     jumpForce: 0.2,
     gravity: 0.01,
-    airborne: false
+    airborne: false,
+    collisionRadius: 0.5, // 碰撞检测半径
+    collisionHeight: 1.8,  // 角色高度
+    collisionDamping: 0.8   // 碰撞阻尼，防止抖动
   },
   
   // 相机参数
@@ -112,6 +128,93 @@ document.addEventListener('keyup', ({ key }) => {
   if (k in state.keys) state.keys[k] = false;
 });
 
+// 碰撞检测函数
+function checkCollision(position, velocity) {
+  if (!cityModel) return { collided: false, correction: new THREE.Vector3() };
+  
+  const correction = new THREE.Vector3();
+  const radius = state.physics.collisionRadius;
+  const height = state.physics.collisionHeight;
+  
+  // 创建射线检测点（上中下三个点）
+  const checkPoints = [
+    new THREE.Vector3(0, height * 0.2, 0),   // 下部
+    new THREE.Vector3(0, height * 0.5, 0),   // 中部
+    new THREE.Vector3(0, height * 0.8, 0)    // 上部
+  ];
+  
+  // 8个方向进行射线检测
+  const directions = [
+    new THREE.Vector3(1, 0, 0),
+    new THREE.Vector3(-1, 0, 0),
+    new THREE.Vector3(0, 0, 1),
+    new THREE.Vector3(0, 0, -1),
+    new THREE.Vector3(0.707, 0, 0.707),
+    new THREE.Vector3(-0.707, 0, 0.707),
+    new THREE.Vector3(0.707, 0, -0.707),
+    new THREE.Vector3(-0.707, 0, -0.707)
+  ];
+  
+  const raycaster = new THREE.Raycaster();
+  raycaster.near = 0;
+  raycaster.far = radius;
+  
+  let collisionDetected = false;
+  
+  // 对每个高度点和每个方向进行检测
+  checkPoints.forEach(point => {
+    const checkPos = position.clone().add(point);
+    
+    directions.forEach(dir => {
+      raycaster.set(checkPos, dir);
+      
+      const intersects = [];
+      cityModel.traverse((child) => {
+        if (child.isMesh && child.geometry.boundsTree) {
+          const results = raycaster.intersectObject(child, false);
+          intersects.push(...results);
+        }
+      });
+      
+      if (intersects.length > 0) {
+        const hit = intersects[0];
+        if (hit.distance < radius) {
+          collisionDetected = true;
+          // 计算推出向量，使用距离的平方来增加靠近时的推力
+          const pushDistance = radius - hit.distance;
+          const pushForce = pushDistance / radius; // 0-1之间
+          correction.add(dir.clone().multiplyScalar(-pushForce * 0.1));
+        }
+      }
+    });
+  });
+  
+  // 地面检测
+  raycaster.set(
+    position.clone().add(new THREE.Vector3(0, 0.5, 0)),
+    new THREE.Vector3(0, -1, 0)
+  );
+  raycaster.far = 1.0;
+  
+  const groundIntersects = [];
+  cityModel.traverse((child) => {
+    if (child.isMesh && child.geometry.boundsTree) {
+      const results = raycaster.intersectObject(child, false);
+      groundIntersects.push(...results);
+    }
+  });
+  
+  if (groundIntersects.length > 0) {
+    const groundHit = groundIntersects[0];
+    if (groundHit.distance < 0.5) {
+      correction.y = 0.5 - groundHit.distance;
+      collisionDetected = true;
+    }
+  }
+  
+  return { collided: collisionDetected, correction };
+}
+
 // 游戏更新函数
 function update() {
   if (!character) return;
@@ -144,9 +247,32 @@ function update() {
     state.physics.velocity.y -= state.physics.gravity;
   }
   
-  // 应用移动
+  // 保存旧位置
+  const oldPosition = character.position.clone();
+  
+  // 尝试应用水平移动
   character.position.x += dx;
   character.position.z += dz;
+  
+  // 检测碰撞
+  const collision = checkCollision(character.position, state.physics.velocity);
+  
+  if (collision.collided) {
+    // 应用碰撞修正，使用阻尼防止抖动
+    collision.correction.multiplyScalar(state.physics.collisionDamping);
+    character.position.add(collision.correction);
+    
+    // 如果修正量很大，说明穿模严重，回退到旧位置
+    if (collision.correction.length() > 0.2) {
+      character.position.x = oldPosition.x;
+      character.position.z = oldPosition.z;
+      // 清除水平速度分量，防止持续推进
+      state.physics.velocity.x = 0;
+      state.physics.velocity.z = 0;
+    }
+  }
+  
+  // 应用垂直移动
   character.position.y += state.physics.velocity.y;
   
   // 检测地面碰撞
@@ -204,6 +330,12 @@ function setupGUI() {
   moveFolder.add(state.physics, 'sprintMultiplier', 1.2, 3.0, 0.1).name('冲刺倍率');
   moveFolder.add(state.physics, 'jumpForce', 0.1, 0.5, 0.01).name('跳跃高度');
   moveFolder.add(state.physics, 'gravity', 0.005, 0.03, 0.001).name('重力');
+  
+  // 碰撞设置
+  const collisionFolder = gui.addFolder('碰撞设置');
+  collisionFolder.add(state.physics, 'collisionRadius', 0.1, 1.5, 0.1).name('碰撞半径');
+  collisionFolder.add(state.physics, 'collisionHeight', 0.5, 3.0, 0.1).name('碰撞高度');
+  collisionFolder.add(state.physics, 'collisionDamping', 0.1, 1.0, 0.05).name('碰撞阻尼');
   
   gui.domElement.style.cssText = 'position:absolute;top:0;right:0;';
   return gui;
