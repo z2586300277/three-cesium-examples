@@ -9,7 +9,7 @@ THREE.Mesh.prototype.raycast = acceleratedRaycast;
 
 // 初始化场景、相机和渲染器
 const scene = new THREE.Scene();
-const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+const camera = new THREE.PerspectiveCamera(120, window.innerWidth / window.innerHeight, 0.1, 1000);
 const renderer = new THREE.WebGLRenderer({ antialias: true });
 renderer.setSize(window.innerWidth, window.innerHeight);
 document.body.appendChild(renderer.domElement);
@@ -196,33 +196,7 @@ new GLTFLoader().load(FILE_HOST + 'files/model/Cesium_Air.glb', (gltf) => {
     });
 });
 
-// 添加船模型
-new GLTFLoader().load(FILE_HOST + 'files/model/ship_2.glb', (gltf) => {
-    const ship = gltf.scene;
-    ship.scale.multiplyScalar(2);
-    ship.position.set(5, 0, -15);
-    ship.rotation.y = Math.PI / 2;
-    scene.add(ship);
-    
-    // 为船添加碰撞检测，并移除贴图
-    ship.traverse((child) => {
-        if (child.isMesh) {
-            child.geometry.computeBoundsTree = computeBoundsTree;
-            child.geometry.computeBoundsTree();
-            collidableObjects.push(child);
-            
-            // 移除贴图，使用纯色材质
-            if (child.material) {
-                const originalColor = child.material.color ? child.material.color.clone() : new THREE.Color(0xcccccc);
-                child.material = new THREE.MeshStandardMaterial({
-                    color: originalColor,
-                    roughness: 0.8,
-                    metalness: 0.2
-                });
-            }
-        }
-    });
-});
+
 
 // 添加优雅模型
 new GLTFLoader().load(FILE_HOST + 'files/model/elegant.glb', (gltf) => {
@@ -669,7 +643,7 @@ const cloudSystem = { clouds: volumetricClouds, sun: sun };
 
 // 创建喷气背包粒子系统
 function createJetpackParticles() {
-  const particleCount = 100;
+  const particleCount = 500;
   const geometry = new THREE.BufferGeometry();
   
   const positions = new Float32Array(particleCount * 3);
@@ -687,7 +661,7 @@ function createJetpackParticles() {
     velocities[i * 3 + 2] = 0;
     
     lifetimes[i] = 0;
-    sizes[i] = Math.random() * 0.15 + 0.05;
+    sizes[i] = Math.random() * 0.75 + 0.25;
   }
   
   geometry.setAttribute('position', new THREE.BufferAttribute(positions, 3));
@@ -697,7 +671,7 @@ function createJetpackParticles() {
   
   const material = new THREE.PointsMaterial({
     color: 0xff6600,
-    size: 0.2,
+    size: 1.0,
     transparent: true,
     opacity: 0.8,
     blending: THREE.AdditiveBlending,
@@ -730,7 +704,7 @@ function updateJetpackParticles() {
     if (lifetimes[i] <= 0) {
       // 重置粒子
       const angle = Math.random() * Math.PI * 2;
-      const spread = 0.15;
+      const spread = 0.75;
       
       // 从角色背后发射
       const offset = new THREE.Vector3(
@@ -747,9 +721,9 @@ function updateJetpackParticles() {
       positions[idx + 2] = character.position.z + offset.z;
       
       // 向下和向外的速度
-      velocities[idx] = (Math.random() - 0.5) * 0.02;
-      velocities[idx + 1] = -(Math.random() * 0.08 + 0.1);
-      velocities[idx + 2] = (Math.random() - 0.5) * 0.02;
+      velocities[idx] = (Math.random() - 0.5) * 0.1;
+      velocities[idx + 1] = -(Math.random() * 0.4 + 0.5);
+      velocities[idx + 2] = (Math.random() - 0.5) * 0.1;
       
       lifetimes[i] = Math.random() * 0.5 + 0.3;
     } else {
@@ -958,21 +932,52 @@ function checkCollision(position, velocity) {
     });
   });
   
-  // 地面检测 - 改进以支持多个对象
-  raycaster.set(
-    position.clone().add(new THREE.Vector3(0, 0.5, 0)),
-    new THREE.Vector3(0, -1, 0)
-  );
-  raycaster.far = 1.5;
+  // 改进的地面检测 - 从多个点进行向下检测以处理建筑物表面
+  const groundCheckPoints = [
+    new THREE.Vector3(0, 0.5, 0),           // 中心点
+    new THREE.Vector3(0.3, 0.5, 0),         // 前
+    new THREE.Vector3(-0.3, 0.5, 0),        // 后
+    new THREE.Vector3(0, 0.5, 0.3),         // 右
+    new THREE.Vector3(0, 0.5, -0.3)         // 左
+  ];
   
-  const groundIntersects = raycaster.intersectObjects(collidableObjects, false);
+  let onGround = false;
+  let minGroundDistance = Infinity;
   
-  if (groundIntersects.length > 0) {
-    const groundHit = groundIntersects[0];
-    if (groundHit.distance < 0.5) {
-      correction.y = 0.5 - groundHit.distance;
-      collisionDetected = true;
+  groundCheckPoints.forEach(offset => {
+    const checkPos = position.clone().add(offset);
+    raycaster.set(checkPos, new THREE.Vector3(0, -1, 0));
+    raycaster.far = 1.5;
+    
+    const groundIntersects = raycaster.intersectObjects(collidableObjects, false);
+    
+    if (groundIntersects.length > 0) {
+      const groundHit = groundIntersects[0];
+      // 检查是否是水平表面（法向量朝上）
+      const normal = groundHit.face ? groundHit.face.normal : new THREE.Vector3(0, 1, 0);
+      const worldNormal = normal.clone().transformDirection(groundHit.object.matrixWorld);
+      
+      // 如果法向量与向上方向的点积大于0.5，认为是可站立的表面
+      if (worldNormal.y > 0.5) {
+        if (groundHit.distance < minGroundDistance) {
+          minGroundDistance = groundHit.distance;
+        }
+        
+        if (groundHit.distance < 0.5) {
+          correction.y = 0.5 - groundHit.distance;
+          collisionDetected = true;
+          onGround = true;
+        }
+      }
     }
+  });
+  
+  // 如果检测到可站立的地面，更新airborne状态
+  if (onGround && state.physics.velocity.y <= 0) {
+    state.physics.airborne = false;
+    state.physics.velocity.y = 0;
+  } else if (minGroundDistance > 0.5) {
+    state.physics.airborne = true;
   }
   
   return { collided: collisionDetected, correction };
@@ -1119,8 +1124,8 @@ function update() {
   // 应用垂直移动
   character.position.y += state.physics.velocity.y;
   
-  // 检测地面碰撞
-  if (character.position.y <= 0) {
+  // 基础地面检测（防止掉出世界）
+  if (character.position.y < 0) {
     character.position.y = 0;
     state.physics.velocity.y = 0;
     state.physics.airborne = false;
