@@ -1323,4 +1323,4 @@ function setupGUI() {
 }
 
 // 显示操作提示
-GLOBAL_CONFIG.ElMessage('🚀 WASD移动，鼠标视角，空格喷气飞行，Shift加速。喷气背包已启用！赛博朋克城市等你探索！碰撞会触发眩晕效果。');
+GLOBAL_CONFIG.ElMessage('🚀 WASD移动，鼠标视角，空格喷气飞行，Shift加速。喷气背包已启用！赛博朋克城市等你探索！碰撞会触发眩晕效果。')
