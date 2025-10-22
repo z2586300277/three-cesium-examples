@@ -1973,9 +1973,14 @@ export default [
                 id: 'personFirstMove',
                 name: '第一人称移动',
                 name_en: 'First Move',
-                author: 'z2586300277',
+                author: 'TomCrum-wdm',
                 codeUrl: HOST + 'threeExamples/animation/personFirstMove.js',
-                image: HOST + 'threeExamples/animation/personFirstMove.jpg'
+                image: HOST + 'threeExamples/animation/personFirstMove.jpg',
+                inject: {
+                    importmap: {
+                        "three-mesh-bvh": FILE_HOST + "js/bvh.module.js"
+                    }
+                }
             },
             {
                 id: 'transformAnimate',
