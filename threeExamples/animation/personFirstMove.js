@@ -638,8 +638,627 @@ const rimLight = new THREE.PointLight(0xffffff, 0.5, 60);
 rimLight.position.set(20, 10, -20);
 scene.add(rimLight);
 
+// 创建体积光聚光灯着色器 - 增加戏剧性光束效果
+function createVolumetricSpotlight(color, position, target) {
+  const spotlightVertexShader = `
+    varying vec3 vWorldPosition;
+    varying vec3 vNormal;
+    
+    void main() {
+      vec4 worldPosition = modelMatrix * vec4(position, 1.0);
+      vWorldPosition = worldPosition.xyz;
+      vNormal = normalize(normalMatrix * normal);
+      gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0);
+    }
+  `;
+  
+  const spotlightFragmentShader = `
+    uniform vec3 lightColor;
+    uniform vec3 lightPosition;
+    uniform vec3 lightTarget;
+    uniform float time;
+    uniform float intensity;
+    uniform float coneAngle;
+    
+    varying vec3 vWorldPosition;
+    varying vec3 vNormal;
+    
+    // 噪声函数用于体积光扰动
+    float hash(vec2 p) {
+      return fract(sin(dot(p, vec2(127.1, 311.7))) * 43758.5453);
+    }
+    
+    float noise(vec2 p) {
+      vec2 i = floor(p);
+      vec2 f = fract(p);
+      f = f * f * (3.0 - 2.0 * f);
+      
+      float a = hash(i);
+      float b = hash(i + vec2(1.0, 0.0));
+      float c = hash(i + vec2(0.0, 1.0));
+      float d = hash(i + vec2(1.0, 1.0));
+      
+      return mix(mix(a, b, f.x), mix(c, d, f.x), f.y);
+    }
+    
+    void main() {
+      vec3 lightDir = normalize(lightTarget - lightPosition);
+      vec3 pixelDir = normalize(vWorldPosition - lightPosition);
+      
+      // 计算像素是否在聚光灯锥体内
+      float spotEffect = dot(lightDir, pixelDir);
+      float coneThreshold = cos(coneAngle);
+      
+      if (spotEffect < coneThreshold) {
+        discard;
+      }
+      
+      // 距离衰减
+      float distance = length(vWorldPosition - lightPosition);
+      float attenuation = 1.0 / (1.0 + distance * 0.02);
+      
+      // 聚光灯锥体边缘软化
+      float spotFalloff = smoothstep(coneThreshold, coneThreshold + 0.1, spotEffect);
+      
+      // 添加体积噪声扰动
+      float noiseValue = noise(vWorldPosition.xy * 0.5 + time * 0.1);
+      noiseValue += noise(vWorldPosition.xz * 0.8 - time * 0.15) * 0.5;
+      noiseValue = noiseValue * 0.5;
+      
+      // 计算最终亮度
+      float brightness = spotFalloff * attenuation * intensity * (0.7 + noiseValue * 0.3);
+      
+      vec3 color = lightColor * brightness;
+      
+      gl_FragColor = vec4(color, brightness * 0.3);
+    }
+  `;
+  
+  const spotlightUniforms = {
+    lightColor: { value: new THREE.Color(color) },
+    lightPosition: { value: position },
+    lightTarget: { value: target },
+    time: { value: 0 },
+    intensity: { value: 2.0 },
+    coneAngle: { value: Math.PI / 6 }
+  };
+  
+  // 创建聚光灯锥体几何体
+  const geometry = new THREE.ConeGeometry(5, 20, 32, 1, true);
+  const material = new THREE.ShaderMaterial({
+    uniforms: spotlightUniforms,
+    vertexShader: spotlightVertexShader,
+    fragmentShader: spotlightFragmentShader,
+    transparent: true,
+    blending: THREE.AdditiveBlending,
+    side: THREE.DoubleSide,
+    depthWrite: false
+  });
+  
+  const spotlight = new THREE.Mesh(geometry, material);
+  spotlight.position.copy(position);
+  spotlight.lookAt(target);
+  
+  return spotlight;
+}
+
+// 创建动态霓虹灯点光源着色器
+function createNeonPointLight(color1, color2, position, radius) {
+  const neonVertexShader = `
+    varying vec3 vWorldPosition;
+    varying vec2 vUv;
+    
+    void main() {
+      vUv = uv;
+      vec4 worldPosition = modelMatrix * vec4(position, 1.0);
+      vWorldPosition = worldPosition.xyz;
+      gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0);
+    }
+  `;
+  
+  const neonFragmentShader = `
+    uniform vec3 color1;
+    uniform vec3 color2;
+    uniform vec3 lightPosition;
+    uniform float time;
+    uniform float radius;
+    
+    varying vec3 vWorldPosition;
+    varying vec2 vUv;
+    
+    void main() {
+      vec3 toLight = vWorldPosition - lightPosition;
+      float distance = length(toLight);
+      
+      // 距离衰减
+      float attenuation = 1.0 - smoothstep(0.0, radius, distance);
+      
+      // 颜色脉动
+      float pulse = sin(time * 2.0) * 0.5 + 0.5;
+      vec3 color = mix(color1, color2, pulse);
+      
+      // 添加闪烁效果
+      float flicker = sin(time * 10.0 + distance) * 0.1 + 0.9;
+      
+      // 径向渐变
+      float radial = 1.0 - length(vUv - 0.5) * 2.0;
+      radial = smoothstep(0.0, 1.0, radial);
+      
+      float brightness = attenuation * radial * flicker;
+      
+      gl_FragColor = vec4(color * brightness * 2.0, brightness * 0.8);
+    }
+  `;
+  
+  const neonUniforms = {
+    color1: { value: new THREE.Color(color1) },
+    color2: { value: new THREE.Color(color2) },
+    lightPosition: { value: position },
+    time: { value: 0 },
+    radius: { value: radius }
+  };
+  
+  const geometry = new THREE.SphereGeometry(radius * 0.8, 32, 32);
+  const material = new THREE.ShaderMaterial({
+    uniforms: neonUniforms,
+    vertexShader: neonVertexShader,
+    fragmentShader: neonFragmentShader,
+    transparent: true,
+    blending: THREE.AdditiveBlending,
+    depthWrite: false
+  });
+  
+  const neonLight = new THREE.Mesh(geometry, material);
+  neonLight.position.copy(position);
+  
+  return neonLight;
+}
+
+// 创建神光/光束着色器效果
+function createGodRays() {
+  const godRaysVertexShader = `
+    varying vec3 vWorldPosition;
+    varying vec3 vNormal;
+    
+    void main() {
+      vec4 worldPosition = modelMatrix * vec4(position, 1.0);
+      vWorldPosition = worldPosition.xyz;
+      vNormal = normalize(normalMatrix * normal);
+      gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0);
+    }
+  `;
+  
+  const godRaysFragmentShader = `
+    uniform vec3 sunPosition;
+    uniform float time;
+    uniform vec3 rayColor;
+    
+    varying vec3 vWorldPosition;
+    varying vec3 vNormal;
+    
+    float hash(vec2 p) {
+      return fract(sin(dot(p, vec2(127.1, 311.7))) * 43758.5453);
+    }
+    
+    float noise(vec2 p) {
+      vec2 i = floor(p);
+      vec2 f = fract(p);
+      f = f * f * (3.0 - 2.0 * f);
+      
+      float a = hash(i);
+      float b = hash(i + vec2(1.0, 0.0));
+      float c = hash(i + vec2(0.0, 1.0));
+      float d = hash(i + vec2(1.0, 1.0));
+      
+      return mix(mix(a, b, f.x), mix(c, d, f.x), f.y);
+    }
+    
+    void main() {
+      vec3 viewDir = normalize(cameraPosition - vWorldPosition);
+      vec3 sunDir = normalize(sunPosition - vWorldPosition);
+      
+      // 计算视线与太阳方向的角度
+      float sunAlignment = max(dot(viewDir, sunDir), 0.0);
+      sunAlignment = pow(sunAlignment, 8.0);
+      
+      // 距离衰减
+      float distance = length(vWorldPosition - sunPosition);
+      float attenuation = 1.0 / (1.0 + distance * 0.001);
+      
+      // 射线噪声
+      vec2 noiseCoord = vWorldPosition.xy * 0.01 + time * 0.05;
+      float rayNoise = noise(noiseCoord);
+      rayNoise += noise(noiseCoord * 2.0) * 0.5;
+      rayNoise = rayNoise * 0.5;
+      
+      // 径向光束效果
+      float angle = atan(vWorldPosition.y - sunPosition.y, vWorldPosition.x - sunPosition.x);
+      float rayPattern = sin(angle * 12.0 + time) * 0.5 + 0.5;
+      
+      float brightness = sunAlignment * attenuation * (0.6 + rayNoise * 0.4) * (0.8 + rayPattern * 0.2);
+      
+      vec3 color = rayColor * brightness;
+      
+      gl_FragColor = vec4(color, brightness * 0.15);
+    }
+  `;
+  
+  const godRaysUniforms = {
+    sunPosition: { value: new THREE.Vector3(200, 150, -300) },
+    time: { value: 0 },
+    rayColor: { value: new THREE.Color(0xffd700) }
+  };
+  
+  const geometry = new THREE.PlaneGeometry(600, 600, 1, 1);
+  const material = new THREE.ShaderMaterial({
+    uniforms: godRaysUniforms,
+    vertexShader: godRaysVertexShader,
+    fragmentShader: godRaysFragmentShader,
+    transparent: true,
+    blending: THREE.AdditiveBlending,
+    side: THREE.DoubleSide,
+    depthWrite: false
+  });
+  
+  const godRays = new THREE.Mesh(geometry, material);
+  godRays.position.set(100, 75, -150);
+  godRays.lookAt(0, 0, 0);
+  
+  return godRays;
+}
+
+// 添加体积光聚光灯到场景
+const volumetricSpot1 = createVolumetricSpotlight(
+  0x00ffff, 
+  new THREE.Vector3(15, 25, 10),
+  new THREE.Vector3(15, 0, 10)
+);
+scene.add(volumetricSpot1);
+
+const volumetricSpot2 = createVolumetricSpotlight(
+  0xff00ff,
+  new THREE.Vector3(-12, 30, -8),
+  new THREE.Vector3(-12, 0, -8)
+);
+scene.add(volumetricSpot2);
+
+// 添加动态霓虹灯点光源
+const neonLight1 = createNeonPointLight(
+  0x00ffff,
+  0x00ff88,
+  new THREE.Vector3(8, 5, 5),
+  12
+);
+scene.add(neonLight1);
+
+const neonLight2 = createNeonPointLight(
+  0xff0088,
+  0xff00ff,
+  new THREE.Vector3(-10, 6, -6),
+  10
+);
+scene.add(neonLight2);
+
+const neonLight3 = createNeonPointLight(
+  0xffaa00,
+  0xff5500,
+  new THREE.Vector3(0, 8, -12),
+  14
+);
+scene.add(neonLight3);
+
+// 添加神光效果
+const godRays = createGodRays();
+scene.add(godRays);
+
+// 创建大气发光效果着色器
+function createAtmosphericGlow() {
+  const glowVertexShader = `
+    varying vec3 vWorldPosition;
+    varying vec3 vNormal;
+    varying float vIntensity;
+    
+    void main() {
+      vNormal = normalize(normalMatrix * normal);
+      vec4 worldPosition = modelMatrix * vec4(position, 1.0);
+      vWorldPosition = worldPosition.xyz;
+      
+      // 计算边缘强度
+      vec3 viewVector = normalize(cameraPosition - worldPosition.xyz);
+      vIntensity = pow(1.0 - abs(dot(vNormal, viewVector)), 2.5);
+      
+      gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0);
+    }
+  `;
+  
+  const glowFragmentShader = `
+    uniform vec3 glowColor;
+    uniform float time;
+    uniform float intensity;
+    
+    varying vec3 vWorldPosition;
+    varying vec3 vNormal;
+    varying float vIntensity;
+    
+    float hash(vec2 p) {
+      return fract(sin(dot(p, vec2(127.1, 311.7))) * 43758.5453);
+    }
+    
+    float noise(vec2 p) {
+      vec2 i = floor(p);
+      vec2 f = fract(p);
+      f = f * f * (3.0 - 2.0 * f);
+      
+      float a = hash(i);
+      float b = hash(i + vec2(1.0, 0.0));
+      float c = hash(i + vec2(0.0, 1.0));
+      float d = hash(i + vec2(1.0, 1.0));
+      
+      return mix(mix(a, b, f.x), mix(c, d, f.x), f.y);
+    }
+    
+    void main() {
+      // 高度渐变
+      float heightFactor = smoothstep(-0.5, 1.0, vWorldPosition.y * 0.01);
+      
+      // 动态噪声
+      float noiseValue = noise(vWorldPosition.xz * 0.01 + time * 0.1);
+      noiseValue += noise(vWorldPosition.xz * 0.02 - time * 0.05) * 0.5;
+      
+      // 脉动效果
+      float pulse = sin(time * 0.5) * 0.3 + 0.7;
+      
+      // 组合发光强度
+      float glowIntensity = vIntensity * intensity * heightFactor * pulse * (0.8 + noiseValue * 0.2);
+      
+      vec3 color = glowColor * glowIntensity;
+      
+      gl_FragColor = vec4(color, glowIntensity * 0.4);
+    }
+  `;
+  
+  const glowUniforms = {
+    glowColor: { value: new THREE.Color(0x4488ff) },
+    time: { value: 0 },
+    intensity: { value: 1.5 }
+  };
+  
+  const geometry = new THREE.SphereGeometry(450, 64, 64);
+  const material = new THREE.ShaderMaterial({
+    uniforms: glowUniforms,
+    vertexShader: glowVertexShader,
+    fragmentShader: glowFragmentShader,
+    transparent: true,
+    blending: THREE.AdditiveBlending,
+    side: THREE.BackSide,
+    depthWrite: false
+  });
+  
+  const glow = new THREE.Mesh(geometry, material);
+  return glow;
+}
+
+// 创建环境边缘光着色器 - 为场景中的对象添加轮廓光
+function createEnvironmentalRimLighting() {
+  const rimVertexShader = `
+    varying vec3 vNormal;
+    varying vec3 vViewPosition;
+    
+    void main() {
+      vNormal = normalize(normalMatrix * normal);
+      vec4 mvPosition = modelViewMatrix * vec4(position, 1.0);
+      vViewPosition = -mvPosition.xyz;
+      gl_Position = projectionMatrix * mvPosition;
+    }
+  `;
+  
+  const rimFragmentShader = `
+    uniform vec3 rimColor1;
+    uniform vec3 rimColor2;
+    uniform float time;
+    uniform float rimPower;
+    uniform float rimIntensity;
+    
+    varying vec3 vNormal;
+    varying vec3 vViewPosition;
+    
+    void main() {
+      vec3 viewDir = normalize(vViewPosition);
+      float rimValue = 1.0 - max(0.0, dot(viewDir, vNormal));
+      rimValue = pow(rimValue, rimPower);
+      
+      // 颜色脉动
+      float pulse = sin(time * 1.5) * 0.5 + 0.5;
+      vec3 rimColor = mix(rimColor1, rimColor2, pulse);
+      
+      vec3 color = rimColor * rimValue * rimIntensity;
+      float alpha = rimValue * 0.6;
+      
+      gl_FragColor = vec4(color, alpha);
+    }
+  `;
+  
+  // 这个材质函数将被应用到需要边缘光的对象上
+  return {
+    createMaterial: function(color1 = 0x00ffff, color2 = 0xff00ff) {
+      return new THREE.ShaderMaterial({
+        uniforms: {
+          rimColor1: { value: new THREE.Color(color1) },
+          rimColor2: { value: new THREE.Color(color2) },
+          time: { value: 0 },
+          rimPower: { value: 3.0 },
+          rimIntensity: { value: 2.0 }
+        },
+        vertexShader: rimVertexShader,
+        fragmentShader: rimFragmentShader,
+        transparent: true,
+        blending: THREE.AdditiveBlending,
+        depthWrite: false
+      });
+    }
+  };
+}
+
+// 添加大气发光效果
+const atmosphericGlow = createAtmosphericGlow();
+scene.add(atmosphericGlow);
+
+// 创建环境边缘光材质生成器
+const rimLightingGenerator = createEnvironmentalRimLighting();
+
+// 创建程序化闪电效果着色器
+function createProceduralLightning(startPos, endPos) {
+  const lightningVertexShader = `
+    varying vec2 vUv;
+    varying vec3 vPosition;
+    
+    void main() {
+      vUv = uv;
+      vPosition = position;
+      gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0);
+    }
+  `;
+  
+  const lightningFragmentShader = `
+    uniform float time;
+    uniform vec3 lightningColor;
+    uniform float intensity;
+    uniform vec3 startPos;
+    uniform vec3 endPos;
+    
+    varying vec2 vUv;
+    varying vec3 vPosition;
+    
+    float random(vec2 st) {
+      return fract(sin(dot(st.xy, vec2(12.9898, 78.233))) * 43758.5453123);
+    }
+    
+    float noise(vec2 st) {
+      vec2 i = floor(st);
+      vec2 f = fract(st);
+      
+      float a = random(i);
+      float b = random(i + vec2(1.0, 0.0));
+      float c = random(i + vec2(0.0, 1.0));
+      float d = random(i + vec2(1.0, 1.0));
+      
+      vec2 u = f * f * (3.0 - 2.0 * f);
+      
+      return mix(a, b, u.x) + (c - a)* u.y * (1.0 - u.x) + (d - b) * u.x * u.y;
+    }
+    
+    float fbm(vec2 st) {
+      float value = 0.0;
+      float amplitude = 0.5;
+      for(int i = 0; i < 5; i++) {
+        value += amplitude * noise(st);
+        st *= 2.0;
+        amplitude *= 0.5;
+      }
+      return value;
+    }
+    
+    void main() {
+      // 创建闪电主干
+      float trunk = smoothstep(0.52, 0.48, abs(vUv.y - 0.5));
+      
+      // 添加分支效果
+      vec2 noiseCoord = vec2(vUv.x * 10.0, vUv.y * 5.0 + time * 2.0);
+      float branch = fbm(noiseCoord);
+      branch = step(0.75, branch);
+      
+      // 闪烁效果
+      float flicker = step(0.5, random(vec2(time * 10.0, vUv.x)));
+      flicker = mix(0.7, 1.0, flicker);
+      
+      // 亮度渐变
+      float fade = smoothstep(0.0, 0.2, vUv.x) * smoothstep(1.0, 0.8, vUv.x);
+      
+      // 脉动效果
+      float pulse = sin(time * 20.0 + vUv.x * 10.0) * 0.3 + 0.7;
+      
+      // 组合效果
+      float lightning = (trunk + branch * 0.3) * fade * flicker * pulse;
+      
+      // 电弧发光
+      float glow = smoothstep(0.6, 0.3, abs(vUv.y - 0.5)) * 0.5;
+      
+      vec3 color = lightningColor * (lightning + glow) * intensity;
+      float alpha = (lightning + glow * 0.5) * 0.8;
+      
+      gl_FragColor = vec4(color, alpha);
+    }
+  `;
+  
+  const lightningUniforms = {
+    time: { value: 0 },
+    lightningColor: { value: new THREE.Color(0x88ffff) },
+    intensity: { value: 3.0 },
+    startPos: { value: startPos },
+    endPos: { value: endPos }
+  };
+  
+  const geometry = new THREE.PlaneGeometry(
+    startPos.distanceTo(endPos),
+    2,
+    1,
+    1
+  );
+  
+  const material = new THREE.ShaderMaterial({
+    uniforms: lightningUniforms,
+    vertexShader: lightningVertexShader,
+    fragmentShader: lightningFragmentShader,
+    transparent: true,
+    blending: THREE.AdditiveBlending,
+    side: THREE.DoubleSide,
+    depthWrite: false
+  });
+  
+  const lightning = new THREE.Mesh(geometry, material);
+  lightning.position.copy(startPos.clone().add(endPos).multiplyScalar(0.5));
+  
+  const direction = new THREE.Vector3().subVectors(endPos, startPos);
+  lightning.lookAt(lightning.position.clone().add(direction));
+  
+  // 添加触发器控制闪电的出现
+  lightning.visible = false;
+  lightning.userData.nextTrigger = Math.random() * 5000 + 3000; // 3-8秒随机出现
+  lightning.userData.duration = 200; // 持续200ms
+  lightning.userData.triggered = false;
+  
+  return lightning;
+}
+
+// 添加程序化闪电效果
+const lightning1 = createProceduralLightning(
+  new THREE.Vector3(10, 15, 5),
+  new THREE.Vector3(12, 0, 5)
+);
+scene.add(lightning1);
+
+const lightning2 = createProceduralLightning(
+  new THREE.Vector3(-8, 18, -10),
+  new THREE.Vector3(-10, 0, -12)
+);
+scene.add(lightning2);
+
+const lightning3 = createProceduralLightning(
+  new THREE.Vector3(0, 20, 15),
+  new THREE.Vector3(2, 0, 16)
+);
+scene.add(lightning3);
+
 // 存储引用以便动画更新
 const cloudSystem = { clouds: volumetricClouds, sun: sun };
+const lightingEffects = {
+  spotlights: [volumetricSpot1, volumetricSpot2],
+  neonLights: [neonLight1, neonLight2, neonLight3],
+  godRays: godRays,
+  atmosphericGlow: atmosphericGlow,
+  rimLightingGenerator: rimLightingGenerator,
+  lightning: [lightning1, lightning2, lightning3]
+};
 
 // 创建喷气背包粒子系统
 function createJetpackParticles() {
@@ -1195,6 +1814,66 @@ function animate() {
     }
   });
   
+  // 更新体积光聚光灯
+  if (lightingEffects && lightingEffects.spotlights) {
+    lightingEffects.spotlights.forEach(spotlight => {
+      if (spotlight.material.uniforms) {
+        spotlight.material.uniforms.time.value = elapsedTime;
+      }
+    });
+  }
+  
+  // 更新霓虹灯点光源
+  if (lightingEffects && lightingEffects.neonLights) {
+    lightingEffects.neonLights.forEach(neonLight => {
+      if (neonLight.material.uniforms) {
+        neonLight.material.uniforms.time.value = elapsedTime;
+      }
+    });
+  }
+  
+  // 更新神光效果
+  if (lightingEffects && lightingEffects.godRays && lightingEffects.godRays.material.uniforms) {
+    lightingEffects.godRays.material.uniforms.time.value = elapsedTime;
+  }
+  
+  // 更新大气发光效果
+  if (lightingEffects && lightingEffects.atmosphericGlow && lightingEffects.atmosphericGlow.material.uniforms) {
+    lightingEffects.atmosphericGlow.material.uniforms.time.value = elapsedTime;
+  }
+  
+  // 更新和触发闪电效果
+  if (lightingEffects && lightingEffects.lightning) {
+    const currentTime = Date.now();
+    lightingEffects.lightning.forEach(lightning => {
+      if (lightning.material.uniforms) {
+        lightning.material.uniforms.time.value = elapsedTime;
+        
+        // 闪电触发逻辑
+        if (!lightning.userData.triggered && currentTime > lightning.userData.lastTrigger + lightning.userData.nextTrigger) {
+          lightning.visible = true;
+          lightning.userData.triggered = true;
+          lightning.userData.triggerStartTime = currentTime;
+          lightning.userData.lastTrigger = currentTime;
+        }
+        
+        // 闪电消失逻辑
+        if (lightning.userData.triggered && currentTime > lightning.userData.triggerStartTime + lightning.userData.duration) {
+          lightning.visible = false;
+          lightning.userData.triggered = false;
+          lightning.userData.nextTrigger = Math.random() * 5000 + 3000; // 重置下次触发时间
+        }
+      }
+    });
+    
+    // 初始化lastTrigger
+    if (lightingEffects.lightning[0] && !lightingEffects.lightning[0].userData.lastTrigger) {
+      lightingEffects.lightning.forEach(lightning => {
+        lightning.userData.lastTrigger = currentTime - lightning.userData.nextTrigger;
+      });
+    }
+  }
+  
   renderer.render(scene, camera);
 }
 animate();
@@ -1323,9 +2002,68 @@ function setupGUI() {
   collisionFolder.add(state.physics, 'collisionHeight', 0.5, 3.0, 0.1).name('↕ 碰撞高度');
   collisionFolder.add(state.physics, 'collisionDamping', 0.1, 1.0, 0.05).name('⚡ 碰撞阻尼');
   
+  // 灯光效果设置
+  if (lightingEffects) {
+    const lightingFolder = gui.addFolder('💡 灯光效果');
+    
+    // 体积光聚光灯控制
+    if (lightingEffects.spotlights && lightingEffects.spotlights.length > 0) {
+      const spot1Folder = lightingFolder.addFolder('聚光灯1 (青色)');
+      spot1Folder.add(lightingEffects.spotlights[0].material.uniforms.intensity, 'value', 0, 5, 0.1).name('⚡ 强度');
+      spot1Folder.add(lightingEffects.spotlights[0].material.uniforms.coneAngle, 'value', 0, Math.PI/2, 0.01).name('📐 锥角');
+      
+      if (lightingEffects.spotlights.length > 1) {
+        const spot2Folder = lightingFolder.addFolder('聚光灯2 (品红)');
+        spot2Folder.add(lightingEffects.spotlights[1].material.uniforms.intensity, 'value', 0, 5, 0.1).name('⚡ 强度');
+        spot2Folder.add(lightingEffects.spotlights[1].material.uniforms.coneAngle, 'value', 0, Math.PI/2, 0.01).name('📐 锥角');
+      }
+    }
+    
+    // 霓虹灯控制
+    if (lightingEffects.neonLights && lightingEffects.neonLights.length > 0) {
+      const neonFolder = lightingFolder.addFolder('🔮 霓虹灯');
+      lightingEffects.neonLights.forEach((neon, i) => {
+        neonFolder.add(neon, 'visible').name(`霓虹灯 ${i+1}`);
+      });
+    }
+    
+    // 大气效果控制
+    if (lightingEffects.atmosphericGlow) {
+      const atmoFolder = lightingFolder.addFolder('🌫 大气发光');
+      atmoFolder.add(lightingEffects.atmosphericGlow.material.uniforms.intensity, 'value', 0, 3, 0.1).name('⚡ 强度');
+      atmoFolder.add(lightingEffects.atmosphericGlow, 'visible').name('● 启用');
+    }
+    
+    // 神光效果控制
+    if (lightingEffects.godRays) {
+      const godRaysFolder = lightingFolder.addFolder('✨ 神光');
+      godRaysFolder.add(lightingEffects.godRays, 'visible').name('● 启用');
+    }
+    
+    // 闪电效果控制
+    if (lightingEffects.lightning && lightingEffects.lightning.length > 0) {
+      const lightningFolder = lightingFolder.addFolder('⚡ 闪电效果');
+      lightingEffects.lightning.forEach((lightning, i) => {
+        const controls = {
+          intensity: lightning.material.uniforms.intensity.value,
+          trigger: () => {
+            lightning.visible = true;
+            lightning.userData.triggered = true;
+            lightning.userData.triggerStartTime = Date.now();
+          }
+        };
+        const folder = lightningFolder.addFolder(`闪电 ${i+1}`);
+        folder.add(lightning.material.uniforms.intensity, 'value', 0, 5, 0.1).name('⚡ 强度');
+        folder.add(controls, 'trigger').name('🔥 手动触发');
+      });
+    }
+    
+    lightingFolder.open();
+  }
+  
   gui.domElement.style.cssText = 'position:absolute;top:10px;right:10px;';
   return gui;
 }
 
 // 显示操作提示
-GLOBAL_CONFIG.ElMessage('🚀 WASD移动，鼠标视角，空格喷气飞行，Shift加速。喷气背包已启用！赛博朋克城市等你探索！碰撞会触发眩晕效果。')
+GLOBAL_CONFIG.ElMessage('🚀 WASD移动，鼠标视角，空格喷气飞行，Shift加速。喷气背包已启用！赛博朋克城市等你探索！💡 新增：体积光聚光灯、霓虹灯点光源、神光效果、大气发光、闪电效果等多种动态光效着色器！碰撞会触发眩晕效果。')
