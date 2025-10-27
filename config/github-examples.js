@@ -1094,6 +1094,15 @@ export default [
                 image: HOST + 'threeExamples/openSource/interactive-shield.jpg'
             },
             {
+                id: 'three-plateau-tps',
+                name: '三维地形TPS',
+                name_en: 'Three Plateau TPS',
+                author: 'AUTO',
+                githubUrl: 'https://github.com/satoshi7190/three-plateau-tps',
+                openUrl: 'https://satoshi7190.github.io/three-plateau-tps/',
+                image: 'https://raw.githubusercontent.com/satoshi7190/three-plateau-tps/refs/heads/main/image.jpg'
+            },
+            {
                 id: 'roomDesigner',
                 name: '3D房间设计器',
                 name_en: '3D Room Designer',
