@@ -770,6 +770,15 @@ export default [
                 image: 'https://z2586300277.github.io/show-site/customEffect/customEffect.jpg'
             },
             {
+                id: 'cartoon-grass',
+                name: '卡通草地',
+                name_en: 'cartoon grass',
+                author: 'KallkaGo',
+                githubUrl: 'https://github.com/KallkaGo/Grass',
+                openUrl: 'https://grass-sooty.vercel.app/',
+                image: HOST + 'threeExamples/openSource/cartoon-grass.jpg'
+            },
+            {
                 id: '3dAssests',
                 name: '3D资源库',
                 name_en: '3D Assests',
