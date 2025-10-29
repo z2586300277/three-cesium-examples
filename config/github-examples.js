@@ -104,6 +104,15 @@ export default [
                 image: FILE_HOST + 'images/wuyifan0203.jpg'
             },
             {
+                id: 'aSouthernCat',
+                name: 'ASouthernCat 3D之旅',
+                name_en: 'ASouthernCat Journey',
+                author: 'ASouthernCat',
+                githubUrl: 'https://github.com/ASouthernCat',
+                openUrl: 'https://my-threejs-journey-theta.vercel.app/#amazing-globe',
+                image: HOST + 'threeExamples/openSource/aSouthernCat.jpg',
+            },
+            {
                 id: 'alwxkxk',
                 author: 'alwxkxk',
                 name: 'Three案例',
