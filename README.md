@@ -10,13 +10,11 @@
 | :---------------:| :---------------: | :---------: | :--------- |
 | <img src="https://z2586300277.github.io/3d-file-server/images/QQ.png" height="140px" /> | <img src="https://z2586300277.github.io/3d-file-server/images/nico.jpg" height="140px" /> | <img src="https://z2586300277.github.io/3d-file-server/images/threeCesiumExamples.jpg" width="200px" height="140px" /> | <img src="https://api.star-history.com/svg?repos=z2586300277/three-editor,z2586300277/three-cesium-examples&type=Date" width="200px" height="140px" /> |
 
-- 2025 拥抱未来，分享永不停止 - [开源组织](https://openthree.github.io/three-cesium-links)，从零打造WebGPU开源案例 - [链接](https://openthree.github.io/webgpu)
-
 - github dev 分支实时预览 http://z2586300277.github.io/three-cesium-examples
 
 - 国内访问 https://threehub.cn ，可下滑至 📦 自行部署 - 助力企业 查看其他部署站点🏫。
 
-- 由于此仓库关注和浏览的人很多且活跃, 仓库会每日更新。(点个 watch 获取最新动态🐸)
+- 由于此仓库关注和浏览的人很多且活跃, 仓库会经常更新。(点个 watch 获取最新动态🐸)
 
 - 关注 git histroy, 记录人生的每一天, 开发者人生历史的足迹。(点个 follow 监视作者🍏)
 
@@ -44,11 +42,11 @@
 
 ## 🌳 创作
 
-#### ✋ 如果这些里面有案例帮助了您，有意的话您可以提交您的作品，让爱传递给更多开发者
+- ✋ 如果这些里面有案例帮助了您，有意的话您可以提交您的作品，让爱传递给更多开发者
 
-#### 👏 加入管理仓库的开发者，可自行创建自己的分支，或者在 dev 分支直接开发
+- 👏 加入管理仓库的开发者，可自行创建自己的分支，或者在 dev 分支直接开发
 
-#### 📑 fork 仓库开发 - 增加用户信息 - 提交代码 - 合并到 dev
+- 📑 fork 仓库开发 - 增加用户信息 - 提交代码 - 合并到 dev
 
 #### 🌿 分布式仓库开发模式 https://github.com/z2586300277/three-cesium-examples-self
 
@@ -141,16 +139,13 @@
 |[threehub-site](https://threehub.cn) | [cesiumhub-site](http://cesiumhub.cn)| [nico-site](http://nicowebgl.cn/three-cesium-examples)|
 |[codeLike-github](https://g2657.github.io/webgl-examples/)|
 
-### 🏫 解决方案 - 项目
+### 🏫 手机端
 
 - 小程序threejs https://three-x.cn  、 移动端 https://meta-gate.cn 
 
 #  💎 Three.js and Cesium.js Case Study - Generating Love - Only Open Source-
-## Top 1 in China- 👋 -  Share knowledge- ⭐ -  Dianxing Assistance- ⚡ -  Update to death
 #### Web3D related resources, repositories, links, effect cases, requirements, and optimization suggestions can be submitted using Issues comments ✍。
 #### 3D developers record, review, share, showcase works, make friends, collaborate 🤝。 (Join the warehouse management and contact the author) 🍉)
-
-- Embracing the future in 2025, sharing never stops - [Open Source Organization](https://openthree.github.io/three-cesium-links)Building WebGPU Open Source Cases from Scratch - [Link](https://openthree.github.io/webgpu)
 - Real time preview of GitHub dev branch http://z2586300277.github.io/three-cesium-examples
 - Domestic visits https://threehub.cn , can slide down to 📦  Self deployment - Assist enterprises in viewing other deployment sites 🏫。
 - Due to the large and active number of people following and browsing this repository, it will be updated frequently. (Click on watch to get the latest updates) 🐸
@@ -160,11 +155,11 @@
 - Note: Try not to submit files exceeding 200k. Image control compression to 10k, online compression - [link](https://yasuo.xunjiepdf.com/img/)
 - Leave a link for businesses to seek professional technical or personnel support, individual developers to undertake projects, sell resources, and exchange support 🐋。
 
-##  🌳  a literary creation
-####  ✋  If there are any cases that have helped you, if interested, you can submit your work to spread love to more developers
-####  👏  Developers who join the repository management can create their own branches or develop directly in the dev branch
-####  📑  Fork repository development - Add user information - Submit code - Merge into dev
-####  🌿  Distributed Warehouse Development Model https://github.com/z2586300277/three-cesium-examples-self
+##  🌳 literary creation
+- ✋ If there are any cases that have helped you, if interested, you can submit your work to spread love to more developers
+- 👏 Developers who join the repository management can create their own branches or develop directly in the dev branch
+- 📑 Fork repository development - Add user information - Submit code - Merge into dev
+- 🌿 Distributed Warehouse Development Model https://github.com/z2586300277/three-cesium-examples-self
 
 - Run the framework to start the service port pointing to index.html, such as nginx Apache Node.js LiveServer, as long as the service can be started
 1. Creators can enter their developer information in config/author.js, and then the ID associated with the submitted case will display the author information.
