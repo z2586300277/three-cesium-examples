@@ -1112,6 +1112,15 @@ export default [
                 image: HOST + 'threeExamples/openSource/interactive-shield.jpg'
             },
             {
+                id: 'm-trust',
+                name: 'M-Trust',
+                name_en: 'M-Trust',
+                author: 'Pong-lei',
+                githubUrl: 'https://github.com/Pong-lei/m-trust',
+                openUrl: 'https://m-trust.vercel.app/',
+                image: HOST + 'threeExamples/openSource/m-trust.jpg'
+            },
+            {
                 id: 'three-plateau-tps',
                 name: '三维地形TPS',
                 name_en: 'Three Plateau TPS',
