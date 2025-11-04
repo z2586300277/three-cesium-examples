@@ -104,6 +104,15 @@ export default [
                 image: FILE_HOST + 'images/wuyifan0203.jpg'
             },
             {
+                id: 'aSouthernCat',
+                name: 'ASouthernCat 3D之旅',
+                name_en: 'ASouthernCat Journey',
+                author: 'ASouthernCat',
+                githubUrl: 'https://github.com/ASouthernCat',
+                openUrl: 'https://my-threejs-journey-theta.vercel.app/#amazing-globe',
+                image: HOST + 'threeExamples/openSource/aSouthernCat.jpg',
+            },
+            {
                 id: 'alwxkxk',
                 author: 'alwxkxk',
                 name: 'Three案例',
@@ -770,6 +779,15 @@ export default [
                 image: 'https://z2586300277.github.io/show-site/customEffect/customEffect.jpg'
             },
             {
+                id: 'cartoon-grass',
+                name: '卡通草地',
+                name_en: 'cartoon grass',
+                author: 'KallkaGo',
+                githubUrl: 'https://github.com/KallkaGo/Grass',
+                openUrl: 'https://grass-sooty.vercel.app/',
+                image: HOST + 'threeExamples/openSource/cartoon-grass.jpg'
+            },
+            {
                 id: '3dAssests',
                 name: '3D资源库',
                 name_en: '3D Assests',
@@ -1092,6 +1110,15 @@ export default [
                 githubUrl: 'https://github.com/bhushan6/interactive-shield',
                 openUrl: 'https://interactive-shield.vercel.app/',
                 image: HOST + 'threeExamples/openSource/interactive-shield.jpg'
+            },
+            {
+                id: 'm-trust',
+                name: 'M-Trust',
+                name_en: 'M-Trust',
+                author: 'Pong-lei',
+                githubUrl: 'https://github.com/Pong-lei/m-trust',
+                openUrl: 'https://m-trust.vercel.app/',
+                image: HOST + 'threeExamples/openSource/m-trust.jpg'
             },
             {
                 id: 'three-plateau-tps',
