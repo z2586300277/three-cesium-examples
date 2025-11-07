@@ -2672,6 +2672,19 @@ export default [
                 author: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/basic/modelExport.js',
                 image: HOST + 'threeExamples/basic/modelExport.jpg',
+            },
+            {
+                id: 'fileChunks',
+                name: '文件分片(打包zip)',
+                name_en: 'File Chunks',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/basic/fileChunks.js',
+                image: HOST + 'threeExamples/basic/localModel.jpg',
+                inject: {
+                    importmap: {
+                        'jszip': 'https://cdn.jsdelivr.net/npm/jszip@3.10.1/+esm'
+                    }
+                }
             }
         ]
     },

@@ -1,17 +1,13 @@
 import * as Cesium from "cesium";
-Cesium.Ion.defaultAccessToken =
-  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJjOWM5N2FlYy0wNTIyLTRhZDAtYTM2Yi04ZGEzYzMzNTRjYmQiLCJpZCI6NTcwNzEsImlhdCI6MTYyMjAxMjY3MH0.IRCEryIGGPZeCGqJ8lpMESuZO9DTIlLnF-WS-w9YYzc";
+
 let viewer;
 const initViewer = async () => {
   const DOM = document.getElementById("box");
   viewer = new Cesium.Viewer(DOM, {
     showGroundAtmosphere: false,
     depthTestAgainstTerrain: true,
-    baseLayer: Cesium.ImageryLayer.fromProviderAsync(
-      Cesium.ArcGisMapServerImageryProvider.fromUrl(
-        "https://server.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer"
-      )
-    ),
+    baseLayerPicker: false, // 是否显示图层选择器，右上角图层选择按钮
+    baseLayer: Cesium.ImageryLayer.fromProviderAsync(Cesium.ArcGisMapServerImageryProvider.fromUrl(GLOBAL_CONFIG.getLayerUrl())),
     dynamicAtmosphereLightingFromSun: false,
   });
   viewer._cesiumWidget._creditContainer.style.display = "none";
@@ -20,17 +16,13 @@ const initViewer = async () => {
   viewer.scene.moon.show = false;
   viewer.shadows = false;
   viewer.scene.skyAtmosphere.show = true;
-  viewer._cesiumWidget._creditContainer.style.display = "none";
-  viewer.terrainProvider = await Cesium.createWorldTerrainAsync({
-    requestWaterMask: true,
-    requestVertexNormals: true,
-  });
+  viewer._cesiumWidget._creditContainer.style.display = "none"
   viewer.camera.flyTo({
-    destination: Cesium.Cartesian3.fromDegrees(117.623473, 40.61697, 1000),
+    destination: Cesium.Cartesian3.fromDegrees(117.623473, 40.61697, 100),
     orientation: {
-      heading: 4.399419347553678,
-      pitch: 0.1699544300063054,
-      roll: 6.28315827512673,
+      heading: 2.5,
+      pitch: 0.15,
+      roll: 6.283158275126679,
     },
     duration: 3,
   });

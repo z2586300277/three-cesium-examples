@@ -1,11 +1,13 @@
 import * as Cesium from 'cesium'
 
-// 如果出现地图没加载出地球 可能是多人访问公用token导致的问题,换成你自己的token 就好
-Cesium.Ion.defaultAccessToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJjOWM5N2FlYy0wNTIyLTRhZDAtYTM2Yi04ZGEzYzMzNTRjYmQiLCJpZCI6NTcwNzEsImlhdCI6MTYyMjAxMjY3MH0.IRCEryIGGPZeCGqJ8lpMESuZO9DTIlLnF-WS-w9YYzc"
+// Cesium官网的token
+Cesium.Ion.defaultAccessToken = "your-cesium-ion-access-token"
 
 const box = document.getElementById('box')
 
 const viewer = new Cesium.Viewer(box, {
+
+    imageryProvider: false, //关闭默认底图
 
     animation: false,//是否创建动画小器件，左下角仪表    
 
