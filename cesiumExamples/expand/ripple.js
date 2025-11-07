@@ -1,10 +1,10 @@
 import * as Cesium from 'cesium'
-Cesium.Ion.defaultAccessToken = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiI3ZjQ5ZGUzNC1jNWYwLTQ1ZTMtYmNjYS05YTY4ZTVmN2I2MDkiLCJpZCI6MTE3MTM4LCJpYXQiOjE2NzY0NDUyODB9.ZaNSBIfc1sGLhQd_xqhiSsc0yr8oS0wt1hAo9gbke6M'
 
 const box = document.getElementById('box')
 const viewer = new Cesium.Viewer(box, {
     animation: false,//是否创建动画小器件，左下角仪表    
     baseLayerPicker: false,//是否显示图层选择器，右上角图层选择按钮
+    baseLayer: Cesium.ImageryLayer.fromProviderAsync(Cesium.ArcGisMapServerImageryProvider.fromUrl(GLOBAL_CONFIG.getLayerUrl())),
     fullscreenButton: false,//是否显示全屏按钮，右下角全屏选择按钮
     geocoder: false,//是否显示geocoder小器件，右上角查询按钮    
     homeButton: false,//是否显示Home按钮，右上角home按钮 
