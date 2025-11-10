@@ -1130,6 +1130,15 @@ export default [
                 image: 'https://raw.githubusercontent.com/satoshi7190/three-plateau-tps/refs/heads/main/image.jpg'
             },
             {
+                id: 'isgalaxias',
+                name: '星系模拟',
+                name_en: 'Isgalaxias',
+                author: 'AUTO',
+                openUrl: 'https://isgalaxias.vercel.app/',
+                githubUrl: 'https://github.com/hexianWeb/isgalaxias',
+                image: 'https://raw.githubusercontent.com/hexianWeb/isgalaxias/refs/heads/big-star-vue/TD/page.png'
+            },
+            {
                 id: 'roomDesigner',
                 name: '3D房间设计器',
                 name_en: '3D Room Designer',
