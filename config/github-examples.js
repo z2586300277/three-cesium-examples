@@ -1139,6 +1139,15 @@ export default [
                 image: 'https://raw.githubusercontent.com/hexianWeb/isgalaxias/refs/heads/big-star-vue/TD/page.png'
             },
             {
+                id: 'jumpflood-demo',
+                name: '描边特效',
+                name_en: 'Jump Flooding Demo',
+                author: 'AUTO',
+                githubUrl: 'https://github.com/gkjohnson/three-jumpflood-demo',
+                openUrl: 'https://gkjohnson.github.io/three-jumpflood-demo/',
+                image: 'https://raw.githubusercontent.com/gkjohnson/three-jumpflood-demo/main/banner.png'
+            },
+            {
                 id: 'roomDesigner',
                 name: '3D房间设计器',
                 name_en: '3D Room Designer',
