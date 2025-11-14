@@ -89,6 +89,15 @@ export default [
                         url: 'https://www.bilibili.com/video/BV1HumBYMEa1'
                     }
                 ]
+            },
+            {
+                id: 'theWayNicoCome',
+                name: 'Nico学webgl的来时路',
+                name_en: 'The Way Nico Come',
+                author: 'nico',
+                codeUrl: HOST + 'threeExamples/application/thewaynicocome.js',
+                image: HOST + 'threeExamples/application/thewaynicocome.jpg',
+                openUrl: 'https://project.nicowebgl.cn/theWay/index.html',
             }
 
         ]

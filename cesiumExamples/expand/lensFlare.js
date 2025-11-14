@@ -18,13 +18,13 @@ const initViewer = async () => {
   viewer.scene.skyAtmosphere.show = true;
   viewer._cesiumWidget._creditContainer.style.display = "none"
   viewer.camera.flyTo({
-    destination: Cesium.Cartesian3.fromDegrees(117.623473, 40.61697, 100),
+    destination: new Cesium.Cartesian3(-2358297.6507743318, 4228376.427784441, 4174357.5367739797),
     orientation: {
-      heading: 2.5,
-      pitch: 0.15,
-      roll: 6.283158275126679,
+      heading: 4.136152079327102,
+      pitch: -0.1507722677698775,
+      roll: 6.282377463720871
     },
-    duration: 3,
+    duration: 2
   });
 
   setTimeout(() => {

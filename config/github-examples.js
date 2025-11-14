@@ -1130,6 +1130,24 @@ export default [
                 image: 'https://raw.githubusercontent.com/satoshi7190/three-plateau-tps/refs/heads/main/image.jpg'
             },
             {
+                id: 'isgalaxias',
+                name: '星系模拟',
+                name_en: 'Isgalaxias',
+                author: 'AUTO',
+                openUrl: 'https://isgalaxias.vercel.app/',
+                githubUrl: 'https://github.com/hexianWeb/isgalaxias',
+                image: 'https://raw.githubusercontent.com/hexianWeb/isgalaxias/refs/heads/big-star-vue/TD/page.png'
+            },
+            {
+                id: 'jumpflood-demo',
+                name: '描边特效',
+                name_en: 'Jump Flooding Demo',
+                author: 'AUTO',
+                githubUrl: 'https://github.com/gkjohnson/three-jumpflood-demo',
+                openUrl: 'https://gkjohnson.github.io/three-jumpflood-demo/',
+                image: 'https://raw.githubusercontent.com/gkjohnson/three-jumpflood-demo/main/banner.png'
+            },
+            {
                 id: 'roomDesigner',
                 name: '3D房间设计器',
                 name_en: '3D Room Designer',
@@ -1315,6 +1333,15 @@ export default [
                 openUrl: 'https://forrestsun.com/three.quarks/',
                 githubUrl: 'https://github.com/Alchemist0823/three.quarks',
                 image: HOST + 'threeExamples/openSource/threeQuarks.jpg'
+            },
+            {
+                id: 'sparkjs',
+                name: 'Spark-splat',
+                name_en: 'Spark-splat',
+                author: 'AUTO',
+                openUrl: 'https://sparkjs.dev/examples/',
+                githubUrl: 'https://github.com/sparkjsdev/spark',
+                image: HOST + 'threeExamples/openSource/sparkjs.jpg'
             },
             {
                 id: 'threeForce',
