@@ -1335,6 +1335,15 @@ export default [
                 image: HOST + 'threeExamples/openSource/threeQuarks.jpg'
             },
             {
+                id: 'sparkjs',
+                name: 'Spark-splat',
+                name_en: 'Spark-splat',
+                author: 'AUTO',
+                openUrl: 'https://sparkjs.dev/examples/',
+                githubUrl: 'https://github.com/sparkjsdev/spark',
+                image: HOST + 'threeExamples/openSource/sparkjs.jpg'
+            },
+            {
                 id: 'threeForce',
                 name: '力导向图',
                 name_en: 'Force Graph',
