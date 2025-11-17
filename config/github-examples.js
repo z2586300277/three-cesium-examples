@@ -1156,7 +1156,15 @@ export default [
                 openUrl: 'https://threejs-room-configurator.netlify.app/',
                 image: HOST + 'threeExamples/openSource/roomDesigner.jpg'
             },
-
+            {
+                id: 'three-good-godrays',
+                name: '丁达尔光效果',
+                name_en: 'Godrays Effect',
+                author: 'AUTO',
+                githubUrl: 'https://github.com/Ameobea/three-good-godrays',
+                openUrl: 'https://three-good-godrays.ameo.design/',
+                image: HOST + 'threeExamples/openSource/three-good-godrays.jpg'
+            },
             {
                 id: 'change',
                 author: 'nico',
