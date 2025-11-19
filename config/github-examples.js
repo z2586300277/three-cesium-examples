@@ -1374,7 +1374,7 @@ export default [
                 name: '碎裂',
                 name_en: 'Three Pinata',
                 author: 'AUTO',
-                openUrl: 'https://dgreenheck.github.io/three-pinata/',
+                openUrl: 'https://three-pinata-demo.vercel.app/',
                 githubUrl: 'https://github.com/dgreenheck/three-pinata',
                 image: HOST + 'threeExamples/openSource/three-pinata.jpg'
             },
