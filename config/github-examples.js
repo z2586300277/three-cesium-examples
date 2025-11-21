@@ -432,6 +432,15 @@ export default [
                 openUrl: 'https://z2586300277.github.io/show-site/geoArea/',
                 githubUrl: 'https://github.com/Pakeyeo/temp-map',
                 image: HOST + 'threeExamples/openSource/geoArea.jpg',
+            },
+            {
+                id: "sc-datav",
+                name: "四川3D地图",
+                name_en: "SC DataV",
+                author: "knight-L",
+                openUrl: "https://knight-l.github.io/sc-datav/",
+                githubUrl: "https://github.com/knight-L/sc-datav",
+                image: HOST + "threeExamples/openSource/scDatav.jpg",
             }
         ]
     },

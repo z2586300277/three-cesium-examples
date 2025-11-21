@@ -524,4 +524,10 @@ export default [
         github: 'https://github.com/TomCrum-wdm',       
         icon: 'https://avatars.githubusercontent.com/u/232365789?v=4'   
     },
+    {
+    	id: "knight-L",
+    	name: "knight-L",
+    	github: "https://github.com/knight-L",
+    	icon: "https://avatars.githubusercontent.com/u/32477319?v=4",
+    },
 ]
