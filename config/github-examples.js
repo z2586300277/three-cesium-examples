@@ -432,6 +432,15 @@ export default [
                 openUrl: 'https://z2586300277.github.io/show-site/geoArea/',
                 githubUrl: 'https://github.com/Pakeyeo/temp-map',
                 image: HOST + 'threeExamples/openSource/geoArea.jpg',
+            },
+            {
+                id: "sc-datav",
+                name: "四川3D地图",
+                name_en: "SC DataV",
+                author: "knight-L",
+                openUrl: "https://knight-l.github.io/sc-datav/",
+                githubUrl: "https://github.com/knight-L/sc-datav",
+                image: HOST + "threeExamples/openSource/scDatav.jpg",
             }
         ]
     },
@@ -1156,7 +1165,15 @@ export default [
                 openUrl: 'https://threejs-room-configurator.netlify.app/',
                 image: HOST + 'threeExamples/openSource/roomDesigner.jpg'
             },
-
+            {
+                id: 'three-good-godrays',
+                name: '丁达尔光效果',
+                name_en: 'Godrays Effect',
+                author: 'AUTO',
+                githubUrl: 'https://github.com/Ameobea/three-good-godrays',
+                openUrl: 'https://three-good-godrays.ameo.design/',
+                image: HOST + 'threeExamples/openSource/three-good-godrays.jpg'
+            },
             {
                 id: 'change',
                 author: 'nico',
@@ -1366,7 +1383,7 @@ export default [
                 name: '碎裂',
                 name_en: 'Three Pinata',
                 author: 'AUTO',
-                openUrl: 'https://dgreenheck.github.io/three-pinata/',
+                openUrl: 'https://three-pinata-demo.vercel.app/',
                 githubUrl: 'https://github.com/dgreenheck/three-pinata',
                 image: HOST + 'threeExamples/openSource/three-pinata.jpg'
             },

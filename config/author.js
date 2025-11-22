@@ -150,7 +150,7 @@ export default [
         links: [
             {
                 name: '🏠主页',
-                url: 'http://nicowebgl.cn/portfolio/#/my_resume'
+                url: 'http://nicowebgl.cn'
             }
         ]
     },
@@ -523,5 +523,11 @@ export default [
         name: 'TomCrum-wdm',       
         github: 'https://github.com/TomCrum-wdm',       
         icon: 'https://avatars.githubusercontent.com/u/232365789?v=4'   
+    },
+    {
+    	id: "knight-L",
+    	name: "knight-L",
+    	github: "https://github.com/knight-L",
+    	icon: "https://avatars.githubusercontent.com/u/32477319?v=4",
     },
 ]

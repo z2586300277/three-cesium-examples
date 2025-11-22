@@ -92,6 +92,7 @@ export default [
             },
             {
                 id: 'theWayNicoCome',
+                tag: TEXTS['webgl教程'] + '-#195cddba',
                 name: 'Nico学webgl的来时路',
                 name_en: 'The Way Nico Come',
                 author: 'nico',
