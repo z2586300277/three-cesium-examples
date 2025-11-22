@@ -150,7 +150,7 @@ export default [
         links: [
             {
                 name: '🏠主页',
-                url: 'http://nicowebgl.cn/portfolio/#/my_resume'
+                url: 'http://nicowebgl.cn'
             }
         ]
     },
