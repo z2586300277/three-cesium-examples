@@ -749,6 +749,14 @@ export default [
                 githubUrl: 'https://github.com/brunosimon/my-room-in-3d/',
                 openUrl: 'https://my-room-in-3d.vercel.app/',
                 image: HOST + 'threeExamples/openSource/room3d.jpg',
+            },
+            {
+                id: 'jokebearPark',
+                name: 'Jokebear公园',
+                name_en: 'Jokebear Park',
+                githubUrl: 'https://github.com/yuwuweichun/jokebear-park',
+                openUrl: 'https://yuwuweichun.github.io/jokebear-park/',
+                image: 'https://raw.githubusercontent.com/yuwuweichun/jokebear-park/refs/heads/main/media/og-image.webp',
             }
         ]
     },
