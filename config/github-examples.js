@@ -754,9 +754,19 @@ export default [
                 id: 'jokebearPark',
                 name: 'Jokebear公园',
                 name_en: 'Jokebear Park',
+                author: 'AUTO',
                 githubUrl: 'https://github.com/yuwuweichun/jokebear-park',
                 openUrl: 'https://yuwuweichun.github.io/jokebear-park/',
                 image: 'https://raw.githubusercontent.com/yuwuweichun/jokebear-park/refs/heads/main/media/og-image.webp',
+            },
+            {
+                id: 'portal',
+                name: '传送门',
+                name_en: 'Portal',
+                author: 'AUTO',
+                githubUrl: 'https://github.com/MisterPrada/portal',
+                openUrl: 'https://portal.misterprada.com/',
+                image: 'https://user-images.githubusercontent.com/8146111/257077594-eb445650-c662-412f-8cf5-662b76c27057.gif'
             }
         ]
     },
