@@ -1121,6 +1121,15 @@ export default [
                 image: HOST + 'threeExamples/openSource/FluffyGrass.jpg'
             },
             {
+                id: 'enhance-shader-lighting',
+                name: '增强着色器光照',
+                name_en: 'Enhance Shader Lighting',
+                author: 'AUTO',
+                githubUrl: 'https://github.com/0beqz/enhance-shader-lighting',
+                openUrl: 'https://enhance-shader-lighting.vercel.app/',
+                image: 'https://raw.githubusercontent.com/0beqz/enhance-shader-lighting/main/example/public/screenshots/gym.webp'
+            },
+            {
                 id: 'X-Ray-Visualizer-Threejs',
                 name: 'X光视觉',
                 name_en: 'X-Ray Visualizer',
