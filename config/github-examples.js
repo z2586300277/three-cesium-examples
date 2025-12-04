@@ -1469,6 +1469,15 @@ export default [
                 githubUrl: 'https://github.com/danielesteban/three-raymarcher',
                 openUrl: 'https://danielesteban.github.io/three-raymarcher/animation.html',
                 image: HOST + 'threeExamples/openSource/three-raymarcher.jpg'
+            },
+            {
+                id: 'three-geo',
+                name: 'Three Geo',
+                name_en: 'Three Geo',
+                author: 'AUTO',
+                githubUrl: 'https://github.com/w3reality/three-geo',
+                openUrl: 'https://w3reality.github.io/three-geo/examples/geo-viewer/io/index.html',
+                image: HOST + 'threeExamples/openSource/three-geo.jpg'
             }
         ]
     },
