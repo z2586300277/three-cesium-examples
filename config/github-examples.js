@@ -749,6 +749,24 @@ export default [
                 githubUrl: 'https://github.com/brunosimon/my-room-in-3d/',
                 openUrl: 'https://my-room-in-3d.vercel.app/',
                 image: HOST + 'threeExamples/openSource/room3d.jpg',
+            },
+            {
+                id: 'jokebearPark',
+                name: 'Jokebear公园',
+                name_en: 'Jokebear Park',
+                author: 'AUTO',
+                githubUrl: 'https://github.com/yuwuweichun/jokebear-park',
+                openUrl: 'https://yuwuweichun.github.io/jokebear-park/',
+                image: 'https://raw.githubusercontent.com/yuwuweichun/jokebear-park/refs/heads/main/media/og-image.webp',
+            },
+            {
+                id: 'portal',
+                name: '传送门',
+                name_en: 'Portal',
+                author: 'AUTO',
+                githubUrl: 'https://github.com/MisterPrada/portal',
+                openUrl: 'https://portal.misterprada.com/',
+                image: 'https://user-images.githubusercontent.com/8146111/257077594-eb445650-c662-412f-8cf5-662b76c27057.gif'
             }
         ]
     },
@@ -1103,6 +1121,15 @@ export default [
                 image: HOST + 'threeExamples/openSource/FluffyGrass.jpg'
             },
             {
+                id: 'enhance-shader-lighting',
+                name: '增强着色器光照',
+                name_en: 'Enhance Shader Lighting',
+                author: 'AUTO',
+                githubUrl: 'https://github.com/0beqz/enhance-shader-lighting',
+                openUrl: 'https://enhance-shader-lighting.vercel.app/',
+                image: 'https://raw.githubusercontent.com/0beqz/enhance-shader-lighting/main/example/public/screenshots/gym.webp'
+            },
+            {
                 id: 'X-Ray-Visualizer-Threejs',
                 name: 'X光视觉',
                 name_en: 'X-Ray Visualizer',
@@ -1442,6 +1469,15 @@ export default [
                 githubUrl: 'https://github.com/danielesteban/three-raymarcher',
                 openUrl: 'https://danielesteban.github.io/three-raymarcher/animation.html',
                 image: HOST + 'threeExamples/openSource/three-raymarcher.jpg'
+            },
+            {
+                id: 'three-geo',
+                name: 'Three Geo',
+                name_en: 'Three Geo',
+                author: 'AUTO',
+                githubUrl: 'https://github.com/w3reality/three-geo',
+                openUrl: 'https://w3reality.github.io/three-geo/examples/geo-viewer/io/index.html',
+                image: HOST + 'threeExamples/openSource/three-geo.jpg'
             }
         ]
     },
