@@ -36,7 +36,7 @@
 |  贾宛龙  | 微: trampjwl | 🐧 群 585667336 | [Cesium社区](https://jiawanlong.github.io) |  专注于Cesium.js领域
 |     Nico     |  🐧805879871   | 微:15230117323  |     [官网](http://nicowebgl.cn )  |   Three.js Cesium.js
 |  FFMMCC  | 微:fmc2055615840 | 🐧2055615840 | [主页](https://coderfmc.github.io/three.js-demo/fmc-web-3d/) | Web3D爱好者
-|     ThreeX     |  🐧383612104   | 微:web-gpu  |     [官网](https://three-x.cn)      |   致力于Three.js小程序
+|     ThreeX     |  🐧383612104   | 微:web-gpu  |     [官网](https://three-x.cn)      |   Three.js移动端、小程序
 |  Threelab |🐧2945853209 | - | [官网](https://threelab.cn) | 海量点云渲染引擎
 | - | - | - | - | - |
 
@@ -136,12 +136,7 @@
 | 🍊 | 🍐 | 🍏 | 
 | ------- | ----- | ------ |
 |[elegant-github](http://z2586300277.github.io/three-cesium-examples)|[elegant-vercel](https://three-cesium-examples.vercel.app)|[openThree-github](https://openthree.github.io/three-cesium-examples/)|
-|[threehub-site](https://threehub.cn) | [cesiumhub-site](http://cesiumhub.cn)| [nico-site](http://nicowebgl.cn/three-cesium-examples)|
-|[codeLike-github](https://g2657.github.io/webgl-examples/)|
-
-### 🏫 手机端
-
-- 小程序threejs https://three-x.cn  、 移动端 https://meta-gate.cn 
+|[threehub-site](https://threehub.cn) | [cesiumhub-site](http://cesiumhub.cn)|[codeLike-github](https://g2657.github.io/webgl-examples/)|
 
 #  💎 Three.js and Cesium.js Case Study - Generating Love - Only Open Source-
 #### Web3D related resources, repositories, links, effect cases, requirements, and optimization suggestions can be submitted using Issues comments ✍。
