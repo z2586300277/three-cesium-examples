@@ -1478,6 +1478,15 @@ export default [
                 githubUrl: 'https://github.com/w3reality/three-geo',
                 openUrl: 'https://w3reality.github.io/three-geo/examples/geo-viewer/io/index.html',
                 image: HOST + 'threeExamples/openSource/three-geo.jpg'
+            },
+            {
+                id: 'makio-meshline',
+                name: 'Makio Meshline',
+                name_en: 'Makio Meshline',
+                author: 'AUTO',
+                githubUrl: 'https://github.com/Makio64/makio-meshline',
+                openUrl: 'https://meshline-demo.makio.io/',
+                image: 'https://github.com/user-attachments/assets/deb1ccd7-46a9-4be0-8f07-280c21aafe81'
             }
         ]
     },
