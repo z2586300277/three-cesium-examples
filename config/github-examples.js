@@ -441,6 +441,15 @@ export default [
                 openUrl: "https://knight-l.github.io/sc-datav/",
                 githubUrl: "https://github.com/knight-L/sc-datav",
                 image: HOST + "threeExamples/openSource/scDatav.jpg",
+            },
+            {
+                id: "heat3dMap",
+                name: "热力3D地图",
+                name_en: "Heat 3d Map",
+                author: "knight-L",
+                openUrl: "https://knight-l.github.io/sc-datav/#/demo1",
+                githubUrl: "https://github.com/knight-L/sc-datav",
+                image: HOST + "threeExamples/openSource/heat3dMap.jpg",
             }
         ]
     },
