@@ -2,6 +2,54 @@ import { HOST, FILE_HOST } from "./host.js";
 
 export default [
     {
+        pid: 'recommended',
+        name: '优质推荐',
+        name_en: 'Recommended',
+        order: -10,
+        children: [
+            {
+                id: "heat3dMap",
+                name: "热力3D地图",
+                name_en: "Heat 3d Map",
+                author: "knight-L",
+                tag: '地图' + '-#ff6d6d',
+                openUrl: "https://knight-l.github.io/sc-datav/#/demo1",
+                githubUrl: "https://github.com/knight-L/sc-datav",
+                image: HOST + "threeExamples/openSource/heat3dMap.jpg",
+            },
+            {
+                id: 'numberFram',
+                name: '数字农场',
+                name_en: 'Number Fram',
+                author: 'FFMMCC',
+                tag: '智慧农业',
+                githubUrl: 'https://gitee.com/fu-meichuan/digital-farmland',
+                openUrl: 'https://coderfmc.github.io/three.js-demo/digital-farmland/#/carbon-neutral-bigscreen',
+                image: 'https://coderfmc.github.io/three.js-demo/fmc-web-3d/img/智慧农田.png'
+            },
+            {
+                id: 'blanderCar',
+                author: 'ASouthernCat',
+                name: '硬核小车',
+                name_en: 'Blender Car',
+                tag: '汽车' + '-#006d6d',
+                githubUrl: 'https://github.com/ASouthernCat/simple-muscle-car',
+                openUrl: 'https://g2657.github.io/examples-server/blender_car/',
+                image: HOST + 'threeExamples/openSource/blenderCar.jpg',
+                links: [
+                    {
+                        name: '预览(vercel)',
+                        url: 'https://simple-muscle-car.vercel.app/'
+                    },
+                    {
+                        name: '📺BiBi',
+                        url: 'https://www.bilibili.com/video/BV1AcSUY3Ez2'
+                    }
+                ]
+            },
+        ]
+    },
+    {
         pid: 'topNavigation',
         name: '精选导航',
         name_en: 'Top Navigation',
@@ -441,6 +489,15 @@ export default [
                 openUrl: "https://knight-l.github.io/sc-datav/",
                 githubUrl: "https://github.com/knight-L/sc-datav",
                 image: HOST + "threeExamples/openSource/scDatav.jpg",
+            },
+            {
+                id: "heat3dMap",
+                name: "热力3D地图",
+                name_en: "Heat 3d Map",
+                author: "knight-L",
+                openUrl: "https://knight-l.github.io/sc-datav/#/demo1",
+                githubUrl: "https://github.com/knight-L/sc-datav",
+                image: HOST + "threeExamples/openSource/heat3dMap.jpg",
             }
         ]
     },
@@ -1478,6 +1535,15 @@ export default [
                 githubUrl: 'https://github.com/w3reality/three-geo',
                 openUrl: 'https://w3reality.github.io/three-geo/examples/geo-viewer/io/index.html',
                 image: HOST + 'threeExamples/openSource/three-geo.jpg'
+            },
+            {
+                id: 'makio-meshline',
+                name: 'Makio Meshline',
+                name_en: 'Makio Meshline',
+                author: 'AUTO',
+                githubUrl: 'https://github.com/Makio64/makio-meshline',
+                openUrl: 'https://meshline-demo.makio.io/',
+                image: 'https://github.com/user-attachments/assets/deb1ccd7-46a9-4be0-8f07-280c21aafe81'
             }
         ]
     },
