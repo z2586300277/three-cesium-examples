@@ -47,6 +47,17 @@ export default [
                     }
                 ]
             },
+            {
+                id: 'z2586300277_new3d_editor',
+                tag: TEXTS['编辑器'],
+                tip: '使用Three.js开发的低代码组态易用的编辑器——全新版本',
+                name: '新低代码编辑器',
+                name_en: 'LowCode Editor',
+                author: 'z2586300277',
+                openUrl: 'https://z2586300277.github.io/threejs-editor/',
+                githubUrl: 'https://github.com/z2586300277/threejs-editor',
+                image: HOST + 'threeExamples/openSource/newThreeEditor.jpg',
+            },
         ]
     },
     {
@@ -486,7 +497,7 @@ export default [
                 name: "四川3D地图",
                 name_en: "SC DataV",
                 author: "knight-L",
-                openUrl: "https://knight-l.github.io/sc-datav/",
+                openUrl: "https://knight-l.github.io/sc-datav/#/demo0",
                 githubUrl: "https://github.com/knight-L/sc-datav",
                 image: HOST + "threeExamples/openSource/scDatav.jpg",
             },
@@ -498,6 +509,15 @@ export default [
                 openUrl: "https://knight-l.github.io/sc-datav/#/demo1",
                 githubUrl: "https://github.com/knight-L/sc-datav",
                 image: HOST + "threeExamples/openSource/heat3dMap.jpg",
+            },
+            {
+                id: 'threeMapv',
+                name: '地图可视化',
+                name_en: 'Map Visualization',
+                author: 'AUTO',
+                openUrl: 'https://g2657.github.io/examples-server/map3d/#/gdMap',
+                githubUrl: 'https://github.com/wangscript007/ThreeMaps',
+                image: 'https://raw.githubusercontent.com/wangscript007/ThreeMaps/refs/heads/main/images/1721032698514.jpg'
             }
         ]
     },
