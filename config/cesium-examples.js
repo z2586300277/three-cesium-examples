@@ -966,6 +966,25 @@ export default [
                     description: 'cesium 绘制图形并导出geojson'
                 }
             },
+            {
+                id: 'transformControls',
+                name: 'Cesium 3D 变换控制器',
+                name_en: 'Cesium 3D Transform Controls',
+                author: '123164867376464646',
+                codeUrl: HOST + 'cesiumExamples/tools/transformControls.js',
+                image: HOST + 'cesiumExamples/tools/transformControls.jpg',
+                githubUrl: 'https://github.com/123164867376464646/cesium-transform-controls',
+                inject: {
+                    importmap: {
+                        'cesium-transform-controls': 'https://unpkg.com/cesium-transform-controls'
+                    }
+                },
+                meta: {
+                    title: 'Cesium 3D 变换控制器',
+                    keywords: 'cesium.js,transform controls,gizmo,模型变换,平移旋转缩放',
+                    description: 'Cesium 3D 变换控制器，支持平移、旋转、缩放操作'
+                }
+            },
         ],
     }
 ]

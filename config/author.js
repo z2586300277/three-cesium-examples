@@ -530,4 +530,11 @@ export default [
     	github: "https://github.com/knight-L",
     	icon: "https://avatars.githubusercontent.com/u/32477319?v=4",
     },
+    {
+        id: '123164867376464646',
+        name: '123164867376464646',
+        describe: 'Cesium Transform Controls 作者',
+        github: 'https://github.com/123164867376464646',
+        icon: 'https://avatars.githubusercontent.com/u/105119300?v=4',
+    },
 ]
