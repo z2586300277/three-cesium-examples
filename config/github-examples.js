@@ -18,6 +18,23 @@ export default [
                 image: HOST + "threeExamples/openSource/heat3dMap.jpg",
             },
             {
+                id: 'fmc_car',
+                tag: TEXTS['效果佳'] + '-#2539a1',
+                name: '麦克斯韦汽车',
+                name_en: 'FMC Car',
+                author: 'FFMMCC',
+                tip: '效果超级棒的 three.js实现麦克斯韦汽车展厅项目',
+                openUrl: 'https://g2657.github.io/examples-server/fmc_car/',
+                githubUrl: 'https://coderfmc.github.io/three.js-demo/fmc-web-3d/',
+                image: FILE_HOST + 'images/fmc_car.jpg',
+                links: [
+                    {
+                        name: '📺BiBi',
+                        url: 'https://www.bilibili.com/video/BV1dxBxYvEnh'
+                    }
+                ]
+            },
+            {
                 id: 'numberFram',
                 name: '数字农场',
                 name_en: 'Number Fram',

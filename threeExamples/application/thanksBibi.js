@@ -31,7 +31,7 @@ controls.enableDamping = true
 
 const renderPass = new RenderPass(scene, camera);
 
-const bloomPass = new UnrealBloomPass(new THREE.Vector2(DOM.clientWidth, DOM.clientHeight), 1.5, 0.4, 0.1);
+const bloomPass = new UnrealBloomPass(new THREE.Vector2(DOM.clientWidth, DOM.clientHeight), 0.5, 0.4, 0.1);
 
 const composer = new EffectComposer(renderer);
 
