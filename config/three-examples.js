@@ -58,29 +58,12 @@ export default [
             },
 
             {
-                id: 'fmc_car',
-                tag: TEXTS['效果佳'] + '-#2539a1',
-                name: '麦克斯韦汽车',
-                name_en: 'FMC Car',
-                author: 'FFMMCC',
-                tip: '效果超级棒的 three.js实现麦克斯韦汽车展厅项目',
-                openUrl: 'https://g2657.github.io/examples-server/fmc_car/',
-                githubUrl: 'https://coderfmc.github.io/three.js-demo/fmc-web-3d/',
-                image: FILE_HOST + 'images/fmc_car.jpg',
-                links: [
-                    {
-                        name: '📺BiBi',
-                        url: 'https://www.bilibili.com/video/BV1dxBxYvEnh'
-                    }
-                ]
-            },
-
-            {
                 id: 'thanksBibi',
                 name: '感谢来自BiBi的支持',
                 name_en: 'Thanks BiBi',
                 tag: TEXTS['感谢BiBi'] + '-#ff69b4',
                 author: 'z2586300277',
+                githubUrl: 'https://space.bilibili.com/245165721',
                 codeUrl: HOST + 'threeExamples/application/thanksBibi.js',
                 image: HOST + 'threeExamples/application/thanksBibi.jpg',
                 links: [
