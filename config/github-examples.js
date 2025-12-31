@@ -446,6 +446,15 @@ export default [
                 openUrl: 'https://thebrowserlab.com/',
                 githubUrl: 'https://github.com/icurtis1/thebrowserlab',
                 image: HOST + 'threeExamples/openSource/thebrowserlab.jpg'
+            },
+            {   
+                id: 'meteor3d',
+                name: 'Meteor3D编辑器',
+                name_en: 'Meteor3D Editor',
+                author: 'AUTO',
+                githubUrl: 'https://github.com/nikonikoCW/Meteor3DEditor',
+                openUrl: 'https://meteor3d.cn/',
+                image: HOST + 'threeExamples/openSource/meteor3d.jpg'
             }
         ]
     },
