@@ -1286,6 +1286,15 @@ export default [
                 openUrl: 'https://gkjohnson.github.io/three-jumpflood-demo/',
                 image: 'https://raw.githubusercontent.com/gkjohnson/three-jumpflood-demo/main/banner.png'
             },
+            {   
+                id: 'spotify-visualiser',
+                name: 'Spotify可视化',
+                name_en: 'Spotify Visualiser',
+                author: 'AUTO',
+                openUrl: 'https://spotify-visualiser-three.vercel.app/',
+                githubUrl: 'https://github.com/J0SUKE/spotify-visualiser',
+                image: HOST + 'threeExamples/openSource/spotify-visualiser.jpg'
+            },
             {
                 id: 'roomDesigner',
                 name: '3D房间设计器',
