@@ -424,7 +424,8 @@ export default [
                 name: '3D模型编辑器',
                 name_en: '3D Model Edit',
                 author: 'AUTO',
-                openUrl: 'https://three3d-0gte3eg619c78ffd-1301256746.tcloudbaseapp.com/threejs-3dmodel-edit/',
+                openUrl: 'http://threeflowx.cn/open/#/',
+                referUrl: 'http://threeflowx.cn/',
                 githubUrl: 'https://github.com/zhangbo126/threejs-3dmodel-edit',
                 image: HOST + 'threeExamples/openSource/3dmodelEdit.jpg'
             },
