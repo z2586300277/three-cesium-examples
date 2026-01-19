@@ -448,7 +448,7 @@ export default [
                 githubUrl: 'https://github.com/icurtis1/thebrowserlab',
                 image: HOST + 'threeExamples/openSource/thebrowserlab.jpg'
             },
-            {   
+            {
                 id: 'meteor3d',
                 name: 'Meteor3D编辑器',
                 name_en: 'Meteor3D Editor',
@@ -1287,7 +1287,17 @@ export default [
                 openUrl: 'https://gkjohnson.github.io/three-jumpflood-demo/',
                 image: 'https://raw.githubusercontent.com/gkjohnson/three-jumpflood-demo/main/banner.png'
             },
-            {   
+            {
+                id: 'cyber-ocean',
+                name: '赛博海洋',
+                name_en: 'Cyber Ocean',
+                author: 'AUTO',
+                openUrl: 'https://cyber-ocean.vercel.app/',
+                githubUrl: 'https://github.com/SahilK-027/Cyber-Ocean',
+                image: 'https://raw.githubusercontent.com/SahilK-027/Cyber-Ocean/refs/heads/main/PREVIEW.png'
+
+            },
+            {
                 id: 'spotify-visualiser',
                 name: 'Spotify可视化',
                 name_en: 'Spotify Visualiser',
