@@ -15,8 +15,13 @@ export default {
     links: [
 
         {
-            name: '🏠' + TEXTS['openThree'],
+            name: '🏡' + TEXTS['openThree'],
             url: 'https://openthree.github.io/three-cesium-links/'
+        },
+
+        {
+            name: '🍁' + TEXTS['编辑器'],
+            url: 'https://z2586300277.github.io/editor-docs/'
         },
 
         // {
@@ -71,7 +76,7 @@ export default {
 
 
         {
-            name: '🏪3D ' + TEXTS['market'],
+            name: '🏫3D ' + TEXTS['market'],
             url: 'https://openthree.github.io/market/'
         }
 

@@ -424,7 +424,8 @@ export default [
                 name: '3D模型编辑器',
                 name_en: '3D Model Edit',
                 author: 'AUTO',
-                openUrl: 'https://three3d-0gte3eg619c78ffd-1301256746.tcloudbaseapp.com/threejs-3dmodel-edit/',
+                openUrl: 'http://threeflowx.cn/open/#/',
+                referUrl: 'http://threeflowx.cn/',
                 githubUrl: 'https://github.com/zhangbo126/threejs-3dmodel-edit',
                 image: HOST + 'threeExamples/openSource/3dmodelEdit.jpg'
             },
@@ -447,7 +448,7 @@ export default [
                 githubUrl: 'https://github.com/icurtis1/thebrowserlab',
                 image: HOST + 'threeExamples/openSource/thebrowserlab.jpg'
             },
-            {   
+            {
                 id: 'meteor3d',
                 name: 'Meteor3D编辑器',
                 name_en: 'Meteor3D Editor',
@@ -1285,6 +1286,25 @@ export default [
                 githubUrl: 'https://github.com/gkjohnson/three-jumpflood-demo',
                 openUrl: 'https://gkjohnson.github.io/three-jumpflood-demo/',
                 image: 'https://raw.githubusercontent.com/gkjohnson/three-jumpflood-demo/main/banner.png'
+            },
+            {
+                id: 'cyber-ocean',
+                name: '赛博海洋',
+                name_en: 'Cyber Ocean',
+                author: 'AUTO',
+                openUrl: 'https://cyber-ocean.vercel.app/',
+                githubUrl: 'https://github.com/SahilK-027/Cyber-Ocean',
+                image: 'https://raw.githubusercontent.com/SahilK-027/Cyber-Ocean/refs/heads/main/PREVIEW.png'
+
+            },
+            {
+                id: 'spotify-visualiser',
+                name: 'Spotify可视化',
+                name_en: 'Spotify Visualiser',
+                author: 'AUTO',
+                openUrl: 'https://spotify-visualiser-three.vercel.app/',
+                githubUrl: 'https://github.com/J0SUKE/spotify-visualiser',
+                image: HOST + 'threeExamples/openSource/spotify-visualiser.jpg'
             },
             {
                 id: 'roomDesigner',
