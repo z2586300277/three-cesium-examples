@@ -1298,6 +1298,15 @@ export default [
 
             },
             {
+                id: 'three-video-projection',
+                name: '视频投影',
+                name_en: 'Video Projection',
+                author: "AUTO",
+                githubUrl: 'https://github.com/hh-hang/three-video-projection',
+                openUrl: 'https://hh-hang.github.io/three-video-projection/',
+                image: 'https://raw.githubusercontent.com/hh-hang/three-video-projection/main/example/public/imgs/2.gif'
+            },
+            {
                 id: 'spotify-visualiser',
                 name: 'Spotify可视化',
                 name_en: 'Spotify Visualiser',
