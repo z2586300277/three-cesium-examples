@@ -1892,6 +1892,14 @@ export default [
                 author: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/application/modelParticle.js',
                 image: HOST + 'threeExamples/application/modelParticle.jpg'
+            },
+            {
+                id: 'dynamicTube',
+                name: '动态管道',
+                name_en: 'Dynamic Tube',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/application/dynamicTube.js',
+                image: HOST + 'threeExamples/application/dynamicTube.jpg'
             }
 
         ]
