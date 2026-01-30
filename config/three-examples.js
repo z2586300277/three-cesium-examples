@@ -1900,6 +1900,14 @@ export default [
                 author: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/application/dynamicTube.js',
                 image: HOST + 'threeExamples/application/dynamicTube.jpg'
+            },
+            {
+                id: 'girdMaterial',
+                name: '网格材质',
+                name_en: 'Gird Material',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/application/girdMaterial.js',
+                image: HOST + 'threeExamples/application/girdMaterial.jpg'
             }
 
         ]
