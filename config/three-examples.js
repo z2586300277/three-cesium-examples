@@ -10,28 +10,20 @@ export default [
             // { id: 'test', name: '测试', codeUrl: HOST + 'threeExamples/other/test.js' }, // 本地开发调试模板用例 不更改提交
 
             {
-                id: 'officialExamples',
-                tag: TEXTS['官方'] + '-rgb(157 46 37)',
-                name: '官方示例 - 优化版',
-                name_en: 'Official',
-                tip: 'Three.js官方案例100%在线最新同步，UI重置，案例分类，可在线调试预览，更加舒适高效的查阅和学习',
-                improver: 'z2586300277',
-                referUrl: 'https://openthree.github.io/three-offical-run/examples/',
-                openUrl: 'https://openthree.github.io/three-official-examples',
-                githubUrl: 'https://github.com/OpenThree/three-official-examples',
-                image: HOST + 'threeExamples/openSource/official.jpg'
-            },
-
-            {
-                id: 'jiawanlong',
-                tag: TEXTS['友情链接'],
-                tip: 'Cesium2024年最新demos，200多个原生示例：自定义纹理、地形开挖、可视域分析、洪水淹没、缓冲分析、日照分析、方量分析、通透分析、剖面、单体化、视频融合、视频投射、雨雪雾、天空盒、场景出图、体积云、闪电、视锥体、雷达扫描、水波纹、动态扩散点、电子围栏、粒子效果、物理引擎、克里金、海流、大数据可视化、坐标转换、相机、飞行漫游、瓦片加载、xyz、tms、wms、wmts、天地图、高德、百度、wkt、shp、geojson、pbf、地形、entity、模型、海量数据、Primitive、gif、聚合、czml、字体图标、运动、3Dtiles、模型偏移、等等。。',
-                author: 'jiawanlong',
-                name: 'Cesium案例 - 点⭐',
-                name_en: 'Cesium Examples',
-                openUrl: 'https://jiawanlong.github.io/Cesium-Examples/examples/cesiumEx/examples.html',
-                githubUrl: 'https://github.com/jiawanlong/Cesium-Examples',
-                image: FILE_HOST + 'images/jiawanlong.jpg'
+                id: 'thanksBibi',
+                name: '感谢来自BiBi的支持',
+                name_en: 'Thanks BiBi',
+                tag: TEXTS['感谢BiBi'] + '-#ff69b4',
+                author: 'z2586300277',
+                githubUrl: 'https://space.bilibili.com/245165721',
+                codeUrl: HOST + 'threeExamples/application/thanksBibi.js',
+                image: HOST + 'threeExamples/application/thanksBibi.jpg',
+                links: [
+                    {
+                        name: '📺BiBi',
+                        url: 'https://www.bilibili.com/video/BV1HumBYMEa1'
+                    }
+                ]
             },
 
             {
@@ -58,21 +50,30 @@ export default [
             },
 
             {
-                id: 'thanksBibi',
-                name: '感谢来自BiBi的支持',
-                name_en: 'Thanks BiBi',
-                tag: TEXTS['感谢BiBi'] + '-#ff69b4',
-                author: 'z2586300277',
-                githubUrl: 'https://space.bilibili.com/245165721',
-                codeUrl: HOST + 'threeExamples/application/thanksBibi.js',
-                image: HOST + 'threeExamples/application/thanksBibi.jpg',
-                links: [
-                    {
-                        name: '📺BiBi',
-                        url: 'https://www.bilibili.com/video/BV1HumBYMEa1'
-                    }
-                ]
+                id: 'officialExamples',
+                tag: TEXTS['官方'] + '-rgb(157 46 37)',
+                name: '官方示例 - 优化版',
+                name_en: 'Official',
+                tip: 'Three.js官方案例100%在线最新同步，UI重置，案例分类，可在线调试预览，更加舒适高效的查阅和学习',
+                improver: 'z2586300277',
+                referUrl: 'https://openthree.github.io/three-offical-run/examples/',
+                openUrl: 'https://openthree.github.io/three-official-examples',
+                githubUrl: 'https://github.com/OpenThree/three-official-examples',
+                image: HOST + 'threeExamples/openSource/official.jpg'
             },
+
+            {
+                id: 'jiawanlong',
+                tag: TEXTS['友情链接'],
+                tip: 'Cesium2024年最新demos，200多个原生示例：自定义纹理、地形开挖、可视域分析、洪水淹没、缓冲分析、日照分析、方量分析、通透分析、剖面、单体化、视频融合、视频投射、雨雪雾、天空盒、场景出图、体积云、闪电、视锥体、雷达扫描、水波纹、动态扩散点、电子围栏、粒子效果、物理引擎、克里金、海流、大数据可视化、坐标转换、相机、飞行漫游、瓦片加载、xyz、tms、wms、wmts、天地图、高德、百度、wkt、shp、geojson、pbf、地形、entity、模型、海量数据、Primitive、gif、聚合、czml、字体图标、运动、3Dtiles、模型偏移、等等。。',
+                author: 'jiawanlong',
+                name: 'Cesium案例 - 点⭐',
+                name_en: 'Cesium Examples',
+                openUrl: 'https://jiawanlong.github.io/Cesium-Examples/examples/cesiumEx/examples.html',
+                githubUrl: 'https://github.com/jiawanlong/Cesium-Examples',
+                image: FILE_HOST + 'images/jiawanlong.jpg'
+            },
+
             {
                 id: 'theWayNicoCome',
                 tag: TEXTS['Nico教程'] + '-#195cddba',
@@ -2018,6 +2019,14 @@ export default [
                     description: '使用three.js曲线动画'
                 }
             },
+            {
+                id: 'downRotate',
+                name: '下钻动画',
+                name_en: 'Down Rotate',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/animation/downRotate.js',
+                image: HOST + 'threeExamples/animation/downRotate.jpg',
+            }
         ]
     },
     {
