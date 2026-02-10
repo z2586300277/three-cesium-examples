@@ -1909,6 +1909,14 @@ export default [
                 author: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/application/girdMaterial.js',
                 image: HOST + 'threeExamples/application/girdMaterial.jpg'
+            },
+            {
+                id: 'jumpAnimate',
+                name: '跳跃动画',
+                name_en: 'Jump Animate',
+                author: 'HuanMengHaiYan',
+                codeUrl: HOST + 'threeExamples/application/jumpAnimate.js',
+                image: HOST + 'threeExamples/application/jumpAnimate.jpg'
             }
 
         ]
