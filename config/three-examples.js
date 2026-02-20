@@ -1914,7 +1914,7 @@ export default [
                 id: 'jumpAnimate',
                 name: '跳跃动画',
                 name_en: 'Jump Animate',
-                author: 'HuanMengHaiYan',
+                author: 'huan_meng_hai_yan',
                 codeUrl: HOST + 'threeExamples/application/jumpAnimate.js',
                 image: HOST + 'threeExamples/application/jumpAnimate.jpg'
             }
