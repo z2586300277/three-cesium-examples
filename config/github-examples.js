@@ -871,6 +871,15 @@ export default [
                 githubUrl: 'https://github.com/MisterPrada/portal',
                 openUrl: 'https://portal.misterprada.com/',
                 image: 'https://user-images.githubusercontent.com/8146111/257077594-eb445650-c662-412f-8cf5-662b76c27057.gif'
+            },
+            {
+                id: 'threePlayerController',
+                name: '玩家控制器',
+                name_en: 'Player Controller',
+                author: 'AUTO',
+                openUrl: 'https://hh-hang.github.io/three-player-controller/',
+                githubUrl: 'https://github.com/hh-hang/three-player-controller',
+                image: HOST + 'threeExamples/openSource/threePlayerController.jpg'
             }
         ]
     },
