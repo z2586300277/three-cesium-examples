@@ -1258,6 +1258,22 @@ export default [
                 author: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/particle/waterLeakage.js',
                 image: HOST + 'threeExamples/particle/waterLeakage.jpg',
+            },
+            {
+                id: 'waterFlowParticle',
+                name: '喷泉水流',
+                name_en: 'Water Flow',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/particle/waterFlowParticle.js',
+                image: HOST + 'threeExamples/particle/waterFlowParticle.jpg',
+            },
+            {
+                id: 'steamParticle',
+                name: '蒸汽粒子',
+                name_en: 'Steam Particle',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/particle/steamParticle.js',
+                image: HOST + 'threeExamples/particle/steamParticle.jpg',
             }
         ]
     },
@@ -2034,6 +2050,14 @@ export default [
                 author: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/animation/downRotate.js',
                 image: HOST + 'threeExamples/animation/downRotate.jpg',
+            },
+            {
+                id: 'curlAnimate',
+                name: '卷曲动画',
+                name_en: 'Curl Animate',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/animation/curlAnimate.js',
+                image: HOST + 'threeExamples/animation/curlAnimate.jpg',
             }
         ]
     },
