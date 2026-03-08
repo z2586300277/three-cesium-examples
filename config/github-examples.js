@@ -75,6 +75,15 @@ export default [
                 githubUrl: 'https://github.com/z2586300277/threejs-editor',
                 image: HOST + 'threeExamples/openSource/newThreeEditor.jpg',
             },
+            {
+                id: 'myWorld',
+                name: '我的世界',
+                name_en: 'My World',
+                author: 'AUTO',
+                githubUrl: 'https://github.com/hexianWeb/Third-Person-MC',
+                openUrl: 'https://third-person-mc.vercel.app/',
+                image: 'https://raw.githubusercontent.com/hexianWeb/picx-images-hosting/master/image.webp',
+            }
         ]
     },
     {
