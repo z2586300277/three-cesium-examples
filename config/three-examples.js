@@ -2058,6 +2058,15 @@ export default [
                 author: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/animation/curlAnimate.js',
                 image: HOST + 'threeExamples/animation/curlAnimate.jpg',
+            },
+            {
+                id: 'inspectionView',
+                name: '巡检',
+                name_en: 'Inspection View',
+                author: 'huan_meng_hai_yan',
+                improver: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/animation/inspectionView.js',
+                image: HOST + 'threeExamples/animation/inspectionView.jpg',
             }
         ]
     },
