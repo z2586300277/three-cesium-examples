@@ -2273,6 +2273,14 @@ export default [
                         "d3": "https://cdn.jsdelivr.net/npm/d3/+esm"
                     }
                 }
+            },
+            {
+                id: 'multViews',
+                name: '多视图',
+                name_en: 'Mult Views',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/expand/multViews.js',
+                image: HOST + 'threeExamples/expand/multViews.jpg',
             }
         ]
     },
