@@ -1933,8 +1933,24 @@ export default [
                 author: 'huan_meng_hai_yan',
                 codeUrl: HOST + 'threeExamples/application/jumpAnimate.js',
                 image: HOST + 'threeExamples/application/jumpAnimate.jpg'
+            },
+            {
+                id: 'pointCloudFpsOctree',
+                name: '点云第一人称漫游,碰撞检测',
+                name_en: 'Point Cloud FPS Octree',
+                author: 'pointCloudFpsOctree',
+                codeUrl: HOST + 'threeExamples/application/pointCloudFpsOctree.js',
+                image: HOST + 'threeExamples/application/pointCloudFpsOctree.png'
+            },{
+                id: 'windTurbineWake',
+                name: '风力涡轮机尾迹',
+                name_en: 'Wind Turbine Wake',
+                author: 'pointCloudFpsOctree',
+                codeUrl: HOST + 'threeExamples/application/windTurbineWake.js',
+                image: HOST + 'threeExamples/application/windTurbineWake.png'
             }
 
+            
         ]
     },
     {
