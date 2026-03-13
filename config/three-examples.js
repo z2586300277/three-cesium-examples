@@ -2232,6 +2232,14 @@ export default [
                 image: HOST + 'threeExamples/expand/combineEcharts.jpg',
             },
             {
+                id: 'barCharts',
+                name: '柱状图',
+                name_en: 'Bar Charts',
+                referUrl: 'https://mp.weixin.qq.com/s/jxHBDjb2EFxo8oHSuGiDqA',
+                htmlUrl: HOST + 'threeExamples/expand/barCharts.html',
+                image: HOST + 'threeExamples/expand/barCharts.jpg',
+            },
+            {
                 id: 'gaussianSplats3D',
                 name: '高斯溅射',
                 name_en: 'gaussianSplats3D',
