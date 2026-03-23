@@ -1933,8 +1933,24 @@ export default [
                 author: 'huan_meng_hai_yan',
                 codeUrl: HOST + 'threeExamples/application/jumpAnimate.js',
                 image: HOST + 'threeExamples/application/jumpAnimate.jpg'
+            },
+            {
+                id: 'pointCloudFpsOctree',
+                name: '点云第一人称漫游,碰撞检测',
+                name_en: 'Point Cloud FPS Octree',
+                author: 'pointCloudFpsOctree',
+                codeUrl: HOST + 'threeExamples/application/pointCloudFpsOctree.js',
+                image: HOST + 'threeExamples/application/pointCloudFpsOctree.png'
+            },{
+                id: 'windTurbineWake',
+                name: '风力涡轮机尾迹',
+                name_en: 'Wind Turbine Wake',
+                author: 'pointCloudFpsOctree',
+                codeUrl: HOST + 'threeExamples/application/windTurbineWake.js',
+                image: HOST + 'threeExamples/application/windTurbineWake.png'
             }
 
+            
         ]
     },
     {
@@ -2058,6 +2074,15 @@ export default [
                 author: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/animation/curlAnimate.js',
                 image: HOST + 'threeExamples/animation/curlAnimate.jpg',
+            },
+            {
+                id: 'inspectionView',
+                name: '巡检',
+                name_en: 'Inspection View',
+                author: 'huan_meng_hai_yan',
+                improver: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/animation/inspectionView.js',
+                image: HOST + 'threeExamples/animation/inspectionView.jpg',
             }
         ]
     },
@@ -2223,6 +2248,14 @@ export default [
                 image: HOST + 'threeExamples/expand/combineEcharts.jpg',
             },
             {
+                id: 'barCharts',
+                name: '柱状图',
+                name_en: 'Bar Charts',
+                referUrl: 'https://mp.weixin.qq.com/s/jxHBDjb2EFxo8oHSuGiDqA',
+                htmlUrl: HOST + 'threeExamples/expand/barCharts.html',
+                image: HOST + 'threeExamples/expand/barCharts.jpg',
+            },
+            {
                 id: 'gaussianSplats3D',
                 name: '高斯溅射',
                 name_en: 'gaussianSplats3D',
@@ -2264,6 +2297,14 @@ export default [
                         "d3": "https://cdn.jsdelivr.net/npm/d3/+esm"
                     }
                 }
+            },
+            {
+                id: 'multViews',
+                name: '多视图',
+                name_en: 'Mult Views',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/expand/multViews.js',
+                image: HOST + 'threeExamples/expand/multViews.jpg',
             }
         ]
     },

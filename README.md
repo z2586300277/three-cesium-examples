@@ -4,9 +4,9 @@
 
 #### 三维开发者学习、分享、展示、交流、合作、接单🤝。(加入管理仓库联系作者🍉)
 
-| QQ 群 |           微信群            |              预览图                       | Stars           |
+| 微信 |           微信群            |              预览图                       | Stars           |
 | :---------------:| :---------------: | :---------: | :--------- |
-| <img src="https://z2586300277.github.io/3d-file-server/images/QQ.png" height="140px" /> | <img src="https://z2586300277.github.io/3d-file-server/images/nico.jpg" height="140px" /> | <img src="https://z2586300277.github.io/3d-file-server/images/threeCesiumExamples.jpg" width="200px" height="140px" /> | <img src="https://api.star-history.com/svg?repos=z2586300277/three-editor,z2586300277/three-cesium-examples&type=Date" width="200px" height="140px" /> |
+| <img src="https://z2586300277.github.io/3d-file-server/images/yy.jpg" height="140px" /> | <img src="https://z2586300277.github.io/3d-file-server/images/nico.jpg" height="140px" /> | <img src="https://z2586300277.github.io/3d-file-server/images/threeCesiumExamples.jpg" width="200px" height="140px" /> | <img src="https://api.star-history.com/svg?repos=z2586300277/three-editor,z2586300277/three-cesium-examples&type=Date" width="200px" height="140px" /> |
 
 - github dev 分支实时预览 http://z2586300277.github.io/three-cesium-examples
 
