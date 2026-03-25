@@ -33,9 +33,8 @@ export default [
                 name: '低代码组态编辑器',
                 name_en: 'LowCode Editor',
                 author: 'z2586300277',
-                referUrl: 'https://z2586300277.github.io/threejs-editor',
-                openUrl: 'https://z2586300277.github.io/three-editor/dist/#/editor',
-                githubUrl: 'https://github.com/z2586300277/three-editor',
+                openUrl: 'https://z2586300277.github.io/threejs-editor',
+                githubUrl: 'https://github.com/z2586300277/threejs-editor',
                 image: FILE_HOST + 'images/editor.jpg',
                 links: [
                     {
@@ -1941,7 +1940,8 @@ export default [
                 author: 'pointCloudFpsOctree',
                 codeUrl: HOST + 'threeExamples/application/pointCloudFpsOctree.js',
                 image: HOST + 'threeExamples/application/pointCloudFpsOctree.png'
-            },{
+            },
+            {
                 id: 'windTurbineWake',
                 name: '风力涡轮机尾迹',
                 name_en: 'Wind Turbine Wake',
@@ -1949,8 +1949,6 @@ export default [
                 codeUrl: HOST + 'threeExamples/application/windTurbineWake.js',
                 image: HOST + 'threeExamples/application/windTurbineWake.png'
             }
-
-            
         ]
     },
     {
@@ -1965,6 +1963,14 @@ export default [
                 author: 'z2586300277',
                 referUrl: 'https://www.npmjs.com/package/animejs',
                 codeUrl: HOST + 'threeExamples/animation/animejsBasic.js',
+                image: HOST + 'threeExamples/animation/animejsBasic.jpg',
+            },
+            {
+                id: 'gsapBasic',
+                name: 'gsap使用',
+                name_en: 'GSAP Basic',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/animation/gsapBasic.js',
                 image: HOST + 'threeExamples/animation/animejsBasic.jpg',
             },
             {

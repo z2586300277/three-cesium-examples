@@ -1524,7 +1524,7 @@ export default [
                 name_en: 'Three Quarks',
                 author: 'AUTO',
                 referUrl: 'https://www.npmjs.com/package/three.quarks',
-                openUrl: 'https://forrestsun.com/three.quarks/',
+                openUrl: 'https://quarks.art/',
                 githubUrl: 'https://github.com/Alchemist0823/three.quarks',
                 image: HOST + 'threeExamples/openSource/threeQuarks.jpg'
             },
