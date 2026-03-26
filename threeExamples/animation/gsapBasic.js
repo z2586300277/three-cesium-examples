@@ -50,11 +50,9 @@ gsap.defaults({
 let tween = gsap.to(mesh.position, {
     z: 30,
     delay: 0.5
-})
-.repeat(1) // 重复一次 等同于设置 repeat: 1
+}).repeat(1) // 重复一次 等同于设置 repeat: 1
 // .timeScale(0.5) // 设置动画的时间缩放，值为 0.5 时动画将以正常速度的一半播放
 // .then(() => console.log('动画完成')) // tween 就会变成Promise 对象
-
 
 // tween.progress(0.3) // 将动画的进度设置为 0.3 会待过 delay 的时间
 tween.pause() // 停止
@@ -77,6 +75,40 @@ folder1.add({ kill: () => tween.kill() }, 'kill').name('终止动画') // 终止
 
 // 不会终止 tween 的播放，但会将其时间跳转设置为 value 的值
 folder1.add({ seek: 0 }, 'seek').step(0.01).onChange(value => tween.seek(value, false))
+
+folder1.add({
+    fn: () => {
+
+        // 由于gsap3 本身就是全局时间线, 所以可以接受第三个参数 => 位置参数  
+        gsap.to(mesh.position, {
+            y: 30,
+            duration: 0.5,
+            repeat: 1
+        }, 2) //此处位置参数表示2秒后开始动画
+
+    }
+}, 'fn').name('y轴动画')
+
+const mesh2 = mesh.clone()
+mesh2.material = new THREE.MeshBasicMaterial({ color: 'red' })
+mesh2.position.x = 5
+scene.add(mesh2)
+
+const mesh3 = mesh.clone()
+mesh3.material = new THREE.MeshBasicMaterial({ color: 'yellow' })
+mesh3.position.x = 10
+scene.add(mesh3)
+
+folder1.add({
+    fn: () => {
+        gsap.to([mesh.position, mesh2.position, mesh3.position], {
+            y: 30,
+            duration: 0.5,
+            repeat: 1,
+            stagger: 0.2 // 每个动画之间的延迟时间
+        })
+    }
+}, 'fn').name('控制多个')
 
 const folder2 = gui.addFolder('时间线动画控制')
 folder2.open()

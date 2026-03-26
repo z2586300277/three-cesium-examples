@@ -2174,6 +2174,14 @@ export default [
                 }
             },
             {
+                id: 'areaMap',
+                name: '分级地图',
+                name_en: 'Area Map',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/other/areaMap.js',
+                image: HOST + 'threeExamples/other/levelMap.jpg',
+            },
+            {
                 id: 'geoBorder',
                 name: '地理边界',
                 name_en: 'Geo Border',
