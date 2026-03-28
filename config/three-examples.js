@@ -1974,6 +1974,22 @@ export default [
                 image: HOST + 'threeExamples/animation/animejsBasic.jpg',
             },
             {
+                id: 'Theatrejs',
+                name: 'Theatrejs',
+                name_en: 'Theatre.js',
+                author: 'z2586300277',
+                referUrl: 'https://www.theatrejs.com/',
+                githubUrl: 'https://github.com/theatre-js/theatre',
+                codeUrl: HOST + 'threeExamples/animation/theatrejs.js',
+                image: HOST + 'threeExamples/animation/theatrejs.jpg',
+                inject: {
+                    importmap: {
+                        "@theatre/core": 'https://cdn.jsdelivr.net/npm/@theatre/core/+esm',
+                        "@theatre/studio": 'https://cdn.jsdelivr.net/npm/@theatre/studio/+esm'
+                    }
+                }
+            },
+            {
                 id: 'gsapCollection',
                 name: '动画合集',
                 name_en: 'GSAP',
