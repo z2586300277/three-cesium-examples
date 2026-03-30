@@ -1351,6 +1351,15 @@ export default [
                 openUrl: 'https://three-good-godrays.ameo.design/',
                 image: HOST + 'threeExamples/openSource/three-good-godrays.jpg'
             },
+            {
+                id: 'robot-arm-sim',
+                name: '机械臂模拟',
+                name_en: 'Robot Arm Sim',
+                author: 'AUTO',
+                openUrl: 'https://robot-arm-sim.vercel.app/',
+                githubUrl: 'https://github.com/ASouthernCat/robot-arm-sim',
+                image: 'https://raw.githubusercontent.com/ASouthernCat/robot-arm-sim/main/preview.png'
+            }
            
         ]
     },
