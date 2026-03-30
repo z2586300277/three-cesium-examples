@@ -90,7 +90,7 @@ export default [
         pid: 'topNavigation',
         name: '精选导航',
         name_en: 'Top Navigation',
-        order: 0,
+        order: 70,
         children: [
             {
                 id: 'codePen',
@@ -147,7 +147,7 @@ export default [
         pid: 'openSourceStation',
         name: '资源链接',
         name_en: 'Resource Link',
-        order: 10,
+        order: 80,
         children: [
             {
                 id: 'sketchThree',
@@ -1351,42 +1351,7 @@ export default [
                 openUrl: 'https://three-good-godrays.ameo.design/',
                 image: HOST + 'threeExamples/openSource/three-good-godrays.jpg'
             },
-            {
-                id: 'change',
-                author: 'nico',
-                name: '二三位联动-物理实验',
-                name_en: 'charts sync',
-                githubUrl: 'https://github.com/Nicolas-zn/distance_sign',
-                openUrl: 'http://nicowebgl.cn/distance_sign/',
-                image: HOST + 'threeExamples/openSource/distance_sign.jpg'
-            },
-            {
-                id: 'lonlat23',
-                author: 'nico',
-                name: '经纬度路线运动(车流模拟)',
-                name_en: 'Lonlat move',
-                openUrl: 'http://nicowebgl.cn/d3_geo/',
-                image: HOST + 'threeExamples/openSource/lonlat23.jpg'
-            },
-            {
-                id: 'draw,roam',
-                author: 'nico',
-                name: '绘线漫游',
-                name_en: 'Draw Roam',
-                githubUrl: 'https://github.com/Nicolas-zn/path',
-                openUrl: 'http://nicowebgl.cn/path/',
-                image: HOST + 'threeExamples/openSource/roam.jpg'
-            },
-            {
-                id: 'unreal',
-                author: 'nico',
-                name: 'unreal风格场景标注',
-                name_en: 'Unreal Style',
-                githubUrl: 'https://github.com/Nicolas-zn/annotations',
-                openUrl: 'http://nicowebgl.cn/annotations/',
-                image: HOST + 'threeExamples/openSource/unrealstyle.jpg'
-            },
-
+           
         ]
     },
     {
@@ -1524,7 +1489,7 @@ export default [
                 name_en: 'Three Quarks',
                 author: 'AUTO',
                 referUrl: 'https://www.npmjs.com/package/three.quarks',
-                openUrl: 'https://forrestsun.com/three.quarks/',
+                openUrl: 'https://quarks.art/',
                 githubUrl: 'https://github.com/Alchemist0823/three.quarks',
                 image: HOST + 'threeExamples/openSource/threeQuarks.jpg'
             },
@@ -1715,7 +1680,7 @@ export default [
         pid: 'ortherSource',
         name: '其他资源',
         name_en: 'Other Resources',
-        order: 70,
+        order: 90,
         children: [
             {
                 id: 'loveCode',

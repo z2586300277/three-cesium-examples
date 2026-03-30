@@ -3,14 +3,16 @@ import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js'
 import { CSS2DRenderer, CSS2DObject } from 'three/examples/jsm/renderers/CSS2DRenderer.js'
 import gsap from 'gsap'
 
-const PAEAMS = { DEPTH: 6, coordsMaxCounts: 500 }
+const PAEAMS = { DEPTH: 15, coordsMaxCounts: 500 }
 const fetchJson = (url) => fetch(url).then((res) => res.json())
 
-export async function setScene(DOM) {
+setScene(document.getElementById('box'))
+
+async function setScene(DOM) {
 
     const scene = new THREE.Scene()
     const camera = new THREE.PerspectiveCamera(50, DOM.clientWidth / DOM.clientHeight, 0.1, 100000000)
-    camera.position.set(0, 600, 200)
+    camera.position.set(0, 600, 300)
     const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true, logarithmicDepthBuffer: true })
     renderer.setSize(DOM.clientWidth, DOM.clientHeight)
     DOM.appendChild(renderer.domElement)
@@ -55,7 +57,7 @@ function clickEvent(camera, controls, DOM, rootGroup) {
         if (obj.info) return obj
         if (obj.parent) return getLavelObj(obj.parent)
     }
-    DOM.addEventListener('dblclick', async (e) => {
+    DOM.addEventListener('click', async (e) => {
 
         mouse.x = (e.clientX / DOM.clientWidth) * 2 - 1
         mouse.y = -(e.clientY / DOM.clientHeight) * 2 + 1

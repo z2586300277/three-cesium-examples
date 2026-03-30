@@ -33,9 +33,8 @@ export default [
                 name: '低代码组态编辑器',
                 name_en: 'LowCode Editor',
                 author: 'z2586300277',
-                referUrl: 'https://z2586300277.github.io/threejs-editor',
-                openUrl: 'https://z2586300277.github.io/three-editor/dist/#/editor',
-                githubUrl: 'https://github.com/z2586300277/three-editor',
+                openUrl: 'https://z2586300277.github.io/threejs-editor',
+                githubUrl: 'https://github.com/z2586300277/threejs-editor',
                 image: FILE_HOST + 'images/editor.jpg',
                 links: [
                     {
@@ -75,17 +74,16 @@ export default [
             },
 
             {
-                id: 'theWayNicoCome',
-                tag: TEXTS['Nico教程'] + '-#195cddba',
-                name: 'Nico学webgl的来时路',
-                name_en: 'The Way Nico Come',
-                author: 'nico',
-                githubUrl: 'https://project.nicowebgl.cn/cesium/index.html',
-                codeUrl: HOST + 'threeExamples/application/thewaynicocome.js',
-                image: HOST + 'threeExamples/application/thewaynicocome.jpg',
-                openUrl: 'https://project.nicowebgl.cn/theWay/index.html',
+                id: 'z2586300277_info',
+                name: '优雅永不过时',
+                name_en: 'Elegant',
+                tag: TEXTS['Contact'] + '-#d96dca',
+                author: 'z2586300277',
+                openUrl: 'https://z2586300277.github.io',
+                githubUrl: 'https://github.com/z2586300277',
+                image: FILE_HOST + 'images/yy.jpg'
             }
-
+            
         ]
     },
 
@@ -1941,7 +1939,8 @@ export default [
                 author: 'pointCloudFpsOctree',
                 codeUrl: HOST + 'threeExamples/application/pointCloudFpsOctree.js',
                 image: HOST + 'threeExamples/application/pointCloudFpsOctree.png'
-            },{
+            },
+            {
                 id: 'windTurbineWake',
                 name: '风力涡轮机尾迹',
                 name_en: 'Wind Turbine Wake',
@@ -1949,8 +1948,6 @@ export default [
                 codeUrl: HOST + 'threeExamples/application/windTurbineWake.js',
                 image: HOST + 'threeExamples/application/windTurbineWake.png'
             }
-
-            
         ]
     },
     {
@@ -1966,6 +1963,30 @@ export default [
                 referUrl: 'https://www.npmjs.com/package/animejs',
                 codeUrl: HOST + 'threeExamples/animation/animejsBasic.js',
                 image: HOST + 'threeExamples/animation/animejsBasic.jpg',
+            },
+            {
+                id: 'gsapBasic',
+                name: 'gsap使用',
+                name_en: 'GSAP Basic',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/animation/gsapBasic.js',
+                image: HOST + 'threeExamples/animation/animejsBasic.jpg',
+            },
+            {
+                id: 'Theatrejs',
+                name: 'Theatrejs',
+                name_en: 'Theatre.js',
+                author: 'z2586300277',
+                referUrl: 'https://www.theatrejs.com/',
+                githubUrl: 'https://github.com/theatre-js/theatre',
+                codeUrl: HOST + 'threeExamples/animation/theatrejs.js',
+                image: HOST + 'threeExamples/animation/theatrejs.jpg',
+                inject: {
+                    importmap: {
+                        "@theatre/core": 'https://cdn.jsdelivr.net/npm/@theatre/core/+esm',
+                        "@theatre/studio": 'https://cdn.jsdelivr.net/npm/@theatre/studio/+esm'
+                    }
+                }
             },
             {
                 id: 'gsapCollection',
@@ -2166,6 +2187,14 @@ export default [
                     keywords: 'three.js,3D地图',
                     description: '使用three.js制作3D地图'
                 }
+            },
+            {
+                id: 'areaMap',
+                name: '分级地图',
+                name_en: 'Area Map',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/other/areaMap.js',
+                image: HOST + 'threeExamples/other/levelMap.jpg',
             },
             {
                 id: 'geoBorder',
