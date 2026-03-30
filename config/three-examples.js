@@ -74,17 +74,16 @@ export default [
             },
 
             {
-                id: 'theWayNicoCome',
-                tag: TEXTS['Nico教程'] + '-#195cddba',
-                name: 'Nico学webgl的来时路',
-                name_en: 'The Way Nico Come',
-                author: 'nico',
-                githubUrl: 'https://project.nicowebgl.cn/cesium/index.html',
-                codeUrl: HOST + 'threeExamples/application/thewaynicocome.js',
-                image: HOST + 'threeExamples/application/thewaynicocome.jpg',
-                openUrl: 'https://project.nicowebgl.cn/theWay/index.html',
+                id: 'z2586300277_info',
+                name: '优雅永不过时',
+                name_en: 'Elegant',
+                tag: TEXTS['Contact'] + '-#d96dca',
+                author: 'z2586300277',
+                openUrl: 'https://z2586300277.github.io',
+                githubUrl: 'https://github.com/z2586300277',
+                image: FILE_HOST + 'images/yy.jpg'
             }
-
+            
         ]
     },
 
