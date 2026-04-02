@@ -1359,8 +1359,16 @@ export default [
                 openUrl: 'https://robot-arm-sim.vercel.app/',
                 githubUrl: 'https://github.com/ASouthernCat/robot-arm-sim',
                 image: 'https://raw.githubusercontent.com/ASouthernCat/robot-arm-sim/main/preview.png'
+            },
+            {
+                id: 'Elemental-Serenity',
+                name: '元素宁静',
+                name_en: 'Elemental Serenity',
+                author: 'AUTO',
+                githubUrl: 'https://github.com/SahilK-027/Elemental-Serenity',
+                openUrl: 'https://elemental-serenity.vercel.app/',
+                image: 'https://raw.githubusercontent.com/SahilK-027/Elemental-Serenity/refs/heads/main/elemental_serenity.jpg'
             }
-           
         ]
     },
     {
