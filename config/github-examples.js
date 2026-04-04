@@ -720,6 +720,16 @@ export default [
                 openUrl: 'https://jeantimex.github.io/flights-tracker/',
                 githubUrl: 'https://github.com/jeantimex/flights-tracker',
                 image: HOST + 'threeExamples/openSource/flightsTracker.jpg'
+            },
+            {
+                id: 'globeGL',
+                name: 'Globe.GL地球',
+                name_en: 'Globe.GL',
+                author: 'AUTO',
+                tip: '基于Three.js的交互式地球可视化库',
+                openUrl: 'https://globe.gl/',
+                githubUrl: 'https://github.com/vasturiano/globe.gl',
+                image: HOST + 'threeExamples/openSource/globeGL.jpg'
             }
         ]
 
