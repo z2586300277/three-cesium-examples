@@ -1377,8 +1377,143 @@ export default [
                 author: 'AUTO',
                 githubUrl: 'https://github.com/SahilK-027/Elemental-Serenity',
                 openUrl: 'https://elemental-serenity.vercel.app/',
-                image: 'https://raw.githubusercontent.com/SahilK-027/Elemental-Serenity/refs/heads/main/elemental_serenity.jpg'
-            }
+                image: 'https://raw.githubusercontent.com/SahilK-027/Sahilk-027/main/assets/thumbs/project-14.webp'
+            },
+            {
+                id: 'lightning-vfx',
+                name: '闪电特效',
+                name_en: 'Lightning VFX',
+                author: 'AUTO',
+                githubUrl: 'https://github.com/SahilK-027/Lightning-VFX',
+                openUrl: 'https://lightning-vfx.vercel.app/',
+                image: 'https://raw.githubusercontent.com/SahilK-027/Sahilk-027/main/assets/thumbs/project-20.webp'
+            },
+            {
+                id: 'glsl-curl-noise',
+                name: '卷曲噪声',
+                name_en: 'Curl Noise',
+                author: 'AUTO',
+                githubUrl: 'https://github.com/SahilK-027/glsl-curl-noise',
+                openUrl: 'https://glsl-curl-noise.vercel.app/',
+                image: 'https://raw.githubusercontent.com/SahilK-027/Sahilk-027/main/assets/thumbs/project-19.webp'
+            },
+            {
+                id: 'the-erdtree',
+                name: '黄金树',
+                name_en: 'The Erdtree',
+                author: 'AUTO',
+                githubUrl: 'https://github.com/SahilK-027/The-Erdtree',
+                openUrl: 'https://the-erdtree.vercel.app/',
+                image: 'https://raw.githubusercontent.com/SahilK-027/Sahilk-027/main/assets/thumbs/project-18.webp'
+            },
+            {
+                id: 'digital-brain',
+                name: '数字大脑',
+                name_en: 'Digital Brain',
+                author: 'AUTO',
+                githubUrl: 'https://github.com/SahilK-027/Digital-Brain',
+                openUrl: 'https://digital-brain-sk.vercel.app/',
+                image: 'https://raw.githubusercontent.com/SahilK-027/Sahilk-027/main/assets/thumbs/project-17.webp'
+            },
+            {
+                id: 'crystal-bird',
+                name: '水晶鸟',
+                name_en: 'Crystal Bird',
+                author: 'AUTO',
+                githubUrl: 'https://github.com/SahilK-027/Crystal-Bird',
+                openUrl: 'https://crystal-bird.vercel.app/',
+                image: 'https://raw.githubusercontent.com/SahilK-027/Sahilk-027/main/assets/thumbs/project-15.webp'
+            },
+            {
+                id: 'celestial-drift',
+                name: '天体漂流',
+                name_en: 'Celestial Drift',
+                author: 'AUTO',
+                githubUrl: 'https://github.com/SahilK-027/Celestial-Drift',
+                openUrl: 'https://celestial-drift.vercel.app/',
+                image: 'https://raw.githubusercontent.com/SahilK-027/Sahilk-027/main/assets/thumbs/project-13.webp'
+            },
+            {
+                id: 'space-distortion',
+                name: '空间扭曲',
+                name_en: 'Space Distortion',
+                author: 'AUTO',
+                githubUrl: 'https://github.com/SahilK-027/0x7444ff/tree/main/space-distortion',
+                openUrl: 'https://space-distortion-sk027.vercel.app/',
+                image: 'https://raw.githubusercontent.com/SahilK-027/Sahilk-027/main/assets/thumbs/project-12.webp'
+            },
+            {
+                id: 'iron-man-hologram',
+                name: '全息投影',
+                name_en: 'Holograms',
+                author: 'AUTO',
+                githubUrl: 'https://github.com/SahilK-027/0x7444ff/tree/main/iron-man-hologram',
+                openUrl: 'https://iron-man-sk027.vercel.app/',
+                image: 'https://raw.githubusercontent.com/SahilK-027/Sahilk-027/main/assets/thumbs/project-11.webp'
+            },
+            {
+                id: 'gpgpu-particles',
+                name: 'GPGPU粒子',
+                name_en: 'GPGPU Particles',
+                author: 'AUTO',
+                githubUrl: 'https://github.com/SahilK-027/0x7444ff/tree/main/particles-GPGPU',
+                openUrl: 'https://particles-gpgpu-sk027.vercel.app/',
+                image: 'https://raw.githubusercontent.com/SahilK-027/Sahilk-027/main/assets/thumbs/project-10.webp'
+            },
+            {
+                id: 'perlin-pattern',
+                name: '柏林噪声图案',
+                name_en: 'Perlin Pattern',
+                author: 'AUTO',
+                githubUrl: 'https://github.com/SahilK-027/0x7444ff/tree/main/perlin-noise-advanced-abstract-pattern',
+                openUrl: 'https://0x7444ff-perlin-noise-advanced-abstract-pattern.vercel.app/',
+                image: 'https://raw.githubusercontent.com/SahilK-027/Sahilk-027/main/assets/thumbs/project-9.webp'
+            },
+            {
+                id: 'frosted-canvas',
+                name: '磨砂画布',
+                name_en: 'Frosted Canvas',
+                author: 'AUTO',
+                githubUrl: 'https://github.com/SahilK-027/Frosted-Canvas',
+                openUrl: 'https://frosted-canvas.vercel.app/',
+                image: 'https://raw.githubusercontent.com/SahilK-027/Sahilk-027/main/assets/thumbs/project-8.webp'
+            },
+            {
+                id: 'sahilk-minecraft',
+                name: '我的世界',
+                name_en: 'Minecraft',
+                author: 'AUTO',
+                githubUrl: 'https://github.com/SahilK-027/My-Minecraft',
+                openUrl: 'https://minecraft-sahilk.vercel.app/',
+                image: 'https://raw.githubusercontent.com/SahilK-027/Sahilk-027/main/assets/thumbs/project-7.webp'
+            },
+            {
+                id: 'neon-christmas',
+                name: '霓虹圣诞',
+                name_en: 'Neon Christmas',
+                author: 'AUTO',
+                githubUrl: 'https://github.com/SahilK-027/neon-christmas',
+                openUrl: 'https://neon-christmas-sk027.vercel.app/',
+                image: 'https://raw.githubusercontent.com/SahilK-027/Sahilk-027/main/assets/thumbs/project-6.webp'
+            },
+            {
+                id: 'hello-world-r3f',
+                name: 'Hello World',
+                name_en: 'Hello World',
+                author: 'AUTO',
+                githubUrl: 'https://github.com/SahilK-027/hello-world-r3f',
+                openUrl: 'https://sk027v2.vercel.app/',
+                image: 'https://raw.githubusercontent.com/SahilK-027/Sahilk-027/main/assets/thumbs/project-5.webp'
+            },
+            {
+                id: 'water-color',
+                name: '水彩效果',
+                name_en: 'Water Color',
+                author: 'AUTO',
+                githubUrl: 'https://github.com/SahilK-027/water-color',
+                openUrl: 'https://watercolor-sk027.vercel.app/',
+                image: 'https://raw.githubusercontent.com/SahilK-027/Sahilk-027/main/assets/thumbs/project-4.webp'
+            },
         ]
     },
     {
