@@ -465,6 +465,14 @@ export default [
                 githubUrl: 'https://github.com/nikonikoCW/Meteor3DEditor',
                 openUrl: 'https://meteor3d.cn/',
                 image: HOST + 'threeExamples/openSource/meteor3d.jpg'
+            },
+            {
+                id: 'rezeStudio',
+                name: 'Reze Studio',
+                author: 'AUTO',
+                githubUrl: 'https://github.com/AmyangXYZ/reze-studio',
+                openUrl: 'https://reze-studio.vercel.app/',
+                image: HOST + 'threeExamples/openSource/rezeStudio.jpg'
             }
         ]
     },
