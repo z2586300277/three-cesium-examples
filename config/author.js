@@ -537,4 +537,10 @@ export default [
         github: 'https://github.com/123164867376464646',
         icon: 'https://avatars.githubusercontent.com/u/105119300?v=4',
     },
+    {
+        id: 'ylfq',
+        name: TEXTS['ylfq'],
+        github: 'https://github.com/ylfq',
+        icon: HOST + 'files/author/ylfq.jpg',
+    }
 ]
