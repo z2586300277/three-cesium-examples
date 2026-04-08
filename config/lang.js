@@ -20,6 +20,8 @@ window.TEXTS = Object.fromEntries(Object.entries({
 
     elegant: { zh: '优雅永不过时', en: 'Elegant' },
 
+    ylfq: { zh: '雨落风轻', en: 'ylfq' },
+
     '推荐': { zh: '推荐', en: 'HOT' },
 
     hot: { zh: '热门', en: 'HOT' },
