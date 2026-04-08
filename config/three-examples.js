@@ -997,6 +997,14 @@ export default [
                 referUrl: 'https://github.com/rock-biter/ice-trails',
                 codeUrl: HOST + 'threeExamples/shader/iceFloor.js',
                 image: HOST + 'threeExamples/shader/iceFloor.jpg',
+            },
+            {
+                id: 'blackhole',
+                name: '黑洞',
+                name_en: 'Black Hole',
+                author: 'ylfq',
+                codeUrl: HOST + 'threeExamples/shader/blackhole.js',
+                image: HOST + 'threeExamples/shader/blackhole.jpg',
             }
         ]
     },
