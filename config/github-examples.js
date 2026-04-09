@@ -465,6 +465,14 @@ export default [
                 githubUrl: 'https://github.com/nikonikoCW/Meteor3DEditor',
                 openUrl: 'https://meteor3d.cn/',
                 image: HOST + 'threeExamples/openSource/meteor3d.jpg'
+            },
+            {
+                id: 'rezeStudio',
+                name: 'Reze Studio',
+                author: 'AUTO',
+                githubUrl: 'https://github.com/AmyangXYZ/reze-studio',
+                openUrl: 'https://reze-studio.vercel.app/',
+                image: HOST + 'threeExamples/openSource/rezeStudio.jpg'
             }
         ]
     },
@@ -899,6 +907,15 @@ export default [
                 openUrl: 'https://hh-hang.github.io/three-player-controller/',
                 githubUrl: 'https://github.com/hh-hang/three-player-controller',
                 image: HOST + 'threeExamples/openSource/threePlayerController.jpg'
+            },
+            {
+                id: 'rubiksCube',
+                name: '魔方',
+                name_en: 'Rubiks Cube',
+                author: 'AUTO',
+                githubUrl: 'https://github.com/Junhong-Chen/rubiks-cube',
+                openUrl: 'https://junhong-chen.github.io/rubiks-cube/',
+                image: HOST + 'threeExamples/openSource/rubiksCube.jpg'
             }
         ]
     },

@@ -20,6 +20,8 @@ window.TEXTS = Object.fromEntries(Object.entries({
 
     elegant: { zh: '优雅永不过时', en: 'Elegant' },
 
+    ylfq: { zh: '雨落风轻', en: 'ylfq' },
+
     '推荐': { zh: '推荐', en: 'HOT' },
 
     hot: { zh: '热门', en: 'HOT' },
@@ -31,7 +33,7 @@ window.TEXTS = Object.fromEntries(Object.entries({
     '效果佳': { zh: '效果佳', en: 'Great' },
 
     '感谢BiBi': { zh: '感谢B站', en: 'For BiBi' },
-    
+
     'webgl教程': { zh: 'webgl教程', en: 'Webgl Tutorial' },
 
     '共享': { zh: '共筑,共享', en: 'Share' },
@@ -90,7 +92,9 @@ window.TEXTS = Object.fromEntries(Object.entries({
 
     'Nico教程': { zh: 'Nico教程', en: 'NicoLearn' },
 
-    'Contact' : { zh: '交流联系', en: 'Contact' },
+    'Contact': { zh: '交流联系', en: 'Contact' },
+
+    '官网': { zh: '官网', en: 'Official' },
 
 }).map(
 
