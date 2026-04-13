@@ -1531,6 +1531,15 @@ export default [
                 openUrl: 'https://watercolor-sk027.vercel.app/',
                 image: 'https://raw.githubusercontent.com/SahilK-027/Sahilk-027/main/assets/thumbs/project-4.webp'
             },
+            {
+                id: 'ship-selection',
+                name: '飞船',
+                name_en: 'Ship Selection',
+                author: 'AUTO',
+                githubUrl: 'https://github.com/cortiz2894/ship-selection-page',
+                openUrl: 'https://ship-selection-page.vercel.app/',
+                image: HOST + 'threeExamples/openSource/ship-selection.jpg'
+            }
         ]
     },
     {
