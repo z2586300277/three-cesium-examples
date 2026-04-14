@@ -473,6 +473,15 @@ export default [
                 githubUrl: 'https://github.com/AmyangXYZ/reze-studio',
                 openUrl: 'https://reze-studio.vercel.app/',
                 image: HOST + 'threeExamples/openSource/rezeStudio.jpg'
+            },
+            {
+                id: 'pascalorg_editor',
+                name: 'Pascalorg编辑器',
+                name_en: 'Pascalorg Editor',
+                author: 'AUTO',
+                openUrl: 'https://editor.pascal.app/',
+                githubUrl: 'https://github.com/pascalorg/editor',
+                image: HOST + 'threeExamples/openSource/pascalorg_editor.jpg'
             }
         ]
     },
