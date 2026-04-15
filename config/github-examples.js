@@ -801,6 +801,24 @@ export default [
                 githubUrl: 'https://gitee.com/fu-meichuan/digital-farmland',
                 openUrl: 'https://coderfmc.github.io/three.js-demo/digital-farmland/#/carbon-neutral-bigscreen',
                 image: 'https://coderfmc.github.io/three.js-demo/fmc-web-3d/img/智慧农田.png'
+            },
+            {
+                id: 'MF-GisMonitor',
+                name: 'GIS监控',
+                name_en: 'GIS Monitor',
+                author: 'AUTO',
+                openUrl: 'https://fengtianxi001.github.io/MF-GisMonitor',
+                githubUrl: 'https://github.com/fengtianxi001/MF-GisMonitor',
+                image: HOST + 'threeExamples/openSource/gisMonitor.jpg'
+            },
+            {
+                id: 'MF-ShipMonitor',
+                name: '船只监控',
+                name_en: 'Ship Monitor',
+                author: 'AUTO',
+                openUrl: 'https://fengtianxi001.github.io/MF-ShipMonitor',
+                githubUrl: 'https://github.com/fengtianxi001/MF-ShipMonitor',
+                image: HOST + 'threeExamples/openSource/shipMonitor.jpg'
             }
         ]
     },
