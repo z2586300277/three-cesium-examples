@@ -45,6 +45,29 @@ export default [
                 image: 'https://coderfmc.github.io/three.js-demo/fmc-web-3d/img/智慧农田.png'
             },
             {
+                id: 'z2586300277_new3d_editor',
+                tag: TEXTS['编辑器'],
+                tip: '使用Three.js开发的低代码组态易用的编辑器——全新版本',
+                name: '新低代码编辑器',
+                name_en: 'LowCode Editor',
+                author: 'z2586300277',
+                openUrl: 'https://z2586300277.github.io/threejs-editor/',
+                githubUrl: 'https://github.com/z2586300277/threejs-editor',
+                image: HOST + 'threeExamples/openSource/newThreeEditor.jpg',
+            },
+            {
+                id: 'goViewThreeEditor',
+                tag: 'GoView' + '-#62B1EE',
+                tip: 'GoView集成three.js开发的三维编辑器，支持丰富的三维功能',
+                name: 'GoView集成编辑器',
+                name_en: 'GoView Three Editor',
+                author: 'z2586300277',
+                referUrl: 'https://www.mtruning.club/',
+                openUrl: 'https://z2586300277.github.io/go-view-three-editor',
+                githubUrl: 'https://github.com/z2586300277/go-view-three-editor',
+                image: HOST + 'threeExamples/openSource/goViewThreeEditor.jpg'
+            },
+            {
                 id: 'blanderCar',
                 author: 'ASouthernCat',
                 name: '硬核小车',
@@ -63,17 +86,6 @@ export default [
                         url: 'https://www.bilibili.com/video/BV1AcSUY3Ez2'
                     }
                 ]
-            },
-            {
-                id: 'z2586300277_new3d_editor',
-                tag: TEXTS['编辑器'],
-                tip: '使用Three.js开发的低代码组态易用的编辑器——全新版本',
-                name: '新低代码编辑器',
-                name_en: 'LowCode Editor',
-                author: 'z2586300277',
-                openUrl: 'https://z2586300277.github.io/threejs-editor/',
-                githubUrl: 'https://github.com/z2586300277/threejs-editor',
-                image: HOST + 'threeExamples/openSource/newThreeEditor.jpg',
             },
             {
                 id: 'myWorld',
