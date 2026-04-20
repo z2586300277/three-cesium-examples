@@ -1578,6 +1578,15 @@ export default [
                 githubUrl: 'https://github.com/cortiz2894/ship-selection-page',
                 openUrl: 'https://ship-selection-page.vercel.app/',
                 image: HOST + 'threeExamples/openSource/ship-selection.jpg'
+            },
+            {
+                id: 'showcase-images',
+                name: '图片展示',
+                name_en: 'Showcase Images',
+                author: 'AUTO',
+                openUrl: 'https://showcase-images.vercel.app/',
+                githubUrl: 'https://github.com/cortiz2894/showcase-images',
+                image: HOST + 'threeExamples/openSource/showcase-images.jpg'
             }
         ]
     },
