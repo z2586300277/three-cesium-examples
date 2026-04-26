@@ -1002,6 +1002,14 @@ export default [
                 author: 'ylfq',
                 codeUrl: HOST + 'threeExamples/shader/blackhole.js',
                 image: HOST + 'threeExamples/shader/blackhole.jpg',
+            },
+            {
+                id: 'contourLine',
+                name: '等高线',
+                name_en: 'Contour Line',
+                author: 'ylfq',
+                codeUrl: HOST + 'threeExamples/shader/contourLine.js',
+                image: HOST + 'threeExamples/shader/contourLine.jpg',
             }
         ]
     },
