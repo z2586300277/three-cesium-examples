@@ -1292,7 +1292,16 @@ export default [
         gid: 'effectGroup',
         pid: 'game',
         name: '游戏复刻',
-        children: []
+        children: [
+            {
+                id: 'zmdIndex',
+                name: '终末地-登录入口',
+                name_en: 'EndField Index',
+                author: 'ylfq',
+                codeUrl: HOST + 'threeExamples/game/zmdIndex.js',
+                image: HOST + 'threeExamples/game/zmdIndex.jpg',
+            }
+        ]
     },
     {
         pid: 'application',
