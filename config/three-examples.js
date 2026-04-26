@@ -1289,6 +1289,12 @@ export default [
         ]
     },
     {
+        gid: 'effectGroup',
+        pid: 'game',
+        name: '游戏复刻',
+        children: []
+    },
+    {
         pid: 'application',
         name: '应用场景',
         name_en: 'Application',
