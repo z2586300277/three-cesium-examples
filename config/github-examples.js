@@ -7,6 +7,16 @@ export default [
         name_en: 'Recommended',
         order: -10,
         children: [
+               {
+                id: "moyunhe",
+                name: "电商产品设计器",
+                name_en: "E-commerce product designer",
+                author: "爬向金字塔的蜗牛",
+                tag: 'Babylonjs' + '-#ff6d6d',
+                openUrl: "https://blueraining.github.io/moyunhe/home#/home",
+                githubUrl: "https://github.com/blueRaining/moyunhe",
+                image: HOST + "threeExamples/openSource/moyunhe.jpg",
+            },
             {
                 id: "heat3dMap",
                 name: "热力3D地图",

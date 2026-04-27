@@ -525,6 +525,12 @@ export default [
         icon: 'https://avatars.githubusercontent.com/u/232365789?v=4'   
     },
     {
+    	id: "爬向金字塔的蜗牛",
+    	name: "爬向金字塔的蜗牛",
+    	github: "https://github.com/blueRaining",
+    	icon: "https://raw.githubusercontent.com/blueRaining/moyunhe/main/icons/logo.png",
+    },
+    {
     	id: "knight-L",
     	name: "knight-L",
     	github: "https://github.com/knight-L",
