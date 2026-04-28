@@ -2327,6 +2327,20 @@ export default [
                 }
             },
             {
+                id: 'sparkjs',
+                name: '高斯sparkjs',
+                name_en: 'sparkjs',
+                author: 'z2586300277',
+                githubUrl: 'https://github.com/sparkjsdev/spark',
+                codeUrl: HOST + 'threeExamples/expand/sparkjs.js',
+                image: HOST + 'threeExamples/expand/sparkjs.jpg',
+                inject: {
+                    importmap: {
+                        '@sparkjsdev/spark': 'https://sparkjs.dev/releases/spark/2.0.0/spark.module.js'
+                    }
+                }
+            },
+            {
                 id: 'tilesMap',
                 name: '瓦片地图',
                 name_en: 'Tiles Map',
