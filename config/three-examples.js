@@ -1002,6 +1002,14 @@ export default [
                 author: 'ylfq',
                 codeUrl: HOST + 'threeExamples/shader/blackhole.js',
                 image: HOST + 'threeExamples/shader/blackhole.jpg',
+            },
+            {
+                id: 'contourLine',
+                name: '等高线',
+                name_en: 'Contour Line',
+                author: 'ylfq',
+                codeUrl: HOST + 'threeExamples/shader/contourLine.js',
+                image: HOST + 'threeExamples/shader/contourLine.jpg',
             }
         ]
     },
@@ -1277,6 +1285,29 @@ export default [
                 author: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/particle/steamParticle.js',
                 image: HOST + 'threeExamples/particle/steamParticle.jpg',
+            }
+        ]
+    },
+    {
+        gid: 'effectGroup',
+        pid: 'game',
+        name: '游戏复刻',
+        children: [
+            {
+                id: 'zmdIndex',
+                name: '终末地-登录入口',
+                name_en: 'EndField Index',
+                author: 'ylfq',
+                codeUrl: HOST + 'threeExamples/game/zmdIndex.js',
+                image: HOST + 'threeExamples/game/zmdIndex.jpg',
+            },
+            {
+                id: 'characterBlur',
+                name: '人物虚化',
+                name_en: 'Character Blur',
+                author: 'ylfq',
+                codeUrl: HOST + 'threeExamples/game/characterBlur.js',
+                image: HOST + 'threeExamples/game/characterBlur.jpg',
             }
         ]
     },
@@ -2300,6 +2331,20 @@ export default [
                 inject: {
                     importmap: {
                         '@mkkellogg/gaussian-splats-3d': 'https://cdn.jsdelivr.net/npm/@mkkellogg/gaussian-splats-3d@0.4.7/+esm'
+                    }
+                }
+            },
+            {
+                id: 'sparkjs',
+                name: '高斯sparkjs',
+                name_en: 'sparkjs',
+                author: 'z2586300277',
+                githubUrl: 'https://github.com/sparkjsdev/spark',
+                codeUrl: HOST + 'threeExamples/expand/sparkjs.js',
+                image: HOST + 'threeExamples/expand/sparkjs.jpg',
+                inject: {
+                    importmap: {
+                        '@sparkjsdev/spark': 'https://sparkjs.dev/releases/spark/2.0.0/spark.module.js'
                     }
                 }
             },

@@ -8,6 +8,16 @@ export default [
         order: -10,
         children: [
             {
+                id: "moyunhe",
+                name: "电商产品设计器",
+                name_en: "E-commerce product designer",
+                author: "爬向金字塔的蜗牛",
+                tag: 'Babylonjs' + '-#ff6d6d',
+                openUrl: "https://blueraining.github.io/moyunhe/home#/home",
+                githubUrl: "https://github.com/blueRaining/moyunhe",
+                image: HOST + "threeExamples/openSource/moyunhe.jpg",
+            },
+            {
                 id: "heat3dMap",
                 name: "热力3D地图",
                 name_en: "Heat 3d Map",
@@ -45,6 +55,29 @@ export default [
                 image: 'https://coderfmc.github.io/three.js-demo/fmc-web-3d/img/智慧农田.png'
             },
             {
+                id: 'z2586300277_new3d_editor',
+                tag: TEXTS['编辑器'],
+                tip: '使用Three.js开发的低代码组态易用的编辑器——全新版本',
+                name: '新低代码编辑器',
+                name_en: 'LowCode Editor',
+                author: 'z2586300277',
+                openUrl: 'https://z2586300277.github.io/threejs-editor/',
+                githubUrl: 'https://github.com/z2586300277/threejs-editor',
+                image: HOST + 'threeExamples/openSource/newThreeEditor.jpg',
+            },
+            {
+                id: 'goViewThreeEditor',
+                tag: 'GoView' + '-#62B1EE',
+                tip: 'GoView集成three.js开发的三维编辑器，支持丰富的三维功能',
+                name: 'GoView集成编辑器',
+                name_en: 'GoView Three Editor',
+                author: 'z2586300277',
+                referUrl: 'https://www.mtruning.club/',
+                openUrl: 'https://z2586300277.github.io/go-view-three-editor',
+                githubUrl: 'https://github.com/z2586300277/go-view-three-editor',
+                image: HOST + 'threeExamples/openSource/goViewThreeEditor.jpg'
+            },
+            {
                 id: 'blanderCar',
                 author: 'ASouthernCat',
                 name: '硬核小车',
@@ -63,17 +96,6 @@ export default [
                         url: 'https://www.bilibili.com/video/BV1AcSUY3Ez2'
                     }
                 ]
-            },
-            {
-                id: 'z2586300277_new3d_editor',
-                tag: TEXTS['编辑器'],
-                tip: '使用Three.js开发的低代码组态易用的编辑器——全新版本',
-                name: '新低代码编辑器',
-                name_en: 'LowCode Editor',
-                author: 'z2586300277',
-                openUrl: 'https://z2586300277.github.io/threejs-editor/',
-                githubUrl: 'https://github.com/z2586300277/threejs-editor',
-                image: HOST + 'threeExamples/openSource/newThreeEditor.jpg',
             },
             {
                 id: 'myWorld',
@@ -473,6 +495,15 @@ export default [
                 githubUrl: 'https://github.com/AmyangXYZ/reze-studio',
                 openUrl: 'https://reze-studio.vercel.app/',
                 image: HOST + 'threeExamples/openSource/rezeStudio.jpg'
+            },
+            {
+                id: 'pascalorg_editor',
+                name: 'Pascalorg编辑器',
+                name_en: 'Pascalorg Editor',
+                author: 'AUTO',
+                openUrl: 'https://editor.pascal.app/',
+                githubUrl: 'https://github.com/pascalorg/editor',
+                image: HOST + 'threeExamples/openSource/pascalorg_editor.jpg'
             }
         ]
     },
@@ -562,6 +593,15 @@ export default [
                 openUrl: 'https://g2657.github.io/examples-server/map3d/#/gdMap',
                 githubUrl: 'https://github.com/wangscript007/ThreeMaps',
                 image: 'https://raw.githubusercontent.com/wangscript007/ThreeMaps/refs/heads/main/images/1721032698514.jpg'
+            },
+            {
+                id: 'chinaMap',
+                name: '中国地图',
+                name_en: 'China Map',
+                author: 'AUTO',
+                githubUrl: 'https://github.com/zhanghang2017/threemap',
+                openUrl: 'https://g2657.github.io/examples-server/charts_map/',
+                image: HOST + 'threeExamples/openSource/chinaMap.jpg',
             }
         ]
     },
@@ -792,6 +832,24 @@ export default [
                 githubUrl: 'https://gitee.com/fu-meichuan/digital-farmland',
                 openUrl: 'https://coderfmc.github.io/three.js-demo/digital-farmland/#/carbon-neutral-bigscreen',
                 image: 'https://coderfmc.github.io/three.js-demo/fmc-web-3d/img/智慧农田.png'
+            },
+            {
+                id: 'MF-GisMonitor',
+                name: 'GIS监控',
+                name_en: 'GIS Monitor',
+                author: 'AUTO',
+                openUrl: 'https://fengtianxi001.github.io/MF-GisMonitor',
+                githubUrl: 'https://github.com/fengtianxi001/MF-GisMonitor',
+                image: HOST + 'threeExamples/openSource/gisMonitor.jpg'
+            },
+            {
+                id: 'MF-ShipMonitor',
+                name: '船只监控',
+                name_en: 'Ship Monitor',
+                author: 'AUTO',
+                openUrl: 'https://fengtianxi001.github.io/MF-ShipMonitor',
+                githubUrl: 'https://github.com/fengtianxi001/MF-ShipMonitor',
+                image: HOST + 'threeExamples/openSource/shipMonitor.jpg'
             }
         ]
     },
@@ -1531,6 +1589,33 @@ export default [
                 openUrl: 'https://watercolor-sk027.vercel.app/',
                 image: 'https://raw.githubusercontent.com/SahilK-027/Sahilk-027/main/assets/thumbs/project-4.webp'
             },
+            {
+                id: 'ship-selection',
+                name: '飞船',
+                name_en: 'Ship Selection',
+                author: 'AUTO',
+                githubUrl: 'https://github.com/cortiz2894/ship-selection-page',
+                openUrl: 'https://ship-selection-page.vercel.app/',
+                image: HOST + 'threeExamples/openSource/ship-selection.jpg'
+            },
+            {
+                id: 'showcase-images',
+                name: '图片展示',
+                name_en: 'Showcase Images',
+                author: 'AUTO',
+                openUrl: 'https://showcase-images.vercel.app/',
+                githubUrl: 'https://github.com/cortiz2894/showcase-images',
+                image: HOST + 'threeExamples/openSource/showcase-images.jpg'
+            },
+            {
+                id: 'artemis',
+                name: '火箭设计',
+                name_en: 'Artemis',
+                author: 'AUTO',
+                githubUrl: 'https://github.com/redradman/artemis',
+                openUrl: 'https://artemis.radman.dev/',
+                image: HOST + 'threeExamples/openSource/artemis.jpg'
+            }
         ]
     },
     {
