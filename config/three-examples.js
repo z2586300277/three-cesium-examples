@@ -1300,6 +1300,14 @@ export default [
                 author: 'ylfq',
                 codeUrl: HOST + 'threeExamples/game/zmdIndex.js',
                 image: HOST + 'threeExamples/game/zmdIndex.jpg',
+            },
+            {
+                id: 'characterBlur',
+                name: '人物虚化',
+                name_en: 'Character Blur',
+                author: 'ylfq',
+                codeUrl: HOST + 'threeExamples/game/characterBlur.js',
+                image: HOST + 'threeExamples/game/characterBlur.jpg',
             }
         ]
     },
