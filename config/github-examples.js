@@ -7,7 +7,7 @@ export default [
         name_en: 'Recommended',
         order: -10,
         children: [
-               {
+            {
                 id: "moyunhe",
                 name: "电商产品设计器",
                 name_en: "E-commerce product designer",
@@ -1597,6 +1597,15 @@ export default [
                 openUrl: 'https://showcase-images.vercel.app/',
                 githubUrl: 'https://github.com/cortiz2894/showcase-images',
                 image: HOST + 'threeExamples/openSource/showcase-images.jpg'
+            },
+            {
+                id: 'artemis',
+                name: '火箭设计',
+                name_en: 'Artemis',
+                author: 'AUTO',
+                githubUrl: 'https://github.com/redradman/artemis',
+                openUrl: 'https://artemis.radman.dev/',
+                image: HOST + 'threeExamples/openSource/artemis.jpg'
             }
         ]
     },
