@@ -593,6 +593,15 @@ export default [
                 openUrl: 'https://g2657.github.io/examples-server/map3d/#/gdMap',
                 githubUrl: 'https://github.com/wangscript007/ThreeMaps',
                 image: 'https://raw.githubusercontent.com/wangscript007/ThreeMaps/refs/heads/main/images/1721032698514.jpg'
+            },
+            {
+                id: 'chinaMap',
+                name: '中国地图',
+                name_en: 'China Map',
+                author: 'AUTO',
+                githubUrl: 'https://github.com/zhanghang2017/threemap',
+                openUrl: 'https://g2657.github.io/examples-server/charts_map/',
+                image: HOST + 'threeExamples/openSource/chinaMap.jpg',
             }
         ]
     },
