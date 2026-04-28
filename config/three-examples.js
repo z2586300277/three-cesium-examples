@@ -3174,6 +3174,19 @@ export default [
                 githubUrl: 'https://github.com/donmccurdy/three-gltf-viewer',
                 openUrl: 'https://gltf-viewer.donmccurdy.com/',
                 image: HOST + 'threeExamples/tools/gltf_viewer.jpg'
+            },
+            {
+                id: 'supersplat',
+                name: '高斯点云编辑器',
+                name_en: 'Supersplat',
+                author: 'AUTO',
+                githubUrl: 'https://github.com/playcanvas/supersplat',
+                openUrl: 'https://superspl.at/editor',
+                image: HOST + 'threeExamples/tools/supersplat.jpg',
+                links: [
+                    { name: 'Reall3dViewer', url: 'https://github.com/reall3d-com/Reall3dViewer' },
+                    { name: 'reall3d', url: 'https://www.reall3d.com/' }
+                ]
             }
         ]
     },
