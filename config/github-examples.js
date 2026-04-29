@@ -402,19 +402,18 @@ export default [
                 links: [
                     {
                         name: '🏡官网',
-                        url: 'http://babylonjsx.cn/home.html'
+                        url: 'https://blueraining.github.io/Next3DOnLine/home.html#/home'
                     },
                     {
                         url: 'https://www.bilibili.com/video/BV1FGRfYGEAF',
                         name: '📺B站'
                     }
                 ],
-                openUrl: 'http://babylonjsx.cn/index.html?id=0064#/editor',
-                referUrl: 'http://babylonjsx.cn/Next3DExample.html#postprocess_msaa',
-                githubUrl: 'https://github.com/blueRaining/Next3D',
+                openUrl: 'https://blueraining.github.io/Next3DOnLine/home.html#/home',
+                referUrl: 'https://blueraining.github.io/Next3DOnLine/home.html#/home',
+                githubUrl: 'https://github.com/blueRaining/Next3DOnLine',
                 image: HOST + 'threeExamples/other/next3dEditor.jpg'
             },
-
             {
                 id: 'z2586300277_3d_editor',
                 tag: TEXTS['编辑器'] + '-#795cddba',
