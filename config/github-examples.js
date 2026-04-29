@@ -974,6 +974,15 @@ export default [
                 githubUrl: 'https://github.com/Junhong-Chen/rubiks-cube',
                 openUrl: 'https://junhong-chen.github.io/rubiks-cube/',
                 image: HOST + 'threeExamples/openSource/rubiksCube.jpg'
+            },
+            {
+                id: 'mistwoodCottage',
+                name: '小屋',
+                name_en: 'Mistwood Cottage',
+                author: 'AUTO',
+                openUrl: 'https://mistwood-cottage.vercel.app/',
+                githubUrl: 'https://github.com/amiradeu/mistwood-cottage',
+                image: 'https://raw.githubusercontent.com/amiradeu/mistwood-cottage/main/docs/CottageintheHills.jpg'
             }
         ]
     },
