@@ -410,8 +410,8 @@ export default [
                     }
                 ],
                 openUrl: 'https://blueraining.github.io/Next3DOnLine/home.html#/home',
-                referUrl: 'https://blueraining.github.io/Next3DOnLine/home.html#/home',
-                githubUrl: 'https://github.com/blueRaining/Next3DOnLine',
+                referUrl: 'https://github.com/blueRaining/Next3D?tab=readme-ov-file',
+                githubUrl: 'https://github.com/blueRaining/Next3D?tab=readme-ov-file',
                 image: HOST + 'threeExamples/other/next3dEditor.jpg'
             },
             {
