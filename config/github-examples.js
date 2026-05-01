@@ -1874,6 +1874,16 @@ export default [
                 githubUrl: 'https://github.com/Makio64/makio-meshline',
                 openUrl: 'https://meshline-demo.makio.io/',
                 image: 'https://github.com/user-attachments/assets/deb1ccd7-46a9-4be0-8f07-280c21aafe81'
+            },
+            {
+                id: 'openGeometry',
+                name: 'Three CAD/BIM',
+                name_en: 'OpenGeometry CAD/BIM',
+                author: 'AUTO',
+                referUrl: 'https://mp.weixin.qq.com/s/__wUVaTrea8MEAfH9bLm7g',
+                githubUrl: 'https://github.com/openGeometry-io/OpenGeometry',
+                openUrl: 'https://demos.opengeometry.io/',
+                image: 'https://raw.githubusercontent.com/OpenGeometry-io/.github/main/profile/opengeometryTextLogo.png'
             }
         ]
     },
