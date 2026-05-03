@@ -1308,6 +1308,14 @@ export default [
                 author: 'ylfq',
                 codeUrl: HOST + 'threeExamples/game/characterBlur.js',
                 image: HOST + 'threeExamples/game/characterBlur.jpg',
+            },
+            {
+                id: 'zmdFence',
+                name: '终末地-据点围栏',
+                name_en: 'EndField Fence',
+                author: 'ylfq',
+                codeUrl: HOST + 'threeExamples/game/zmdFence.js',
+                image: HOST + 'threeExamples/game/zmdFence.jpg',
             }
         ]
     },
