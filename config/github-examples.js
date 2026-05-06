@@ -982,6 +982,15 @@ export default [
                 openUrl: 'https://mistwood-cottage.vercel.app/',
                 githubUrl: 'https://github.com/amiradeu/mistwood-cottage',
                 image: 'https://raw.githubusercontent.com/amiradeu/mistwood-cottage/main/docs/CottageintheHills.jpg'
+            },
+            {
+                id: 'webFlightSimulator',
+                name: '飞行模拟器',
+                name_en: 'Web Flight Simulator',
+                author: 'AUTO',
+                openUrl: 'https://flight.tarmizi.id/',
+                githubUrl: 'https://github.com/dimartarmizi/web-flight-simulator',
+                image: 'https://raw.githubusercontent.com/dimartarmizi/web-flight-simulator/main/public/assets/images/screenshot.jpg'
             }
         ]
     },
