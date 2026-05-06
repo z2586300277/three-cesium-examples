@@ -777,6 +777,15 @@ export default [
                 openUrl: 'https://globe.gl/',
                 githubUrl: 'https://github.com/vasturiano/globe.gl',
                 image: HOST + 'threeExamples/openSource/globeGL.jpg'
+            },
+            {
+                id: 'tslScifiEarth',
+                name: '科幻地球',
+                name_en: 'Sci-fi Earth',
+                author: 'AUTO',
+                openUrl: 'https://tsl-scifi-earth.vercel.app/',
+                githubUrl: 'https://github.com/hexianWeb/tsl-scifi-earth',
+                image: 'https://raw.githubusercontent.com/hexianWeb/tsl-scifi-earth/tsl-earth-publish/docs/preview.png'
             }
         ]
 
