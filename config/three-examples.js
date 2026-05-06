@@ -763,6 +763,14 @@ export default [
                 image: HOST + 'threeExamples/shader/circleRotate.jpg',
             },
             {
+                id: 'shaderLight',
+                name: '着色器光效',
+                name_en: 'Shader Light',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/shader/shaderLight.js',
+                image: HOST + 'threeExamples/shader/shaderLight.jpg',
+            },
+            {
                 id: 'whiteCloud',
                 name: '白云',
                 name_en: 'White Cloud',
