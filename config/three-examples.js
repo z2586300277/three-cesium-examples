@@ -1599,6 +1599,14 @@ export default [
                 image: HOST + 'threeExamples/application/lineMeasure.jpg',
             },
             {
+                id: 'mathApply',
+                name: '数学公式应用',
+                name_en: 'Math Apply',
+                author: 'z2586300277',
+                htmlUrl: HOST + 'threeExamples/application/mathApply.html',
+                image: HOST + 'threeExamples/application/mathApply.jpg',
+            },
+            {
                 id: 'textSphere',
                 name: '球体文字',
                 name_en: 'Text Sphere',
