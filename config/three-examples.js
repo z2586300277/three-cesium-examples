@@ -763,6 +763,14 @@ export default [
                 image: HOST + 'threeExamples/shader/circleRotate.jpg',
             },
             {
+                id: 'shaderLight',
+                name: '着色器光效',
+                name_en: 'Shader Light',
+                author: 'z2586300277',
+                codeUrl: HOST + 'threeExamples/shader/shaderLight.js',
+                image: HOST + 'threeExamples/shader/shaderLight.jpg',
+            },
+            {
                 id: 'whiteCloud',
                 name: '白云',
                 name_en: 'White Cloud',
@@ -1308,6 +1316,14 @@ export default [
                 author: 'ylfq',
                 codeUrl: HOST + 'threeExamples/game/characterBlur.js',
                 image: HOST + 'threeExamples/game/characterBlur.jpg',
+            },
+            {
+                id: 'zmdFence',
+                name: '终末地-据点围栏',
+                name_en: 'EndField Fence',
+                author: 'ylfq',
+                codeUrl: HOST + 'threeExamples/game/zmdFence.js',
+                image: HOST + 'threeExamples/game/zmdFence.jpg',
             }
         ]
     },
@@ -1581,6 +1597,14 @@ export default [
                 author: 'yjsdszz',
                 codeUrl: HOST + 'threeExamples/application/lineMeasure.js',
                 image: HOST + 'threeExamples/application/lineMeasure.jpg',
+            },
+            {
+                id: 'mathApply',
+                name: '数学公式应用',
+                name_en: 'Math Apply',
+                author: 'z2586300277',
+                htmlUrl: HOST + 'threeExamples/application/mathApply.html',
+                image: HOST + 'threeExamples/application/mathApply.jpg',
             },
             {
                 id: 'textSphere',
@@ -3174,6 +3198,19 @@ export default [
                 githubUrl: 'https://github.com/donmccurdy/three-gltf-viewer',
                 openUrl: 'https://gltf-viewer.donmccurdy.com/',
                 image: HOST + 'threeExamples/tools/gltf_viewer.jpg'
+            },
+            {
+                id: 'supersplat',
+                name: '高斯点云编辑器',
+                name_en: 'Supersplat',
+                author: 'AUTO',
+                githubUrl: 'https://github.com/playcanvas/supersplat',
+                openUrl: 'https://superspl.at/editor',
+                image: HOST + 'threeExamples/tools/supersplat.jpg',
+                links: [
+                    { name: 'Reall3dViewer', url: 'https://github.com/reall3d-com/Reall3dViewer' },
+                    { name: 'reall3d', url: 'https://www.reall3d.com/' }
+                ]
             }
         ]
     },

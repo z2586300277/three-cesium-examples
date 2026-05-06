@@ -402,19 +402,18 @@ export default [
                 links: [
                     {
                         name: '🏡官网',
-                        url: 'http://babylonjsx.cn/home.html'
+                        url: 'https://blueraining.github.io/Next3DOnLine/home.html#/home'
                     },
                     {
                         url: 'https://www.bilibili.com/video/BV1FGRfYGEAF',
                         name: '📺B站'
                     }
                 ],
-                openUrl: 'http://babylonjsx.cn/index.html?id=0064#/editor',
-                referUrl: 'http://babylonjsx.cn/Next3DExample.html#postprocess_msaa',
-                githubUrl: 'https://github.com/blueRaining/Next3D',
+                openUrl: 'https://blueraining.github.io/Next3DOnLine/home.html#/home',
+                referUrl: 'https://github.com/blueRaining/Next3D?tab=readme-ov-file',
+                githubUrl: 'https://github.com/blueRaining/Next3D?tab=readme-ov-file',
                 image: HOST + 'threeExamples/other/next3dEditor.jpg'
             },
-
             {
                 id: 'z2586300277_3d_editor',
                 tag: TEXTS['编辑器'] + '-#795cddba',
@@ -778,6 +777,15 @@ export default [
                 openUrl: 'https://globe.gl/',
                 githubUrl: 'https://github.com/vasturiano/globe.gl',
                 image: HOST + 'threeExamples/openSource/globeGL.jpg'
+            },
+            {
+                id: 'tslScifiEarth',
+                name: '科幻地球',
+                name_en: 'Sci-fi Earth',
+                author: 'AUTO',
+                openUrl: 'https://tsl-scifi-earth.vercel.app/',
+                githubUrl: 'https://github.com/hexianWeb/tsl-scifi-earth',
+                image: 'https://raw.githubusercontent.com/hexianWeb/tsl-scifi-earth/tsl-earth-publish/docs/preview.png'
             }
         ]
 
@@ -974,6 +982,24 @@ export default [
                 githubUrl: 'https://github.com/Junhong-Chen/rubiks-cube',
                 openUrl: 'https://junhong-chen.github.io/rubiks-cube/',
                 image: HOST + 'threeExamples/openSource/rubiksCube.jpg'
+            },
+            {
+                id: 'mistwoodCottage',
+                name: '小屋',
+                name_en: 'Mistwood Cottage',
+                author: 'AUTO',
+                openUrl: 'https://mistwood-cottage.vercel.app/',
+                githubUrl: 'https://github.com/amiradeu/mistwood-cottage',
+                image: 'https://raw.githubusercontent.com/amiradeu/mistwood-cottage/main/docs/CottageintheHills.jpg'
+            },
+            {
+                id: 'webFlightSimulator',
+                name: '飞行模拟器',
+                name_en: 'Web Flight Simulator',
+                author: 'AUTO',
+                openUrl: 'https://flight.tarmizi.id/',
+                githubUrl: 'https://github.com/dimartarmizi/web-flight-simulator',
+                image: 'https://raw.githubusercontent.com/dimartarmizi/web-flight-simulator/main/public/assets/images/screenshot.jpg'
             }
         ]
     },
@@ -1866,6 +1892,16 @@ export default [
                 githubUrl: 'https://github.com/Makio64/makio-meshline',
                 openUrl: 'https://meshline-demo.makio.io/',
                 image: 'https://github.com/user-attachments/assets/deb1ccd7-46a9-4be0-8f07-280c21aafe81'
+            },
+            {
+                id: 'openGeometry',
+                name: 'Three CAD/BIM',
+                name_en: 'OpenGeometry CAD/BIM',
+                author: 'AUTO',
+                referUrl: 'https://mp.weixin.qq.com/s/__wUVaTrea8MEAfH9bLm7g',
+                githubUrl: 'https://github.com/openGeometry-io/OpenGeometry',
+                openUrl: 'https://demos.opengeometry.io/',
+                image: 'https://raw.githubusercontent.com/OpenGeometry-io/.github/main/profile/opengeometryTextLogo.png'
             }
         ]
     },
