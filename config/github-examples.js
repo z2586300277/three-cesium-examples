@@ -948,6 +948,15 @@ export default [
                 image: HOST + 'threeExamples/openSource/room3d.jpg',
             },
             {
+                id: 'gameBoy',
+                name: 'GameBoy',
+                name_en: 'GameBoy',
+                author: 'AUTO',
+                openUrl: 'https://game-boy-orcin.vercel.app/',
+                githubUrl: 'https://github.com/brunosimon/gameBoy',
+                image: HOST + 'threeExamples/openSource/gameBoy.jpg',
+            },
+            {
                 id: 'jokebearPark',
                 name: 'Jokebear公园',
                 name_en: 'Jokebear Park',
