@@ -503,6 +503,15 @@ export default [
                 openUrl: 'https://editor.pascal.app/',
                 githubUrl: 'https://github.com/pascalorg/editor',
                 image: HOST + 'threeExamples/openSource/pascalorg_editor.jpg'
+            },
+            {
+                id: '3dParticles',
+                name: '3D粒子编辑器',
+                name_en: '3D Particles Editor',
+                author: 'AUTO',
+                githubUrl: 'https://github.com/xiexikang/3D-Particles',
+                openUrl: 'https://3-d-particles-theta.vercel.app/',
+                image: HOST + 'threeExamples/openSource/3dParticles.jpg'
             }
         ]
     },
@@ -1134,6 +1143,15 @@ export default [
                 githubUrl: 'https://github.com/mtsee/vr-hall',
                 openUrl: 'http://test4.h5ds.com/',
                 image: HOST + 'threeExamples/openSource/vr.jpg',
+            },
+            {
+                id: 'vrHouse',
+                name: 'VR房子',
+                name_en: 'VR House',
+                author: 'AUTO',
+                githubUrl: 'https://github.com/wupeng0725/threejs-vr-house',
+                openUrl: 'https://wupeng0725.github.io/threejs-vr-house/',
+                image: HOST + 'threeExamples/openSource/vrHouse.jpg'
             },
             {
                 id: 'music_wobble',

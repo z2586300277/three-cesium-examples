@@ -3210,7 +3210,8 @@ export default [
                 image: HOST + 'threeExamples/tools/supersplat.jpg',
                 links: [
                     { name: 'Reall3dViewer', url: 'https://github.com/reall3d-com/Reall3dViewer' },
-                    { name: 'reall3d', url: 'https://www.reall3d.com/' }
+                    { name: 'reall3d', url: 'https://www.reall3d.com/' },
+                    { name: 'other', url: 'https://github.com/lukehollis/sphr' }
                 ]
             }
         ]
