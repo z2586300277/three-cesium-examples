@@ -105,7 +105,17 @@ export default [
                 githubUrl: 'https://github.com/hexianWeb/Third-Person-MC',
                 openUrl: 'https://third-person-mc.vercel.app/',
                 image: 'https://raw.githubusercontent.com/hexianWeb/picx-images-hosting/master/image.webp',
-            }
+            },
+            {
+                id: 'threePlayerController',
+                name: '玩家控制器',
+                name_en: 'Player Controller',
+                tag: TEXTS['漫游'] + '-#5f9be3',
+                author: 'AUTO',
+                openUrl: 'https://hh-hang.github.io/three-player-controller/',
+                githubUrl: 'https://github.com/hh-hang/three-player-controller',
+                image: HOST + 'threeExamples/openSource/threePlayerController.jpg'
+            },
         ]
     },
     {
@@ -512,6 +522,15 @@ export default [
                 githubUrl: 'https://github.com/xiexikang/3D-Particles',
                 openUrl: 'https://3-d-particles-theta.vercel.app/',
                 image: HOST + 'threeExamples/openSource/3dParticles.jpg'
+            },
+            {
+                id: 'tslParticles',
+                name: 'TSL粒子系统',
+                name_en: 'TSL Particles System',
+                author: 'AUTO',
+                openUrl: 'https://three-js-tsl-particles-system.vercel.app/',
+                githubUrl: 'https://github.com/brunosimon/three.js-tsl-particles-system',
+                image: HOST + 'threeExamples/openSource/tslParticles.jpg'
             }
         ]
     },
@@ -984,15 +1003,6 @@ export default [
                 image: 'https://user-images.githubusercontent.com/8146111/257077594-eb445650-c662-412f-8cf5-662b76c27057.gif'
             },
             {
-                id: 'threePlayerController',
-                name: '玩家控制器',
-                name_en: 'Player Controller',
-                author: 'AUTO',
-                openUrl: 'https://hh-hang.github.io/three-player-controller/',
-                githubUrl: 'https://github.com/hh-hang/three-player-controller',
-                image: HOST + 'threeExamples/openSource/threePlayerController.jpg'
-            },
-            {
                 id: 'rubiksCube',
                 name: '魔方',
                 name_en: 'Rubiks Cube',
@@ -1458,9 +1468,9 @@ export default [
                 name: '视频投影',
                 name_en: 'Video Projection',
                 author: "AUTO",
-                githubUrl: 'https://github.com/hh-hang/three-video-projection',
-                openUrl: 'https://hh-hang.github.io/three-video-projection/',
-                image: 'https://raw.githubusercontent.com/hh-hang/three-video-projection/main/example/public/imgs/2.gif'
+                githubUrl: 'https://github.com/hh-hang/vid3d-projection',
+                openUrl: 'https://hh-hang.github.io/vid3d-projection/',
+                image: 'https://raw.githubusercontent.com/hh-hang/vid3d-projection/main/example/public/imgs/3.gif'
             },
             {
                 id: 'spotify-visualiser',
