@@ -63,10 +63,11 @@ export default [
 
             {
                 id: 'threejsHome',
-                name: 'ThreeJS官网',
-                name_en: 'ThreeJS Home',
+                name: 'ThreeJS资源库',
+                name_en: 'ThreeJS Resources',
                 tag: TEXTS['官网'] + '-rgb(0, 153, 255)',
-                openUrl: 'https://threejs.org',
+                referUrl: 'https://threejs.org',
+                openUrl: 'https://threejsresources.com/',
                 githubUrl: 'https://github.com/mrdoob/three.js',
                 image: FILE_HOST + 'images/ThreeJS.png'
             },
@@ -3209,7 +3210,8 @@ export default [
                 image: HOST + 'threeExamples/tools/supersplat.jpg',
                 links: [
                     { name: 'Reall3dViewer', url: 'https://github.com/reall3d-com/Reall3dViewer' },
-                    { name: 'reall3d', url: 'https://www.reall3d.com/' }
+                    { name: 'reall3d', url: 'https://www.reall3d.com/' },
+                    { name: 'other', url: 'https://github.com/lukehollis/sphr' }
                 ]
             }
         ]

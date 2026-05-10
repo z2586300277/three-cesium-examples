@@ -105,7 +105,17 @@ export default [
                 githubUrl: 'https://github.com/hexianWeb/Third-Person-MC',
                 openUrl: 'https://third-person-mc.vercel.app/',
                 image: 'https://raw.githubusercontent.com/hexianWeb/picx-images-hosting/master/image.webp',
-            }
+            },
+            {
+                id: 'threePlayerController',
+                name: '玩家控制器',
+                name_en: 'Player Controller',
+                tag: TEXTS['漫游'] + '-#5f9be3',
+                author: 'AUTO',
+                openUrl: 'https://hh-hang.github.io/three-player-controller/',
+                githubUrl: 'https://github.com/hh-hang/three-player-controller',
+                image: HOST + 'threeExamples/openSource/threePlayerController.jpg'
+            },
         ]
     },
     {
@@ -503,6 +513,24 @@ export default [
                 openUrl: 'https://editor.pascal.app/',
                 githubUrl: 'https://github.com/pascalorg/editor',
                 image: HOST + 'threeExamples/openSource/pascalorg_editor.jpg'
+            },
+            {
+                id: '3dParticles',
+                name: '3D粒子编辑器',
+                name_en: '3D Particles Editor',
+                author: 'AUTO',
+                githubUrl: 'https://github.com/xiexikang/3D-Particles',
+                openUrl: 'https://3-d-particles-theta.vercel.app/',
+                image: HOST + 'threeExamples/openSource/3dParticles.jpg'
+            },
+            {
+                id: 'tslParticles',
+                name: 'TSL粒子系统',
+                name_en: 'TSL Particles System',
+                author: 'AUTO',
+                openUrl: 'https://three-js-tsl-particles-system.vercel.app/',
+                githubUrl: 'https://github.com/brunosimon/three.js-tsl-particles-system',
+                image: HOST + 'threeExamples/openSource/tslParticles.jpg'
             }
         ]
     },
@@ -858,6 +886,15 @@ export default [
                 openUrl: 'https://fengtianxi001.github.io/MF-ShipMonitor',
                 githubUrl: 'https://github.com/fengtianxi001/MF-ShipMonitor',
                 image: HOST + 'threeExamples/openSource/shipMonitor.jpg'
+            },
+            {
+                id: 'threeJS-Cesium-Stream',
+                name: 'ThreeJS-Cesium-Stream',
+                name_en: 'ThreeJS-Cesium-Stream',
+                author: 'AUTO',
+                githubUrl: 'https://github.com/194048210liang/ThreeJS-Cesium-Stream',
+                openUrl: 'https://threejs-cesium-stream.pages.dev/',
+                image: 'https://raw.githubusercontent.com/194048210liang/ThreeJS-Cesium-Stream/main/src/assets/cesium3.png'
             }
         ]
     },
@@ -948,6 +985,15 @@ export default [
                 image: HOST + 'threeExamples/openSource/room3d.jpg',
             },
             {
+                id: 'gameBoy',
+                name: 'GameBoy',
+                name_en: 'GameBoy',
+                author: 'AUTO',
+                openUrl: 'https://game-boy-orcin.vercel.app/',
+                githubUrl: 'https://github.com/brunosimon/gameBoy',
+                image: HOST + 'threeExamples/openSource/gameBoy.jpg',
+            },
+            {
                 id: 'jokebearPark',
                 name: 'Jokebear公园',
                 name_en: 'Jokebear Park',
@@ -964,15 +1010,6 @@ export default [
                 githubUrl: 'https://github.com/MisterPrada/portal',
                 openUrl: 'https://portal.misterprada.com/',
                 image: 'https://user-images.githubusercontent.com/8146111/257077594-eb445650-c662-412f-8cf5-662b76c27057.gif'
-            },
-            {
-                id: 'threePlayerController',
-                name: '玩家控制器',
-                name_en: 'Player Controller',
-                author: 'AUTO',
-                openUrl: 'https://hh-hang.github.io/three-player-controller/',
-                githubUrl: 'https://github.com/hh-hang/three-player-controller',
-                image: HOST + 'threeExamples/openSource/threePlayerController.jpg'
             },
             {
                 id: 'rubiksCube',
@@ -1000,14 +1037,46 @@ export default [
                 openUrl: 'https://flight.tarmizi.id/',
                 githubUrl: 'https://github.com/dimartarmizi/web-flight-simulator',
                 image: 'https://raw.githubusercontent.com/dimartarmizi/web-flight-simulator/main/public/assets/images/screenshot.jpg'
+            },
+            {
+                id: 'falseEarth',
+                name: 'False Earth',
+                name_en: 'False Earth',
+                author: 'AUTO',
+                githubUrl: 'https://github.com/momentchan/false-earth',
+                openUrl: 'https://false-earth.mingjyunhung.com/',
+                image: HOST + 'threeExamples/openSource/falseEarth.jpg'
             }
         ]
     },
     {
-        pid: 'advancedExamples',
-        name: '高级案例',
-        name_en: 'Advanced Examples',
+        pid: 'aiFor3D',
+        name: 'Ai应用',
+        name_en: 'Ai Applications',
+        gid: 'advancedExamples',
+        group: '高级案例',
+        group_en: 'Advanced Examples',
         order: 50,
+        children: [
+            {
+                id: 'ai4anim',
+                name: 'AI4Anim',
+                name_en: 'AI4Anim',
+                author: 'AUTO',
+                openUrl: 'https://motionsynth.sweriko.com/',
+                githubUrl: 'https://github.com/sweriko/ai4anim-webgpu',
+                image: HOST + 'threeExamples/openSource/ai4anim.jpg'
+            }
+        ]
+    },
+    {
+        pid: 'industryWorks',
+        name: '行业作品',
+        name_en: 'Industry Works',
+        gid: 'advancedExamples',
+        group: '高级案例',
+        group_en: 'Advanced Examples',
+        order: 55,
         children: [
             {
                 id: 'taohuating',
@@ -1125,6 +1194,15 @@ export default [
                 githubUrl: 'https://github.com/mtsee/vr-hall',
                 openUrl: 'http://test4.h5ds.com/',
                 image: HOST + 'threeExamples/openSource/vr.jpg',
+            },
+            {
+                id: 'vrHouse',
+                name: 'VR房子',
+                name_en: 'VR House',
+                author: 'AUTO',
+                githubUrl: 'https://github.com/wupeng0725/threejs-vr-house',
+                openUrl: 'https://wupeng0725.github.io/threejs-vr-house/',
+                image: HOST + 'threeExamples/openSource/vrHouse.jpg'
             },
             {
                 id: 'music_wobble',
@@ -1431,9 +1509,9 @@ export default [
                 name: '视频投影',
                 name_en: 'Video Projection',
                 author: "AUTO",
-                githubUrl: 'https://github.com/hh-hang/three-video-projection',
-                openUrl: 'https://hh-hang.github.io/three-video-projection/',
-                image: 'https://raw.githubusercontent.com/hh-hang/three-video-projection/main/example/public/imgs/2.gif'
+                githubUrl: 'https://github.com/hh-hang/vid3d-projection',
+                openUrl: 'https://hh-hang.github.io/vid3d-projection/',
+                image: 'https://raw.githubusercontent.com/hh-hang/vid3d-projection/main/example/public/imgs/3.gif'
             },
             {
                 id: 'spotify-visualiser',
