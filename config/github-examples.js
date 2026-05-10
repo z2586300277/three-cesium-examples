@@ -1032,10 +1032,33 @@ export default [
         ]
     },
     {
-        pid: 'advancedExamples',
-        name: '高级案例',
-        name_en: 'Advanced Examples',
+        pid: 'aiFor3D',
+        name: 'Ai应用',
+        name_en: 'Ai Applications',
+        gid: 'advancedExamples',
+        group: '高级案例',
+        group_en: 'Advanced Examples',
         order: 50,
+        children: [
+            {
+                id: 'ai4anim',
+                name: 'AI4Anim',
+                name_en: 'AI4Anim',
+                author: 'AUTO',
+                openUrl: 'https://motionsynth.sweriko.com/',
+                githubUrl: 'https://github.com/sweriko/ai4anim-webgpu',
+                image: HOST + 'threeExamples/openSource/ai4anim.jpg'
+            }
+        ]
+    },
+    {
+        pid: 'industryWorks',
+        name: '行业作品',
+        name_en: 'Industry Works',
+        gid: 'advancedExamples',
+        group: '高级案例',
+        group_en: 'Advanced Examples',
+        order: 55,
         children: [
             {
                 id: 'taohuating',
