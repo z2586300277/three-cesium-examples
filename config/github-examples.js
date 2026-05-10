@@ -886,6 +886,15 @@ export default [
                 openUrl: 'https://fengtianxi001.github.io/MF-ShipMonitor',
                 githubUrl: 'https://github.com/fengtianxi001/MF-ShipMonitor',
                 image: HOST + 'threeExamples/openSource/shipMonitor.jpg'
+            },
+            {
+                id: 'threeJS-Cesium-Stream',
+                name: 'ThreeJS-Cesium-Stream',
+                name_en: 'ThreeJS-Cesium-Stream',
+                author: 'AUTO',
+                githubUrl: 'https://github.com/194048210liang/ThreeJS-Cesium-Stream',
+                openUrl: 'https://threejs-cesium-stream.pages.dev/',
+                image: 'https://raw.githubusercontent.com/194048210liang/ThreeJS-Cesium-Stream/main/src/assets/cesium3.png'
             }
         ]
     },
@@ -1028,6 +1037,15 @@ export default [
                 openUrl: 'https://flight.tarmizi.id/',
                 githubUrl: 'https://github.com/dimartarmizi/web-flight-simulator',
                 image: 'https://raw.githubusercontent.com/dimartarmizi/web-flight-simulator/main/public/assets/images/screenshot.jpg'
+            },
+            {
+                id: 'falseEarth',
+                name: 'False Earth',
+                name_en: 'False Earth',
+                author: 'AUTO',
+                githubUrl: 'https://github.com/momentchan/false-earth',
+                openUrl: 'https://false-earth.mingjyunhung.com/',
+                image: HOST + 'threeExamples/openSource/falseEarth.jpg'
             }
         ]
     },
