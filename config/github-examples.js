@@ -889,8 +889,8 @@ export default [
             },
             {
                 id: 'threeJS-Cesium-Stream',
-                name: 'ThreeJS-Cesium-Stream',
-                name_en: 'ThreeJS-Cesium-Stream',
+                name: 'Three-Cesium-Stream',
+                name_en: 'Three-Cesium-Stream',
                 author: 'AUTO',
                 githubUrl: 'https://github.com/194048210liang/ThreeJS-Cesium-Stream',
                 openUrl: 'https://threejs-cesium-stream.pages.dev/',
@@ -1046,6 +1046,15 @@ export default [
                 githubUrl: 'https://github.com/momentchan/false-earth',
                 openUrl: 'https://false-earth.mingjyunhung.com/',
                 image: HOST + 'threeExamples/openSource/falseEarth.jpg'
+            },
+            {
+                id: 'hookAFish',
+                name: '钓鱼',
+                name_en: 'Hook A Fish',
+                author: 'AUTO',
+                githubUrl: 'https://github.com/dammafra/hook-a-fish',
+                openUrl: 'https://hook-a-fish.dammafra.dev/',
+                image: 'https://raw.githubusercontent.com/dammafra/hook-a-fish/main/client/public/cover.png'
             }
         ]
     },
@@ -1084,6 +1093,24 @@ export default [
                 githubUrl: 'https://github.com/wass08/r3f-virtual-girlfriend-frontend',
                 openUrl: 'https://r3f-virtual-girlfriend.wawasensei.dev/',
                 image: HOST + 'threeExamples/openSource/r3fVirtualGirlfriend.jpg'
+            },
+            {
+                id: 'r3f-ai-language-teacher',
+                name: 'AI语言教师',
+                name_en: 'AI Language Teacher',
+                author: 'AUTO',
+                githubUrl: 'https://github.com/wass08/r3f-ai-language-teacher',
+                openUrl: 'https://ai-teacher.wawasensei.dev/',
+                image: HOST + 'threeExamples/openSource/r3f-ai-language-teacher.jpg'
+            },
+            {
+                id: 'privacypuppet',
+                name: '隐私木偶',
+                name_en: 'Privacy Puppet',
+                author: 'AUTO',
+                githubUrl: 'https://github.com/privacypuppet/privacypuppet',
+                openUrl: 'https://privacypuppet.com/',
+                image: HOST + 'threeExamples/openSource/privacypuppet.jpg'
             }
         ]
     },
@@ -1773,6 +1800,33 @@ export default [
                 githubUrl: 'https://github.com/wass08/wawa-vfx',
                 openUrl: 'https://wawa-vfx.wawasensei.dev/',
                 image: HOST + 'threeExamples/openSource/wawa-vfx.jpg'
+            },
+            {
+                id: 'r3f-animated-book-slider-final',
+                name: '书籍滑动',
+                name_en: 'Book Slider',
+                author: 'AUTO',
+                githubUrl: 'https://github.com/wass08/r3f-animated-book-slider-final',
+                openUrl: 'https://r3f-animated-book-slider-final.vercel.app/',
+                image: HOST + 'threeExamples/openSource/bookSlider.jpg'
+            },
+            {
+                id: 'r3f-ultimate-character-configurator',
+                name: '角色配置器',
+                name_en: 'Character User',
+                author: 'AUTO',
+                githubUrl: 'https://github.com/wass08/r3f-ultimate-character-configurator',
+                openUrl: 'https://avatar.wawasensei.dev/',
+                image: HOST + 'threeExamples/openSource/characterConfigurator.jpg'
+            },
+            {
+                id: 'christmas-popup-card',
+                name: '圣诞贺卡',
+                name_en: 'Popup Card',
+                author: 'AUTO',
+                githubUrl: 'https://github.com/dammafra/christmas-popup-card',
+                openUrl: 'https://holidaywishes.dammafra.dev/',
+                image: HOST + 'threeExamples/openSource/christmas-popup-card.jpg'
             }
         ]
     },
