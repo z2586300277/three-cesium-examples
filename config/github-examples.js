@@ -531,6 +531,15 @@ export default [
                 openUrl: 'https://three-js-tsl-particles-system.vercel.app/',
                 githubUrl: 'https://github.com/brunosimon/three.js-tsl-particles-system',
                 image: HOST + 'threeExamples/openSource/tslParticles.jpg'
+            },
+            {
+                id: 'realvirtualWEB',
+                name: '数字孪生编辑器',
+                name_en: 'RealVirtual WEB',
+                author: 'AUTO',
+                githubUrl: 'https://github.com/game4automation/realvirtual-WEB',
+                openUrl: 'https://web.realvirtual.io/demo',
+                image: HOST + 'threeExamples/openSource/realvirtualWEB.jpg'
             }
         ]
     },
@@ -1111,6 +1120,15 @@ export default [
                 githubUrl: 'https://github.com/privacypuppet/privacypuppet',
                 openUrl: 'https://privacypuppet.com/',
                 image: HOST + 'threeExamples/openSource/privacypuppet.jpg'
+            },
+            {
+                id: 'text-to-cad',
+                name: '文本转CAD',
+                name_en: 'Text to CAD',
+                author: 'AUTO',
+                githubUrl: 'https://github.com/earthtojake/text-to-cad',
+                openUrl: 'https://demo.cadskills.xyz/',
+                image: HOST + 'threeExamples/openSource/text-to-cad.jpg'
             }
         ]
     },
@@ -1248,6 +1266,33 @@ export default [
                 githubUrl: 'https://github.com/wupeng0725/threejs-vr-house',
                 openUrl: 'https://wupeng0725.github.io/threejs-vr-house/',
                 image: HOST + 'threeExamples/openSource/vrHouse.jpg'
+            },
+            {
+                id: 'linkwalk',
+                name: '走廊展馆',
+                name_en: 'Linkwalk',
+                author: 'AUTO',
+                githubUrl: 'https://github.com/notbigmuzzy/linkwalk',
+                openUrl: 'https://notbigmuzzy.github.io/linkwalk',
+                image: HOST + 'threeExamples/openSource/linkwalk.jpg'
+            },
+            {
+                id: 'fanMuseum',
+                name: '粉丝博物馆',
+                name_en: 'Fan Museum',
+                author: 'AUTO',
+                githubUrl: 'https://github.com/andrewwoan/codrops-fan-museum',
+                openUrl: 'https://tympanus.net/Tutorials/CodropsFanMuseum/',
+                image: HOST + 'threeExamples/openSource/fanMuseum.jpg'
+            },
+            {
+                id: 'threeEdgeProjection',
+                name: '边缘投影',
+                name_en: 'Edge Projection',
+                author: 'AUTO',
+                githubUrl: 'https://github.com/gkjohnson/three-edge-projection',
+                openUrl: 'https://gkjohnson.github.io/three-edge-projection/planarIntersection.html',
+                image: 'https://raw.githubusercontent.com/gkjohnson/three-edge-projection/main/docs/banner.png'
             },
             {
                 id: 'music_wobble',
