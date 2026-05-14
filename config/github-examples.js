@@ -531,6 +531,15 @@ export default [
                 openUrl: 'https://three-js-tsl-particles-system.vercel.app/',
                 githubUrl: 'https://github.com/brunosimon/three.js-tsl-particles-system',
                 image: HOST + 'threeExamples/openSource/tslParticles.jpg'
+            },
+            {
+                id: 'realvirtualWEB',
+                name: '数字孪生编辑器',
+                name_en: 'RealVirtual WEB',
+                author: 'AUTO',
+                githubUrl: 'https://github.com/game4automation/realvirtual-WEB',
+                openUrl: 'https://web.realvirtual.io/demo',
+                image: HOST + 'threeExamples/openSource/realvirtualWEB.jpg'
             }
         ]
     },
@@ -889,8 +898,8 @@ export default [
             },
             {
                 id: 'threeJS-Cesium-Stream',
-                name: 'ThreeJS-Cesium-Stream',
-                name_en: 'ThreeJS-Cesium-Stream',
+                name: 'Three-Cesium-Stream',
+                name_en: 'Three-Cesium-Stream',
                 author: 'AUTO',
                 githubUrl: 'https://github.com/194048210liang/ThreeJS-Cesium-Stream',
                 openUrl: 'https://threejs-cesium-stream.pages.dev/',
@@ -1046,6 +1055,15 @@ export default [
                 githubUrl: 'https://github.com/momentchan/false-earth',
                 openUrl: 'https://false-earth.mingjyunhung.com/',
                 image: HOST + 'threeExamples/openSource/falseEarth.jpg'
+            },
+            {
+                id: 'hookAFish',
+                name: '钓鱼',
+                name_en: 'Hook A Fish',
+                author: 'AUTO',
+                githubUrl: 'https://github.com/dammafra/hook-a-fish',
+                openUrl: 'https://hook-a-fish.dammafra.dev/',
+                image: 'https://raw.githubusercontent.com/dammafra/hook-a-fish/main/client/public/cover.png'
             }
         ]
     },
@@ -1066,6 +1084,51 @@ export default [
                 openUrl: 'https://motionsynth.sweriko.com/',
                 githubUrl: 'https://github.com/sweriko/ai4anim-webgpu',
                 image: HOST + 'threeExamples/openSource/ai4anim.jpg'
+            },
+            {
+                id: 'wawaLipsync',
+                name: '3D口型同步',
+                name_en: 'Wawa Lipsync',
+                author: 'AUTO',
+                githubUrl: 'https://github.com/wass08/wawa-lipsync',
+                openUrl: 'https://wawa-lipsync.wawasensei.dev/',
+                image: HOST + 'threeExamples/openSource/wawaLipsync.jpg'
+            },
+            {
+                id: 'r3fVirtualGirlfriend',
+                name: 'R3F虚拟女友',
+                name_en: 'R3F Virtual Girlfriend',
+                author: 'AUTO',
+                githubUrl: 'https://github.com/wass08/r3f-virtual-girlfriend-frontend',
+                openUrl: 'https://r3f-virtual-girlfriend.wawasensei.dev/',
+                image: HOST + 'threeExamples/openSource/r3fVirtualGirlfriend.jpg'
+            },
+            {
+                id: 'r3f-ai-language-teacher',
+                name: 'AI语言教师',
+                name_en: 'AI Language Teacher',
+                author: 'AUTO',
+                githubUrl: 'https://github.com/wass08/r3f-ai-language-teacher',
+                openUrl: 'https://ai-teacher.wawasensei.dev/',
+                image: HOST + 'threeExamples/openSource/r3f-ai-language-teacher.jpg'
+            },
+            {
+                id: 'privacypuppet',
+                name: '隐私木偶',
+                name_en: 'Privacy Puppet',
+                author: 'AUTO',
+                githubUrl: 'https://github.com/privacypuppet/privacypuppet',
+                openUrl: 'https://privacypuppet.com/',
+                image: HOST + 'threeExamples/openSource/privacypuppet.jpg'
+            },
+            {
+                id: 'text-to-cad',
+                name: '文本转CAD',
+                name_en: 'Text to CAD',
+                author: 'AUTO',
+                githubUrl: 'https://github.com/earthtojake/text-to-cad',
+                openUrl: 'https://demo.cadskills.xyz/',
+                image: HOST + 'threeExamples/openSource/text-to-cad.jpg'
             }
         ]
     },
@@ -1203,6 +1266,33 @@ export default [
                 githubUrl: 'https://github.com/wupeng0725/threejs-vr-house',
                 openUrl: 'https://wupeng0725.github.io/threejs-vr-house/',
                 image: HOST + 'threeExamples/openSource/vrHouse.jpg'
+            },
+            {
+                id: 'linkwalk',
+                name: '走廊展馆',
+                name_en: 'Linkwalk',
+                author: 'AUTO',
+                githubUrl: 'https://github.com/notbigmuzzy/linkwalk',
+                openUrl: 'https://notbigmuzzy.github.io/linkwalk',
+                image: HOST + 'threeExamples/openSource/linkwalk.jpg'
+            },
+            {
+                id: 'fanMuseum',
+                name: '粉丝博物馆',
+                name_en: 'Fan Museum',
+                author: 'AUTO',
+                githubUrl: 'https://github.com/andrewwoan/codrops-fan-museum',
+                openUrl: 'https://tympanus.net/Tutorials/CodropsFanMuseum/',
+                image: HOST + 'threeExamples/openSource/fanMuseum.jpg'
+            },
+            {
+                id: 'threeEdgeProjection',
+                name: '边缘投影',
+                name_en: 'Edge Projection',
+                author: 'AUTO',
+                githubUrl: 'https://github.com/gkjohnson/three-edge-projection',
+                openUrl: 'https://gkjohnson.github.io/three-edge-projection/planarIntersection.html',
+                image: 'https://raw.githubusercontent.com/gkjohnson/three-edge-projection/main/docs/banner.png'
             },
             {
                 id: 'music_wobble',
@@ -1719,6 +1809,69 @@ export default [
                 githubUrl: 'https://github.com/redradman/artemis',
                 openUrl: 'https://artemis.radman.dev/',
                 image: HOST + 'threeExamples/openSource/artemis.jpg'
+            },
+            {
+                id: 'IamErfan',
+                name: 'IamErfan 主页',
+                name_en: 'Personal Website',
+                author: 'AUTO',
+                githubUrl: 'https://github.com/erfan-mirasadi/IamErfan',
+                openUrl: 'http://iamerfan.me/',
+                image: HOST + 'threeExamples/openSource/IamErfan.jpg'
+            },
+            {
+                id: 'mouseEffects',
+                name: '鼠标特效',
+                name_en: 'Mouse Effects',
+                author: 'AUTO',
+                githubUrl: 'https://github.com/cortiz2894/mouse-effects',
+                openUrl: 'https://mouse-effects.vercel.app/',
+                image: HOST + 'threeExamples/openSource/mouseEffects.jpg'
+            },
+            {
+                id: 'tppOrbitCameraController',
+                name: '第三人称相机控制器',
+                name_en: 'Third Person Camera Controller',
+                author: 'AUTO',
+                openUrl: 'https://tpp-orbit-camera-controller.vercel.app/',
+                githubUrl: 'https://github.com/SahilK-027/TPP-Orbit-Camera-Controller',
+                image: HOST + 'threeExamples/openSource/tppOrbitCameraController.jpg'
+            },
+            {
+                id: 'wawa-vfx',
+                name: '粒子特效',
+                name_en: 'Wawa VFX',
+                author: 'AUTO',
+                githubUrl: 'https://github.com/wass08/wawa-vfx',
+                openUrl: 'https://wawa-vfx.wawasensei.dev/',
+                image: HOST + 'threeExamples/openSource/wawa-vfx.jpg'
+            },
+            {
+                id: 'r3f-animated-book-slider-final',
+                name: '书籍滑动',
+                name_en: 'Book Slider',
+                author: 'AUTO',
+                githubUrl: 'https://github.com/wass08/r3f-animated-book-slider-final',
+                openUrl: 'https://r3f-animated-book-slider-final.vercel.app/',
+                image: HOST + 'threeExamples/openSource/bookSlider.jpg'
+            },
+            {
+                id: 'r3f-ultimate-character-configurator',
+                name: '角色配置器',
+                name_en: 'Character User',
+                author: 'AUTO',
+                githubUrl: 'https://github.com/wass08/r3f-ultimate-character-configurator',
+                openUrl: 'https://avatar.wawasensei.dev/',
+                image: HOST + 'threeExamples/openSource/characterConfigurator.jpg'
+            },
+            {
+                id: 'christmas-popup-card',
+                name: '圣诞贺卡',
+                name_en: 'Popup Card',
+                author: 'AUTO',
+                githubUrl: 'https://github.com/dammafra/christmas-popup-card',
+                openUrl: 'https://holidaywishes.dammafra.dev/',
+                image: HOST + 'threeExamples/openSource/christmas-popup-card.jpg'
             }
         ]
     },
@@ -1980,6 +2133,15 @@ export default [
                 githubUrl: 'https://github.com/openGeometry-io/OpenGeometry',
                 openUrl: 'https://demos.opengeometry.io/',
                 image: 'https://raw.githubusercontent.com/OpenGeometry-io/.github/main/profile/opengeometryTextLogo.png'
+            },
+            {
+                id: 'three-vrm',
+                name: 'three-vrm',
+                name_en: 'Three VRM',
+                author: 'AUTO',
+                githubUrl: 'https://github.com/pixiv/three-vrm',
+                openUrl: 'https://pixiv.github.io/three-vrm/packages/three-vrm/examples/bones.html',
+                image: 'https://raw.githubusercontent.com/pixiv/three-vrm/dev/three-vrm.png'
             }
         ]
     },

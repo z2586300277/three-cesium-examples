@@ -76,8 +76,8 @@ export default {
 
 
         {
-            name: '🏫3D ' + TEXTS['market'],
-            url: 'https://openthree.github.io/market/'
+            name: '✋ ' + TEXTS['提交作品'],
+            url: 'https://z2586300277.github.io/submit/submit.html'
         }
 
     ]
