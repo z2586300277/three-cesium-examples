@@ -96,6 +96,8 @@ window.TEXTS = Object.fromEntries(Object.entries({
 
     '官网': { zh: '官网', en: 'Official' },
 
+    '提交作品': { zh: '提交作品', en: 'Submit Example' },
+
 }).map(
 
     ([key, value]) => [key, LANG_EN ? value.en : value.zh])
