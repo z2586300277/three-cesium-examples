@@ -122,7 +122,7 @@ export default [
         pid: 'topNavigation',
         name: '精选导航',
         name_en: 'Top Navigation',
-        order: 70,
+        order: 10,
         children: [
             {
                 id: 'codePen',

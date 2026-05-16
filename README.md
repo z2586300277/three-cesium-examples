@@ -10,6 +10,8 @@
 
 - github dev 分支实时预览 http://z2586300277.github.io/three-cesium-examples
 
+- 在线投稿 https://z2586300277.github.io/submit/submit.html (分享你的案例，让更多人看到✨)
+
 - 人生旅程中的 Web3D 知识记录, 复习回顾, 高效查阅, 资源共享, 为爱发电。(fork 一下提交自己作品🍀)
 
 - 注：尽量不要提交超过200k的文件，image 控制压缩到 10k，在线压缩 - [链接](https://yasuo.xunjiepdf.com/img/)
@@ -21,7 +23,7 @@
 |     作者     |   联系方式   |    联系方式     |             链接             |          描述
 | :----------: | :----------: | :-------------: | :------------------------: | :------------------------: |
 | 优雅永不过时 | 🐧2586300277 | 微:z2586300277  |  [主页](https://z2586300277.github.io) |  Web3D 为爱发电
-|  贾宛龙  | 微: trampjwl | 🐧 群 585667336 | [Cesium社区](https://jiawanlong.github.io) |  专注于Cesium.js领域
+|  贾宛龙  | 微: trampjwl | 🐧 群 585667336 | [主页](https://jiawanlong.github.io) |  专注于Cesium.js领域
 |     Nico     |  🐧805879871   | 微:15230117323  |     [官网](http://nicowebgl.cn )  |   Three.js Cesium.js
 |  FFMMCC  | 微:fmc2055615840 | 🐧2055615840 | [主页](https://coderfmc.github.io/three.js-demo/fmc-web-3d/) | Web3D爱好者
 |     ThreeX     |  🐧383612104   | 微:web-gpu  |     [官网](https://three-x.cn)      |   Three.js移动端、小程序
