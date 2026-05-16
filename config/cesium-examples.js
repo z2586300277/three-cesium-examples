@@ -26,6 +26,15 @@ export default [
                 githubUrl: 'https://github.com/jiawanlong/Cesium-Examples',
                 image: FILE_HOST + 'images/jiawanlong.jpg'
             },
+            {
+                id: 'CesiumJsSamples',
+                name: 'CesiumJS 例子',
+                name_en: 'CesiumJS Samples',
+                author: 'AUTO',
+                githubUrl: 'https://github.com/3DGISKing/CesiumJsSamples',
+                openUrl: 'https://coolgis.org/CesiumJsSamples/index.html',
+                image: HOST + 'cesiumExamples/openSource/cesiumJsSamples.jpg',
+            }
 
         ]
     },

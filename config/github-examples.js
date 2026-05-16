@@ -8,6 +8,16 @@ export default [
         order: -10,
         children: [
             {
+                id: 'moreGithub',
+                name: '更多Github案例',
+                name_en: 'More Github Examples',
+                tip: '案例太多，一页放不下了，将后面的一些案例提交到这个页面了',
+                tag: TEXTS['More'] + '-#5f9be3',
+                githubUrl: 'https://github.com/OpenThree/three-github-examples',
+                openUrl: 'https://openthree.github.io/three-github-examples/',
+                image: FILE_HOST + 'images/threeCesiumExamples.jpg'
+            },
+            {
                 id: "moyunhe",
                 name: "电商产品设计器",
                 name_en: "E-commerce product designer",
@@ -26,6 +36,29 @@ export default [
                 openUrl: "https://knight-l.github.io/sc-datav/#/demo1",
                 githubUrl: "https://github.com/knight-L/sc-datav",
                 image: HOST + "threeExamples/openSource/heat3dMap.jpg",
+            },
+            {
+                id: 'z2586300277_new3d_editor',
+                tag: TEXTS['编辑器'],
+                tip: '使用Three.js开发的低代码组态易用的编辑器——全新版本',
+                name: '新低代码编辑器',
+                name_en: 'LowCode Editor',
+                author: 'z2586300277',
+                openUrl: 'https://z2586300277.github.io/threejs-editor/',
+                githubUrl: 'https://github.com/z2586300277/threejs-editor',
+                image: HOST + 'threeExamples/openSource/newThreeEditor.jpg',
+            },
+            {
+                id: 'goViewThreeEditor',
+                tag: 'GoView' + '-#62B1EE',
+                tip: 'GoView集成three.js开发的三维编辑器，支持丰富的三维功能',
+                name: 'GoView集成编辑器',
+                name_en: 'GoView Three Editor',
+                author: 'z2586300277',
+                referUrl: 'https://www.mtruning.club/',
+                openUrl: 'https://z2586300277.github.io/go-view-three-editor',
+                githubUrl: 'https://github.com/z2586300277/go-view-three-editor',
+                image: HOST + 'threeExamples/openSource/goViewThreeEditor.jpg'
             },
             {
                 id: 'fmc_car',
@@ -53,29 +86,6 @@ export default [
                 githubUrl: 'https://gitee.com/fu-meichuan/digital-farmland',
                 openUrl: 'https://coderfmc.github.io/three.js-demo/digital-farmland/#/carbon-neutral-bigscreen',
                 image: 'https://coderfmc.github.io/three.js-demo/fmc-web-3d/img/智慧农田.png'
-            },
-            {
-                id: 'z2586300277_new3d_editor',
-                tag: TEXTS['编辑器'],
-                tip: '使用Three.js开发的低代码组态易用的编辑器——全新版本',
-                name: '新低代码编辑器',
-                name_en: 'LowCode Editor',
-                author: 'z2586300277',
-                openUrl: 'https://z2586300277.github.io/threejs-editor/',
-                githubUrl: 'https://github.com/z2586300277/threejs-editor',
-                image: HOST + 'threeExamples/openSource/newThreeEditor.jpg',
-            },
-            {
-                id: 'goViewThreeEditor',
-                tag: 'GoView' + '-#62B1EE',
-                tip: 'GoView集成three.js开发的三维编辑器，支持丰富的三维功能',
-                name: 'GoView集成编辑器',
-                name_en: 'GoView Three Editor',
-                author: 'z2586300277',
-                referUrl: 'https://www.mtruning.club/',
-                openUrl: 'https://z2586300277.github.io/go-view-three-editor',
-                githubUrl: 'https://github.com/z2586300277/go-view-three-editor',
-                image: HOST + 'threeExamples/openSource/goViewThreeEditor.jpg'
             },
             {
                 id: 'blanderCar',
@@ -122,7 +132,7 @@ export default [
         pid: 'topNavigation',
         name: '精选导航',
         name_en: 'Top Navigation',
-        order: 70,
+        order: 10,
         children: [
             {
                 id: 'codePen',
