@@ -2,7 +2,7 @@
 
 ## Web3D TOP1 - 👋 - 分享知识 - ⭐ - 点星助力 - ⚡ - 更新到死
 
-#### 三维开发者学习、分享、展示、交流、合作、接单🤝。(加入管理仓库联系作者🍉)
+#### 三维开发者学习、分享、展示、交流、合作🤝。(接单创业、加入管理仓库联系作者🍉)
 
 | 微信 |           微信群            |              预览图                       | Stars           |
 | :---------------:| :---------------: | :---------: | :--------- |
@@ -16,7 +16,7 @@
 
 - 注：尽量不要提交超过200k的文件，image 控制压缩到 10k，在线压缩 - [链接](https://yasuo.xunjiepdf.com/img/)
 
-### 👋 作者链接 (自行添加开发者的主页）
+### 👋 作者链接 （自行添加开发者的主页）
 
 <img src="https://contrib.rocks/image?repo=z2586300277/three-cesium-examples&type=Date&91" />
 
@@ -128,93 +128,90 @@
 |[elegant-github](http://z2586300277.github.io/three-cesium-examples)|[elegant-vercel](https://three-cesium-examples.vercel.app)|[openThree-github](https://openthree.github.io/three-cesium-examples/)|
 |[threehub-site](https://threehub.cn) | [cesiumhub-site](http://cesiumhub.cn)|[codeLike-github](https://g2657.github.io/webgl-examples/)|
 
-#  💎 Three.js and Cesium.js Case Study - Generating Love - Only Open Source-
-#### Web3D related resources, repositories, links, effect cases, requirements, and optimization suggestions can be submitted using Issues comments ✍。
-#### 3D developers record, review, share, showcase works, make friends, collaborate 🤝。 (Join the warehouse management and contact the author) 🍉)
-- Real time preview of GitHub dev branch http://z2586300277.github.io/three-cesium-examples
-- Domestic visits https://threehub.cn , can slide down to 📦  Self deployment - Assist enterprises in viewing other deployment sites 🏫。
-- Due to the large and active number of people following and browsing this repository, it will be updated frequently. (Click on watch to get the latest updates) 🐸
-- Follow git histroy to record every day of your life and the footprints of your developer's life history. (Click follow to monitor the author) 🍏
-- Web3D knowledge recording, review, efficient searching, resource sharing in the journey of life, generating electricity for love. (Fork to submit your own work) 🍀
-- The source code memory is about 10M, and the framework (Vue) and online debugging are sourced from the three editor library under the author's name - [link](https://z2586300277.github.io/three-editor/dist/#/example)
-- Note: Try not to submit files exceeding 200k. Image control compression to 10k, online compression - [link](https://yasuo.xunjiepdf.com/img/)
-- Leave a link for businesses to seek professional technical or personnel support, individual developers to undertake projects, sell resources, and exchange support 🐋。
+# 💎 Three.js and Cesium.js Examples - Built with Passion, Open Source Forever
 
-##  🌳 literary creation
-- ✋ If there are any cases that have helped you, if interested, you can submit your work to spread love to more developers
-- 👏 Developers who join the repository management can create their own branches or develop directly in the dev branch
-- 📑 Fork repository development - Add user information - Submit code - Merge into dev
-- 🌿 Distributed Warehouse Development Model https://github.com/z2586300277/three-cesium-examples-self
+#### Web3D TOP1 - 👋 - Share Knowledge - ⭐ - Star to Support - ⚡ - Updated Continuously
 
-- Run the framework to start the service port pointing to index.html, such as nginx Apache Node.js LiveServer, as long as the service can be started
-1. Creators can enter their developer information in config/author.js, and then the ID associated with the submitted case will display the author information.
-2. Place the case js in the folder cesiumExamples/threeEmples in the directory, such as ThreeEmples/basic, and put testjs in it, test.jpg,  Or directory test [test. js, test. jpg]
-3. Find ThreeEmples in the config directory and enter the case information. The internal resources point to the paths corresponding to your JS and image resources
-4. Note: To ensure the use of lightweight case display image resources- https://yasuo.xunjiepdf.com/img/ _(Custom compression to within 10k)_
-5. If it involves other dependent JS, you can place module.js in the JS directory such as dat.gui, gasp , The injection method config/config.js is visible
-6. Store audio and video models and other resources that can be shared in the files folder. Whenever possible, reference external URLs for file resources to ensure a lightweight warehouse
+#### A place for 3D developers to learn, share, showcase, connect, collaborate, and take projects 🤝. (Contact the author if you want to join repository management 🍉)
+
+- GitHub dev branch live preview: http://z2586300277.github.io/three-cesium-examples
+- Online submission: https://z2586300277.github.io/submit/submit.html (share your example and let more developers discover it ✨)
+- A long-term Web3D knowledge log for review, fast lookup, and resource sharing. (fork and submit your work 🍀)
+- Note: please avoid submitting files larger than 200 KB. Compress images to about 10 KB: [link](https://yasuo.xunjiepdf.com/img/)
+
+## 🌳 Contribution Guide
+
+- ✋ If any example helped you, you are welcome to submit your own work and pass it on.
+- 👏 Developers in repository management can create their own branches, or contribute directly on `dev`.
+- 📑 Standard flow: fork repository -> add contributor info -> submit code -> merge into `dev`.
+- 🌿 Distributed repository model: https://github.com/z2586300277/three-cesium-examples-self
+
+- Run with any static server (internet required for CDN dependencies like three.js and gsap), and point service root to `index.html` (nginx / apache / liveServer, etc.).
+
+1. Add your author profile in `config/author.js`. When your example references your author ID, your info will be displayed automatically.
+2. Put your example files under `cesiumExamples/` or `threeExamples/`, for example `threeExamples/basic/test.js` with `test.jpg`.
+3. Register your example in the corresponding config file under `config/` (`three-examples.js` or `cesium-examples.js`), and ensure paths match your JS/image files.
+4. Keep preview images lightweight. Recommended compression tool: https://yasuo.xunjiepdf.com/img/ (target size: <= 10 KB).
+5. For extra JS dependencies, place files in `js/` (such as dat.gui or gsap) and inject them via `config/config.js`.
+6. Put shared assets (models/audio/video/textures) in `files/`. Prefer external URLs for large resources to keep this repo lightweight.
 
 ```
-Directory Structure  
-├── assets/             # Runtime framework  
-├── threeExamples/      # Three.js example code directory  
-├── cesiumExamples/     # Cesium example code directory  
-├── js/                 # Third-party JS dependencies  
-├── files/              # Models, images, and other resources  
-├── config/             # Configuration files  
-│   ├── site            # Website configuration  
-│   ├── host            # Host configuration  
-│   ├── links           # Navigation links  
-│   ├── lang            # Language configuration  
-│   ├── author          # Author information  
-│   ├── three-examples  # Three.js example configuration  
-│   ├── cesium-example  # Cesium example configuration  
-│   └── config          # Main configuration  
-├── .gitignore          # Git ignore file  
-├── index.html          # Entry page  
-├── LICENSE             # Open source license  
-└── README.md           # Project documentation  
+Directory structure
+├── assets/             # Runtime framework
+├── threeExamples/      # Three.js example sources
+├── cesiumExamples/     # Cesium example sources
+├── js/                 # Third-party JS dependencies
+├── files/              # Shared models/textures/media assets
+├── config/             # Configuration files
+│   ├── site            # Site metadata
+│   ├── host            # Host configuration
+│   ├── links           # Navigation links
+│   ├── lang            # Language configuration
+│   ├── author          # Author registry
+│   ├── three-examples  # Three.js examples
+│   ├── cesium-example  # Cesium examples
+│   └── config          # Main runtime config
+├── .gitignore          # Git ignore file
+├── index.html          # Entry page
+├── LICENSE             # Open-source license
+└── README.md           # Project documentation
 ```
 
 ```js
-//HOST automatically retrieves the current domain name/IP to prevent invalid resource references in different deployment environments
+// HOST is auto-resolved from current domain/IP to avoid broken asset paths across deployments.
 {
-    id: ' The unique id in list',
-    name: ' Chinese Name',
-    name_en: 'language English Name',
-    tag: ' Tag Name - Background Color - Font Size ',
-    tip: ' Prompt message ',
-    author: ' Author ID ',
-    imporver: 'imporver id',
-    referUrl: ' Case reference source address',//if not available, do not configure
-    links: [{url: 'Connect', name: ' Name '}]//Configure link referURL to not display
-    image: HOST + 'threeExamples/basic/test.jpg', //  Corresponding window diagram
-    codeUrl: HOST+'threExamples/basic/test.js',//js module format Most case forms
-    htmlUrl: HOST+'threExamples/test/test.html '//HTML online format such as three case=>particle=>random particle particle planet
-    openUrl: ' Preview the external link URL '// Choose between openURL and codeURL, as seen in the case of Taohua Pavilion Su7
-    downloadUrl: ' Attached download URL ',//such as Three.js=>Advanced Case=>Peach Blossom Pavilion
-    githubUrl: ' github link URL ',// Three.js=>Open source works=>su7
+    id: 'unique id in list',
+    name: 'Chinese name',
+    name_en: 'English name',
+    tag: 'tag text-backgroundColor-fontSize',
+    tip: 'tooltip message',
+    author: 'author id',
+    referUrl: 'reference source url', // optional
+    downloadUrl: 'download url', // optional; if configured, referUrl is hidden
+    imporver: 'improver id', // optional
+    links: [{ url: 'link url', name: 'link name' }], // if configured, imporver is hidden
+    image: HOST + 'threeExamples/basic/test.jpg', // preview thumbnail
+    codeUrl: HOST + 'threeExamples/basic/test.js', // ES module style (most common)
+    htmlUrl: HOST + 'threeExamples/test/test.html', // standalone HTML example
+    openUrl: 'external preview url', // choose either openUrl or codeUrl
+    githubUrl: 'github repository url', // optional
     meta: {
-        title: ' The title of this case website is',
-        keywords: ' Search engine keywords',
-        description: ' This case page describes'
+        title: 'page title',
+        keywords: 'seo keywords',
+        description: 'page description'
     }
 }
 ```
-##  🏠  Build your own distributed storage warehouse
 
-- Architecture design is to access code in the form of request resources, such as codeURL images, etc. Resource files are not limited to being stored in this repository, such as on your own server, and then the URL can access your file, similar to a request interface.
+## 🏠 Build Your Own Distributed Asset Repository
 
-- Then only the case information can be configured in this warehouse, which can refer to the configuration of three cases=>extended functions=>3D map cases
-
-- Because GitHub. io is HTTPS, HTTPS access restriction: HTTP will be automatically banned. It is recommended to set up your own GitHub page and use GitHub as your resource server.
-
-- For example, some of my distributed resources are stored in https://github.com/z2586300277/3d-file-server Under the warehouse - Access service: https://z2586300277.github.io/3d-file-server/
-
-- GitHub page setup=>create repository=>enter management page=>settings=>pages=>build and deployment=>source (depoly from a branch)=>branch select corresponding branch=>save
-
-- Note: After the GitHub page is built, the browser can directly access it as follows: https://xxxx.github.io/xxxx/ 404 directory full line phenomenon, access can be normal after the path is precise to the file
-
-- Reference access cases such as Cesium case=>Offline map=>Intranet Gaode
-
-- Building a video can refer to https://www.bilibili.com/video/BV12T94YhEQA/
+- This project uses URL-based resource loading (`codeUrl`, `image`, etc.), so files do not have to live in this repository.
+- You can host assets on your own server or another repository, then reference them directly by URL in config.
+- In this repository, you only need to maintain example metadata/config entries.
+- Because GitHub Pages runs on HTTPS, mixed HTTP resources may be blocked. Use HTTPS asset URLs.
+- Example distributed asset repo: https://github.com/z2586300277/3d-file-server
+- Example asset service: https://z2586300277.github.io/3d-file-server/
+- GitHub Pages quick setup: create repo -> settings -> pages -> build and deployment -> source (deploy from a branch) -> select branch -> save.
+- If `https://xxxx.github.io/xxxx/` returns 404, try a full file path first to confirm resources are deployed correctly.
+- Reference case: Cesium -> Offline Map -> Intranet Gaode.
+- Video guide: https://www.bilibili.com/video/BV12T94YhEQA/

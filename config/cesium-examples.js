@@ -875,6 +875,26 @@ export default [
                 }
             },
             {
+                id: 'cesium_three',
+                name: 'cesium深度融合three',
+                name_en: 'Cesium && Three',
+                author: 'z2586300277',
+                tag: TEXTS['融合'],
+                codeUrl: HOST + 'cesiumExamples/expand/cesium_three.js',
+                image: HOST + 'cesiumExamples/expand/cesiumAndThree.jpg',
+                inject: {
+                    importmap: {
+                        "three": "https://threejs.org/build/three.module.min.js",
+                        "three/addons/": "https://threejs.org/examples/jsm/"
+                    }
+                },
+                meta: {
+                    title: 'cesium深度融合three',
+                    keywords: 'cesium深度融合three,场景,融合',
+                    description: '使用three.js创建3D场景，cesium创建2D场景，深度融合在一起'
+                }
+            },
+            {
                 id: 'cesiumSwitch',
                 name: 'Cesium Three切换',
                 name_en: 'Cesium Switch',

@@ -2196,6 +2196,14 @@ export default [
                 inject: {
                     src: [FILE_HOST + "js/three/addons/libs/ammo.wasm.js"]
                 }
+            },
+            {
+                id: 'rapierPhysics',
+                name: '物理rapier使用',
+                name_en: 'Rapier Physics',
+                author: 'huan_meng_hai_yan',
+                codeUrl: HOST + 'threeExamples/physics/rapierPhysics.js',
+                image: HOST + 'threeExamples/physics/rapierPhysics.webp'
             }
         ]
     },
