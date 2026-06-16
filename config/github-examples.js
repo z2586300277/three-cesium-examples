@@ -550,7 +550,16 @@ export default [
                 githubUrl: 'https://github.com/game4automation/realvirtual-WEB',
                 openUrl: 'https://web.realvirtual.io/demo',
                 image: HOST + 'threeExamples/openSource/realvirtualWEB.jpg'
-            }
+            },
+            {
+                id: 'icraft',
+                name: 'icraft',
+                name_en: 'icraft',
+                author: 'AUTO',
+                openUrl: 'https://icraft.design/app/player/dmqSz2F-niKujD94cPb7-Zsa9zIH2Ggt',
+                githubUrl: 'https://github.com/gantFDT/icraft',
+                image: 'https://openthree.github.io/three-github-examples/images/icraft.webp',
+            },
         ]
     },
     {
@@ -648,7 +657,16 @@ export default [
                 githubUrl: 'https://github.com/zhanghang2017/threemap',
                 openUrl: 'https://g2657.github.io/examples-server/charts_map/',
                 image: HOST + 'threeExamples/openSource/chinaMap.jpg',
-            }
+            },
+            {
+                id: 'demo-threejs-chinamap',
+                name: '下钻地图',
+                name_en: 'demo-threejs-chinamap',
+                author: 'AUTO',
+                openUrl: 'https://github.com/chemistwang/demo-threejs-chinamap',
+                githubUrl: 'https://github.com/chemistwang/demo-threejs-chinamap',
+                image: 'https://openthree.github.io/three-github-examples/images/demo-threejs-chinamap.webp',
+            },
         ]
     },
     {
@@ -838,6 +856,64 @@ export default [
 
     },
     {
+        pid: 'gaussianSplatter',
+        name: '高斯泼溅',
+        name_en: 'Gaussian Splatter',
+        order: 35,
+        children: [
+            {
+                id: 'sparkjs',
+                name: 'Spark-splat',
+                name_en: 'Spark-splat',
+                author: 'AUTO',
+                openUrl: 'https://sparkjs.dev/examples/',
+                githubUrl: 'https://github.com/sparkjsdev/spark',
+                image: HOST + 'threeExamples/openSource/sparkjs.jpg'
+            },
+            {
+                id: 'supersplat',
+                name: '高斯点云编辑器',
+                name_en: 'Supersplat',
+                author: 'AUTO',
+                githubUrl: 'https://github.com/playcanvas/supersplat',
+                openUrl: 'https://superspl.at/editor',
+                image: HOST + 'threeExamples/tools/supersplat.jpg',
+                links: [
+                    { name: 'Reall3dViewer', url: 'https://github.com/reall3d-com/Reall3dViewer' },
+                    { name: 'reall3d', url: 'https://www.reall3d.com/' },
+                    { name: 'other', url: 'https://github.com/lukehollis/sphr' }
+                ]
+            },
+            {
+                id: 'aholo-viewer',
+                name: '高斯渲染',
+                name_en: 'aholo-viewer',
+                author: 'AUTO',
+                openUrl: 'https://aholojs.dev/zh-CN/',
+                githubUrl: 'https://github.com/manycoretech/aholo-viewer',
+                image: 'https://openthree.github.io/three-github-examples/images/aholo-viewer.webp',
+            },
+            {
+                id: 'third-person-controller-splat',
+                name: '高斯漫游',
+                name_en: 'third-person-controller-splat',
+                author: 'AUTO',
+                openUrl: 'https://third-person-character-controller.netlify.app/',
+                githubUrl: 'https://github.com/icurtis1/third-person-controller-splat',
+                image: 'https://openthree.github.io/three-github-examples/images/aa.webp',
+            },
+            {
+                id: 'marble-runner',
+                name: 'marble-runner',
+                name_en: 'marble-runner',
+                author: 'AUTO',
+                openUrl: 'https://marble-runner.vercel.app/',
+                githubUrl: 'https://github.com/panterathehacker/marble-runner',
+                image: 'https://openthree.github.io/three-github-examples/images/marble-runner.webp',
+            },
+        ]
+    },
+    {
         pid: 'digitalTwin',
         name: '数字孪生',
         name_en: 'digitalTwin',
@@ -878,6 +954,15 @@ export default [
                 openUrl: 'https://fengtianxi001.github.io/MF-TurbineMonitor',
                 githubUrl: 'https://github.com/fengtianxi001/MF-TurbineMonitor',
                 image: FILE_HOST + 'images/fengji.jpg'
+            },
+            {
+                id: 'yyhg',
+                name: '北京优悦幻光',
+                name_en: 'yyhg',
+                author: 'AUTO',
+                openUrl: 'https://z2586300277.github.io/yyhg/',
+                githubUrl: 'https://github.com/z2586300277/yyhg',
+                image: 'https://openthree.github.io/three-github-examples/images/yyhg.webp',
             },
             {
                 id: 'numberFram',

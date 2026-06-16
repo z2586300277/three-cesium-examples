@@ -27,6 +27,14 @@ export default [
                 image: FILE_HOST + 'images/jiawanlong.jpg'
             },
             {
+                id: 'cesiumPocket',
+                tag: TEXTS['友情链接'],
+                name: 'Cesium 组件库',
+                name_en: 'Cesium Pocket',
+                openUrl: 'http://cesium-pocket.com/',
+                image: HOST + 'threeExamples/openSource/cesiumPocket.webp'
+            },
+            {
                 id: 'CesiumJsSamples',
                 name: 'CesiumJS 例子',
                 name_en: 'CesiumJS Samples',

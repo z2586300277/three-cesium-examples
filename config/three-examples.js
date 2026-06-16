@@ -3192,6 +3192,14 @@ export default [
                 image: HOST + 'threeExamples/tools/TRELLIS.jpg'
             },
             {
+                id: 'hunyuan3d',
+                name: '混元3D',
+                name_en: 'Hunyuan 3D',
+                author: 'z2586300277',
+                openUrl: 'https://3d.hunyuan.tencent.com/',
+                image: HOST + 'threeExamples/tools/hunyuan3d.webp'
+            },
+            {
                 id: 'mixamo',
                 name: '制作人物动画',
                 name_en: 'Mixamo',

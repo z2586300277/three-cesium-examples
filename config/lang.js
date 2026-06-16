@@ -100,6 +100,8 @@ window.TEXTS = Object.fromEntries(Object.entries({
 
     'More': { zh: '更多', en: 'More' },
 
+    '新': { zh: '新', en: 'New' },
+
 }).map(
 
     ([key, value]) => [key, LANG_EN ? value.en : value.zh])
