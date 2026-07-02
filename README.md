@@ -18,13 +18,17 @@
 
 ### 👋 作者链接 （自行添加开发者的主页）
 
-<img src="https://contrib.rocks/image?repo=z2586300277/three-cesium-examples&type=Date&91" />
+<img src="https://contrib.rocks/image?repo=z2586300277/three-cesium-examples&type=Date&99" />
 
 |     作者     |   联系方式   |    联系方式     |             链接             |          描述
 | :----------: | :----------: | :-------------: | :------------------------: | :------------------------: |
 | 优雅永不过时 | 🐧2586300277 | 微:z2586300277  |  [主页](https://z2586300277.github.io) |  Web3D 为爱发电
 |  贾宛龙  | 微: trampjwl | 🐧 群 585667336 | [主页](https://jiawanlong.github.io) |  专注于Cesium.js领域
 |     Nico     |  🐧805879871   | 微:15230117323  |     [官网](http://nicowebgl.cn )  |   Three.js Cesium.js
+|  蜗牛  | 微:snail_to_pyramid | - | [官网](https://moyunhe.com/) | Babylon.js领域
+|  青花鱼  | 微：cyanfish-site | - | [官网](https://cyanfish-x.github.io/tellux/) | 高级Gis渲染
+|  左左  | 微:brilliant201306 | - | [官网](http://cesium-pocket.com/) | Cesium领域
+|  hh-hang  | 微：vgyuvhang | - | [官网](https://hh-hang.github.io/three-player-controller/) | Three VR 3DGS
 |  FFMMCC  | 微:fmc2055615840 | 🐧2055615840 | [主页](https://coderfmc.github.io/three.js-demo/fmc-web-3d/) | Web3D爱好者
 |     ThreeX     |  🐧383612104   | 微:web-gpu  |     [官网](https://three-x.cn)      |   Three.js移动端、小程序
 |  Threelab |🐧2945853209 | - | [官网](https://threelab.cn) | 海量点云渲染引擎

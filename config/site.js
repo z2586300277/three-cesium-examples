@@ -1,5 +1,7 @@
 const { hostname } = window.location
 
+if (!('codeMirror_vscode_theme' in localStorage)) localStorage.setItem('codeMirror_vscode_theme', 'true')
+
 let domain = './assets'
 
 if (/github.io/.test(hostname)) domain = 'https://z2586300277.github.io/assets'
