@@ -947,6 +947,23 @@ export default [
                 image: HOST + 'threeExamples/openSource/StationMonitor.jpg'
             },
             {
+                id: 'yyhgSmartCity',
+                name: '智慧城市',
+                name_en: 'Smart City',
+                author: 'z2586300277',
+                openUrl: 'https://g2657.github.io/examples-server/smartCity/',
+                image: HOST + 'threeExamples/openSource/yyhgSmartCity.jpg'
+            },
+            {
+                id: 'yyhg',
+                name: '北京优悦幻光',
+                name_en: 'yyhg',
+                author: 'z2586300277',
+                openUrl: 'https://z2586300277.github.io/yyhg/',
+                githubUrl: 'https://github.com/z2586300277/yyhg',
+                image: 'https://openthree.github.io/three-github-examples/images/yyhg.webp',
+            },
+            {
                 id: 'feng_ji',
                 name: '风机',
                 name_en: 'Wind Turbine',
@@ -954,15 +971,6 @@ export default [
                 openUrl: 'https://fengtianxi001.github.io/MF-TurbineMonitor',
                 githubUrl: 'https://github.com/fengtianxi001/MF-TurbineMonitor',
                 image: FILE_HOST + 'images/fengji.jpg'
-            },
-            {
-                id: 'yyhg',
-                name: '北京优悦幻光',
-                name_en: 'yyhg',
-                author: 'AUTO',
-                openUrl: 'https://z2586300277.github.io/yyhg/',
-                githubUrl: 'https://github.com/z2586300277/yyhg',
-                image: 'https://openthree.github.io/three-github-examples/images/yyhg.webp',
             },
             {
                 id: 'numberFram',

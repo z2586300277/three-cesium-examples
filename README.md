@@ -4,9 +4,9 @@
 
 #### 三维开发者学习、分享、展示、交流、合作🤝。(接单创业、加入管理仓库联系作者🍉)
 
-| 微信 |           微信群            |              预览图                       | Stars           |
+| 微信 |           微信群            |              预览图                       |      赞赏       |
 | :---------------:| :---------------: | :---------: | :--------- |
-| <img src="https://z2586300277.github.io/3d-file-server/images/yy.jpg" height="140px" /> | <img src="https://z2586300277.github.io/3d-file-server/images/nico.jpg" height="140px" /> | <img src="https://z2586300277.github.io/3d-file-server/images/threeCesiumExamples.jpg" width="200px" height="140px" /> | <img src="https://api.star-history.com/svg?repos=z2586300277/three-editor,z2586300277/three-cesium-examples&type=Date" width="200px" height="140px" /> |
+| <img src="https://z2586300277.github.io/3d-file-server/images/yy.jpg" height="140px" /> | <img src="https://z2586300277.github.io/3d-file-server/images/nico.jpg" height="140px" /> | <img src="https://z2586300277.github.io/3d-file-server/images/threeCesiumExamples.jpg" width="200px" height="140px" /> | <img src="https://z2586300277.github.io/3d-file-server/images/wx_star.png" height="140px"  /> |
 
 - github dev 分支实时预览 http://z2586300277.github.io/three-cesium-examples
 
@@ -117,7 +117,7 @@
 
 - github page 搭建 => 创建仓库 => 进入管理页面 => setting => pages => Build and deployment => source (depoly from a branch) => branch 选择对应分支 => save 即可
 
-- 注： github page 搭建完成后 浏览器直接访问如 https://xxxx.github.io/xxxx/ 目录404整行现象，路径精确到文件后访问可正常
+- 注： github page 搭建完成后 浏览器直接访问如 https://xxxx.github.io/xxxx/ 目录404正常现象，路径精确到文件后访问可正常
 
 - 参考访问案例 如 cesium 案例 => 离线地图 => 内网高德 
 
