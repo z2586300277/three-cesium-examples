@@ -73,8 +73,8 @@ export default [
             },
             {
                 id: 'z2586300277_info',
-                name: '优雅永不过时',
-                name_en: 'Elegant',
+                name: '企业合作',
+                name_en: 'Enterprise Cooperation',
                 tag: TEXTS['Contact'] + '-#d96dca',
                 author: 'z2586300277',
                 openUrl: 'https://z2586300277.github.io',

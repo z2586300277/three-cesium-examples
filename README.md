@@ -31,6 +31,7 @@
 |  hh-hang  | 微：vgyuvhang | - | [官网](https://hh-hang.github.io/three-player-controller/) | Three VR 3DGS
 |  FFMMCC  | 微:fmc2055615840 | 🐧2055615840 | [主页](https://coderfmc.github.io/three.js-demo/fmc-web-3d/) | Web3D爱好者
 |     ThreeX     |  🐧383612104   | 微:web-gpu  |     [官网](https://three-x.cn)      |   Three.js移动端、小程序
+|     CesiumPlus     |  -   | 微:15885505046  |     [官网](http://cesiumplus.cn/Examples)      |   Cesium 领域
 |  Threelab |🐧2945853209 | - | [官网](https://threelab.cn) | 海量点云渲染引擎
 | - | - | - | - | - |
 

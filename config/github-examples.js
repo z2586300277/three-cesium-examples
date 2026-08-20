@@ -917,7 +917,7 @@ export default [
         pid: 'digitalTwin',
         name: '数字孪生',
         name_en: 'digitalTwin',
-        order: 40,
+        order: 25,
         children: [
             {
                 id: 'digitalFarm',
@@ -2365,9 +2365,3 @@ export default [
 
     }
 ].sort((a, b) => (a.order ?? 100) - (b.order ?? 100))
-
-/* 可能在未来上线的一些链接资源记录 - 筛选
-https://threepipe.org/
-http://jasonsturges.com/three-low-poly/
-http://idflood.github.io/ThreeNodes.js/index_optimized.html
-*/

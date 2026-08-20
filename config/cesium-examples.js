@@ -45,6 +45,15 @@ export default [
                 image: HOST + "cesiumExamples/openSource/tellux.webp",
             },
             {
+                id: "cesiumPlus",
+                tag: TEXTS["友情链接"],
+                name: "CesiumPlus",
+                name_en: "CesiumPlus",
+                openUrl: "http://cesiumplus.cn/Examples",
+                githubUrl: "https://github.com/CesiumPlus/",
+                image: HOST + "cesiumExamples/openSource/cesiumplus.webp",
+            },
+            {
                 id: "CesiumJsSamples",
                 name: "CesiumJS 例子",
                 name_en: "CesiumJS Samples",
