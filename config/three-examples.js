@@ -80,7 +80,17 @@ export default [
                 openUrl: 'https://z2586300277.github.io',
                 githubUrl: 'https://github.com/z2586300277',
                 image: FILE_HOST + 'images/yy.jpg'
-            }
+            },
+            {
+                id: 'moreGithub',
+                name: '最近更新',
+                name_en: 'Recently Updated',
+                tip: '最新的three.js开源案例，持续更新中',
+                tag: TEXTS['新'] + '-#3F51B5',
+                githubUrl: 'https://github.com/OpenThree/three-github-examples',
+                openUrl: 'https://openthree.github.io/three-github-examples/',
+                image: FILE_HOST + 'images/threeCesiumExamples.jpg'
+            },
 
         ]
     },
