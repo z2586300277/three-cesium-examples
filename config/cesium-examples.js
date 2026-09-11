@@ -946,7 +946,7 @@ export default [
                 image: HOST + "cesiumExamples/expand/cesiumAndThree.jpg",
                 inject: {
                     importmap: {
-                        three: "https://threejs.org/build/three.module.min.js",
+                        three: "https://threejs.org/build/three.module.js",
                         "three/addons/": "https://threejs.org/examples/jsm/",
                     },
                 },
@@ -967,7 +967,7 @@ export default [
                 image: HOST + "cesiumExamples/expand/cesiumSwitch.jpg",
                 inject: {
                     importmap: {
-                        three: "https://threejs.org/build/three.module.min.js",
+                        three: "https://threejs.org/build/three.module.js",
                         "three/examples/jsm/": "https://threejs.org/examples/jsm/",
                         gsap: "https://cdn.jsdelivr.net/npm/gsap/+esm",
                     },

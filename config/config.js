@@ -68,7 +68,7 @@ window.THREE_CESIUM_NAVIGATION = [
         examples: threeExamples,
         inject: {
             importmap: {
-                "three": "https://threejs.org/build/three.module.min.js",
+                "three": "https://threejs.org/build/three.module.js",
                 "three/addons/": "https://threejs.org/examples/jsm/",
                 "three/examples/jsm/": "https://threejs.org/examples/jsm/",
                 "gsap": "https://cdn.jsdelivr.net/npm/gsap/+esm",
