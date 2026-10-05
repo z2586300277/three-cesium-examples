@@ -83,10 +83,10 @@ export default [
             },
             {
                 id: 'moreGithub',
-                name: '最近更新',
+                name: '最近更新 - Ai 3D',
                 name_en: 'Recently Updated',
                 tip: '最新的three.js开源案例，持续更新中',
-                tag: TEXTS['新'] + '-#3F51B5',
+                tag: TEXTS['新'] + '(Ai)' + '-#3F51B5',
                 githubUrl: 'https://github.com/OpenThree/three-github-examples',
                 openUrl: 'https://openthree.github.io/three-github-examples/',
                 image: FILE_HOST + 'images/threeCesiumExamples.jpg'

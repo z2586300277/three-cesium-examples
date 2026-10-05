@@ -559,6 +559,7 @@ export default [
   {
     id: "tomrui",
     name: "tomrui",
+    github: "https://github.com/tomrui123",
     icon: HOST + "files/author/tomrui.jpg",
   },
 
