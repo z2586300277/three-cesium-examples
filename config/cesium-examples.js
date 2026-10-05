@@ -1019,6 +1019,19 @@ export default [
                 },
             },
             {
+                id: "cesiumSdkBar",
+                name: "柱状标记",
+                name_en: "Cesium SDK 3D Bars",
+                author: "tomrui",
+                codeUrl: HOST + "cesiumExamples/expand/cesiumSdkBar.js",
+                 image: HOST + "cesiumExamples/expand/cesiumSdkBar.png",
+                meta: {
+                    title: "柱状标记",
+                    keywords: "cesium.js,CesiumBar,3D柱状图,数据可视化",
+                    description: "基于 GoView cesium-sdk CesiumBar 能力的城市数据 3D 柱状图示例",
+                },
+            },
+            {
                 id: "transportLine",
                 name: "交通线路",
                 name_en: "Transport Line",
@@ -1125,3 +1138,4 @@ export default [
         ],
     },
 ];
+
