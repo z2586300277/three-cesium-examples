@@ -60,9 +60,8 @@ const defaultStyle = {
 }
 
 const state = { heightScale: 1, labels: true, rings: true, rotate: false }
-const assetRoot = new URL('files/images/', window.parent.location.href).href
-const ringImage = `${assetRoot}bar-ring.png`
-const glowImage = `${assetRoot}bar-glow.png`
+const ringImage = HOST + 'files/images/bar-ring.png'
+const glowImage = HOST + 'files/images/bar-glow.png'
 const toColor = (value) => Cesium.Color.fromCssColorString(value)
 const owned = []
 
