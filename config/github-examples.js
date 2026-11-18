@@ -44,6 +44,8 @@ export default [
                 id: 'three-ui',
                 name: 'ThreeUI 提示词',
                 name_en: 'ThreeUI',
+                tag: TEXTS['合集'],
+                openUrl: 'https://threeui.com/',
                 githubUrl: 'https://github.com/MengTo/threeui',
                 image: 'https://openthree.github.io/three-github-examples/images/Ai-three-ui.webp'
             }

@@ -11,9 +11,9 @@ export default [
 
             {
                 id: 'thanksBibi',
-                name: '感谢来自BiBi的支持',
-                name_en: 'Thanks BiBi',
-                tag: TEXTS['感谢BiBi'] + '-#ff69b4',
+                name: '感谢来自B站的支持',
+                name_en: 'Thanks bilibili',
+                tag: TEXTS['感谢支持'] + '-#ff69b4',
                 author: 'z2586300277',
                 githubUrl: 'https://space.bilibili.com/245165721',
                 codeUrl: HOST + 'threeExamples/application/thanksBibi.js',
