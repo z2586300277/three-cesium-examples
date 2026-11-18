@@ -11,9 +11,9 @@ export default [
 
             {
                 id: 'thanksBibi',
-                name: '感谢来自BiBi的支持',
-                name_en: 'Thanks BiBi',
-                tag: TEXTS['感谢BiBi'] + '-#ff69b4',
+                name: '感谢来自B站的支持',
+                name_en: 'Thanks bilibili',
+                tag: TEXTS['感谢支持'] + '-#ff69b4',
                 author: 'z2586300277',
                 githubUrl: 'https://space.bilibili.com/245165721',
                 codeUrl: HOST + 'threeExamples/application/thanksBibi.js',
@@ -83,10 +83,10 @@ export default [
             },
             {
                 id: 'moreGithub',
-                name: '最近更新',
+                name: '最近更新 - Ai 3D',
                 name_en: 'Recently Updated',
                 tip: '最新的three.js开源案例，持续更新中',
-                tag: TEXTS['新'] + '-#3F51B5',
+                tag: TEXTS['新'] + '(Ai)' + '-#3F51B5',
                 githubUrl: 'https://github.com/OpenThree/three-github-examples',
                 openUrl: 'https://openthree.github.io/three-github-examples/',
                 image: FILE_HOST + 'images/threeCesiumExamples.jpg'

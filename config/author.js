@@ -556,4 +556,11 @@ export default [
     github: "https://github.com/lv-Jis",
     icon: HOST + "files/author/lv-Jis.jpg",
   },
+  {
+    id: "tomrui",
+    name: "tomrui",
+    github: "https://github.com/tomrui123",
+    icon: HOST + "files/author/tomrui.jpg",
+  },
+
 ];

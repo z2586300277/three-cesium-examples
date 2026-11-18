@@ -2,10 +2,10 @@ import { HOST, FILE_HOST } from "./host.js";
 
 export default [
     {
-        pid: 'recommended',
-        name: '优质推荐',
-        name_en: 'Recommended',
-        order: -10,
+        pid: 'collection',
+        name: '合集收藏',
+        name_en: 'collection',
+        order: -20,
         children: [
             {
                 id: 'moreGithub',
@@ -17,6 +17,47 @@ export default [
                 openUrl: 'https://openthree.github.io/three-github-examples/',
                 image: FILE_HOST + 'images/threeCesiumExamples.jpg'
             },
+            {
+                id: 'threejscc',
+                name: 'Threejs.cc',
+                name_en: 'Threejs.cc',
+                tip: 'Ai three.js案例网站，包含大量案例',
+                openUrl: 'https://threejs.cc/',
+                image: 'https://openthree.github.io/three-github-examples/images/threejscc.webp'
+            },
+            {
+                id: 'awesome-fable-5.2',
+                name: '合集 Fable 5.2',
+                name_en: 'Awesome Fable 5.2',
+                openUrl: 'https://fablelist.000ooo.ooo/',
+                githubUrl: 'https://github.com/fengyiqicoder/awesome-fable-5.2',
+                image: 'https://openthree.github.io/three-github-examples/images/awesome-fable-5.2.webp'
+            },
+            {
+                id: 'opus-5-5',
+                name: 'Opus 5.5 案例',
+                name_en: 'Opus 5.5',
+                openUrl: 'https://skillry.dev/ai-videos/opus-5-5',
+                image: 'https://openthree.github.io/three-github-examples/images/awesome-opus5-5-videos.webp'
+            },
+            {
+                id: 'three-ui',
+                name: 'ThreeUI 提示词',
+                name_en: 'ThreeUI',
+                tag: TEXTS['合集'],
+                openUrl: 'https://threeui.com/',
+                githubUrl: 'https://github.com/MengTo/threeui',
+                image: 'https://openthree.github.io/three-github-examples/images/Ai-three-ui.webp'
+            }
+        ]
+    },
+    {
+        pid: 'recommended',
+        name: '优质推荐',
+        name_en: 'Recommended',
+        order: -10,
+        children: [
+
             {
                 id: "moyunhe",
                 name: "电商产品设计器",

@@ -32,7 +32,7 @@ window.TEXTS = Object.fromEntries(Object.entries({
 
     '效果佳': { zh: '效果佳', en: 'Great' },
 
-    '感谢BiBi': { zh: '感谢B站', en: 'For BiBi' },
+    '感谢支持': { zh: '感谢支持', en: 'Thanks' },
 
     'webgl教程': { zh: 'webgl教程', en: 'Webgl Tutorial' },
 
@@ -101,6 +101,8 @@ window.TEXTS = Object.fromEntries(Object.entries({
     'More': { zh: '更多', en: 'More' },
 
     '新': { zh: '新', en: 'New' },
+
+    '合集': { zh: '合集', en: 'Collection' },
 
 }).map(
 
