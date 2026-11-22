@@ -48,6 +48,23 @@ export default [
                 openUrl: 'https://threeui.com/',
                 githubUrl: 'https://github.com/MengTo/threeui',
                 image: 'https://openthree.github.io/three-github-examples/images/Ai-three-ui.webp'
+            }, 
+            {
+                id: 'threejsai',
+                name: 'ThreejsAI',
+                name_en: 'ThreejsAI',
+                tag: 'AI',
+                openUrl: 'https://threejsai.com/',
+                image: 'https://openthree.github.io/three-github-examples/images/threejsai.webp'
+            },
+            {
+                id: 'gpt-6-astra',
+                name: 'gpt-6-astra',
+                name_en: 'gpt-6-astra',
+                tag: 'AI',
+                openUrl: 'https://www.tripo3d.ai/3d-prompts/models/gpt-6-astra',
+                githubUrl: 'https://github.com/TripoGrowthLab/awesome-astra-prompts',
+                image: 'https://openthree.github.io/three-github-examples/images/awesome-astra-prompts.webp'
             }
         ]
     },
