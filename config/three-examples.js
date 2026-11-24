@@ -1304,6 +1304,14 @@ export default [
                 author: 'z2586300277',
                 codeUrl: HOST + 'threeExamples/particle/steamParticle.js',
                 image: HOST + 'threeExamples/particle/steamParticle.jpg',
+            },
+            {
+                id: 'starPoints',
+                name: '星空粒子',
+                name_en: 'Star Points',
+                author: 'huan_meng_hai_yan',
+                codeUrl: HOST + 'threeExamples/particle/StarPoints.js',
+                image: HOST + 'threeExamples/particle/StarPoints.webp',
             }
         ]
     },
